@@ -12,14 +12,12 @@ defined('BASEPATH') OR exit('No Direct script access allowed');
             parent::__construct();
         }
 
-        private $members = array(
-            '1' => 'Edward',
-            '2' => 'Alex',
-            '3' => 'John'
-        );
-
         public function GetMembers(){
-            return $this->members;
+            $this->load->database();
+            $result = $this->db->query("select id, name from members")->result();
+            $this->db->close();
+
+            return $result;
         }
     }
 
