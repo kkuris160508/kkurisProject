@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tutorial::second</title>
+    <title><?php echo $title;?></title>
 </head>
 <body>
-Hello Second
+<?php echo $content;?>
 </body>
 </html>
 
@@ -17,4 +17,5 @@ Hello Second
  * Date: 2019-08-27
  * Time: 오전 9:55
  */
+
 ?>
