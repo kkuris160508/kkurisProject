@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="뷰 설정">
-      <change afterPath="$PROJECT_DIR$/application/models/Member_model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/members.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Tutorial.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Tutorial.php" afterDir="false" />
-    </list>
+    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="모델 설정" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -39,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/members.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+            <state relative-caret-position="459">
+              <caret line="32" column="3" lean-forward="true" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -57,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/models/Member_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            <state relative-caret-position="425">
+              <caret line="25" column="2" lean-forward="true" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -260,7 +255,7 @@
       <workItem from="1566393166217" duration="887000" />
       <workItem from="1566434725670" duration="8038000" />
       <workItem from="1566451578138" duration="2043000" />
-      <workItem from="1566828260309" duration="7882000" />
+      <workItem from="1566828260309" duration="8152000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1566390717248</created>
@@ -388,11 +383,18 @@
       <option name="project" value="LOCAL" />
       <updated>1566870155756</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="모델 설정">
+      <created>1566870831193</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1566870831193</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20341000" />
+    <option name="totallyTimeSpent" value="20611000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -481,7 +483,8 @@
     <MESSAGE value="_remap" />
     <MESSAGE value="기본컨트롤러 설정" />
     <MESSAGE value="뷰 설정" />
-    <option name="LAST_COMMIT_MESSAGE" value="뷰 설정" />
+    <MESSAGE value="모델 설정" />
+    <option name="LAST_COMMIT_MESSAGE" value="모델 설정" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/testcommit.html" />
@@ -596,13 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Member_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Tutorial.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -615,8 +611,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/members.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="32" column="3" lean-forward="true" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Member_model.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+          <caret line="25" column="2" lean-forward="true" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
         </state>
       </provider>
     </entry>
