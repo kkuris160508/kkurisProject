@@ -8,11 +8,10 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 class Tutorial extends CI_Controller{
     public function index(){
-        echo "hello Index";
+        $this->load->view('index');
     }
     public function second(){
-        echo "hello Second";
+        $this->load->view('second');
     }
 }
-// test
 ?>
