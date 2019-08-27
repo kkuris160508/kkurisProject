@@ -7,24 +7,10 @@
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
 class Tutorial extends CI_Controller{
-    public function index(){
-        $data = array(
-            'title'=>'Tutorial::index',
-            'content'=>'Hello Index'
-        );
-        $this->load->view('header', $data);
-        $this->load->view('content', $data);
-        $this->load->view('footer');
-    }
-    public function second(){
-        $data = array(
-            'title'=>'Tutorial::second',
-            'content'=>'Hello Second'
-        );
-        $this->load->view('header', $data);
-        $this->load->view('content', $data);
-        $this->load->view('footer');
-
+    public function members(){
+        $this->load->model('Member_model');
+        $data['members'] = $this->Member_model->GetMembers();
+        $this->load->view('members', $data);
     }
 }
 ?>
