@@ -12,14 +12,19 @@ class Tutorial extends CI_Controller{
             'title'=>'Tutorial::index',
             'content'=>'Hello Index'
         );
-        $this->load->view('index', $data);
+        $this->load->view('header', $data);
+        $this->load->view('content', $data);
+        $this->load->view('footer');
     }
     public function second(){
         $data = array(
             'title'=>'Tutorial::second',
             'content'=>'Hello Second'
         );
-        $this->load->view('second', $data);
+        $this->load->view('header', $data);
+        $this->load->view('content', $data);
+        $this->load->view('footer');
+
     }
 }
 ?>
