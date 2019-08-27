@@ -14,10 +14,10 @@
     </tr>
     </thead>
     <tbody>
-        <?php foreach ($members as $member) :?>
+        <?php foreach ($members as $id => $name) :?>
             <tr>
-                <td><?=$member->id?></td>
-                <td><?=$member->name?></td>
+                <td><?=$id?></td>
+                <td><?=$name?></td>
             </tr>
         <?php endforeach;?>
     </tbody>
