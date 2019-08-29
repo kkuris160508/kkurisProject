@@ -7,11 +7,14 @@
  */
 
 ?>
-    <p><?=$ID;?></p>
+    <p><?php echo $ID;?></p>
     <input type="text" name="input_ID">
-    <p><?=$Password;?></p>
+    <p><?php echo $Password;?></p>
     <input type="password" name="input_PW">
-    <p><?=$Email?></p>
+    <p><?php echo $Email;?></p>
     <input type="text" name="input_email">
     <br>
-<button type="submit"><?=$btnName?></button>
+<button type="submit"><?php echo $btnName;?></button>
+
+<?php $result = $this->debug->debug_var($_REQUEST);?>
+<?php echo $result;?>
