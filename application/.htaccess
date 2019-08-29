@@ -6,7 +6,7 @@
 </IfModule>
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f # index 죽이기 하기 위해 등록
+    RewriteCond %{REQUEST_FILENAME} !-d # index 죽이기 하기 위해 등록
     RewriteRule ^(.*)$ index.php/$1 [L]
 </IfModule>
