@@ -8,7 +8,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Debug_var{
-    public function test($tmpVar){
+    public function test($tmpVar = 'chris'){
         return "hi ".$tmpVar;
     }
 }
