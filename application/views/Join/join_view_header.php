@@ -10,7 +10,7 @@
 <html>
 <head>
     <title>
-        <?php echo $data['title'];?>
+        <?php echo $title;?>
     </title>
 </head>
 <body>
