@@ -26,3 +26,7 @@ class Join extends CI_Controller{
 }
 
 ?>
+
+<script type="text/javascript">
+    alert('hi');
+</script>

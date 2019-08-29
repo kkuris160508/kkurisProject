@@ -16,15 +16,9 @@
         <?php endif;?>
     <?php endforeach;?>
     <br>
-<button type="submit"><?php echo $btnName;?></button>
+<button type="submit" class = 'accountBtn'><?php echo $btnName;?></button>
 
-<?php $result = $this->debug->debug_var($key);?>
-<?php echo $result;?>
+<!---->
+<?php //$result = $this->debug->debug_var($key);?>
+<?php //echo $result;?>
 
-
-<!--<input type="text" name="input_ID">-->
-<!--<p>--><?php //echo $Password;?><!--</p>-->
-<!--<input type="password" name="input_PW">-->
-<!--<p>--><?php //echo $Email;?><!--</p>-->
-<!--<input type="text" name="input_email">-->
-<!--<br>-->
