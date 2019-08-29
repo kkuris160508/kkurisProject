@@ -7,18 +7,16 @@
  */
 class Form extends CI_Controller{
 
-    public function index($tmpVar1 = 'chris'){
+    public function index(){
         $this->load->helper(array('form', 'url'));
 
-        $this->load->library(array('form_validation','DebugVar')); //데이터 검증 라이브러리 호출
+        $this->load->library(array('form_validation')); //데이터 검증 라이브러리 호출
 
         if($this->form_validation->run() == FALSE){
             $this->load->view('myform');
         } else {
             $this->load->view('formsuccess');
         }
-
-        $this->DebugVar->test($tmpVar1);
 
     }
 }
