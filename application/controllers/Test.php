@@ -8,11 +8,11 @@
 
 class Test extends CI_Controller{
 
-    public function index(){
+    public function index($varTmp = 'chris'){
         $this->load->library('Debug'); //데이터 검증 라이브러리 호출
 
 //        $this->Debug_->test('chris');
-        $result = $this->debug->debug_var(); // 시발 debug 를 소문자로...ㅡㅡ
+        $result = $this->debug->debug_var($varTmp); // 시발 debug 를 소문자로...ㅡㅡ
 
         echo $result;
     }
