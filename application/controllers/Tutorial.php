@@ -14,8 +14,8 @@ class Tutorial extends CI_Controller{
 
         $this->load->view('Tutorial/members', $data); // 모델에서 가져온 값을 뷰에 전달달
     }
-    public  function getFnReturn(){
-        $str = '';
+    public function getFnReturn(){
+        $str = TRUE;
         if(is_php('5.3')){
             $str = quoted_printable_encode($str);
         }
