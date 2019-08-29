@@ -24,9 +24,9 @@ class Debug{
     function debug_var($var = '')
     {
 
-        if(isDevDebug())
+        if($this->isDevDebug())
         {
-            echo _before();
+            echo $this->_before();
             if (is_array($var))
             {
                 print_r($var);
@@ -39,7 +39,7 @@ class Debug{
             {
                 echo $var;
             }
-            echo _after();
+            echo $this->_after();
         }
     }
 
