@@ -10,9 +10,9 @@ class Join extends CI_Controller{
         $data = array(
             'title' => 'JoinPage',
             'contents' => array(
-                'ID' => 'ID',
-                'Password' => 'Password',
-                'Email' => 'Email'
+                '0' => 'ID',
+                '1' => 'Password',
+                '2' => 'Email'
             ),
             'btnName' => '회원가입'
         );

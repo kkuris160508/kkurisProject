@@ -10,14 +10,14 @@
     <?php foreach($contents as $key => $value) :?>
     <p><?php echo $value;?></p>
     <input type="text" name="input_"+<?php echo $value?>>
-        <? if($key == 'Password'){?>
+        <? if($key == '1'){?>
             <input type="password" name="input"+<?php echo $value?>>
         <?}?>
     <?php endforeach;?>
     <br>
 <button type="submit"><?php echo $btnName;?></button>
 
-<?php $result = $this->debug->debug_var($contents);?>
+<?php $result = $this->debug->debug_var($key);?>
 <?php echo $result;?>
 
 
