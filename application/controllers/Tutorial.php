@@ -19,5 +19,10 @@ class Tutorial extends CI_Controller{
         echo site_url();
         echo site_url('news/local/1234');
     }
+
+    public function getUrl1(){
+        echo current_url();
+
+    }
 }
 ?>
