@@ -12,5 +12,3 @@ class Debug{
         return "hi ".$tmpVar;
     }
 }
-
-?>
