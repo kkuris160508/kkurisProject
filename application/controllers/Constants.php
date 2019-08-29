@@ -12,8 +12,8 @@ class Constants extends CI_Controller{
         $dev_ip = array("211.52.72.51",
             "211.52.72.56",
             "211.52.72.59" );
-
-        return true;//in_array( $_SERVER["REMOTE_ADDR"], $dev_ip);
+        if($_SERVER['REMOTE_ADDR'])
+            return 1;//in_array( $_SERVER["REMOTE_ADDR"], $dev_ip);
     }
     function debug_var($var = '')
     {
