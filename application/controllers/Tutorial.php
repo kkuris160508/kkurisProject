@@ -19,7 +19,7 @@ class Tutorial extends CI_Controller{
         if(is_php('5.3')){
             $str = quoted_printable_encode($str);
         }
-        return $str;
+        echo $str;
     }
 }
 ?>
