@@ -6,7 +6,7 @@
  * Time: 오후 1:57
  */
 
-class DebugVar{
+class Debugvar{
 //    function isDevDebug()
 //    {
 //

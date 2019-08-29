@@ -7,10 +7,10 @@
  */
 
 class Test1 extends CI_Controller{
-    public function testFn(){
+    public function index(){
         $this->load->library('DebugVar'); //데이터 검증 라이브러리 호출
 
-        $this->DebugVar->test('chris');
+        $this->Debugvar->test('chris');
     }
 }
 ?>
