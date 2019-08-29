@@ -11,7 +11,8 @@ class Test extends CI_Controller{
         $this->load->library('Debug'); //데이터 검증 라이브러리 호출
 
 //        $this->Debug_->test('chris');
-        $this->debug->test();
+        $result = $this->debug->test();
+        echo $result;
     }
 
 }
