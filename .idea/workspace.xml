@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="autoload 에 debug_var 라이브러리 추가">
-      <change afterPath="$PROJECT_DIR$/application/controllers/Join.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/Join/join_view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/Join/join_view_contents.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/Join/join_view_footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/Join/join_view_header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Test.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Test.php" afterDir="false" />
-    </list>
+    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="autoload 에 debug_var 라이브러리 추가" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -21,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Join.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+              <caret line="22" column="51" lean-forward="true" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -57,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/Join/join_view_contents.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+            <state relative-caret-position="221">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -149,8 +141,8 @@
         <option value="$PROJECT_DIR$/application/views/Join/join_view.php" />
         <option value="$PROJECT_DIR$/application/views/Join/join_view_header.php" />
         <option value="$PROJECT_DIR$/application/views/Join/join_view_footer.php" />
-        <option value="$PROJECT_DIR$/application/views/Join/join_view_contents.php" />
         <option value="$PROJECT_DIR$/application/controllers/Join.php" />
+        <option value="$PROJECT_DIR$/application/views/Join/join_view_contents.php" />
       </list>
     </option>
   </component>
@@ -271,28 +263,7 @@
       <workItem from="1566393166217" duration="887000" />
       <workItem from="1566434725670" duration="8038000" />
       <workItem from="1566451578138" duration="2043000" />
-      <workItem from="1566828260309" duration="40315000" />
-    </task>
-    <task id="LOCAL-00034" summary="모델 설정">
-      <created>1566890501351</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1566890501351</updated>
-    </task>
-    <task id="LOCAL-00035" summary="모델 설정">
-      <created>1566891259179</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1566891259179</updated>
-    </task>
-    <task id="LOCAL-00036" summary="모델 설정">
-      <created>1566891387348</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1566891387348</updated>
+      <workItem from="1566828260309" duration="40570000" />
     </task>
     <task id="LOCAL-00037" summary="모델 설정">
       <created>1566891855177</created>
@@ -616,11 +587,32 @@
       <option name="project" value="LOCAL" />
       <updated>1567061008238</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="autoload 에 debug_var 라이브러리 추가">
+      <created>1567064052342</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1567064052342</updated>
+    </task>
+    <task id="LOCAL-00084" summary="autoload 에 debug_var 라이브러리 추가">
+      <created>1567064168299</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1567064168299</updated>
+    </task>
+    <task id="LOCAL-00085" summary="autoload 에 debug_var 라이브러리 추가">
+      <created>1567064263738</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1567064263738</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52774000" />
+    <option name="totallyTimeSpent" value="53029000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1043,17 +1035,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/Join/join_view_contents.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Join.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <caret line="22" column="51" lean-forward="true" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/Join/join_view_contents.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
