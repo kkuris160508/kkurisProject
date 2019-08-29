@@ -7,7 +7,6 @@
  */
 
 ?>
-
     <p>ID</p>
     <input type="text" name="input_ID">
     <p>Password</p>

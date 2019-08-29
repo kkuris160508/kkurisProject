@@ -20,8 +20,8 @@ class Join extends CI_Controller{
         $this->load->view('Join/join_view_contents',$data['contents']);
         $this->load->view('Join/join_view_footer');
 
-//        $result = $this->debug->debug_var($data);
-//        echo $result;
+        $result = $this->debug->debug_var($data);
+        echo $result;
     }
 }
 
