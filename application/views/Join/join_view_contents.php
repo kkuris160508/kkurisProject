@@ -7,12 +7,12 @@
  */
 
 ?>
-<?php foreach($contents as $key => $value):?>
-<p><?=$key?></p>
-<input type="text" name="input_ID">
 
-<br>
+    <p>ID</p>
+    <input type="text" name="input_ID">
+    <p>Password</p>
+    <input type="password" name="input_PW">
+    <p>Email</p>
+    <input type="text" name="input_email">
+    <br>
 <button type="submit">회원가입</button>
-<?php endforeach;?>
-<?php $result = $this->debug->debug_var($contents);?>
-<?php echo $result;?>
