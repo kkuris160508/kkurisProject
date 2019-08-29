@@ -8,9 +8,9 @@
 
 class Test1 extends CI_Controller{
     public function index(){
-        $this->load->library('debugvar'); //데이터 검증 라이브러리 호출
+        $this->load->library('Debug_var'); //데이터 검증 라이브러리 호출
 
-        $this->Debugvar->test('chris');
+        $this->Debug_var->test('chris');
     }
 }
 ?>
