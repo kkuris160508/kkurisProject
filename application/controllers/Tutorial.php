@@ -16,7 +16,8 @@ class Tutorial extends CI_Controller{
     }
 
     public function getUrl(){
-        echo 'hi';
+        echo site_url();
+        echo site_url('news/local/1234');
     }
 }
 ?>
