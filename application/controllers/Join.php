@@ -12,9 +12,9 @@ class Join extends CI_Controller{
             'contents' => array(
                 'ID' => 'ID',
                 'Password' => 'Password',
-                'Email' => 'Email',
-                'btnName' => '회원가입'
-            )
+                'Email' => 'Email'
+            ),
+            'btnName' => '회원가입'
         );
         $this->load->view('Join/join_view_header',$data);
         $this->load->view('Join/join_view_contents',$data['contents']);

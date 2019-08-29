@@ -10,6 +10,7 @@
     <?php foreach($contents as $key => $value) :?>
     <p><?php echo $value;?></p>
     <input type="text" name="input_"+<?php echo $value?>>
+    <? if($key == 'Password')?> <input type="password" name="input"+<?php echo $value?>>
     <?php endforeach;?>
     <br>
 <button type="submit"><?php echo $btnName;?></button>
