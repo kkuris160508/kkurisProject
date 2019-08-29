@@ -6,7 +6,7 @@
  * Time: 오후 1:57
  */
 
-class CI_DebugVar{
+class DebugVar{
 //    function isDevDebug()
 //    {
 //
