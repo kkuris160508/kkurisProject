@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="config setting">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/libraries/DebugVar.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/libraries/DebugVar.php" afterDir="false" />
-    </list>
+    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="config setting" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -21,7 +17,7 @@
         <state>
           <leaf>
             <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/system/libraries/DebugVar.php">
+              <entry file="file://$PROJECT_DIR$/system/libraries/Debugvar.php">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="221">
                     <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
@@ -75,13 +71,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="2" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+            <state relative-caret-position="323">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Test1.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -90,7 +86,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system/libraries/Cart.php">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -162,9 +158,9 @@
         <option value="$PROJECT_DIR$/application/views/myform.php" />
         <option value="$PROJECT_DIR$/application/controllers/Constants.php" />
         <option value="$PROJECT_DIR$/application/helpers/MY_array_helper.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Test1.php" />
         <option value="$PROJECT_DIR$/application/controllers/Form.php" />
         <option value="$PROJECT_DIR$/system/libraries/DebugVar.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Test1.php" />
       </list>
     </option>
   </component>
@@ -294,28 +290,7 @@
       <workItem from="1566393166217" duration="887000" />
       <workItem from="1566434725670" duration="8038000" />
       <workItem from="1566451578138" duration="2043000" />
-      <workItem from="1566828260309" duration="34342000" />
-    </task>
-    <task id="LOCAL-00016" summary="뷰 설정">
-      <created>1566868976062</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1566868976062</updated>
-    </task>
-    <task id="LOCAL-00017" summary="뷰 설정">
-      <created>1566869110759</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1566869110759</updated>
-    </task>
-    <task id="LOCAL-00018" summary="뷰 설정">
-      <created>1566870155756</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1566870155756</updated>
+      <workItem from="1566828260309" duration="34612000" />
     </task>
     <task id="LOCAL-00019" summary="모델 설정">
       <created>1566870831193</created>
@@ -639,15 +614,35 @@
       <option name="project" value="LOCAL" />
       <updated>1567057737778</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="config setting">
+      <created>1567058100970</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1567058100970</updated>
+    </task>
+    <task id="LOCAL-00066" summary="config setting">
+      <created>1567058179921</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1567058179921</updated>
+    </task>
+    <task id="LOCAL-00067" summary="config setting">
+      <created>1567058233996</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1567058233996</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46801000" />
+    <option name="totallyTimeSpent" value="47071000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -999,24 +994,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Test1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Constants.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="2" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -1034,10 +1015,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system/libraries/DebugVar.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/Form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/libraries/Debugvar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Test1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
         </state>
       </provider>
     </entry>
