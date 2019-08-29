@@ -5,7 +5,7 @@
  * Date: 2019-08-29
  * Time: 오전 11:21
  */
-
+    var_dump($_SERVER);
 ?>
 
 
