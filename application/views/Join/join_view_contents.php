@@ -9,9 +9,10 @@
 ?>
     <?php foreach($contents as $key => $value) :?>
     <p><?php echo $value;?></p>
-    <input type="text" name="input_"+<?php echo $value?>>
         <?php if($key == '1'):?>
             <input type="password" name="input"+<?php echo $value?>>
+        <?php else:?>
+            <input type="text" name="input"+<?php echo $value?>>
         <?php endif;?>
     <?php endforeach;?>
     <br>
