@@ -11,7 +11,7 @@ class Join extends CI_Controller{
             'title' => 'JoinPage',
             'contents' => array(
                 'ID' => 'ID',
-                'password' => 'Password',
+                'Password' => 'Password',
                 'Email' => 'Email',
                 'btnName' => '회원가입'
             )

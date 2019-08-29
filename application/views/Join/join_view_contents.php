@@ -16,5 +16,5 @@
     <br>
 <button type="submit"><?php echo $btnName;?></button>
 
-<?php $result = $this->debug->debug_var($_REQUEST);?>
+<?php $result = $this->debug->debug_var($contents);?>
 <?php echo $result;?>
