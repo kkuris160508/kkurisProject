@@ -7,11 +7,11 @@
  */
 
 ?>
-    <p>ID</p>
+    <p><?=$ID;?></p>
     <input type="text" name="input_ID">
-    <p>Password</p>
+    <p><?=$Password;?></p>
     <input type="password" name="input_PW">
-    <p>Email</p>
+    <p><?=$Email?></p>
     <input type="text" name="input_email">
     <br>
-<button type="submit">회원가입</button>
+<button type="submit"><?=$btnName?></button>
