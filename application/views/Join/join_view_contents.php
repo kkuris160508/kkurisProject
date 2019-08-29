@@ -7,7 +7,7 @@
  */
 
 ?>
-    <p><?php echo 1;?></p>
+    <p><?php echo $ID;?></p>
     <input type="text" name="input_ID">
     <p><?php echo $Password;?></p>
     <input type="password" name="input_PW">
