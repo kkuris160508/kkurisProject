@@ -23,10 +23,12 @@ class Join extends CI_Controller{
 //        $result = $this->debug->debug_var($data);
 //        echo $result;
     }
+
+    public function joinOK(){
+        $tmp = $this->joinForm()->data;
+        $result = $this->debug->debug_var($tmp);
+        echo $result;
+    }
 }
 
 ?>
-
-<script type="text/javascript">
-    alert('hi');
-</script>
