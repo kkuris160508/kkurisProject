@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="autoload 에 debug_var 라이브러리 추가">
-      <change beforePath="$PROJECT_DIR$/application/controllers/Join.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Join.php" afterDir="false" />
+    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="foreach 사용 하여 p 태그 값 넣기">
       <change beforePath="$PROJECT_DIR$/application/views/Join/join_view_contents.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/Join/join_view_contents.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -65,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/Join/join_view_contents.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="119">
+              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -276,21 +275,7 @@
       <workItem from="1566393166217" duration="887000" />
       <workItem from="1566434725670" duration="8038000" />
       <workItem from="1566451578138" duration="2043000" />
-      <workItem from="1566828260309" duration="42848000" />
-    </task>
-    <task id="LOCAL-00046" summary="mvc_sample">
-      <created>1567042835725</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1567042835726</updated>
-    </task>
-    <task id="LOCAL-00047" summary="mvc_sample">
-      <created>1567042966460</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1567042966460</updated>
+      <workItem from="1566828260309" duration="43182000" />
     </task>
     <task id="LOCAL-00048" summary="mvc_sample">
       <created>1567043316301</created>
@@ -621,11 +606,25 @@
       <option name="project" value="LOCAL" />
       <updated>1567066378895</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="autoload 에 debug_var 라이브러리 추가">
+      <created>1567066588066</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1567066588066</updated>
+    </task>
+    <task id="LOCAL-00096" summary="foreach 사용 하여 p 태그 값 넣기">
+      <created>1567066732500</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1567066732500</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55307000" />
+    <option name="totallyTimeSpent" value="55641000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -720,7 +719,8 @@
     <MESSAGE value="form validation example" />
     <MESSAGE value="config setting" />
     <MESSAGE value="autoload 에 debug_var 라이브러리 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="autoload 에 debug_var 라이브러리 추가" />
+    <MESSAGE value="foreach 사용 하여 p 태그 값 넣기" />
+    <option name="LAST_COMMIT_MESSAGE" value="foreach 사용 하여 p 태그 값 넣기" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/application/models/helloworld_model.php" />
@@ -1057,8 +1057,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/Join/join_view_contents.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="119">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
         </state>
       </provider>
     </entry>

@@ -10,9 +10,9 @@
     <?php foreach($contents as $key => $value) :?>
     <p><?php echo $value;?></p>
     <input type="text" name="input_"+<?php echo $value?>>
-        <? if($key == '1'){?>
+        <?php if($key == '1'):?>
             <input type="password" name="input"+<?php echo $value?>>
-        <?}?>
+        <?php endif;?>
     <?php endforeach;?>
     <br>
 <button type="submit"><?php echo $btnName;?></button>
