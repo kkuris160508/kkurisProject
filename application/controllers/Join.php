@@ -16,9 +16,9 @@ class Join extends CI_Controller{
             ),
             'btnName' => '회원가입'
         );
-        $this->load->view('join/join_view_header',$data['title']);
-        $this->load->view('join/join_view_contents',$data['contents']);
-        $this->load->view('join/join_view_footer');
+        $this->load->view('Join/join_view_header',$data['title']);
+        $this->load->view('Join/join_view_contents',$data['contents']);
+        $this->load->view('Join/join_view_footer');
 
 //        $result = $this->debug->debug_var($data);
 //        echo $result;
