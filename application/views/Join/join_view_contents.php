@@ -10,7 +10,7 @@
     <?php foreach($contents as $key => $value) :?>
     <p><?php echo $value;?></p>
         <?php if($key == '1'):?>
-            <input type="password" name="input"+<?php echo $value?>>
+            <input type="password" id = "PW" name="input"+<?php echo $value?>>
         <?php else:?>
             <input type="text" name="input"+<?php echo $value?>>
         <?php endif;?>
@@ -25,6 +25,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
+
+        //var idVal = $('input[name=input+<?php //echo $value?>//]');
+        var pwVal = $('#PW').val();
+        console.log(pwVal);
+
         $(".accountBtn").click(function () {
            alert('asdf');
         });
