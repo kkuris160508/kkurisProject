@@ -14,9 +14,9 @@ class Join_model extends CI_Model{
     public function getAccount($id, $email){
         $this->load->database();
         $query = $this->db->query("SELECT ID, PW, EMAIL FROM accountTB WHERE ID = '{$id}' AND EMAIL = '{$email}'");
-        echo $query->num_rows();
+        $result = $query->num_rows();
 //        $this->db->close();
-        return $query;
+        return $result;
     }
 
     public function insAccount($id, $email, $pw = 1234){
