@@ -11,9 +11,9 @@ class Join_model extends CI_Model{
         parent::__construct();
     }
 
-    public function getAccount(){
+    public function getAccount($id, $email){
         $this->load->database();
-        $query = $this->db->query("SELECT ID, PW, EMAIL FROM accountTB")->result();
+        $query = $this->db->query("SELECT ID, PW, EMAIL FROM accountTB WHERE ID = '{$id}' AND EMAIL = '{$email}'")->result();
         $this->db->close();
         return $query;
     }

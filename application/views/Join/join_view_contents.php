@@ -30,9 +30,5 @@
         var idVal = $('#ID').val();
         var emVal = $('#Email').val();
 
-        $(".accountBtn").click(function () {
-
-
-        });
     });
 </script>
