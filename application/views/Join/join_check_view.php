@@ -18,9 +18,9 @@
     </thead>
     <tbody>
         <tr>
-            <td><?=$ID?></td>
-            <td><?=$PW?></td>
-            <td><?=$EMAIL?></td>
+            <td><?php echo $ID;?></td>
+            <td><?php echo $PW;?></td>
+            <td><?php echo $EMAIL;?></td>
         </tr>
     </tbody>
 </table>
