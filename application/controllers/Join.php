@@ -25,6 +25,11 @@ class Join extends CI_Controller{
     }
 
     public function joinCheck($id, $email, $pw = 1234){
+        $accountInfo = array(
+            'ID' => $id,
+            'PW' => $pw,
+            'EMAIL' => $email
+        );
 
         $this->load->model('Join_model');
         $data['accountTB'] = $this->Join_model->getAccount($id, $email);
@@ -40,7 +45,7 @@ class Join extends CI_Controller{
             $this->Join_model->insAccount($id, $email);
             $data['accountTB'] = $this->Join_model->getAccount($id, $email);
             if($data['accountTB']){
-                $this->load->view('Join/join_ok_view');
+                $this->load->view('Join/join_ok_view', $accountInfo);
             }
         }
     }
