@@ -44,9 +44,11 @@ class Join extends CI_Controller{
             $this->load->model('Join_model');
             $this->Join_model->insAccount($id, $email);
             $data['accountTB'] = $this->Join_model->getAccount($id, $email);
-            if($data['accountTB']){
-                $this->load->view('Join/join_ok_view', $accountInfo);
-            }
+
+            $this->load->view('Join/join_ok_view', $accountInfo);
+
+            $result2 = $this->debug->debug_var($accountInfo);
+            echo $result2;
         }
     }
 
