@@ -35,7 +35,7 @@ class Join extends CI_Controller{
         $result = $this->debug->debug_var($data['accountTB']);
         echo $result;
 
-        if($data['accountTB']) {
+        if(!$data['accountTB']) {
             $this->load->model('Join_model');
             $this->Join_model->insAccount($id, $email);
             $data['accountTB'] = $this->Join_model->getAccount($id, $email);
