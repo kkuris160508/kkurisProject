@@ -6,11 +6,11 @@
     <title>Member</title>
 </head>
 <body>
+<h1>가입완료</h1>
 <table>
     <thead>
     <tr>
         <th>ID</th>
-        <th>PW</th>
         <th>EMAIL</th>
     </tr>
     </thead>
@@ -18,7 +18,6 @@
     <?php foreach($accountTB as $data) :?>
         <tr>
             <td><?=$data->ID?></td>
-            <td><?=$data->PW?></td>
             <td><?=$data->EMAIL?></td>
         </tr>
     <?php endforeach ?>
@@ -26,3 +25,4 @@
 </table>
 </body>
 </html>
+
