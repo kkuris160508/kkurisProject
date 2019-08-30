@@ -15,7 +15,7 @@
     </tr>
     </thead>
     <tbody>
-    <?php foreach($accountInfo as $data) :?>
+    <?php foreach($accountTB as $data) :?>
         <tr>
             <td><?=$data->ID?></td>
             <td><?=$data->PW?></td>

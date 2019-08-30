@@ -17,6 +17,16 @@ class Join_model extends CI_Model{
         $this->db->close();
         return $query;
     }
+
+    public function insAccount($id, $email, $pw = 1234){
+        $data = array(
+            'ID'=>$id,
+            'PW'=>$pw,
+            'EMAIL'=>$email
+        );
+        $this->load->database();
+        $this->db->insert('accountTB', $data);
+    }
 }
 
 ?>
