@@ -27,15 +27,15 @@ class Join extends CI_Controller{
     public function joinCheck($id, $email, $pw = 1234){
 
         $this->load->model('Join_model');
-        $data['accountTB'] = $this->Join_model->getAccount($id, $email);
+        $getRowCnt = $this->Join_model->getAccount($id, $email);
 
         //전달 받은 id, pw, email 을 DB 에 ID, pw, email 을 select 한 리턴 값과 비교 하여 맞으면 OK page, 아니면 오류? 다시? 페이지로
 
 //        $tmpVar = $data['accountTB'][0]->ID;
-        $result = $this->debug->debug_var($data['accountTB']);
+        $result = $this->debug->debug_var($getRowCnt);
         echo $result;
 
-        if(!$data['accountTB']) {
+        if($getRowCnt < 0) {
             $this->load->model('Join_model');
             $this->Join_model->insAccount($id, $email);
             $data['accountTB'] = $this->Join_model->getAccount($id, $email);

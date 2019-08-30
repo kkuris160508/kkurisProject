@@ -17,7 +17,7 @@ class Join_model extends CI_Model{
         $result = $query->num_rows();
 //        $this->db->close();
 //        return $result;
-//        echo $result;
+        echo $result;
     }
 
     public function insAccount($id, $email, $pw = 1234){
