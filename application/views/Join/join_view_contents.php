@@ -10,9 +10,9 @@
     <?php foreach($contents as $key => $value) :?>
     <p><?php echo $value;?></p>
         <?php if($key == '1'):?>
-            <input type="password" id = "<?php echo $value?>">
+            <input type="password" id = "<?php echo $value?>" placeholder="<?php echo $value?>">
         <?php else:?>
-            <input type="text" id = "<?php echo $value?>">
+            <input type="text" id = "<?php echo $value?>" placeholder="<?php echo $value?>">
         <?php endif;?>
         <input type="hidden" id = "hidden" value="<?php echo $value?>">
     <?php endforeach;?>
