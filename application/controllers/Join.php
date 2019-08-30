@@ -26,6 +26,9 @@ class Join extends CI_Controller{
 
     public function joinOK(){
         echo 'hi';
+
+        $result = $this->debug->debug_var($data);
+        echo $result;
     }
 }
 
