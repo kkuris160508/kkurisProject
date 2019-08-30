@@ -14,6 +14,7 @@
         <?php else:?>
             <input type="text" id = "<?php echo $value?>">
         <?php endif;?>
+        <input type="hidden" id = "hidden" value="<?php echo $value?>">
     <?php endforeach;?>
     <br>
 <button type="submit" class = 'accountBtn' onclick="location.href='/Join/joinOK'"><?php echo $btnName;?></button>
@@ -25,15 +26,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
-
-        var pwVal = $('#PW').val();
-        console.log(pwVal);
+        var pwVal = $('#Password').val();
+        var idVal = $('#ID').val();
+        var emVal = $('#Email').val();
 
         $(".accountBtn").click(function () {
 
-            var pwVal = $('#PW').val();
-            console.log(pwVal);
-            alert(pwVal);
+
         });
     });
 </script>
