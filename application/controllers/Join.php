@@ -27,6 +27,8 @@ class Join extends CI_Controller{
     public function joinOK($id, $email){
 //        echo $id;
 //        echo $email;
+        $this->load->databases();
+
 
         $query = $this->db->query("SELECT ID, PW, EMAIL FROM accountTB WHERE ID = '{$id}' AND EMAIL = '{$email}'");
         echo $query;
