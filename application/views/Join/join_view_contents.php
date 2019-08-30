@@ -16,7 +16,7 @@
         <?php endif;?>
     <?php endforeach;?>
     <br>
-<button type="submit" class = 'accountBtn' onclick="location.href='/JoinOK/JoinOK'"><?php echo $btnName;?></button>
+<button type="submit" class = 'accountBtn' onclick="location.href='/Join/joinOK'"><?php echo $btnName;?></button>
 
 <!---->
 <?php //$result = $this->debug->debug_var($key);?>

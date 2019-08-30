@@ -7,9 +7,9 @@
  */
 class JoinOK extends CI_Controller{
 
-    public function joinOK(){
-        echo 'hi';
-    }
+//    public function joinOK(){
+//        echo 'hi';
+//    }
 
 }
 

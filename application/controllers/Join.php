@@ -24,7 +24,9 @@ class Join extends CI_Controller{
 //        echo $result;
     }
 
-
+    public function joinOK(){
+        echo 'hi';
+    }
 }
 
 ?>
