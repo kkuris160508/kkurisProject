@@ -37,6 +37,9 @@ class Join extends CI_Controller{
         $result = $this->debug->debug_var($data);
         echo $result;
 
+        if(!$data['accountTB']) {
+            echo 1;
+        }
     }
 }
 
