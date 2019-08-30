@@ -14,10 +14,10 @@
     </tr>
     </thead>
     <tbody>
-    <?php foreach($accountTB as $id => $name) :?>
+    <?php foreach($accountTB as $ID => $PW) :?>
         <tr>
-            <td><?=$id?></td>
-            <td><?=$name?></td>
+            <td><?=$ID?></td>
+            <td><?=$PW?></td>
         </tr>
     <?php endforeach ?>
     </tbody>
