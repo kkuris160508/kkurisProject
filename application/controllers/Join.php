@@ -27,7 +27,7 @@ class Join extends CI_Controller{
     public function joinCheck($id, $email, $pw = 1234){
 
         $this->load->model('Join_model');
-        $data = $this->Join_model->getAccount($id, $email);
+        $data['accountTB'] = $this->Join_model->getAccount($id, $email);
 
         //전달 받은 id, pw, email 을 DB 에 ID, pw, email 을 select 한 리턴 값과 비교 하여 맞으면 OK page, 아니면 오류? 다시? 페이지로
 
