@@ -25,13 +25,6 @@ class Join extends CI_Controller{
     }
 
     public function joinOK($id, $email, $pw = 1234){
-//        echo $id;
-//        echo $email;
-        $accountInfo = array(
-            'ID' => $id,
-            'PW' => $pw,
-            'EMAIL' => $email
-        );
 
         $this->load->model('Join_model');
         $data['accountTB'] = $this->Join_model->getAccount($id, $email);

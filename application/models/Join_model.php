@@ -26,6 +26,7 @@ class Join_model extends CI_Model{
         );
         $this->load->database();
         $this->db->insert('accountTB', $data);
+        $this->db->close();
     }
 }
 
