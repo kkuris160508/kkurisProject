@@ -35,7 +35,7 @@ class Join extends CI_Controller{
 
         $this->load->model('Join_model');
         $data['accountTB'] = $this->Join_model->getAccount($id, $email);
-        $this->load->view('Join/join_check_view',$data);
+
         //전달 받은 id, pw, email 을 DB 에 ID, pw, email 을 select 한 리턴 값과 비교 하여 맞으면 OK page, 아니면 오류? 다시? 페이지로
 
 //        $tmpVar = $data['accountTB'][0]->ID;
@@ -50,8 +50,12 @@ class Join extends CI_Controller{
                 $this->load->view('Join/join_ok_view');
             }
         } else {
-            echo 'hello '.$id;
+            $this->load->view('Join/join_check_view',$data);
         }
+    }
+
+    public function main(){
+        echo 'hello this mainPage';
     }
 }
 

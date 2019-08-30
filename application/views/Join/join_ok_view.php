@@ -23,6 +23,7 @@
     <?php endforeach ?>
     </tbody>
 </table>
+<meta http-equiv="refresh" content="2;URL='http://34.80.199.17/Join/main/'">
 </body>
 </html>
 
