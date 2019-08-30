@@ -17,7 +17,7 @@
         <input type="hidden" id = "hidden" value="<?php echo $value?>">
     <?php endforeach;?>
     <br>
-<button type="submit" class = 'accountBtn' onclick="location.href='/Join/joinOK/'+$('#ID').val()+'/'+$('#Email').val()"><?php echo $btnName;?></button>
+<button type="submit" class = 'accountBtn' onclick="location.href='/Join/joinCheck/'+$('#ID').val()+'/'+$('#Email').val()"><?php echo $btnName;?></button>
 
 <!---->
 <?php //$result = $this->debug->debug_var($key);?>
