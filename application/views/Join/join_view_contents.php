@@ -31,7 +31,10 @@
         console.log(pwVal);
 
         $(".accountBtn").click(function () {
-           alert('asdf');
+
+            var pwVal = $('#PW').val();
+            console.log(pwVal);
+            alert(pwVal);
         });
     });
 </script>
