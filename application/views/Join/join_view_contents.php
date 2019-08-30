@@ -10,9 +10,9 @@
     <?php foreach($contents as $key => $value) :?>
     <p><?php echo $value;?></p>
         <?php if($key == '1'):?>
-            <input type="password" id = "PW" name="input"+<?php echo $value?>>
+            <input type="password" id = "<?php echo $value?>">
         <?php else:?>
-            <input type="text" name="input"+<?php echo $value?>>
+            <input type="text" id = "<?php echo $value?>">
         <?php endif;?>
     <?php endforeach;?>
     <br>
@@ -26,7 +26,6 @@
 <script type="text/javascript">
     $(document).ready(function(){
 
-        //var idVal = $('input[name=input+<?php //echo $value?>//]');
         var pwVal = $('#PW').val();
         console.log(pwVal);
 
