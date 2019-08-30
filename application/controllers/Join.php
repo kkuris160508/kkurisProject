@@ -24,11 +24,7 @@ class Join extends CI_Controller{
 //        echo $result;
     }
 
-    public function joinOK(){
-        $tmp = parent::joinForm()->data;
-        $result = $this->debug->debug_var($tmp);
-        echo $result;
-    }
+
 }
 
 ?>
