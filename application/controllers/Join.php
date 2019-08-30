@@ -43,7 +43,7 @@ class Join extends CI_Controller{
                 $this->load->view('Join/join_ok_view');
             }
         } else {
-            $this->load->view('Join/join_check_view',$data);
+            $this->load->view('Join/join_check_view',$data['accountTB']);
         }
     }
 
