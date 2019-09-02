@@ -19,7 +19,7 @@ class Todo_m extends CI_Model{
         return $result;
     }
 
-    function get_view($id){
+    function get_views($id){
         $sql = "SELECT * FROM items WHERE id = '" .$id . "'";
         $query = $this->db->query($sql);
         $result = $query->row();
