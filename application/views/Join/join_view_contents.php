@@ -18,7 +18,7 @@
         <?php else:?>
             <input type="text" name = "<?php echo $value?>" id = "<?php echo $value?>" placeholder="<?php echo $value?>">
         <?php endif;?>
-
+        <input type = 'hidden' name= "<?php echo $value?>">
     <?php endforeach;?>
     <br>
 
