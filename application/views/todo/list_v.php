@@ -21,7 +21,7 @@
     </header> <!-- Header End -->
     <nav id="gnb"> <!-- gnb start -->
         <ul>
-            <li><a rel="external" href="/main/lists/">todo 애플리케이션 프로그램</a></li>
+            <li><a rel="external" href="/Main/lists/">todo 애플리케이션 프로그램</a></li>
         </ul>
     </nav><!-- gnb end -->
     <article id="board_area">
@@ -46,7 +46,7 @@
                         <?php echo $lt -> id;?>
                     </th>
                     <td>
-                        <a rel="external" href="/main/view/<?php echo $lt -> id; ?>">
+                        <a rel="external" href="/Main/view/<?php echo $lt -> id; ?>">
                             <?php echo $lt -> content;?>
                         </a>
                     </td>
@@ -63,7 +63,7 @@
             </tbody>
             <tfoot>
             <tr>
-                <th colspan="4"><a href="/main/write/" class="btn btn-success">
+                <th colspan="4"><a href="/Main/write/" class="btn btn-success">
                         쓰기
                     </a></th>
             </tr>
