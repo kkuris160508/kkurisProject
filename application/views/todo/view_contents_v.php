@@ -26,4 +26,3 @@
         </table>
     </article>
 
-        <?php echo $this->benchmark->elapsed_time();?>

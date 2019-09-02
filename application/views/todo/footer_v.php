@@ -6,5 +6,7 @@
     </blockquote>
 </footer>
 </div>
+<p>Page has been rendered <?php echo $this->benchmark->elapsed_time();?> seconds</p>
 </body>
 </html>
+
