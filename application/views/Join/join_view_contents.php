@@ -17,6 +17,7 @@
         <input type="hidden" id = "hidden" value="<?php echo $value?>">
     <?php endforeach;?>
     <br>
+    <input type="hidden" name = "Password" value="Password">
 <button type="submit" class = 'accountBtn' onclick="location.href='/Join/joinCheck/'+$('#ID').val()+'/'+$('#Email').val()"><?php echo $btnName;?></button>
 
 <!---->
