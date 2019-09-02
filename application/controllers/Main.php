@@ -47,9 +47,10 @@ class Main extends CI_Controller{
 
             exit;
         } else {
-            $this->load->view('todo/header_v');
+//            $this->load->view('todo/header_v');
+//            $this->load->view('todo/write_contents_v');
+//            $this->load->view('todo/footer_v');
             $this->load->view('todo/write_contents_v');
-            $this->load->view('todo/footer_v');
         }
     }
 }
