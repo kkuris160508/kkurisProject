@@ -30,9 +30,10 @@ class Join extends CI_Controller{
         $data['accountTB'] = $this->Join_model->getAccount($id, $email); // getAccount 메서드 사용
         $this->load->view('Join/join_check_view',$data); //모델에서 가져온 값을 뷰에 전달. view 에서는 accountTB 를 받음
         //전달 받은 id, pw, email 을 DB 에 ID, pw, email 을 select 한 리턴 값과 비교 하여 맞으면 OK page, 아니면 오류? 다시? 페이지로
+        $pw = $this->input->post('Password');
 
 //        $tmpVar = $data['accountTB'][0]->ID;
-        $result = $this->debug->debug_var($_REQUEST);
+        $result = $this->debug->debug_var($pw);
         echo $result;
 
         if(!$data['accountTB']) {
