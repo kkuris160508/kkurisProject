@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="todo_m 함수명 변경">
-      <change beforePath="$PROJECT_DIR$/application/views/todo/list_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/todo/list_v.php" afterDir="false" />
+    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="view 수정 - 부트스트랩 css CDN 링크 적용">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -93,8 +93,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/todo/list_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="55" column="24" lean-forward="true" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+            <state relative-caret-position="391">
+              <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -310,28 +310,7 @@
       <workItem from="1566393166217" duration="887000" />
       <workItem from="1566434725670" duration="8038000" />
       <workItem from="1566451578138" duration="2043000" />
-      <workItem from="1566828260309" duration="80403000" />
-    </task>
-    <task id="LOCAL-00122" summary="등록 버튼 클릭 시 작업 시작">
-      <created>1567145636543</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1567145636543</updated>
-    </task>
-    <task id="LOCAL-00123" summary="등록 버튼 클릭 시 작업 시작">
-      <created>1567145736824</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1567145736824</updated>
-    </task>
-    <task id="LOCAL-00124" summary="등록 버튼 클릭 시 작업 시작">
-      <created>1567145845986</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1567145845986</updated>
+      <workItem from="1566828260309" duration="80936000" />
     </task>
     <task id="LOCAL-00125" summary="등록 버튼 클릭 시 작업 시작">
       <created>1567147248070</created>
@@ -655,11 +634,32 @@
       <option name="project" value="LOCAL" />
       <updated>1567403017958</updated>
     </task>
-    <option name="localTasksCounter" value="171" />
+    <task id="LOCAL-00171" summary="view 수정">
+      <created>1567403330977</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1567403330977</updated>
+    </task>
+    <task id="LOCAL-00172" summary="view 수정">
+      <created>1567403412141</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1567403412141</updated>
+    </task>
+    <task id="LOCAL-00173" summary="view 수정 - 부트스트랩 css CDN 링크 적용">
+      <created>1567403728895</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1567403728895</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92862000" />
+    <option name="totallyTimeSpent" value="93395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -759,7 +759,9 @@
     <MESSAGE value="등록 버튼 클릭 시 작업 시작" />
     <MESSAGE value="처음부터 다시 main 생성" />
     <MESSAGE value="todo_m 함수명 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="todo_m 함수명 변경" />
+    <MESSAGE value="view 수정" />
+    <MESSAGE value="view 수정 - 부트스트랩 css CDN 링크 적용" />
+    <option name="LAST_COMMIT_MESSAGE" value="view 수정 - 부트스트랩 css CDN 링크 적용" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/system/database/drivers/mysqli/mysqli_driver.php">
@@ -1124,8 +1126,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/todo/list_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="55" column="24" lean-forward="true" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
+        <state relative-caret-position="391">
+          <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
         </state>
       </provider>
     </entry>
