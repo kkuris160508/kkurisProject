@@ -6,8 +6,8 @@
     <title>Member</title>
 </head>
 <body>
-<?php echo $result = $this->debug->debug_var($data);?>
-<?php echo $result;?>
+<?php //echo $result = $this->debug->debug_var($accountTB);?>
+<?php //echo $result;?>
 <table>
     <thead>
     <tr>
