@@ -6,8 +6,8 @@
     <title>Member</title>
 </head>
 <body>
-<?php //echo $result = $this->debug->debug_var($accountInfo);?>
-<?php //echo $result;?>
+<?php echo $result = $this->debug->debug_var($data);?>
+<?php echo $result;?>
 <table>
     <thead>
     <tr>
@@ -17,7 +17,7 @@
     </tr>
     </thead>
     <tbody>
-        <?php foreach($accountTB as $item)?>
+        <?php foreach($data as $item)?>
         <tr>
             <td><?=$item->ID?></td>
             <td><?=$item->PW?></td>
