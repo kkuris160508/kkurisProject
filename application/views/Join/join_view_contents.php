@@ -1,29 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: chris
- * Date: 2019-08-29
- * Time: 오후 4:21
- */
-
-?>
-    <?php foreach($contents as $key => $value) :?>
-    <p><?php echo $value;?></p>
-        <?php if($key == '1'):?>
-            <input type="password" id = "<?php echo $value?>" placeholder="<?php echo $value?>">
-        <?php else:?>
-            <input type="text" id = "<?php echo $value?>" placeholder="<?php echo $value?>">
-        <?php endif;?>
-        <input type="hidden" id = "hidden" value="<?php echo $value?>">
-    <?php endforeach;?>
-    <br>
-    <input type="hidden" name = "Password" value="Password">
-<button type="submit" class = 'accountBtn' onclick="location.href='/Join/joinCheck/'+$('#ID').val()+'/'+$('#Email').val()"><?php echo $btnName;?></button>
-
-<!---->
-<?php //$result = $this->debug->debug_var($key);?>
-<?php //echo $result;?>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function(){
@@ -33,3 +7,22 @@
 
     });
 </script>
+
+    <?php foreach($contents as $key => $value) :?>
+    <p><?php echo $value;?></p>
+        <?php if($key == '1'):?>
+            <input type="password" id = "<?php echo $value?>" placeholder="<?php echo $value?>">
+            <?php echo $_REQUEST['password'] = $value;?>
+        <?php else:?>
+            <input type="text" id = "<?php echo $value?>" placeholder="<?php echo $value?>">
+        <?php endif;?>
+
+    <?php endforeach;?>
+    <br>
+<!--    <input type="hidden" name = "Password" value="Password">-->
+<button type="submit" class = 'accountBtn' onclick="location.href='/Join/joinCheck/'+$('#ID').val()+'/'+$('#Email').val()"><?php echo $btnName;?></button>
+
+<!---->
+<?php //$result = $this->debug->debug_var($key);?>
+<?php //echo $result;?>
+
