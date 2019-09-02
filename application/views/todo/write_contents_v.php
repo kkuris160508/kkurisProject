@@ -1,3 +1,7 @@
+    <article id="board_area">
+        <header>
+            <h1>Todo 쓰기</h1>
+        </header>
 
         <form class="form-horizontal" method="post" action="" id="write_action">
             <fieldset>
