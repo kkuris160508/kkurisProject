@@ -14,8 +14,7 @@
     <?php foreach($contents as $key => $value) :?>
     <p><?php echo $value;?></p>
         <?php if($key == '1'):?>
-            <input type="password" id = "<?php echo $value?>" placeholder="<?php echo $value?>">
-            <input type="hidden" name = "Password" value="Password">
+            <input type="password" name="<?php echo $value?>" id = "<?php echo $value?>" placeholder="<?php echo $value?>">
         <?php else:?>
             <input type="text" id = "<?php echo $value?>" placeholder="<?php echo $value?>">
         <?php endif;?>
