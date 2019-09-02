@@ -41,3 +41,4 @@
         </table>
         <div><p></p></div>
     </article>
+        <?php echo $this->benchmark->elapsed_time();?>

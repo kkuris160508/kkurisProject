@@ -30,3 +30,4 @@
 <!--        </form>-->
         <?php echo form_close();?>
     </article>
+        <?php echo $this->benchmark->elapsed_time();?>
