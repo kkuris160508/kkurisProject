@@ -11,7 +11,7 @@ class Todo_m extends CI_Model{
         parent::__construct();
     }
 
-    function get_lists(){
+    function get_list(){
         $sql = "SELECT * FROM items";
         $query = $this->db->query($sql);
         $result = $query->result();
