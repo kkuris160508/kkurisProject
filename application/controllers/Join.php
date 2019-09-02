@@ -24,12 +24,7 @@ class Join extends CI_Controller{
 //        echo $result;
     }
 
-    public function joinCheck($id, $email, $pw = 1234){
-        $accountInfo = array(
-            'ID' => $id,
-            'PW' => $pw,
-            'EMAIL' => $email
-        );
+    public function joinCheck($id, $email, $pw){
 
         $this->load->model('Join_model'); //모델 로드
         $data['accountTB'] = $this->Join_model->getAccount($id, $email); // getAccount 메서드 사용
@@ -42,7 +37,7 @@ class Join extends CI_Controller{
 
         if(!$data['accountTB']) {
             $this->load->model('Join_model');
-            $this->Join_model->insAccount($id, $email);
+            $this->Join_model->insAccount($id, $email, $pw);
             $data['accountTB'] = $this->Join_model->getAccount($id, $email);
 
             $this->load->view('Join/join_ok_view', $data);

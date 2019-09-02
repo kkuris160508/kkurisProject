@@ -20,7 +20,7 @@ class Join_model extends CI_Model{
 //        echo $query;
     }
 
-    public function insAccount($id, $email, $pw = 1234){
+    public function insAccount($id, $email, $pw){
         $data = array(
             'ID'=>$id,
             'PW'=>$pw,
