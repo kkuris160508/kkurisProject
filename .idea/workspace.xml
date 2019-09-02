@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="view 적용">
-      <change afterPath="$PROJECT_DIR$/application/views/todo/footer_v.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/views/todo/header_v.php" afterDir="false" />
+    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="view 분할">
       <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/todo/list_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/todo/list_contents_v.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/todo/view_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/todo/view_contents_v.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/Todo_m.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Todo_m.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="527">
+              <caret line="31" column="82" selection-start-line="31" selection-start-column="82" selection-end-line="31" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -31,13 +28,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+            <state relative-caret-position="657">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/todo/view_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="476">
@@ -49,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/todo/list_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+            <state relative-caret-position="357">
+              <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -58,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/todo/header_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+            <state relative-caret-position="493">
+              <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -102,7 +99,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/views/header.php" />
         <option value="$PROJECT_DIR$/application/views/content.php" />
         <option value="$PROJECT_DIR$/application/views/members.php" />
         <option value="$PROJECT_DIR$/php.ini" />
@@ -146,13 +142,14 @@
         <option value="$PROJECT_DIR$/application/models/todo_m.php" />
         <option value="$PROJECT_DIR$/application/views/todo/todo_v.php" />
         <option value="$PROJECT_DIR$/application/views/todo/view_v.php" />
-        <option value="$PROJECT_DIR$/application/models/Todo_m.php" />
         <option value="$PROJECT_DIR$/application/views/todo/list_footer_v.php" />
         <option value="$PROJECT_DIR$/application/views/todo/list_v.php" />
         <option value="$PROJECT_DIR$/application/views/todo/list_contents_v.php" />
         <option value="$PROJECT_DIR$/application/views/todo/list_header_v.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Main.php" />
         <option value="$PROJECT_DIR$/application/views/todo/view_contents_v.php" />
+        <option value="$PROJECT_DIR$/application/views/todo/header_v.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Main.php" />
+        <option value="$PROJECT_DIR$/application/models/Todo_m.php" />
       </list>
     </option>
   </component>
@@ -282,21 +279,7 @@
       <workItem from="1566393166217" duration="887000" />
       <workItem from="1566434725670" duration="8038000" />
       <workItem from="1566451578138" duration="2043000" />
-      <workItem from="1566828260309" duration="83007000" />
-    </task>
-    <task id="LOCAL-00129" summary="등록 버튼 클릭 시 작업 시작">
-      <created>1567148951272</created>
-      <option name="number" value="00129" />
-      <option name="presentableId" value="LOCAL-00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1567148951273</updated>
-    </task>
-    <task id="LOCAL-00130" summary="등록 버튼 클릭 시 작업 시작">
-      <created>1567149492939</created>
-      <option name="number" value="00130" />
-      <option name="presentableId" value="LOCAL-00130" />
-      <option name="project" value="LOCAL" />
-      <updated>1567149492939</updated>
+      <workItem from="1566828260309" duration="83937000" />
     </task>
     <task id="LOCAL-00131" summary="등록 버튼 클릭 시 작업 시작">
       <created>1567149562567</created>
@@ -627,11 +610,25 @@
       <option name="project" value="LOCAL" />
       <updated>1567404513325</updated>
     </task>
-    <option name="localTasksCounter" value="178" />
+    <task id="LOCAL-00178" summary="view 분할">
+      <created>1567406007445</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1567406007445</updated>
+    </task>
+    <task id="LOCAL-00179" summary="view 분할">
+      <created>1567406126967</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1567406126967</updated>
+    </task>
+    <option name="localTasksCounter" value="180" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95466000" />
+    <option name="totallyTimeSpent" value="96396000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -734,7 +731,8 @@
     <MESSAGE value="view 수정" />
     <MESSAGE value="view 수정 - 부트스트랩 css CDN 링크 적용" />
     <MESSAGE value="view 적용" />
-    <option name="LAST_COMMIT_MESSAGE" value="view 적용" />
+    <MESSAGE value="view 분할" />
+    <option name="LAST_COMMIT_MESSAGE" value="view 분할" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/php.ini">
@@ -1055,24 +1053,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/todo/list_contents_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1083,24 +1067,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/todo/view_contents_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/todo/list_contents_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/todo/header_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        <state relative-caret-position="493">
+          <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+        <state relative-caret-position="657">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/todo/view_contents_v.php">
+    <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="527">
+          <caret line="31" column="82" selection-start-line="31" selection-start-column="82" selection-end-line="31" selection-end-column="82" />
         </state>
       </provider>
     </entry>
