@@ -15,13 +15,14 @@
     <p><?php echo $value;?></p>
         <?php if($key == '1'):?>
             <input type="password" id = "<?php echo $value?>" placeholder="<?php echo $value?>">
+            <input type="hidden" name = "Password" value="Password">
         <?php else:?>
             <input type="text" id = "<?php echo $value?>" placeholder="<?php echo $value?>">
         <?php endif;?>
 
     <?php endforeach;?>
     <br>
-<!--    <input type="hidden" name = "Password" value="Password">-->
+
 <button type="submit" class = 'accountBtn' onclick="location.href='/Join/joinCheck/'+$('#ID').val()+'/'+$('#Email').val()"><?php echo $btnName;?></button>
 
 <!---->
