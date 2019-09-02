@@ -23,5 +23,11 @@ class Main extends CI_Controller{
         $data['list'] = $this->todo_m->get_list();
         $this->load->view('todo/list_v', $data);
     }
+
+    function view(){
+        $id = $this->uri->segment(3); // todo 번호에 해당하는 데이터 가져오기
+        $data['views'] = $this->todo_m->get_views($id);
+        $this->load->view('todo/view_v', $data);
+    }
 }
 ?>
