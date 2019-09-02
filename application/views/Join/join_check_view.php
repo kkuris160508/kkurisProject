@@ -17,10 +17,11 @@
     </tr>
     </thead>
     <tbody>
+        <?php foreach($accountTB as $item)?>
         <tr>
-            <td><?php echo $accountTB->ID;?></td>
-            <td><?php echo $accountTB->PW;?></td>
-            <td><?php echo $accountTB->EMAIL;?></td>
+            <td><?=$item->ID?></td>
+            <td><?=$item->PW?></td>
+            <td><?=$item->EMAIL?></td>
         </tr>
     </tbody>
 </table>
