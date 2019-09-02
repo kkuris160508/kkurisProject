@@ -9,12 +9,12 @@
                     </div>
                     <label class="control-label" for="input02">시작일</label>
                     <div class="controls">
-                        <input type="text" class="input-xlarge" id="input02" name="created_on">
+                        <input type="text" class="input-xlarge" id="input02" name="created_on" placeholder="YYYY-MM-DD">
                         <p class="help-block"></p>
                     </div>
                     <label class="control-label" for="input03">종료일</label>
                     <div class="controls">
-                        <input type="text" class="input-xlarge" id="input03" name="due_date">
+                        <input type="text" class="input-xlarge" id="input03" name="due_date" placeholder="YYYY-MM-DD">
                         <p class="help-block"></p>
                     </div>
 
