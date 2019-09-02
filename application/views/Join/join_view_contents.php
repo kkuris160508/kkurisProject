@@ -9,7 +9,7 @@
 
     });
 </script>
-    <?php echo form_open('/Join/joinCheck')?>
+
 
     <?php foreach($contents as $key => $value) :?>
     <p><?php echo $value;?></p>
@@ -23,7 +23,7 @@
     <br>
 <!--    <input type="hidden" name = "Password" value="Password">-->
 <button type="submit" class = 'accountBtn' onclick="location.href='/Join/joinCheck/'+$('#ID').val()+'/'+$('#Email').val()"><?php echo $btnName;?></button>
-</form>
+
 <!---->
 <?php //$result = $this->debug->debug_var($key);?>
 <?php //echo $result;?>
