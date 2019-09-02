@@ -14,7 +14,9 @@
 <body>
 <div id="main">
     <header id="header" data-role="header" data-position="fixed"><!-- Header Start -->
-
+        <blockquote>
+            <p>CodeIgniter</p>
+        </blockquote>
     </header> <!-- Header End -->
     <nav id="gnb"> <!-- gnb start -->
         <ul>
