@@ -53,5 +53,12 @@ class Main extends CI_Controller{
             $this->load->view('todo/footer_v');
         }
     }
+
+    function delete(){
+        $id = $this->uri->segment(3);
+        $this->todo_m->delete_todo($id);
+
+        redirect('/Main/lists');
+    }
 }
 ?>
