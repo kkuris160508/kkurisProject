@@ -43,7 +43,7 @@ class Main extends CI_Controller{
 
             $this->todo_m->insert_todo($content, $created_on, $due_date); //전송받은 데이터를 파라미터로 todo_m 에 insert_todo 함수 실행
 
-            redirect('/Main/lists/');
+            redirect('/Main/lists');
 
             exit;
         } else {
