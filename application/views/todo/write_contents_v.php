@@ -1,40 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
-    <title>CodeIgniter</title>
-    <!--[if lt IE 9]>
-    <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-</head>
-<body>
-<div id="main">
-    <header id="header" data-role="header" data-position="fixed">
-        <blockquote>
-            <p>
-                만들면서 배우는 CodeIgniter
-            </p>
-            <small>실행 예제</small>
-        </blockquote>
-    </header>
 
-    <nav id="gnb">
-        <ul>
-            <li>
-                <a rel="external" href="/todo/index.php/main/lists/">todo 애플리케이션 프로그램</a>
-            </li>
-        </ul>
-    </nav>
-    <article id="board_area">
-        <header>
-            <h1>Todo 쓰기</h1>
-        </header>
-
-        <form class="form-horizontal" method="post" action="" id="write_action">
+        <form class="form-horizontal" accept-charset="utf-8" method="post" action="http://34.80.199.17/Main/lists" id="write_action">
             <fieldset>
                 <div class="control-group">
                     <label class="control-label" for="input01">내용</label>
@@ -60,15 +25,3 @@
             </fieldset>
         </form>
     </article>
-
-    <footer>
-        <blockquote>
-            <p>
-                <a class="azubu" href="http://www.cikorea.net/" target="blank">CodeIgniter 한국 사용자 포럼</a>
-            </p>
-            <small>Copyright by <em class="black"><a href="mailto:zhfldi4@gmail.com">Palpit</a></em></small>
-        </blockquote>
-    </footer>
-</div>
-</body>
-</html>
