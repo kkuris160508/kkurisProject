@@ -21,7 +21,7 @@
     </header> <!-- Header End -->
     <nav id="gnb"> <!-- gnb start -->
         <ul>
-            <li><a rel="external" href="/todo/index.php/main/lists/">todo 애플리케이션 프로그램</a></li>
+            <li><a rel="external" href="/main/lists/">todo 애플리케이션 프로그램</a></li>
         </ul>
     </nav><!-- gnb end -->
     <article id="board_area">
@@ -46,7 +46,7 @@
                         <?php echo $lt -> id;?>
                     </th>
                     <td>
-                        <a rel="external" href="/todo/index.php/main/view/<?php echo $lt -> id; ?>">
+                        <a rel="external" href="/main/view/<?php echo $lt -> id; ?>">
                             <?php echo $lt -> content;?>
                         </a>
                     </td>
@@ -63,7 +63,7 @@
             </tbody>
             <tfoot>
             <tr>
-                <th colspan="4"><a href="/todo/index.php/main/write/" class="btn btn-success">
+                <th colspan="4"><a href="/main/write/" class="btn btn-success">
                         쓰기
                     </a></th>
             </tr>
@@ -75,7 +75,7 @@
     <footer>
         <blockquote>
             <p><a class="azubu" href="http://www.cikorea.net/" target="blank">CodeIgniter 한국 사용자 포럼</a></p>
-            <small>Copyright by <em class="black"><a href="mailto:zhfldi4@gmail.com">Palpit</a></em></small>
+            <small>Copyright by <em class="black"><a href="mailto:entz160508@gmail.com">Chris</a></em></small>
         </blockquote>
     </footer>
 </div>
