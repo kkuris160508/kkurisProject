@@ -21,13 +21,19 @@ class Main extends CI_Controller{
 
     function lists(){
         $data['list'] = $this->todo_m->get_list();
-        $this->load->view('todo/list_v', $data);
+        $this->load->view('todo/header_v');
+        $this->load->view('todo/list_contents_v', $data);
+        $this->load->view('todo/footer_v');
     }
 
     function view(){
-        $id = $this->uri->segment(3); // todo 번호에 해당하는 데이터 가져오기
+        $id = $this->uri->segment(3); //todo 번호에 해당하는 데이터 가져오기
         $data['views'] = $this->todo_m->get_views($id);
-        $this->load->view('todo/view_v', $data);
+        $this->load->view('todo/header_v');
+        $this->load->view('todo/view_contents_v', $data);
+        $this->load->view('todo/footer_v');
     }
+
+    // write controller 추가
 }
 ?>
