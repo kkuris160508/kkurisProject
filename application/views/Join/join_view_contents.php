@@ -16,14 +16,14 @@
         <?php if($key == '1'):?>
             <input type="password" name="<?php echo $value?>" id = "<?php echo $value?>" placeholder="<?php echo $value?>">
         <?php else:?>
-            <input type="text" id = "<?php echo $value?>" placeholder="<?php echo $value?>">
+            <input type="text" name = "<?php echo $value?>" id = "<?php echo $value?>" placeholder="<?php echo $value?>">
         <?php endif;?>
 
     <?php endforeach;?>
     <br>
 
-<button type="submit" class = 'accountBtn' onclick="location.href='/Join/joinCheck/'+$('#ID').val()+'/'+$('#Email').val()"><?php echo $btnName;?></button>
-
+<!--<button type="submit" class = 'accountBtn' onclick="location.href='/Join/joinCheck/'+$('#ID').val()+'/'+$('#Email').val()">--><?php //echo $btnName;?><!--</button>-->
+<button type="submit" class = 'accountBtn' onclick="location.href='/Join/joinCheck/'"><?php echo $btnName;?></button>
 <!---->
 <?php //$result = $this->debug->debug_var($key);?>
 <?php //echo $result;?>
