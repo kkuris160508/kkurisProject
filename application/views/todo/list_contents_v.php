@@ -2,6 +2,7 @@
     <thead>
     <tr>
         <th scope="col">번호</th>
+        <th scope="col">제목</th>
         <th scope="col">내용</th>
         <th scope="col">시작일</th>
         <th scope="col">종료일</th>
@@ -17,7 +18,12 @@
             </th>
             <td>
                 <a rel="external" href="/Main/view/<?php echo $lt -> id; ?>">
-                    <?php echo $lt -> content;?>
+                    <?php echo $lt -> subject;?>
+                </a>
+            </td>
+            <td>
+                <a rel="external" href="/Main/view/<?php echo $lt -> id; ?>">
+                    <?php echo $lt -> contents;?>
                 </a>
             </td>
             <td>

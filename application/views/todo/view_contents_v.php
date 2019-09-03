@@ -3,12 +3,16 @@
             <thead>
             <tr>
                 <th scope="col"><?php echo $views -> id;?> 번 할일</th>
+                <th scope="col"><?php echo $views -> subject;?></th>
                 <th scope="col"><?php echo $views -> created_on;?></th>
                 <th scope="col"><?php echo $views -> due_date;?></th>
             </tr>
             </thead>
             <tbody>
             <tr>
+                <th>
+                    <?php echo $views -> subject;?>
+                </th>
                 <th colspan="3">
                     <?php echo $views -> content;?>
                 </th>
