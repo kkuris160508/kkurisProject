@@ -9,23 +9,18 @@
             </thead>
             <tbody>
             <?php
-            foreach ($list as $lt) {
+            foreach($list as $lt)
+            {
                 ?>
                 <tr>
-                    <th scope="row">
-                        <?php echo $lt -> id;?>
-                    </th>
+                    <th scope="row"><?php echo $lt -> board_id;?></th>
+                    <td><a rel="external" href="/bbs/<?php echo $this -> uri -> segment(1); ?>/view/<?php echo $this -> uri -> segment(3); ?>/<?php echo $lt -> board_id; ?>"> <?php echo $lt -> subject;?></a></td>
+                    <td><?php echo $lt -> user_name;?></td>
+                    <td><?php echo $lt -> hits;?></td>
                     <td>
-                        <a rel="external" href="/Main/view/<?php echo $lt -> id; ?>">
-                            <?php echo $lt -> content;?>
-                        </a>
-                    </td>
-                    <td>
-                        <time datetime="<?php echo mdate("%Y-%M-%j", human_to_unix($lt -> created_on)); ?>"><?php echo $lt -> created_on;?></time>
-                    </td>
-                    <td>
-                        <time datetime="<?php echo mdate("%Y-%M-%j", human_to_unix($lt -> due_date)); ?>"><?php echo $lt -> due_date;?></time>
-                    </td>
+                        <time datetime="<?php echo mdate("%Y-%M-%j", human_to_unix($lt -> reg_date)); ?>">
+                            <?php echo mdate("%Y-%M-%j", human_to_unix($lt -> reg_date));?>
+                        </time></td>
                 </tr>
                 <?php
             }

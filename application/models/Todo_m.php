@@ -11,10 +11,30 @@ class Todo_m extends CI_Model{
         parent::__construct();
     }
 
-    function get_list(){
-        $sql = "SELECT * FROM items";
-        $query = $this->db->query($sql);
-        $result = $query->result();
+//    function get_list(){
+//        $sql = "SELECT * FROM items";
+//        $query = $this->db->query($sql);
+//        $result = $query->result();
+//
+//        return $result;
+//    }
+
+    function get_list($table = 'items', $type = '', $offset = '', $limit = '') {
+        $limit_query = '';
+
+        if ($limit != '' OR $offset != '') {
+            // 페이징이 있을 경우 처리
+            $limit_query = ' LIMIT ' . $offset . ', ' . $limit;
+        }
+
+        $sql = "SELECT * FROM " . $table . " ORDER BY id DESC " . $limit_query;
+        $query = $this -> db -> query($sql);
+
+        if ($type == 'count') {
+            $result = $query -> num_rows();
+        } else {
+            $result = $query -> result();
+        }
 
         return $result;
     }
