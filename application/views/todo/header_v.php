@@ -29,4 +29,5 @@
     <article id="board_area">
         <header>
             <h1>Todo 목록</h1>
+            <a href="/Main/login/" class="btn">로그인</a>
         </header>

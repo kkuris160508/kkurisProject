@@ -86,6 +86,15 @@ class Main extends CI_Controller{
         redirect('/Main/lists');
     }
 
+    function login(){
+        $id = $this->input->post('account_id');
+        $pw = $this->input->post('Password');
+        $email = $this->input->post('EMAIL');
+
+        $this->todo_m->insert_account_todo($id, $pw, $email);
+
+    }
+
     function test(){
         printf("URI Segment 1 : %s <br/>", $this->uri->segment(1));
         printf("URI Segment 2 : %s <br/>", $this->uri->segment(2));

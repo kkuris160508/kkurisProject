@@ -82,6 +82,11 @@ class Todo_m extends CI_Model{
         $sql = "DELETE FROM items WHERE id = '" . $id . "'";
         $this->db->query($sql);
     }
+
+    function insert_account_todo($accountID, $pw, $email){
+        $sql = "INSERT INTO accountTB (account_id, PW, EMAIL) VALUES ('" .$accountID. "','" .$pw. "','".$email."')";
+        $query = $this->db->query($sql);
+    }
 }
 
 ?>
