@@ -93,6 +93,9 @@ class Main extends CI_Controller{
 
         $this->todo_m->insert_account_todo($id, $pw, $email);
 
+        $this->load->view('todo/header_v');
+        $this->load->view('todo/login_contents_v');
+        $this->load->view('todo/footer_v');
     }
 
     function test(){
