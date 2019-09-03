@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="부트스트랩 table" />
+    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="부트스트랩 table">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -35,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/application/views/todo/footer_v.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <caret line="12" lean-forward="true" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -52,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/todo/header_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="79" lean-forward="true" selection-start-line="22" selection-start-column="79" selection-end-line="22" selection-end-column="79" />
+            <state relative-caret-position="425">
+              <caret line="25" column="26" lean-forward="true" selection-end-line="29" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -67,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="77" column="47" lean-forward="true" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="47" />
+            <state relative-caret-position="507">
+              <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -85,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/todo/list_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="49" lean-forward="true" selection-start-column="49" selection-end-column="49" />
+            <state relative-caret-position="878">
+              <caret line="92" selection-start-line="92" selection-end-line="92" />
             </state>
           </provider>
         </entry>
@@ -173,11 +175,11 @@
         <option value="$PROJECT_DIR$/application/config/config.php" />
         <option value="$PROJECT_DIR$/application/models/Todo_m.php" />
         <option value="$PROJECT_DIR$/application/controllers/Test.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Main.php" />
         <option value="$PROJECT_DIR$/application/views/todo/view_contents_v.php" />
         <option value="$PROJECT_DIR$/application/views/todo/write_contents_v.php" />
         <option value="$PROJECT_DIR$/application/views/todo/header_v.php" />
         <option value="$PROJECT_DIR$/application/views/todo/list_contents_v.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Main.php" />
       </list>
     </option>
   </component>
@@ -307,21 +309,7 @@
       <workItem from="1566393166217" duration="887000" />
       <workItem from="1566434725670" duration="8038000" />
       <workItem from="1566451578138" duration="2043000" />
-      <workItem from="1566828260309" duration="101109000" />
-    </task>
-    <task id="LOCAL-00170" summary="todo_m 함수명 변경">
-      <created>1567403017958</created>
-      <option name="number" value="00170" />
-      <option name="presentableId" value="LOCAL-00170" />
-      <option name="project" value="LOCAL" />
-      <updated>1567403017958</updated>
-    </task>
-    <task id="LOCAL-00171" summary="view 수정">
-      <created>1567403330977</created>
-      <option name="number" value="00171" />
-      <option name="presentableId" value="LOCAL-00171" />
-      <option name="project" value="LOCAL" />
-      <updated>1567403330977</updated>
+      <workItem from="1566828260309" duration="101359000" />
     </task>
     <task id="LOCAL-00172" summary="view 수정">
       <created>1567403412141</created>
@@ -652,11 +640,25 @@
       <option name="project" value="LOCAL" />
       <updated>1567477791632</updated>
     </task>
-    <option name="localTasksCounter" value="219" />
+    <task id="LOCAL-00219" summary="부트스트랩 table">
+      <created>1567477908317</created>
+      <option name="number" value="00219" />
+      <option name="presentableId" value="LOCAL-00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1567477908317</updated>
+    </task>
+    <task id="LOCAL-00220" summary="부트스트랩 table">
+      <created>1567478075071</created>
+      <option name="number" value="00220" />
+      <option name="presentableId" value="LOCAL-00220" />
+      <option name="project" value="LOCAL" />
+      <updated>1567478075071</updated>
+    </task>
+    <option name="localTasksCounter" value="221" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113568000" />
+    <option name="totallyTimeSpent" value="113818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1087,24 +1089,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/todo/footer_v.php">
+    <entry file="file://$PROJECT_DIR$/application/views/todo/view_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="77" column="47" lean-forward="true" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="47" />
+        <state relative-caret-position="714">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/todo/header_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="79" lean-forward="true" selection-start-line="22" selection-start-column="79" selection-end-line="22" selection-end-column="79" />
+        <state relative-caret-position="425">
+          <caret line="25" column="26" lean-forward="true" selection-end-line="29" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1115,17 +1110,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/todo/view_contents_v.php">
+    <entry file="file://$PROJECT_DIR$/application/views/todo/footer_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/todo/list_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="49" lean-forward="true" selection-start-column="49" selection-end-column="49" />
+        <state relative-caret-position="878">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
         </state>
       </provider>
     </entry>
