@@ -70,6 +70,15 @@
         </tr>
         <?php endforeach?>
     </tbody>
+    <div class = "text-center">
+        <ul class = "pagination">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+        </ul>
+    </div>
     <tfoot>
     <tr>
         <th colspan="4"><a href="/Main/write/" class="btn btn-success">
