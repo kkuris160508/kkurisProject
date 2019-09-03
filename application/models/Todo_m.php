@@ -19,7 +19,7 @@ class Todo_m extends CI_Model{
 //        return $result;
 //    }
 
-    function get_list($table = 'items', $type = '', $offset = '', $limit = '') {
+    function get_list($table = 'ci_board', $type = '', $offset = '', $limit = '') {
         $limit_query = '';
 
         if ($limit != '' OR $offset != '') {
