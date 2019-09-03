@@ -1,6 +1,6 @@
 
-        <table cellspacing="0" cellpadding="0" class="table table-striped">
-            <thead>
+        <table class="table table-striped">
+            <thead class="thead-dark">
             <tr>
                 <th scope="col"><?php echo $views -> id;?> 번 할일</th>
                 <th scope="col"><?php echo $views -> content;?></th>
