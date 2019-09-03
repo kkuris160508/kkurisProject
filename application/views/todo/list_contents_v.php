@@ -23,7 +23,7 @@
             </td>
             <td>
                 <a rel="external" href="/Main/view/<?php echo $lt -> id; ?>">
-                    <?php echo $lt -> contents;?>
+                    <?php echo $lt -> content;?>
                 </a>
             </td>
             <td>
