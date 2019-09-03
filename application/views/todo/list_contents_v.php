@@ -72,7 +72,7 @@
     </tbody>
     <tfoot>
     <tr>
-        <th colspan="4"><a href="/Main/write/" class="btn btn-success">
+        <th colspan="7"><a href="/Main/write/" class="btn btn-success">
                 쓰기
             </a></th>
     </tr>
