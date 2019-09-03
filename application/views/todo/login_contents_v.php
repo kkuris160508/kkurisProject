@@ -23,7 +23,7 @@
         </div>
 
         <div class="form-actions">
-            <input type="submit" class="btn btn-primary" id="write_btn" value="로그인인" />
+            <input type="submit" class="btn btn-primary" id="write_btn" value="로그인" />
        </div>
     </div>
 </fieldset>
