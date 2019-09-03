@@ -12,7 +12,7 @@
         <label class="control-label" for="input01">패스워드</label>
         <div class="controls">
             <!--                        <input type="text" class="input-xlarge" id="input01" name="content">-->
-            <?php echo form_input('Password','',"type=password")?> <!-- form open 사용해야함 csrf protection TRUE 일 때 POST 방식으로 DB 접근권한을 한번 막기때문에 form open 사용-->
+            <?php echo form_input('Password','',"type='password'")?> <!-- form open 사용해야함 csrf protection TRUE 일 때 POST 방식으로 DB 접근권한을 한번 막기때문에 form open 사용-->
             <p class="help-block"></p>
         </div>
         <label class="control-label" for="input02">이메일</label>
