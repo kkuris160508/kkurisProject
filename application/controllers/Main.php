@@ -87,20 +87,22 @@ class Main extends CI_Controller{
     }
 
     function login(){
+        if($_POST){
+            $id = $this->input->post('account_id');
+            $pw = $this->input->post('Password');
+            $email = $this->input->post('EMAIL');
 
-        $id = $this->input->post('account_id');
-        $pw = $this->input->post('Password');
-        $email = $this->input->post('EMAIL');
+            $this->todo_m->insert_account_todo($id, $pw, $email);
 
-        $this->load->view('todo/login_header_v');
-        $this->load->view('todo/login_contents_v');
-        $this->load->view('todo/footer_v');
+            redirect('/Main/lists');
 
-        $this->todo_m->insert_account_todo($id, $pw, $email);
+            exit;
 
-        redirect('/Main/lists');
-
-
+        } else {
+            $this->load->view('todo/login_header_v');
+            $this->load->view('todo/login_contents_v');
+            $this->load->view('todo/footer_v');
+        }
     }
 
     function test(){
