@@ -49,7 +49,7 @@
                 <?php echo $lt -> id;?>
             </th>
             <th scope="row">
-                <?php echo $lt -> ID;?>
+                <?php echo $lt -> account_id;?>
             </th>
             <td>
                 <a rel="external" href="/Main/view/<?php echo $lt -> id; ?>">
