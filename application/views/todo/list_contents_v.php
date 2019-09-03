@@ -1,4 +1,4 @@
-<table cellspacing="0" cellpadding="0" class="table">
+<table class="table table-striped table-dark">
     <thead class="thead-dark">
     <tr>
         <th scope="col">번호</th>
