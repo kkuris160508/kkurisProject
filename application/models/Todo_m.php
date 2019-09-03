@@ -12,7 +12,10 @@ class Todo_m extends CI_Model{
     }
 
     function get_list(){
-        $sql = "SELECT * FROM items ORDER BY id DESC";
+        $sql = "SELECT * FROM items as it
+                LEFT JOIN accountTB as acc
+                ON it.writer = acc.no
+                ORDER BY id DESC";
         $query = $this->db->query($sql);
         $result = $query->result();
 

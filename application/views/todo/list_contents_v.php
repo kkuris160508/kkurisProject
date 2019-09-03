@@ -34,6 +34,7 @@
     <thead class="thead-dark">
     <tr>
         <th scope="col">번호</th>
+        <th scope="col">작성자</th>
         <th scope="col">제목</th>
         <th scope="col">내용</th>
         <th scope="col">시작일</th>
@@ -46,6 +47,9 @@
         <tr>
             <th scope="row">
                 <?php echo $lt -> id;?>
+            </th>
+            <th scope="row">
+                <?php echo $lt -> ID;?>
             </th>
             <td>
                 <a rel="external" href="/Main/view/<?php echo $lt -> id; ?>">
