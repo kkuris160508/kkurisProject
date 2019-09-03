@@ -85,5 +85,13 @@ class Main extends CI_Controller{
 
         redirect('/Main/lists');
     }
+
+    function test(){
+        printf("URI Segment 1 : %s <br/>", $this->uri->segment(1));
+        printf("URI Segment 2 : %s <br/>", $this->uri->segment(2));
+        printf("URI Segment 3 : %s <br/>", $this->uri->segment(3));
+        printf("URI Segment 4 : %s <br/>", $this->uri->segment(4));
+        printf("URI Segment 5 : %s <br/>", $this->uri->segment(5,'End'));
+    }
 }
 ?>
