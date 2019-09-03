@@ -47,7 +47,7 @@ class Main extends CI_Controller{
         $data['list'] = $this->todo_m->get_list();
         $this->load->view('todo/header_v');
         $this->load->view('todo/list_contents_v', $data);
-//        $this->load->view('todo/footer_v');
+        $this->load->view('todo/footer_v');
     }
 
     function view(){
@@ -55,7 +55,7 @@ class Main extends CI_Controller{
         $data['views'] = $this->todo_m->get_views($id);
         $this->load->view('todo/header_v');
         $this->load->view('todo/view_contents_v', $data);
-//        $this->load->view('todo/footer_v');
+        $this->load->view('todo/footer_v');
     }
 
     // write controller 추가
@@ -75,7 +75,7 @@ class Main extends CI_Controller{
         } else {
             $this->load->view('todo/header_v');
             $this->load->view('todo/write_contents_v');
-//            $this->load->view('todo/footer_v');
+            $this->load->view('todo/footer_v');
         }
     }
 
