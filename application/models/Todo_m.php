@@ -19,21 +19,40 @@ class Todo_m extends CI_Model{
 //        return $result;
 //    }
 
-    function get_list($table = 'ci_board', $type = '', $offset = '', $limit = '') {
-        $limit_query = '';
+//    function get_list($table = 'ci_board', $type = '', $offset = '', $limit = '') {
+//        $limit_query = '';
+//
+//        if ($limit != '' OR $offset != '') {
+//            // 페이징이 있을 경우 처리
+//            $limit_query = ' LIMIT ' . $offset . ', ' . $limit;
+//        }
+//
+//        $sql = "SELECT * FROM " . $table . " ORDER BY board_id DESC " . $limit_query;
+//        $query = $this -> db -> query($sql);
+//
+//        if ($type == 'count') {
+//            $result = $query -> num_rows();
+//        } else {
+//            $result = $query -> result();
+//        }
+//
+//        return $result;
+//    }
 
-        if ($limit != '' OR $offset != '') {
-            // 페이징이 있을 경우 처리
-            $limit_query = ' LIMIT ' . $offset . ', ' . $limit;
-        }
+    public function get_list($tbl='ci_board', $type='*', $offset=0, $limit=5)
+    {
+        $field = ($type == 'count') ? "count(*) AS cnt" : $type;
+        $limit_sql = ($offset != '' || $limit != '') ? " LIMIT ${offset}, ${limit}" : '';
 
-        $sql = "SELECT * FROM ci_board ORDER BY board_id DESC '{$limit_query}'";
-        $query = $this -> db -> query($sql);
-
-        if ($type == 'count') {
-            $result = $query -> num_rows();
+        if ($type=='count') {
+            $sql = "select ${field} from ${tbl}";
+            $query = $this->db->query($sql);
+            $row = $query->row();
+            $result = $row->cnt;
         } else {
-            $result = $query -> result();
+            $sql = "select ${field} from ${tbl} ORDER BY board_id DESC".$limit_sql;
+            $query = $this->db->query($sql);
+            $result = $query->result_array();
         }
 
         return $result;
