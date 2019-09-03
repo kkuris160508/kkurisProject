@@ -12,7 +12,7 @@ class Todo_m extends CI_Model{
     }
 
     function get_list(){
-        $sql = "SELECT * FROM items";
+        $sql = "SELECT * FROM items ORDER BY no DESC";
         $query = $this->db->query($sql);
         $result = $query->result();
 
