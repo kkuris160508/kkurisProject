@@ -45,9 +45,9 @@ class Main extends CI_Controller{
 //        $this->load->view('')
 
         $data['list'] = $this->todo_m->get_list();
-        $this->load->view('todo/header_v');
+//        $this->load->view('todo/header_v');
         $this->load->view('todo/list_contents_v', $data);
-        $this->load->view('todo/footer_v');
+//        $this->load->view('todo/footer_v');
     }
 
     function view(){
