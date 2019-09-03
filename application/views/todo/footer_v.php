@@ -1,3 +1,5 @@
+<div><p></p></div>
+</article>
 <footer>
     <blockquote>
         <p><a class="azubu" href="http://www.cikorea.net/" target="blank">CodeIgniter 한국 사용자 포럼</a></p>
@@ -9,4 +11,3 @@
 <p align="right">Page has been rendered <?php echo $this->benchmark->elapsed_time();?> seconds</p>
 </body>
 </html>
-
