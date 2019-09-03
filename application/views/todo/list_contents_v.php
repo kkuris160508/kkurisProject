@@ -71,21 +71,21 @@
         <?php endforeach?>
     </tbody>
     <tfoot>
-    <div class = "text-center">
+    <tr>
+        <th colspan="4"><a href="/Main/write/" class="btn btn-success">
+                쓰기
+            </a></th>
+    </tr>
+    <tr>
         <ul class = "pagination">
-<!--            --><?php //foreach() : ?>
+            <!--            --><?php //foreach() : ?>
             <li><a href="#">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
             <li><a href="#">4</a></li>
             <li><a href="#">5</a></li>
-<!--            --><?php //endforeach?>
+            <!--            --><?php //endforeach?>
         </ul>
-    </div>
-    <tr>
-        <th colspan="4"><a href="/Main/write/" class="btn btn-success">
-                쓰기
-            </a></th>
     </tr>
     </tfoot>
 </table>
