@@ -6,6 +6,7 @@
         <th scope="col">내용</th>
         <th scope="col">시작일</th>
         <th scope="col">종료일</th>
+        <th scope="col">조회수</th>
     </tr>
     </thead>
     <tbody>
@@ -32,10 +33,13 @@
             <td>
                 <time datetime="<?php echo mdate("%Y-%M-%j", human_to_unix($lt -> due_date)); ?>"><?php echo $lt -> due_date;?></time>
             </td>
+            <!-- 조회수 영역 추가-->
+            <td>
+                <?php echo $lt -> hit;?>
+            </td>
         </tr>
         <?php
-    }
-    ?>
+    }?>
     </tbody>
     <tfoot>
     <tr>

@@ -60,7 +60,11 @@ class Todo_m extends CI_Model{
 
     function get_views($id){
         $sql = "SELECT * FROM items WHERE id = '" .$id . "'";
+        $sql1 = "UPDATE items SET hit = hit + 1 WHERE id = '".$id."'";
+
         $query = $this->db->query($sql);
+        $query1 = $this->db->query($sql1);
+
         $result = $query->row();
 
         return $result;

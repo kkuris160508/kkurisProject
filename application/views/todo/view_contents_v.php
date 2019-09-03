@@ -4,10 +4,9 @@
             <tr>
                 <th scope="col"><?php echo $views -> id;?> 번 할일</th>
                 <th scope="col"><?php echo $views -> content;?></th>
-<!--                <th scope="col">--><?php //echo $views -> created_on;?><!--</th>-->
-<!--                <th scope="col">--><?php //echo $views -> due_date;?><!--</th>-->
                 <th scope="col">시작일</th>
                 <th scope="col">종료일</th>
+                <th scope="col">조회수</th>
             </tr>
             </thead>
             <tbody>
@@ -23,6 +22,9 @@
                 </th>
                 <th>
                     <?php echo $views -> due_date;?>
+                </th>
+                <th>
+                    <?php echo $views -> hit;?>
                 </th>
             </tr>
             </tbody>
