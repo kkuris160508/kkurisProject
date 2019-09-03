@@ -10,9 +10,7 @@
     </tr>
     </thead>
     <tbody>
-    <?php
-    foreach ($list as $lt) {
-        ?>
+    <?php foreach ($list as $lt) : ?>
         <tr>
             <th scope="row">
                 <?php echo $lt -> id;?>
@@ -38,8 +36,7 @@
                 <?php echo $lt -> hit;?>
             </td>
         </tr>
-        <?php
-    }?>
+        <?php endforeach?>
     </tbody>
     <tfoot>
     <tr>
