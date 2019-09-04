@@ -4,6 +4,8 @@
             <tr>
                 <th colspan = "5"><?php echo $views -> id;?> 번 할일</th>
             </tr>
+            </thead>
+            <tbody>
             <tr>
                 <th scope="col">제목</th>
                 <th scope="col">내용</th>
@@ -11,8 +13,6 @@
                 <th scope="col">종료일</th>
                 <th scope="col">조회수</th>
             </tr>
-            </thead>
-            <tbody>
             <tr>
                 <th>
                     <?php echo $views -> subject;?>
