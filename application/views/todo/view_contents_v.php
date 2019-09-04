@@ -2,8 +2,11 @@
         <table class="table table-striped">
             <thead class="thead-dark">
             <tr>
-                <th scope="col"><?php echo $views -> id;?> 번 할일</th>
-                <th scope="col"><?php echo $views -> content;?></th>
+                <th colspan = "5"><?php echo $views -> id;?> 번 할일</th>
+            </tr>
+            <tr>
+                <th scope="col">제목</th>
+                <th scope="col">내용</th>
                 <th scope="col">시작일</th>
                 <th scope="col">종료일</th>
                 <th scope="col">조회수</th>
