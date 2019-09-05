@@ -11,9 +11,10 @@ class Test extends CI_Controller{
     public function index(){
 
 //        $this->Debug_->test('chris');
-        $result = $this->debug->debug_var($_SERVER); // 시발 debug 를 소문자로...ㅡㅡ
+//        $result = $this->debug->debug_var($_SERVER); // 시발 debug 를 소문자로...ㅡㅡ
 
-        echo $result;
+//        echo $result;
+        $this->forms();
     }
 
     public function forms(){
