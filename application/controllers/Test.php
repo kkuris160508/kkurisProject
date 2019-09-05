@@ -16,6 +16,23 @@ class Test extends CI_Controller{
         echo $result;
     }
 
+    public function forms(){
+        $this->output->enable_profiler(TRUE);
+
+        $this->load->library('form_validation'); //폼 검증 라이브러리 로드
+
+        //폼 검증 필드 규칙 사전 정의
+        $this->form_validation->set_rules('username', '아이디', 'required');
+        $this->form_validation->set_rules('password', '비밀번호', 'required');
+        $this->form_validation->set_rules('passconf', '비밀번호 확인', 'required');
+        $this->form_validation->set_rules('email', '이메일', 'required');
+
+        if($this->form_validation->run() == FALSE){
+            $this->load->view('test/forms_v');
+        } else {
+            $this->load->view('test/form_success_v');
+        }
+    }
 
 }
 ?>
