@@ -123,7 +123,7 @@ class Main extends CI_Controller{
     public function date_valid($date) //mm-dd-yyyy
     {
 
-        $pattern = '/^(19|20)\d\d[\-\/.](0[1-9]|1[012])[\-\/.](0[1-9]|[12][0-9]|3[01])$/';
+        $pattern = '/(0[1-9]|1[0-9]|2[0-9]|3(0|1))-(0[1-9]|1[0-2])-\d{4}]/';
 
         if(preg_match($date,$pattern)){
 

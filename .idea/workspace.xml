@@ -5,9 +5,8 @@
       <change afterPath="$PROJECT_DIR$/application/controllers/Auth.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/application/views/header_v.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/application/views/login_v.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/test/form_success_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/test/form_success_v.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system/language/english/form_validation_lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/language/english/form_validation_lang.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,8 +41,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="150" column="69" lean-forward="true" selection-start-line="150" selection-start-column="69" selection-end-line="150" selection-end-column="69" />
+            <state relative-caret-position="-1108">
+              <caret line="57" column="39" lean-forward="true" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,8 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system/language/english/form_validation_lang.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="59" column="69" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="69" />
+            <state relative-caret-position="440">
+              <caret line="69" column="128" lean-forward="true" selection-start-line="69" selection-start-column="128" selection-end-line="69" selection-end-column="128" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -151,8 +153,8 @@
       <find>regex_match</find>
       <find>debug_var</find>
       <find>checkDateFormat</find>
-      <find>Una</find>
       <find>product</find>
+      <find>Una</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -341,28 +343,7 @@
       <workItem from="1566393166217" duration="887000" />
       <workItem from="1566434725670" duration="8038000" />
       <workItem from="1566451578138" duration="2043000" />
-      <workItem from="1566828260309" duration="143356000" />
-    </task>
-    <task id="LOCAL-00266" summary="main/write 날짜 입력 정규표현식 callback 함수 추가">
-      <created>1567743075460</created>
-      <option name="number" value="00266" />
-      <option name="presentableId" value="LOCAL-00266" />
-      <option name="project" value="LOCAL" />
-      <updated>1567743075460</updated>
-    </task>
-    <task id="LOCAL-00267" summary="main/write 날짜 입력 정규표현식 수정">
-      <created>1567743225136</created>
-      <option name="number" value="00267" />
-      <option name="presentableId" value="LOCAL-00267" />
-      <option name="project" value="LOCAL" />
-      <updated>1567743225136</updated>
-    </task>
-    <task id="LOCAL-00268" summary="autoload.php session 사용하기 위해 설정 변경">
-      <created>1567743300752</created>
-      <option name="number" value="00268" />
-      <option name="presentableId" value="LOCAL-00268" />
-      <option name="project" value="LOCAL" />
-      <updated>1567743300752</updated>
+      <workItem from="1566828260309" duration="144534000" />
     </task>
     <task id="LOCAL-00269" summary="autoload.php session 사용하기 위해 설정 변경">
       <created>1567744046760</created>
@@ -686,11 +667,32 @@
       <option name="project" value="LOCAL" />
       <updated>1567755961304</updated>
     </task>
-    <option name="localTasksCounter" value="315" />
+    <task id="LOCAL-00315" summary="autoload.php session 사용하기 위해 설정 변경">
+      <created>1567756225380</created>
+      <option name="number" value="00315" />
+      <option name="presentableId" value="LOCAL-00315" />
+      <option name="project" value="LOCAL" />
+      <updated>1567756225380</updated>
+    </task>
+    <task id="LOCAL-00316" summary="autoload.php session 사용하기 위해 설정 변경">
+      <created>1567756327915</created>
+      <option name="number" value="00316" />
+      <option name="presentableId" value="LOCAL-00316" />
+      <option name="project" value="LOCAL" />
+      <updated>1567756327915</updated>
+    </task>
+    <task id="LOCAL-00317" summary="autoload.php session 사용하기 위해 설정 변경">
+      <created>1567756495500</created>
+      <option name="number" value="00317" />
+      <option name="presentableId" value="LOCAL-00317" />
+      <option name="project" value="LOCAL" />
+      <updated>1567756495500</updated>
+    </task>
+    <option name="localTasksCounter" value="318" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155815000" />
+    <option name="totallyTimeSpent" value="156993000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1123,17 +1125,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system/language/english/form_validation_lang.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="59" column="69" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="69" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1151,10 +1142,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/system/language/english/form_validation_lang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="69" column="128" lean-forward="true" selection-start-line="69" selection-start-column="128" selection-end-line="69" selection-end-column="128" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="150" column="69" lean-forward="true" selection-start-line="150" selection-start-column="69" selection-end-line="150" selection-end-column="69" />
+        <state relative-caret-position="-1108">
+          <caret line="57" column="39" lean-forward="true" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
