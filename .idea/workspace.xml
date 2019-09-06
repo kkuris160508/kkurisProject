@@ -5,7 +5,8 @@
       <change afterPath="$PROJECT_DIR$/application/controllers/Auth.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/application/views/header_v.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/application/views/login_v.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system/language/english/form_validation_lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/system/language/english/form_validation_lang.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,25 +25,8 @@
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="731">
-                    <caret line="43" column="29" lean-forward="true" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-    <window id="5">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="408">
-                    <caret line="57" column="29" lean-forward="true" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+                  <state relative-caret-position="374">
+                    <caret line="37" column="46" lean-forward="true" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
                   </state>
                 </provider>
               </entry>
@@ -54,20 +38,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="67" column="57" selection-start-line="67" selection-start-column="57" selection-end-line="67" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/date/date.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-605">
-              <caret line="509" column="9" selection-start-line="509" selection-start-column="9" selection-end-line="509" selection-end-column="9" />
+            <state relative-caret-position="357">
+              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
             </state>
           </provider>
         </entry>
@@ -99,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/test/forms_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="77" />
+            <state relative-caret-position="340">
+              <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -111,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system/language/english/form_validation_lang.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="56" column="34" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="34" />
+            <state relative-caret-position="661">
+              <caret line="61" column="73" selection-start-line="61" selection-start-column="73" selection-end-line="61" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -173,8 +148,8 @@
       <find>valid_email</find>
       <find>date_valid</find>
       <find>Una</find>
-      <find>checkDateFormat</find>
       <find>regex_match</find>
+      <find>checkDateFormat</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -236,11 +211,11 @@
         <option value="$PROJECT_DIR$/application/views/login_v.php" />
         <option value="$PROJECT_DIR$/application/views/test/form_success_v.php" />
         <option value="$PROJECT_DIR$/application/config/config.php" />
-        <option value="$PROJECT_DIR$/application/views/test/forms_v.php" />
         <option value="$PROJECT_DIR$/application/controllers/Test.php" />
-        <option value="$PROJECT_DIR$/system/language/english/form_validation_lang.php" />
         <option value="$PROJECT_DIR$/application/views/todo/write_contents_v.php" />
         <option value="$PROJECT_DIR$/application/controllers/Main.php" />
+        <option value="$PROJECT_DIR$/system/language/english/form_validation_lang.php" />
+        <option value="$PROJECT_DIR$/application/views/test/forms_v.php" />
       </list>
     </option>
   </component>
@@ -363,35 +338,7 @@
       <workItem from="1566393166217" duration="887000" />
       <workItem from="1566434725670" duration="8038000" />
       <workItem from="1566451578138" duration="2043000" />
-      <workItem from="1566828260309" duration="134582000" />
-    </task>
-    <task id="LOCAL-00229" summary="작성자 컬럼 추가">
-      <created>1567485088537</created>
-      <option name="number" value="00229" />
-      <option name="presentableId" value="LOCAL-00229" />
-      <option name="project" value="LOCAL" />
-      <updated>1567485088537</updated>
-    </task>
-    <task id="LOCAL-00230" summary="테이블 밑줄 사라지는 버그 수정">
-      <created>1567485433695</created>
-      <option name="number" value="00230" />
-      <option name="presentableId" value="LOCAL-00230" />
-      <option name="project" value="LOCAL" />
-      <updated>1567485433695</updated>
-    </task>
-    <task id="LOCAL-00231" summary="헤더 컨텐츠 푸터 영역 다시 나눔">
-      <created>1567485589213</created>
-      <option name="number" value="00231" />
-      <option name="presentableId" value="LOCAL-00231" />
-      <option name="project" value="LOCAL" />
-      <updated>1567485589213</updated>
-    </task>
-    <task id="LOCAL-00232" summary="헤더 컨텐츠 푸터 영역 다시 나눔">
-      <created>1567485898610</created>
-      <option name="number" value="00232" />
-      <option name="presentableId" value="LOCAL-00232" />
-      <option name="project" value="LOCAL" />
-      <updated>1567485898610</updated>
+      <workItem from="1566828260309" duration="135763000" />
     </task>
     <task id="LOCAL-00233" summary="로그인 컨트롤러 추가">
       <created>1567487444889</created>
@@ -708,11 +655,39 @@
       <option name="project" value="LOCAL" />
       <updated>1567747012734</updated>
     </task>
-    <option name="localTasksCounter" value="278" />
+    <task id="LOCAL-00278" summary="autoload.php session 사용하기 위해 설정 변경">
+      <created>1567747219205</created>
+      <option name="number" value="00278" />
+      <option name="presentableId" value="LOCAL-00278" />
+      <option name="project" value="LOCAL" />
+      <updated>1567747219205</updated>
+    </task>
+    <task id="LOCAL-00279" summary="autoload.php session 사용하기 위해 설정 변경">
+      <created>1567747278007</created>
+      <option name="number" value="00279" />
+      <option name="presentableId" value="LOCAL-00279" />
+      <option name="project" value="LOCAL" />
+      <updated>1567747278007</updated>
+    </task>
+    <task id="LOCAL-00280" summary="autoload.php session 사용하기 위해 설정 변경">
+      <created>1567747415337</created>
+      <option name="number" value="00280" />
+      <option name="presentableId" value="LOCAL-00280" />
+      <option name="project" value="LOCAL" />
+      <updated>1567747415337</updated>
+    </task>
+    <task id="LOCAL-00281" summary="autoload.php session 사용하기 위해 설정 변경">
+      <created>1567747813005</created>
+      <option name="number" value="00281" />
+      <option name="presentableId" value="LOCAL-00281" />
+      <option name="project" value="LOCAL" />
+      <updated>1567747813005</updated>
+    </task>
+    <option name="localTasksCounter" value="282" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147041000" />
+    <option name="totallyTimeSpent" value="148222000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1127,24 +1102,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/test/forms_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Auth.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/date/date.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-605">
-          <caret line="509" column="9" selection-start-line="509" selection-start-column="9" selection-end-line="509" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1162,24 +1123,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/date/date.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="29" lean-forward="true" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+        <state relative-caret-position="-605">
+          <caret line="509" column="9" selection-start-line="509" selection-start-column="9" selection-end-line="509" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/language/english/form_validation_lang.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="56" column="34" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="34" />
+        <state relative-caret-position="661">
+          <caret line="61" column="73" selection-start-line="61" selection-start-column="73" selection-end-line="61" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="37" column="46" lean-forward="true" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="67" column="57" selection-start-line="67" selection-start-column="57" selection-end-line="67" selection-end-column="57" />
+        <state relative-caret-position="357">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/test/forms_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
         </state>
       </provider>
     </entry>
