@@ -70,7 +70,7 @@ class Main extends CI_Controller{
         echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
 
         if($this->form_validation->run() == TRUE){
-            $this->load->helper('alert');
+//            $this->load->helper('alert');
 
 //            $uri_array = $this->segment_explode($this->uri->uri_string());
 
