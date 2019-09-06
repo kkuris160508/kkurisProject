@@ -124,7 +124,7 @@ class Main extends CI_Controller{
     {
 
 //        $pattern = '/(0[1-9]|1[0-9]|2[0-9]|3(0|1))-(0[1-9]|1[0-2])-\d{4}]/';
-
+            $pattern = '/(0[1-9]|1[0-9]|2[0-9]|3(0|1))-(0[1-9]|1[0-2])-\d{4}/';
 
 
             $result = $this->debug->debug_var($date);
@@ -142,15 +142,10 @@ class Main extends CI_Controller{
                     return TRUE;
                 }
 
-            } else if(count($parts) != 3){
+            } else if(preg_match($pattern,$date) == 0){
                 $this->form_validation->set_message('date_valid',  '<p style="color: #FF0000;"> 날짜 형식만 입력 가능합니다. <br> ex) YYYY-MM-DD');
                 return FALSE;
             }
-//
-
-
-
-
 
     }
 
