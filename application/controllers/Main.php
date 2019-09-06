@@ -60,6 +60,13 @@ class Main extends CI_Controller{
 
     // write controller 추가
     function write(){ //쓰기 함수 $_POST 의 유무에 따라 if-else 분기 처리. post 전송이 없을 경우 else 실행되어 입력 폼이 출력.
+        $this->load->library('form_validation');
+
+        $this->form_validation->set_rules('subject','제목','required');
+        $this->form_validation->set_rules('content','내용용','requred');
+
+        echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
+
         if($_POST){ //쓰기 화면에서 내용을 채우고 작성 버튼을 클릭하면 if 구문 실행. $this->input->post('content') 는 $_POST['content'] 와 동일하게 post 변수를 받음. post 함수 두번째 파라미터 에 TRUE 시 XSS 공격을 막을수 있게 함.
 
             $subject = $this->input->post('subject', TRUE);
