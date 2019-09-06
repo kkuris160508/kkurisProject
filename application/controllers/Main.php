@@ -126,30 +126,32 @@ class Main extends CI_Controller{
 
     public function date_valid($date) //mm-dd-yyyy
     {
-        if(date('Y-m-d', $date)){
-            $result = $this->debug->debug_var($date);
-            echo 'date_valid() before :' .$result;
 
-            $fixdate = date('m-d-Y',strtotime($date));
+        $pattern = '/^(19|20)\d\d[\-\/.](0[1-9]|1[012])[\-\/.](0[1-9]|[12][0-9]|3[01])$/';
+
+        if(!preg_match($date,$pattern)){
+            exit;
+        }
+
+        $result = $this->debug->debug_var($date);
+        echo 'date_valid() before :' .$result;
+
+        $fixdate = date('m-d-Y',strtotime($date));
 
 //        $result = $this->debug->debug_var($date);
 //        echo 'date_valid() after :' .$result;
 
-            $parts = explode("-", $fixdate);
-            if (count($parts) == 3) {
-                if (checkdate($parts[0], $parts[1], $parts[2]))
-                {
-                    return TRUE;
-                }
-
+        $parts = explode("-", $fixdate);
+        if (count($parts) == 3) {
+            if (checkdate($parts[0], $parts[1], $parts[2]))
+            {
+                return TRUE;
             }
-            $this->form_validation->set_message('date_valid', '제대로 입력해라 시키야');
-            exit;
-        } else if(!date('Y-m-d', $date)){
-            $this->form_validation->set_message('date_valid', '올바른 형식을 입력해라 시키야');
-            exit;
+
         }
-        
+        $this->form_validation->set_message('date_valid', '제대로 입력해라 시키야');
+        exit;
+
     }
 
     function test(){
