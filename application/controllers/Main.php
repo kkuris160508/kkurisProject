@@ -149,7 +149,7 @@ class Main extends CI_Controller{
 
         } else {
             $this->form_validation->set_message('date_valid', 'date 형식만 입력 가능합니다. YYYY-MM-DD');
-//            exit;
+            return FALSE;
         }
 
     }
