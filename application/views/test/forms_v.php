@@ -10,7 +10,7 @@
                 <div class="controls">
 <!--                    <input type="text" name="username" class="input-xlarge" id="input01" />-->
 <!--                    <p class="help-block">아이디를 입력하세요.</p>-->
-                    <?php echo form_input('username')?>
+                    <?php echo form_input('username',set_value('username'))?>
                 </div>
             </div>
             <div class="control-group">
@@ -18,7 +18,7 @@
                 <div class="controls">
                     <!--<input type="password" name="password" class="input-xlarge" id="input02" />
                     <p class="help-block">비밀번호를 입력하세요.</p>-->
-                    <?php echo form_input('password')?>
+                    <?php echo form_input('password',set_value('password'))?>
                 </div>
             </div>
             <div class="control-group">
@@ -26,7 +26,7 @@
                 <div class="controls">
 <!--                    <input type="password" name="passconf" class="input-xlarge" id="input03" />-->
 <!--                    <p class="help-block">비밀번호를 한 번 더 입력하세요.</p>-->
-                    <?php echo form_input('passconf')?>
+                    <?php echo form_input('passconf',set_value('passconf'))?>
                 </div>
             </div>
             <div class="control-group">
@@ -34,7 +34,7 @@
                 <div class="controls">
 <!--                    <input type="text" name="email" class="input-xlarge" id="input04" />-->
 <!--                    <p class="help-block">이메일을 입력하세요.</p>-->
-                    <?php echo form_input('email')?>
+                    <?php echo form_input('email',set_value('email'))?>
                 </div>
             </div>
         </fieldset>
