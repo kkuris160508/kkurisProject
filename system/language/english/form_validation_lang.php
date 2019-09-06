@@ -38,9 +38,9 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 //$lang['form_validation_required']		= 'The {field} field is required.';
-$lang['form_validation_required']		= '{field} 항목이 입력되어야 합니다.';
+$lang['form_validation_required']		= '<p = style="color: #FF0000;"> {field} 항목이 입력되어야 합니다.';
 $lang['form_validation_isset']			= 'The {field} field must have a value.';
-$lang['form_validation_valid_email']		= '{field} 형식을 확인해주세요. <br> ex) xxxx@xxxx.com, co.kr ..';
+$lang['form_validation_valid_email']		= '<p = style="color: #FF0000;"> {field} 형식을 확인해주세요. <br> ex) xxxx@xxxx.com, co.kr ..';
 $lang['form_validation_valid_emails']		= 'The {field} field must contain all valid email addresses.';
 $lang['form_validation_valid_url']		= 'The {field} field must contain a valid URL.';
 $lang['form_validation_valid_ip']		= 'The {field} field must contain a valid IP.';
@@ -55,9 +55,9 @@ $lang['form_validation_numeric']		= 'The {field} field must contain only numbers
 $lang['form_validation_is_numeric']		= 'The {field} field must contain only numeric characters.';
 $lang['form_validation_integer']		= 'The {field} field must contain an integer.';
 $lang['form_validation_regex_match']		= 'The {field} field is not in the correct format.';
-$lang['form_validation_regex_match_date']		= '날짜만 입력가능합니다.';
+$lang['form_validation_regex_match_date']		= '<p = style="color: #FF0000;"> 날짜만 입력가능합니다.';
 //$lang['form_validation_matches']		= 'The {field} field does not match the {param} field.';
-$lang['form_validation_matches']		= '{param}가 다릅니다. 동일한 {param}를 입력하십시오.';
+$lang['form_validation_matches']		= '<p = style="color: #FF0000;"> {param}가 다릅니다. 동일한 {param}를 입력하십시오.';
 $lang['form_validation_differs']		= 'The {field} field must differ from the {param} field.';
 $lang['form_validation_is_unique'] 		= 'The {field} field must contain a unique value.';
 $lang['form_validation_is_natural']		= 'The {field} field must only contain digits.';
