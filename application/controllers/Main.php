@@ -129,28 +129,32 @@ class Main extends CI_Controller{
 
         $pattern = '/^(19|20)\d\d[\-\/.](0[1-9]|1[012])[\-\/.](0[1-9]|[12][0-9]|3[01])$/';
 
-        if(!preg_match($date,$pattern)){
-            return false;
-        }
+        if(preg_match($date,$pattern)){
 
-        $result = $this->debug->debug_var($date);
-        echo 'date_valid() before :' .$result;
+            $result = $this->debug->debug_var($date);
+            echo 'date_valid() before :' .$result;
 
-        $fixdate = date('m-d-Y',strtotime($date));
+            $fixdate = date('m-d-Y',strtotime($date));
 
 //        $result = $this->debug->debug_var($date);
 //        echo 'date_valid() after :' .$result;
 
-        $parts = explode("-", $fixdate);
-        if (count($parts) == 3) {
-            if (checkdate($parts[0], $parts[1], $parts[2]))
-            {
-                return TRUE;
-            }
+            $parts = explode("-", $fixdate);
+            if (count($parts) == 3) {
+                if (checkdate($parts[0], $parts[1], $parts[2]))
+                {
+                    return TRUE;
+                }
 
+            } else {
+                return FALSE;
+            }
+//            $this->form_validation->set_message('date_valid', '제대로 입력해라 시키야');
+//            exit;
+
+        } else {
+            return FAlSE;
         }
-        $this->form_validation->set_message('date_valid', '제대로 입력해라 시키야');
-        exit;
 
     }
 
