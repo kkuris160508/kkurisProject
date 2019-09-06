@@ -21,7 +21,7 @@
                     <p class = 'help-block'>
                         <?php
                             if($error_username == FALSE){
-                                echo "아이디를 입력하세요";
+                                echo "";
                             } else {
                                 echo $error_username;
                             }
