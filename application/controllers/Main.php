@@ -80,22 +80,15 @@ class Main extends CI_Controller{
 
             $this->debug->debug_var($created_on);
 
+            $this->todo_m->insert_todo($subject, $content, $created_on, $due_date, 2); //전송받은 데이터를 파라미터로 todo_m 에 insert_todo 함수 실행
+
 
             if(!date("Y-m-d", $created_on)){
-
                 $this->form_validation->set_message('date_valid', '올바른 형식을 입력해주십시오 YYYY-MM-DD');
 
-                exit;
-
-            } else {
-                $this->todo_m->insert_todo($subject, $content, $created_on, $due_date, 2); //전송받은 데이터를 파라미터로 todo_m 에 insert_todo 함수 실행
-
-                redirect('/Main/lists');
-
-                exit;
             }
 
-
+            redirect('/Main/lists');
 
         } else {
             $this->load->view('todo/header_v');
