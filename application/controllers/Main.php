@@ -64,15 +64,12 @@ class Main extends CI_Controller{
 
         $this->form_validation->set_rules('subject','제목','required');
         $this->form_validation->set_rules('content','내용','required');
-        $this->form_validation->set_rules('created_on', '시작일', 'regex_match[(0[1-9]|1[0-9]|2[0-9]|3(0|1))-(0[1-9]|1[0-2])-\d{4}]');
-        $this->form_validation->set_rules('due_date', '종료일', 'regex_match[(0[1-9]|1[0-9]|2[0-9]|3(0|1))-(0[1-9]|1[0-2])-\d{4}]');
-//        /^(19|20)\d\d[\-\/.](0[1-9]|1[012])[\-\/.](0[1-9]|[12][0-9]|3[01])$/
+        $this->form_validation->set_rules('created_on', '시작일', 'regex_match_date[(0[1-9]|1[0-9]|2[0-9]|3(0|1))-(0[1-9]|1[0-2])-\d{4}]');
+        $this->form_validation->set_rules('due_date', '종료일', 'regex_match_date[(0[1-9]|1[0-9]|2[0-9]|3(0|1))-(0[1-9]|1[0-2])-\d{4}]');
+
         echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
 
         if($this->form_validation->run() == TRUE){
-//            $this->load->helper('alert');
-
-//            $uri_array = $this->segment_explode($this->uri->uri_string());
 
             $subject = $this->input->post('subject', TRUE);
             $content = $this->input->post('content', TRUE);
@@ -80,36 +77,6 @@ class Main extends CI_Controller{
             $due_date = $this->input->post('due_date', TRUE);
 
             $this->todo_m->insert_todo($subject, $content, $created_on, $due_date, 2); //전송받은 데이터를 파라미터로 todo_m 에 insert_todo 함수 실행
-
-//            if (in_array('page', $uri_array)) {
-//                $pages = urldecode($this -> url_explode($uri_array, 'page'));
-//            } else {
-//                $pages = 1;
-//            }
-//
-//            if (!$this -> input -> post('subject', TRUE) AND !$this -> input -> post('contents', TRUE)) {
-//                // 글 내용이 없을 경우, 프로그램 단에서 한 번 더 체크
-//                alert('비정상적인 접근입니다.', '/Main/lists/' . $this -> uri -> segment(3) . '/page/' . $pages);
-//                exit ;
-//            }
-//
-//            $write_data = array(
-//                'subject' => $this -> input -> post('subject', TRUE),
-//                'contents' => $this -> input -> post('contents', TRUE),
-//                'table' => $this -> uri -> segment(3)
-//            );
-//
-////            $result = $this -> board_m -> insert_board($write_data);
-////
-//            if ($result) {
-//                alert("입력되었습니다.",'/Main/lists/'.$this->uri->segment(3).'/page/'.$pages);
-//                exit;
-//            } else {
-//                alert("다시 입력해주세요.",'/Main/lists/'.$this->uri->segment(3).'/page/'.$pages);
-//                exit;
-//            }
-
-
 
             redirect('/Main/lists');
 
@@ -120,35 +87,8 @@ class Main extends CI_Controller{
             $this->load->view('todo/write_contents_v');
             $this->load->view('todo/footer_v');
         }
-//        if($_POST){ //쓰기 화면에서 내용을 채우고 작성 버튼을 클릭하면 if 구문 실행. $this->input->post('content') 는 $_POST['content'] 와 동일하게 post 변수를 받음. post 함수 두번째 파라미터 에 TRUE 시 XSS 공격을 막을수 있게 함.
-//
-//            $subject = $this->input->post('subject', TRUE);
-//            $content = $this->input->post('content', TRUE);
-//            $created_on = $this->input->post('created_on', TRUE);
-//            $due_date = $this->input->post('due_date', TRUE);
-//
-//            $this->todo_m->insert_todo($subject, $content, $created_on, $due_date, 2); //전송받은 데이터를 파라미터로 todo_m 에 insert_todo 함수 실행
-//
-//            redirect('/Main/lists');
-//
-//            exit;
-//        } else {
-//            $this->load->view('todo/header_v');
-//            $this->load->view('todo/write_contents_v');
-//            $this->load->view('todo/footer_v');
-//        }
-    }
-//    function checkDateFormat($date) {
-//        if (preg_match("/[0-31]{2}\/[0-12]{2}\/[0-9]{4}/", $date)) {
-//            if(checkdate(substr($date, 3, 2), substr($date, 0, 2), substr($date, 6, 4)))
-//                return true;
-//            else
-//                return false;
-//        } else {
-//            return false;
-//        }
-//    }
 
+    }
 
     function delete(){
         $id = $this->uri->segment(3);
