@@ -67,8 +67,8 @@ class Main extends CI_Controller{
 
         $this->form_validation->set_rules('subject','제목','required');
         $this->form_validation->set_rules('content','내용','required');
-        $this->form_validation->set_rules('created_on', '시작일', 'required|callback_date_valid');
-        $this->form_validation->set_rules('due_date', '종료일', 'required|callback_date_valid');
+        $this->form_validation->set_rules('created_on', '시작일', 'callback_date_valid');
+        $this->form_validation->set_rules('due_date', '종료일', 'callback_date_valid');
 
         echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
 
