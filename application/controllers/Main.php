@@ -64,8 +64,10 @@ class Main extends CI_Controller{
 
         $this->form_validation->set_rules('subject','제목','required');
         $this->form_validation->set_rules('content','내용','required');
-        $this->form_validation->set_rules('created_on', 'Date of birth', 'required|regex_match_date[(0[1-9]|1[0-9]|2[0-9]|3(0|1))-(0[1-9]|1[0-2])-\d{4}]');
-        $this->form_validation->set_rules('due_date', 'Date of birth', 'required|regex_match_date[(0[1-9]|1[0-9]|2[0-9]|3(0|1))-(0[1-9]|1[0-2])-\d{4}]');
+        $this->form_validation->set_rules('created_on', '시작일', 'callback_date_valid');
+        $this->form_validation->set_rules('due_date', '종료일', 'callback_date_valid');
+//        $this->form_validation->set_rules('created_on', 'Date of birth', 'required|regex_match_date[(0[1-9]|1[0-9]|2[0-9]|3(0|1))-(0[1-9]|1[0-2])-\d{4}]');
+//        $this->form_validation->set_rules('due_date', 'Date of birth', 'required|regex_match_date[(0[1-9]|1[0-9]|2[0-9]|3(0|1))-(0[1-9]|1[0-2])-\d{4}]');
 
         echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
 
@@ -114,6 +116,13 @@ class Main extends CI_Controller{
             $this->load->view('todo/login_contents_v');
             $this->load->view('todo/footer_v');
         }
+    }
+
+    function callback_date_valid($date){
+        $day = (int) substr($date, 0, 2);
+        $month = (int) substr($date, 3, 2);
+        $year = (int) substr($date, 6, 4);
+        return checkdate($month, $day, $year);
     }
 
     function test(){
