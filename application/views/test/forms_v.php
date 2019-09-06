@@ -1,6 +1,13 @@
 <article id="board_area">
     <header><h1></h1></header>
 <!--    --><?php //echo validation_errors();?>
+        <?php
+            if(form_error('username')){
+                $error_username = form_error('username');
+            } else {
+                $error_username = form_error('username_check');
+            }
+        ?>
         <?php echo form_open('Test/forms')?>
 <!--    <form method="POST" class="form-horizontal">-->
         <fieldset>
@@ -13,10 +20,10 @@
                     <?php echo form_input('username',set_value('username'))?>
                     <p class = 'help-block'>
                         <?php
-                            if(form_error('username') == FALSE){
-                                echo "";
+                            if($error_username == FALSE){
+                                echo "아이디를 입력하세요";
                             } else {
-                                echo form_error('username');
+                                echo $error_username;
                             }
                         ?>
                     </p>
