@@ -62,7 +62,7 @@ class Main extends CI_Controller{
 
     // write controller 추가
     function write(){ //쓰기 함수 $_POST 의 유무에 따라 if-else 분기 처리. post 전송이 없을 경우 else 실행되어 입력 폼이 출력.
-        $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+//        $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
         $this->load->library('form_validation');
 
         $this->form_validation->set_rules('subject','제목','required');
