@@ -64,8 +64,8 @@ class Main extends CI_Controller{
 
         $this->form_validation->set_rules('subject','제목','required');
         $this->form_validation->set_rules('content','내용','required');
-        $this->form_validation->set_rules('created_on','시작일','callback_checkDateFormat');
-        $this->form_validation->set_rules('due_date','종료일','callback_checkDateFormat');
+        $this->form_validation->set_rules('created_on','시작일','regex_match[(0[1-9]|1[0-9]|2[0-9]|3(0|1))-(0[1-9]|1[0-2])-\d{4}]');
+        $this->form_validation->set_rules('due_date','종료일','regex_match[(0[1-9]|1[0-9]|2[0-9]|3(0|1))-(0[1-9]|1[0-2])-\d{4}]');
 
         echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
 
@@ -138,16 +138,16 @@ class Main extends CI_Controller{
 //            $this->load->view('todo/footer_v');
 //        }
     }
-    function checkDateFormat($date) {
-        if (preg_match("/[0-31]{2}\/[0-12]{2}\/[0-9]{4}/", $date)) {
-            if(checkdate(substr($date, 3, 2), substr($date, 0, 2), substr($date, 6, 4)))
-                return true;
-            else
-                return false;
-        } else {
-            return false;
-        }
-    }
+//    function checkDateFormat($date) {
+//        if (preg_match("/[0-31]{2}\/[0-12]{2}\/[0-9]{4}/", $date)) {
+//            if(checkdate(substr($date, 3, 2), substr($date, 0, 2), substr($date, 6, 4)))
+//                return true;
+//            else
+//                return false;
+//        } else {
+//            return false;
+//        }
+//    }
 
 
     function delete(){
