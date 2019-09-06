@@ -21,6 +21,8 @@ class Main extends CI_Controller{
     }
 
     function lists(){
+        $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+
 //        $this->load->library('pagination'); // 페이지 네이션 설정
 //        $config['base_url'] = 'ci_board/page'; //페이징 주소
 //        $config['total_rows'] = $this->todo_m->get_list($this->uri->segment(3), 'count'); //게시물 전체 개수
