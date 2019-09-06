@@ -153,6 +153,8 @@ class Main extends CI_Controller{
 //    }
 
     public function dob_check($str){
+        $this->load->library('form_validation');
+
         if (!DateTime::createFromFormat('Y-m-d', $str)) { //yes it's YYYY-MM-DD
             $this->form_validation->set_message('dob_check', '<p style="color: #FF0000;"> 날짜 형식만 입력 가능합니다. <br> ex) YYYY-MM-DD');
             return FALSE;
