@@ -120,9 +120,9 @@ class Main extends CI_Controller{
 
     public function date_valid($date)
     {
-        $parts = explode("/", $date);
+        $parts = explode("-", $date);
         if (count($parts) == 3) {
-            if (checkdate($parts[1], $parts[0], $parts[2]))
+            if (checkdate($parts[0], $parts[1], $parts[2]))
             {
                 return TRUE;
             }
