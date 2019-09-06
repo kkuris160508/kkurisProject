@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="autoload.php session 사용하기 위해 설정 변경">
       <change afterPath="$PROJECT_DIR$/application/controllers/Auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/models/auth_m.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/application/views/header_v.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/application/views/login_v.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -52,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/config/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="374" column="6" lean-forward="true" selection-start-line="374" selection-start-column="6" selection-end-line="380" selection-end-column="43" />
+            <state relative-caret-position="439">
+              <caret line="382" column="52" lean-forward="true" selection-start-line="382" selection-start-column="52" selection-end-line="382" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -70,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="28" column="79" selection-start-line="28" selection-start-column="79" selection-end-line="28" selection-end-column="79" />
+            <state relative-caret-position="99">
+              <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -79,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/test/forms_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="36" column="71" lean-forward="true" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="71" />
+            <state relative-caret-position="490">
+              <caret line="58" column="18" lean-forward="true" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -335,28 +334,7 @@
       <workItem from="1566393166217" duration="887000" />
       <workItem from="1566434725670" duration="8038000" />
       <workItem from="1566451578138" duration="2043000" />
-      <workItem from="1566828260309" duration="121308000" />
-    </task>
-    <task id="LOCAL-00198" summary="페이지네이션">
-      <created>1567469600123</created>
-      <option name="number" value="00198" />
-      <option name="presentableId" value="LOCAL-00198" />
-      <option name="project" value="LOCAL" />
-      <updated>1567469600123</updated>
-    </task>
-    <task id="LOCAL-00199" summary="페이지네이션">
-      <created>1567469687507</created>
-      <option name="number" value="00199" />
-      <option name="presentableId" value="LOCAL-00199" />
-      <option name="project" value="LOCAL" />
-      <updated>1567469687507</updated>
-    </task>
-    <task id="LOCAL-00200" summary="페이지네이션">
-      <created>1567469894945</created>
-      <option name="number" value="00200" />
-      <option name="presentableId" value="LOCAL-00200" />
-      <option name="project" value="LOCAL" />
-      <updated>1567469894945</updated>
+      <workItem from="1566828260309" duration="123203000" />
     </task>
     <task id="LOCAL-00201" summary="페이지네이션">
       <created>1567470174393</created>
@@ -680,11 +658,32 @@
       <option name="project" value="LOCAL" />
       <updated>1567675089938</updated>
     </task>
-    <option name="localTasksCounter" value="247" />
+    <task id="LOCAL-00247" summary="폼검증 데이터 복원 set_value 추가">
+      <created>1567730993018</created>
+      <option name="number" value="00247" />
+      <option name="presentableId" value="LOCAL-00247" />
+      <option name="project" value="LOCAL" />
+      <updated>1567730993018</updated>
+    </task>
+    <task id="LOCAL-00248" summary="autoload.php session 사용하기 위해 설정 변경">
+      <created>1567731140358</created>
+      <option name="number" value="00248" />
+      <option name="presentableId" value="LOCAL-00248" />
+      <option name="project" value="LOCAL" />
+      <updated>1567731140358</updated>
+    </task>
+    <task id="LOCAL-00249" summary="Test.php callback 으로 유저 아이디 체크">
+      <created>1567731579976</created>
+      <option name="number" value="00249" />
+      <option name="presentableId" value="LOCAL-00249" />
+      <option name="project" value="LOCAL" />
+      <updated>1567731579976</updated>
+    </task>
+    <option name="localTasksCounter" value="250" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133767000" />
+    <option name="totallyTimeSpent" value="135662000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -766,8 +765,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="write v placeholder 추가" />
-    <MESSAGE value="write v 글작성 안되는 부분 수정" />
     <MESSAGE value="form_input() placeholder 옵션 추가" />
     <MESSAGE value="html5shiv cdn update" />
     <MESSAGE value="delete mc 추가" />
@@ -789,9 +786,11 @@
     <MESSAGE value="로그인 컨트롤러 추가" />
     <MESSAGE value="config.php session 사용하기 위해 설정 변경" />
     <MESSAGE value="폼 검증부" />
-    <MESSAGE value="autoload.php session 사용하기 위해 설정 변경" />
     <MESSAGE value="폼 검증 오류 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="폼 검증 오류 수정" />
+    <MESSAGE value="폼검증 데이터 복원 set_value 추가" />
+    <MESSAGE value="autoload.php session 사용하기 위해 설정 변경" />
+    <MESSAGE value="Test.php callback 으로 유저 아이디 체크" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test.php callback 으로 유저 아이디 체크" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/application/controllers/Constants.php">
@@ -1113,27 +1112,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="374" column="6" lean-forward="true" selection-start-line="374" selection-start-column="6" selection-end-line="380" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="28" column="79" selection-start-line="28" selection-start-column="79" selection-end-line="28" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/test/form_success_v.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1148,10 +1126,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="382" column="52" lean-forward="true" selection-start-line="382" selection-start-column="52" selection-end-line="382" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/test/forms_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="36" column="71" lean-forward="true" selection-start-line="36" selection-start-column="71" selection-end-line="36" selection-end-column="71" />
+        <state relative-caret-position="490">
+          <caret line="58" column="18" lean-forward="true" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
         </state>
       </provider>
     </entry>

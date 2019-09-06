@@ -11,6 +11,15 @@
 <!--                    <input type="text" name="username" class="input-xlarge" id="input01" />-->
 <!--                    <p class="help-block">아이디를 입력하세요.</p>-->
                     <?php echo form_input('username',set_value('username'))?>
+                    <p class = 'help-block'>
+                        <?php
+                            if($error_username == FALSE){
+                                echo "아이디를 입력하세요";
+                            } else {
+                                echo $error_username;
+                            }
+                        ?>
+                    </p>
                 </div>
             </div>
             <div class="control-group">
@@ -19,6 +28,15 @@
                     <!--<input type="password" name="password" class="input-xlarge" id="input02" />
                     <p class="help-block">비밀번호를 입력하세요.</p>-->
                     <?php echo form_input('password',set_value('password'))?>
+                    <p class = 'help-block'>
+                        <?php
+                        if(form_error('password') == FALSE){
+                            echo "비밀번호를 입력하세요";
+                        } else {
+                            echo form_error('password');
+                        }
+                        ?>
+                    </p>
                 </div>
             </div>
             <div class="control-group">
@@ -27,6 +45,7 @@
 <!--                    <input type="password" name="passconf" class="input-xlarge" id="input03" />-->
 <!--                    <p class="help-block">비밀번호를 한 번 더 입력하세요.</p>-->
                     <?php echo form_input('passconf',set_value('passconf'))?>
+                    <p class="help-block">비밀번호를 한 번 더 입력하세요.</p>
                 </div>
             </div>
             <div class="control-group">
@@ -35,6 +54,7 @@
 <!--                    <input type="text" name="email" class="input-xlarge" id="input04" />-->
 <!--                    <p class="help-block">이메일을 입력하세요.</p>-->
                     <?php echo form_input('email',set_value('email'))?>
+                    <p class="help-block">이메일을 입력하세요.</p>
                 </div>
             </div>
         </fieldset>
