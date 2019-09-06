@@ -142,7 +142,7 @@ class Main extends CI_Controller{
                     return TRUE;
                 }
 
-            } else {
+            } else if(count($parts) != 3){
                 $this->form_validation->set_message('date_valid',  '<p style="color: #FF0000;"> 날짜 형식만 입력 가능합니다. <br> ex) YYYY-MM-DD');
                 return FALSE;
             }
