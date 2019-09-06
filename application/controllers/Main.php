@@ -139,7 +139,7 @@ class Main extends CI_Controller{
 //        }
     }
     function checkDateFormat($date) {
-        if (preg_match("/[0-9]{4}-[0-12]{2}-[0-31]{2}/", $date)) {
+        if (preg_match("^([12]\\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01]))$", $date)) {
             if(checkdate(substr($date, 6, 4), substr($date, 0, 2), substr($date, 3, 2)))
                 return true;
             else
