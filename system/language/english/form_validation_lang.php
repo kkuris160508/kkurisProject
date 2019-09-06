@@ -55,6 +55,7 @@ $lang['form_validation_numeric']		= 'The {field} field must contain only numbers
 $lang['form_validation_is_numeric']		= 'The {field} field must contain only numeric characters.';
 $lang['form_validation_integer']		= 'The {field} field must contain an integer.';
 $lang['form_validation_regex_match']		= 'The {field} field is not in the correct format.';
+$lang['form_validation_regex_match_date']		= '날짜만 입력가능합니다.';
 //$lang['form_validation_matches']		= 'The {field} field does not match the {param} field.';
 $lang['form_validation_matches']		= '{param}가 다릅니다. 동일한 {param}를 입력하십시오.';
 $lang['form_validation_differs']		= 'The {field} field must differ from the {param} field.';

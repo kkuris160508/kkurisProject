@@ -7,6 +7,7 @@
                     <div class="controls">
                         <!--                        <input type="text" class="input-xlarge" id="input01" name="content">-->
                         <?php echo form_input('subject')?> <!-- form open 사용해야함 csrf protection TRUE 일 때 POST 방식으로 DB 접근권한을 한번 막기때문에 form open 사용-->
+                        <?php echo form_input('subject',set_value('subject'))?>
                         <p class="help-block">
                             <?php
                                 if(form_error('subject') == FALSE){
@@ -21,6 +22,7 @@
                     <div class="controls">
 <!--                        <input type="text" class="input-xlarge" id="input01" name="content">-->
                         <?php echo form_input('content')?> <!-- form open 사용해야함 csrf protection TRUE 일 때 POST 방식으로 DB 접근권한을 한번 막기때문에 form open 사용-->
+                        <?php echo form_input('content',set_value('content'))?>
                         <p class="help-block">
                             <?php
                             if(form_error('content') == FALSE){
@@ -35,6 +37,7 @@
                     <div class="controls">
 <!--                        <input type="text" class="input-xlarge" id="input02" name="created_on">-->
                         <?php echo form_input('created_on', '',"placeholder='YYYY-MM-DD'")?> <!-- form open 사용해야함 csrf protection TRUE 일 때 POST 방식으로 DB 접근권한을 한번 막기때문에 form open 사용-->
+                        <?php echo form_input('created_on',set_value('created_on'))?>
                         <p class="help-block">
                             <?php
                             if(form_error('created_on') == FALSE){
@@ -49,6 +52,7 @@
                     <div class="controls">
 <!--                        <input type="text" class="input-xlarge" id="input03" name="due_date">-->
                         <?php echo form_input('due_date','',"placeholder='YYYY-MM-DD'")?> <!-- form open 사용해야함 csrf protection TRUE 일 때 POST 방식으로 DB 접근권한을 한번 막기때문에 form open 사용-->
+                        <?php echo form_input('due_date',set_value('due_date'))?>
                         <p class="help-block">
                             <?php
                             if(form_error('due_date') == FALSE){
