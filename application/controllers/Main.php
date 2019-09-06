@@ -118,11 +118,17 @@ class Main extends CI_Controller{
         }
     }
 
-    function callback_date_valid($date){
-        $day = (int) substr($date, 0, 2);
-        $month = (int) substr($date, 3, 2);
-        $year = (int) substr($date, 6, 4);
-        return checkdate($month, $day, $year);
+    public function date_valid($date)
+    {
+        $parts = explode("/", $date);
+        if (count($parts) == 3) {
+            if (checkdate($parts[1], $parts[0], $parts[2]))
+            {
+                return TRUE;
+            }
+        }
+        $this->form_validation->set_message('date_valid', 'The Date field must be mm/dd/yyyy');
+        return false;
     }
 
     function test(){
