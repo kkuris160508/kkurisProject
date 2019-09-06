@@ -89,7 +89,7 @@ class Main extends CI_Controller{
 
             if (!$this -> input -> post('subject', TRUE) AND !$this -> input -> post('contents', TRUE)) {
                 // 글 내용이 없을 경우, 프로그램 단에서 한 번 더 체크
-                alert('비정상적인 접근입니다.', '/bbs/board/lists/' . $this -> uri -> segment(3) . '/page/' . $pages);
+                alert('비정상적인 접근입니다.', '/Main/lists/' . $this -> uri -> segment(3) . '/page/' . $pages);
                 exit ;
             }
 
@@ -139,8 +139,8 @@ class Main extends CI_Controller{
 //        }
     }
     function checkDateFormat($date) {
-        if (preg_match("^([12]\\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01]))$^", $date)) {
-            if(checkdate(substr($date, 6, 4), substr($date, 0, 2), substr($date, 3, 2)))
+        if (preg_match("/[0-31]{2}/[0-12]{2}/[0-9]{4}/", $date)) {
+            if(checkdate(substr($date, 3, 2), substr($date, 0, 2), substr($date, 6, 4)))
                 return true;
             else
                 return false;
@@ -148,6 +148,7 @@ class Main extends CI_Controller{
             return false;
         }
     }
+
 
     function delete(){
         $id = $this->uri->segment(3);
