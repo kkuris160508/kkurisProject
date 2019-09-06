@@ -148,7 +148,7 @@ class Main extends CI_Controller{
 //
 
         } else {
-            $this->form_validation->set_message('date_valid', 'date 형식만 입력 가능합니다. YYYY-MM-DD');
+            $this->form_validation->set_message('date_valid', '<style="color: #FF0000;"> date 형식만 입력 가능합니다. YYYY-MM-DD');
             return FALSE;
         }
 
