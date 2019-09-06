@@ -114,9 +114,9 @@ class Main extends CI_Controller{
 //            exit;
 
         } else {
-//            $this->load->view('todo/header_v');
-//            $this->load->view('todo/write_contents_v');
-//            $this->load->view('todo/footer_v');
+            $this->load->view('todo/header_v');
+            $this->load->view('todo/write_contents_v');
+            $this->load->view('todo/footer_v');
         }
 //        if($_POST){ //쓰기 화면에서 내용을 채우고 작성 버튼을 클릭하면 if 구문 실행. $this->input->post('content') 는 $_POST['content'] 와 동일하게 post 변수를 받음. post 함수 두번째 파라미터 에 TRUE 시 XSS 공격을 막을수 있게 함.
 //
