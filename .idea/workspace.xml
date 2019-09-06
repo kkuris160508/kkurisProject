@@ -41,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="133" column="9" lean-forward="true" selection-start-line="133" selection-start-column="9" selection-end-line="133" selection-end-column="9" />
+            <state relative-caret-position="406">
+              <caret line="149" column="14" selection-start-line="149" selection-start-column="14" selection-end-line="150" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -355,21 +355,7 @@
       <workItem from="1566393166217" duration="887000" />
       <workItem from="1566434725670" duration="8038000" />
       <workItem from="1566451578138" duration="2043000" />
-      <workItem from="1566828260309" duration="141826000" />
-    </task>
-    <task id="LOCAL-00257" summary="에러메세지 개별 표시">
-      <created>1567735386939</created>
-      <option name="number" value="00257" />
-      <option name="presentableId" value="LOCAL-00257" />
-      <option name="project" value="LOCAL" />
-      <updated>1567735386939</updated>
-    </task>
-    <task id="LOCAL-00258" summary="validation.php required 스트링 변경">
-      <created>1567736031487</created>
-      <option name="number" value="00258" />
-      <option name="presentableId" value="LOCAL-00258" />
-      <option name="project" value="LOCAL" />
-      <updated>1567736031487</updated>
+      <workItem from="1566828260309" duration="142081000" />
     </task>
     <task id="LOCAL-00259" summary="validation_lang.php match  변경">
       <created>1567736205270</created>
@@ -700,11 +686,25 @@
       <option name="project" value="LOCAL" />
       <updated>1567754357266</updated>
     </task>
-    <option name="localTasksCounter" value="306" />
+    <task id="LOCAL-00306" summary="autoload.php session 사용하기 위해 설정 변경">
+      <created>1567754695072</created>
+      <option name="number" value="00306" />
+      <option name="presentableId" value="LOCAL-00306" />
+      <option name="project" value="LOCAL" />
+      <updated>1567754695072</updated>
+    </task>
+    <task id="LOCAL-00307" summary="autoload.php session 사용하기 위해 설정 변경">
+      <created>1567754774781</created>
+      <option name="number" value="00307" />
+      <option name="presentableId" value="LOCAL-00307" />
+      <option name="project" value="LOCAL" />
+      <updated>1567754774781</updated>
+    </task>
+    <option name="localTasksCounter" value="308" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154285000" />
+    <option name="totallyTimeSpent" value="154540000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1170,8 +1170,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="133" column="9" lean-forward="true" selection-start-line="133" selection-start-column="9" selection-end-line="133" selection-end-column="9" />
+        <state relative-caret-position="406">
+          <caret line="149" column="14" selection-start-line="149" selection-start-column="14" selection-end-line="150" selection-end-column="19" />
         </state>
       </provider>
     </entry>
