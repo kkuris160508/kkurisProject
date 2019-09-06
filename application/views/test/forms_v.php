@@ -46,13 +46,15 @@
 <!--                    <p class="help-block">비밀번호를 한 번 더 입력하세요.</p>-->
                     <?php echo form_password('passconf',set_value('passconf'))?>
 <!--                    <p class="help-block">비밀번호를 한 번 더 입력하세요.</p>-->
-                    <?php
-                    if(form_error('passconf') == FALSE){
-                        echo "비밀번호를 입력하세요";
-                    } else {
-                        echo form_error('passconf');
-                    }
-                    ?>
+                    <p class = 'help-block'>
+                        <?php
+                        if(form_error('passconf') == FALSE){
+                            echo "비밀번호를 한번 더 입력 해주세요";
+                        } else {
+                            echo form_error('passconf');
+                        }
+                        ?>
+                    </p>
                 </div>
             </div>
             <div class="control-group">
