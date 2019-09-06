@@ -145,7 +145,7 @@ class Main extends CI_Controller{
             }
             $this->form_validation->set_message('date_valid', '제대로 입력해라 시키야');
             exit;
-        } else {
+        } else if(!date('Y-m-d', $date)){
             $this->form_validation->set_message('date_valid', '올바른 형식을 입력해라 시키야');
             exit;
         }
