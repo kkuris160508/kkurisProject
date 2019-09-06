@@ -83,13 +83,13 @@ class Main extends CI_Controller{
             $result = $this->debug->debug_var($created_on);
             echo 'before : '.$result;
 
-            $startDate = date("Y-d-m",strtotime($created_on));
-            $endDate = date("Y-d-m,",strtotime($due_date));
+//            $startDate = date("Y-d-m",strtotime($created_on));
+//            $endDate = date("Y-d-m,",strtotime($due_date));
 
-            $this->todo_m->insert_todo($subject, $content, $startDate, $endDate, 2); //전송받은 데이터를 파라미터로 todo_m 에 insert_todo 함수 실행
+            $this->todo_m->insert_todo($subject, $content, $created_on, $due_date, 2); //전송받은 데이터를 파라미터로 todo_m 에 insert_todo 함수 실행
 
-            $result = $this->debug->debug_var($startDate);
-            echo 'after :' .$result;
+//            $result = $this->debug->debug_var($startDate);
+//            echo 'after :' .$result;
 
 //            redirect('/Main/lists');
 //            $this->load->view('test/form_success_v');
@@ -130,11 +130,19 @@ class Main extends CI_Controller{
         }
     }
 
-    public function date_valid($date)
+    public function date_valid($date) //mm-dd-yyyy
     {
-        $parts = explode("-", $date);
+        $result = $this->debug->debug_var($date);
+        echo 'date_valid() before :' .$result;
+
+        $fixdate = date('m-d-Y',strtotime($date));
+
+        $result = $this->debug->debug_var($date);
+        echo 'date_valid() after :' .$result;
+
+        $parts = explode("-", $fixdate);
         if (count($parts) == 3) {
-            if (checkdate($parts[1], $parts[0], $parts[2]))
+            if (checkdate($parts[0], $parts[1], $parts[2]))
             {
                 return TRUE;
             }
