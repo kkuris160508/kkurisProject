@@ -27,7 +27,7 @@
                 <div class="controls">
                     <!--<input type="password" name="password" class="input-xlarge" id="input02" />
                     <p class="help-block">비밀번호를 입력하세요.</p>-->
-                    <?php echo form_input('password',set_value('password'))?>
+                    <?php echo form_password('password',set_value('password'))?>
                     <p class = 'help-block'>
                         <?php
                         if(form_error('password') == FALSE){
@@ -44,8 +44,15 @@
                 <div class="controls">
 <!--                    <input type="password" name="passconf" class="input-xlarge" id="input03" />-->
 <!--                    <p class="help-block">비밀번호를 한 번 더 입력하세요.</p>-->
-                    <?php echo form_input('passconf',set_value('passconf'))?>
-                    <p class="help-block">비밀번호를 한 번 더 입력하세요.</p>
+                    <?php echo form_password('passconf',set_value('passconf'))?>
+<!--                    <p class="help-block">비밀번호를 한 번 더 입력하세요.</p>-->
+                    <?php
+                    if(form_error('passconf') == FALSE){
+                        echo "비밀번호를 입력하세요";
+                    } else {
+                        echo form_error('passconf');
+                    }
+                    ?>
                 </div>
             </div>
             <div class="control-group">
