@@ -64,9 +64,9 @@ class Main extends CI_Controller{
 
         $this->form_validation->set_rules('subject','제목','required');
         $this->form_validation->set_rules('content','내용','required');
-        $this->form_validation->set_rules('created_on','시작일','regex_match[/[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2])/]');
-        $this->form_validation->set_rules('due_date','종료일','regex_match[/[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2])/]');
-
+        $this->form_validation->set_rules('created_on','시작일','regex_match[/^(19|20)\d\d[\-\/.](0[1-9]|1[012])[\-\/.](0[1-9]|[12][0-9]|3[01])$/]');
+        $this->form_validation->set_rules('due_date','종료일','regex_match[/^(19|20)\d\d[\-\/.](0[1-9]|1[012])[\-\/.](0[1-9]|[12][0-9]|3[01])$/]');
+//        /^(19|20)\d\d[\-\/.](0[1-9]|1[012])[\-\/.](0[1-9]|[12][0-9]|3[01])$/
         echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
 
         if($this->form_validation->run() == TRUE){
