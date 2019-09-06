@@ -74,7 +74,7 @@ class Todo_m extends CI_Model{
     }
 
     function insert_todo($subject, $content, $created_on, $due_date, $writer){
-        $sql = "INSERT INTO items (subject, content, created_on, due_date, writer) VALUES ('" .$subject. "','" .$content. "','".$created_on."','".$due_date. "' , '".$writer. "')";
+        $sql = "INSERT INTO items (subject, content, created_on, due_date, writer, writetime) VALUES ('" .$subject. "','" .$content. "','".$created_on."','".$due_date. "' , '".$writer. "','now()')";
         $query = $this->db->query($sql); // return 없고 insert 이후 완료. 결과는 컨트롤러에서 받음.
     }
 

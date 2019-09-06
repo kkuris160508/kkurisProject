@@ -10,6 +10,7 @@
         <th scope="col">시작일</th>
         <th scope="col">종료일</th>
         <th scope="col">조회수</th>
+        <th scope="col">작성시간</th>
     </tr>
     </thead>
     <tbody>
@@ -37,12 +38,15 @@
             <td>
                 <?php echo $lt -> hit;?>
             </td>
+            <td>
+                <time datetime="<?php echo mdate("%Y-%M-%j", human_to_unix($lt -> writetime)); ?>"><?php echo $lt -> writetime;?></time>
+            </td>
         </tr>
         <?php endforeach?>
     </tbody>
     <tfoot>
     <tr>
-        <th colspan="7"><a href="/Main/write/" class="btn btn-success">
+        <th colspan="8"><a href="/Main/write/" class="btn btn-success">
                 쓰기
             </a></th>
     </tr>
