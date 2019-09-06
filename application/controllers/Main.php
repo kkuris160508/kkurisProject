@@ -70,8 +70,8 @@ class Main extends CI_Controller{
 //        $this->form_validation->set_rules('created_on', '시작일', 'callback_date_valid');
 //        $this->form_validation->set_rules('due_date', '종료일', 'callback_date_valid');
 
-        $this->form_validation->set_rules('create_on', 'Date of Birth', "trim|required|callback_dob_check");
-        $this->form_validation->set_rules('due_date', 'Date of Birth', "trim|required|callback_dob_check");
+        $this->form_validation->set_rules('create_on', '시작일', "callback_dob_check");
+        $this->form_validation->set_rules('due_date', '종료일', "callback_dob_check");
 
         echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
 
