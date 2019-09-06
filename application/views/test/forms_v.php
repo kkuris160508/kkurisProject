@@ -1,6 +1,6 @@
 <article id="board_area">
     <header><h1></h1></header>
-    <?php echo validation_errors();?>
+<!--    --><?php //echo validation_errors();?>
         <?php echo form_open('Test/forms')?>
 <!--    <form method="POST" class="form-horizontal">-->
         <fieldset>
@@ -63,7 +63,15 @@
 <!--                    <input type="text" name="email" class="input-xlarge" id="input04" />-->
 <!--                    <p class="help-block">이메일을 입력하세요.</p>-->
                     <?php echo form_input('email',set_value('email'))?>
-                    <p class="help-block">이메일을 입력하세요.</p>
+                    <p class = 'help-block'>
+                        <?php
+                        if(form_error('email') == FALSE){
+                            echo "이메일을 입력해주세요";
+                        } else {
+                            echo form_error('email');
+                        }
+                        ?>
+                    </p>
                 </div>
             </div>
         </fieldset>
