@@ -68,8 +68,6 @@ class Main extends CI_Controller{
         $this->form_validation->set_rules('content','내용','required');
         $this->form_validation->set_rules('created_on', '시작일', 'callback_date_valid');
         $this->form_validation->set_rules('due_date', '종료일', 'callback_date_valid');
-//        $this->form_validation->set_rules('created_on', 'Date of birth', 'required|regex_match_date[(0[1-9]|1[0-9]|2[0-9]|3(0|1))-(0[1-9]|1[0-2])-\d{4}]');
-//        $this->form_validation->set_rules('due_date', 'Date of birth', 'required|regex_match_date[(0[1-9]|1[0-9]|2[0-9]|3(0|1))-(0[1-9]|1[0-2])-\d{4}]');
 
         echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
 
@@ -83,18 +81,21 @@ class Main extends CI_Controller{
             $result = $this->debug->debug_var($created_on);
             echo 'before : '.$result;
 
-//            $startDate = date("Y-d-m",strtotime($created_on));
-//            $endDate = date("Y-d-m,",strtotime($due_date));
+            if(!date("Y-m-d", $created_on)){
 
-            $this->todo_m->insert_todo($subject, $content, $created_on, $due_date, 2); //전송받은 데이터를 파라미터로 todo_m 에 insert_todo 함수 실행
+                $this->form_validation->set_message('date_valid', '올바른 형식을 입력해주십시오 YYYY-MM-DD');
 
-//            $result = $this->debug->debug_var($startDate);
-//            echo 'after :' .$result;
+                exit;
 
-//            redirect('/Main/lists');
-//            $this->load->view('test/form_success_v');
+            } else {
+                $this->todo_m->insert_todo($subject, $content, $created_on, $due_date, 2); //전송받은 데이터를 파라미터로 todo_m 에 insert_todo 함수 실행
 
-            exit;
+                redirect('/Main/lists');
+
+                exit;
+            }
+
+
 
         } else {
             $this->load->view('todo/header_v');
@@ -132,13 +133,13 @@ class Main extends CI_Controller{
 
     public function date_valid($date) //mm-dd-yyyy
     {
-        $result = $this->debug->debug_var($date);
-        echo 'date_valid() before :' .$result;
+//        $result = $this->debug->debug_var($date);
+//        echo 'date_valid() before :' .$result;
 
         $fixdate = date('m-d-Y',strtotime($date));
 
-        $result = $this->debug->debug_var($date);
-        echo 'date_valid() after :' .$result;
+//        $result = $this->debug->debug_var($date);
+//        echo 'date_valid() after :' .$result;
 
         $parts = explode("-", $fixdate);
         if (count($parts) == 3) {
@@ -146,6 +147,7 @@ class Main extends CI_Controller{
             {
                 return TRUE;
             }
+
         }
         $this->form_validation->set_message('date_valid', 'The Date field must be mm/dd/yyyy');
         return false;
