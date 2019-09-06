@@ -83,12 +83,12 @@ class Main extends CI_Controller{
             $result = $this->debug->debug_var($created_on);
             echo 'before : '.$result;
 
-            date_format($created_on, "YYYY-MM-DD");
-            date_format($due_date, "YYYY-MM-DD");
+            $startDate =$this->date_format($created_on, "Y-m-d");
+            $endDate = $this->date_format($due_date, "Y-m-d");
 
-            $this->todo_m->insert_todo($subject, $content, $created_on, $due_date, 2); //전송받은 데이터를 파라미터로 todo_m 에 insert_todo 함수 실행
+            $this->todo_m->insert_todo($subject, $content, $startDate, $endDate, 2); //전송받은 데이터를 파라미터로 todo_m 에 insert_todo 함수 실행
 
-            $result = $this->debug->debug_var($created_on);
+            $result = $this->debug->debug_var($startDate);
             echo 'after :' .$result;
 
 //            redirect('/Main/lists');
