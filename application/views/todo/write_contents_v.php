@@ -5,7 +5,7 @@
                 <div class="control-group">
                     <?php
                     $extraOpt = array(
-                        'onClick'=>'Chk_Text();'
+                        'placeholder'=>'YYYY-MM-DD'
                     );
                     ?>
                     <label class="control-label" for="input00">제목</label>
