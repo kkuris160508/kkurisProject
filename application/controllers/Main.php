@@ -83,8 +83,8 @@ class Main extends CI_Controller{
             $result = $this->debug->debug_var($created_on);
             echo 'before : '.$result;
 
-            $startDate = date_format($created_on, "Y-m-d");
-            $endDate = date_format($due_date, "Y-m-d");
+            $startDate = date("Y-m-d",$created_on);
+            $endDate = date("Y-m-d",$due_date);
 
             $this->todo_m->insert_todo($subject, $content, $startDate, $endDate, 2); //전송받은 데이터를 파라미터로 todo_m 에 insert_todo 함수 실행
 
