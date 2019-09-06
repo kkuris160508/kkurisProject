@@ -14,7 +14,7 @@
                     <p class = 'help-block'>
                         <?php
                             if(form_error('username') == FALSE){
-                                echo "아이디를 입력하세요";
+                                echo "";
                             } else {
                                 echo form_error('username');
                             }
@@ -31,7 +31,7 @@
                     <p class = 'help-block'>
                         <?php
                         if(form_error('password') == FALSE){
-                            echo "비밀번호를 입력하세요";
+                            echo "";
                         } else {
                             echo form_error('password');
                         }
@@ -49,7 +49,7 @@
                     <p class = 'help-block'>
                         <?php
                         if(form_error('passconf') == FALSE){
-                            echo "비밀번호를 한번 더 입력 해주세요";
+                            echo "";
                         } else {
                             echo form_error('passconf');
                         }
@@ -66,7 +66,7 @@
                     <p class = 'help-block'>
                         <?php
                         if(form_error('email') == FALSE){
-                            echo "이메일을 입력해주세요";
+                            echo "";
                         } else {
                             echo form_error('email');
                         }
