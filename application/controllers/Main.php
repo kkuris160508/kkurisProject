@@ -78,8 +78,8 @@ class Main extends CI_Controller{
             $created_on = $this->input->post('created_on', TRUE);
             $due_date = $this->input->post('due_date', TRUE);
 
-            $result = $this->debug->debug_var($created_on);
-            echo 'before : '.$result;
+            $this->debug->debug_var($created_on);
+
 
             if(!date("Y-m-d", $created_on)){
 
@@ -133,24 +133,30 @@ class Main extends CI_Controller{
 
     public function date_valid($date) //mm-dd-yyyy
     {
-//        $result = $this->debug->debug_var($date);
-//        echo 'date_valid() before :' .$result;
+        if(date('Y-m-d', $date)){
+            $result = $this->debug->debug_var($date);
+            echo 'date_valid() before :' .$result;
 
-        $fixdate = date('m-d-Y',strtotime($date));
+            $fixdate = date('m-d-Y',strtotime($date));
 
 //        $result = $this->debug->debug_var($date);
 //        echo 'date_valid() after :' .$result;
 
-        $parts = explode("-", $fixdate);
-        if (count($parts) == 3) {
-            if (checkdate($parts[0], $parts[1], $parts[2]))
-            {
-                return TRUE;
-            }
+            $parts = explode("-", $fixdate);
+            if (count($parts) == 3) {
+                if (checkdate($parts[0], $parts[1], $parts[2]))
+                {
+                    return TRUE;
+                }
 
+            }
+            $this->form_validation->set_message('date_valid', '제대로 입력해라 시키야');
+            return false;
+        } else {
+            $this->form_validation->set_message('date_valid', '올바른 형식을 입력해라 시키야');
+            return false;
         }
-        $this->form_validation->set_message('date_valid', 'The Date field must be mm/dd/yyyy');
-        return false;
+        
     }
 
     function test(){
