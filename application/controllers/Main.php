@@ -67,8 +67,11 @@ class Main extends CI_Controller{
 
         $this->form_validation->set_rules('subject','제목','required');
         $this->form_validation->set_rules('content','내용','required');
-        $this->form_validation->set_rules('created_on', '시작일', 'callback_date_valid');
-        $this->form_validation->set_rules('due_date', '종료일', 'callback_date_valid');
+//        $this->form_validation->set_rules('created_on', '시작일', 'callback_date_valid');
+//        $this->form_validation->set_rules('due_date', '종료일', 'callback_date_valid');
+
+        $this->form_validation->set_rules('create_on', 'Date of Birth', "trim|required|callback_dob_check");
+        $this->form_validation->set_rules('due_date', 'Date of Birth', "trim|required|callback_dob_check");
 
         echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
 
@@ -120,33 +123,42 @@ class Main extends CI_Controller{
         }
     }
 
-    public function date_valid($date) //mm-dd-yyyy
-    {
+//    public function date_valid($date) //mm-dd-yyyy
+//    {
+//
+////        $pattern = '/(0[1-9]|1[0-9]|2[0-9]|3(0|1))-(0[1-9]|1[0-2])-\d{4}]/';
+//            $pattern = '[/(0[1-9]|1[0-9]|2[0-9]|3(0|1))-(0[1-9]|1[0-2])-\d{4}/]';
+//
+//
+//            $result = $this->debug->debug_var($date);
+//            echo 'date_valid() before :' .$result;
+//
+//            $fixdate = date('m-d-Y',strtotime($date));
+//
+////        $result = $this->debug->debug_var($date);
+////        echo 'date_valid() after :' .$result;
+//
+//            $parts = explode("-", $fixdate);
+//            if (count($parts) == 3) {
+//                if (checkdate($parts[0], $parts[1], $parts[2]))
+//                {
+//                    return TRUE;
+//                }
+//
+//            } else if(preg_match($pattern,$date) == 0){
+//                $this->form_validation->set_message('date_valid',  '<p style="color: #FF0000;"> 날짜 형식만 입력 가능합니다. <br> ex) YYYY-MM-DD');
+//                exit;
+//            }
+//
+//    }
 
-//        $pattern = '/(0[1-9]|1[0-9]|2[0-9]|3(0|1))-(0[1-9]|1[0-2])-\d{4}]/';
-            $pattern = '[/(0[1-9]|1[0-9]|2[0-9]|3(0|1))-(0[1-9]|1[0-2])-\d{4}/]';
-
-
-            $result = $this->debug->debug_var($date);
-            echo 'date_valid() before :' .$result;
-
-            $fixdate = date('m-d-Y',strtotime($date));
-
-//        $result = $this->debug->debug_var($date);
-//        echo 'date_valid() after :' .$result;
-
-            $parts = explode("-", $fixdate);
-            if (count($parts) == 3) {
-                if (checkdate($parts[0], $parts[1], $parts[2]))
-                {
-                    return TRUE;
-                }
-
-            } else if(preg_match($pattern,$date) == 0){
-                $this->form_validation->set_message('date_valid',  '<p style="color: #FF0000;"> 날짜 형식만 입력 가능합니다. <br> ex) YYYY-MM-DD');
-                exit;
-            }
-
+    public function dob_check($str){
+        if (!DateTime::createFromFormat('Y-m-d', $str)) { //yes it's YYYY-MM-DD
+            $this->form_validation->set_message('dob_check', 'The {field} has not a valid date format');
+            return FALSE;
+        } else {
+            return TRUE;
+        }
     }
 
     function test(){
