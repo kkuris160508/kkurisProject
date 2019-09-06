@@ -80,10 +80,16 @@ class Main extends CI_Controller{
             $created_on = $this->input->post('created_on', TRUE);
             $due_date = $this->input->post('due_date', TRUE);
 
+            $result = $this->debug->debug_var($created_on);
+            echo 'before : '.$result;
+
+            date_format($created_on, "YYYY-MM-DD");
+            date_format($due_date, "YYYY-MM-DD");
+
             $this->todo_m->insert_todo($subject, $content, $created_on, $due_date, 2); //전송받은 데이터를 파라미터로 todo_m 에 insert_todo 함수 실행
 
             $result = $this->debug->debug_var($created_on);
-            echo $result;
+            echo 'after :' .$result;
 
 //            redirect('/Main/lists');
 //            $this->load->view('test/form_success_v');
