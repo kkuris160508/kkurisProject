@@ -5,6 +5,8 @@
       <change afterPath="$PROJECT_DIR$/application/controllers/Auth.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/application/views/header_v.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/application/views/login_v.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -56,8 +58,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="149" column="5" lean-forward="true" selection-start-line="149" selection-start-column="5" selection-end-line="149" selection-end-column="5" />
+            <state relative-caret-position="328">
+              <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/date/date.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-605">
+              <caret line="509" column="9" selection-start-line="509" selection-start-column="9" selection-end-line="509" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -162,6 +173,7 @@
       <find>pro</find>
       <find>valid_email</find>
       <find>date_valid</find>
+      <find>checkDateFormat</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -350,28 +362,7 @@
       <workItem from="1566393166217" duration="887000" />
       <workItem from="1566434725670" duration="8038000" />
       <workItem from="1566451578138" duration="2043000" />
-      <workItem from="1566828260309" duration="130507000" />
-    </task>
-    <task id="LOCAL-00218" summary="부트스트랩 table">
-      <created>1567477791632</created>
-      <option name="number" value="00218" />
-      <option name="presentableId" value="LOCAL-00218" />
-      <option name="project" value="LOCAL" />
-      <updated>1567477791632</updated>
-    </task>
-    <task id="LOCAL-00219" summary="부트스트랩 table">
-      <created>1567477908317</created>
-      <option name="number" value="00219" />
-      <option name="presentableId" value="LOCAL-00219" />
-      <option name="project" value="LOCAL" />
-      <updated>1567477908317</updated>
-    </task>
-    <task id="LOCAL-00220" summary="부트스트랩 table">
-      <created>1567478075071</created>
-      <option name="number" value="00220" />
-      <option name="presentableId" value="LOCAL-00220" />
-      <option name="project" value="LOCAL" />
-      <updated>1567478075071</updated>
+      <workItem from="1566828260309" duration="131625000" />
     </task>
     <task id="LOCAL-00221" summary="부트스트랩 table">
       <created>1567478298130</created>
@@ -695,11 +686,32 @@
       <option name="project" value="LOCAL" />
       <updated>1567743075460</updated>
     </task>
-    <option name="localTasksCounter" value="267" />
+    <task id="LOCAL-00267" summary="main/write 날짜 입력 정규표현식 수정">
+      <created>1567743225136</created>
+      <option name="number" value="00267" />
+      <option name="presentableId" value="LOCAL-00267" />
+      <option name="project" value="LOCAL" />
+      <updated>1567743225136</updated>
+    </task>
+    <task id="LOCAL-00268" summary="autoload.php session 사용하기 위해 설정 변경">
+      <created>1567743300752</created>
+      <option name="number" value="00268" />
+      <option name="presentableId" value="LOCAL-00268" />
+      <option name="project" value="LOCAL" />
+      <updated>1567743300752</updated>
+    </task>
+    <task id="LOCAL-00269" summary="autoload.php session 사용하기 위해 설정 변경">
+      <created>1567744046760</created>
+      <option name="number" value="00269" />
+      <option name="presentableId" value="LOCAL-00269" />
+      <option name="project" value="LOCAL" />
+      <updated>1567744046760</updated>
+    </task>
+    <option name="localTasksCounter" value="270" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142966000" />
+    <option name="totallyTimeSpent" value="144084000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -781,7 +793,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="조회수 출력 추가" />
     <MESSAGE value="segment test fn" />
     <MESSAGE value="footer" />
     <MESSAGE value="부트스트랩 table" />
@@ -795,7 +806,6 @@
     <MESSAGE value="폼검증 데이터 복원 set_value 추가" />
     <MESSAGE value="Test.php callback 으로 유저 아이디 체크" />
     <MESSAGE value="profiler 주석" />
-    <MESSAGE value="autoload.php session 사용하기 위해 설정 변경" />
     <MESSAGE value="에러메세지 개별 표시" />
     <MESSAGE value="validation.php required 스트링 변경" />
     <MESSAGE value="validation_lang.php match  변경" />
@@ -806,16 +816,11 @@
     <MESSAGE value="main/write 날짜입력부 정규표현식 추가" />
     <MESSAGE value="write v 오류 수정" />
     <MESSAGE value="main/write 날짜 입력 정규표현식 callback 함수 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="main/write 날짜 입력 정규표현식 callback 함수 추가" />
+    <MESSAGE value="main/write 날짜 입력 정규표현식 수정" />
+    <MESSAGE value="autoload.php session 사용하기 위해 설정 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="autoload.php session 사용하기 위해 설정 변경" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/libraries/Debug.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="2" lean-forward="true" selection-end-line="15" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Tutorial.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1163,10 +1168,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/date/date.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-605">
+          <caret line="509" column="9" selection-start-line="509" selection-start-column="9" selection-end-line="509" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="149" column="5" lean-forward="true" selection-start-line="149" selection-start-column="5" selection-end-line="149" selection-end-column="5" />
+        <state relative-caret-position="328">
+          <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
         </state>
       </provider>
     </entry>
