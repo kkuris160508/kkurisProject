@@ -130,7 +130,7 @@ class Main extends CI_Controller{
         $pattern = '/^(19|20)\d\d[\-\/.](0[1-9]|1[012])[\-\/.](0[1-9]|[12][0-9]|3[01])$/';
 
         if(!preg_match($date,$pattern)){
-            exit;
+            return false;
         }
 
         $result = $this->debug->debug_var($date);
