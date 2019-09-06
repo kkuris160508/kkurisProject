@@ -13,10 +13,10 @@
                     <?php echo form_input('username',set_value('username'))?>
                     <p class = 'help-block'>
                         <?php
-                            if($error_username == FALSE){
+                            if(form_error('username') == FALSE){
                                 echo "아이디를 입력하세요";
                             } else {
-                                echo $error_username;
+                                echo form_error('username');
                             }
                         ?>
                     </p>
