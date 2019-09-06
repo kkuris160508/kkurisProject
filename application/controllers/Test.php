@@ -18,7 +18,7 @@ class Test extends CI_Controller{
     }
 
     public function forms(){
-        $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+//        $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
         $this->load->library('form_validation'); //폼 검증 라이브러리 로드
 
