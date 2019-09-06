@@ -123,9 +123,9 @@ class Main extends CI_Controller{
     public function date_valid($date) //mm-dd-yyyy
     {
 
-        $pattern = '/(0[1-9]|1[0-9]|2[0-9]|3(0|1))-(0[1-9]|1[0-2])-\d{4}]/';
+//        $pattern = '/(0[1-9]|1[0-9]|2[0-9]|3(0|1))-(0[1-9]|1[0-2])-\d{4}]/';
 
-        if(preg_match($date,$pattern)){
+
 
             $result = $this->debug->debug_var($date);
             echo 'date_valid() before :' .$result;
@@ -143,14 +143,14 @@ class Main extends CI_Controller{
                 }
 
             } else {
+                $this->form_validation->set_message('date_valid',  '<p style="color: #FF0000;"> 날짜 형식만 입력 가능합니다. <br> ex) YYYY-MM-DD');
                 return FALSE;
             }
 //
 
-        } else {
-            $this->form_validation->set_message('date_valid',  '<p style="color: #FF0000;"> 날짜 형식만 입력 가능합니다. <br> ex) YYYY-MM-DD');
-            return FALSE;
-        }
+
+
+
 
     }
 
