@@ -28,4 +28,4 @@
     </nav><!-- gnb end -->
     <article id="board_area">
         <header>
-            <h1>Todo <?php echo $param?></h1>
+            <h1>Todo <?php echo $param;?></h1>

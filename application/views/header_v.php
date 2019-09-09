@@ -47,4 +47,4 @@
     </nav><!-- gnb end -->
     <article id="board_area">
         <header>
-            <h1>Todo 목록</h1>
+            <h1>Todo <?php echo $param;?></h1>
