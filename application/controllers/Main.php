@@ -21,6 +21,7 @@ class Main extends CI_Controller{
     }
 
     function lists(){
+        $param = '목록';
 //        $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
 //        $this->load->library('pagination'); // 페이지 네이션 설정
@@ -47,7 +48,7 @@ class Main extends CI_Controller{
 //        $this->load->view('')
 
         $data['list'] = $this->todo_m->get_list();
-        $this->load->view('header_v');
+        $this->load->view('header_v', $param);
         $this->load->view('todo/list_contents_v', $data);
         $this->load->view('todo/footer_v');
     }
@@ -62,6 +63,7 @@ class Main extends CI_Controller{
 
     // write controller 추가
     function write(){ //쓰기 함수 $_POST 의 유무에 따라 if-else 분기 처리. post 전송이 없을 경우 else 실행되어 입력 폼이 출력.
+        $param = '작성';
         $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
         $this->load->library('form_validation');
 
@@ -102,7 +104,7 @@ class Main extends CI_Controller{
                 redirect('/Main/lists');
 
             } else {
-                $this->load->view('todo/header_v');
+                $this->load->view('todo/header_v', $param);
                 $this->load->view('todo/write_contents_v');
                 $this->load->view('todo/footer_v');
             }
