@@ -96,7 +96,7 @@ class Main extends CI_Controller{
 
                 $this->debug->debug_var($created_on);
 
-                $this->todo_m->insert_todo($subject, $content, $created_on, $due_date, $writer); //전송받은 데이터를 파라미터로 todo_m 에 insert_todo 함수 실행
+                $this->todo_m->insert_todo($subject, $content, $created_on, $due_date, $result); //전송받은 데이터를 파라미터로 todo_m 에 insert_todo 함수 실행
 
 
                 redirect('/Main/lists');
