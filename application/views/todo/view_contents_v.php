@@ -2,7 +2,7 @@
         <table class="table table-striped">
             <thead class="thead-dark">
             <tr>
-                <th colspan = "5"><?php echo $views -> id;?> 번 할일</th>
+                <th colspan = "7"><?php echo $views -> id;?> 번 할일</th>
             </tr>
             </thead>
             <tbody>

@@ -62,7 +62,13 @@ class Todo_m extends CI_Model{
 //    }
 
     function get_views($id){
-        $sql = "SELECT * FROM items WHERE id = '" .$id . "'";
+        $sql = "SELECT it.* FROM items as it
+                LEFT JOIN accountTB as acc
+                ON it.writer = acc.no
+                WHERE it.id = '" .$id . "'
+                ORDER BY id DESC";
+
+//        $sql = "SELECT * FROM items WHERE id = '" .$id . "'";
         $sql1 = "UPDATE items SET hit = hit + 1 WHERE id = '".$id."'"; //조회수 증가 쿼리
 
         $query = $this->db->query($sql);
