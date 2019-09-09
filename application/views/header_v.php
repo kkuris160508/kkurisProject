@@ -32,6 +32,7 @@
                 } else {
                     ?>
                     <a href="/Auth/login" class="btn btn-primary"> 로그인 </a>
+                    <a href="/Main/join" class="btn btn-success"> 회원가입 </a>
                     <?php
                 }
                 ?>

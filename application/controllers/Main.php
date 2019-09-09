@@ -112,7 +112,7 @@ class Main extends CI_Controller{
         redirect('/Main/lists');
     }
 
-    function login(){
+    function join(){
         if($_POST){
             $id = $this->input->post('account_id');
             $pw = $this->input->post('Password');
