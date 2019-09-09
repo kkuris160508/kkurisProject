@@ -13,7 +13,7 @@ class Main extends CI_Controller{
         parent::__construct();
         $this->load->database();
         $this->load->model('todo_m');
-        $this->load->helper(array('url','date', 'form'));
+        $this->load->helper(array('url','date', 'form','alert'));
     }
 
     function index(){
@@ -118,11 +118,19 @@ class Main extends CI_Controller{
             $pw = $this->input->post('Password');
             $email = $this->input->post('EMAIL');
 
-            $this->todo_m->insert_account_todo($id, $pw, $email);
+            $result = $this->todo_m->insert_account_todo($id, $pw, $email);
 
-            redirect('/Main/lists');
+            if($result){
+                alert('가입이 완료 되었습니다. 로그인 하여 주십시오','/Main/lists');
 
+//                redirect('/Main/lists');
+            } else {
+                alert('가입되지 않았습니다 다시 가입하여 주십시오','/Main/join');
+
+            }
             exit;
+
+
 
         } else {
             $this->load->view('todo/login_header_v');
