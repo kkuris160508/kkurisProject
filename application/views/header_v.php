@@ -15,11 +15,12 @@
 
 </head>
 <body>
+
 <div id="main">
-    <header id="header" data-role="header" data-position="fixed">
+    <header id="header" data-role="header" data-position="fixed"><!-- Header Start -->
         <blockquote>
             <p>
-                만들면서 배우는 CodeIgniter
+                CodeIgniter
             </p>
             <small>실행 예제</small>
             <p>
@@ -36,11 +37,13 @@
                 ?>
             </p>
         </blockquote>
-    </header>
-    <nav id="gnb">
+    </header> <!-- Header End -->
+    <nav id="gnb"> <!-- gnb start -->
         <ul>
-            <li>
-                <a rel="external" href="/Main/<?php echo $this -> uri -> segment(1); ?>/lists/<?php echo $this -> uri -> segment(3); ?>"> 게시판 프로젝트 </a>
-            </li>
+            <li><a rel="external" href="/Main/lists/">todo 애플리케이션 프로그램</a></li>
+            <li><a rel="external" href="/Main/lotto/">??? </a></li>
         </ul>
-    </nav>
+    </nav><!-- gnb end -->
+    <article id="board_area">
+        <header>
+            <h1>Todo 목록</h1>
