@@ -1,5 +1,5 @@
 
-<?php echo form_open('/Main/login')?>
+<?php echo form_open('/Main/join')?>
 <!--        <form class="form-horizontal" accept-charset="utf-8" method="post" action="" id="write_action">--> <!-- form open 사용으로 form 태그 삭제 -->
 <fieldset>
     <div class="control-group">

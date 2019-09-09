@@ -28,4 +28,4 @@
     </nav><!-- gnb end -->
     <article id="board_area">
         <header>
-            <h1>로그인 체크</h1>
+            <h1>회원가입</h1>
