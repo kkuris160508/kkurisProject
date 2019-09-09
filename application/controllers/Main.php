@@ -98,8 +98,11 @@ class Main extends CI_Controller{
                 $this->load->view('todo/write_contents_v');
                 $this->load->view('todo/footer_v');
             }
+        } else {
+            $this->load->helper('alert');
+            alert('글을 작성하시려면 로그인 하십시오.', '/Auth/login');
         }
-
+        
     }
 
     function delete(){
