@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<div id="main">
+<div id="main" style="margin-left: 20px;">
     <header id="header" data-role="header" data-position="fixed"><!-- Header Start -->
         <blockquote>
             <p>

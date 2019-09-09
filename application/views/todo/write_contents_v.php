@@ -9,7 +9,7 @@
                     );
                     ?>
 
-                    <div id = 'subjectDiv'>
+                    <div id = 'subjectDiv' style="float: left;">
                         <label class="control-label" for="input00">제목</label>
                         <div class="controls">
                             <!--                        <input type="text" class="input-xlarge" id="input01" name="content">-->
@@ -25,7 +25,7 @@
                             </p>
                         </div>
                     </div>
-                    <div id = 'startDate'>
+                    <div id = 'startDate' style="float: left; margin-left: 50px;">
                         <label class="control-label" for="input02">시작일</label>
                         <div class="controls">
                             <!--                        <input type="text" class="input-xlarge" id="input02" name="created_on">-->
@@ -42,7 +42,7 @@
                             </p>
                         </div>
                     </div>
-                    <div id = 'endDateDiv'>
+                    <div id = 'endDateDiv' style="float: left; margin-left: 50px;">
                         <label class="control-label" for="input03">종료일</label>
                         <div class="controls">
                             <!--                        <input type="text" class="input-xlarge" id="input03" name="due_date">-->
