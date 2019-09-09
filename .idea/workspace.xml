@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="버그수정">
+    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="회원가입시 한글 불가">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/todo/login_contents_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/todo/login_contents_v.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -55,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="158" column="53" lean-forward="true" selection-start-line="158" selection-start-column="53" selection-end-line="158" selection-end-column="53" />
+            <state relative-caret-position="663">
+              <caret line="164" column="17" lean-forward="true" selection-start-line="164" selection-start-column="17" selection-end-line="164" selection-end-column="17" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
               </folding>
@@ -379,35 +379,7 @@
       <workItem from="1566393166217" duration="887000" />
       <workItem from="1566434725670" duration="8038000" />
       <workItem from="1566451578138" duration="2043000" />
-      <workItem from="1566828260309" duration="165417000" />
-    </task>
-    <task id="LOCAL-00329" summary="autoload.php session 사용하기 위해 설정 변경">
-      <created>1567760393239</created>
-      <option name="number" value="00329" />
-      <option name="presentableId" value="LOCAL-00329" />
-      <option name="project" value="LOCAL" />
-      <updated>1567760393239</updated>
-    </task>
-    <task id="LOCAL-00330" summary="autoload.php session 사용하기 위해 설정 변경">
-      <created>1567760474056</created>
-      <option name="number" value="00330" />
-      <option name="presentableId" value="LOCAL-00330" />
-      <option name="project" value="LOCAL" />
-      <updated>1567760474056</updated>
-    </task>
-    <task id="LOCAL-00331" summary="autoload.php session 사용하기 위해 설정 변경">
-      <created>1567760529458</created>
-      <option name="number" value="00331" />
-      <option name="presentableId" value="LOCAL-00331" />
-      <option name="project" value="LOCAL" />
-      <updated>1567760529458</updated>
-    </task>
-    <task id="LOCAL-00332" summary="autoload.php session 사용하기 위해 설정 변경">
-      <created>1567760686030</created>
-      <option name="number" value="00332" />
-      <option name="presentableId" value="LOCAL-00332" />
-      <option name="project" value="LOCAL" />
-      <updated>1567760686030</updated>
+      <workItem from="1566828260309" duration="165934000" />
     </task>
     <task id="LOCAL-00333" summary="작성시간 select m,v 추가">
       <created>1567761023967</created>
@@ -724,11 +696,39 @@
       <option name="project" value="LOCAL" />
       <updated>1568008458752</updated>
     </task>
-    <option name="localTasksCounter" value="378" />
+    <task id="LOCAL-00378" summary="회원가입시 한글 불가">
+      <created>1568008998358</created>
+      <option name="number" value="00378" />
+      <option name="presentableId" value="LOCAL-00378" />
+      <option name="project" value="LOCAL" />
+      <updated>1568008998358</updated>
+    </task>
+    <task id="LOCAL-00379" summary="회원가입시 한글 불가">
+      <created>1568009038128</created>
+      <option name="number" value="00379" />
+      <option name="presentableId" value="LOCAL-00379" />
+      <option name="project" value="LOCAL" />
+      <updated>1568009038128</updated>
+    </task>
+    <task id="LOCAL-00380" summary="회원가입시 한글 불가">
+      <created>1568009126208</created>
+      <option name="number" value="00380" />
+      <option name="presentableId" value="LOCAL-00380" />
+      <option name="project" value="LOCAL" />
+      <updated>1568009126208</updated>
+    </task>
+    <task id="LOCAL-00381" summary="회원가입시 한글 불가">
+      <created>1568009338981</created>
+      <option name="number" value="00381" />
+      <option name="presentableId" value="LOCAL-00381" />
+      <option name="project" value="LOCAL" />
+      <updated>1568009338981</updated>
+    </task>
+    <option name="localTasksCounter" value="382" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177876000" />
+    <option name="totallyTimeSpent" value="178393000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -810,7 +810,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="작성시간 select m,v 추가" />
     <MESSAGE value="insert query 변경" />
     <MESSAGE value="프로파일러 주석" />
     <MESSAGE value="autoload.php session 사용하기 위해 설정 변경" />
@@ -835,7 +834,8 @@
     <MESSAGE value="index.php define 변경 development -&gt; production" />
     <MESSAGE value="작성자 입력 안되는 부분 수정시작" />
     <MESSAGE value="버그수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="버그수정" />
+    <MESSAGE value="회원가입시 한글 불가" />
+    <option name="LAST_COMMIT_MESSAGE" value="회원가입시 한글 불가" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/application/views/mvc_sample/blog_basic_model.php">
@@ -1181,8 +1181,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="158" column="53" lean-forward="true" selection-start-line="158" selection-start-column="53" selection-end-line="158" selection-end-column="53" />
+        <state relative-caret-position="663">
+          <caret line="164" column="17" lean-forward="true" selection-start-line="164" selection-start-column="17" selection-end-line="164" selection-end-column="17" />
           <folding>
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
           </folding>

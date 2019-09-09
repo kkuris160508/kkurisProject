@@ -151,7 +151,11 @@ class Main extends CI_Controller{
                 alert('가입이 완료 되었습니다. 로그인 하여 주십시오','/Main/lists');
 //                redirect('/Main/lists');
             } else {
-                $result3 = $this->debug->debug_var($result); // 시발 debug 를 소문자로...ㅡㅡ
+                $result3 = $this->debug->debug_var($id); // 시발 debug 를 소문자로...ㅡㅡ
+                echo $result3;
+                $result3 = $this->debug->debug_var($pw); // 시발 debug 를 소문자로...ㅡㅡ
+                echo $result3;
+                $result3 = $this->debug->debug_var($email); // 시발 debug 를 소문자로...ㅡㅡ
                 echo $result3;
 
 //                alert('가입되지 않았습니다 다시 가입하여 주십시오','/Main/join');
