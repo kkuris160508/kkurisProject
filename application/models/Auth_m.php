@@ -17,7 +17,8 @@ class Auth_m extends CI_Model{
         $query = $this->db->query($sql);
 
         if($query->num_rows() > 0){
-            return $query -> rows();
+            $result = $query -> rows();
+            return $result;
         } else {
             return false;
         }
