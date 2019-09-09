@@ -5,7 +5,7 @@
         'class' => 'form-horizontal',
         'id' => 'auth_login'
     );
-    echo form_open('/Auth/login', $attributes);
+    echo form_open('/Auth/login');
     ?>
     <fieldset>
         <legend>로그인</legend>
@@ -40,4 +40,5 @@
             </div>
         </div>
     </fieldset>
+    <?php echo form_close();?>
 </article>
