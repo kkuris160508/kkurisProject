@@ -21,7 +21,9 @@ class Main extends CI_Controller{
     }
 
     function lists(){
-        $param = '목록';
+        $param = array(
+            'id'=>'목록'
+        );
 //        $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
 //        $this->load->library('pagination'); // 페이지 네이션 설정
@@ -48,7 +50,7 @@ class Main extends CI_Controller{
 //        $this->load->view('')
 
         $data['list'] = $this->todo_m->get_list();
-        $this->load->view('header_v', $param);
+        $this->load->view('todo/header_v', $param);
         $this->load->view('todo/list_contents_v', $data);
         $this->load->view('todo/footer_v');
     }
@@ -63,8 +65,10 @@ class Main extends CI_Controller{
 
     // write controller 추가
     function write(){ //쓰기 함수 $_POST 의 유무에 따라 if-else 분기 처리. post 전송이 없을 경우 else 실행되어 입력 폼이 출력.
-        $param = '작성';
-        $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+        $param = array(
+            'id'=>'작성'
+        );
+//        $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
         $this->load->library('form_validation');
 
         $this->form_validation->set_rules('subject','제목','required');
@@ -84,10 +88,10 @@ class Main extends CI_Controller{
             $writer = $this -> session -> userdata('account_id');
             $result = $this->todo_m->getAccountInfoNo($writer);
 
-            $result2 = $this->debug->debug_var($writer); // 시발 debug 를 소문자로...ㅡㅡ
-            echo $result2;
-            $result3 = $this->debug->debug_var($result); // 시발 debug 를 소문자로...ㅡㅡ
-            echo $result3[0]->no;
+//            $result2 = $this->debug->debug_var($writer); // 시발 debug 를 소문자로...ㅡㅡ
+//            echo $result2;
+//            $result3 = $this->debug->debug_var($result); // 시발 debug 를 소문자로...ㅡㅡ
+//            echo $result3[0]->no;
 
             if($this->form_validation->run() == TRUE){
 
