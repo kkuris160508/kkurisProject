@@ -1,4 +1,4 @@
-<a href="/Auth/login/" class="btn btn-success">로그인/회원가입</a>
+<!--<a href="/Auth/login/" class="btn btn-success">로그인/회원가입</a>-->
 </header>
 <table class="table table-striped">
     <thead class="thead-dark">
