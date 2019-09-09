@@ -87,6 +87,18 @@ class Todo_m extends CI_Model{
         $sql = "INSERT INTO accountTB (account_id, PW, EMAIL) VALUES ('" .$accountID. "','" .$pw. "','".$email."')";
         $query = $this->db->query($sql);
     }
+
+    function getAccount($id){
+        $sql = "SELECT * FROM accountTB WHERE account_id = '" . $id . "'";
+        $query = $this->db->query($sql);
+
+        if($query->num_rows() > 0){
+            $result = $query -> row();
+            return $result;
+        } else {
+            return false;
+        }
+    }
 }
 
 ?>

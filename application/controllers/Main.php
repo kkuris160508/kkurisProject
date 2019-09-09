@@ -118,7 +118,8 @@ class Main extends CI_Controller{
             $pw = $this->input->post('Password');
             $email = $this->input->post('EMAIL');
 
-            $result = $this->todo_m->insert_account_todo($id, $pw, $email);
+            $this->todo_m->insert_account_todo($id, $pw, $email);
+            $result = $this->todo_m->getAccount($id);
 
             if($result){
                 alert('가입이 완료 되었습니다. 로그인 하여 주십시오','/Main/lists');
