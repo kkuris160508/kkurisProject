@@ -12,7 +12,7 @@ class Auth_m extends CI_Model{
     }
 
     public function login($auth){
-        $sql = "SELECT username, email FROM users where username = '" . $auth['username']. "' AND password = '" . $auth['password']. "' ";
+        $sql = "SELECT username, email FROM accountTB where account_id = '" . $auth['username']. "' AND PW = '" . $auth['password']. "' ";
 
         $query = $this->db->query($sql);
 
