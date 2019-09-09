@@ -133,15 +133,15 @@ class Main extends CI_Controller{
 //        $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
         $this->load->library('form_validation');
 
-        $this->form_validation->set_rules('account_id','아이디','required|alpha_numeric');
-        $this->form_validation->set_rules('Password','비밀번호','required|min_length[6]');
-        $this->form_validation->set_rules('EMAIL','이메일','required|valid_email');
+        $this->form_validation->set_rules('accountID','아이디','required|alpha_numeric');
+        $this->form_validation->set_rules('password','비밀번호','required|min_length[6]');
+        $this->form_validation->set_rules('email','이메일','required|valid_email');
 
         if($this->form_validation->run() == TRUE){
 
-            $id = $this->input->post('account_id', TRUE);
-            $pw = $this->input->post('Password', TRUE);
-            $email = $this->input->post('EMAIL', TRUE);
+            $id = $this->input->post('accountID', TRUE);
+            $pw = $this->input->post('password', TRUE);
+            $email = $this->input->post('email', TRUE);
 
             $result = $this->todo_m->getAccountInfo($id);
 
