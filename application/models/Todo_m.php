@@ -100,6 +100,17 @@ class Todo_m extends CI_Model{
             return false;
         }
     }
+
+    function getAccountInfoNo($writer){
+        $sql = "SELECT no FROM accountTB WHERE account_id = '" . $writer . "'";
+
+        $query = $this->db->query($sql);
+
+        $result = $query->result();
+
+        return $result;
+
+    }
 }
 
 ?>

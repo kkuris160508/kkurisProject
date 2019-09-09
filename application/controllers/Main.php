@@ -80,9 +80,12 @@ class Main extends CI_Controller{
         if ( @$this -> session -> userdata('logged_in') == TRUE) {
 
             $writer = $this -> session -> userdata('account_id');
+            $result = $this->todo_m->getAccountInfoNo($writer);
 
             $result2 = $this->debug->debug_var($writer); // 시발 debug 를 소문자로...ㅡㅡ
             echo $result2;
+            $result3 = $this->debug->debug_var($result); // 시발 debug 를 소문자로...ㅡㅡ
+            echo $result3;
 
             if($this->form_validation->run() == TRUE){
 
