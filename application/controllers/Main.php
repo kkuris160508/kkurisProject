@@ -21,7 +21,7 @@ class Main extends CI_Controller{
     }
 
     function lists(){
-        $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+//        $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
 //        $this->load->library('pagination'); // 페이지 네이션 설정
 //        $config['base_url'] = 'ci_board/page'; //페이징 주소
@@ -75,24 +75,29 @@ class Main extends CI_Controller{
 
         echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
 
-        if($this->form_validation->run() == TRUE){
+        if ( @$this -> session -> userdata('logged_in') == TRUE) {
 
-            $subject = $this->input->post('subject', TRUE);
-            $content = $this->input->post('content', TRUE);
-            $created_on = $this->input->post('created_on', TRUE);
-            $due_date = $this->input->post('due_date', TRUE);
+            $writer = $this -> session -> userdata('account_id');
 
-            $this->debug->debug_var($created_on);
+            if($this->form_validation->run() == TRUE){
 
-            $this->todo_m->insert_todo($subject, $content, $created_on, $due_date, 2); //전송받은 데이터를 파라미터로 todo_m 에 insert_todo 함수 실행
+                $subject = $this->input->post('subject', TRUE);
+                $content = $this->input->post('content', TRUE);
+                $created_on = $this->input->post('created_on', TRUE);
+                $due_date = $this->input->post('due_date', TRUE);
+
+                $this->debug->debug_var($created_on);
+
+                $this->todo_m->insert_todo($subject, $content, $created_on, $due_date, $writer); //전송받은 데이터를 파라미터로 todo_m 에 insert_todo 함수 실행
 
 
-            redirect('/Main/lists');
+                redirect('/Main/lists');
 
-        } else {
-            $this->load->view('todo/header_v');
-            $this->load->view('todo/write_contents_v');
-            $this->load->view('todo/footer_v');
+            } else {
+                $this->load->view('todo/header_v');
+                $this->load->view('todo/write_contents_v');
+                $this->load->view('todo/footer_v');
+            }
         }
 
     }
