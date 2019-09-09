@@ -17,7 +17,7 @@
             </tr>
             <tr>
                 <th>
-                    <?php echo $views -> writer;?>
+                    <?php echo $views -> account_id;?>
                 </th>
                 <th>
                     <?php echo $views -> subject;?>
