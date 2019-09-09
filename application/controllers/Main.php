@@ -50,15 +50,18 @@ class Main extends CI_Controller{
 //        $this->load->view('')
 
         $data['list'] = $this->todo_m->get_list();
-        $this->load->view('todo/header_v', $param);
+        $this->load->view('header_v', $param);
         $this->load->view('todo/list_contents_v', $data);
         $this->load->view('todo/footer_v');
     }
 
     function view(){
+        $param = array(
+            'id'=>'보기'
+        );
         $id = $this->uri->segment(3); //todo 번호에 해당하는 데이터 가져오기
         $data['views'] = $this->todo_m->get_views($id);
-        $this->load->view('todo/header_v');
+        $this->load->view('header_v', $param);
         $this->load->view('todo/view_contents_v', $data);
         $this->load->view('todo/footer_v');
     }
@@ -108,7 +111,7 @@ class Main extends CI_Controller{
                 redirect('/Main/lists');
 
             } else {
-                $this->load->view('todo/header_v', $param);
+                $this->load->view('header_v', $param);
                 $this->load->view('todo/write_contents_v');
                 $this->load->view('todo/footer_v');
             }
