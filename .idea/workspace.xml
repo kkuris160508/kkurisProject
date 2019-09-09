@@ -22,7 +22,7 @@
               <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="782">
-                    <caret line="71" column="26" lean-forward="true" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+                    <caret line="81" column="26" lean-forward="true" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
                   </state>
                 </provider>
               </entry>
@@ -39,7 +39,7 @@
               <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="711">
-                    <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="34" />
+                    <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="34" />
                   </state>
                 </provider>
               </entry>
@@ -147,8 +147,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="765">
+              <caret line="75" column="30" lean-forward="true" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -411,21 +411,7 @@
       <workItem from="1566393166217" duration="887000" />
       <workItem from="1566434725670" duration="8038000" />
       <workItem from="1566451578138" duration="2043000" />
-      <workItem from="1566828260309" duration="172001000" />
-    </task>
-    <task id="LOCAL-00357" summary="auth_m &#10;헤더 v 수정">
-      <created>1567995611100</created>
-      <option name="number" value="00357" />
-      <option name="presentableId" value="LOCAL-00357" />
-      <option name="project" value="LOCAL" />
-      <updated>1567995611100</updated>
-    </task>
-    <task id="LOCAL-00358" summary="로그인 한 유저만 글 쓰기가 가능하게 수정 시작">
-      <created>1567997671694</created>
-      <option name="number" value="00358" />
-      <option name="presentableId" value="LOCAL-00358" />
-      <option name="project" value="LOCAL" />
-      <updated>1567997671694</updated>
+      <workItem from="1566828260309" duration="172297000" />
     </task>
     <task id="LOCAL-00359" summary="비 로그인 유저 글 작성 시 alert , 리디릭션 url 추가">
       <created>1567997840600</created>
@@ -756,11 +742,25 @@
       <option name="project" value="LOCAL" />
       <updated>1568015420342</updated>
     </task>
-    <option name="localTasksCounter" value="406" />
+    <task id="LOCAL-00406" summary="로그인 뷰 수정">
+      <created>1568015670470</created>
+      <option name="number" value="00406" />
+      <option name="presentableId" value="LOCAL-00406" />
+      <option name="project" value="LOCAL" />
+      <updated>1568015670470</updated>
+    </task>
+    <task id="LOCAL-00407" summary="로그인 뷰 수정">
+      <created>1568015743576</created>
+      <option name="number" value="00407" />
+      <option name="presentableId" value="LOCAL-00407" />
+      <option name="project" value="LOCAL" />
+      <updated>1568015743576</updated>
+    </task>
+    <option name="localTasksCounter" value="408" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184460000" />
+    <option name="totallyTimeSpent" value="184756000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1221,8 +1221,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="765">
+          <caret line="75" column="30" lean-forward="true" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
         </state>
       </provider>
     </entry>
