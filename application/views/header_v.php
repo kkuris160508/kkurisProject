@@ -31,7 +31,7 @@
                     <?php
                 } else {
                     ?>
-                    <a href="/Main/Auth/login" class="btn btn-primary"> 로그인 </a>
+                    <a href="/Auth/login" class="btn btn-primary"> 로그인 </a>
                     <?php
                 }
                 ?>
