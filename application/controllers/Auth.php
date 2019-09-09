@@ -9,7 +9,7 @@ class Auth extends CI_Controller{
     function __construct()
     {
         parent::__construct();
-        $this->load->model('auth_m');
+        $this->load->model('Auth_m');
         $this->load->helper('form');
     }
 
