@@ -85,7 +85,7 @@ class Main extends CI_Controller{
             $result2 = $this->debug->debug_var($writer); // 시발 debug 를 소문자로...ㅡㅡ
             echo $result2;
             $result3 = $this->debug->debug_var($result); // 시발 debug 를 소문자로...ㅡㅡ
-            echo $result3;
+            echo $result3[0]->no;
 
             if($this->form_validation->run() == TRUE){
 
