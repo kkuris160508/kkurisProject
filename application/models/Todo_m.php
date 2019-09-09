@@ -92,7 +92,7 @@ class Todo_m extends CI_Model{
         $sql = "SELECT * FROM accountTB WHERE account_id = '" . $id . "'";
         $query = $this->db->query($sql);
 
-        if($query->num_rows() < 0){
+        if($query->num_rows() < 0 || $query->num_rows() == ''){
             return true;
 
         } else {
