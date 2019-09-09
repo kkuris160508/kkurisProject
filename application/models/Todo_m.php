@@ -62,7 +62,7 @@ class Todo_m extends CI_Model{
 //    }
 
     function get_views($id){
-        $sql = "SELECT it.* FROM items as it
+        $sql = "SELECT * FROM items as it
                 LEFT JOIN accountTB as acc
                 ON it.writer = acc.no
                 WHERE it.id = '" .$id . "'
