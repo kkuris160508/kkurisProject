@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="로그인 뷰 수정">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/todo/write_contents_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/todo/write_contents_v.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,7 +22,7 @@
               <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="782">
-                    <caret line="71" column="26" lean-forward="true" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+                    <caret line="75" column="26" lean-forward="true" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
                   </state>
                 </provider>
               </entry>
@@ -40,7 +39,7 @@
               <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="711">
-                    <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="34" />
+                    <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="34" />
                   </state>
                 </provider>
               </entry>
@@ -148,8 +147,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+            <state relative-caret-position="425">
+              <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -412,21 +411,7 @@
       <workItem from="1566393166217" duration="887000" />
       <workItem from="1566434725670" duration="8038000" />
       <workItem from="1566451578138" duration="2043000" />
-      <workItem from="1566828260309" duration="171347000" />
-    </task>
-    <task id="LOCAL-00353" summary="auth_m &#10;rows -&gt; row">
-      <created>1567994375898</created>
-      <option name="number" value="00353" />
-      <option name="presentableId" value="LOCAL-00353" />
-      <option name="project" value="LOCAL" />
-      <updated>1567994375898</updated>
-    </task>
-    <task id="LOCAL-00354" summary="auth_m &#10;로그인 상태에 따른 로그인, 로그아웃 버튼 출력">
-      <created>1567995113282</created>
-      <option name="number" value="00354" />
-      <option name="presentableId" value="LOCAL-00354" />
-      <option name="project" value="LOCAL" />
-      <updated>1567995113282</updated>
+      <workItem from="1566828260309" duration="171675000" />
     </task>
     <task id="LOCAL-00355" summary="auth_m &#10;로그아웃 버튼 클릭 시 주소 변경&#10;리스트 컨텐츠 뷰 수정">
       <created>1567995301566</created>
@@ -757,11 +742,25 @@
       <option name="project" value="LOCAL" />
       <updated>1568014845743</updated>
     </task>
-    <option name="localTasksCounter" value="402" />
+    <task id="LOCAL-00402" summary="로그인 뷰 수정">
+      <created>1568015019646</created>
+      <option name="number" value="00402" />
+      <option name="presentableId" value="LOCAL-00402" />
+      <option name="project" value="LOCAL" />
+      <updated>1568015019646</updated>
+    </task>
+    <task id="LOCAL-00403" summary="로그인 뷰 수정">
+      <created>1568015211998</created>
+      <option name="number" value="00403" />
+      <option name="presentableId" value="LOCAL-00403" />
+      <option name="project" value="LOCAL" />
+      <updated>1568015211998</updated>
+    </task>
+    <option name="localTasksCounter" value="404" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183806000" />
+    <option name="totallyTimeSpent" value="184134000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1222,8 +1221,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        <state relative-caret-position="425">
+          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
         </state>
       </provider>
     </entry>
