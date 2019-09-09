@@ -32,6 +32,7 @@
 <!--                <button type="submit" class="btn btn-primary">확인</button>-->
                 <input type="submit" class="btn btn-primary" id="login_btn" value="확인" />
                 <input type="submit" class="btn btn-danger" id="cancel_btn" value="취소" />
+                <a href="/Main/join" class="btn btn-success"> 회원가입 </a>
 <!--                <button class="btn" onclick="document.location.reload()">취소</button>-->
 
 <!--                <div class="form-actions">-->
