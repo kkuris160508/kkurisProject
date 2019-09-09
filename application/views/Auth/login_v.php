@@ -29,8 +29,14 @@
             </div>
 
             <div class="form_actions">
-                <button type="submit" class="btn btn-primary">확인</button>
-                <button class="btn" onclick="document.location.reload()">취소</button>
+<!--                <button type="submit" class="btn btn-primary">확인</button>-->
+                <input type="submit" class="btn btn-primary" id="login_btn" value="확인" />
+                <input type="submit" class="btn btn-danger" id="cancel_btn" value="취소" />
+<!--                <button class="btn" onclick="document.location.reload()">취소</button>-->
+
+<!--                <div class="form-actions">-->
+<!--                    <input type="submit" class="btn btn-primary" id="login_btn" value="회원가입" />-->
+<!--                </div>-->
             </div>
         </div>
     </fieldset>
