@@ -113,16 +113,18 @@ class Main extends CI_Controller{
     }
 
     function join(){
+//        $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+
         if($_POST){
             $id = $this->input->post('account_id');
             $pw = $this->input->post('Password');
             $email = $this->input->post('EMAIL');
 
-            $this->todo_m->insert_account_todo($id, $pw, $email);
             $result = $this->todo_m->getAccountInfo($id);
 
             if($result){
                 alert('가입이 완료 되었습니다. 로그인 하여 주십시오','/Main/lists');
+                $this->todo_m->insert_account_todo($id, $pw, $email);
 //                redirect('/Main/lists');
             } else {
                 alert('가입되지 않았습니다 다시 가입하여 주십시오','/Main/join');
