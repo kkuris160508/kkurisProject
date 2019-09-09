@@ -137,7 +137,7 @@ class Main extends CI_Controller{
         $pw = $this->form_validation->set_rules('Password','비밀번호','required');
         $email = $this->form_validation->set_rules('EMAIL','이메일','required');
 
-        if(sizeof($id) > 0){
+        if($this->form_validation->run() == TRUE){
 
 
 //            $id = $this->input->post('account_id');
