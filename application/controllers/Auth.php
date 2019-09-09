@@ -54,6 +54,7 @@ class Auth extends CI_Controller{
         } else {
             $this->load->view('Auth/header_login_v');
             $this->load->view('Auth/login_v');
+            $this->load->view('todo/footer_v');
         }
     }
 
