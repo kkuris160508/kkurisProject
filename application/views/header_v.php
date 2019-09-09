@@ -22,12 +22,11 @@
             <p>
                 CodeIgniter
             </p>
-            <small>실행 예제</small>
             <p>
                 <?php
                 if ( @$this -> session -> userdata('logged_in') == TRUE) {
                     ?>
-                    <?php echo $this -> session -> userdata('account_id');?> 님 환영합니다. <a href="/Auth/logout" class="btn">로그아웃</a>
+                    <?php echo $this -> session -> userdata('account_id');?> 님 환영합니다. <a href="/Auth/logout" class="btn btn-danger">로그아웃</a>
                     <?php
                 } else {
                     ?>
