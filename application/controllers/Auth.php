@@ -21,7 +21,7 @@ class Auth extends CI_Controller{
         $this->load->library('form_validation');
         $this->load->helper('alert');
 
-        $this->form_validation -> set_rules('account_id', '아이디', 'required|alpha_numberic');
+        $this->form_validation -> set_rules('account_id', '아이디', 'required|alpha_numeric');
         $this->form_validation -> set_rules('PW', '비밀번호',  'required');
 
         echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
