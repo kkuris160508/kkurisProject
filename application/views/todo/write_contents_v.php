@@ -6,7 +6,8 @@
                     <?php
                     $extraOpt = array(
                         'height'=>'50%',
-                        'width'=>'100%'
+                        'width'=>'100%',
+                        'resize'=>'none'
                     );
                     ?>
                     <label class="control-label" for="input00">제목</label>
@@ -26,7 +27,7 @@
                     <label class="control-label" for="input01">내용</label>
                     <div class="controls">
 <!--                        <input type="text" class="input-xlarge" id="input01" name="content">-->
-                        <?php echo form_textarea('content', set_value('content'), $extraOpt)?> <!-- form open 사용해야함 csrf protection TRUE 일 때 POST 방식으로 DB 접근권한을 한번 막기때문에 form open 사용-->
+                        <?php echo form_textarea('content', set_value('content'), "style=width:100%; height:50%; resize:none;")?> <!-- form open 사용해야함 csrf protection TRUE 일 때 POST 방식으로 DB 접근권한을 한번 막기때문에 form open 사용-->
                         <p class="help-block">
                             <?php
                             if(form_error('content') == FALSE){
