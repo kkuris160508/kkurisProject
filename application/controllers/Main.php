@@ -30,7 +30,7 @@ class Main extends CI_Controller{
         } else {
             $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
-            $result2 = $this->debug->debug_var($_SERVER); // 시발 debug 를 소문자로...ㅡㅡ
+            $result2 = $this->debug->debug_var($_SERVER); // debug 를 소문자로...ㅡㅡ
             echo $result2;
 
             $param = array(
