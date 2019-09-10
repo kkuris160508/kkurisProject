@@ -21,9 +21,10 @@ class Main extends CI_Controller{
 
         if($tmpIP !== '211.52.72.56'){
             echo '접속불가';
-            return false;
+            exit;
+        } else {
+            $this->lists();
         }
-        $this->lists();
     }
 
     function lists(){
