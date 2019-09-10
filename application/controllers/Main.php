@@ -199,7 +199,13 @@ class Main extends CI_Controller{
 
             if($result){
                 $this->todo_m->insert_account_todo($id, $pw, $email);
+
+                echo '<input type="hidden" name="id">';
+                echo '<input type="hidden" name="$pw">';
+                echo '<input type="hidden" name="$email">';
+
                 alert('가입이 완료 되었습니다. 로그인 하여 주십시오','/Auth/autoLogin');
+
 //                redirect('/Main/lists');
             } else {
                 alert('가입되지 않았습니다 다시 가입하여 주십시오','/Main/join');
