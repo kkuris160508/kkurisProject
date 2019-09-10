@@ -12,10 +12,13 @@ class Todo_m extends CI_Model{
     }
 
     function get_list(){
-        $sql = "SELECT * FROM items as it
-                LEFT JOIN accountTB as acc
-                ON it.writer = acc.no
-                ORDER BY id DESC";
+        $sql = "SELECT it.id, it.subject, it.content, it.used, it.hit, it.writer, it.writetime, 
+                (CASE WHEN created_on = '0000-00-00' THEN '1970-01-01' ELSE created_on END) AS created_on,
+                (CASE WHEN due_date = '0000-00-00' THEN '1970-01-01' ELSE due_date END) AS due_date,
+                acc.*
+                FROM items AS it
+                LEFT JOIN accountTB AS acc ON it.writer = acc.no
+                ORDER BY it.id DESC";
         $query = $this->db->query($sql);
         $result = $query->result();
 
@@ -62,11 +65,14 @@ class Todo_m extends CI_Model{
 //    }
 
     function get_views($id){
-        $sql = "SELECT * FROM items as it
-                LEFT JOIN accountTB as acc
-                ON it.writer = acc.no
-                WHERE it.id = '" .$id . "'
-                ORDER BY id DESC";
+        $sql = "SELECT it.id, it.subject, it.content, it.used, it.hit, it.writer, it.writetime, 
+                    (CASE WHEN created_on = '0000-00-00' THEN '1970-01-01' ELSE created_on END) AS created_on,
+                    (CASE WHEN due_date = '0000-00-00' THEN '1970-01-01' ELSE due_date END) AS due_date,
+                    acc.*
+                FROM items AS it
+                LEFT JOIN accountTB AS acc ON it.writer = acc.no
+                WHERE it.id = '" .$id ."'
+                ORDER BY it.id DESC";
 
 //        $sql = "SELECT * FROM items WHERE id = '" .$id . "'";
         $sql1 = "UPDATE items SET hit = hit + 1 WHERE id = '".$id."'"; //조회수 증가 쿼리
