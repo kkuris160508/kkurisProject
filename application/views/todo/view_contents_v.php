@@ -18,7 +18,7 @@
                 <th>
                     <?php echo $views -> account_id;?><a href="mailto:<?php echo $views -> EMAIL?>">(<?php echo $views->EMAIL?>)</a>
                     <?php $transID = $views->no;?>
-                    <?php $transAccountID = $views->no;?>
+                    <?php $transAccountID = $views->account_id;?>
                 </th>
                 <th>
                     <?php echo $views -> subject;?>
