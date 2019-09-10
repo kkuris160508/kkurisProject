@@ -21,27 +21,21 @@ class Main extends CI_Controller{
     }
 
     function lists(){
-//        if(!$_SERVER['REMOTE_ADDR'] == '211.52.72.56'){
-//            echo '접속불가';
-//            exit;
-//        }
-
         $tmpIP = $this->input->ip_address();
 
         if($tmpIP !== '211.52.72.56'){
             echo '접속불가';
             exit;
-        }
 
+        } else {
+            $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
-        $param = array(
-            'id'=>'목록'
-        );
-        $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+            $result2 = $this->debug->debug_var($_SERVER); // 시발 debug 를 소문자로...ㅡㅡ
+            echo $result2;
 
-        $result2 = $this->debug->debug_var($_SERVER); // 시발 debug 를 소문자로...ㅡㅡ
-        echo $result2;
-
+            $param = array(
+                'id'=>'목록'
+            );
 //        $this->load->library('pagination'); // 페이지 네이션 설정
 //        $config['base_url'] = 'ci_board/page'; //페이징 주소
 //        $config['total_rows'] = $this->todo_m->get_list($this->uri->segment(3), 'count'); //게시물 전체 개수
@@ -64,11 +58,11 @@ class Main extends CI_Controller{
 //
 //        $data['list'] = $this->todo_m->get_list($this->uri->segment(3), '', $start, $limit);
 //        $this->load->view('')
-
-        $data['list'] = $this->todo_m->get_list();
-        $this->load->view('header_v', $param);
-        $this->load->view('todo/list_contents_v', $data);
-        $this->load->view('todo/footer_v');
+            $data['list'] = $this->todo_m->get_list();
+            $this->load->view('header_v', $param);
+            $this->load->view('todo/list_contents_v', $data);
+            $this->load->view('todo/footer_v');
+        }
     }
 
     function view(){
@@ -150,6 +144,7 @@ class Main extends CI_Controller{
     }
 
     function join(){
+        form_open('/Auth/login');
 //        $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
         $this->load->library('form_validation');
 
