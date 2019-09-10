@@ -61,7 +61,7 @@ class Auth extends CI_Controller{
 
     public function autoLogin(){
 
-        $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+//        $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
         $this->load->library('form_validation');
         $this->load->helper('alert');
 
