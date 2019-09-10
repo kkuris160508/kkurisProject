@@ -159,12 +159,19 @@ class Main extends CI_Controller{
 
             $writer = $this -> session -> userdata('account_id');
 
+            echo $writer;
+            echo $accountID;
+
             if($accountID == $writer){
-               $this->todo_m->delete_todo($id, $accountNo);
-                alert('삭제 되었습니다.', '/Main/lists');
+                echo $writer;
+                echo $accountID;
+//               $this->todo_m->delete_todo($id, $accountNo);
+//                alert('삭제 되었습니다.', '/Main/lists');
 //                $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
             } else {
-                alert('삭제할 권한이 없습니다.','/Main/lists');
+                echo $writer;
+                echo $accountID;
+//                alert('삭제할 권한이 없습니다.','/Main/lists');
 //                $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
             }
 
