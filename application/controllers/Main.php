@@ -159,11 +159,11 @@ class Main extends CI_Controller{
             $result = $this->todo_m->delete_todo($id, $accountNo);
 
             if($result == 1){
-                alert('삭제 되었습니다.', '/Main/lists');
-//                $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+//                alert('삭제 되었습니다.', '/Main/lists');
+                $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
             } else {
-                alert('삭제할 권한이 없습니다.','/Main/lists');
-//                $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+//                alert('삭제할 권한이 없습니다.','/Main/lists');
+                $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
             }
 
 
