@@ -209,7 +209,7 @@ class Main extends CI_Controller{
 
     function dateTime(){
         $gmt = local_to_gmt(time());
-        echo $gmt;
+        echo $gmt.'<br>';
 
         $timezone = 'UM8';
         $daylight_saving = TRUE;
