@@ -19,7 +19,7 @@ class Main extends CI_Controller{
     function index(){
         $tmpIP = $this->input->ip_address();
 
-        if(!$tmpIP = '211.52.72.56'){
+        if($tmpIP !== '211.52.72.56'){
             echo '접속불가';
             return false;
         }
