@@ -77,8 +77,8 @@ class Main extends CI_Controller{
 
 //        $result2 = $this->debug->debug_var($data); // 시발 debug 를 소문자로...ㅡㅡ
 //        echo $result2;
-//            $this->increaseReadCnt($id);
-            $this->db->call_function('updateIncreaseReadCount',$id);
+            $this->callback_increaseReadCnt($id);
+
 
             $this->load->view('header_v', $param);
             $this->load->view('todo/view_contents_v', $data);
