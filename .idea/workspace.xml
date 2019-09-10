@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="뷰 컨텐츠 뷰 수정">
-      <change beforePath="$PROJECT_DIR$/application/models/Auth_m.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Auth_m.php" afterDir="false" />
+    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="세션 수정">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -135,8 +135,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Auth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="74" column="58" lean-forward="true" selection-start-line="74" selection-start-column="58" selection-end-line="74" selection-end-column="58" />
+            <state relative-caret-position="337">
+              <caret line="84" column="44" lean-forward="true" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -302,8 +302,8 @@
         <option value="$PROJECT_DIR$/application/views/todo/list_contents_v.php" />
         <option value="$PROJECT_DIR$/application/views/todo/view_contents_v.php" />
         <option value="$PROJECT_DIR$/application/controllers/Main.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Auth.php" />
         <option value="$PROJECT_DIR$/application/models/Auth_m.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Auth.php" />
       </list>
     </option>
   </component>
@@ -452,28 +452,7 @@
       <workItem from="1566393166217" duration="887000" />
       <workItem from="1566434725670" duration="8038000" />
       <workItem from="1566451578138" duration="2043000" />
-      <workItem from="1566828260309" duration="199630000" />
-    </task>
-    <task id="LOCAL-00423" summary="리스트 뷰 말줄임표시">
-      <created>1568079519946</created>
-      <option name="number" value="00423" />
-      <option name="presentableId" value="LOCAL-00423" />
-      <option name="project" value="LOCAL" />
-      <updated>1568079519946</updated>
-    </task>
-    <task id="LOCAL-00424" summary="리스트 뷰 말줄임표시">
-      <created>1568079587813</created>
-      <option name="number" value="00424" />
-      <option name="presentableId" value="LOCAL-00424" />
-      <option name="project" value="LOCAL" />
-      <updated>1568079587813</updated>
-    </task>
-    <task id="LOCAL-00425" summary="뷰 컨텐츠 뷰 수정">
-      <created>1568079780708</created>
-      <option name="number" value="00425" />
-      <option name="presentableId" value="LOCAL-00425" />
-      <option name="project" value="LOCAL" />
-      <updated>1568079780708</updated>
+      <workItem from="1566828260309" duration="200220000" />
     </task>
     <task id="LOCAL-00426" summary="뷰 컨텐츠 뷰 수정">
       <created>1568080005718</created>
@@ -797,11 +776,32 @@
       <option name="project" value="LOCAL" />
       <updated>1568104087842</updated>
     </task>
-    <option name="localTasksCounter" value="472" />
+    <task id="LOCAL-00472" summary="뷰 컨텐츠 뷰 수정">
+      <created>1568104997410</created>
+      <option name="number" value="00472" />
+      <option name="presentableId" value="LOCAL-00472" />
+      <option name="project" value="LOCAL" />
+      <updated>1568104997410</updated>
+    </task>
+    <task id="LOCAL-00473" summary="세션 수정">
+      <created>1568105077153</created>
+      <option name="number" value="00473" />
+      <option name="presentableId" value="LOCAL-00473" />
+      <option name="project" value="LOCAL" />
+      <updated>1568105077153</updated>
+    </task>
+    <task id="LOCAL-00474" summary="세션 수정">
+      <created>1568105454100</created>
+      <option name="number" value="00474" />
+      <option name="presentableId" value="LOCAL-00474" />
+      <option name="project" value="LOCAL" />
+      <updated>1568105454100</updated>
+    </task>
+    <option name="localTasksCounter" value="475" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="212089000" />
+    <option name="totallyTimeSpent" value="212679000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -884,7 +884,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="auth_m 오타 수정" />
     <MESSAGE value="auth m 오류 메세지 수정중" />
     <MESSAGE value="auth_m &#10;rows -&gt; row" />
     <MESSAGE value="auth_m &#10;로그인 상태에 따른 로그인, 로그아웃 버튼 출력" />
@@ -909,7 +908,8 @@
     <MESSAGE value="자동로그인 처리 시작" />
     <MESSAGE value="글 작성자만 삭제가 가능하게끔 로직 추가" />
     <MESSAGE value="뷰 컨텐츠 뷰 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="뷰 컨텐츠 뷰 수정" />
+    <MESSAGE value="세션 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="세션 수정" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/application/views/Join/join_view_footer.php">
@@ -1276,8 +1276,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Auth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="74" column="58" lean-forward="true" selection-start-line="74" selection-start-column="58" selection-end-line="74" selection-end-column="58" />
+        <state relative-caret-position="337">
+          <caret line="84" column="44" lean-forward="true" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
         </state>
       </provider>
     </entry>
