@@ -156,7 +156,7 @@ class Main extends CI_Controller{
             $id = $this->uri->segment(3);
             $result = $this->todo_m->delete_todo($id, $accountNo);
 
-            if($result){
+            if($result == 1){
                 alert('삭제 되었습니다.', '/Main/lists');
 
             } else {

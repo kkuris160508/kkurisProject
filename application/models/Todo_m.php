@@ -95,11 +95,11 @@ class Todo_m extends CI_Model{
         $query = $this->db->query($sql);
 
         if($query->num_rows() == 0){
-            return false;
+            return 0;
 
         } else {
 
-            return true;
+            return 1;
         }
     }
 
