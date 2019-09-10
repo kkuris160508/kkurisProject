@@ -215,6 +215,8 @@ class Main extends CI_Controller{
         $daylight_saving = TRUE;
         echo $gmtTimezone = gmt_to_local($gmt, $timezone, $daylight_saving).'<br>';
 
+        echo $humanTime = unix_to_human($gmtTimezone).'<br>';
+
         $now = time();
         echo $now;
     }
