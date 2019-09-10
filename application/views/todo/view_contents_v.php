@@ -16,8 +16,10 @@
                 <th scope="col">작성일</th>
             </tr>
             <tr>
-
-
+                <?php if ($views->created_on = '0000-00-00') : ?>
+                    <?php $views->created_on = '1970-01-01';?>
+                <?php elseif($views->due_date = '0000-00-00') : ?>
+                    <?php $views->due_date = '1970-01-01';?>
                 <th>
                     <?php echo $views -> account_id;?><a href="mailto:<?php echo $views -> EMAIL?>">(<?php echo $views->EMAIL?>)</a>
                 </th>
@@ -27,13 +29,9 @@
                 <th>
                     <?php echo $views -> content;?>
                 </th>
-                <?php if ($views->created_on = '0000-00-00') : ?>
-                <?php $views->created_on = '1970-01-01';?>
                 <th>
                     <?php echo $views -> created_on;?>
                 </th>
-                <?php elseif($views->due_date = '0000-00-00') : ?>
-                    <?php $views->due_date = '1970-01-01';?>
                 <th>
                     <?php echo $views -> due_date;?>
                 </th>
