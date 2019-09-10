@@ -13,7 +13,7 @@ class Main extends CI_Controller{
         parent::__construct();
         $this->load->database();
         $this->load->model('todo_m');
-        $this->load->helper(array('url','date', 'form','alert'));
+        $this->load->helper(array('url','date', 'form','alert','date'));
     }
 
     function index(){
@@ -205,6 +205,11 @@ class Main extends CI_Controller{
         } else {
             return TRUE;
         }
+    }
+
+    function dateTime(){
+        $gmt = local_to_gmt(time());
+        echo $gmt;
     }
 
     function test(){

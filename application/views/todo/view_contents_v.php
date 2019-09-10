@@ -9,7 +9,6 @@
             <tr>
                 <th scope="col">작성자</th>
                 <th scope="col">제목</th>
-<!--                <th scope="col">내용</th>-->
                 <th scope="col">시작일</th>
                 <th scope="col">종료일</th>
                 <th scope="col">조회수</th>
@@ -22,9 +21,6 @@
                 <th>
                     <?php echo $views -> subject;?>
                 </th>
-<!--                <th>-->
-<!--                    --><?php //echo $views -> content;?>
-<!--                </th>-->
                 <th>
                     <?php echo $views -> created_on;?>
                 </th>
