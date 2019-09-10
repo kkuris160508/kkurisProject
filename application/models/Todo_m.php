@@ -74,15 +74,21 @@ class Todo_m extends CI_Model{
                 WHERE it.id = '" .$id ."'
                 ORDER BY it.id DESC";
 
-//        $sql = "SELECT * FROM items WHERE id = '" .$id . "'";
-        $sql1 = "UPDATE items SET hit = hit + 1 WHERE id = '".$id."'"; //조회수 증가 쿼리
+//        $sql1 = "UPDATE items SET hit = hit + 1 WHERE id = '".$id."'"; //조회수 증가 쿼리
 
         $query = $this->db->query($sql);
-        $this->db->query($sql1);
+//        $this->db->query($sql1);
 
         $result = $query->row();
 
         return $result;
+    }
+
+    function updateIncreaseReadCount($id){
+
+        $sql1 = "UPDATE items SET hit = hit + 1 WHERE id = '".$id."'"; //조회수 증가 쿼리
+
+        $this->db->query($sql1);
     }
 
     function insert_todo($subject, $content, $created_on, $due_date, $writer){

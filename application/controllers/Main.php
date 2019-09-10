@@ -77,10 +77,12 @@ class Main extends CI_Controller{
 
 //        $result2 = $this->debug->debug_var($data); // 시발 debug 를 소문자로...ㅡㅡ
 //        echo $result2;
+            $this->increaseReadCnt($id);
 
             $this->load->view('header_v', $param);
             $this->load->view('todo/view_contents_v', $data);
             $this->load->view('todo/footer_v');
+
 
         } else {
             $this->load->helper('alert');
@@ -163,7 +165,7 @@ class Main extends CI_Controller{
                $this->todo_m->delete_todo($id, $accountNo);
                 alert('삭제 되었습니다.', '/Main/lists');
             } else {
-                alert('삭제할 권한이 없습니다.','/Main/lists');
+                alert('삭제 할 권한이 없습니다.','/Main/lists');
             }
 
 
@@ -248,6 +250,11 @@ class Main extends CI_Controller{
         } else {
             return TRUE;
         }
+    }
+
+    public function increaseReadCnt($id){
+
+        $this->todo_m->updateIncreaseReadCount($id);
     }
 
     function dateTime(){
