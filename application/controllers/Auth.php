@@ -85,7 +85,8 @@ class Auth extends CI_Controller{
                     'logged_in'=>TRUE
                 );
 
-                echo $this->session->set_userdata($newdata); //세션 생성
+                $newRes = $this->session->set_userdata($newdata); //세션 생성
+                echo $newRes;
 //                alert('로그인 되었습니다.', '/Main/lists');
 //                exit;
             } else {
