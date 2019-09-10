@@ -154,9 +154,15 @@ class Main extends CI_Controller{
 
         if ( @$this -> session -> userdata('logged_in') == TRUE) {
             $id = $this->uri->segment(3);
-            $this->todo_m->delete_todo($id, $accountNo);
+            $result = $this->todo_m->delete_todo($id, $accountNo);
 
-            redirect('/Main/lists');
+            if($result){
+                alert('삭제 되었습니다.', '/Main/lists');
+
+            } else {
+                alert('삭제할 권한이 없습니다.','/Main/lists');
+            }
+
 
         } else {
 
