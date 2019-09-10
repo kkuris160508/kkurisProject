@@ -20,7 +20,7 @@
                 <?php echo $lt -> id;?>
             </th>
             <th scope="row">
-                <?php echo $lt -> account_id;?>
+                <?php echo $lt -> account_id;?><a href="mailto:<?php echo $lt -> EMAIL?>">(<?php echo $lt->EMAIL?>)</a>
             </th>
             <td>
                 <a rel="external" href="/Main/view/<?php echo $lt -> id; ?>"><?php echo $lt -> subject;?></a>
