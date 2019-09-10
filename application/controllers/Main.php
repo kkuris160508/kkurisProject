@@ -155,18 +155,20 @@ class Main extends CI_Controller{
         if ( @$this -> session -> userdata('logged_in') == TRUE) {
             $id = $this->uri->segment(3);
             $accountNo = $this->uri->segment(4);
+            echo $id;
+            echo $accountNo;
 
-            $result = $this->todo_m->delete_todo($id, $accountNo);
-
-            $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
-
-            if($result == 1){
-                alert('삭제 되었습니다.', '/Main/lists');
-                $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
-            } else {
-                alert('삭제할 권한이 없습니다.','/Main/lists');
-                $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
-            }
+//            $result = $this->todo_m->delete_todo($id, $accountNo);
+//
+//            $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+//
+//            if($result == 1){
+//                alert('삭제 되었습니다.', '/Main/lists');
+//                $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+//            } else {
+//                alert('삭제할 권한이 없습니다.','/Main/lists');
+//                $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+//            }
 
 
         } else {
