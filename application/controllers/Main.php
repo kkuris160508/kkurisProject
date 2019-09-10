@@ -150,7 +150,7 @@ class Main extends CI_Controller{
         
     }
 
-    function delete($accountNo){
+    function delete(){
 
         if ( @$this -> session -> userdata('logged_in') == TRUE) {
             $id = $this->uri->segment(3);
