@@ -39,13 +39,14 @@
                 </th>
             </tr>
             <tr>
-                <th colspan="6">내용</th>
-            </tr>
-            <tr>
-                <th colspan="6">
+                <th rowspan="2">내용</th>
+                <th colspan="5">
                     <?php echo $views -> content;?>
                 </th>
             </tr>
+
+
+
             </tbody>
             <tfoot>
             <tr>
