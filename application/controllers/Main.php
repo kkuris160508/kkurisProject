@@ -17,14 +17,7 @@ class Main extends CI_Controller{
     }
 
     function index(){
-        $tmpIP = $this->input->ip_address();
-
-        if($tmpIP !== '211.52.72.56'){
-            echo '접속불가';
-            exit;
-        } else {
-            $this->lists();
-        }
+        $this->lists();
     }
 
     function lists(){
@@ -33,7 +26,12 @@ class Main extends CI_Controller{
 //            exit;
 //        }
 
+        $tmpIP = $this->input->ip_address();
 
+        if($tmpIP !== '211.52.72.56'){
+            echo '접속불가';
+            exit;
+        }
 
 
         $param = array(
