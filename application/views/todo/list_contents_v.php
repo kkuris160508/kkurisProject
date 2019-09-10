@@ -26,7 +26,7 @@
                 <a rel="external" href="/Main/view/<?php echo $lt -> id; ?>"><?php echo $lt -> subject;?></a>
             </td>
             <td>
-                <a rel="external" href="/Main/view/<?php echo $lt -> id; ?>"><?php echo $lt -> content;?></a>
+                <a rel="external" href="/Main/view/<?php echo $lt -> id; ?>" style="text-overflow:ellipsis;"><?php echo $lt -> content;?></a>
             </td>
             <td>
                 <time datetime="<?php echo mdate("%Y-%M-%j", human_to_unix($lt -> created_on)); ?>"><?php echo $lt -> created_on;?></time>
