@@ -49,7 +49,7 @@
             <tr>
                 <th colspan="6">
                     <a href="http://34.80.199.17/Main/lists/" class="btn btn-primary">목록</a>
-                    <a href="http://34.80.199.17/Main/delete/<?php echo $this -> uri -> segment(3); ?>/<?php echo $this -> uri -> segment(4); ?>" class="btn btn-danger">삭제</a>
+                    <a href="http://34.80.199.17/Main/delete/<?php echo $this -> uri -> segment(3); ?>/<?php echo $transID; ?>" class="btn btn-danger">삭제</a>
                     <a href="http://34.80.199.17/Main/write/" class="btn btn-success">쓰기</a>
                 </th>
             </tr>
