@@ -34,7 +34,7 @@ class Auth extends CI_Controller{
                 'PW' => $this->input->post('PW', TRUE)
             );
 
-            $result = $this->auth_m->login($auth_data);
+            $result = $this->Auth_m->login($auth_data);
 
             if($result){
                 $newdata = array( //데이터 검증 부 에서 아이디 비밀번호가 맞았을 때 아이디, 이메일, 로그인 여부를 배열로 만듬
@@ -77,7 +77,7 @@ class Auth extends CI_Controller{
                 'PW' => $this->input->post('PW', TRUE)
             );
 
-            $result = $this->auth_m->login($auth_data);
+            $result = $this->Auth_m->login($auth_data);
 
             if($result){
 
