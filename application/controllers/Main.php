@@ -21,6 +21,11 @@ class Main extends CI_Controller{
     }
 
     function lists(){
+        if(!$_SERVER['REMOTE_ADDR'] == '211.52.72.56'){
+            echo '접속불가';
+            exit;
+        }
+
         $param = array(
             'id'=>'목록'
         );
