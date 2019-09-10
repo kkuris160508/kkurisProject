@@ -1,4 +1,9 @@
 <!--<a href="/Auth/login/" class="btn btn-success">로그인/회원가입</a>-->
+<?php
+    $opt = array(
+            'style' => 'text-overflow:ellipsis;word-wrap:break-word;overflow:hidden;white-space:nowrap;display:inline-block;width:500px'
+    )
+?>
 </header>
 <table class="table table-striped">
     <thead class="thead-dark">
@@ -26,7 +31,7 @@
                 <a rel="external" href="/Main/view/<?php echo $lt -> id; ?>"><?php echo $lt -> subject;?></a>
             </td>
             <td>
-                <a rel="external" href="/Main/view/<?php echo $lt -> id; ?>" style="text-overflow:ellipsis;"><?php echo $lt -> content;?></a>
+                <a rel="external" href="/Main/view/<?php echo $lt -> id; ?>" style="<?php echo $opt;?>"><?php echo $lt -> content;?></a>
             </td>
             <td>
                 <time datetime="<?php echo mdate("%Y-%M-%j", human_to_unix($lt -> created_on)); ?>"><?php echo $lt -> created_on;?></time>
