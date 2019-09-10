@@ -50,7 +50,7 @@
                         <div class="controls">
                             <!--                        <input type="text" class="input-xlarge" id="input03" name="due_date">-->
                             <div class = 'endDateForm'>
-                            <?php echo form_input('due_date',set_value('due_date'),"id = 'endDate' placeholder='YYYY-MM-DD'")?> <!-- form open 사용해야함 csrf protection TRUE 일 때 POST 방식으로 DB 접근권한을 한번 막기때문에 form open 사용-->
+                            <?php echo form_input('due_date',set_value('due_date'),"placeholder='YYYY-MM-DD'")?> <!-- form open 사용해야함 csrf protection TRUE 일 때 POST 방식으로 DB 접근권한을 한번 막기때문에 form open 사용-->
                             <p class="help-block">
                                 <?php
                                 if(form_error('due_date') == FALSE){
