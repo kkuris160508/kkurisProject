@@ -79,6 +79,8 @@ class Auth extends CI_Controller{
             $result = $this->auth_m->login($auth_data);
 
             if($result){
+                echo $result;
+                exit;
                 $newdata = array( //데이터 검증 부 에서 아이디 비밀번호가 맞았을 때 아이디, 이메일, 로그인 여부를 배열로 만듬
                     'no'=>$result->no,
                     'account_id'=>$result->account_id,
