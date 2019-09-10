@@ -211,7 +211,7 @@ class Main extends CI_Controller{
         $gmt = local_to_gmt(time());
         echo $gmt.'<br>';
 
-        $timezone = 'UP9'; // (UTC +9:00) Japan Standard Time, Korea Standard Time, Yakutsk
+        $timezone = 'UP8'; // (UTC +8:00) Australian Western Standard Time, Beijing Time
         $daylight_saving = TRUE;
         echo $gmtTimezone = gmt_to_local($gmt, $timezone, $daylight_saving).'<br>';
 
