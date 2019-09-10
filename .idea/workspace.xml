@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="글 작성자만 삭제가 가능하게끔 로직 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -92,8 +93,8 @@
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="626">
-                    <caret line="88" column="82" lean-forward="true" selection-start-line="88" selection-start-column="82" selection-end-line="88" selection-end-column="82" />
+                  <state relative-caret-position="337">
+                    <caret line="86" column="36" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="36" />
                   </state>
                 </provider>
               </entry>
@@ -108,8 +109,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+            <state relative-caret-position="425">
+              <caret line="201" column="66" selection-start-line="201" selection-start-column="66" selection-end-line="201" selection-end-column="66" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="e#878#937#0#PHP" />
@@ -444,21 +445,7 @@
       <workItem from="1566393166217" duration="887000" />
       <workItem from="1566434725670" duration="8038000" />
       <workItem from="1566451578138" duration="2043000" />
-      <workItem from="1566828260309" duration="196234000" />
-    </task>
-    <task id="LOCAL-00418" summary="리스트 뷰 작성자 클릭 시 이메일 링크">
-      <created>1568077201825</created>
-      <option name="number" value="00418" />
-      <option name="presentableId" value="LOCAL-00418" />
-      <option name="project" value="LOCAL" />
-      <updated>1568077201825</updated>
-    </task>
-    <task id="LOCAL-00419" summary="날짜 0000-00-00 으로 출력 되는 부분 쿼리 수정">
-      <created>1568078265845</created>
-      <option name="number" value="00419" />
-      <option name="presentableId" value="LOCAL-00419" />
-      <option name="project" value="LOCAL" />
-      <updated>1568078265845</updated>
+      <workItem from="1566828260309" duration="197935000" />
     </task>
     <task id="LOCAL-00420" summary="리스트 뷰 말줄임표시">
       <created>1568078624391</created>
@@ -789,11 +776,25 @@
       <option name="project" value="LOCAL" />
       <updated>1568100600394</updated>
     </task>
-    <option name="localTasksCounter" value="467" />
+    <task id="LOCAL-00467" summary="글 작성자만 삭제가 가능하게끔 로직 추가">
+      <created>1568101098703</created>
+      <option name="number" value="00467" />
+      <option name="presentableId" value="LOCAL-00467" />
+      <option name="project" value="LOCAL" />
+      <updated>1568101098703</updated>
+    </task>
+    <task id="LOCAL-00468" summary="글 작성자만 삭제가 가능하게끔 로직 추가">
+      <created>1568101260753</created>
+      <option name="number" value="00468" />
+      <option name="presentableId" value="LOCAL-00468" />
+      <option name="project" value="LOCAL" />
+      <updated>1568101260753</updated>
+    </task>
+    <option name="localTasksCounter" value="469" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208693000" />
+    <option name="totallyTimeSpent" value="210394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1256,15 +1257,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="88" column="82" lean-forward="true" selection-start-line="88" selection-start-column="82" selection-end-line="88" selection-end-column="82" />
+        <state relative-caret-position="337">
+          <caret line="86" column="36" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+        <state relative-caret-position="425">
+          <caret line="201" column="66" selection-start-line="201" selection-start-column="66" selection-end-line="201" selection-end-column="66" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="e#878#937#0#PHP" />

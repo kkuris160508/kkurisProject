@@ -77,7 +77,7 @@ class Main extends CI_Controller{
 
 //        $result2 = $this->debug->debug_var($data); // 시발 debug 를 소문자로...ㅡㅡ
 //        echo $result2;
-            $this->callback_increaseReadCnt($id);
+            $this->increaseReadCnt($id);
 
 
             $this->load->view('header_v', $param);
@@ -186,6 +186,8 @@ class Main extends CI_Controller{
         $this->form_validation->set_rules('accountID','아이디','required|alpha_numeric');
         $this->form_validation->set_rules('password','비밀번호','required|min_length[6]');
         $this->form_validation->set_rules('email','이메일','required|valid_email');
+
+        echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
 
         if($this->form_validation->run() == TRUE){
 
