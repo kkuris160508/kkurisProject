@@ -69,15 +69,29 @@ class Main extends CI_Controller{
         $param = array(
             'id'=>'보기'
         );
-        $id = $this->uri->segment(3); //todo 번호에 해당하는 데이터 가져오기
-        $data['views'] = $this->todo_m->get_views($id);
+
+        if ( @$this -> session -> userdata('logged_in') == TRUE) {
+
+            $id = $this->uri->segment(3); //todo 번호에 해당하는 데이터 가져오기
+            $data['views'] = $this->todo_m->get_views($id);
 
 //        $result2 = $this->debug->debug_var($data); // 시발 debug 를 소문자로...ㅡㅡ
 //        echo $result2;
 
-        $this->load->view('header_v', $param);
-        $this->load->view('todo/view_contents_v', $data);
-        $this->load->view('todo/footer_v');
+            $this->load->view('header_v', $param);
+            $this->load->view('todo/view_contents_v', $data);
+            $this->load->view('todo/footer_v');
+
+        } else {
+            $this->load->helper('alert');
+            alert('글을 읽으시려면 로그인 하십시오.', '/Auth/login');
+
+//            $this->load->view('header_v', $param);
+//            $this->load->view('todo/view_contents_v', $data);
+//            $this->load->view('todo/footer_v');
+        }
+
+
     }
 
     // write controller 추가
@@ -136,11 +150,20 @@ class Main extends CI_Controller{
         
     }
 
-    function delete(){
-        $id = $this->uri->segment(3);
-        $this->todo_m->delete_todo($id);
+    function delete($accountNo){
 
-        redirect('/Main/lists');
+        if ( @$this -> session -> userdata('logged_in') == TRUE) {
+            $id = $this->uri->segment(3);
+            $this->todo_m->delete_todo($id, $accountNo);
+
+            redirect('/Main/lists');
+
+        } else {
+
+            $this->load->helper('alert');
+            alert('글을 삭제하시려면 로그인 하십시오.', '/Auth/login');
+        }
+
     }
 
     function join(){

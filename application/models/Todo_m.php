@@ -90,8 +90,8 @@ class Todo_m extends CI_Model{
         $query = $this->db->query($sql); // return 없고 insert 이후 완료. 결과는 컨트롤러에서 받음.
     }
 
-    function delete_todo($id){
-        $sql = "DELETE FROM items WHERE id = '" . $id . "'";
+    function delete_todo($id, $no){
+        $sql = "DELETE FROM items WHERE id = '" . $id . "' AND writer = '" . $no . "'";
         $this->db->query($sql);
     }
 

@@ -85,9 +85,11 @@ class Auth extends CI_Controller{
                     'logged_in'=>TRUE
                 );
 
-                $newRes = $this->session->set_userdata($newdata); //세션 생성
-                echo $newRes;
-//                alert('로그인 되었습니다.', '/Main/lists');
+                $this->session->set_userdata($newdata); //세션 생성
+                // ID, PW 가져오기 쿼리
+
+                // ID, PW return 값을 .... 어쩌지. post 형식으로 이미 받아온 값인데데
+//               alert('로그인 되었습니다.', '/Main/lists');
 //                exit;
             } else {
 
