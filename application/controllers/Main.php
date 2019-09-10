@@ -159,8 +159,8 @@ class Main extends CI_Controller{
 
             $writer = $this -> session -> userdata('account_id');
 
-            echo $writer;
-            echo $accountID;
+//            echo $writer;
+//            echo $accountID;
 
             if($accountID == $writer){
                 echo $writer.'<br>';
