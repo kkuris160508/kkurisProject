@@ -92,16 +92,17 @@ class Todo_m extends CI_Model{
 
     function delete_todo($id, $no){
         $sql = "DELETE FROM items WHERE id = '" . $id . "' AND writer = '" . $no . "'";
-        $query = $this->db->query($sql);
+        $this->db->query($sql);
 
-        echo $query->num_rows();
-//        if($query->num_rows() == 0){
-//            return 0;
-//
-//        } else {
-//
-//            return 1;
-//        }
+//        echo $query->num_rows();
+        if($this->db->affected_rows() == 0){
+
+            return 0;
+
+        } else {
+
+            return 1;
+        }
     }
 
     function insert_account_todo($accountID, $pw, $email){
