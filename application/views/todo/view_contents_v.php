@@ -42,7 +42,7 @@
                 <th colspan="6">내용</th>
             </tr>
             <tr>
-                <th>
+                <th colspan="6">
                     <?php echo $views -> content;?>
                 </th>
             </tr>
