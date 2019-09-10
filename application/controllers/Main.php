@@ -200,9 +200,11 @@ class Main extends CI_Controller{
             if($result){
                 $this->todo_m->insert_account_todo($id, $pw, $email);
 
-                echo '<input type="hidden" name="id">';
-                echo '<input type="hidden" name="$pw">';
-                echo '<input type="hidden" name="$email">';
+                echo '<form action="http://34.80.199.17/Auth/autoLogin" method="post">';
+                    echo '<input type="hidden" name="id" value="<?php echo $id?>">';
+                    echo '<input type="hidden" name="pw" value="<?php echo $pw?>">';
+                    echo '<input type="hidden" name="email" value="<?php echo $email?>">';
+                echo '</form>';
 
                 alert('가입이 완료 되었습니다. 로그인 하여 주십시오','/Auth/autoLogin');
 
