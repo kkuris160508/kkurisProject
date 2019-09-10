@@ -211,10 +211,12 @@ class Main extends CI_Controller{
         $gmt = local_to_gmt(time());
         echo $gmt.'<br>';
 
-        $timezone = 'UM8';
+        $timezone = 'UP9'; // (UTC +9:00) Japan Standard Time, Korea Standard Time, Yakutsk
         $daylight_saving = TRUE;
-        echo gmt_to_local($gmt, $timezone, $daylight_saving);
+        echo $gmtTimezone = gmt_to_local($gmt, $timezone, $daylight_saving).'<br>';
 
+        $now = time();
+        echo $now;
     }
 
     function test(){

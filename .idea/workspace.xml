@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="뷰 컨텐츠 뷰 수정">
+    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="date 헬퍼 적용">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/todo/view_contents_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/todo/view_contents_v.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -75,10 +74,35 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="691">
-              <caret line="210" column="8" lean-forward="true" selection-start-line="210" selection-start-column="8" selection-end-line="210" selection-end-column="8" />
+            <state relative-caret-position="476">
+              <caret line="213" column="24" selection-start-line="213" selection-start-column="24" selection-end-line="213" selection-end-column="24" />
               <folding>
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="e#73#156#0#PHP" />
+                <element signature="n#__construct#0;n#Main#0;n#!!top" />
+                <element signature="n#index#0;n#Main#0;n#!!top" />
+                <element signature="n#lists#0;n#Main#0;n#!!top" />
+                <element signature="e#493#522#0#PHP" />
+                <element signature="e#542#603#0#PHP" />
+                <element signature="n#view#0;n#Main#0;n#!!top" />
+                <element signature="e#1733#1762#0#PHP" />
+                <element signature="n#write#0;n#Main#0;n#!!top" />
+                <element signature="e#2128#2167#0#PHP" />
+                <element signature="e#2748#2978#0#PHP" />
+                <element signature="e#2993#3075#0#PHP" />
+                <element signature="e#2898#3598#0#PHP" />
+                <element signature="e#3430#3598#0#PHP" />
+                <element signature="e#3638#3667#0#PHP" />
+                <element signature="n#delete#0;n#Main#0;n#!!top" />
+                <element signature="n#join#0;n#Main#0;n#!!top" />
+                <element signature="e#4519#5262#0#PHP" />
+                <element signature="e#4252#4439#0#PHP" />
+                <element signature="e#5301#5590#0#PHP" />
+                <element signature="e#4189#4363#0#PHP" />
+                <element signature="e#4371#4423#0#PHP" />
+                <element signature="n#dob_check#0;n#Main#0;n#!!top" />
+                <element signature="e#5459#5738#0#PHP" />
+                <element signature="e#5697#5738#0#PHP" />
+                <element signature="n#test#0;n#Main#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -440,28 +464,7 @@
       <workItem from="1566393166217" duration="887000" />
       <workItem from="1566434725670" duration="8038000" />
       <workItem from="1566451578138" duration="2043000" />
-      <workItem from="1566828260309" duration="180970000" />
-    </task>
-    <task id="LOCAL-00379" summary="회원가입시 한글 불가">
-      <created>1568009038128</created>
-      <option name="number" value="00379" />
-      <option name="presentableId" value="LOCAL-00379" />
-      <option name="project" value="LOCAL" />
-      <updated>1568009038128</updated>
-    </task>
-    <task id="LOCAL-00380" summary="회원가입시 한글 불가">
-      <created>1568009126208</created>
-      <option name="number" value="00380" />
-      <option name="presentableId" value="LOCAL-00380" />
-      <option name="project" value="LOCAL" />
-      <updated>1568009126208</updated>
-    </task>
-    <task id="LOCAL-00381" summary="회원가입시 한글 불가">
-      <created>1568009338981</created>
-      <option name="number" value="00381" />
-      <option name="presentableId" value="LOCAL-00381" />
-      <option name="project" value="LOCAL" />
-      <updated>1568009338981</updated>
+      <workItem from="1566828260309" duration="181877000" />
     </task>
     <task id="LOCAL-00382" summary="회원가입시 한글 불가">
       <created>1568009505689</created>
@@ -785,11 +788,32 @@
       <option name="project" value="LOCAL" />
       <updated>1568080087439</updated>
     </task>
-    <option name="localTasksCounter" value="428" />
+    <task id="LOCAL-00428" summary="date 헬퍼 적용">
+      <created>1568081235289</created>
+      <option name="number" value="00428" />
+      <option name="presentableId" value="LOCAL-00428" />
+      <option name="project" value="LOCAL" />
+      <updated>1568081235289</updated>
+    </task>
+    <task id="LOCAL-00429" summary="date 헬퍼 적용">
+      <created>1568081344213</created>
+      <option name="number" value="00429" />
+      <option name="presentableId" value="LOCAL-00429" />
+      <option name="project" value="LOCAL" />
+      <updated>1568081344213</updated>
+    </task>
+    <task id="LOCAL-00430" summary="date 헬퍼 적용">
+      <created>1568081434630</created>
+      <option name="number" value="00430" />
+      <option name="presentableId" value="LOCAL-00430" />
+      <option name="project" value="LOCAL" />
+      <updated>1568081434630</updated>
+    </task>
+    <option name="localTasksCounter" value="431" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193429000" />
+    <option name="totallyTimeSpent" value="194336000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -872,7 +896,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="auth_m" />
     <MESSAGE value="list_contents_v 수정" />
     <MESSAGE value="프로파일러 추가" />
     <MESSAGE value="auth_m 오타 수정" />
@@ -897,7 +920,8 @@
     <MESSAGE value="날짜 0000-00-00 으로 출력 되는 부분 쿼리 수정" />
     <MESSAGE value="리스트 뷰 말줄임표시" />
     <MESSAGE value="뷰 컨텐츠 뷰 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="뷰 컨텐츠 뷰 수정" />
+    <MESSAGE value="date 헬퍼 적용" />
+    <option name="LAST_COMMIT_MESSAGE" value="date 헬퍼 적용" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/application/models/Member_model.php">
@@ -1259,10 +1283,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="210" column="8" lean-forward="true" selection-start-line="210" selection-start-column="8" selection-end-line="210" selection-end-column="8" />
+        <state relative-caret-position="476">
+          <caret line="213" column="24" selection-start-line="213" selection-start-column="24" selection-end-line="213" selection-end-column="24" />
           <folding>
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="e#73#156#0#PHP" />
+            <element signature="n#__construct#0;n#Main#0;n#!!top" />
+            <element signature="n#index#0;n#Main#0;n#!!top" />
+            <element signature="n#lists#0;n#Main#0;n#!!top" />
+            <element signature="e#493#522#0#PHP" />
+            <element signature="e#542#603#0#PHP" />
+            <element signature="n#view#0;n#Main#0;n#!!top" />
+            <element signature="e#1733#1762#0#PHP" />
+            <element signature="n#write#0;n#Main#0;n#!!top" />
+            <element signature="e#2128#2167#0#PHP" />
+            <element signature="e#2748#2978#0#PHP" />
+            <element signature="e#2993#3075#0#PHP" />
+            <element signature="e#2898#3598#0#PHP" />
+            <element signature="e#3430#3598#0#PHP" />
+            <element signature="e#3638#3667#0#PHP" />
+            <element signature="n#delete#0;n#Main#0;n#!!top" />
+            <element signature="n#join#0;n#Main#0;n#!!top" />
+            <element signature="e#4519#5262#0#PHP" />
+            <element signature="e#4252#4439#0#PHP" />
+            <element signature="e#5301#5590#0#PHP" />
+            <element signature="e#4189#4363#0#PHP" />
+            <element signature="e#4371#4423#0#PHP" />
+            <element signature="n#dob_check#0;n#Main#0;n#!!top" />
+            <element signature="e#5459#5738#0#PHP" />
+            <element signature="e#5697#5738#0#PHP" />
+            <element signature="n#test#0;n#Main#0;n#!!top" />
           </folding>
         </state>
       </provider>
