@@ -10,7 +10,7 @@ class Auth extends CI_Controller{
     {
         parent::__construct();
         $this->load->model('Auth_m');
-        $this->load->helper('form');
+        $this->load->helper(array('form','cookie'));
     }
 
     public function index(){
@@ -22,6 +22,8 @@ class Auth extends CI_Controller{
         $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
         $this->load->library('form_validation');
         $this->load->helper('alert');
+
+        $this->input->cookie('myprefix_inputID');
 
         $this->form_validation -> set_rules('account_id', '아이디', 'required|alpha_numeric');
         $this->form_validation -> set_rules('PW', '비밀번호',  'required');
