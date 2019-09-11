@@ -49,22 +49,24 @@
             </td>
         </tr>
     <?php endforeach?>
-        <tr>
-            <td colspan="7"><a href="/Main/write/" class="btn btn-success">쓰기</a></td>
-        </tr>
     </tbody>
 </table>
-    <div>
-        <ul class = "pagination">
-            <!--            --><?php //foreach() : ?>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <!--            --><?php //endforeach?>
-        </ul>
-    </div>
+<div>
+    <ul class = "pagination">
+        <!--            --><?php //foreach() : ?>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <!--            --><?php //endforeach?>
+    </ul>
+</div>
+<div>
+    <a href="/Main/write/" class="btn btn-success">쓰기</a>
+</div>
+
+
 <?php echo form_open('/Main/searchText')?>
     <table style="width: 1000px;">
         <tr>
