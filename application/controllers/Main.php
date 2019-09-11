@@ -226,7 +226,8 @@ class Main extends CI_Controller{
                     'prefix' => 'myprefix_'
                 );
 
-                $this->input->set_cookie(array($cookieArray1, $cookieArray2));
+                $this->input->set_cookie($cookieArray1);
+                $this->input->set_cookie($cookieArray2);
                 $this->input->cookie(array('myprefix_user_id','myprefix_user_pw'));
 //                set_cookie('user_id', $this->input->post('account_id'), 3600);
 
