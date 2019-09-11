@@ -298,6 +298,8 @@ class Main extends CI_Controller{
     }
 
     public function searchText(){
+        $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+
         $this->load->library('form_validation');
 
         $this->form_validation->set_rules('searchTxt','텍스트','required');
