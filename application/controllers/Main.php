@@ -300,19 +300,19 @@ class Main extends CI_Controller{
     public function searchText(){
         $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
-//        $this->load->library('form_validation');
-//
-//        $this->form_validation->set_rules('searchTxt','텍스트','required');
-//
-//        if($this->form_validation->run() == TRUE){
-//
-//            $txt = $this->input->post('searchTxt', TRUE);
-//            $cate = $this->input->post('selectSubject', TRUE);
-//
-//            $this->todo_m->getSearchItems($txt, $cate);
-//        }
+        $this->load->library('form_validation');
 
-            $this->todo_m->getSearchItems($txt = '테스트', $cate = 'subject');
+        $this->form_validation->set_rules('searchTxt','텍스트','required');
+
+        if($this->form_validation->run() == TRUE){
+
+            $txt = $this->input->post('searchTxt', TRUE);
+            $cate = $this->input->post('selectSubject', TRUE);
+
+            $this->todo_m->getSearchItems($txt, $cate);
+        }
+
+//            $this->todo_m->getSearchItems($txt = '테스트', $cate = 'subject');
 
     }
 
