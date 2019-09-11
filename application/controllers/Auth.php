@@ -71,7 +71,7 @@ class Auth extends CI_Controller{
 
         get_cookie('myprefix_user_id',TRUE);
 
-        set_cookie('user_id', $this->input->post('account_id'), 3600);
+//        set_cookie('user_id', $this->input->post('account_id'), 3600);
 
 //        $cookie_id = $this->input->cookie('myprefix_user_id');
 //        echo $cookie_id;
