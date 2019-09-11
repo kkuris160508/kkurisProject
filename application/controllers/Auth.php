@@ -23,7 +23,9 @@ class Auth extends CI_Controller{
         $this->load->library('form_validation');
         $this->load->helper('alert');
 
-        $this->input->cookie('myprefix_inputID');
+        get_cookie('myprefix_user_id',TRUE);
+
+//        $this->input->cookie('myprefix_inputID');
 
         $this->form_validation -> set_rules('account_id', '아이디', 'required|alpha_numeric');
         $this->form_validation -> set_rules('PW', '비밀번호',  'required');
