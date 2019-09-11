@@ -52,16 +52,16 @@
     </tbody>
     <tfoot>
     <tr>
-        <th colspan="2"><a href="/Main/write/" class="btn btn-success">쓰기</a></th>
+        <th><a href="/Main/write/" class="btn btn-success">쓰기</a></th>
         <th>
-        <div id = 'selectCategoryMenu'>
-            <!-- 드랍박스 메뉴 추가 -->
-            <select name = 'selectCategory' id = 'selectCategory' class = 'selectCategory'>
-                <option value = 'selectSubject' selected>제목</option>
-                <option value = 'selectContent'>내용</option>
-                <option value = 'selectWriter'>작성자</option>
-            </select>
-        </div>
+            <div id = 'selectCategoryMenu'>
+                <!-- 드랍박스 메뉴 추가 -->
+                <select name = 'selectCategory' id = 'selectCategory' class = 'selectCategory'>
+                    <option value = 'selectSubject' selected>제목</option>
+                    <option value = 'selectContent'>내용</option>
+                    <option value = 'selectWriter'>작성자</option>
+                </select>
+            </div>
         </th>
         <!-- input 영역 추가 -->
     </tr>
