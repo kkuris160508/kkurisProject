@@ -88,7 +88,7 @@
             </select>
 
         </td>
-        <td colspan = '5' style="width:800px"><?php echo form_input('searchTxt','',"placeholder='검색어를 입력하세요;width=600px;'")?></td>
+        <td colspan = '5' style="width:800px"><?php echo form_input('searchTxt','',"placeholder='검색어를 입력하세요'; style = 'width:600px;'")?></td>
         <!-- input 영역 추가 -->
     </tr>
     </table>
