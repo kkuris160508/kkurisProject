@@ -21,9 +21,11 @@ class Main extends CI_Controller{
     }
 
     function lists(){
-//        echo CI_VERSION;
         $tmpIP = $this->input->ip_address();
 
+        if($tmpIP == '211.52.72.56'){
+            $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+        }
 //        if($tmpIP !== '211.52.72.56'){
 //            echo '접속불가';
 //            exit;
