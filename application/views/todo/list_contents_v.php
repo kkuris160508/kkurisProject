@@ -68,18 +68,17 @@
     </tbody>
     </table>
 
-    <table>
+    <table style="width: 1000px;">
     <tr>
-
         <td>
-            <div id = 'selectCategoryMenu'>
-                <!-- 드랍박스 메뉴 추가 -->
-                <select name = 'selectCategory' id = 'selectCategory' class = 'selectCategory'>
-                    <option value = 'selectSubject' selected>제목</option>
-                    <option value = 'selectContent'>내용</option>
-                    <option value = 'selectWriter'>작성자</option>
-                </select>
-            </div>
+
+            <!-- 드랍박스 메뉴 추가 -->
+            <select name = 'selectCategory' id = 'selectCategory' class = 'selectCategory'>
+                <option value = 'selectSubject' selected>제목</option>
+                <option value = 'selectContent'>내용</option>
+                <option value = 'selectWriter'>작성자</option>
+            </select>
+
         </td>
         <td style="width:600px;"><?php echo form_input('searchTxt','',"placeholder='검색어를 입력하세요'")?></td>
         <!-- input 영역 추가 -->
