@@ -312,7 +312,7 @@ class Main extends CI_Controller{
 //            $this->todo_m->getSearchItems($txt, $cate);
 //        }
 
-            $this->todo_m->getSearchItems($txt, $cate);
+            $this->todo_m->getSearchItems($txt = '테스트', $cate = 'subject');
 
     }
 
