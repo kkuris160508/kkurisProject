@@ -210,12 +210,11 @@ class Main extends CI_Controller{
                     'name' => 'user_id',
                     'value' => $id,
                     'expire' => '86500',
-                    'domain' => '.34.80.199.17',
                     'prefix' => 'myprefix_'
                 );
                 $this->input->set_cookie($cookie);
 
-                $this->input->cookie('myprefix_inputID');
+                $this->input->cookie('myprefix_user_id');
 
                 alert('가입이 완료 되었습니다. 로그인 하여 주십시오','/Auth/login');
 
