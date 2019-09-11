@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="코드이그나이터 버전 표시">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
+    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="글 검색 기능 추가 시작">
       <change beforePath="$PROJECT_DIR$/application/views/todo/list_contents_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/todo/list_contents_v.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -109,8 +107,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/todo/list_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="57" column="23" lean-forward="true" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+            <state relative-caret-position="527">
+              <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
               </folding>
@@ -399,14 +397,7 @@
       <workItem from="1566393166217" duration="887000" />
       <workItem from="1566434725670" duration="8038000" />
       <workItem from="1566451578138" duration="2043000" />
-      <workItem from="1566828260309" duration="217737000" />
-    </task>
-    <task id="LOCAL-00457" summary="글 작성자만 삭제가 가능하게끔 로직 추가">
-      <created>1568098439860</created>
-      <option name="number" value="00457" />
-      <option name="presentableId" value="LOCAL-00457" />
-      <option name="project" value="LOCAL" />
-      <updated>1568098439860</updated>
+      <workItem from="1566828260309" duration="218003000" />
     </task>
     <task id="LOCAL-00458" summary="글 작성자만 삭제가 가능하게끔 로직 추가">
       <created>1568098740848</created>
@@ -744,11 +735,18 @@
       <option name="project" value="LOCAL" />
       <updated>1568179868723</updated>
     </task>
-    <option name="localTasksCounter" value="506" />
+    <task id="LOCAL-00506" summary="글 검색 기능 추가 시작">
+      <created>1568181023785</created>
+      <option name="number" value="00506" />
+      <option name="presentableId" value="LOCAL-00506" />
+      <option name="project" value="LOCAL" />
+      <updated>1568181023785</updated>
+    </task>
+    <option name="localTasksCounter" value="507" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="230196000" />
+    <option name="totallyTimeSpent" value="230462000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -831,8 +829,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="로그인 한 유저만 글 쓰기가 가능하게 수정 시작" />
-    <MESSAGE value="비 로그인 유저 글 작성 시 alert , 리디릭션 url 추가" />
     <MESSAGE value="회원가입 로직 추가" />
     <MESSAGE value="index.php define 변경 development -&gt; production" />
     <MESSAGE value="작성자 입력 안되는 부분 수정시작" />
@@ -856,7 +852,9 @@
     <MESSAGE value="리스트 컨텐츠 뷰 이메일 노출 삭제" />
     <MESSAGE value="뷰 컨텐츠 뷰 이메일 노출 삭제" />
     <MESSAGE value="코드이그나이터 버전 표시" />
-    <option name="LAST_COMMIT_MESSAGE" value="코드이그나이터 버전 표시" />
+    <MESSAGE value="글 검색 기능 추가" />
+    <MESSAGE value="글 검색 기능 추가 시작" />
+    <option name="LAST_COMMIT_MESSAGE" value="글 검색 기능 추가 시작" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/application/controllers/JoinOK.php">
@@ -1213,8 +1211,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/todo/list_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="57" column="23" lean-forward="true" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+        <state relative-caret-position="527">
+          <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#a#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
           </folding>
