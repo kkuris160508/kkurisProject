@@ -6,7 +6,7 @@
 ?>
 <?php echo form_open('/Main/searchText')?>
 </header>
-<table class="table table-striped">
+<table class="table table-striped" style="width: 1300px; text-align: center">
     <thead class="thead-dark">
     <tr>
         <th scope="col">번호</th>
@@ -22,29 +22,29 @@
     <tbody>
     <?php foreach ($list as $lt) : ?>
         <tr>
-            <th scope="row" style="text-align: center; width: 100px;">
+            <th scope="row" style="width: 100px;">
                 <?php echo $lt -> id;?>
             </th>
-            <th scope="row" style="text-align: center; width: 150px;">
+            <th scope="row" style="width: 150px;">
                 <a href="mailto:<?php echo $lt -> EMAIL?>"><?php echo $lt -> account_id;?></a>
             </th>
-            <td style="text-align: center; width: 300px;">
+            <td style="width: 300px;">
                 <a rel="external" href="/Main/view/<?php echo $lt -> id; ?>" style="text-overflow:ellipsis;word-wrap:break-word;overflow:hidden;white-space:nowrap;display:inline-block;width:120px;"><?php echo $lt -> subject;?></a>
             </td>
 <!--            <td>-->
 <!--                <a rel="external" href="/Main/view/--><?php //echo $lt -> id; ?><!--" style="text-overflow:ellipsis;word-wrap:break-word;overflow:hidden;white-space:nowrap;display:inline-block;width:500px;">--><?php //echo $lt -> content;?><!--</a>-->
 <!--            </td>-->
-            <td style="text-align: center; width: 200px;">
+            <td style="width: 200px;">
                 <time datetime="<?php echo mdate("%Y-%M-%j", human_to_unix($lt -> created_on)); ?>"><?php echo $lt -> created_on;?></time>
             </td>
-            <td style="text-align: center; width: 200px;">
+            <td style="width: 200px;">
                 <time datetime="<?php echo mdate("%Y-%M-%j", human_to_unix($lt -> due_date)); ?>"><?php echo $lt -> due_date;?></time>
             </td>
             <!-- 조회수 영역 추가-->
-            <td style="text-align: center; width: 100px;">
+            <td style="width: 100px;">
                 <?php echo $lt -> hit;?>
             </td>
-            <td style="text-align: center; width: 200px;">
+            <td style="width: 200px;">
                 <time datetime="<?php echo mdate("%Y-%M-%j", human_to_unix($lt -> writetime)); ?>"><?php echo $lt -> writetime;?></time>
             </td>
         </tr>
