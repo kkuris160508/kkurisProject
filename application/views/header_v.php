@@ -20,7 +20,7 @@
     <header id="header" data-role="header" data-position="fixed"><!-- Header Start -->
         <blockquote>
             <p>
-                CodeIgniter
+                CodeIgniter <?php echo CI_VERSION?>
             </p>
             <p>
                 <?php
