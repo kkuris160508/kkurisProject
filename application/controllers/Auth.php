@@ -83,7 +83,7 @@ class Auth extends CI_Controller{
 
         if($this->form_validation -> run() == TRUE){
             $auth_data = array(
-                'account_id' => $this->input->post('account_id', TRUE),
+//                'account_id' => $this->input->post('account_id', TRUE),
                 'PW' => $this->input->post('PW', TRUE)
             );
 
@@ -106,8 +106,8 @@ class Auth extends CI_Controller{
 
 
                 // ID, PW return 값을 .... 어쩌지. post 형식으로 이미 받아온 값인데데
-//               alert('로그인 되었습니다.', '/Main/lists');
-//                exit;
+               alert('로그인 되었습니다.', '/Main/lists');
+                exit;
             } else {
 
                 alert('아이디나 비밀번호를 확인해 주세요.', '/Main/lists');
