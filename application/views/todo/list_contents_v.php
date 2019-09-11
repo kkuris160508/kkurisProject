@@ -48,6 +48,7 @@
                 <time datetime="<?php echo mdate("%Y-%M-%j", human_to_unix($lt -> writetime)); ?>"><?php echo $lt -> writetime;?></time>
             </td>
         </tr>
+    <?php endforeach?>
         <tr>
             <td><a href="/Main/write/" class="btn btn-success">쓰기</a></td>
         </tr>
@@ -64,10 +65,7 @@
                 </ul>
             </td>
         </tr>
-        <?php endforeach?>
     </tbody>
-    <tfoot>
-    </tfoot>
     </table>
 
     <table>
