@@ -298,6 +298,19 @@ class Main extends CI_Controller{
     }
 
     public function searchText(){
+        $this->load->library('form_validation');
+
+        $this->form_validation->set_rules('searchTxt','텍스트','required');
+
+        if($this->form_validation->run() == TRUE){
+
+            $txt = $this->input->post('searchTxt', TRUE);
+            $cate = $this->input->post('selectSubject', TRUE);
+
+            $this->todo_m->getSearchItems($txt, $cate);
+        }
+
+
 
     }
 
