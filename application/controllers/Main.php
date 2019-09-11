@@ -214,8 +214,14 @@ class Main extends CI_Controller{
 //                );
 
                 $cookieArray = array(
-                    'name' => array('user_id','user_pw'),
-                    'value' => array($id,$pw),
+                    'name' => array(
+                        '1' => 'user_id',
+                        '2' => 'user_pw'
+                    ),
+                    'value' => array(
+                        '1' => $id,
+                        '2' => $pw
+                    ),
                     'expire' => '3600',
                     'prefix' => 'myprefix_'
                 );
