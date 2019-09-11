@@ -213,20 +213,20 @@ class Main extends CI_Controller{
 //                    'prefix' => 'myprefix_'
 //                );
 
-                $cookieArray = array(
-                    'name' => array(
-                        '1' => 'user_id',
-                        '2' => 'user_pw'
-                    ),
-                    'value' => array(
-                        '1' => $id,
-                        '2' => $pw
-                    ),
+                $cookieArray1 = array(
+                    'name' => 'user_id',
+                    'value' => $id,
+                    'expire' => '3600',
+                    'prefix' => 'myprefix_'
+                );
+                $cookieArray2 = array(
+                    'name' => 'user_pw',
+                    'value' => $pw,
                     'expire' => '3600',
                     'prefix' => 'myprefix_'
                 );
 
-                $this->input->set_cookie($cookieArray);
+                $this->input->set_cookie(array($cookieArray1, $cookieArray2));
                 $this->input->cookie(array('myprefix_user_id','myprefix_user_pw'));
 //                set_cookie('user_id', $this->input->post('account_id'), 3600);
 
