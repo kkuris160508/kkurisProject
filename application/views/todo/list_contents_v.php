@@ -25,7 +25,7 @@
                 <?php echo $lt -> id;?>
             </th>
             <th scope="row">
-                <?php echo $lt -> account_id;?><a href="mailto:<?php echo $lt -> EMAIL?>">(<?php echo $lt->EMAIL?>)</a>
+                <a href="mailto:<?php echo $lt -> EMAIL?>"><?php echo $lt -> account_id;?></a>
             </th>
             <td>
                 <a rel="external" href="/Main/view/<?php echo $lt -> id; ?>" style="text-overflow:ellipsis;word-wrap:break-word;overflow:hidden;white-space:nowrap;display:inline-block;width:120px;"><?php echo $lt -> subject;?></a>
