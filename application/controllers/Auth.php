@@ -23,10 +23,7 @@ class Auth extends CI_Controller{
         $this->load->library('form_validation');
         $this->load->helper('alert');
 
-        get_cookie('myprefix_user_id',TRUE);
 
-        $cookie_id = $this->input->cookie('myprefix_user_id');
-        echo $cookie_id;
 //        $this->input->cookie('myprefix_inputID');
 
         $this->form_validation -> set_rules('account_id', '아이디', 'required|alpha_numeric');
@@ -72,7 +69,14 @@ class Auth extends CI_Controller{
         $this->load->library('form_validation');
         $this->load->helper('alert');
 
-        $this->form_validation -> set_rules('account_id', '아이디', 'required|alpha_numeric');
+        get_cookie('myprefix_user_id',TRUE);
+
+        set_cookie('user_id', $this->input->post('account_id'), 3600);
+
+//        $cookie_id = $this->input->cookie('myprefix_user_id');
+//        echo $cookie_id;
+
+//        $this->form_validation -> set_rules('account_id', '아이디', 'required|alpha_numeric');
         $this->form_validation -> set_rules('PW', '비밀번호',  'required');
 
         echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
@@ -98,7 +102,6 @@ class Auth extends CI_Controller{
                 // ID, PW 가져오기 쿼리
 
 
-                $accountID = $this->session->userdata('account_id');
 
 
 

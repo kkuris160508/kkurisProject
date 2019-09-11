@@ -11,14 +11,14 @@
         <legend>로그인</legend>
         <div class="control-group">
             <label class="control-label" for="input1">아이디</label>
-            <div class="controls">
+            <div id = 'inputID' class="controls">
                 <!--                <input type="text" class="input-xlarge" id="input1" name="account_id"-->
                 <!--                       value="--><?php //echo set_value('account_id'); ?><!--" />-->
-                <?php echo form_input('account_id', set_value('account_id'))?>
+                <?php echo form_input('account_id',get_cookie('myprefix_user_id'))?>
                 <p class="help-block"></p>
             </div>
             <label class="control-label" for="input2">비밀번호</label>
-            <div class="controls">
+            <div id = 'inputPW' class="controls">
                 <!--                <input type="PW" class="input-xlarge" id="input2" name="PW"-->
                 <!--                       value="--><?php //echo set_value('PW'); ?><!--" />-->
                 <?php echo form_password('PW', set_value('PW'))?>
