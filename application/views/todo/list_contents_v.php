@@ -50,23 +50,21 @@
         </tr>
     <?php endforeach?>
         <tr>
-            <td><a href="/Main/write/" class="btn btn-success">쓰기</a></td>
-        </tr>
-        <tr>
-            <td>
-                <ul class = "pagination">
-                    <!--            --><?php //foreach() : ?>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <!--            --><?php //endforeach?>
-                </ul>
-            </td>
+            <td colspan="7"><a href="/Main/write/" class="btn btn-success">쓰기</a></td>
         </tr>
     </tbody>
-    </table>
+</table>
+    <div>
+        <ul class = "pagination">
+            <!--            --><?php //foreach() : ?>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <!--            --><?php //endforeach?>
+        </ul>
+    </div>
 <?php echo form_open('/Main/searchText')?>
     <table style="width: 1000px;">
         <tr>
@@ -79,16 +77,15 @@
             <th></th>
         </tr>
     <tr>
-        <td colspan = '2' style="width:100px">
+        <td style="width:80px">
             <!-- 드랍박스 메뉴 추가 -->
             <select name = 'selectCategory' id = 'selectCategory' class = 'selectCategory'>
                 <option value = 'selectSubject' selected>제목</option>
                 <option value = 'selectContent'>내용</option>
                 <option value = 'selectWriter'>작성자</option>
             </select>
-
         </td>
-        <td colspan = '5' style="width:800px"><?php echo form_input('searchTxt','',"placeholder='검색어를 입력하세요'; style = 'width:600px;'")?></td>
+        <td colspan = '6' style="width:800px"><?php echo form_input('searchTxt','',"placeholder='검색어를 입력하세요'; style = 'width:600px;'")?></td>
         <!-- input 영역 추가 -->
     </tr>
     </table>
