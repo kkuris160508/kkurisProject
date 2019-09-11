@@ -6,7 +6,7 @@
 ?>
 
 </header>
-<table class="table table-striped" style="width: 1300px; text-align: center">
+<table class="table table-striped" style="width: 1700px; text-align: center">
     <thead class="thead-dark">
     <tr>
         <th scope="col">번호</th>
@@ -51,7 +51,7 @@
     <?php endforeach?>
     </tbody>
 </table>
-<div style="width: 1300px; text-align: center">
+<div>
     <ul class = "pagination">
         <!--            --><?php //foreach() : ?>
         <li><a href="#">1</a></li>
@@ -62,7 +62,7 @@
         <!--            --><?php //endforeach?>
     </ul>
 </div>
-<div style="width: 1300px; text-align: end">
+<div style="width: 1700px; text-align: end">
     <a href="/Main/write/" class="btn btn-success">쓰기</a>
 </div>
 
