@@ -70,16 +70,16 @@
 <?php echo form_open('/Main/searchText')?>
     <table style="width: 1000px;">
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
         </tr>
     <tr>
-        <td style="width:100px">
+        <td colspan = '2' style="width:100px">
             <!-- 드랍박스 메뉴 추가 -->
             <select name = 'selectCategory' id = 'selectCategory' class = 'selectCategory'>
                 <option value = 'selectSubject' selected>제목</option>
@@ -88,7 +88,7 @@
             </select>
 
         </td>
-        <td colspan = '6' style="width:800px;"><?php echo form_input('searchTxt','',"placeholder='검색어를 입력하세요'")?></td>
+        <td colspan = '5' style="width:800px;"><?php echo form_input('searchTxt','',"placeholder='검색어를 입력하세요'")?></td>
         <!-- input 영역 추가 -->
     </tr>
     </table>
