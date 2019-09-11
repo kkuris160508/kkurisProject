@@ -52,8 +52,8 @@
     </tbody>
     <tfoot>
     <tr>
-        <th><a href="/Main/write/" class="btn btn-success">쓰기</a></th>
-        <th>
+        <td><a href="/Main/write/" class="btn btn-success">쓰기</a></td>
+        <td>
             <div id = 'selectCategoryMenu'>
                 <!-- 드랍박스 메뉴 추가 -->
                 <select name = 'selectCategory' id = 'selectCategory' class = 'selectCategory'>
@@ -62,7 +62,10 @@
                     <option value = 'selectWriter'>작성자</option>
                 </select>
             </div>
-        </th>
+        </td>
+        <td>
+            <?php echo form_input('searchTxt','',"placeholder='검색어를 입력하세요'")?>
+        </td>
         <!-- input 영역 추가 -->
     </tr>
     <tr>
