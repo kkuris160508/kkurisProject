@@ -213,9 +213,9 @@ class Main extends CI_Controller{
                     'prefix' => 'myprefix_'
                 );
 //                $this->input->set_cookie($cookie);
+                $this->input->cookie('myprefix_user_id');
                 set_cookie('user_id', $this->input->post('account_id'), 3600);
 
-                $this->input->cookie('myprefix_user_id');
 
                 alert('가입이 완료 되었습니다. 로그인 하여 주십시오','/Auth/autoLogin');
 
