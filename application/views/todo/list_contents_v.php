@@ -51,6 +51,10 @@
         <?php endforeach?>
     </tbody>
     <tfoot>
+    </tfoot>
+    </table>
+
+    <table>
     <tr>
         <td><a href="/Main/write/" class="btn btn-success">쓰기</a></td>
         <td>
@@ -63,9 +67,7 @@
                 </select>
             </div>
         </td>
-        <td>
-            <?php echo form_input('searchTxt','',"placeholder='검색어를 입력하세요'")?>
-        </td>
+        <td colspan="5"><?php echo form_input('searchTxt','',"placeholder='검색어를 입력하세요'")?></td>
         <!-- input 영역 추가 -->
     </tr>
     <tr>
@@ -79,6 +81,5 @@
             <!--            --><?php //endforeach?>
         </ul>
     </tr>
-    </tfoot>
-</table>
+    </table>
 <?php echo form_close();?>
