@@ -209,7 +209,7 @@ class Main extends CI_Controller{
                 $cookie = array(
                     'name' => 'user_id',
                     'value' => $id,
-                    'expire' => '86500',
+                    'expire' => '3600',
                     'prefix' => 'myprefix_'
                 );
 //                $this->input->set_cookie($cookie);
