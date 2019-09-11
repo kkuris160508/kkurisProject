@@ -4,7 +4,7 @@
         'style' => 'text-overflow:ellipsis;word-wrap:break-word;overflow:hidden;white-space:nowrap;display:inline-block;width:500px;'
     )
 ?>
-<?php echo form_open('/Main/searchText')?>
+
 </header>
 <table class="table table-striped" style="width: 1300px; text-align: center">
     <thead class="thead-dark">
@@ -67,11 +67,10 @@
         </tr>
     </tbody>
     </table>
-
+<?php echo form_open('/Main/searchText')?>
     <table style="width: 1000px;">
     <tr>
-        <td>
-
+        <td style="width:100px">
             <!-- 드랍박스 메뉴 추가 -->
             <select name = 'selectCategory' id = 'selectCategory' class = 'selectCategory'>
                 <option value = 'selectSubject' selected>제목</option>
@@ -80,9 +79,8 @@
             </select>
 
         </td>
-        <td style="width:600px;"><?php echo form_input('searchTxt','',"placeholder='검색어를 입력하세요'")?></td>
+        <td style="width:800px;"><?php echo form_input('searchTxt','',"placeholder='검색어를 입력하세요'")?></td>
         <!-- input 영역 추가 -->
     </tr>
-
     </table>
 <?php echo form_close();?>

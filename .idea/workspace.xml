@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="글 검색 기능 추가 시작">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/todo/list_contents_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/todo/list_contents_v.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -108,8 +107,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/todo/list_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="54" column="8" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+            <state relative-caret-position="728">
+              <caret line="79" column="21" selection-start-line="73" selection-end-line="79" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#th#0;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
@@ -120,6 +119,7 @@
                 <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#2;n#tr#0;n#table#1;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -407,21 +407,7 @@
       <workItem from="1566393166217" duration="887000" />
       <workItem from="1566434725670" duration="8038000" />
       <workItem from="1566451578138" duration="2043000" />
-      <workItem from="1566828260309" duration="220294000" />
-    </task>
-    <task id="LOCAL-00466" summary="글 작성자만 삭제가 가능하게끔 로직 추가">
-      <created>1568100600393</created>
-      <option name="number" value="00466" />
-      <option name="presentableId" value="LOCAL-00466" />
-      <option name="project" value="LOCAL" />
-      <updated>1568100600394</updated>
-    </task>
-    <task id="LOCAL-00467" summary="글 작성자만 삭제가 가능하게끔 로직 추가">
-      <created>1568101098703</created>
-      <option name="number" value="00467" />
-      <option name="presentableId" value="LOCAL-00467" />
-      <option name="project" value="LOCAL" />
-      <updated>1568101098703</updated>
+      <workItem from="1566828260309" duration="220597000" />
     </task>
     <task id="LOCAL-00468" summary="글 작성자만 삭제가 가능하게끔 로직 추가">
       <created>1568101260753</created>
@@ -752,11 +738,25 @@
       <option name="project" value="LOCAL" />
       <updated>1568183298760</updated>
     </task>
-    <option name="localTasksCounter" value="515" />
+    <task id="LOCAL-00515" summary="글 검색 기능 추가 시작">
+      <created>1568183556668</created>
+      <option name="number" value="00515" />
+      <option name="presentableId" value="LOCAL-00515" />
+      <option name="project" value="LOCAL" />
+      <updated>1568183556668</updated>
+    </task>
+    <task id="LOCAL-00516" summary="글 검색 기능 추가 시작">
+      <created>1568183628860</created>
+      <option name="number" value="00516" />
+      <option name="presentableId" value="LOCAL-00516" />
+      <option name="project" value="LOCAL" />
+      <updated>1568183628860</updated>
+    </task>
+    <option name="localTasksCounter" value="517" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232753000" />
+    <option name="totallyTimeSpent" value="233056000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1221,8 +1221,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/todo/list_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="54" column="8" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+        <state relative-caret-position="728">
+          <caret line="79" column="21" selection-start-line="73" selection-end-line="79" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#th#0;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
@@ -1233,6 +1233,7 @@
             <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#2;n#tr#0;n#table#1;n#!!top" expanded="true" />
           </folding>
         </state>
