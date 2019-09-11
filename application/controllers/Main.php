@@ -21,6 +21,7 @@ class Main extends CI_Controller{
     }
 
     function lists(){
+        echo CI_VERSION;
         $tmpIP = $this->input->ip_address();
 
 //        if($tmpIP !== '211.52.72.56'){
