@@ -21,7 +21,8 @@
             <div id = 'inputPW' class="controls">
                 <!--                <input type="PW" class="input-xlarge" id="input2" name="PW"-->
                 <!--                       value="--><?php //echo set_value('PW'); ?><!--" />-->
-                <?php echo form_password('PW', set_value('PW'))?>
+<!--                --><?php //echo form_password('PW', set_value('PW'))?>
+                <?php echo form_password('PW', get_cookie('myprefix_user_pw',TRUE))?>
                 <p class="help-block"></p>
             </div>
             <div class="controls">

@@ -206,14 +206,22 @@ class Main extends CI_Controller{
 /*                    echo '<input type="hidden" name="email" value="<?php echo $email?>">';*/
 //                echo '</form>';
 
-                $cookie = array(
-                    'name' => 'user_id',
-                    'value' => $id,
+//                $cookie = array(
+//                    'name' => 'user_id',
+//                    'value' => $id,
+//                    'expire' => '3600',
+//                    'prefix' => 'myprefix_'
+//                );
+
+                $cookieArray = array(
+                    'name' => array('user_id','user_pw'),
+                    'value' => array($id,$pw),
                     'expire' => '3600',
                     'prefix' => 'myprefix_'
                 );
-                $this->input->set_cookie($cookie);
-                $this->input->cookie('myprefix_user_id');
+
+                $this->input->set_cookie($cookieArray);
+                $this->input->cookie(array('myprefix_user_id','myprefix_user_pw'));
 //                set_cookie('user_id', $this->input->post('account_id'), 3600);
 
 
