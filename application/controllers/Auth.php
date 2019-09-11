@@ -69,7 +69,7 @@ class Auth extends CI_Controller{
         $this->load->library('form_validation');
         $this->load->helper('alert');
 
-        get_cookie('myprefix_user_id',TRUE);
+//        get_cookie('myprefix_user_id',TRUE);
 
 //        set_cookie('user_id', $this->input->post('account_id'), 3600);
 
