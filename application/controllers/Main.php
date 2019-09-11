@@ -23,15 +23,15 @@ class Main extends CI_Controller{
     function lists(){
         $tmpIP = $this->input->ip_address();
 
-        if($tmpIP !== '211.52.72.56'){
-            echo '접속불가';
-            exit;
+//        if($tmpIP !== '211.52.72.56'){
+//            echo '접속불가';
+//            exit;
 
-        } else {
-            $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
-
-            $result2 = $this->debug->debug_var($_SERVER); // debug 를 소문자로...ㅡㅡ
-            echo $result2;
+//        } else {
+//            $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+//
+//            $result2 = $this->debug->debug_var($_SERVER); // debug 를 소문자로...ㅡㅡ
+//            echo $result2;
 
             $param = array(
                 'id'=>'목록'
@@ -62,7 +62,7 @@ class Main extends CI_Controller{
             $this->load->view('header_v', $param);
             $this->load->view('todo/list_contents_v', $data);
             $this->load->view('todo/footer_v');
-        }
+//        }
     }
 
     function view(){
