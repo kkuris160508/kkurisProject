@@ -13,7 +13,7 @@ class Main extends CI_Controller{
         parent::__construct();
         $this->load->database();
         $this->load->model('todo_m');
-        $this->load->helper(array('url','date', 'form','alert','date'));
+        $this->load->helper(array('url','date', 'form','alert','date','cookie'));
     }
 
     function index(){
@@ -200,13 +200,24 @@ class Main extends CI_Controller{
             if($result){
                 $this->todo_m->insert_account_todo($id, $pw, $email);
 
-                echo '<form action="http://34.80.199.17/Auth/autoLogin" method="post">';
-                    echo '<input type="hidden" name="id" value="<?php echo $id?>">';
-                    echo '<input type="hidden" name="pw" value="<?php echo $pw?>">';
-                    echo '<input type="hidden" name="email" value="<?php echo $email?>">';
-                echo '</form>';
+//                echo '<form action="http://34.80.199.17/Auth/autoLogin" method="post">';
+/*                    echo '<input type="hidden" name="id" value="<?php echo $id?>">';*/
+/*                    echo '<input type="hidden" name="pw" value="<?php echo $pw?>">';*/
+/*                    echo '<input type="hidden" name="email" value="<?php echo $email?>">';*/
+//                echo '</form>';
 
-                alert('가입이 완료 되었습니다. 로그인 하여 주십시오','/Auth/autoLogin');
+                $cookie = array(
+                    'name' => 'user_id',
+                    'value' => $id,
+                    'expire' => '86500',
+                    'domain' => '.34.80.199.17',
+                    'prefix' => 'myprefix_'
+                );
+                $this->input->set_cookie($cookie);
+
+                $this->input->cookie('myprefix_inputID');
+
+                alert('가입이 완료 되었습니다. 로그인 하여 주십시오','/Auth/login');
 
 //                redirect('/Main/lists');
             } else {
