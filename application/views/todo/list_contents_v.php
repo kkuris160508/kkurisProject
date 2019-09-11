@@ -48,6 +48,22 @@
                 <time datetime="<?php echo mdate("%Y-%M-%j", human_to_unix($lt -> writetime)); ?>"><?php echo $lt -> writetime;?></time>
             </td>
         </tr>
+        <tr>
+            <td><a href="/Main/write/" class="btn btn-success">쓰기</a></td>
+        </tr>
+        <tr>
+            <td>
+                <ul class = "pagination">
+                    <!--            --><?php //foreach() : ?>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <!--            --><?php //endforeach?>
+                </ul>
+            </td>
+        </tr>
         <?php endforeach?>
     </tbody>
     <tfoot>
@@ -56,7 +72,7 @@
 
     <table>
     <tr>
-        <td><a href="/Main/write/" class="btn btn-success">쓰기</a></td>
+
         <td>
             <div id = 'selectCategoryMenu'>
                 <!-- 드랍박스 메뉴 추가 -->
@@ -67,19 +83,9 @@
                 </select>
             </div>
         </td>
-        <td colspan="5"><?php echo form_input('searchTxt','',"placeholder='검색어를 입력하세요'")?></td>
+        <td style="width:600px;"><?php echo form_input('searchTxt','',"placeholder='검색어를 입력하세요'")?></td>
         <!-- input 영역 추가 -->
     </tr>
-    <tr>
-        <ul class = "pagination">
-            <!--            --><?php //foreach() : ?>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <!--            --><?php //endforeach?>
-        </ul>
-    </tr>
+
     </table>
 <?php echo form_close();?>
