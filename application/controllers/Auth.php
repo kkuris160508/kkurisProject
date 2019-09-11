@@ -25,6 +25,8 @@ class Auth extends CI_Controller{
 
         get_cookie('myprefix_user_id',TRUE);
 
+        $cookie_id = $this->input->cookie('myprefix_user_id');
+        echo $cookie_id;
 //        $this->input->cookie('myprefix_inputID');
 
         $this->form_validation -> set_rules('account_id', '아이디', 'required|alpha_numeric');
