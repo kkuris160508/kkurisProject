@@ -142,7 +142,7 @@ class Todo_m extends CI_Model{
 
     function getSearchItems($txt = '테스트', $cate = 'subject'){
 //        $sql = "SELECT * FROM items WHERE contents = '" . $cate . "'";
-        $sql1 = "SELECT * FROM items WHERE '" . $cate . "' LIKE '%" . $txt. "%' ";
+        $sql1 = "SELECT * FROM items WHERE " . $cate . " LIKE '%" . $txt. "%' ";
 
         echo $sql1;
 
