@@ -297,6 +297,10 @@ class Main extends CI_Controller{
         $this->todo_m->updateIncreaseReadCount($id);
     }
 
+    public function searchText(){
+
+    }
+
     function dateTime(){
         $gmt = local_to_gmt(time());
         echo $gmt.'<br>';
