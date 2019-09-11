@@ -83,7 +83,7 @@ class Auth extends CI_Controller{
 
         if($this->form_validation -> run() == TRUE){
             $auth_data = array(
-//                'account_id' => $this->input->post('account_id', TRUE),
+                'account_id' => $this->input->post('account_id', TRUE),
                 'PW' => $this->input->post('PW', TRUE)
             );
 
