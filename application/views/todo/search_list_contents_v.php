@@ -74,7 +74,7 @@ $opt = array(
             <option value = 'account_id' <?php echo set_select('selectCategory','account_id'); ?>>작성자</option>
         </select>
     </td>
-    <td colspan = '6' style="width:800px"><?php echo form_input('searchTxt','',"placeholder='검색어를 입력하세요'; style = 'width:850px;'")?></td>
+    <td colspan = '6' style="width:800px"><?php echo form_input('searchTxt',set_value('searchTxt'),"placeholder='검색어를 입력하세요'; style = 'width:850px;'")?></td>
     <td> <div class="form-actions"><input type ='submit' class="btn btn-primary" id = 'searchLists' value="검색"></div></td>
     <!-- input 영역 추가 -->
     </tr>
