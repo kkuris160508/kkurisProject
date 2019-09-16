@@ -311,11 +311,11 @@ class Main extends CI_Controller{
 
         $this->form_validation->set_rules('searchTxt','텍스트','required');
 
-
+        $tmpStart = '';
 //        $data['list'] = $this->todo_m->get_list('',$start, $limit);
 
 
-        if($this->form_validation->run() == TRUE){
+        if($this->form_validation->run() == TRUE || $start > 0){
 
             $txt = $this->input->post('searchTxt', TRUE);
             $cate = $this->input->post('selectCategory', TRUE);
@@ -342,7 +342,7 @@ class Main extends CI_Controller{
             }
 
             $limit = $config['per_page'];
-
+            $tmpStart = $start;
             //작성자 조회 시
             $result['lists'] = $this->todo_m->getSearchItems('', $txt, $cate, $start, $limit);
 
