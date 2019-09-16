@@ -53,12 +53,14 @@ class Main extends CI_Controller{
         $data['pagination'] = $this->pagination->create_links();
 
         $page = $this->uri->segment(3,1);
-        echo $page;
+        echo $page."page<br>";
 
         if($page > 1){
             $start = (($page / $config['per_page'])) * $config['per_page'];
+            echo $start."start page>1<br>";
         } else {
             $start = ($page - 1) * $config['per_page'];
+            echo $start."start else <br>";
         }
 
         $limit = $config['per_page'];
@@ -335,12 +337,14 @@ class Main extends CI_Controller{
             $result['pagination'] = $this->pagination->create_links();
 
             $page = $this->uri->segment(3,1);
-            echo $page;
+            echo $page."page<br>";
 
             if($page > 1){
                 $start = (($page / $config['per_page'])) * $config['per_page'];
+                echo $start."start page>1<br>";
             } else {
                 $start = ($page - 1) * $config['per_page'];
+                echo $start."start else <br>";
             }
 
             $limit = $config['per_page'];
