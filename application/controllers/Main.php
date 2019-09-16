@@ -51,7 +51,7 @@ class Main extends CI_Controller{
 //        $config['total_rows'] = $this->todo_m->get_list($this->uri->segment(3), 'count'); //게시물 전체 개수
 //
         $config['per_page'] = 5; // 한 페이지에 표시할 게시물 수
-        $config['uri_segment'] = 5; //페이지 번호가 위치한 세그먼트
+        $config['uri_segment'] = 3; //페이지 번호가 위치한 세그먼트
 //
         $this->pagination->initialize($config);
         echo $this->pagination->create_links();
