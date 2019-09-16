@@ -26,6 +26,7 @@ class Main extends CI_Controller{
 //        if($tmpIP == '211.52.72.56'){
 //            $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 //        }
+
         if($tmpIP !== '211.52.72.56'){
             echo '접속불가';
             exit;
@@ -40,44 +41,33 @@ class Main extends CI_Controller{
                 'id'=>'목록'
             );
 
-
-
         $this->load->library('pagination'); // 페이지 네이션 설정
         $config['base_url'] = 'http://34.80.199.17/Main/lists'; //페이징 주소
 
-
-//        $config['total_rows'] = $this->todo_m->get_list();
-//        $config['total_rows'] = $this->todo_m->get_list($this->uri->segment(3), 'count'); //게시물 전체 개수
-//
         $config['per_page'] = 5; // 한 페이지에 표시할 게시물 수
         $config['uri_segment'] = 3; //페이지 번호가 위치한 세그먼트
-//
+
+        $config['total_rows'] = $this->todo_m->get_list('count','','');
+
         $this->pagination->initialize($config);
-        echo $this->pagination->create_links();
-//
+        $this->pagination->create_links();
+
         $page = $this->uri->segment(3,1);
-//
-//        echo $page; // 5
 
         if($page > 1){
             $start = (($page / $config['per_page'])) * $config['per_page'];
         } else {
             $start = ($page - 1) * $config['per_page'];
         }
-//
+
         $limit = $config['per_page'];
-//
-        $result = $this->todo_m->get_list($start, $limit);
 
-        $config['total_rows'] = $result['cnt'];
+        $result = $this->todo_m->get_list('',$start, $limit);
 
-//        $data['list'] = $this->todo_m->get_list($this->uri->segment(3), '', $start, $limit);
-//        $this->load->view('')
+        $this->load->view('header_v', $param);
+        $this->load->view('todo/list_contents_v', $result);
+        $this->load->view('todo/footer_v');
 
-
-            $this->load->view('header_v', $param);
-            $this->load->view('todo/list_contents_v', $result);
-            $this->load->view('todo/footer_v');
         }
     }
 

@@ -11,7 +11,7 @@ class Todo_m extends CI_Model{
         parent::__construct();
     }
 
-    function get_list($offset='', $limit=''){
+    function get_list($type='',$offset='', $limit=''){
 
         $limit_query = '';
 
@@ -26,18 +26,18 @@ class Todo_m extends CI_Model{
                 acc.*
                 FROM items AS it
                 LEFT JOIN accountTB AS acc ON it.writer = acc.no
-                ORDER BY it.id DESC" . $limit_query;
+                ORDER BY it.id DESC " . $limit_query;
 
         $query = $this->db->query($sql);
-        $result = $query->result();
-        $result1 = $query->num_rows();
 
-        $resultArray = array(
-            'list'=>$result,
-            'cnt'=>$result1
-        );
+        if ($type == 'count') {
+            $result = $query -> num_rows();
+        } else {
+            $result = $query -> result();
+        }
 
-        return $resultArray;
+        return $result;
+
     }
 
 //    function get_list($table = 'ci_board', $type = '', $offset = '', $limit = '') {
