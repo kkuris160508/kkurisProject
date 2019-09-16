@@ -318,17 +318,17 @@ class Main extends CI_Controller{
 //
 //            echo $result[1];
 //            echo $result[0];
-            $result3 = $this->debug->debug_var($result); // 시발 debug 를 소문자로...ㅡㅡ
-
-            echo $result3;
+//            $result3 = $this->debug->debug_var($result); // 시발 debug 를 소문자로...ㅡㅡ
+//
+//            echo $result3;
 
 //            $data['list'] = $this->todo_m->getSearchItems($txt, $cate);
-//
-////            $this->increaseReadCnt($id);
-//
-//            $this->load->view('header_v', $param);
-//            $this->load->view('todo/search_list_contents_v', $data);
-//            $this->load->view('todo/footer_v');
+
+//            $this->increaseReadCnt($id);
+
+            $this->load->view('header_v', $param);
+            $this->load->view('todo/search_list_contents_v', $result);
+            $this->load->view('todo/footer_v');
 
         } else {
 

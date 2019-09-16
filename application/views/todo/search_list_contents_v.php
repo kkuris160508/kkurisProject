@@ -20,7 +20,7 @@ $opt = array(
     </tr>
     </thead>
     <tbody>
-    <?php foreach ($list as $lt) : ?>
+    <?php foreach ($lists as $lt) : ?>
         <tr>
             <th scope="row" style="width: 100px;">
                 <?php echo $lt -> id;?>
@@ -49,6 +49,7 @@ $opt = array(
             </td>
         </tr>
     <?php endforeach?>
+    <?php echo $cnt?>개
     </tbody>
 </table>
 <div style="width: 1700px; text-align: end">
