@@ -328,6 +328,7 @@ class Main extends CI_Controller{
 
 
             $config['total_rows'] = $this->todo_m->getSearchItems('count', $txt, $cate);
+            $result['cnt'] = $config['total_rows'];
 
             $this->pagination->initialize($config);
             $result['pagination'] = $this->pagination->create_links();

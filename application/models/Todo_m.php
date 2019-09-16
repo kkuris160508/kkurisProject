@@ -175,15 +175,13 @@ class Todo_m extends CI_Model{
 //        echo $sql1;
         $query = $this->db->query($sql);
 
-        $result = $query->result();
-        $result1 = $query->num_rows();
+        if ($type == 'count') {
+            $result = $query -> num_rows();
+        } else {
+            $result = $query -> result();
+        }
 
-        $resultArray = array(
-            'lists'=>$result,
-            'cnt'=>$result1
-        );
-
-        return $resultArray;
+        return $result;
 
     }
 
