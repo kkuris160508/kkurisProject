@@ -336,6 +336,7 @@ class Main extends CI_Controller{
                 $result['pagination'] = $this->pagination->create_links();
 
                 $page = $this->uri->segment(3,1);
+                echo $page;
 
                 if($page > 1){
                     $start = (($page / $config['per_page'])) * $config['per_page'];
