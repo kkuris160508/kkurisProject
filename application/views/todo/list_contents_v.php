@@ -51,17 +51,6 @@
     <?php endforeach?>
     </tbody>
 </table>
-<div>
-    <ul class = "pagination">
-        <!--            --><?php //foreach() : ?>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <!--            --><?php //endforeach?>
-    </ul>
-</div>
 <div style="width: 1700px; text-align: end">
     <a href="/Main/write/" class="btn btn-success">쓰기</a>
 </div>

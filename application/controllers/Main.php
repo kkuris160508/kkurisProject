@@ -40,17 +40,21 @@ class Main extends CI_Controller{
                 'id'=>'목록'
             );
 
-//        $this->load->library('pagination'); // 페이지 네이션 설정
-//        $config['base_url'] = 'http://34.80.199.17/Main/lists'; //페이징 주소
+        $result = $this->todo_m->get_list();
+
+        $this->load->library('pagination'); // 페이지 네이션 설정
+        $config['base_url'] = 'http://34.80.199.17/Main/lists'; //페이징 주소
 //
+        $config['total_rows'] = $result['cnt'];
+
 //        $config['total_rows'] = $this->todo_m->get_list();
 //        $config['total_rows'] = $this->todo_m->get_list($this->uri->segment(3), 'count'); //게시물 전체 개수
 //
-//        $config['per_page'] = 5; // 한 페이지에 표시할 게시물 수
-//        $config['uri_segment'] = 5; //페이지 번호가 위치한 세그먼트
+        $config['per_page'] = 5; // 한 페이지에 표시할 게시물 수
+        $config['uri_segment'] = 5; //페이지 번호가 위치한 세그먼트
 //
-//        $this->pagination->initialize($config);
-//        $data['pagination'] = $this->pagination->create_links();
+        $this->pagination->initialize($config);
+        $data['pagination'] = $this->pagination->create_links();
 //
 //        $page = $this->uri->segment(5,1);
 //
@@ -64,7 +68,7 @@ class Main extends CI_Controller{
 //
 //        $data['list'] = $this->todo_m->get_list($this->uri->segment(3), '', $start, $limit);
 //        $this->load->view('')
-            $result = $this->todo_m->get_list();
+
 
             $this->load->view('header_v', $param);
             $this->load->view('todo/list_contents_v', $result);

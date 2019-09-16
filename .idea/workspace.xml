@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="글 검색 기능 추가 시작">
-      <change beforePath="$PROJECT_DIR$/application/views/todo/list_contents_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/todo/list_contents_v.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/Todo_m.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Todo_m.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,20 +19,24 @@
       <content type="file-editors">
         <state>
           <leaf>
-            <file pinned="false" current-in-tab="false">
+            <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="691">
-                    <caret line="179" lean-forward="true" selection-start-line="179" selection-end-line="179" />
+                  <state relative-caret-position="442">
+                    <caret line="29" selection-start-line="29" selection-end-line="29" />
                   </state>
                 </provider>
               </entry>
             </file>
-            <file pinned="false" current-in-tab="true">
+            <file pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/application/views/todo/list_contents_v.php">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="735">
-                    <caret line="81" column="114" selection-start-line="81" selection-start-column="114" selection-end-line="81" selection-end-column="114" />
+                  <state relative-caret-position="516">
+                    <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+                    <folding>
+                      <element signature="n#style#0;n#table#1;n#!!top" expanded="true" />
+                      <element signature="n#style#0;n#td#1;n#table#1;n#!!top" expanded="true" />
+                    </folding>
                   </state>
                 </provider>
               </entry>
@@ -43,15 +48,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="708">
-              <caret line="326" column="5" lean-forward="true" selection-start-line="326" selection-start-column="5" selection-end-line="326" selection-end-column="5" />
+            <state relative-caret-position="527">
+              <caret line="57" column="73" selection-start-line="57" selection-start-column="73" selection-end-line="57" selection-end-column="73" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
+                <element signature="n#view#0;n#Main#0;n#!!top" />
                 <element signature="n#write#0;n#Main#0;n#!!top" />
                 <element signature="n#delete#0;n#Main#0;n#!!top" />
+                <element signature="n#join#0;n#Main#0;n#!!top" />
                 <element signature="e#8645#8697#0#PHP" />
                 <element signature="n#dob_check#0;n#Main#0;n#!!top" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -63,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/todo/login_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="37" column="34" lean-forward="true" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+            <state relative-caret-position="640">
+              <caret line="46" column="14" lean-forward="true" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -156,7 +163,6 @@
       <find>get_views</find>
       <find>time</find>
       <find>sess_destroy</find>
-      <find>get_list</find>
       <find>extraOpt</find>
       <find>SERVER_ADMIN</find>
       <find>delete_todo</find>
@@ -172,6 +178,7 @@
       <find>$result3</find>
       <find>getSearchItems</find>
       <find>alert</find>
+      <find>get_list</find>
     </findStrings>
     <replaceStrings>
       <replace>PW</replace>
@@ -247,9 +254,9 @@
         <option value="$PROJECT_DIR$/application/views/todo/view_contents_v.php" />
         <option value="$PROJECT_DIR$/application/views/header_v.php" />
         <option value="$PROJECT_DIR$/application/views/todo/search_list_contents_v.php" />
+        <option value="$PROJECT_DIR$/application/views/todo/list_contents_v.php" />
         <option value="$PROJECT_DIR$/application/models/Todo_m.php" />
         <option value="$PROJECT_DIR$/application/controllers/Main.php" />
-        <option value="$PROJECT_DIR$/application/views/todo/list_contents_v.php" />
       </list>
     </option>
   </component>
@@ -400,21 +407,7 @@
       <workItem from="1566451578138" duration="2043000" />
       <workItem from="1566828260309" duration="223948000" />
       <workItem from="1568187689655" duration="3017000" />
-      <workItem from="1568592167012" duration="6467000" />
-    </task>
-    <task id="LOCAL-00501" summary="리스트 컨텐츠 뷰 이메일 노출 삭제">
-      <created>1568178656504</created>
-      <option name="number" value="00501" />
-      <option name="presentableId" value="LOCAL-00501" />
-      <option name="project" value="LOCAL" />
-      <updated>1568178656504</updated>
-    </task>
-    <task id="LOCAL-00502" summary="뷰 컨텐츠 뷰 이메일 노출 삭제">
-      <created>1568178725386</created>
-      <option name="number" value="00502" />
-      <option name="presentableId" value="LOCAL-00502" />
-      <option name="project" value="LOCAL" />
-      <updated>1568178725386</updated>
+      <workItem from="1568592167012" duration="7241000" />
     </task>
     <task id="LOCAL-00503" summary="코드이그나이터 버전 표시">
       <created>1568179440429</created>
@@ -745,11 +738,25 @@
       <option name="project" value="LOCAL" />
       <updated>1568599645264</updated>
     </task>
-    <option name="localTasksCounter" value="550" />
+    <task id="LOCAL-00550" summary="글 검색 기능 추가 시작">
+      <created>1568599985823</created>
+      <option name="number" value="00550" />
+      <option name="presentableId" value="LOCAL-00550" />
+      <option name="project" value="LOCAL" />
+      <updated>1568599985823</updated>
+    </task>
+    <task id="LOCAL-00551" summary="글 검색 기능 추가 시작">
+      <created>1568600137765</created>
+      <option name="number" value="00551" />
+      <option name="presentableId" value="LOCAL-00551" />
+      <option name="project" value="LOCAL" />
+      <updated>1568600137765</updated>
+    </task>
+    <option name="localTasksCounter" value="552" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="245891000" />
+    <option name="totallyTimeSpent" value="246665000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1164,31 +1171,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="179" lean-forward="true" selection-start-line="179" selection-end-line="179" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="326" column="5" lean-forward="true" selection-start-line="326" selection-start-column="5" selection-end-line="326" selection-end-column="5" />
-          <folding>
-            <element signature="e#73#156#0#PHP" />
-            <element signature="n#write#0;n#Main#0;n#!!top" />
-            <element signature="n#delete#0;n#Main#0;n#!!top" />
-            <element signature="e#8645#8697#0#PHP" />
-            <element signature="n#dob_check#0;n#Main#0;n#!!top" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#increaseReadCnt#0;n#Main#0;n#!!top" />
-            <element signature="n#dateTime#0;n#Main#0;n#!!top" />
-            <element signature="n#test#0;n#Main#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/todo/search_list_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="657">
@@ -1206,17 +1188,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/todo/login_contents_v.php">
+    <entry file="file://$PROJECT_DIR$/application/views/todo/list_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="37" column="34" lean-forward="true" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+        <state relative-caret-position="516">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="n#style#0;n#table#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#table#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/todo/list_contents_v.php">
+    <entry file="file://$PROJECT_DIR$/application/views/todo/login_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="81" column="114" selection-start-line="81" selection-start-column="114" selection-end-line="81" selection-end-column="114" />
+        <state relative-caret-position="640">
+          <caret line="46" column="14" lean-forward="true" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="57" column="73" selection-start-line="57" selection-start-column="73" selection-end-line="57" selection-end-column="73" />
+          <folding>
+            <element signature="e#73#156#0#PHP" />
+            <element signature="n#view#0;n#Main#0;n#!!top" />
+            <element signature="n#write#0;n#Main#0;n#!!top" />
+            <element signature="n#delete#0;n#Main#0;n#!!top" />
+            <element signature="n#join#0;n#Main#0;n#!!top" />
+            <element signature="e#8645#8697#0#PHP" />
+            <element signature="n#dob_check#0;n#Main#0;n#!!top" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#increaseReadCnt#0;n#Main#0;n#!!top" />
+            <element signature="n#dateTime#0;n#Main#0;n#!!top" />
+            <element signature="n#test#0;n#Main#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
