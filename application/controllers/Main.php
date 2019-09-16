@@ -317,13 +317,17 @@ class Main extends CI_Controller{
 
         if($this->form_validation->run() == TRUE){
 
+            $txt = $this->input->post('searchTxt', TRUE);
+            $cate = $this->input->post('selectCategory', TRUE);
+
             $this->load->library('pagination'); // 페이지 네이션 설정
             $config['base_url'] = 'http://34.80.199.17/Main/searchText'; //페이징 주소
 
             $config['per_page'] = 5; // 한 페이지에 표시할 게시물 수
             $config['uri_segment'] = 3; //페이지 번호가 위치한 세그먼트
 
-            $config['total_rows'] = $this->todo_m->getSearchItems('count');
+
+            $config['total_rows'] = $this->todo_m->getSearchItems('count', $txt, $cate);
 
             $this->pagination->initialize($config);
             $result['pagination'] = $this->pagination->create_links();
@@ -337,9 +341,6 @@ class Main extends CI_Controller{
             }
 
             $limit = $config['per_page'];
-
-            $txt = $this->input->post('searchTxt', TRUE);
-            $cate = $this->input->post('selectCategory', TRUE);
 
             //작성자 조회 시
             $result['lists'] = $this->todo_m->getSearchItems('', $txt, $cate, $start, $limit);
