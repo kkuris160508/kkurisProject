@@ -358,9 +358,9 @@ class Main extends CI_Controller{
             }
 
 
-//            $this->load->view('header_v', $param);
-//            $this->load->view('todo/search_list_contents_v', $result);
-//            $this->load->view('todo/footer_v');
+            $this->load->view('header_v', $param);
+            $this->load->view('todo/search_list_contents_v', $result);
+            $this->load->view('todo/footer_v');
 
 //        } else {
 //            alert('글이 존재하지 않습니다.', '/Main/lists');
