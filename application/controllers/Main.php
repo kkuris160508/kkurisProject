@@ -313,18 +313,8 @@ class Main extends CI_Controller{
             $txt = $this->input->post('searchTxt', TRUE);
             $cate = $this->input->post('selectCategory', TRUE);
 
-
+            //작성자 조회 시
             $result = $this->todo_m->getSearchItems($txt, $cate);
-//
-//            echo $result[1];
-//            echo $result[0];
-//            $result3 = $this->debug->debug_var($result); // 시발 debug 를 소문자로...ㅡㅡ
-//
-//            echo $result3;
-
-//            $data['list'] = $this->todo_m->getSearchItems($txt, $cate);
-
-//            $this->increaseReadCnt($id);
 
             $this->load->view('header_v', $param);
             $this->load->view('todo/search_list_contents_v', $result);
@@ -334,8 +324,6 @@ class Main extends CI_Controller{
 
             echo '글이 존재하지 않습니다.';
         }
-
-//            $this->todo_m->getSearchItems($txt = '테스트', $cate = 'subject');
 
     }
 

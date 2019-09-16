@@ -84,7 +84,7 @@
             <select name = 'selectCategory' id = 'selectCategory' class = 'selectCategory'>
                 <option value = 'subject' <?php echo set_select('selectCategory','subject', TRUE); ?>>제목</option>
                 <option value = 'content' <?php echo set_select('selectCategory','content'); ?>>내용</option>
-                <option value = 'writer' <?php echo set_select('selectCategory','writer'); ?>>작성자</option>
+                <option value = 'account_id' <?php echo set_select('selectCategory','account_id'); ?>>작성자</option>
             </select>
 
         </td>
