@@ -349,13 +349,14 @@ class Main extends CI_Controller{
 
             $limit = $config['per_page'];
 
-            $result['lists'] = $this->todo_m->getSearchItems('', $txt, $cate, $start, $limit);
-
             if($page == 5){
                 $result2 = $this->debug->debug_var($result); // debug 를 소문자로...ㅡㅡ
                 echo $result2;
                 exit;
             }
+            $result['lists'] = $this->todo_m->getSearchItems('', $txt, $cate, $start, $limit);
+
+
 
 
             $this->load->view('header_v', $param);
