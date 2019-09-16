@@ -54,7 +54,7 @@ class Main extends CI_Controller{
         $config['uri_segment'] = 5; //페이지 번호가 위치한 세그먼트
 //
         $this->pagination->initialize($config);
-        $data['pagination'] = $this->pagination->create_links();
+        echo $this->pagination->create_links();
 //
 //        $page = $this->uri->segment(5,1);
 //
