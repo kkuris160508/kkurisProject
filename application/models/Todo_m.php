@@ -156,7 +156,10 @@ class Todo_m extends CI_Model{
         $result = $query->result();
         $result1 = $query->num_rows();
 
-        $resultArray = array($result, $result1);
+        $resultArray = array(
+            'lists'=>$result,
+            'cnt'=>$result1
+        );
 
         return $resultArray;
 

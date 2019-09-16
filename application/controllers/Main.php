@@ -315,7 +315,9 @@ class Main extends CI_Controller{
 
 
             $result = $this->todo_m->getSearchItems($txt, $cate);
-
+//
+//            echo $result[1];
+//            echo $result[0];
             $result3 = $this->debug->debug_var($result); // 시발 debug 를 소문자로...ㅡㅡ
 
             echo $result3;
