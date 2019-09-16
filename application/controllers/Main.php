@@ -303,7 +303,7 @@ class Main extends CI_Controller{
         $this->todo_m->updateIncreaseReadCount($id);
     }
 
-    public function searchText(){
+    public function searchText($idx=''){
         $param = array(
             'id'=>'보기'
         );
@@ -316,6 +316,9 @@ class Main extends CI_Controller{
         $tmpTxt = '';
         $tmpCate = '';
 
+        if($idx !== ''){
+            echo 'hi 18';
+        }
 
         if($this->form_validation->run() == TRUE || $this->uri->segment(3,1) >= 1){
 
