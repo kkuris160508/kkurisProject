@@ -54,7 +54,7 @@ $opt = array(
     </tbody>
     <tfoot>
     <tr>
-        <th colspan="5"><?php echo $pagination;?></th>
+        <th colspan="7"><?php echo $pagination;?></th>
     </tr>
     </tfoot>
 </table>
