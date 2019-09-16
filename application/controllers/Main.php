@@ -329,7 +329,7 @@ class Main extends CI_Controller{
             $config['per_page'] = 5; // 한 페이지에 표시할 게시물 수
             $config['uri_segment'] = 3; //페이지 번호가 위치한 세그먼트
 
-
+//        function getSearchItems($type = '', $txt='', $cate='', $offset='', $limit='')
             $config['total_rows'] = $this->todo_m->getSearchItems('count', $txt, $cate);
             $result['cnt'] = $config['total_rows'];
 
@@ -349,13 +349,18 @@ class Main extends CI_Controller{
 
             $limit = $config['per_page'];
 
-            //작성자 조회 시
             $result['lists'] = $this->todo_m->getSearchItems('', $txt, $cate, $start, $limit);
 
-            $this->load->view('header_v', $param);
-            $this->load->view('todo/search_list_contents_v', $result);
-            $this->load->view('todo/footer_v');
-            $tmpIdx++;
+            if($page == 5){
+                $result2 = $this->debug->debug_var($result); // debug 를 소문자로...ㅡㅡ
+                echo $result2;
+                exit;
+            }
+
+
+//            $this->load->view('header_v', $param);
+//            $this->load->view('todo/search_list_contents_v', $result);
+//            $this->load->view('todo/footer_v');
 
 //        } else {
 //            alert('글이 존재하지 않습니다.', '/Main/lists');
