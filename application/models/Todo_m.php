@@ -155,7 +155,14 @@ class Todo_m extends CI_Model{
 
     }
 
-    function getSearchItems($txt, $cate){
+    function getSearchItems($type = '', $txt='', $cate='', $offset='', $limit=''){
+
+        $limit_query = '';
+
+        if ($limit != '' OR $offset != '') {
+            // 페이징이 있을 경우 처리
+            $limit_query = ' LIMIT ' . $offset . ', ' . $limit;
+        }
 
         $sql = "SELECT it.id, it.subject, it.content, it.used, it.hit, it.writer, it.writetime, 
                     (CASE WHEN created_on = '0000-00-00' THEN '1970-01-01' ELSE created_on END) AS created_on,
@@ -163,7 +170,7 @@ class Todo_m extends CI_Model{
                     acc.*
                 FROM items AS it
                 LEFT JOIN accountTB AS acc on it.writer = acc.no
-                WHERE " . $cate . " LIKE '%" . $txt. "%' ";
+                WHERE " . $cate . " LIKE '%" . $txt. "%' ORDER BY DESC" . $limit_query;
 
 //        echo $sql1;
         $query = $this->db->query($sql);
@@ -180,30 +187,6 @@ class Todo_m extends CI_Model{
 
     }
 
-    function getSearchItems1($txt, $cate){
-
-        $sql = "SELECT it.id, it.subject, it.content, it.used, it.hit, it.writer, it.writetime, 
-                    (CASE WHEN created_on = '0000-00-00' THEN '1970-01-01' ELSE created_on END) AS created_on,
-                    (CASE WHEN due_date = '0000-00-00' THEN '1970-01-01' ELSE due_date END) AS due_date,
-                    acc.*
-                FROM items AS it
-                LEFT JOIN accountTB AS acc on it.writer = acc.no
-                WHERE " . $cate . " LIKE '%" . $txt. "%' ";
-
-//        echo $sql1;
-        $query = $this->db->query($sql);
-
-        $result = $query->result();
-        $result1 = $query->num_rows();
-
-        $resultArray = array(
-            'lists'=>$result,
-            'cnt'=>$result1
-        );
-
-        return $resultArray;
-
-    }
 }
 
 ?>
