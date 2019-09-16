@@ -307,7 +307,7 @@ class Main extends CI_Controller{
         if($this->form_validation->run() == TRUE){
 
             $txt = $this->input->post('searchTxt', TRUE);
-            $cate = $this->input->post('selectSubject', TRUE);
+            $cate = $this->input->post('selectCategory', TRUE);
 
             $this->todo_m->getSearchItems($txt, $cate);
         }

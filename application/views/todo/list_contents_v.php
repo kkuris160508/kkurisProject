@@ -82,9 +82,9 @@
         <td style="width:80px">
             <!-- 드랍박스 메뉴 추가 -->
             <select name = 'selectCategory' id = 'selectCategory' class = 'selectCategory'>
-                <option value = 'selectSubject' selected>제목</option>
-                <option value = 'selectContent'>내용</option>
-                <option value = 'selectWriter'>작성자</option>
+                <option value = 'selectSubject' <?php echo set_select('selectCategory','selectSubject', TRUE); ?>>제목</option>
+                <option value = 'selectContent' <?php echo set_select('selectCategory','selectContent'); ?>>내용</option>
+                <option value = 'selectWriter' <?php echo set_select('selectCategory','selectWriter'); ?>>작성자</option>
             </select>
 
         </td>
