@@ -37,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="355" column="13" lean-forward="true" selection-start-line="355" selection-start-column="13" selection-end-line="355" selection-end-column="13" />
+            <state relative-caret-position="725">
+              <caret line="354" lean-forward="true" selection-start-line="354" selection-end-line="354" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#view#0;n#Main#0;n#!!top" />
@@ -391,28 +391,7 @@
       <workItem from="1568187689655" duration="3017000" />
       <workItem from="1568592167012" duration="8829000" />
       <workItem from="1568610992356" duration="6352000" />
-      <workItem from="1568617746301" duration="2340000" />
-    </task>
-    <task id="LOCAL-00530" summary="글 검색 기능 추가 시작">
-      <created>1568187707993</created>
-      <option name="number" value="00530" />
-      <option name="presentableId" value="LOCAL-00530" />
-      <option name="project" value="LOCAL" />
-      <updated>1568187707994</updated>
-    </task>
-    <task id="LOCAL-00531" summary="글 검색 기능 추가 시작">
-      <created>1568189209521</created>
-      <option name="number" value="00531" />
-      <option name="presentableId" value="LOCAL-00531" />
-      <option name="project" value="LOCAL" />
-      <updated>1568189209521</updated>
-    </task>
-    <task id="LOCAL-00532" summary="글 검색 기능 추가 시작">
-      <created>1568189331931</created>
-      <option name="number" value="00532" />
-      <option name="presentableId" value="LOCAL-00532" />
-      <option name="project" value="LOCAL" />
-      <updated>1568189331931</updated>
+      <workItem from="1568617746301" duration="2618000" />
     </task>
     <task id="LOCAL-00533" summary="글 검색 기능 추가 시작">
       <created>1568189414688</created>
@@ -736,17 +715,38 @@
       <option name="project" value="LOCAL" />
       <updated>1568619919166</updated>
     </task>
-    <option name="localTasksCounter" value="579" />
+    <task id="LOCAL-00579" summary="글 검색 에서 페이징네이션 시작">
+      <created>1568620145145</created>
+      <option name="number" value="00579" />
+      <option name="presentableId" value="LOCAL-00579" />
+      <option name="project" value="LOCAL" />
+      <updated>1568620145145</updated>
+    </task>
+    <task id="LOCAL-00580" summary="글 검색 에서 페이징네이션 시작">
+      <created>1568620202068</created>
+      <option name="number" value="00580" />
+      <option name="presentableId" value="LOCAL-00580" />
+      <option name="project" value="LOCAL" />
+      <updated>1568620202068</updated>
+    </task>
+    <task id="LOCAL-00581" summary="글 검색 에서 페이징네이션 시작">
+      <created>1568620332492</created>
+      <option name="number" value="00581" />
+      <option name="presentableId" value="LOCAL-00581" />
+      <option name="project" value="LOCAL" />
+      <updated>1568620332493</updated>
+    </task>
+    <option name="localTasksCounter" value="582" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="256945000" />
+    <option name="totallyTimeSpent" value="257223000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15778251" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15778251" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="0" weight="0.32952183" />
@@ -1192,8 +1192,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="355" column="13" lean-forward="true" selection-start-line="355" selection-start-column="13" selection-end-line="355" selection-end-column="13" />
+        <state relative-caret-position="725">
+          <caret line="354" lean-forward="true" selection-start-line="354" selection-end-line="354" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#view#0;n#Main#0;n#!!top" />
