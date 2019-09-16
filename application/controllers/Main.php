@@ -39,8 +39,11 @@ class Main extends CI_Controller{
             $param = array(
                 'id'=>'목록'
             );
+
 //        $this->load->library('pagination'); // 페이지 네이션 설정
-//        $config['base_url'] = 'ci_board/page'; //페이징 주소
+//        $config['base_url'] = 'http://34.80.199.17/Main/lists'; //페이징 주소
+//
+//        $config['total_rows'] = $this->todo_m->get_list();
 //        $config['total_rows'] = $this->todo_m->get_list($this->uri->segment(3), 'count'); //게시물 전체 개수
 //
 //        $config['per_page'] = 5; // 한 페이지에 표시할 게시물 수
@@ -61,9 +64,10 @@ class Main extends CI_Controller{
 //
 //        $data['list'] = $this->todo_m->get_list($this->uri->segment(3), '', $start, $limit);
 //        $this->load->view('')
-            $data['list'] = $this->todo_m->get_list();
+            $result = $this->todo_m->get_list();
+
             $this->load->view('header_v', $param);
-            $this->load->view('todo/list_contents_v', $data);
+            $this->load->view('todo/list_contents_v', $result);
             $this->load->view('todo/footer_v');
         }
     }

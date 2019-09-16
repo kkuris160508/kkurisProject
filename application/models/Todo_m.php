@@ -21,8 +21,14 @@ class Todo_m extends CI_Model{
                 ORDER BY it.id DESC";
         $query = $this->db->query($sql);
         $result = $query->result();
+        $result1 = $query->num_rows();
 
-        return $result;
+        $resultArray = array(
+            'list'=>$result,
+            'cnt'=>$result1
+        );
+
+        return $resultArray;
     }
 
 //    function get_list($table = 'ci_board', $type = '', $offset = '', $limit = '') {
