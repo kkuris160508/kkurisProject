@@ -310,7 +310,7 @@ class Main extends CI_Controller{
 
         $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
-        $this->load->library(array('form_validation','pagination'));
+        $this->load->library('form_validation');
 
         $this->form_validation->set_rules('searchTxt','텍스트','required');
 
@@ -322,7 +322,7 @@ class Main extends CI_Controller{
             $txt = $this->input->post('searchTxt', TRUE);
             $cate = $this->input->post('selectCategory', TRUE);
 
-//            $this->load->library('pagination'); // 페이지 네이션 설정
+            $this->load->library('pagination'); // 페이지 네이션 설정
 
             $config['base_url'] = 'http://34.80.199.17/Main/searchText'; //페이징 주소
 
