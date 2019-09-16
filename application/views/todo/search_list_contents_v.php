@@ -49,10 +49,13 @@ $opt = array(
             </td>
         </tr>
     <?php endforeach?>
-    <?php echo $cnt?>개
+
     </tbody>
 </table>
 <div style="width: 1700px; text-align: end">
     <a href="/Main/lists/" class="btn btn-primary">목록</a>
     <a href="/Main/write/" class="btn btn-success">쓰기</a>
+</div>
+<div class = 'searchListCnt'>
+    <p><?php echo $cnt?>개 의 글이 조회 되었습니다.</p>
 </div>
