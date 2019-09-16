@@ -309,7 +309,9 @@ class Main extends CI_Controller{
             $txt = $this->input->post('searchTxt', TRUE);
             $cate = $this->input->post('selectCategory', TRUE);
 
+
             $this->todo_m->getSearchItems($txt, $cate);
+
         }
 
 //            $this->todo_m->getSearchItems($txt = '테스트', $cate = 'subject');
