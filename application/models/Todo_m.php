@@ -164,6 +164,11 @@ class Todo_m extends CI_Model{
             $limit_query = ' LIMIT ' . $offset . ', ' . $limit;
         }
 
+        if($txt == '' OR $cate == ''){
+            echo $txt . "<br>cate:".$cate;
+            exit;
+        }
+
         $sql = "SELECT it.id, it.subject, it.content, it.used, it.hit, it.writer, it.writetime, 
                     (CASE WHEN created_on = '0000-00-00' THEN '1970-01-01' ELSE created_on END) AS created_on,
                     (CASE WHEN due_date = '0000-00-00' THEN '1970-01-01' ELSE due_date END) AS due_date,
