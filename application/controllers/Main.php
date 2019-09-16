@@ -359,7 +359,7 @@ class Main extends CI_Controller{
             $limit = $config['per_page'];
 
 
-            $result['lists'] = $this->todo_m->getSearchItems('', $tmpTxt, $tmpCate, $start, $limit);
+            $result['lists'] = $this->todo_m->getSearchItems('', $txt, $cate, $start, $limit);
 
 
             $this->load->view('header_v', $param);
