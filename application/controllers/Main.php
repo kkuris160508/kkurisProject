@@ -298,6 +298,10 @@ class Main extends CI_Controller{
     }
 
     public function searchText(){
+        $param = array(
+            'id'=>'보기'
+        );
+
         $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
         $this->load->library('form_validation');
@@ -310,8 +314,17 @@ class Main extends CI_Controller{
             $cate = $this->input->post('selectCategory', TRUE);
 
 
-            $this->todo_m->getSearchItems($txt, $cate);
+            $data['views'] = $this->todo_m->getSearchItems($txt, $cate);
 
+//            $this->increaseReadCnt($id);
+
+            $this->load->view('header_v', $param);
+            $this->load->view('todo/view_contents_v', $data);
+            $this->load->view('todo/footer_v');
+
+        } else {
+
+            echo '글이 존재하지 않습니다.';
         }
 
 //            $this->todo_m->getSearchItems($txt = '테스트', $cate = 'subject');

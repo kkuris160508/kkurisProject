@@ -141,10 +141,20 @@ class Todo_m extends CI_Model{
     }
 
     function getSearchItems($txt, $cate){
-//        $sql = "SELECT * FROM items WHERE contents = '" . $cate . "'";
-        $sql1 = "SELECT * FROM items WHERE " . $cate . " LIKE '%" . $txt. "%' ";
 
-        echo $sql1;
+        $sql = "SELECT it.id, it.subject, it.content, it.used, it.hit, it.writer, it.writetime, 
+                    (CASE WHEN created_on = '0000-00-00' THEN '1970-01-01' ELSE created_on END) AS created_on,
+                    (CASE WHEN due_date = '0000-00-00' THEN '1970-01-01' ELSE due_date END) AS due_date,
+                    acc.*
+                FROM items AS it
+                LEFT JOIN accountTB AS acc on it.writer = acc.no
+                WHERE " . $cate . " LIKE '%" . $txt. "%' ";
+
+//        echo $sql1;
+        $query = $this->db->query($sql);
+        $result = $query->result();
+
+        return $result;
 
     }
 }
