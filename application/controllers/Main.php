@@ -320,7 +320,8 @@ class Main extends CI_Controller{
 //            echo 'hi 18';
 //        }
 
-        if($this->form_validation->run() == TRUE || $this->uri->segment(3,1) >= 1){
+//        if($this->form_validation->run() == TRUE || $this->uri->segment(3,1) >= 1){
+        if($this->form_validation->run() == TRUE){
 
             $txt = $this->input->post('searchTxt', TRUE);
             $cate = $this->input->post('selectCategory', TRUE);
@@ -364,7 +365,7 @@ class Main extends CI_Controller{
 
 //            $result['lists'] = $this->todo_m->getSearchItems('', $txt, $cate, $start, $limit);
             $result['lists'] = $this->todo_m->getSearchItems('', $txt, $cate);
-
+            $result['cnt'] = $this->todo_m->getSearchItems('count', $txt, $cate);
 
             $this->load->view('header_v', $param);
             $this->load->view('todo/search_list_contents_v', $result);
