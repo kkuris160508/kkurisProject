@@ -303,7 +303,7 @@ class Main extends CI_Controller{
         $this->todo_m->updateIncreaseReadCount($id);
     }
 
-    public function searchText(){
+    public function searchText($idx=''){
         $param = array(
             'id'=>'보기'
         );
@@ -315,10 +315,6 @@ class Main extends CI_Controller{
         $this->form_validation->set_rules('searchTxt','텍스트','required');
 
 
-
-//        $data['list'] = $this->todo_m->get_list('',$start, $limit);
-        $tmpIdx = 0;
-//        $this->form_validation->run();
         if($this->form_validation->run() == TRUE || $this->uri->segment(3,1) >= 1){
 
             $txt = $this->input->post('searchTxt', TRUE);
