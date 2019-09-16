@@ -62,6 +62,26 @@ $opt = array(
     <a href="/Main/lists/" class="btn btn-primary">목록</a>
     <a href="/Main/write/" class="btn btn-success">쓰기</a>
 </div>
+
+<?php echo form_open('/Main/searchText')?>
+<table style="width: 1000px;">
+    <td>
+    <td style="width:80px">
+        <!-- 드랍박스 메뉴 추가 -->
+        <select name = 'selectCategory' id = 'selectCategory' class = 'selectCategory'>
+            <option value = 'subject' <?php echo set_select('selectCategory','subject', TRUE); ?>>제목</option>
+            <option value = 'content' <?php echo set_select('selectCategory','content'); ?>>내용</option>
+            <option value = 'account_id' <?php echo set_select('selectCategory','account_id'); ?>>작성자</option>
+        </select>
+    </td>
+    <td colspan = '6' style="width:800px"><?php echo form_input('searchTxt','',"placeholder='검색어를 입력하세요'; style = 'width:850px;'")?></td>
+    <td> <div class="form-actions"><input type ='submit' class="btn btn-primary" id = 'searchLists' value="검색"></div></td>
+    <!-- input 영역 추가 -->
+    </tr>
+</table>
+<?php echo form_close();?>
+
+
 <div class = 'searchListCnt'>
     <p><?php echo $cnt?>개 의 글이 조회 되었습니다.</p>
 </div>

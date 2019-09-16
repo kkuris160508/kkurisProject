@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="글 검색 에서 페이징네이션 시작">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/todo/search_list_contents_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/todo/search_list_contents_v.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +23,8 @@
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="694">
-                    <caret line="183" column="23" lean-forward="true" selection-start-line="183" selection-start-column="23" selection-end-line="183" selection-end-column="23" />
+                  <state relative-caret-position="422">
+                    <caret line="167" column="25" lean-forward="true" selection-start-line="167" selection-start-column="25" selection-end-line="167" selection-end-column="25" />
                   </state>
                 </provider>
               </entry>
@@ -34,11 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="354" lean-forward="true" selection-start-line="354" selection-end-line="354" />
+            <state relative-caret-position="555">
+              <caret line="328" selection-start-line="328" selection-end-line="328" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#view#0;n#Main#0;n#!!top" />
@@ -55,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/todo/search_list_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="58" column="12" lean-forward="true" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+            <state relative-caret-position="728">
+              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
             </state>
           </provider>
         </entry>
@@ -121,8 +123,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/todo/list_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="56" selection-end-column="12" />
+            <state relative-caret-position="334">
+              <caret line="52" column="11" lean-forward="true" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -236,9 +238,9 @@
         <option value="$PROJECT_DIR$/application/views/todo/view_contents_v.php" />
         <option value="$PROJECT_DIR$/application/views/header_v.php" />
         <option value="$PROJECT_DIR$/application/views/todo/list_contents_v.php" />
-        <option value="$PROJECT_DIR$/application/views/todo/search_list_contents_v.php" />
         <option value="$PROJECT_DIR$/application/models/Todo_m.php" />
         <option value="$PROJECT_DIR$/application/controllers/Main.php" />
+        <option value="$PROJECT_DIR$/application/views/todo/search_list_contents_v.php" />
       </list>
     </option>
   </component>
@@ -391,28 +393,7 @@
       <workItem from="1568187689655" duration="3017000" />
       <workItem from="1568592167012" duration="8829000" />
       <workItem from="1568610992356" duration="6352000" />
-      <workItem from="1568617746301" duration="2618000" />
-    </task>
-    <task id="LOCAL-00533" summary="글 검색 기능 추가 시작">
-      <created>1568189414688</created>
-      <option name="number" value="00533" />
-      <option name="presentableId" value="LOCAL-00533" />
-      <option name="project" value="LOCAL" />
-      <updated>1568189414688</updated>
-    </task>
-    <task id="LOCAL-00534" summary="글 검색 기능 추가 시작">
-      <created>1568189479186</created>
-      <option name="number" value="00534" />
-      <option name="presentableId" value="LOCAL-00534" />
-      <option name="project" value="LOCAL" />
-      <updated>1568189479187</updated>
-    </task>
-    <task id="LOCAL-00535" summary="글 검색 기능 추가 시작">
-      <created>1568189529302</created>
-      <option name="number" value="00535" />
-      <option name="presentableId" value="LOCAL-00535" />
-      <option name="project" value="LOCAL" />
-      <updated>1568189529302</updated>
+      <workItem from="1568617746301" duration="3751000" />
     </task>
     <task id="LOCAL-00536" summary="글 검색 기능 추가 시작">
       <created>1568189640925</created>
@@ -736,11 +717,32 @@
       <option name="project" value="LOCAL" />
       <updated>1568620332493</updated>
     </task>
-    <option name="localTasksCounter" value="582" />
+    <task id="LOCAL-00582" summary="글 검색 에서 페이징네이션 시작">
+      <created>1568620424663</created>
+      <option name="number" value="00582" />
+      <option name="presentableId" value="LOCAL-00582" />
+      <option name="project" value="LOCAL" />
+      <updated>1568620424663</updated>
+    </task>
+    <task id="LOCAL-00583" summary="글 검색 에서 페이징네이션 시작">
+      <created>1568620529418</created>
+      <option name="number" value="00583" />
+      <option name="presentableId" value="LOCAL-00583" />
+      <option name="project" value="LOCAL" />
+      <updated>1568620529418</updated>
+    </task>
+    <task id="LOCAL-00584" summary="글 검색 에서 페이징네이션 시작">
+      <created>1568621342477</created>
+      <option name="number" value="00584" />
+      <option name="presentableId" value="LOCAL-00584" />
+      <option name="project" value="LOCAL" />
+      <updated>1568621342477</updated>
+    </task>
+    <option name="localTasksCounter" value="585" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="257223000" />
+    <option name="totallyTimeSpent" value="258356000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1169,31 +1171,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/todo/list_contents_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="56" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="183" column="23" lean-forward="true" selection-start-line="183" selection-start-column="23" selection-end-line="183" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/todo/search_list_contents_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="58" column="12" lean-forward="true" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+        <state relative-caret-position="422">
+          <caret line="167" column="25" lean-forward="true" selection-start-line="167" selection-start-column="25" selection-end-line="167" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="354" lean-forward="true" selection-start-line="354" selection-end-line="354" />
+        <state relative-caret-position="555">
+          <caret line="328" selection-start-line="328" selection-end-line="328" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#view#0;n#Main#0;n#!!top" />
@@ -1206,6 +1194,20 @@
             <element signature="n#dateTime#0;n#Main#0;n#!!top" />
             <element signature="n#test#0;n#Main#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/todo/list_contents_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="52" column="11" lean-forward="true" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/todo/search_list_contents_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
         </state>
       </provider>
     </entry>

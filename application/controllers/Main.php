@@ -314,13 +314,18 @@ class Main extends CI_Controller{
 
         $this->form_validation->set_rules('searchTxt','텍스트','required');
 
+
+
 //        $data['list'] = $this->todo_m->get_list('',$start, $limit);
         $tmpIdx = 0;
-        $this->form_validation->run();
-//        if($this->form_validation->run() == TRUE || $this->uri->segment(3,1) >= 1){
+//        $this->form_validation->run();
+        if($this->form_validation->run() == TRUE || $this->uri->segment(3,1) >= 1){
 
             $txt = $this->input->post('searchTxt', TRUE);
             $cate = $this->input->post('selectCategory', TRUE);
+
+            $tmpTxt = $txt;
+            $tmpCate = $cate;
 
             $this->load->library('pagination'); // 페이지 네이션 설정
 
@@ -360,9 +365,9 @@ class Main extends CI_Controller{
             $this->load->view('todo/search_list_contents_v', $result);
             $this->load->view('todo/footer_v');
 
-//        } else {
-//            alert('글이 존재하지 않습니다.', '/Main/lists');
-//        }
+        } else {
+            alert('글이 존재하지 않습니다.', '/Main/lists');
+        }
 
 
     }
