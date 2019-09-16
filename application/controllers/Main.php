@@ -334,6 +334,9 @@ class Main extends CI_Controller{
             $this->pagination->initialize($config);
             $result['pagination'] = $this->pagination->create_links();
 
+            $result2 = $this->debug->debug_var($result); // debug 를 소문자로...ㅡㅡ
+            echo $result2;
+
             $page = $this->uri->segment(3,1);
             echo $page."page<br>";
 
@@ -347,14 +350,8 @@ class Main extends CI_Controller{
 
             $limit = $config['per_page'];
 
-            if($page == 5){
-                $result2 = $this->debug->debug_var($result); // debug 를 소문자로...ㅡㅡ
-                echo $result2;
-                exit;
-            }
+
             $result['lists'] = $this->todo_m->getSearchItems('', $txt, $cate, $start, $limit);
-
-
 
 
             $this->load->view('header_v', $param);
