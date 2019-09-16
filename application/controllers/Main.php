@@ -303,7 +303,7 @@ class Main extends CI_Controller{
         $this->todo_m->updateIncreaseReadCount($id);
     }
 
-    public function searchText($category, $text, $pageNo=''){
+    public function searchText($category, $text){
         $param = array(
             'id'=>'보기'
         );
@@ -337,7 +337,7 @@ class Main extends CI_Controller{
 
             $this->load->library('pagination'); // 페이지 네이션 설정
 
-            $config['base_url'] = "http://34.80.199.17/Main/searchText/".$category."/".$text."/5"; //페이징 주소
+            $config['base_url'] = "http://34.80.199.17/Main/searchText/".$category."/".$text; //페이징 주소
 
             $config['per_page'] = 5; // 한 페이지에 표시할 게시물 수
             $config['uri_segment'] = 5; //페이지 번호가 위치한 세그먼트
@@ -352,7 +352,7 @@ class Main extends CI_Controller{
             $result2 = $this->debug->debug_var($result); // debug 를 소문자로...ㅡㅡ
             echo $result2;
 
-            $page = $this->uri->segment(3,1);
+            $page = $this->uri->segment(5,1);
             echo $page."page<br>";
 
             if($page > 1){
