@@ -314,12 +314,12 @@ class Main extends CI_Controller{
             $cate = $this->input->post('selectCategory', TRUE);
 
 
-            $data['views'] = $this->todo_m->getSearchItems($txt, $cate);
+            $data['list'] = $this->todo_m->getSearchItems($txt, $cate);
 
 //            $this->increaseReadCnt($id);
 
             $this->load->view('header_v', $param);
-            $this->load->view('todo/view_contents_v', $data);
+            $this->load->view('todo/search_list_contents_v', $data);
             $this->load->view('todo/footer_v');
 
         } else {
