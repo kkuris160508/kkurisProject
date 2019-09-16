@@ -155,7 +155,7 @@ class Todo_m extends CI_Model{
 
     }
 
-    function getSearchItems($type = '', $txt='', $cate='', $offset='', $limit=''){
+    function getSearchItems($type = '', $txt, $cate, $offset='', $limit=''){
 
         $limit_query = '';
 
