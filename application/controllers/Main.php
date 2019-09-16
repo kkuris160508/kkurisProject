@@ -321,8 +321,7 @@ class Main extends CI_Controller{
             $this->load->view('todo/footer_v');
 
         } else {
-
-            echo '글이 존재하지 않습니다.';
+            alert('글이 존재하지 않습니다.', '/Main/lists');
         }
 
     }

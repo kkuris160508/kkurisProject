@@ -69,16 +69,7 @@
 
 <?php echo form_open('/Main/searchText')?>
     <table style="width: 1000px;">
-        <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-        </tr>
-    <tr>
+    <tr style="text-align: center">
         <td style="width:80px">
             <!-- 드랍박스 메뉴 추가 -->
             <select name = 'selectCategory' id = 'selectCategory' class = 'selectCategory'>
@@ -86,7 +77,6 @@
                 <option value = 'content' <?php echo set_select('selectCategory','content'); ?>>내용</option>
                 <option value = 'account_id' <?php echo set_select('selectCategory','account_id'); ?>>작성자</option>
             </select>
-
         </td>
         <td colspan = '6' style="width:800px"><?php echo form_input('searchTxt','',"placeholder='검색어를 입력하세요'; style = 'width:600px;'")?></td>
         <!-- input 영역 추가 -->
