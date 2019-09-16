@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="글 검색 에서 페이징네이션 시작">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="363" lean-forward="true" selection-start-line="363" selection-end-line="363" />
+            <state relative-caret-position="606">
+              <caret line="339" column="78" selection-start-line="339" selection-start-column="78" selection-end-line="339" selection-end-column="78" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#view#0;n#Main#0;n#!!top" />
@@ -236,9 +236,9 @@
         <option value="$PROJECT_DIR$/application/views/todo/view_contents_v.php" />
         <option value="$PROJECT_DIR$/application/views/header_v.php" />
         <option value="$PROJECT_DIR$/application/models/Todo_m.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Main.php" />
         <option value="$PROJECT_DIR$/application/views/todo/list_contents_v.php" />
         <option value="$PROJECT_DIR$/application/views/todo/search_list_contents_v.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Main.php" />
       </list>
     </option>
   </component>
@@ -392,14 +392,7 @@
       <workItem from="1568592167012" duration="8829000" />
       <workItem from="1568610992356" duration="6352000" />
       <workItem from="1568617746301" duration="4147000" />
-      <workItem from="1568622155478" duration="3520000" />
-    </task>
-    <task id="LOCAL-00548" summary="글 검색 기능 추가 시작">
-      <created>1568599471288</created>
-      <option name="number" value="00548" />
-      <option name="presentableId" value="LOCAL-00548" />
-      <option name="project" value="LOCAL" />
-      <updated>1568599471288</updated>
+      <workItem from="1568622155478" duration="3941000" />
     </task>
     <task id="LOCAL-00549" summary="글 검색 기능 추가 시작">
       <created>1568599645264</created>
@@ -737,11 +730,18 @@
       <option name="project" value="LOCAL" />
       <updated>1568624706674</updated>
     </task>
-    <option name="localTasksCounter" value="597" />
+    <task id="LOCAL-00597" summary="글 검색 에서 페이징네이션 시작">
+      <created>1568625971939</created>
+      <option name="number" value="00597" />
+      <option name="presentableId" value="LOCAL-00597" />
+      <option name="project" value="LOCAL" />
+      <updated>1568625971939</updated>
+    </task>
+    <option name="localTasksCounter" value="598" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262272000" />
+    <option name="totallyTimeSpent" value="262693000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1193,8 +1193,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="363" lean-forward="true" selection-start-line="363" selection-end-line="363" />
+        <state relative-caret-position="606">
+          <caret line="339" column="78" selection-start-line="339" selection-start-column="78" selection-end-line="339" selection-end-column="78" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#view#0;n#Main#0;n#!!top" />
