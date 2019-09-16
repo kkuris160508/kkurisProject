@@ -40,12 +40,11 @@ class Main extends CI_Controller{
                 'id'=>'목록'
             );
 
-        $result = $this->todo_m->get_list();
+
 
         $this->load->library('pagination'); // 페이지 네이션 설정
         $config['base_url'] = 'http://34.80.199.17/Main/lists'; //페이징 주소
-//
-        $config['total_rows'] = $result['cnt'];
+
 
 //        $config['total_rows'] = $this->todo_m->get_list();
 //        $config['total_rows'] = $this->todo_m->get_list($this->uri->segment(3), 'count'); //게시물 전체 개수
@@ -58,15 +57,20 @@ class Main extends CI_Controller{
 //
         $page = $this->uri->segment(3,1);
 //
-        echo $page;
-//        if($page > 1){
-//            $start = (($page / $config['per_page'])) * $config['per_page'];
-//        } else {
-//            $start = ($page - 1) * $config['per_page'];
-//        }
+//        echo $page; // 5
+
+        if($page > 1){
+            $start = (($page / $config['per_page'])) * $config['per_page'];
+        } else {
+            $start = ($page - 1) * $config['per_page'];
+        }
 //
-//        $limit = $config['per_page'];
+        $limit = $config['per_page'];
 //
+        $result = $this->todo_m->get_list($start, $limit);
+
+        $config['total_rows'] = $result['cnt'];
+
 //        $data['list'] = $this->todo_m->get_list($this->uri->segment(3), '', $start, $limit);
 //        $this->load->view('')
 
