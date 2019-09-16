@@ -303,7 +303,7 @@ class Main extends CI_Controller{
         $this->todo_m->updateIncreaseReadCount($id);
     }
 
-    public function searchText($idx=''){
+    public function searchText(){
         $param = array(
             'id'=>'보기'
         );
@@ -313,6 +313,8 @@ class Main extends CI_Controller{
         $this->load->library('form_validation');
 
         $this->form_validation->set_rules('searchTxt','텍스트','required');
+        $tmpTxt = '';
+        $tmpCate = '';
 
 
         if($this->form_validation->run() == TRUE || $this->uri->segment(3,1) >= 1){
@@ -320,8 +322,11 @@ class Main extends CI_Controller{
             $txt = $this->input->post('searchTxt', TRUE);
             $cate = $this->input->post('selectCategory', TRUE);
 
-            $tmpTxt = $txt;
-            $tmpCate = $cate;
+            if($txt != '' AND $cate != ''){
+                $tmpTxt = $txt;
+                $tmpCate = $cate;
+                echo $tmpTxt;
+            }
 
             $this->load->library('pagination'); // 페이지 네이션 설정
 
@@ -354,7 +359,7 @@ class Main extends CI_Controller{
             $limit = $config['per_page'];
 
 
-            $result['lists'] = $this->todo_m->getSearchItems('', $txt, $cate, $start, $limit);
+            $result['lists'] = $this->todo_m->getSearchItems('', $tmpTxt, $tmpCate, $start, $limit);
 
 
             $this->load->view('header_v', $param);
