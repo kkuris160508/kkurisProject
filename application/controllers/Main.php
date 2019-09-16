@@ -321,7 +321,7 @@ class Main extends CI_Controller{
             $cate = $this->input->post('selectCategory', TRUE);
 
 //            $this->load->library('pagination'); // 페이지 네이션 설정
-            $config['base_url'] = 'http://34.80.199.17/Main/searchText'; //페이징 주소
+            $config['base_url'] = 'http://34.80.199.17/Main/lists'; //페이징 주소
 
             $config['per_page'] = 5; // 한 페이지에 표시할 게시물 수
             $config['uri_segment'] = 3; //페이지 번호가 위치한 세그먼트
