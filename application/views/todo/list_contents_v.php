@@ -79,7 +79,7 @@
             </select>
         </td>
         <td colspan = '6' style="width:800px"><?php echo form_input('searchTxt','',"placeholder='검색어를 입력하세요'; style = 'width:600px;'")?></td>
-        <td> <a href="/Main/searchText/" class="btn btn-primary">검색</a> </td>
+        <td> <div class="form-actions"><input type ='submit' class="btn btn-primary" id = 'searchLists' value="검색"></div></td>
         <!-- input 영역 추가 -->
     </tr>
     </table>
