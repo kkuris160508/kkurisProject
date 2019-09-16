@@ -315,7 +315,7 @@ class Main extends CI_Controller{
 //        $data['list'] = $this->todo_m->get_list('',$start, $limit);
 
 
-        if($this->form_validation->run() == TRUE || $start > 0){
+        if($this->form_validation->run() == TRUE || $tmpStart > 0){
 
             $txt = $this->input->post('searchTxt', TRUE);
             $cate = $this->input->post('selectCategory', TRUE);
@@ -343,6 +343,7 @@ class Main extends CI_Controller{
 
             $limit = $config['per_page'];
             $tmpStart = $start;
+
             //작성자 조회 시
             $result['lists'] = $this->todo_m->getSearchItems('', $txt, $cate, $start, $limit);
 

@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="글 검색 에서 페이징네이션 시작">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/Todo_m.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Todo_m.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,20 +15,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="796">
-              <caret line="189" column="2" lean-forward="true" selection-start-line="189" selection-start-column="2" selection-end-line="189" selection-end-column="2" />
+            <state relative-caret-position="-3">
+              <caret line="142" column="11" selection-start-line="142" selection-start-column="11" selection-end-line="142" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="329" column="65" selection-start-line="329" selection-start-column="51" selection-end-line="329" selection-end-column="65" />
+            <state relative-caret-position="759">
+              <caret line="344" column="31" selection-start-line="344" selection-start-column="31" selection-end-line="344" selection-end-column="31" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#view#0;n#Main#0;n#!!top" />
@@ -228,8 +227,8 @@
         <option value="$PROJECT_DIR$/application/views/header_v.php" />
         <option value="$PROJECT_DIR$/application/views/todo/list_contents_v.php" />
         <option value="$PROJECT_DIR$/application/views/todo/search_list_contents_v.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Main.php" />
         <option value="$PROJECT_DIR$/application/models/Todo_m.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Main.php" />
       </list>
     </option>
   </component>
@@ -381,21 +380,7 @@
       <workItem from="1566828260309" duration="223948000" />
       <workItem from="1568187689655" duration="3017000" />
       <workItem from="1568592167012" duration="8829000" />
-      <workItem from="1568610992356" duration="4288000" />
-    </task>
-    <task id="LOCAL-00517" summary="글 검색 기능 추가 시작">
-      <created>1568183821834</created>
-      <option name="number" value="00517" />
-      <option name="presentableId" value="LOCAL-00517" />
-      <option name="project" value="LOCAL" />
-      <updated>1568183821834</updated>
-    </task>
-    <task id="LOCAL-00518" summary="글 검색 기능 추가 시작">
-      <created>1568184001067</created>
-      <option name="number" value="00518" />
-      <option name="presentableId" value="LOCAL-00518" />
-      <option name="project" value="LOCAL" />
-      <updated>1568184001067</updated>
+      <workItem from="1568610992356" duration="4776000" />
     </task>
     <task id="LOCAL-00519" summary="글 검색 기능 추가 시작">
       <created>1568184596721</created>
@@ -726,11 +711,25 @@
       <option name="project" value="LOCAL" />
       <updated>1568614929382</updated>
     </task>
-    <option name="localTasksCounter" value="566" />
+    <task id="LOCAL-00566" summary="글 검색 에서 페이징네이션 시작">
+      <created>1568615540201</created>
+      <option name="number" value="00566" />
+      <option name="presentableId" value="LOCAL-00566" />
+      <option name="project" value="LOCAL" />
+      <updated>1568615540201</updated>
+    </task>
+    <task id="LOCAL-00567" summary="글 검색 에서 페이징네이션 시작">
+      <created>1568615586906</created>
+      <option name="number" value="00567" />
+      <option name="presentableId" value="LOCAL-00567" />
+      <option name="project" value="LOCAL" />
+      <updated>1568615586906</updated>
+    </task>
+    <option name="localTasksCounter" value="568" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="252541000" />
+    <option name="totallyTimeSpent" value="253029000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1173,10 +1172,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3">
+          <caret line="142" column="11" selection-start-line="142" selection-start-column="11" selection-end-line="142" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="329" column="65" selection-start-line="329" selection-start-column="51" selection-end-line="329" selection-end-column="65" />
+        <state relative-caret-position="759">
+          <caret line="344" column="31" selection-start-line="344" selection-start-column="31" selection-end-line="344" selection-end-column="31" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#view#0;n#Main#0;n#!!top" />
@@ -1189,13 +1195,6 @@
             <element signature="n#dateTime#0;n#Main#0;n#!!top" />
             <element signature="n#test#0;n#Main#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="796">
-          <caret line="189" column="2" lean-forward="true" selection-start-line="189" selection-start-column="2" selection-end-line="189" selection-end-column="2" />
         </state>
       </provider>
     </entry>
