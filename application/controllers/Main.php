@@ -332,40 +332,39 @@ class Main extends CI_Controller{
 //                echo $tmpTxt;
 //            }
 
-//            $this->load->library('pagination'); // 페이지 네이션 설정
-//
-//            $config['base_url'] = 'http://34.80.199.17/Main/searchText'; //페이징 주소
-//
-//            $config['per_page'] = 5; // 한 페이지에 표시할 게시물 수
-//            $config['uri_segment'] = 3; //페이지 번호가 위치한 세그먼트
-//
-////        function getSearchItems($type = '', $txt='', $cate='', $offset='', $limit='')
-//            $config['total_rows'] = $this->todo_m->getSearchItems('count', $txt, $cate);
-//            $result['cnt'] = $config['total_rows'];
-//
-//            $this->pagination->initialize($config);
-//            $result['pagination'] = $this->pagination->create_links();
-//
-//            $result2 = $this->debug->debug_var($result); // debug 를 소문자로...ㅡㅡ
-//            echo $result2;
-//
-//            $page = $this->uri->segment(3,1);
-//            echo $page."page<br>";
-//
-//            if($page > 1){
-//                $start = (($page / $config['per_page'])) * $config['per_page'];
-//                echo $start."start page>1<br>";
-//            } else {
-//                $start = ($page - 1) * $config['per_page'];
-//                echo $start."start else <br>";
-//            }
-//
-//            $limit = $config['per_page'];
+            $this->load->library('pagination'); // 페이지 네이션 설정
 
+            $config['base_url'] = 'http://34.80.199.17/Main/searchText'; //페이징 주소
 
-//            $result['lists'] = $this->todo_m->getSearchItems('', $txt, $cate, $start, $limit);
-            $result['lists'] = $this->todo_m->getSearchItems('', $txt, $cate);
-            $result['cnt'] = $this->todo_m->getSearchItems('count', $txt, $cate);
+            $config['per_page'] = 5; // 한 페이지에 표시할 게시물 수
+            $config['uri_segment'] = 3; //페이지 번호가 위치한 세그먼트
+
+//        function getSearchItems($type = '', $txt='', $cate='', $offset='', $limit='')
+            $config['total_rows'] = $this->todo_m->getSearchItems('count', $txt, $cate);
+            $result['cnt'] = $config['total_rows'];
+
+            $this->pagination->initialize($config);
+            $result['pagination'] = $this->pagination->create_links();
+
+            $result2 = $this->debug->debug_var($result); // debug 를 소문자로...ㅡㅡ
+            echo $result2;
+
+            $page = $this->uri->segment(3,1);
+            echo $page."page<br>";
+
+            if($page > 1){
+                $start = (($page / $config['per_page'])) * $config['per_page'];
+                echo $start."start page>1<br>";
+            } else {
+                $start = ($page - 1) * $config['per_page'];
+                echo $start."start else <br>";
+            }
+
+            $limit = $config['per_page'];
+
+            $result['lists'] = $this->todo_m->getSearchItems('', $txt, $cate, $start, $limit);
+//            $result['lists'] = $this->todo_m->getSearchItems('', $txt, $cate);
+//            $result['cnt'] = $this->todo_m->getSearchItems('count', $txt, $cate);
 
             $this->load->view('header_v', $param);
             $this->load->view('todo/search_list_contents_v', $result);
