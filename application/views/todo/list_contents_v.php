@@ -50,6 +50,11 @@
         </tr>
     <?php endforeach?>
     </tbody>
+    <tfoot>
+    <tr>
+        <th colspan="5"><?php echo $pagination;?></th>
+    </tr>
+    </tfoot>
 </table>
 <div style="width: 1700px; text-align: end">
     <a href="/Main/write/" class="btn btn-success">쓰기</a>

@@ -47,10 +47,10 @@ class Main extends CI_Controller{
         $config['per_page'] = 5; // 한 페이지에 표시할 게시물 수
         $config['uri_segment'] = 3; //페이지 번호가 위치한 세그먼트
 
-        $config['total_rows'] = $this->todo_m->get_list('count','','');
+        $config['total_rows'] = $this->todo_m->get_list('count');
 
         $this->pagination->initialize($config);
-        $this->pagination->create_links();
+        $data['pagination'] = $this->pagination->create_links();
 
         $page = $this->uri->segment(3,1);
 
@@ -62,10 +62,10 @@ class Main extends CI_Controller{
 
         $limit = $config['per_page'];
 
-        $result = $this->todo_m->get_list('',$start, $limit);
+        $data['list'] = $this->todo_m->get_list('',$start, $limit);
 
         $this->load->view('header_v', $param);
-        $this->load->view('todo/list_contents_v', $result);
+        $this->load->view('todo/list_contents_v', $data);
         $this->load->view('todo/footer_v');
 
         }
