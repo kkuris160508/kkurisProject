@@ -314,13 +314,19 @@ class Main extends CI_Controller{
             $cate = $this->input->post('selectCategory', TRUE);
 
 
-            $data['list'] = $this->todo_m->getSearchItems($txt, $cate);
+            $result = $this->todo_m->getSearchItems($txt, $cate);
 
-//            $this->increaseReadCnt($id);
+            $result3 = $this->debug->debug_var($result); // 시발 debug 를 소문자로...ㅡㅡ
 
-            $this->load->view('header_v', $param);
-            $this->load->view('todo/search_list_contents_v', $data);
-            $this->load->view('todo/footer_v');
+            echo $result3;
+
+//            $data['list'] = $this->todo_m->getSearchItems($txt, $cate);
+//
+////            $this->increaseReadCnt($id);
+//
+//            $this->load->view('header_v', $param);
+//            $this->load->view('todo/search_list_contents_v', $data);
+//            $this->load->view('todo/footer_v');
 
         } else {
 

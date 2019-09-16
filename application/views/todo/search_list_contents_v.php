@@ -52,5 +52,6 @@ $opt = array(
     </tbody>
 </table>
 <div style="width: 1700px; text-align: end">
+    <a href="/Main/lists/" class="btn btn-primary">목록</a>
     <a href="/Main/write/" class="btn btn-success">쓰기</a>
 </div>

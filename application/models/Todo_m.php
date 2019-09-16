@@ -152,9 +152,13 @@ class Todo_m extends CI_Model{
 
 //        echo $sql1;
         $query = $this->db->query($sql);
-        $result = $query->result();
 
-        return $result;
+        $result = $query->result();
+        $result1 = $query->num_rows();
+
+        $resultArray = array($result, $result1);
+
+        return $resultArray;
 
     }
 }
