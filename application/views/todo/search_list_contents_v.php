@@ -48,9 +48,15 @@ $opt = array(
                 <time datetime="<?php echo mdate("%Y-%M-%j", human_to_unix($lt -> writetime)); ?>"><?php echo $lt -> writetime;?></time>
             </td>
         </tr>
+
     <?php endforeach?>
 
     </tbody>
+    <tfoot>
+    <tr>
+        <th colspan="5"><?php echo $pagination;?></th>
+    </tr>
+    </tfoot>
 </table>
 <div style="width: 1700px; text-align: end">
     <a href="/Main/lists/" class="btn btn-primary">목록</a>
