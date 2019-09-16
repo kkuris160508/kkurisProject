@@ -313,49 +313,51 @@ class Main extends CI_Controller{
         $this->form_validation->set_rules('searchTxt','텍스트','required');
 
 //        $data['list'] = $this->todo_m->get_list('',$start, $limit);
+        $tmpIdx = 0;
 
-
-        if($this->form_validation->run() == TRUE){
+        if($this->form_validation->run() == TRUE || $this->uri->segment(3,1) >= 1){
 
             $txt = $this->input->post('searchTxt', TRUE);
             $cate = $this->input->post('selectCategory', TRUE);
 
 //            $this->load->library('pagination'); // 페이지 네이션 설정
 
+            $config['base_url'] = 'http://34.80.199.17/Main/searchText'; //페이징 주소
+
+            $config['per_page'] = 5; // 한 페이지에 표시할 게시물 수
+            $config['uri_segment'] = 3; //페이지 번호가 위치한 세그먼트
+
+
+            $config['total_rows'] = $this->todo_m->getSearchItems('count', $txt, $cate);
+            $result['cnt'] = $config['total_rows'];
+
+            $this->pagination->initialize($config);
+            $result['pagination'] = $this->pagination->create_links();
+
+            $page = $this->uri->segment(3,1);
+            echo $page;
+
+            if($page > 1){
+                $start = (($page / $config['per_page'])) * $config['per_page'];
+            } else {
+                $start = ($page - 1) * $config['per_page'];
+            }
+
+            $limit = $config['per_page'];
+
+            //작성자 조회 시
+            $result['lists'] = $this->todo_m->getSearchItems('', $txt, $cate, $start, $limit);
+
+            $this->load->view('header_v', $param);
+            $this->load->view('todo/search_list_contents_v', $result);
+            $this->load->view('todo/footer_v');
+            $tmpIdx++;
 
         } else {
             alert('글이 존재하지 않습니다.', '/Main/lists');
         }
 
-        $config['base_url'] = 'http://34.80.199.17/Main/searchText'; //페이징 주소
 
-        $config['per_page'] = 5; // 한 페이지에 표시할 게시물 수
-        $config['uri_segment'] = 3; //페이지 번호가 위치한 세그먼트
-
-
-        $config['total_rows'] = $this->todo_m->getSearchItems('count', $txt, $cate);
-        $result['cnt'] = $config['total_rows'];
-
-        $this->pagination->initialize($config);
-        $result['pagination'] = $this->pagination->create_links();
-
-        $page = $this->uri->segment(3,1);
-        echo $page;
-
-        if($page > 1){
-            $start = (($page / $config['per_page'])) * $config['per_page'];
-        } else {
-            $start = ($page - 1) * $config['per_page'];
-        }
-
-        $limit = $config['per_page'];
-
-        //작성자 조회 시
-        $result['lists'] = $this->todo_m->getSearchItems('', $txt, $cate, $start, $limit);
-
-        $this->load->view('header_v', $param);
-        $this->load->view('todo/search_list_contents_v', $result);
-        $this->load->view('todo/footer_v');
     }
 
     function dateTime(){
