@@ -394,5 +394,12 @@ class Main extends CI_Controller{
         printf("URI Segment 4 : %s <br/>", $this->uri->segment(4));
         printf("URI Segment 5 : %s <br/>", $this->uri->segment(5,'End'));
     }
+
+    function test2(){
+        $this->load->library('calendar');
+
+        echo $this->calendar->generate();
+
+    }
 }
 ?>
