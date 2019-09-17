@@ -10,15 +10,15 @@
                         'style'       => 'width:100%;height:50%;resize:none;'
                     );
                     $exOpt = array(
-                        'id'          => 'sdate',
-                        'name'        => 'sdate',
+                        'id'          => 'created_on',
+                        'name'        => 'created_on',
                         'data'        => 'created_on',
                         'value'       => set_value('created_on'),
                         'placeholder' => 'YYYY-MM-DD'
                     );
                     $exOpt1 = array(
-                        'id'          => 'edate',
-                        'name'        => 'edate',
+                        'id'          => 'due_date',
+                        'name'        => 'due_date',
                         'data'        => 'due_date',
                         'value'       => set_value('due_date'),
                         'placeholder' => 'YYYY-MM-DD'
@@ -118,12 +118,12 @@
            yearSuffix: "년"
         });
 
-        $("#sdate").datepicker({
+        $("#created_on").datepicker({
             onSelect: function () {
                 $("input[name='sdate']").val();
             }
         });
-        $("#edate").datepicker({
+        $("#due_date").datepicker({
             onSelect: function () {
                 $("input[name='edate']").val();
             }
