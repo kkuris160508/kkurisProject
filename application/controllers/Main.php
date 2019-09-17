@@ -398,12 +398,12 @@ class Main extends CI_Controller{
     function test2(){
         $prefs = array(
             'show_next_prev'  => TRUE,
-            'next_prev_url'   => 'http://example.com/index.php/calendar/show/'
+            'next_prev_url'   => 'http://34.80.199.17/Main/test2/'
         );
 
         $this->load->library('calendar', $prefs);
 
-        echo $this->calendar->generate($this->uri->segment(3), $this->uri->segment(4));
+        echo $this->calendar->generate($this->uri->segment(2), $this->uri->segment(3));
 
     }
 }
