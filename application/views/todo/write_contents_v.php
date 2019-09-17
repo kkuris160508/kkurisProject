@@ -99,52 +99,31 @@
 <script type="text/javascript">
     $(function(){ // 날짜 입력
 
-        var today = new Date();
-        var dd = today.getDate();
-        var mm = today.getMonth()+1;
-        var yyyy = today.getFullYear();
-
-        if(dd < 10){
-            dd = '0'+dd
-        }
-
-        if(mm < 10){
-            mm = '0'+mm
-        }
-
-        today = yyyy+'/'+mm+'/'+dd;     //오늘날짜 ex. 2016/11/12
-        var todaydate = [today];        //배열에 넣음
-
-
-        $("#startDate").datepicker({
+        $("input[id*='startDate'],input[id*='endDateDiv']").datepicker({
+            showMonthAfterYear:true,
+            inline: true,
             changeMonth: true,
             changeYear: true,
-            dateFormat: "yymmdd",
-            minDate: 0,
-            maxDate: '+1Y+6M',
-            showButtonPanel: true,
+            dateFormat : 'yy-mm-dd',
+            dayNamesMin:['일', '월', '화', '수', '목', '금', ' 토'],
+            monthNames:['1월','2월','3월','4월','5월','6월','7 월','8월','9월','10월','11월','12월'],
+            monthNamesShort:['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+            showButtonPanel: true, currentText: '오늘 ' , closeText: '닫기',
+            onSelect: function(selectedDate) {
+                var instance = $(this).data("datepicker");
+                var selectId='';
+                var option='';
 
-            beforeShowDay: function(dateStr){
-                var dd = dateStr.getDate();
-                var mm = dateStr.getMonth()+1;
-                var yyyy = dateStr.getFullYear();
-
-                if(dd < 10){
-                    dd = '0'+dd
+                if(this.id.indexOf("startDate")> -1){
+                    selectId =this.id.replace("startDate","endDateDiv");
+                    option = "minDate";
+                }else{
+                    selectId =this.id.replace("startDate","endDateDiv");
+                    option = "maxDate";
                 }
 
-                if(mm < 10){
-                    mm = '0'+mm
-                }
-
-                date = yyyy+'/'+mm+'/'+dd;        //jquery 달력의 날짜를 yyyy/mm/dd 형태로 만듬.
-                var Highlight = todaydate[date];    //스타일을 적용할 날짜
-
-                if ($.inArray(date, todaydate) >= 0) {    //jquery달력의 날짜가 오늘날짜와 같다면
-                    return [true, "Highlighted", Highlight];    //스타일 적용
-                } else {
-                    return [true, '', ''];
-                }
+                var date = $.datepicker.parseDate(instance.settings.dateFormat || $.datepicker._defaults.dateFormat, selectedDate, instance.settings);
+                $("input[id='"+selectId+"']").datepicker("option", option, date);
             }
         });
     });
