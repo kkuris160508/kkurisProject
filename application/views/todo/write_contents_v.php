@@ -94,6 +94,8 @@
     </article>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
 <script type="text/javascript">
     $(function(){ // 날짜 입력
 
@@ -111,7 +113,6 @@
         }
 
         today = yyyy+'/'+mm+'/'+dd;     //오늘날짜 ex. 2016/11/12
-
         var todaydate = [today];        //배열에 넣음
 
 
