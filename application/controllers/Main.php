@@ -396,9 +396,14 @@ class Main extends CI_Controller{
     }
 
     function test2(){
-        $this->load->library('calendar');
+        $prefs = array(
+            'show_next_prev'  => TRUE,
+            'next_prev_url'   => 'http://example.com/index.php/calendar/show/'
+        );
 
-        echo $this->calendar->generate();
+        $this->load->library('calendar', $prefs);
+
+        echo $this->calendar->generate($this->uri->segment(3), $this->uri->segment(4));
 
     }
 }
