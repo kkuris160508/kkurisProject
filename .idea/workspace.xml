@@ -19,15 +19,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3043">
-              <caret line="371" selection-start-line="371" selection-end-line="371" />
+            <state relative-caret-position="-2114">
+              <caret line="130" column="65" lean-forward="true" selection-start-line="130" selection-start-column="65" selection-end-line="130" selection-end-column="65" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#view#0;n#Main#0;n#!!top" />
-                <element signature="n#write#0;n#Main#0;n#!!top" />
                 <element signature="n#delete#0;n#Main#0;n#!!top" />
                 <element signature="n#join#0;n#Main#0;n#!!top" />
-                <element signature="n#dob_check#0;n#Main#0;n#!!top" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
                 <element signature="n#increaseReadCnt#0;n#Main#0;n#!!top" />
                 <element signature="n#dateTime#0;n#Main#0;n#!!top" />
               </folding>
@@ -47,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="106" column="34" lean-forward="true" selection-start-line="106" selection-start-column="34" selection-end-line="106" selection-end-column="34" />
+            <state relative-caret-position="677">
+              <caret line="121" column="16" lean-forward="true" selection-start-line="121" selection-start-column="16" selection-end-line="121" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -216,8 +215,8 @@
         <option value="$PROJECT_DIR$/application/models/Todo_m.php" />
         <option value="$PROJECT_DIR$/application/views/todo/list_contents_v.php" />
         <option value="$PROJECT_DIR$/application/views/todo/search_list_contents_v.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Main.php" />
         <option value="$PROJECT_DIR$/application/views/header_v.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Main.php" />
         <option value="$PROJECT_DIR$/application/views/todo/write_contents_v.php" />
       </list>
     </option>
@@ -375,28 +374,7 @@
       <workItem from="1568622155478" duration="3941000" />
       <workItem from="1568626344333" duration="3922000" />
       <workItem from="1568681865818" duration="3891000" />
-      <workItem from="1568686261426" duration="601000" />
-    </task>
-    <task id="LOCAL-00567" summary="글 검색 에서 페이징네이션 시작">
-      <created>1568615586906</created>
-      <option name="number" value="00567" />
-      <option name="presentableId" value="LOCAL-00567" />
-      <option name="project" value="LOCAL" />
-      <updated>1568615586906</updated>
-    </task>
-    <task id="LOCAL-00568" summary="글 검색 에서 페이징네이션 시작">
-      <created>1568615957054</created>
-      <option name="number" value="00568" />
-      <option name="presentableId" value="LOCAL-00568" />
-      <option name="project" value="LOCAL" />
-      <updated>1568615957054</updated>
-    </task>
-    <task id="LOCAL-00569" summary="글 검색 에서 페이징네이션 시작">
-      <created>1568616062842</created>
-      <option name="number" value="00569" />
-      <option name="presentableId" value="LOCAL-00569" />
-      <option name="project" value="LOCAL" />
-      <updated>1568616062843</updated>
+      <workItem from="1568686261426" duration="1135000" />
     </task>
     <task id="LOCAL-00570" summary="글 검색 에서 페이징네이션 시작">
       <created>1568616490213</created>
@@ -720,11 +698,32 @@
       <option name="project" value="LOCAL" />
       <updated>1568685889926</updated>
     </task>
-    <option name="localTasksCounter" value="616" />
+    <task id="LOCAL-00616" summary="캘린더 클래스 적용 시작">
+      <created>1568687198768</created>
+      <option name="number" value="00616" />
+      <option name="presentableId" value="LOCAL-00616" />
+      <option name="project" value="LOCAL" />
+      <updated>1568687198769</updated>
+    </task>
+    <task id="LOCAL-00617" summary="캘린더 클래스 적용 시작">
+      <created>1568687313820</created>
+      <option name="number" value="00617" />
+      <option name="presentableId" value="LOCAL-00617" />
+      <option name="project" value="LOCAL" />
+      <updated>1568687313820</updated>
+    </task>
+    <task id="LOCAL-00618" summary="캘린더 클래스 적용 시작">
+      <created>1568687466087</created>
+      <option name="number" value="00618" />
+      <option name="presentableId" value="LOCAL-00618" />
+      <option name="project" value="LOCAL" />
+      <updated>1568687466088</updated>
+    </task>
+    <option name="localTasksCounter" value="619" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="271107000" />
+    <option name="totallyTimeSpent" value="271641000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1118,23 +1117,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3043">
-          <caret line="371" selection-start-line="371" selection-end-line="371" />
-          <folding>
-            <element signature="e#73#156#0#PHP" />
-            <element signature="n#view#0;n#Main#0;n#!!top" />
-            <element signature="n#write#0;n#Main#0;n#!!top" />
-            <element signature="n#delete#0;n#Main#0;n#!!top" />
-            <element signature="n#join#0;n#Main#0;n#!!top" />
-            <element signature="n#dob_check#0;n#Main#0;n#!!top" />
-            <element signature="n#increaseReadCnt#0;n#Main#0;n#!!top" />
-            <element signature="n#dateTime#0;n#Main#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/todo/search_list_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1156">
@@ -1184,10 +1166,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2114">
+          <caret line="130" column="65" lean-forward="true" selection-start-line="130" selection-start-column="65" selection-end-line="130" selection-end-column="65" />
+          <folding>
+            <element signature="e#73#156#0#PHP" />
+            <element signature="n#view#0;n#Main#0;n#!!top" />
+            <element signature="n#delete#0;n#Main#0;n#!!top" />
+            <element signature="n#join#0;n#Main#0;n#!!top" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#increaseReadCnt#0;n#Main#0;n#!!top" />
+            <element signature="n#dateTime#0;n#Main#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="106" column="34" lean-forward="true" selection-start-line="106" selection-start-column="34" selection-end-line="106" selection-end-column="34" />
+        <state relative-caret-position="677">
+          <caret line="121" column="16" lean-forward="true" selection-start-line="121" selection-start-column="16" selection-end-line="121" selection-end-column="16" />
         </state>
       </provider>
     </entry>

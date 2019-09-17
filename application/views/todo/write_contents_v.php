@@ -11,14 +11,16 @@
                     );
                     $exOpt = array(
                         'id'          => 'sdate',
+                        'name'        => 'sdate',
                         'data'        => 'created_on',
                         'value'       => set_value('created_on'),
                         'placeholder' => 'YYYY-MM-DD'
                     );
                     $exOpt1 = array(
                         'id'          => 'edate',
-                        'data'        => 'created_on',
-                        'value'       => set_value('created_on'),
+                        'name'        => 'edate',
+                        'data'        => 'due_date',
+                        'value'       => set_value('due_date'),
                         'placeholder' => 'YYYY-MM-DD'
                     );
                     ?>
@@ -112,9 +114,15 @@
     $(function(){
         $("#sdate").datepicker({
             dateFormat:"yy-mm-dd"
+            // onSelect: function () {
+            //     $("input[name='sdate']").val()
+            // }
         });
         $("#edate").datepicker({
-            dateFormat:"yy-mm-dd"
+            dateFormat:"yy-mm-dd",
+            onSelect: function () {
+
+            }
         });
     });
 
