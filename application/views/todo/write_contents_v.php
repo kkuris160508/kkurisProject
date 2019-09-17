@@ -97,35 +97,9 @@
 
 
 <script type="text/javascript">
-    $(function(){ // 날짜 입력
-
-        $("input[id*='startDate'],input[id*='endDateDiv']").datepicker({
-            showMonthAfterYear:true,
-            inline: true,
-            changeMonth: true,
-            changeYear: true,
-            dateFormat : 'yy-mm-dd',
-            dayNamesMin:['일', '월', '화', '수', '목', '금', ' 토'],
-            monthNames:['1월','2월','3월','4월','5월','6월','7 월','8월','9월','10월','11월','12월'],
-            monthNamesShort:['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
-            showButtonPanel: true, currentText: '오늘 ' , closeText: '닫기',
-            onSelect: function(selectedDate) {
-                var instance = $(this).data("datepicker");
-                var selectId='';
-                var option='';
-
-                if(this.id.indexOf("startDate")> -1){
-                    selectId =this.id.replace("startDate","endDateDiv");
-                    option = "minDate";
-                }else{
-                    selectId =this.id.replace("startDate","endDateDiv");
-                    option = "maxDate";
-                }
-
-                var date = $.datepicker.parseDate(instance.settings.dateFormat || $.datepicker._defaults.dateFormat, selectedDate, instance.settings);
-                $("input[id='"+selectId+"']").datepicker("option", option, date);
-            }
-        });
+    $(function(){
+        $("#startDate").datepicker();
+        $("#endDateDiv").datepicker();
     });
 
     </script>
