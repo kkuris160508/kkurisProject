@@ -111,7 +111,7 @@
 <script type="text/javascript">
     $(function(){
         $("#sdate").datepicker({
-            dateFormat:"yyyy-mm-dd"
+            dateFormat:"yy-mm-dd"
         });
         $("#edate").datepicker({
             dateFormat:"yy-mm-dd"
