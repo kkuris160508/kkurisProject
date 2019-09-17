@@ -111,7 +111,7 @@ class Main extends CI_Controller{
         $param = array(
             'id'=>'작성'
         );
-//        $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+        $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
         $this->load->library('form_validation');
 
         $this->form_validation->set_rules('subject','제목','required');

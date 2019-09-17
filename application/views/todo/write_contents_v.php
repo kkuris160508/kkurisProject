@@ -112,17 +112,21 @@
 
 <script type="text/javascript">
     $(function(){
+        $.datepicker.setDefaults({
+           dateFormat: "yy-mm-dd",
+           buttonImageOnly: false,
+           yearSuffix: "년"
+        });
+
         $("#sdate").datepicker({
-            dateFormat:"yy-mm-dd"
-            // onSelect: function () {
-            //     $("input[name='sdate']").val()
-            // }
+            onSelect: function () {
+                $("input[name='sdate']").val("#sdate");
+            }
         });
         $("#edate").datepicker({
-            dateFormat:"yy-mm-dd"
-            // onSelect: function () {
-            //
-            // }
+            onSelect: function () {
+                $("input[name='edate']").val("#edate");
+            }
         });
     });
 
