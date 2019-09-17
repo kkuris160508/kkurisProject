@@ -120,12 +120,12 @@
 
         $("#created_on").datepicker({
             onSelect: function () {
-                $("input[name='sdate']").val();
+                $("input[name='created_on']").val();
             }
         });
         $("#due_date").datepicker({
             onSelect: function () {
-                $("input[name='edate']").val();
+                $("input[name='due_date']").val();
             }
         });
     });
