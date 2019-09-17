@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="캘린더 클래스 적용 시작">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/todo/write_contents_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/todo/write_contents_v.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -46,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="123" column="13" lean-forward="true" selection-start-line="123" selection-start-column="13" selection-end-line="123" selection-end-column="13" />
+            <state relative-caret-position="677">
+              <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -374,21 +373,7 @@
       <workItem from="1568622155478" duration="3941000" />
       <workItem from="1568626344333" duration="3922000" />
       <workItem from="1568681865818" duration="3891000" />
-      <workItem from="1568686261426" duration="2178000" />
-    </task>
-    <task id="LOCAL-00573" summary="글 검색 에서 페이징네이션 시작">
-      <created>1568617331276</created>
-      <option name="number" value="00573" />
-      <option name="presentableId" value="LOCAL-00573" />
-      <option name="project" value="LOCAL" />
-      <updated>1568617331276</updated>
-    </task>
-    <task id="LOCAL-00574" summary="글 검색 에서 페이징네이션 시작">
-      <created>1568618024173</created>
-      <option name="number" value="00574" />
-      <option name="presentableId" value="LOCAL-00574" />
-      <option name="project" value="LOCAL" />
-      <updated>1568618024173</updated>
+      <workItem from="1568686261426" duration="2555000" />
     </task>
     <task id="LOCAL-00575" summary="글 검색 에서 페이징네이션 시작">
       <created>1568619121018</created>
@@ -719,11 +704,25 @@
       <option name="project" value="LOCAL" />
       <updated>1568688535017</updated>
     </task>
-    <option name="localTasksCounter" value="622" />
+    <task id="LOCAL-00622" summary="캘린더 클래스 적용 시작">
+      <created>1568688774258</created>
+      <option name="number" value="00622" />
+      <option name="presentableId" value="LOCAL-00622" />
+      <option name="project" value="LOCAL" />
+      <updated>1568688774258</updated>
+    </task>
+    <task id="LOCAL-00623" summary="캘린더 클래스 적용 시작">
+      <created>1568688876431</created>
+      <option name="number" value="00623" />
+      <option name="presentableId" value="LOCAL-00623" />
+      <option name="project" value="LOCAL" />
+      <updated>1568688876431</updated>
+    </task>
+    <option name="localTasksCounter" value="624" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="272684000" />
+    <option name="totallyTimeSpent" value="273061000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1184,8 +1183,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="123" column="13" lean-forward="true" selection-start-line="123" selection-start-column="13" selection-end-line="123" selection-end-column="13" />
+        <state relative-caret-position="677">
+          <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
         </state>
       </provider>
     </entry>
