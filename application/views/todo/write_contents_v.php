@@ -120,11 +120,13 @@
         });
 
         $("#created_on").datepicker({
+            setDate: 'today',
             onSelect: function () {
                 $("input[name='created_on']").val();
             }
         });
         $("#due_date").datepicker({
+            setDate: '+1D',
             onSelect: function () {
                 $("input[name='due_date']").val();
             }
