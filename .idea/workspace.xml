@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="캘린더 클래스 적용 시작">
+      <change beforePath="$PROJECT_DIR$/application/views/header_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/header_v.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/todo/write_contents_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/todo/write_contents_v.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -38,7 +39,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/todo/search_list_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
+            <state relative-caret-position="878">
               <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
             </state>
           </provider>
@@ -47,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="96" column="68" selection-start-line="96" selection-start-column="68" selection-end-line="96" selection-end-column="68" />
+            <state relative-caret-position="17">
+              <caret line="1" column="89" selection-start-line="1" selection-start-column="89" selection-end-line="1" selection-end-column="89" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#fieldset#0;n#!!top" expanded="true" />
               </folding>
@@ -59,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/header_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="92" />
+            <state relative-caret-position="238">
+              <caret line="14" column="93" lean-forward="true" selection-start-line="14" selection-start-column="93" selection-end-line="14" selection-end-column="93" />
             </state>
           </provider>
         </entry>
@@ -216,11 +217,11 @@
         <option value="$PROJECT_DIR$/application/controllers/Auth.php" />
         <option value="$PROJECT_DIR$/application/controllers/Test.php" />
         <option value="$PROJECT_DIR$/application/views/todo/view_contents_v.php" />
-        <option value="$PROJECT_DIR$/application/views/header_v.php" />
         <option value="$PROJECT_DIR$/application/models/Todo_m.php" />
         <option value="$PROJECT_DIR$/application/views/todo/list_contents_v.php" />
         <option value="$PROJECT_DIR$/application/views/todo/search_list_contents_v.php" />
         <option value="$PROJECT_DIR$/application/controllers/Main.php" />
+        <option value="$PROJECT_DIR$/application/views/header_v.php" />
         <option value="$PROJECT_DIR$/application/views/todo/write_contents_v.php" />
       </list>
     </option>
@@ -228,9 +229,9 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="242" />
+    <option name="y" value="79" />
     <option name="width" value="1936" />
     <option name="height" value="1096" />
   </component>
@@ -377,21 +378,7 @@
       <workItem from="1568617746301" duration="4147000" />
       <workItem from="1568622155478" duration="3941000" />
       <workItem from="1568626344333" duration="3922000" />
-      <workItem from="1568681865818" duration="1612000" />
-    </task>
-    <task id="LOCAL-00559" summary="글 검색 에서 페이징네이션 시작">
-      <created>1568614323041</created>
-      <option name="number" value="00559" />
-      <option name="presentableId" value="LOCAL-00559" />
-      <option name="project" value="LOCAL" />
-      <updated>1568614323041</updated>
-    </task>
-    <task id="LOCAL-00560" summary="글 검색 에서 페이징네이션 시작">
-      <created>1568614391703</created>
-      <option name="number" value="00560" />
-      <option name="presentableId" value="LOCAL-00560" />
-      <option name="project" value="LOCAL" />
-      <updated>1568614391703</updated>
+      <workItem from="1568681865818" duration="1892000" />
     </task>
     <task id="LOCAL-00561" summary="글 검색 에서 페이징네이션 시작">
       <created>1568614457159</created>
@@ -722,11 +709,25 @@
       <option name="project" value="LOCAL" />
       <updated>1568683404716</updated>
     </task>
-    <option name="localTasksCounter" value="608" />
+    <task id="LOCAL-00608" summary="캘린더 클래스 적용 시작">
+      <created>1568683756770</created>
+      <option name="number" value="00608" />
+      <option name="presentableId" value="LOCAL-00608" />
+      <option name="project" value="LOCAL" />
+      <updated>1568683756771</updated>
+    </task>
+    <task id="LOCAL-00609" summary="캘린더 클래스 적용 시작">
+      <created>1568683843556</created>
+      <option name="number" value="00609" />
+      <option name="presentableId" value="LOCAL-00609" />
+      <option name="project" value="LOCAL" />
+      <updated>1568683843556</updated>
+    </task>
+    <option name="localTasksCounter" value="610" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="268227000" />
+    <option name="totallyTimeSpent" value="268507000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1138,13 +1139,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/todo/search_list_contents_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/Auth/auto_login_v.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1182,15 +1176,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/header_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="92" />
+        <state relative-caret-position="238">
+          <caret line="14" column="93" lean-forward="true" selection-start-line="14" selection-start-column="93" selection-end-line="14" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/todo/search_list_contents_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="878">
+          <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="96" column="68" selection-start-line="96" selection-start-column="68" selection-end-line="96" selection-end-column="68" />
+        <state relative-caret-position="17">
+          <caret line="1" column="89" selection-start-line="1" selection-start-column="89" selection-end-line="1" selection-end-column="89" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#fieldset#0;n#!!top" expanded="true" />
           </folding>
