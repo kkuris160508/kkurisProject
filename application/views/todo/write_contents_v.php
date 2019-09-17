@@ -11,6 +11,8 @@
                     );
                     $exOpt = array(
                         'id'          => 'sdate',
+                        'data'        => 'created_on',
+                        'value'       => set_value('created_on'),
                         'placeholder' => 'YYYY-MM-DD'
                     );
                     ?>
@@ -38,7 +40,7 @@
                         <div class="controls">
                             <!--                        <input type="text" class="input-xlarge" id="input02" name="created_on">-->
                             <div class = 'startDateForm'>
-                            <?php echo form_input('created_on', set_value('created_on'), $exOpt)?> <!-- form open 사용해야함 csrf protection TRUE 일 때 POST 방식으로 DB 접근권한을 한번 막기때문에 form open 사용-->
+                            <?php echo form_input($exOpt)?> <!-- form open 사용해야함 csrf protection TRUE 일 때 POST 방식으로 DB 접근권한을 한번 막기때문에 form open 사용-->
                             <p class="help-block">
                                 <?php
                                 if(form_error('created_on') == FALSE){
@@ -102,8 +104,8 @@
 
 <script type="text/javascript">
     $(function(){
-        $("#startDate").datepicker();
-        $("#endDateDiv").datepicker();
+        $("#sdate").datepicker();
+        $("#edate").datepicker();
     });
 
     </script>
