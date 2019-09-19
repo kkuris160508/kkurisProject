@@ -1,4 +1,8 @@
 <?php echo form_open('/Main/edit')?>
+<?
+$result2 = $this->debug->debug_var($views);
+echo $result2;
+?>
 <table class="table table-striped">
     <thead class="thead-dark">
     <tr>

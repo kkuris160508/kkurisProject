@@ -180,7 +180,7 @@ class Main extends CI_Controller{
 
             $data['edit'] = $this->todo_m->set_edit_views($id, $subject, $content);
 
-            $result2 = $this->debug->debug_var($data); // 시발 debug 를 소문자로...ㅡㅡ
+            $result2 = $this->debug->debug_var($data);
             echo $result2;
 
 //            alert('수정되었습니다.','/Main/views/'.$id);
