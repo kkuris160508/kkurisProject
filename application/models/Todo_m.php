@@ -114,6 +114,15 @@ class Todo_m extends CI_Model{
         $sql = "UPDATE items SET {$addQuery} WHERE id = {$id}";
 
         $query = $this->db->query($sql);
+
+        if($this->db->affected_rows() == 0){
+
+            return 0;
+
+        } else {
+
+            return 1;
+        }
     }
 
     function updateIncreaseReadCount($id){

@@ -190,9 +190,9 @@ class Main extends CI_Controller{
                 $result2 = $this->debug->debug_var($data); // 시발 debug 를 소문자로...ㅡㅡ
                 echo $result2;
 //                alert('수정되었습니다.','/Main/view/'.$transID);
-//                            $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+                $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
             } else {
-                            $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+                $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
                 echo 'f**k';
             }
 
