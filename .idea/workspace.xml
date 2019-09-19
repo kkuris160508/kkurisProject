@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="글 작성 시 상태 값 추가 시작">
-      <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/todo/view_contents_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/todo/view_contents_v.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -65,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="98" column="45" lean-forward="true" selection-start-line="98" selection-start-column="45" selection-end-line="98" selection-end-column="45" />
+            <state relative-caret-position="-1054">
+              <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#join#0;n#Main#0;n#!!top" />
@@ -126,8 +125,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/todo/view_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="762">
-              <caret line="64" column="21" lean-forward="true" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+            <state relative-caret-position="728">
+              <caret line="65" column="26" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -410,28 +409,7 @@
       <workItem from="1568626344333" duration="3922000" />
       <workItem from="1568681865818" duration="3891000" />
       <workItem from="1568686261426" duration="24428000" />
-      <workItem from="1568874577929" duration="4929000" />
-    </task>
-    <task id="LOCAL-00657" summary="글 작성 시 상태 값 추가 시작">
-      <created>1568867685997</created>
-      <option name="number" value="00657" />
-      <option name="presentableId" value="LOCAL-00657" />
-      <option name="project" value="LOCAL" />
-      <updated>1568867685997</updated>
-    </task>
-    <task id="LOCAL-00658" summary="글 작성 시 상태 값 추가 시작">
-      <created>1568867754627</created>
-      <option name="number" value="00658" />
-      <option name="presentableId" value="LOCAL-00658" />
-      <option name="project" value="LOCAL" />
-      <updated>1568867754627</updated>
-    </task>
-    <task id="LOCAL-00659" summary="글 작성 시 상태 값 추가 시작">
-      <created>1568867815286</created>
-      <option name="number" value="00659" />
-      <option name="presentableId" value="LOCAL-00659" />
-      <option name="project" value="LOCAL" />
-      <updated>1568867815286</updated>
+      <workItem from="1568874577929" duration="5217000" />
     </task>
     <task id="LOCAL-00660" summary="글 작성 시 상태 값 추가 시작">
       <created>1568867951390</created>
@@ -755,11 +733,32 @@
       <option name="project" value="LOCAL" />
       <updated>1568879232684</updated>
     </task>
-    <option name="localTasksCounter" value="706" />
+    <task id="LOCAL-00706" summary="글 작성 시 상태 값 추가 시작">
+      <created>1568879596804</created>
+      <option name="number" value="00706" />
+      <option name="presentableId" value="LOCAL-00706" />
+      <option name="project" value="LOCAL" />
+      <updated>1568879596804</updated>
+    </task>
+    <task id="LOCAL-00707" summary="글 작성 시 상태 값 추가 시작">
+      <created>1568879677111</created>
+      <option name="number" value="00707" />
+      <option name="presentableId" value="LOCAL-00707" />
+      <option name="project" value="LOCAL" />
+      <updated>1568879677111</updated>
+    </task>
+    <task id="LOCAL-00708" summary="글 작성 시 상태 값 추가 시작">
+      <created>1568879792820</created>
+      <option name="number" value="00708" />
+      <option name="presentableId" value="LOCAL-00708" />
+      <option name="project" value="LOCAL" />
+      <updated>1568879792820</updated>
+    </task>
+    <option name="localTasksCounter" value="709" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="299863000" />
+    <option name="totallyTimeSpent" value="300151000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1204,8 +1203,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="98" column="45" lean-forward="true" selection-start-line="98" selection-start-column="45" selection-end-line="98" selection-end-column="45" />
+        <state relative-caret-position="-1054">
+          <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#join#0;n#Main#0;n#!!top" />
@@ -1218,8 +1217,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/todo/view_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="762">
-          <caret line="64" column="21" lean-forward="true" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+        <state relative-caret-position="728">
+          <caret line="65" column="26" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
         </state>
       </provider>
     </entry>
