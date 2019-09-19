@@ -20,11 +20,11 @@
                 <th>
                     <?php echo $views -> status;?>
                 </th>
-                <th name="id">
+                <th name="accountID">
                     <a href="mailto:<?php echo $views -> EMAIL?>"><?php echo $views -> account_id;?></a>
                     <?php $transID = $views->no;?>
                     <?php $transAccountID = $views->account_id;?>
-                    <?php form_hidden('id',$transAccountID)?>
+                    <?php form_hidden('accountID',$transAccountID)?>
                 </th>
                 <th>
                     <?php echo $views -> subject;?>

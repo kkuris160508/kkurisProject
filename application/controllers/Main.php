@@ -100,7 +100,7 @@ class Main extends CI_Controller{
             $this->load->view('todo/view_contents_v', $data);
             $this->load->view('todo/footer_v');
 
-            $postID = $this->input->post('id', TRUE);
+            $postID = $this->input->post('accountID', TRUE);
 
             $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
