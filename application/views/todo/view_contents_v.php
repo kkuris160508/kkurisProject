@@ -1,4 +1,4 @@
-<?php echo form_open('/Main/view')?>
+
         <table class="table table-striped">
             <thead class="thead-dark">
             <tr>
@@ -24,7 +24,7 @@
                     <a href="mailto:<?php echo $views -> EMAIL?>"><?php echo $views -> account_id;?></a>
                     <?php $transID = $views->no;?>
                     <?php $transAccountID = $views->account_id;?>
-                    <?php form_hidden('accountID',$transAccountID)?>
+<!--                    --><?php //form_hidden('accountID',$transAccountID)?>
                 </th>
                 <th>
                     <?php echo $views -> subject;?>
@@ -58,11 +58,13 @@
                     <a href="http://34.80.199.17/Main/lists/" class="btn btn-primary">목록</a>
                     <a href="http://34.80.199.17/Main/delete/<?php echo $this -> uri -> segment(3); ?>/<?php echo $transID; ?>/<?php echo $transAccountID; ?>" class="btn btn-danger">삭제</a>
                     <a href="http://34.80.199.17/Main/write/" class="btn btn-success">쓰기</a>
-                    <a href="http://34.80.199.17/Main/edit/>" class="btn btn-success">수정</a>
+                    <?php
+                        if($accountInfo == $transAccountID)?><a href="http://34.80.199.17/Main/edit/>" class="btn btn-success">수정</a>
+                    <?php
+                        else?><a class="btn btn-primary" onclick="alert('수정불가');">
                 </th>
             </tr>
             </tfoot>
         </table>
     </article>
 
-<?php echo form_close();?>

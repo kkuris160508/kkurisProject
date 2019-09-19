@@ -86,21 +86,20 @@ class Main extends CI_Controller{
 
             $id = $this->uri->segment(3); //todo 번호에 해당하는 데이터 가져오기
             $data['views'] = $this->todo_m->get_views($id);
-
-
+            $data['accountInfo'] = $this->session->userdata('account_id');
 
 //            echo $this->session->userdata('account_id');
 
-//        $result2 = $this->debug->debug_var($data); // 시발 debug 를 소문자로...ㅡㅡ
-//        echo $result2;
-            $this->increaseReadCnt($id);
+        $result2 = $this->debug->debug_var($data); // 시발 debug 를 소문자로...ㅡㅡ
+        echo $result2;
 
+            $this->increaseReadCnt($id);
 
             $this->load->view('header_v', $param);
             $this->load->view('todo/view_contents_v', $data);
             $this->load->view('todo/footer_v');
 
-            $postID = $this->input->post('accountID', TRUE);
+//            $postID = $this->input->post('accountID', TRUE);
 
             $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
