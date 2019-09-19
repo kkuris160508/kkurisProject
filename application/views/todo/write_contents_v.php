@@ -91,7 +91,6 @@
                         </div>
                     </div>
                     <br>
-                    <p></p>
                     <div id = 'contentsDiv'>
                         <label class="control-label" for="input01">내용</label>
                         <div class="controls">

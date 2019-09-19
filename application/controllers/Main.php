@@ -138,10 +138,11 @@ class Main extends CI_Controller{
                 $content = $this->input->post('content', TRUE);
                 $created_on = $this->input->post('created_on', TRUE);
                 $due_date = $this->input->post('due_date', TRUE);
+                $status = $this->input->post('statusSelect', TRUE);
 
                 $this->debug->debug_var($created_on);
 
-                $this->todo_m->insert_todo($subject, $content, $created_on, $due_date, $result[0]->no); //전송받은 데이터를 파라미터로 todo_m 에 insert_todo 함수 실행
+                $this->todo_m->insert_todo($subject, $content, $created_on, $due_date, $result[0]->no, $status); //전송받은 데이터를 파라미터로 todo_m 에 insert_todo 함수 실행
 
 
                 redirect('/Main/lists');
