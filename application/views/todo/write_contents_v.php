@@ -44,7 +44,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id = 'startDate' style="float: left; margin-left: 50px; margin-right: 50px;">
+                    <div id = 'startDate' style="float: left; margin-left: 50px; margin-right: 10px;">
                         <label class="control-label" for="input02">시작일</label>
                         <div class="controls">
                             <!--                        <input type="text" class="input-xlarge" id="input02" name="created_on">-->
@@ -62,7 +62,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id = 'endDateDiv' style="margin-left: 50px; float:left;">
+                    <div id = 'endDateDiv' style="margin-right: 50px;float:left;">
                         <label class="control-label" for="input03">종료일</label>
                         <div class="controls">
                             <!--                        <input type="text" class="input-xlarge" id="input03" name="due_date">-->
@@ -82,7 +82,7 @@
                     </div>
                     <div>
                         <label class="control-label" for="input04"> 상태 </label>
-                        <div>
+                        <div class="controls">
                             <select name = 'statusSelect' id = 'statusSelect' class = 'statusSelect'>
                                 <option value = 'start' <?php echo set_select('statusSelect', 'start', TRUE)?>>시작</option>
                                 <option value = 'inProgress' <?php echo set_select('statusSelect', 'inProgress')?>>진행중</option>
@@ -90,7 +90,7 @@
                             </select>
                         </div>
                     </div>
-                    <p></p>
+                    <p></p><p></p>
                     <div id = 'contentsDiv'>
                         <label class="control-label" for="input01">내용</label>
                         <div class="controls">
