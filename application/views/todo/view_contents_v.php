@@ -60,7 +60,7 @@
                     <a href="http://34.80.199.17/Main/write/" class="btn btn-success">쓰기</a>
                     <?php
                         if($accountInfo == $transAccountID)?>
-                            <a href="http://34.80.199.17/Main/edit/<?php echo $this -> uri -> segment(3);?>>" class="btn btn-success">수정</a>
+                            <a href="http://34.80.199.17/Main/edit/<?php echo $this -> uri -> segment(3);?>" class="btn btn-success">수정</a>
 
                 </th>
             </tr>
