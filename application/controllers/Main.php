@@ -21,6 +21,7 @@ class Main extends CI_Controller{
     }
 
     function lists(){
+        $this->load->library('pagination'); // 페이지 네이션 설정
         $tmpIP = $this->input->ip_address();
 
         if($tmpIP == '211.52.72.56' || $tmpIP == '106.245.165.216'){
@@ -39,7 +40,7 @@ class Main extends CI_Controller{
                 'id'=>'목록'
             );
 
-            $this->load->library('pagination'); // 페이지 네이션 설정
+
             $config['base_url'] = 'http://34.80.199.17/Main/lists'; //페이징 주소
 
             $config['per_page'] = 10; // 한 페이지에 표시할 게시물 수
