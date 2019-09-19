@@ -160,7 +160,7 @@ class Main extends CI_Controller{
         
     }
 
-    function edit(){
+    function edit($transID){
         $this->load->helper('alert');
         $param = array(
             'id'=>'수정'
@@ -168,8 +168,8 @@ class Main extends CI_Controller{
 
         if ( @$this -> session -> userdata('logged_in') == TRUE) {
 
-            $id = $this->uri->segment(3); //todo 번호에 해당하는 데이터 가져오기
-            $data['views'] = $this->todo_m->get_views($id);
+//            $id = $this->uri->segment(3); //todo 번호에 해당하는 데이터 가져오기
+            $data['views'] = $this->todo_m->get_views($transID);
 
             $this->load->view('header_v', $param);
             $this->load->view('todo/edit_contents_v', $data);
