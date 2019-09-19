@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="글 작성 시 상태 값 추가 시작" />
+    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="글 작성 시 상태 값 추가 시작">
+      <change beforePath="$PROJECT_DIR$/application/views/todo/write_contents_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/todo/write_contents_v.php" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -44,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
-              <caret line="89" column="26" lean-forward="true" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
+              <caret line="77" column="34" lean-forward="true" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#fieldset#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#fieldset#0;n#!!top" expanded="true" />
@@ -384,21 +386,7 @@
       <workItem from="1568622155478" duration="3941000" />
       <workItem from="1568626344333" duration="3922000" />
       <workItem from="1568681865818" duration="3891000" />
-      <workItem from="1568686261426" duration="8625000" />
-    </task>
-    <task id="LOCAL-00585" summary="글 검색 에서 페이징네이션 시작">
-      <created>1568621567550</created>
-      <option name="number" value="00585" />
-      <option name="presentableId" value="LOCAL-00585" />
-      <option name="project" value="LOCAL" />
-      <updated>1568621567550</updated>
-    </task>
-    <task id="LOCAL-00586" summary="글 검색 에서 페이징네이션 시작">
-      <created>1568621702225</created>
-      <option name="number" value="00586" />
-      <option name="presentableId" value="LOCAL-00586" />
-      <option name="project" value="LOCAL" />
-      <updated>1568621702225</updated>
+      <workItem from="1568686261426" duration="8908000" />
     </task>
     <task id="LOCAL-00587" summary="글 검색 에서 페이징네이션 시작">
       <created>1568622180608</created>
@@ -729,11 +717,25 @@
       <option name="project" value="LOCAL" />
       <updated>1568853924910</updated>
     </task>
-    <option name="localTasksCounter" value="634" />
+    <task id="LOCAL-00634" summary="글 작성 시 상태 값 추가 시작">
+      <created>1568854027315</created>
+      <option name="number" value="00634" />
+      <option name="presentableId" value="LOCAL-00634" />
+      <option name="project" value="LOCAL" />
+      <updated>1568854027315</updated>
+    </task>
+    <task id="LOCAL-00635" summary="글 작성 시 상태 값 추가 시작">
+      <created>1568854099757</created>
+      <option name="number" value="00635" />
+      <option name="presentableId" value="LOCAL-00635" />
+      <option name="project" value="LOCAL" />
+      <updated>1568854099757</updated>
+    </task>
+    <option name="localTasksCounter" value="636" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="279131000" />
+    <option name="totallyTimeSpent" value="279414000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1195,7 +1197,7 @@
     <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="89" column="26" lean-forward="true" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
+          <caret line="77" column="34" lean-forward="true" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#fieldset#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#fieldset#0;n#!!top" expanded="true" />

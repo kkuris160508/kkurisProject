@@ -90,7 +90,8 @@
                             </select>
                         </div>
                     </div>
-                    <p></p><p></p>
+                    <br>
+                    <p></p>
                     <div id = 'contentsDiv'>
                         <label class="control-label" for="input01">내용</label>
                         <div class="controls">
