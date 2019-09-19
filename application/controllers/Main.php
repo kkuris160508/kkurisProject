@@ -185,6 +185,9 @@ class Main extends CI_Controller{
 
             $result = $this->todo_m->getItemAccountInfo($accountNo);
 
+            $result2 = $this->debug->debug_var($result); // 시발 debug 를 소문자로...ㅡㅡ
+            echo $result2;
+
 //            $writer = $this -> session -> userdata('account_id');
 
             if($result > 0){
