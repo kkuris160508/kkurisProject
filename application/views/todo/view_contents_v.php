@@ -49,8 +49,6 @@
                 </th>
             </tr>
 
-
-
             </tbody>
             <tfoot>
             <tr>
@@ -66,5 +64,8 @@
             </tr>
             </tfoot>
         </table>
+
+        <?php echo $accountInfo;?>
+        <?php echo $transAccountID;?>
     </article>
 
