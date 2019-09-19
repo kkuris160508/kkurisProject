@@ -10,6 +10,7 @@
     <thead class="thead-dark">
     <tr>
         <th scope="col">번호</th>
+        <th scope="col">상태</th>
         <th scope="col">작성자</th>
         <th scope="col">제목</th>
 <!--        <th scope="col">내용</th>-->
