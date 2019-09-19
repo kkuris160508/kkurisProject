@@ -46,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="187" column="14" selection-start-line="187" selection-start-column="14" selection-end-line="200" selection-end-column="15" />
+            <state relative-caret-position="476">
+              <caret line="195" column="70" selection-start-line="195" selection-start-column="70" selection-end-line="195" selection-end-column="70" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#delete#0;n#Main#0;n#!!top" />
@@ -409,21 +409,7 @@
       <workItem from="1568622155478" duration="3941000" />
       <workItem from="1568626344333" duration="3922000" />
       <workItem from="1568681865818" duration="3891000" />
-      <workItem from="1568686261426" duration="21186000" />
-    </task>
-    <task id="LOCAL-00614" summary="캘린더 클래스 적용 시작">
-      <created>1568685657011</created>
-      <option name="number" value="00614" />
-      <option name="presentableId" value="LOCAL-00614" />
-      <option name="project" value="LOCAL" />
-      <updated>1568685657012</updated>
-    </task>
-    <task id="LOCAL-00615" summary="캘린더 클래스 적용 시작">
-      <created>1568685889926</created>
-      <option name="number" value="00615" />
-      <option name="presentableId" value="LOCAL-00615" />
-      <option name="project" value="LOCAL" />
-      <updated>1568685889926</updated>
+      <workItem from="1568686261426" duration="21447000" />
     </task>
     <task id="LOCAL-00616" summary="캘린더 클래스 적용 시작">
       <created>1568687198768</created>
@@ -754,11 +740,25 @@
       <option name="project" value="LOCAL" />
       <updated>1568871071187</updated>
     </task>
-    <option name="localTasksCounter" value="663" />
+    <task id="LOCAL-00663" summary="글 작성 시 상태 값 추가 시작">
+      <created>1568871238466</created>
+      <option name="number" value="00663" />
+      <option name="presentableId" value="LOCAL-00663" />
+      <option name="project" value="LOCAL" />
+      <updated>1568871238466</updated>
+    </task>
+    <task id="LOCAL-00664" summary="글 작성 시 상태 값 추가 시작">
+      <created>1568871362575</created>
+      <option name="number" value="00664" />
+      <option name="presentableId" value="LOCAL-00664" />
+      <option name="project" value="LOCAL" />
+      <updated>1568871362575</updated>
+    </task>
+    <option name="localTasksCounter" value="665" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="291692000" />
+    <option name="totallyTimeSpent" value="291953000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1219,8 +1219,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="187" column="14" selection-start-line="187" selection-start-column="14" selection-end-line="200" selection-end-column="15" />
+        <state relative-caret-position="476">
+          <caret line="195" column="70" selection-start-line="195" selection-start-column="70" selection-end-line="195" selection-end-column="70" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#delete#0;n#Main#0;n#!!top" />

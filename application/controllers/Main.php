@@ -191,6 +191,7 @@ class Main extends CI_Controller{
             if($subject !== '' && $content !== ''){
                 echo $subject;
                 echo $content;
+                echo $inputID;
                 $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
                 $data['edit'] = $this->todo_m->set_edit_views($inputID, $subject, $content);
