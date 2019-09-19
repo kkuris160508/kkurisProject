@@ -32,7 +32,7 @@
         </th>
         <th name = 'subject'>
             <?php $tmpSubject = $views -> subject;?>
-            <?php echo form_input('subject',set_value('subject'), "placeholder='{$tmpSubject}'")?>
+            <?php echo form_input('subject','', "placeholder='{$tmpSubject}'")?>
         </th>
         <th>
             <?php echo $views -> created_on;?>
@@ -49,9 +49,9 @@
     </tr>
     <tr>
         <th rowspan="2">내용</th>
-        <th colspan="6" name = 'contents'>
+        <th colspan="6" name = 'content'>
             <?php $tmpContent = $views -> content;?>
-            <?php echo form_input('content',set_value('contents'),"placeholder='{$tmpContent}'")?>
+            <?php echo form_input('content','',"placeholder='{$tmpContent}'")?>
         </th>
     </tr>
 
