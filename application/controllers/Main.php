@@ -228,6 +228,8 @@ class Main extends CI_Controller{
 //            echo $result2;
 
 
+        } else {
+            alert('로그인 부터 먼저','/Main/lists');
         }
     }
 
