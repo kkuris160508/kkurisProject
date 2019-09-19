@@ -101,7 +101,7 @@ class Todo_m extends CI_Model{
         return $result;
     }
 
-    function set_edit_views($id, $subject, $content){
+    function set_edit_views($id, $subject, $content, $status){
         $addQuery = '';
 
         if($subject !== ''){
@@ -109,6 +109,9 @@ class Todo_m extends CI_Model{
         }
         if($content !== ''){
             $addQuery .= ",content = '{$content}'";
+        }
+        if($status !== ''){
+            $addQuery .= ",status = '{$status}'";
         }
 
         $sql = "UPDATE items SET {$addQuery} WHERE id = '{$id}'";

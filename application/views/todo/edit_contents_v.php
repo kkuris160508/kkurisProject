@@ -19,8 +19,12 @@
     </tr>
     <tr>
         <th>
-            <?php echo $views -> status;?>
-
+<!--            --><?php //echo $views -> status;?>
+            <select name = 'statusSelect' id = 'statusSelect' class = 'statusSelect'>
+                <option value = 'start' <?php echo set_select('statusSelect', 'start', TRUE)?>>시작</option>
+                <option value = 'inProgress' <?php echo set_select('statusSelect', 'inProgress')?>>진행중</option>
+                <option value = 'resolved' <?php echo set_select('statusSelect', 'resolved')?>>완료</option>
+            </select>
         </th>
         <th>
             <a href="mailto:<?php echo $views -> EMAIL?>"><?php echo $views -> account_id;?></a>
@@ -28,8 +32,8 @@
             <?php $transAccountID = $views->account_id;?>
         </th>
         <th>
-<!--            --><?php //echo $views -> subject;?>
-            <?php echo form_input('subject',set_value($views->subject))?>
+            <?php $tmpSubject = $views -> subject;?>
+            <?php echo form_input('subject',set_value($views->subject), "placeholder='{$tmpSubject}'")?>
         </th>
         <th>
             <?php echo $views -> created_on;?>

@@ -185,13 +185,14 @@ class Main extends CI_Controller{
             $subject = $this->input->post('subject', TRUE);
             $content = $this->input->post('content', TRUE);
             $postID = $this->input->post('id', TRUE);
+            $fixStatus = $this->input->post('statusSelect', TRUE);
 
 
             if($subject !== '' && $content !== ''){
 
                 $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
-                $data['edit'] = $this->todo_m->set_edit_views($postID, $subject, $content);
+                $data['edit'] = $this->todo_m->set_edit_views($postID, $subject, $content, $fixStatus);
 //                $result2 = $this->debug->debug_var($data); // 시발 debug 를 소문자로...ㅡㅡ
 //                echo $result2;
 //
