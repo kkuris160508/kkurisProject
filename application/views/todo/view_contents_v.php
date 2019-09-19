@@ -60,8 +60,8 @@
                     <a href="http://34.80.199.17/Main/write/" class="btn btn-success">쓰기</a>
                     <?php
                         if($accountInfo == $transAccountID)?><a href="http://34.80.199.17/Main/edit/>" class="btn btn-success">수정</a>
-                    <?php
-                        else?><a class="btn btn-primary" onclick="alert('수정불가');">
+<!--                    --><?php
+//                        else?><!--<a class="btn btn-primary" onclick="alert('수정불가');">-->
                 </th>
             </tr>
             </tfoot>
