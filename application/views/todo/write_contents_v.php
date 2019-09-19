@@ -25,13 +25,7 @@
                         'placeholder' => 'YYYY-MM-DD'
                     );
                     ?>
-                    <div>
-                        <select name = 'statusSelect' id = 'statusSelect' class = 'statusSelect'>
-                            <option value = 'start' <?php echo set_select('statusSelect', 'start', TRUE)?>>시작</option>
-                            <option value = 'inProgress' <?php echo set_select('statusSelect', 'inProgress')?>>진행중</option>
-                            <option value = 'resolved' <?php echo set_select('statusSelect', 'resolved')?>>완료</option>
-                        </select>
-                    </div>
+
                     <div id = 'subjectDiv' style="float: left;">
                         <label class="control-label" for="input00">제목</label>
                         <div class="controls">
@@ -85,6 +79,13 @@
                             </p>
                             </div>
                         </div>
+                    </div>
+                    <div>
+                        <select name = 'statusSelect' id = 'statusSelect' class = 'statusSelect'>
+                            <option value = 'start' <?php echo set_select('statusSelect', 'start', TRUE)?>>시작</option>
+                            <option value = 'inProgress' <?php echo set_select('statusSelect', 'inProgress')?>>진행중</option>
+                            <option value = 'resolved' <?php echo set_select('statusSelect', 'resolved')?>>완료</option>
+                        </select>
                     </div>
                     <div id = 'contentsDiv'>
                         <label class="control-label" for="input01">내용</label>
