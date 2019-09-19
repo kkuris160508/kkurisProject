@@ -176,21 +176,12 @@ class Main extends CI_Controller{
         if ( @$this -> session -> userdata('logged_in') == TRUE) {
 
             $id = $this->uri->segment(3);
-            $accountNo = $this->uri->segment(4);
-            $accountID = $this->uri->segment(5);
-
-            echo $accountNo;
-            echo $accountID;
-            echo $id;
-
-            $result = $this->todo_m->getItemAccountInfo($accountNo);
-
-            $result2 = $this->debug->debug_var($result); // 시발 debug 를 소문자로...ㅡㅡ
-            echo $result2;
-
+//            $accountNo = $this->uri->segment(4);
+//            $accountID = $this->uri->segment(5);
+//
 //            $writer = $this -> session -> userdata('account_id');
-
-            if($result > 0){
+//
+//            if($accountID == $writer){
 
                 $data['views'] = $this->todo_m->get_views($id);
 
@@ -218,10 +209,10 @@ class Main extends CI_Controller{
 
                 }
 
-
-            } else {
-                alert('수정 할 권한이 없습니다.','/Main/lists');
-            }
+//
+//            } else {
+//                alert('수정할 할 권한이 없습니다.','/Main/lists');
+//            }
 
 
 
@@ -231,8 +222,6 @@ class Main extends CI_Controller{
 //            echo $result2;
 
 
-        } else {
-            alert('로그인 부터 먼저','/Main/lists');
         }
     }
 
