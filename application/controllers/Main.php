@@ -195,9 +195,9 @@ class Main extends CI_Controller{
                 $result2 = $this->debug->debug_var($data); // 시발 debug 를 소문자로...ㅡㅡ
                 echo $result2;
 //
-//                if($data['edit'] == 1){
-//                    alert('수정되었습니다.','/Main/view/'.$postID);
-//                }
+                if($data['edit'] == 1){
+                    alert('수정되었습니다.','/Main/view/'.$postID);
+                }
 
             } else {
                 $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
