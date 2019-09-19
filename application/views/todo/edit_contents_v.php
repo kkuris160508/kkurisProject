@@ -1,7 +1,7 @@
 <?php echo form_open('/Main/edit')?>
 <?php
     $extOpt = array(
-      'width' => '100%',
+      'style'       =>'width:100%',
       'placeholder' => $tmpContent
     );
 ?>
@@ -57,7 +57,7 @@
         <th rowspan="2">내용</th>
         <th colspan="6">
             <?php $tmpContent = $views -> content;?>
-            <?php echo form_input('content',set_value($views->content),$extOpt)?>
+            <?php echo form_input('content',set_value($views->content),"")?>
         </th>
     </tr>
 
