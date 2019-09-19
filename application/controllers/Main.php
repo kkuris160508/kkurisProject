@@ -179,6 +179,10 @@ class Main extends CI_Controller{
             $accountNo = $this->uri->segment(4);
             $accountID = $this->uri->segment(5);
 
+            echo $accountNo;
+            echo $accountID;
+            echo $id;
+
             $writer = $this -> session -> userdata('account_id');
 
             if($accountID == $writer){
