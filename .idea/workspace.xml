@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="글 작성 시 상태 값 추가 시작">
-      <change beforePath="$PROJECT_DIR$/application/views/todo/write_contents_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/todo/write_contents_v.php" afterDir="false" />
-    </list>
+    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="글 작성 시 상태 값 추가 시작" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -45,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="83" column="65" lean-forward="true" selection-start-line="83" selection-start-column="65" selection-end-line="83" selection-end-column="65" />
+            <state relative-caret-position="442">
+              <caret line="89" column="26" lean-forward="true" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#fieldset#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#fieldset#0;n#!!top" expanded="true" />
@@ -386,14 +384,7 @@
       <workItem from="1568622155478" duration="3941000" />
       <workItem from="1568626344333" duration="3922000" />
       <workItem from="1568681865818" duration="3891000" />
-      <workItem from="1568686261426" duration="8378000" />
-    </task>
-    <task id="LOCAL-00584" summary="글 검색 에서 페이징네이션 시작">
-      <created>1568621342477</created>
-      <option name="number" value="00584" />
-      <option name="presentableId" value="LOCAL-00584" />
-      <option name="project" value="LOCAL" />
-      <updated>1568621342477</updated>
+      <workItem from="1568686261426" duration="8625000" />
     </task>
     <task id="LOCAL-00585" summary="글 검색 에서 페이징네이션 시작">
       <created>1568621567550</created>
@@ -731,11 +722,18 @@
       <option name="project" value="LOCAL" />
       <updated>1568853762676</updated>
     </task>
-    <option name="localTasksCounter" value="633" />
+    <task id="LOCAL-00633" summary="글 작성 시 상태 값 추가 시작">
+      <created>1568853924910</created>
+      <option name="number" value="00633" />
+      <option name="presentableId" value="LOCAL-00633" />
+      <option name="project" value="LOCAL" />
+      <updated>1568853924910</updated>
+    </task>
+    <option name="localTasksCounter" value="634" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="278884000" />
+    <option name="totallyTimeSpent" value="279131000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1196,8 +1194,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="83" column="65" lean-forward="true" selection-start-line="83" selection-start-column="65" selection-end-line="83" selection-end-column="65" />
+        <state relative-caret-position="442">
+          <caret line="89" column="26" lean-forward="true" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#fieldset#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#fieldset#0;n#!!top" expanded="true" />
