@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="캘린더 클래스 적용 시작">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="글 작성 시 상태 값 추가 시작">
       <change beforePath="$PROJECT_DIR$/application/views/todo/write_contents_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/todo/write_contents_v.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -46,8 +45,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+            <state relative-caret-position="544">
+              <caret line="83" column="65" lean-forward="true" selection-start-line="83" selection-start-column="65" selection-end-line="83" selection-end-column="65" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#fieldset#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#fieldset#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,7 +122,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>insert_account_todo</find>
       <find>insert_todo</find>
       <find>custom_alpha_numeric</find>
       <find>custom_min_length</find>
@@ -149,6 +151,7 @@
       <find>getSearchItems</find>
       <find>enable_profiler</find>
       <find>&lt;select</find>
+      <find>&lt;option value</find>
     </findStrings>
     <replaceStrings>
       <replace>PW</replace>
@@ -383,28 +386,7 @@
       <workItem from="1568622155478" duration="3941000" />
       <workItem from="1568626344333" duration="3922000" />
       <workItem from="1568681865818" duration="3891000" />
-      <workItem from="1568686261426" duration="7822000" />
-    </task>
-    <task id="LOCAL-00581" summary="글 검색 에서 페이징네이션 시작">
-      <created>1568620332492</created>
-      <option name="number" value="00581" />
-      <option name="presentableId" value="LOCAL-00581" />
-      <option name="project" value="LOCAL" />
-      <updated>1568620332493</updated>
-    </task>
-    <task id="LOCAL-00582" summary="글 검색 에서 페이징네이션 시작">
-      <created>1568620424663</created>
-      <option name="number" value="00582" />
-      <option name="presentableId" value="LOCAL-00582" />
-      <option name="project" value="LOCAL" />
-      <updated>1568620424663</updated>
-    </task>
-    <task id="LOCAL-00583" summary="글 검색 에서 페이징네이션 시작">
-      <created>1568620529418</created>
-      <option name="number" value="00583" />
-      <option name="presentableId" value="LOCAL-00583" />
-      <option name="project" value="LOCAL" />
-      <updated>1568620529418</updated>
+      <workItem from="1568686261426" duration="8378000" />
     </task>
     <task id="LOCAL-00584" summary="글 검색 에서 페이징네이션 시작">
       <created>1568621342477</created>
@@ -728,11 +710,32 @@
       <option name="project" value="LOCAL" />
       <updated>1568699350419</updated>
     </task>
-    <option name="localTasksCounter" value="630" />
+    <task id="LOCAL-00630" summary="글 작성 시 상태 값 추가 시작">
+      <created>1568853235439</created>
+      <option name="number" value="00630" />
+      <option name="presentableId" value="LOCAL-00630" />
+      <option name="project" value="LOCAL" />
+      <updated>1568853235439</updated>
+    </task>
+    <task id="LOCAL-00631" summary="글 작성 시 상태 값 추가 시작">
+      <created>1568853423952</created>
+      <option name="number" value="00631" />
+      <option name="presentableId" value="LOCAL-00631" />
+      <option name="project" value="LOCAL" />
+      <updated>1568853423952</updated>
+    </task>
+    <task id="LOCAL-00632" summary="글 작성 시 상태 값 추가 시작">
+      <created>1568853762676</created>
+      <option name="number" value="00632" />
+      <option name="presentableId" value="LOCAL-00632" />
+      <option name="project" value="LOCAL" />
+      <updated>1568853762676</updated>
+    </task>
+    <option name="localTasksCounter" value="633" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="278328000" />
+    <option name="totallyTimeSpent" value="278884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -815,7 +818,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="버그수정" />
     <MESSAGE value="회원가입시 한글 불가" />
     <MESSAGE value="form_validation 에서 받는 변수명 변경" />
     <MESSAGE value="view contents v 작성자 노출 안되는 부분 수정" />
@@ -840,7 +842,8 @@
     <MESSAGE value="페이징네이션 시작" />
     <MESSAGE value="글 검색 에서 페이징네이션 시작" />
     <MESSAGE value="캘린더 클래스 적용 시작" />
-    <option name="LAST_COMMIT_MESSAGE" value="캘린더 클래스 적용 시작" />
+    <MESSAGE value="글 작성 시 상태 값 추가 시작" />
+    <option name="LAST_COMMIT_MESSAGE" value="글 작성 시 상태 값 추가 시작" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/application/views/Join/join_ok_view.php">
@@ -1193,8 +1196,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+        <state relative-caret-position="544">
+          <caret line="83" column="65" lean-forward="true" selection-start-line="83" selection-start-column="65" selection-end-line="83" selection-end-column="65" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#fieldset#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#fieldset#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

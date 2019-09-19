@@ -81,7 +81,7 @@
                         </div>
                     </div>
                     <div>
-                        <label class="control-label"> 상태 </label>
+                        <label class="control-label" for="input04"> 상태 </label>
                         <select name = 'statusSelect' id = 'statusSelect' class = 'statusSelect'>
                             <option value = 'start' <?php echo set_select('statusSelect', 'start', TRUE)?>>시작</option>
                             <option value = 'inProgress' <?php echo set_select('statusSelect', 'inProgress')?>>진행중</option>
