@@ -2,7 +2,7 @@
 <?php
     $extOpt = array(
       'width' => '100%',
-      'placeholder' => '{$tmpContent}'
+      'placeholder' => $tmpContent
     );
 ?>
 <table class="table table-striped">
