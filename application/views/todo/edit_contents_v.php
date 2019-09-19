@@ -1,10 +1,4 @@
 <?php echo form_open('/Main/edit')?>
-<?php
-    $extOpt = array(
-      'style'       => 'width:100%',
-      'placeholder' => $tmpContent
-    );
-?>
 <table class="table table-striped">
     <thead class="thead-dark">
     <tr>
@@ -57,7 +51,7 @@
         <th rowspan="2">내용</th>
         <th colspan="6">
             <?php $tmpContent = $views -> content;?>
-            <?php echo form_input('content',set_value($views->content),"placeholder={$tmpContent}")?>
+            <?php echo form_input('content',set_value($views->content),"placeholder='{$tmpContent}'")?>
         </th>
     </tr>
 
