@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="글 작성 시 상태 값 추가 시작">
-      <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/todo/edit_contents_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/todo/edit_contents_v.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,7 +22,7 @@
               <entry file="file://$PROJECT_DIR$/application/views/todo/edit_contents_v.php">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="493">
-                    <caret line="29" column="96" lean-forward="true" selection-start-line="29" selection-start-column="96" selection-end-line="29" selection-end-column="96" />
+                    <caret line="34" column="96" lean-forward="true" selection-start-line="34" selection-start-column="96" selection-end-line="34" selection-end-column="96" />
                   </state>
                 </provider>
               </entry>
@@ -46,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/todo/edit_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="96" lean-forward="true" selection-start-line="29" selection-start-column="96" selection-end-line="29" selection-end-column="96" />
+            <state relative-caret-position="1003">
+              <caret line="59" column="78" selection-start-line="59" selection-start-column="78" selection-end-line="59" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -248,10 +248,10 @@
         <option value="$PROJECT_DIR$/application/views/todo/list_contents_v.php" />
         <option value="$PROJECT_DIR$/application/views/header_v.php" />
         <option value="$PROJECT_DIR$/application/views/todo/write_contents_v.php" />
-        <option value="$PROJECT_DIR$/application/views/todo/edit_contents_v.php" />
         <option value="$PROJECT_DIR$/application/models/Todo_m.php" />
         <option value="$PROJECT_DIR$/application/views/todo/view_contents_v.php" />
         <option value="$PROJECT_DIR$/application/controllers/Main.php" />
+        <option value="$PROJECT_DIR$/application/views/todo/edit_contents_v.php" />
       </list>
     </option>
   </component>
@@ -409,35 +409,7 @@
       <workItem from="1568626344333" duration="3922000" />
       <workItem from="1568681865818" duration="3891000" />
       <workItem from="1568686261426" duration="24428000" />
-      <workItem from="1568874577929" duration="274000" />
-    </task>
-    <task id="LOCAL-00632" summary="글 작성 시 상태 값 추가 시작">
-      <created>1568853762676</created>
-      <option name="number" value="00632" />
-      <option name="presentableId" value="LOCAL-00632" />
-      <option name="project" value="LOCAL" />
-      <updated>1568853762676</updated>
-    </task>
-    <task id="LOCAL-00633" summary="글 작성 시 상태 값 추가 시작">
-      <created>1568853924910</created>
-      <option name="number" value="00633" />
-      <option name="presentableId" value="LOCAL-00633" />
-      <option name="project" value="LOCAL" />
-      <updated>1568853924910</updated>
-    </task>
-    <task id="LOCAL-00634" summary="글 작성 시 상태 값 추가 시작">
-      <created>1568854027315</created>
-      <option name="number" value="00634" />
-      <option name="presentableId" value="LOCAL-00634" />
-      <option name="project" value="LOCAL" />
-      <updated>1568854027315</updated>
-    </task>
-    <task id="LOCAL-00635" summary="글 작성 시 상태 값 추가 시작">
-      <created>1568854099757</created>
-      <option name="number" value="00635" />
-      <option name="presentableId" value="LOCAL-00635" />
-      <option name="project" value="LOCAL" />
-      <updated>1568854099757</updated>
+      <workItem from="1568874577929" duration="517000" />
     </task>
     <task id="LOCAL-00636" summary="글 작성 시 상태 값 추가 시작">
       <created>1568854440832</created>
@@ -754,11 +726,39 @@
       <option name="project" value="LOCAL" />
       <updated>1568874614782</updated>
     </task>
-    <option name="localTasksCounter" value="681" />
+    <task id="LOCAL-00681" summary="글 작성 시 상태 값 추가 시작">
+      <created>1568874963081</created>
+      <option name="number" value="00681" />
+      <option name="presentableId" value="LOCAL-00681" />
+      <option name="project" value="LOCAL" />
+      <updated>1568874963081</updated>
+    </task>
+    <task id="LOCAL-00682" summary="글 작성 시 상태 값 추가 시작">
+      <created>1568875012919</created>
+      <option name="number" value="00682" />
+      <option name="presentableId" value="LOCAL-00682" />
+      <option name="project" value="LOCAL" />
+      <updated>1568875012919</updated>
+    </task>
+    <task id="LOCAL-00683" summary="글 작성 시 상태 값 추가 시작">
+      <created>1568875083375</created>
+      <option name="number" value="00683" />
+      <option name="presentableId" value="LOCAL-00683" />
+      <option name="project" value="LOCAL" />
+      <updated>1568875083375</updated>
+    </task>
+    <task id="LOCAL-00684" summary="글 작성 시 상태 값 추가 시작">
+      <created>1568875092033</created>
+      <option name="number" value="00684" />
+      <option name="presentableId" value="LOCAL-00684" />
+      <option name="project" value="LOCAL" />
+      <updated>1568875092033</updated>
+    </task>
+    <option name="localTasksCounter" value="685" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="295208000" />
+    <option name="totallyTimeSpent" value="295451000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1217,8 +1217,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/todo/edit_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="96" lean-forward="true" selection-start-line="29" selection-start-column="96" selection-end-line="29" selection-end-column="96" />
+        <state relative-caret-position="1003">
+          <caret line="59" column="78" selection-start-line="59" selection-start-column="78" selection-end-line="59" selection-end-column="78" />
         </state>
       </provider>
     </entry>
