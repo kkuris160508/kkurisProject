@@ -88,6 +88,7 @@
                             <option value = 'resolved' <?php echo set_select('statusSelect', 'resolved')?>>완료</option>
                         </select>
                     </div>
+                    <p></p>
                     <div id = 'contentsDiv'>
                         <label class="control-label" for="input01">내용</label>
                         <div class="controls">
