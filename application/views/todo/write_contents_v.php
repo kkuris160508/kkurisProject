@@ -62,7 +62,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id = 'endDateDiv' style="margin-left: 50px;">
+                    <div id = 'endDateDiv' style="margin-left: 50px; float:left;">
                         <label class="control-label" for="input03">종료일</label>
                         <div class="controls">
                             <!--                        <input type="text" class="input-xlarge" id="input03" name="due_date">-->
@@ -81,6 +81,7 @@
                         </div>
                     </div>
                     <div>
+                        <label class="control-label"> 상태 </label>
                         <select name = 'statusSelect' id = 'statusSelect' class = 'statusSelect'>
                             <option value = 'start' <?php echo set_select('statusSelect', 'start', TRUE)?>>시작</option>
                             <option value = 'inProgress' <?php echo set_select('statusSelect', 'inProgress')?>>진행중</option>
