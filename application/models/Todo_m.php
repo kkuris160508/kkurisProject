@@ -106,12 +106,22 @@ class Todo_m extends CI_Model{
 
         if($subject !== ''){
             $addQuery = "subject = '{$subject}'";
+            $addQuery .= ",";
+        } else {
+            $addQuery = '';
         }
+
         if($content !== ''){
-            $addQuery .= ",content = '{$content}'";
+            $addQuery .= "content = '{$content}'";
+            $addQuery .= ",";
+        } else {
+            $addQuery = '';
         }
         if($status !== ''){
-            $addQuery .= ",status = '{$status}'";
+            $addQuery .= "status = '{$status}'";
+            $addQuery .= ",";
+        } else {
+            $addQuery = '';
         }
 
         $sql = "UPDATE items SET {$addQuery} WHERE id = '{$id}'";

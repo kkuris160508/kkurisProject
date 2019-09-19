@@ -200,6 +200,11 @@ class Main extends CI_Controller{
                 $postID = $this->input->post('id', TRUE);
                 $fixStatus = $this->input->post('statusSelect', TRUE);
 
+                echo $subject."<br>";
+            echo $content."<br>";
+            echo $fixStatus."<br>";
+
+
 
                 if($subject !== '' || $content !== '' || $fixStatus !== ''){
 
