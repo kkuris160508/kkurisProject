@@ -111,7 +111,7 @@ class Todo_m extends CI_Model{
             $addQuery .= ",content = {$content}";
         }
 
-        $sql = "UPDATE items SET {$addQuery} WHERE id = {$id}";
+        $sql = "UPDATE items SET '{$addQuery}' WHERE id = '{$id}'";
 
         $query = $this->db->query($sql);
 
