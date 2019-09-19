@@ -195,7 +195,7 @@ class Main extends CI_Controller{
                 $fixStatus = $this->input->post('statusSelect', TRUE);
 
 
-                if($subject !== '' && $content !== ''){
+                if($subject !== '' || $content !== '' || $fixStatus !== ''){
 
                     $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
@@ -207,14 +207,11 @@ class Main extends CI_Controller{
                         alert('수정되었습니다.','/Main/view/'.$postID);
                     }
 
-                } else {
-                    $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
-                    echo 'f**k';
                 }
 
 
             } else {
-                alert('삭제 할 권한이 없습니다.','/Main/lists');
+                alert('수정할 할 권한이 없습니다.','/Main/lists');
             }
 
 
