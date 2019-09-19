@@ -51,7 +51,7 @@
         <th rowspan="2">내용</th>
         <th colspan="6" name = 'contents'>
             <?php $tmpContent = $views -> content;?>
-            <?php echo form_input('content',set_value('contents'),"placeholder='{$tmpContent}'")?>
+            <?php echo form_input('content',set_value($tmpContent),"placeholder='{$tmpContent}'")?>
         </th>
     </tr>
 
