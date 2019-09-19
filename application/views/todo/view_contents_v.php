@@ -62,7 +62,7 @@
                         if($accountInfo == $transAccountID){?>
                             <a href="http://34.80.199.17/Main/edit/<?php echo $this -> uri -> segment(3);?>>" class="btn btn-success">수정</a>
                         <?} else {?>
-                            <a class="btn btn-primary" onclick="alert('수정불가');">
+                            <a class="btn btn-primary" onclick="alert('수정불가');">수정</a>
                         <?}?>
                 </th>
             </tr>
