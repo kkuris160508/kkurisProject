@@ -58,6 +58,8 @@
                     <a href="http://34.80.199.17/Main/write/" class="btn btn-success">쓰기</a>
                     <?php if($accountInfo == $transAccountID):?>
                             <a href="http://34.80.199.17/Main/edit/<?php echo $this -> uri -> segment(3);?>" class="btn btn-success">수정</a>
+                    <?php else:?>
+                            <a href="http://34.80.199.17/Main/lists/" class="btn btn-primary" onclick="alert('수정불가')">수정불가</a>
                     <?php endif;?>
 
                 </th>
