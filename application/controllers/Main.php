@@ -178,7 +178,15 @@ class Main extends CI_Controller{
             $subject = $this->input->post('subject', TRUE);
             $content = $this->input->post('content', TRUE);
 
-            $data['edit'] = $this->todo_m->set_edit_views($id, $subject, $content);
+            if($subject !== '' && $content !== ''){
+                $data['edit'] = $this->todo_m->set_edit_views($transID, $subject, $content);
+                            $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+            } else {
+                            $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+                echo 'f**k';
+            }
+
+
 
             $result2 = $this->debug->debug_var($data);
             echo $result2;
