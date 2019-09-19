@@ -3,6 +3,7 @@
     $extOpt = array(
       'data'        => 'content',
       'style'       => 'width:100%',
+      'value'       => set_value($views->content),
       'placeholder' => $tmpContent
     );
 ?>
