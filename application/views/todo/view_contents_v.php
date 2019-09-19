@@ -2,11 +2,12 @@
         <table class="table table-striped">
             <thead class="thead-dark">
             <tr>
-                <th colspan = "6"><?php echo $views -> id;?> 번 할일</th>
+                <th colspan = "7"><?php echo $views -> id;?> 번 할일</th>
             </tr>
             </thead>
             <tbody>
             <tr>
+                <th scope="col">상태</th>
                 <th scope="col">작성자</th>
                 <th scope="col">제목</th>
                 <th scope="col">시작일</th>
@@ -15,6 +16,9 @@
                 <th scope="col">작성일</th>
             </tr>
             <tr>
+                <th>
+                    <?php echo $views -> status;?>
+                </th>
                 <th>
                     <a href="mailto:<?php echo $views -> EMAIL?>"><?php echo $views -> account_id;?></a>
                     <?php $transID = $views->no;?>
@@ -52,6 +56,7 @@
                     <a href="http://34.80.199.17/Main/lists/" class="btn btn-primary">목록</a>
                     <a href="http://34.80.199.17/Main/delete/<?php echo $this -> uri -> segment(3); ?>/<?php echo $transID; ?>/<?php echo $transAccountID; ?>" class="btn btn-danger">삭제</a>
                     <a href="http://34.80.199.17/Main/write/" class="btn btn-success">쓰기</a>
+                    <a href="http://34.80.199.17/Main/edit/" class="btn btn-success">수정</a>
                 </th>
             </tr>
             </tfoot>

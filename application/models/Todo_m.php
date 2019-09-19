@@ -84,6 +84,7 @@ class Todo_m extends CI_Model{
         $sql = "SELECT it.id, it.subject, it.content, it.used, it.hit, it.writer, it.writetime, 
                     (CASE WHEN created_on = '0000-00-00' THEN '1970-01-01' ELSE created_on END) AS created_on,
                     (CASE WHEN due_date = '0000-00-00' THEN '1970-01-01' ELSE due_date END) AS due_date,
+                    (CASE WHEN it.status = 'start' THEN '시작' WHEN it.status = 'inProgress' THEN '진행중' WHEN it.status = 'resolved' THEN '완료' END) AS status,
                     acc.*
                 FROM items AS it
                 LEFT JOIN accountTB AS acc ON it.writer = acc.no
@@ -100,11 +101,35 @@ class Todo_m extends CI_Model{
         return $result;
     }
 
+    function set_edit_views($id, $subject, $content){
+        $addQuery = '';
+
+        if($subject !== ''){
+            $addQuery .= "subject = {$subject}";
+        }
+        if($content !== ''){
+            $addQuery .= "content = {$content}";
+        }
+
+        $sql = "UPDATE items SET {$addQuery}, {$addQuery} WHERE id = {$id}";
+
+        $query = $this->db->query($sql);
+    }
+
     function updateIncreaseReadCount($id){
 
         $sql1 = "UPDATE items SET hit = hit + 1 WHERE id = '".$id."'"; //조회수 증가 쿼리
 
         $this->db->query($sql1);
+
+        if($this->db->affected_rows() == 0){
+
+            return 0;
+
+        } else {
+
+            return 1;
+        }
     }
 
     function insert_todo($subject, $content, $created_on, $due_date, $writer, $status){
