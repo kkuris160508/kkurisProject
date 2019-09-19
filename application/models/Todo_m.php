@@ -105,7 +105,7 @@ class Todo_m extends CI_Model{
         $addQuery = '';
 
         if($subject !== ''){
-            $addQuery .= "subject = {$subject}";
+            $addQuery = "subject = {$subject}";
         }
         if($content !== ''){
             $addQuery .= "content = {$content}";
