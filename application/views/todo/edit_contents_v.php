@@ -54,6 +54,11 @@
             <?php echo form_input('content','',"placeholder='{$tmpContent}'")?>
         </th>
     </tr>
+    <tr>
+        <div class="form-actions">
+            <input type="submit" class="btn btn-primary" id="write_btn" value="완료" />
+        </div>
+    </tr>
 
 
 
@@ -65,9 +70,7 @@
 <!--        </th>-->
 <!--    </tr>-->
     </tfoot>
-    <div class="form-actions">
-        <input type="submit" class="btn btn-primary" id="write_btn" value="완료" />
-    </div>
+
 </table>
 </article>
 
