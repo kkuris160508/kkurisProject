@@ -211,7 +211,7 @@ class Main extends CI_Controller{
 
 
             } else {
-                alert('수정할 할 권한이 없습니다.','/Main/lists');
+                alert('수정 할 권한이 없습니다.','/Main/lists');
             }
 
 
