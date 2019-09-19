@@ -183,9 +183,11 @@ class Main extends CI_Controller{
             echo $accountID;
             echo $id;
 
-            $writer = $this -> session -> userdata('account_id');
+            $result = $this->todo_m->getItemAccountInfo($accountNo);
 
-            if($accountID == $writer){
+//            $writer = $this -> session -> userdata('account_id');
+
+            if($result > 0){
 
                 $data['views'] = $this->todo_m->get_views($id);
 

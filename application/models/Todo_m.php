@@ -230,6 +230,19 @@ class Todo_m extends CI_Model{
 
     }
 
+    function getItemAccountInfo($accountID){
+        $sql = "SELECT * FROM ITEMS AS it 
+                LEFT JOIN accountTB AS acc
+                ON it.writer = acc.no
+                WHERE it.writer = {$accountID}";
+
+        $query = $this->db->query($sql);
+
+        $result = $query -> num_rows();
+
+        return $result;
+    }
+
 }
 
 ?>
