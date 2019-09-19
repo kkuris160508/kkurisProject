@@ -87,6 +87,8 @@ class Main extends CI_Controller{
             $id = $this->uri->segment(3); //todo 번호에 해당하는 데이터 가져오기
             $data['views'] = $this->todo_m->get_views($id);
 
+            echo $this->session->userdata('account_id');
+
 //        $result2 = $this->debug->debug_var($data); // 시발 debug 를 소문자로...ㅡㅡ
 //        echo $result2;
             $this->increaseReadCnt($id);
