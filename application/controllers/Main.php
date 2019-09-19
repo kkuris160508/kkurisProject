@@ -145,7 +145,7 @@ class Main extends CI_Controller{
                 $this->todo_m->insert_todo($subject, $content, $created_on, $due_date, $result[0]->no, $status); //전송받은 데이터를 파라미터로 todo_m 에 insert_todo 함수 실행
 
 
-                alert('작성이 완료 되었습니다.', '/Main/lists');
+//                alert('작성이 완료 되었습니다.', '/Main/lists');
 //                redirect('/Main/lists');
 
             } else {
