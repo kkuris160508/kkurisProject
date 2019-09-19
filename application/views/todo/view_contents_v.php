@@ -57,7 +57,7 @@
                     <a href="http://34.80.199.17/Main/lists/" class="btn btn-primary">목록</a>
                     <a href="http://34.80.199.17/Main/delete/<?php echo $this -> uri -> segment(3); ?>/<?php echo $transID; ?>/<?php echo $transAccountID; ?>" class="btn btn-danger">삭제</a>
                     <a href="http://34.80.199.17/Main/write/" class="btn btn-success">쓰기</a>
-                    <a href="http://34.80.199.17/Main/edit/<?php echo $this -> uri -> segment(3); ?>" class="btn btn-success">수정</a>
+                    <a href="http://34.80.199.17/Main/edit/<?php echo $this -> uri -> segment(3); ?>/<?php echo $transID; ?>/<?php echo $transAccountID; ?>" class="btn btn-success">수정</a>
                 </th>
             </tr>
             </tfoot>

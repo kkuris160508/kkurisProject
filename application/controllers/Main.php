@@ -175,35 +175,49 @@ class Main extends CI_Controller{
 
         if ( @$this -> session -> userdata('logged_in') == TRUE) {
 
-            $id = $this->uri->segment(3); //todo 번호에 해당하는 데이터 가져오기
-            $data['views'] = $this->todo_m->get_views($id);
+            $id = $this->uri->segment(3);
+            $accountNo = $this->uri->segment(4);
+            $accountID = $this->uri->segment(5);
 
-            $this->load->view('header_v', $param);
-            $this->load->view('todo/edit_contents_v', $data);
-            $this->load->view('todo/footer_v');
+            $writer = $this -> session -> userdata('account_id');
 
-            $subject = $this->input->post('subject', TRUE);
-            $content = $this->input->post('content', TRUE);
-            $postID = $this->input->post('id', TRUE);
-            $fixStatus = $this->input->post('statusSelect', TRUE);
+            if($accountID == $writer){
+
+                $data['views'] = $this->todo_m->get_views($id);
+
+                $this->load->view('header_v', $param);
+                $this->load->view('todo/edit_contents_v', $data);
+                $this->load->view('todo/footer_v');
+
+                $subject = $this->input->post('subject', TRUE);
+                $content = $this->input->post('content', TRUE);
+                $postID = $this->input->post('id', TRUE);
+                $fixStatus = $this->input->post('statusSelect', TRUE);
 
 
-            if($subject !== '' && $content !== ''){
+                if($subject !== '' && $content !== ''){
 
-                $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+                    $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
-                $data['edit'] = $this->todo_m->set_edit_views($postID, $subject, $content, $fixStatus);
+                    $data['edit'] = $this->todo_m->set_edit_views($postID, $subject, $content, $fixStatus);
 //                $result2 = $this->debug->debug_var($data); // 시발 debug 를 소문자로...ㅡㅡ
 //                echo $result2;
 //
-                if($data['edit'] == 1){
-                    alert('수정되었습니다.','/Main/view/'.$postID);
+                    if($data['edit'] == 1){
+                        alert('수정되었습니다.','/Main/view/'.$postID);
+                    }
+
+                } else {
+                    $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+                    echo 'f**k';
                 }
 
+
             } else {
-                $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
-                echo 'f**k';
+                alert('삭제 할 권한이 없습니다.','/Main/lists');
             }
+
+
 
 
 //
