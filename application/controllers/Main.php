@@ -167,17 +167,16 @@ class Main extends CI_Controller{
         
     }
 
-    function edit($transID){
+    function edit(){
         $this->load->helper('alert');
         $param = array(
             'id'=>'수정'
         );
 
-        $inputID = $transID;
         if ( @$this -> session -> userdata('logged_in') == TRUE) {
 
-//            $id = $this->uri->segment(3); //todo 번호에 해당하는 데이터 가져오기
-            $data['views'] = $this->todo_m->get_views($transID);
+            $id = $this->uri->segment(3); //todo 번호에 해당하는 데이터 가져오기
+            $data['views'] = $this->todo_m->get_views($id);
 
             $this->load->view('header_v', $param);
             $this->load->view('todo/edit_contents_v', $data);
@@ -191,10 +190,10 @@ class Main extends CI_Controller{
             if($subject !== '' && $content !== ''){
                 echo $subject;
                 echo $content;
-                echo $inputID;
+                echo $id;
                 $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
-                $data['edit'] = $this->todo_m->set_edit_views($inputID, $subject, $content);
+                $data['edit'] = $this->todo_m->set_edit_views($id, $subject, $content);
                 $result2 = $this->debug->debug_var($data); // 시발 debug 를 소문자로...ㅡㅡ
                 echo $result2;
 //                if($data['edit'] == 1){
