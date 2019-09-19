@@ -1,7 +1,8 @@
 <?php echo form_open('/Main/edit')?>
 <?php
     $extOpt = array(
-      'style'       =>'width:100%',
+      'data'        => 'content',
+      'style'       => 'width:100%',
       'placeholder' => $tmpContent
     );
 ?>
@@ -57,7 +58,7 @@
         <th rowspan="2">내용</th>
         <th colspan="6">
             <?php $tmpContent = $views -> content;?>
-            <?php echo form_input('content','',"style=width:100%;placeholder={$tmpContent};")?>
+            <?php echo form_input($extOpt)?>
         </th>
     </tr>
 

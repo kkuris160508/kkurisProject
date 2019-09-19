@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="글 작성 시 상태 값 추가 시작" />
+    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="글 작성 시 상태 값 추가 시작">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -19,8 +21,8 @@
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/application/views/todo/edit_contents_v.php">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="493">
-                    <caret line="34" column="96" lean-forward="true" selection-start-line="34" selection-start-column="96" selection-end-line="34" selection-end-column="96" />
+                  <state relative-caret-position="697">
+                    <caret line="58" column="52" lean-forward="true" selection-start-line="58" selection-start-column="52" selection-end-line="58" selection-end-column="52" />
                   </state>
                 </provider>
               </entry>
@@ -44,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/todo/edit_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="65" column="12" lean-forward="true" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
+            <state relative-caret-position="504">
+              <caret line="43" column="46" lean-forward="true" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -407,28 +409,7 @@
       <workItem from="1568626344333" duration="3922000" />
       <workItem from="1568681865818" duration="3891000" />
       <workItem from="1568686261426" duration="24428000" />
-      <workItem from="1568874577929" duration="830000" />
-    </task>
-    <task id="LOCAL-00638" summary="글 작성 시 상태 값 추가 시작">
-      <created>1568855157503</created>
-      <option name="number" value="00638" />
-      <option name="presentableId" value="LOCAL-00638" />
-      <option name="project" value="LOCAL" />
-      <updated>1568855157503</updated>
-    </task>
-    <task id="LOCAL-00639" summary="글 작성 시 상태 값 추가 시작">
-      <created>1568855287481</created>
-      <option name="number" value="00639" />
-      <option name="presentableId" value="LOCAL-00639" />
-      <option name="project" value="LOCAL" />
-      <updated>1568855287481</updated>
-    </task>
-    <task id="LOCAL-00640" summary="글 작성 시 상태 값 추가 시작">
-      <created>1568855361863</created>
-      <option name="number" value="00640" />
-      <option name="presentableId" value="LOCAL-00640" />
-      <option name="project" value="LOCAL" />
-      <updated>1568855361863</updated>
+      <workItem from="1568874577929" duration="1995000" />
     </task>
     <task id="LOCAL-00641" summary="글 작성 시 상태 값 추가 시작">
       <created>1568855406265</created>
@@ -752,11 +733,32 @@
       <option name="project" value="LOCAL" />
       <updated>1568875272248</updated>
     </task>
-    <option name="localTasksCounter" value="687" />
+    <task id="LOCAL-00687" summary="글 작성 시 상태 값 추가 시작">
+      <created>1568875464455</created>
+      <option name="number" value="00687" />
+      <option name="presentableId" value="LOCAL-00687" />
+      <option name="project" value="LOCAL" />
+      <updated>1568875464455</updated>
+    </task>
+    <task id="LOCAL-00688" summary="글 작성 시 상태 값 추가 시작">
+      <created>1568875550899</created>
+      <option name="number" value="00688" />
+      <option name="presentableId" value="LOCAL-00688" />
+      <option name="project" value="LOCAL" />
+      <updated>1568875550899</updated>
+    </task>
+    <task id="LOCAL-00689" summary="글 작성 시 상태 값 추가 시작">
+      <created>1568875655962</created>
+      <option name="number" value="00689" />
+      <option name="presentableId" value="LOCAL-00689" />
+      <option name="project" value="LOCAL" />
+      <updated>1568875655962</updated>
+    </task>
+    <option name="localTasksCounter" value="690" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="295764000" />
+    <option name="totallyTimeSpent" value="296929000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1215,8 +1217,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/todo/edit_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="65" column="12" lean-forward="true" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
+        <state relative-caret-position="697">
+          <caret line="58" column="52" lean-forward="true" selection-start-line="58" selection-start-column="52" selection-end-line="58" selection-end-column="52" />
         </state>
       </provider>
     </entry>
