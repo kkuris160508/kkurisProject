@@ -1,4 +1,4 @@
-<?php echo form_open('/Main/edit')?>
+<?php echo form_open('/Main/edit/<?php echo $views->id?>')?>
 
 <table class="table table-striped">
     <thead class="thead-dark">
