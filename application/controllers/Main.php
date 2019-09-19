@@ -173,6 +173,7 @@ class Main extends CI_Controller{
             'id'=>'수정'
         );
 
+        $inputID = $transID;
         if ( @$this -> session -> userdata('logged_in') == TRUE) {
 
 //            $id = $this->uri->segment(3); //todo 번호에 해당하는 데이터 가져오기
@@ -192,7 +193,7 @@ class Main extends CI_Controller{
                 echo $content;
                 $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
-                $data['edit'] = $this->todo_m->set_edit_views($transID, $subject, $content);
+                $data['edit'] = $this->todo_m->set_edit_views($inputID, $subject, $content);
                 $result2 = $this->debug->debug_var($data); // 시발 debug 를 소문자로...ㅡㅡ
                 echo $result2;
 //                if($data['edit'] == 1){
