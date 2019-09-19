@@ -52,8 +52,8 @@ class Main extends CI_Controller{
 
             $page = $this->uri->segment(3,1);
 
-//            $result2 = $this->debug->debug_var($data); // debug 를 소문자로...ㅡㅡ
-//            echo $result2;
+            $result2 = $this->debug->debug_var($data); // debug 를 소문자로...ㅡㅡ
+            echo $result2;
 
             if($page > 1){
                 $start = (($page / $config['per_page'])) * $config['per_page'];
