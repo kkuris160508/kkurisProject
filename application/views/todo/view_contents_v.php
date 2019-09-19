@@ -1,4 +1,4 @@
-
+<?php echo form_open('/Main/view')?>
         <table class="table table-striped">
             <thead class="thead-dark">
             <tr>
@@ -20,10 +20,11 @@
                 <th>
                     <?php echo $views -> status;?>
                 </th>
-                <th>
+                <th name="id">
                     <a href="mailto:<?php echo $views -> EMAIL?>"><?php echo $views -> account_id;?></a>
                     <?php $transID = $views->no;?>
                     <?php $transAccountID = $views->account_id;?>
+                    <?php form_hidden('id',$transAccountID)?>
                 </th>
                 <th>
                     <?php echo $views -> subject;?>
@@ -64,3 +65,4 @@
         </table>
     </article>
 
+<?php echo form_close();?>

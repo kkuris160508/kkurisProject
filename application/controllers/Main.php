@@ -87,7 +87,9 @@ class Main extends CI_Controller{
             $id = $this->uri->segment(3); //todo 번호에 해당하는 데이터 가져오기
             $data['views'] = $this->todo_m->get_views($id);
 
-            echo $this->session->userdata('account_id');
+            $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+
+//            echo $this->session->userdata('account_id');
 
 //        $result2 = $this->debug->debug_var($data); // 시발 debug 를 소문자로...ㅡㅡ
 //        echo $result2;
