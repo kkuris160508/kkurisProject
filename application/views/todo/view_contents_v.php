@@ -59,15 +59,12 @@
                     <?php if($accountInfo == $transAccountID):?>
                             <a href="http://34.80.199.17/Main/edit/<?php echo $this -> uri -> segment(3);?>" class="btn btn-success">수정</a>
                     <?php else:?>
-                            <a href="http://34.80.199.17/Main/lists/" class="btn btn-primary" onclick="alert('수정불가')">수정불가</a>
+                            <a href="http://34.80.199.17/Main/lists/" class="btn btn-primary" onclick="alert('자신이 작성한 글만 수정 가능합니다.')">수정</a>
                     <?php endif;?>
 
                 </th>
             </tr>
             </tfoot>
         </table>
-
-        <?php echo $accountInfo;?>
-        <?php echo $transAccountID;?>
     </article>
 
