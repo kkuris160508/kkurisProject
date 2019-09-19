@@ -180,7 +180,8 @@ class Main extends CI_Controller{
 
             if($subject !== '' && $content !== ''){
                 $data['edit'] = $this->todo_m->set_edit_views($transID, $subject, $content);
-                alert('수정되었습니다.','/Main/view/'.$transID);
+                echo $data;
+//                alert('수정되었습니다.','/Main/view/'.$transID);
 //                            $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
             } else {
                             $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
