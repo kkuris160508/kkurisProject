@@ -3,7 +3,8 @@
 <table class="table table-striped">
     <thead class="thead-dark">
     <tr>
-        <th colspan = "7"><?php echo $views -> id;?> 번 할일</th>
+        <th colspan = "7" name = 'id'><?php echo $views -> id;?> 번 할일</th>
+        <?php echo form_hidden('id',$views->id)?>
     </tr>
     </thead>
     <tbody>
