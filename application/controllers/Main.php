@@ -184,7 +184,7 @@ class Main extends CI_Controller{
 
             $subject = $this->input->post('subject', TRUE);
             $content = $this->input->post('content', TRUE);
-
+            $postID = $this->input->post('id', TRUE);
 
 
             if($subject !== '' && $content !== ''){
