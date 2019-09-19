@@ -22,8 +22,12 @@
     <tbody>
     <?php foreach ($list as $lt) : ?>
         <tr>
+
             <th scope="row" style="width: 100px;">
                 <?php echo $lt -> id;?>
+            </th>
+            <th scope="row" style="width: 100px;">
+                <?php echo $lt -> status;?>
             </th>
             <th scope="row" style="width: 150px;">
                 <a href="mailto:<?php echo $lt -> EMAIL?>"><?php echo $lt -> account_id;?></a>
