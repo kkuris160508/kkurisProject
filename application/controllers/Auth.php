@@ -39,15 +39,15 @@ class Auth extends CI_Controller{
 
             $tmpRes = $this->Auth_m->getPW($auth_data['account_id']);
 
-            $result2 = $this->debug->debug_var($tmpRes); // debug 를 소문자로...ㅡㅡ
-            echo $result2;
+//            $result2 = $this->debug->debug_var($tmpRes); // debug 를 소문자로...ㅡㅡ
+//            echo $result2;
 
             //진행되기전 DB에서 PW 가지고 오는 모델 로드
-//            if(password_verify($auth_data['PW'], $tmpHash_1)){
-//                echo 'password is vaild';
-//            } else {
-//                echo 'password is wrong';
-//            }
+            if(password_verify($auth_data['PW'], $tmpRes)){
+                echo 'password is vaild';
+            } else {
+                echo 'password is wrong';
+            }
 
 //            $auth_data['PW'] = password_hash($auth_data['PW'],1);
 //            echo $auth_data['PW'];
