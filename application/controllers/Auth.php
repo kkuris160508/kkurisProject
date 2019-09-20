@@ -127,7 +127,6 @@ class Auth extends CI_Controller{
         }
     }
 
-
     public function logout(){
         $this->load->helper('alert');
         $this->session->sess_destroy();
@@ -135,8 +134,6 @@ class Auth extends CI_Controller{
         echo '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
         alert('로그아웃 되었습니다.', '/Main/lists');
         exit;
-
-
     }
 }
 ?>

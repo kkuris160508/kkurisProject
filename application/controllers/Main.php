@@ -308,7 +308,7 @@ class Main extends CI_Controller{
                 );
                 $cookieArray2 = array(
                     'name' => 'user_pw',
-                    'value' => $pw,
+                    'value' => $hash,
                     'expire' => '3600',
                     'prefix' => 'myprefix_'
                 );
