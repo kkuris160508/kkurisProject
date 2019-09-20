@@ -37,6 +37,9 @@ class Auth extends CI_Controller{
                 'PW' => $this->input->post('PW', TRUE)
             );
 
+            $auth_data['PW'] = password_hash($auth_data['PW'],1);
+            echo $auth_data['PW'];
+
             $result = $this->Auth_m->login($auth_data);
 
             if($result){
