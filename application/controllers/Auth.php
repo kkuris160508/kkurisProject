@@ -39,9 +39,11 @@ class Auth extends CI_Controller{
 
             $tmpRes = $this->auth_m->getPW($auth_data['account_id']);
 
-            $result2 = $this->debug->debug_var($tmpRes); // debug 를 소문자로...ㅡㅡ
-            echo $result2;
+//            $result2 = $this->debug->debug_var($tmpRes); // debug 를 소문자로...ㅡㅡ
+//            echo $result2;
 
+            echo $tmpRes->account_id;
+            echo $tmpRes['account_id'];
 
 //            if($tmpRes->account_id)
 
