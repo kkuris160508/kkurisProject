@@ -265,7 +265,7 @@ class Main extends CI_Controller{
         form_open('/Auth/login');
 //        $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
         $this->load->library('form_validation');
-        $this->load->helper('password');
+//        $this->load->helper('password');
 
         $this->form_validation->set_rules('accountID','아이디','required|alpha_numeric');
         $this->form_validation->set_rules('password','비밀번호','required|min_length[6]');
