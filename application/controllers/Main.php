@@ -209,7 +209,7 @@ class Main extends CI_Controller{
                     $tmpRes = $this->todo_m->get_views($id);
                 }
 
-                echo $tmpRes;
+                echo $tmpRes->content;
 
 
                 if($subject !== '' || $content !== ''){
