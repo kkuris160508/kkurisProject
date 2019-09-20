@@ -204,10 +204,10 @@ class Main extends CI_Controller{
                 echo $content."<br>";
                 echo $fixStatus."<br>";
 
-                $tmpRes = '';
-                if($subject == '' || $content == ''){
+//                $tmpRes = '';
+//                if($subject == '' || $content == ''){
                     $tmpRes = $this->todo_m->get_views($id);
-                }
+//                }
 
                 echo $tmpRes->content;
 
