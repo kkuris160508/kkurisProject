@@ -43,10 +43,10 @@ class Auth extends CI_Controller{
 //            echo $result2;
 
             //진행되기전 DB에서 PW 가지고 오는 모델 로드
-            if(password_verify($auth_data['PW'], $tmpRes)){
-                echo 'password is vaild';
+            if(password_verify($auth_data['PW'],$tmpRes['PW'])){
+                echo 'vaild';
             } else {
-                echo 'password is wrong';
+                echo 'wrong';
             }
 
 //            $auth_data['PW'] = password_hash($auth_data['PW'],1);

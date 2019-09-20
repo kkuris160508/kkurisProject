@@ -276,15 +276,16 @@ class Main extends CI_Controller{
         if($this->form_validation->run() == TRUE){
 
             $id = $this->input->post('accountID', TRUE);
-            $pw = $this->input->post('password', TRUE);
+            $hash = password_hash($this->input->post('password', TRUE), PASSWORD_BCRYPT);
             $email = $this->input->post('email', TRUE);
 
-            $hashPW = password_hash($pw,1);
+//            $hashPW = password_hash($pw,1);
+
 
             $result = $this->todo_m->getAccountInfo($id);
 
             if($result){
-                $this->todo_m->insert_account_todo($id, $hashPW, $email);
+                $this->todo_m->insert_account_todo($id, $hash, $email);
 
 //                echo '<form action="http://34.80.199.17/Auth/autoLogin" method="post">';
 /*                    echo '<input type="hidden" name="id" value="<?php echo $id?>">';*/
