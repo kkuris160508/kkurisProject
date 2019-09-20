@@ -1,4 +1,9 @@
 <?php echo form_open('/Main/edit')?>
+<?php
+$extraOpt = array(
+    'style'       => 'width:100%;height:50%;resize:none;'
+);
+?>
 <table class="table table-striped">
     <thead class="thead-dark">
     <tr>
@@ -51,7 +56,8 @@
         <th rowspan="2">내용</th>
         <th colspan="6" name = 'content'>
             <?php $tmpContent = $views -> content;?>
-            <?php echo form_textarea('content','',"placeholder='{$tmpContent}'")?>
+<!--            --><?php //echo form_textarea('content','',"placeholder='{$tmpContent}'")?>
+            <?php echo form_textarea('content','',$extraOpt)?>
         </th>
     </tr>
     <tr>
