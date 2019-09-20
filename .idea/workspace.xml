@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="hash_pw">
       <change beforePath="$PROJECT_DIR$/application/controllers/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/Auth_m.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Auth_m.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -70,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Auth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+            <state relative-caret-position="338">
+              <caret line="37" column="14" lean-forward="true" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -375,28 +374,7 @@
       <workItem from="1568874577929" duration="7652000" />
       <workItem from="1568882373918" duration="8265000" />
       <workItem from="1568944043469" duration="533000" />
-      <workItem from="1568944911940" duration="1079000" />
-    </task>
-    <task id="LOCAL-00706" summary="글 작성 시 상태 값 추가 시작">
-      <created>1568879596804</created>
-      <option name="number" value="00706" />
-      <option name="presentableId" value="LOCAL-00706" />
-      <option name="project" value="LOCAL" />
-      <updated>1568879596804</updated>
-    </task>
-    <task id="LOCAL-00707" summary="글 작성 시 상태 값 추가 시작">
-      <created>1568879677111</created>
-      <option name="number" value="00707" />
-      <option name="presentableId" value="LOCAL-00707" />
-      <option name="project" value="LOCAL" />
-      <updated>1568879677111</updated>
-    </task>
-    <task id="LOCAL-00708" summary="글 작성 시 상태 값 추가 시작">
-      <created>1568879792820</created>
-      <option name="number" value="00708" />
-      <option name="presentableId" value="LOCAL-00708" />
-      <option name="project" value="LOCAL" />
-      <updated>1568879792820</updated>
+      <workItem from="1568944911940" duration="1343000" />
     </task>
     <task id="LOCAL-00709" summary="글 작성 시 상태 값 추가 시작">
       <created>1568879885334</created>
@@ -720,11 +698,32 @@
       <option name="project" value="LOCAL" />
       <updated>1568945841394</updated>
     </task>
-    <option name="localTasksCounter" value="755" />
+    <task id="LOCAL-00755" summary="hash_pw">
+      <created>1568945994968</created>
+      <option name="number" value="00755" />
+      <option name="presentableId" value="LOCAL-00755" />
+      <option name="project" value="LOCAL" />
+      <updated>1568945994968</updated>
+    </task>
+    <task id="LOCAL-00756" summary="hash_pw">
+      <created>1568946047946</created>
+      <option name="number" value="00756" />
+      <option name="presentableId" value="LOCAL-00756" />
+      <option name="project" value="LOCAL" />
+      <updated>1568946047946</updated>
+    </task>
+    <task id="LOCAL-00757" summary="hash_pw">
+      <created>1568946098912</created>
+      <option name="number" value="00757" />
+      <option name="presentableId" value="LOCAL-00757" />
+      <option name="project" value="LOCAL" />
+      <updated>1568946098912</updated>
+    </task>
+    <option name="localTasksCounter" value="758" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="312463000" />
+    <option name="totallyTimeSpent" value="312727000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1182,8 +1181,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Auth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+        <state relative-caret-position="338">
+          <caret line="37" column="14" lean-forward="true" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
         </state>
       </provider>
     </entry>
