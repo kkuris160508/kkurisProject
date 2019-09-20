@@ -1,10 +1,6 @@
 <?php echo form_open('/Main/edit')?>
 <?php
-$extraOpt = array(
-    'data'        => 'content',
-    'style'       => 'width:100%;height:50%;resize:none;',
-    'placeholder' => 'asdfasdfasdf'
-);
+
 ?>
 <table class="table table-striped">
     <thead class="thead-dark">
@@ -59,7 +55,13 @@ $extraOpt = array(
         <th colspan="6" name = 'content'>
             <?php $tmpContent = $views -> content;?>
 <!--            --><?php //echo form_textarea('content','',"placeholder='{$tmpContent}'")?>
-            <?php echo form_textarea($extraOpt)?>
+            <?php
+            $extraOpt = array(
+                'style'       => 'width:100%;height:50%;resize:none;',
+                'placeholder' => $tmpContent
+            );
+            ?>
+            <?php echo form_textarea('content','',$extraOpt)?>
         </th>
     </tr>
     <tr>
