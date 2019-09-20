@@ -201,12 +201,18 @@ class Main extends CI_Controller{
                 $fixStatus = $this->input->post('statusSelect', TRUE);
 
                 echo $subject."<br>";
-            echo $content."<br>";
-            echo $fixStatus."<br>";
+                echo $content."<br>";
+                echo $fixStatus."<br>";
+
+                $tmpRes = '';
+                if($subject == '' || $content == ''){
+                    $tmpRes = $this->todo_m->get_views($id);
+                }
+
+                echo $tmpRes;
 
 
-
-                if($subject !== '' || $content !== '' || $fixStatus !== ''){
+                if($subject !== '' || $content !== ''){
 
                     $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
