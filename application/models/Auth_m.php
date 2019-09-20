@@ -25,6 +25,15 @@ class Auth_m extends CI_Model{
             return false;
         }
     }
+
+    public function getPW($id){
+        $sql = "SELECT PW FROM accountTB WHERE id = {$id}";
+
+        $query = $this->db->query($sql);
+        $result = $query -> row();
+
+        return $result;
+    }
 }
 
 ?>
