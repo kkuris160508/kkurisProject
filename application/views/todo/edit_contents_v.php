@@ -2,7 +2,7 @@
 <?php
 $extraOpt = array(
     'style'       => 'width:100%;height:50%;resize:none;',
-    'placeholder' => '{$tmpContent}'
+    'placeholder' => $tmpContent
 );
 ?>
 <table class="table table-striped">
