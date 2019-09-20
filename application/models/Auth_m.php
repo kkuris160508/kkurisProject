@@ -12,7 +12,6 @@ class Auth_m extends CI_Model{
     }
 
     public function login($auth){
-        $auth['PW_'] = password_hash($auth['PW'],1);
 
         $sql = "SELECT * FROM accountTB where account_id = '" . $auth['account_id']. "' AND PW = '" . $auth['PW_']. "' ";
 
