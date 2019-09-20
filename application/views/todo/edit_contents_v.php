@@ -66,9 +66,6 @@ $extraOpt = array(
             <input type="submit" class="btn btn-primary" id="write_btn" value="완료" />
         </div>
     </tr>
-
-
-
     </tbody>
     <tfoot>
 <!--    <tr>-->
