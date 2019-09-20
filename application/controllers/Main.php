@@ -209,7 +209,9 @@ class Main extends CI_Controller{
                     $tmpRes = $this->todo_m->get_views($id);
 //                }
 
-                echo $tmpRes->content;
+                $result2 = $this->debug->debug_var($tmpRes); // 시발 debug 를 소문자로...ㅡㅡ
+                echo $result2;
+//                echo $tmpRes->content;
 
 
 //                if($subject !== '' || $content !== ''){
