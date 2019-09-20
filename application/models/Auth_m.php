@@ -12,9 +12,7 @@ class Auth_m extends CI_Model{
     }
 
     public function login($auth){
-//        $sql = "SELECT * FROM accountTB where account_id = '" . $auth['account_id']. "' AND PW = '" . $auth['PW']. "' ";
-        $sql = "SELECT * FROM accountTB WHERE account_id = {$auth['account_id']} AND PW = password({$auth['PW']})";
-
+        $sql = "SELECT * FROM accountTB where account_id = '" . $auth['account_id']. "' AND PW = '" . $auth['PW']. "' ";
 
         $query = $this->db->query($sql);
 

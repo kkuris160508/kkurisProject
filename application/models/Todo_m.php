@@ -177,7 +177,7 @@ class Todo_m extends CI_Model{
     }
 
     function insert_account_todo($accountID, $pw, $email){
-        $sql = "INSERT INTO accountTB (account_id, PW, EMAIL) VALUES ({$accountID},password({$pw}),{$email})";
+        $sql = "INSERT INTO accountTB (account_id, PW, EMAIL) VALUES ('" .$accountID. "','" .$pw. "','".$email."')";
         $query = $this->db->query($sql);
     }
 
