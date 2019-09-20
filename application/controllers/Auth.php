@@ -39,28 +39,6 @@ class Auth extends CI_Controller{
 
             $tmpRes = $this->auth_m->getPW($auth_data['account_id']);
 
-//            $result2 = $this->debug->debug_var($tmpRes); // debug 를 소문자로...ㅡㅡ
-//            echo $result2;
-
-//            echo "auth_data['account_id'] : {$auth_data['account_id']} <br>";
-//            echo "tmpRes->account_id : {$tmpRes->account_id} <br>";
-//            echo "auth_data['PW'] : {$auth_data['PW']} <br>";
-//            echo "tmpRes->PW : {$tmpRes->PW} <br>";
-
-//            if(password_verify($auth_data['PW'], $tmpRes->PW)){
-//                echo 'vaild';
-//            } else {
-//                echo 'wrong';
-//            }
-
-
-//            $auth_data['PW_'] = $tmpRes->PW;
-//            echo $auth_data['PW_'];
-//
-//            $result = $this->Auth_m->login($auth_data);
-//
-//            echo $result;
-//
             if($tmpRes->account_id == $auth_data['account_id'] && password_verify($auth_data['PW'],$tmpRes->PW)){
                 $auth_data['PW_'] = $tmpRes->PW;
 
@@ -84,8 +62,6 @@ class Auth extends CI_Controller{
                 alert('아이디나 비밀번호를 확인해 주세요.', '/Main/lists');
                 exit;
             }
-
-
 
         } else {
             $this->load->view('Auth/header_login_v');
@@ -118,21 +94,26 @@ class Auth extends CI_Controller{
                 'PW' => $this->input->post('PW', TRUE)
             );
 
-            $result = $this->Auth_m->login($auth_data);
+            $tmpRes = $this->auth_m->getPW($auth_data['account_id']);
 
-            if($result){
+            if($tmpRes->account_id == $auth_data['account_id'] && password_verify($auth_data['PW'],$tmpRes->PW)){
+                $auth_data['PW_'] = $tmpRes->PW;
 
-                $newdata = array( //데이터 검증 부 에서 아이디 비밀번호가 맞았을 때 아이디, 이메일, 로그인 여부를 배열로 만듬
-                    'no'=>$result->no,
-                    'account_id'=>$result->account_id,
-                    'email'=>$result->EMAIL,
-                    'logged_in'=>TRUE
-                );
+                $result = $this->auth_m->setlogin($auth_data);
 
-                $this->session->set_userdata($newdata); //세션 생성
+                if($result){
+                    $newdata = array( //데이터 검증 부 에서 아이디 비밀번호가 맞았을 때 아이디, 이메일, 로그인 여부를 배열로 만듬
+                        'no'=>$result->no,
+                        'account_id'=>$result->account_id,
+                        'email'=>$result->EMAIL,
+                        'logged_in'=>TRUE
+                    );
 
-                alert('로그인 되었습니다.', '/Main/lists');
-                exit;
+                    $this->session->set_userdata($newdata); //세션 생성
+                    alert('로그인 되었습니다.', '/Main/lists');
+                    exit;
+                }
+
             } else {
 
                 alert('아이디나 비밀번호를 확인해 주세요.', '/Main/lists');
