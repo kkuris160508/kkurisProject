@@ -215,12 +215,12 @@ class Main extends CI_Controller{
 
                 if(!$this->input->post('content',TRUE)){
                     echo 'content is empty';
-                    $tmpRes = $this->todo_m->get_views($id);
+                    $tmpRes = $this->todo_m->get_views($postID);
                     $tmpContent = $tmpRes->content;
                     echo $tmpContent;
                 } else if(!$this->input->post('subject',TRUE)) {
                     echo 'subject is empty';
-                    $tmpRes = $this->todo_m->get_views($id);
+                    $tmpRes = $this->todo_m->get_views($postID);
                     $tmpSubject = $tmpRes->subject;
                     echo $tmpSubject;
                 }
