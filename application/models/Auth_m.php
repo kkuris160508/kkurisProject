@@ -27,7 +27,7 @@ class Auth_m extends CI_Model{
     }
 
     public function getPW($id){
-        $sql = "SELECT PW FROM accountTB WHERE account_id = '{$id}'";
+        $sql = "SELECT account_id, PW FROM accountTB WHERE account_id = '{$id}'";
 
 //        echo $sql;
         $query = $this->db->query($sql);
