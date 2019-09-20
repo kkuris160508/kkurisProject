@@ -55,10 +55,11 @@ class Auth extends CI_Controller{
 
 
             $auth_data['PW_'] = $tmpRes->PW;
+            echo $auth_data['PW_'];
 //
-            $result = $this->Auth_m->login($auth_data);
-
-            echo $result;
+//            $result = $this->Auth_m->login($auth_data);
+//
+//            echo $result;
 //
 //            if($tmpRes->account_id == $auth_data['account_id'] && password_verify($auth_data['PW'],$tmpRes->PW)){
 //                $auth_data['PW_'] = $tmpRes->PW;
