@@ -11,7 +11,7 @@ class Auth_m extends CI_Model{
         parent::__construct();
     }
 
-    public function login($auth){
+    public function setlogin($auth){
 
         $sql = "SELECT * FROM accountTB where account_id = '" . $auth['account_id']. "' AND PW = '" . $auth['PW_']. "' ";
 
