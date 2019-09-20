@@ -492,6 +492,15 @@ class Main extends CI_Controller{
 //        $tmpHash = password_get_info($tmpString);
         $tmpHash = password_hash($tmpString,1);
 
+        $tmpHash_1 = '$2y$10$BerPkp2prYfJAWscLhFml.3jvDluLT0752UwwnBCejHyL0fBxeu6u';
+
+        if(password_verify($tmpString, $tmpHash_1)){
+            echo 'password is vaild';
+        } else {
+            echo 'password is wrong';
+        }
+
+
         $result3 = $this->debug->debug_var($tmpHash); // 시발 debug 를 소문자로...ㅡㅡ
         echo $result3[0]->no;
 
