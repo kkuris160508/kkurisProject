@@ -489,7 +489,8 @@ class Main extends CI_Controller{
         $tmpString = '1234';
 
 //        password_hash();
-        $tmpHash = password_get_info($tmpString);
+//        $tmpHash = password_get_info($tmpString);
+        $tmpHash = password_hash($tmpString,1);
 
         $result3 = $this->debug->debug_var($tmpHash); // 시발 debug 를 소문자로...ㅡㅡ
         echo $result3[0]->no;
