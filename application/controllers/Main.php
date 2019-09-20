@@ -206,7 +206,7 @@ class Main extends CI_Controller{
 
 //                $tmpRes = '';
 //                if($subject == '' || $content == ''){
-                    $tmpRes = $this->todo_m->get_views($id);
+//                    $tmpRes = $this->todo_m->get_views($id);
 //                }
 
 //                $result2 = $this->debug->debug_var($tmpRes); // 시발 debug 를 소문자로...ㅡㅡ
@@ -215,10 +215,12 @@ class Main extends CI_Controller{
 
                 if(!$this->input->post('content',TRUE)){
                     echo 'content is empty';
+                    $tmpRes = $this->todo_m->get_views($id);
                     $tmpContent = $tmpRes->content;
                     echo $tmpContent;
                 } else if(!$this->input->post('subject',TRUE)) {
                     echo 'subject is empty';
+                    $tmpRes = $this->todo_m->get_views($id);
                     $tmpSubject = $tmpRes->subject;
                     echo $tmpSubject;
                 }
