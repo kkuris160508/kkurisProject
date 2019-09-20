@@ -209,10 +209,15 @@ class Main extends CI_Controller{
                     $tmpRes = $this->todo_m->get_views($id);
 //                }
 
-                $result2 = $this->debug->debug_var($tmpRes); // 시발 debug 를 소문자로...ㅡㅡ
-                echo $result2;
+//                $result2 = $this->debug->debug_var($tmpRes); // 시발 debug 를 소문자로...ㅡㅡ
+//                echo $result2;
 //                echo $tmpRes->content;
 
+                if($this->input->post('content',TRUE)){
+                    echo 'content is empty';
+                } else if($this->input->post('subject',TRUE)) {
+                    echo 'subject is empty';
+                }
 
 //                if($subject !== '' || $content !== ''){
 //
