@@ -1,7 +1,8 @@
 <?php echo form_open('/Main/edit')?>
 <?php
 $extraOpt = array(
-    'style'       => 'width:100%;height:50%;resize:none;'
+    'style'       => 'width:100%;height:50%;resize:none;',
+    'placeholder' => '{$tmpContent}'
 );
 ?>
 <table class="table table-striped">
