@@ -9,7 +9,7 @@ class Auth extends CI_Controller{
     function __construct()
     {
         parent::__construct();
-        $this->load->model('Auth_m');
+        $this->load->model('auth_m');
         $this->load->helper(array('form','cookie'));
     }
 
@@ -37,7 +37,7 @@ class Auth extends CI_Controller{
                 'PW' => $this->input->post('PW', TRUE)
             );
 
-            $tmpRes = $this->Auth_m->getPW($auth_data['account_id']);
+            $tmpRes = $this->auth_m->getPW($auth_data['account_id']);
 
 //            $result2 = $this->debug->debug_var($tmpRes); // debug 를 소문자로...ㅡㅡ
 //            echo $result2;
