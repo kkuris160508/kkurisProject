@@ -40,24 +40,24 @@ class Auth extends CI_Controller{
             $auth_data['PW'] = password_hash($auth_data['PW'],1);
             echo $auth_data['PW'];
 
-            $result = $this->Auth_m->login($auth_data);
-
-            if($result){
-                $newdata = array( //데이터 검증 부 에서 아이디 비밀번호가 맞았을 때 아이디, 이메일, 로그인 여부를 배열로 만듬
-                    'no'=>$result->no,
-                    'account_id'=>$result->account_id,
-                    'email'=>$result->EMAIL,
-                    'logged_in'=>TRUE
-                );
-
-                $this->session->set_userdata($newdata); //세션 생성
-                alert('로그인 되었습니다.', '/Main/lists');
-                exit;
-            } else {
-
-                alert('아이디나 비밀번호를 확인해 주세요.', '/Main/lists');
-                exit;
-            }
+//            $result = $this->Auth_m->login($auth_data);
+//
+//            if($result){
+//                $newdata = array( //데이터 검증 부 에서 아이디 비밀번호가 맞았을 때 아이디, 이메일, 로그인 여부를 배열로 만듬
+//                    'no'=>$result->no,
+//                    'account_id'=>$result->account_id,
+//                    'email'=>$result->EMAIL,
+//                    'logged_in'=>TRUE
+//                );
+//
+//                $this->session->set_userdata($newdata); //세션 생성
+//                alert('로그인 되었습니다.', '/Main/lists');
+//                exit;
+//            } else {
+//
+//                alert('아이디나 비밀번호를 확인해 주세요.', '/Main/lists');
+//                exit;
+//            }
 
         } else {
             $this->load->view('Auth/header_login_v');
