@@ -2,7 +2,7 @@
 <?php
 $extraOpt = array(
     'style'       => 'width:100%;height:50%;resize:none;',
-    'placeholder' => $tmpContent
+    'data'        => 'content'
 );
 ?>
 <table class="table table-striped">
@@ -58,7 +58,7 @@ $extraOpt = array(
         <th colspan="6" name = 'content'>
             <?php $tmpContent = $views -> content;?>
 <!--            --><?php //echo form_textarea('content','',"placeholder='{$tmpContent}'")?>
-            <?php echo form_textarea('content','',$extraOpt)?>
+            <?php echo form_textarea($extraOpt,'',"placeholder='{$tmpContent}'")?>
         </th>
     </tr>
     <tr>
