@@ -483,7 +483,7 @@ class Main extends CI_Controller{
     }
 
     function test3(){
-        $this->load->helper('password');
+//        $this->load->helper('password');
 
 
         $tmpString = '1234';

@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="글 작성 시 상태 값 추가 시작">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/Auth_m.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Auth_m.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/Todo_m.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Todo_m.php" afterDir="false" />
+    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="회원가입, 로그인 로직 원복">
+      <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,11 +24,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="302" column="43" lean-forward="true" selection-start-line="302" selection-start-column="43" selection-end-line="302" selection-end-column="43" />
+            <state relative-caret-position="390">
+              <caret line="487" column="8" lean-forward="true" selection-start-line="487" selection-start-column="8" selection-end-line="487" selection-end-column="8" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -41,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="182" lean-forward="true" selection-start-line="182" selection-end-line="182" />
+            <state relative-caret-position="220">
+              <caret line="178" column="32" selection-start-line="178" selection-start-column="13" selection-end-line="178" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -134,10 +132,10 @@
       <find>username</find>
       <find>set_value</find>
       <find>$extraOpt</find>
-      <find>insert_account_todo</find>
       <find>auto</find>
       <find>getAccountInfo</find>
       <find>join</find>
+      <find>insert_account_todo</find>
     </findStrings>
     <replaceStrings>
       <replace>PW</replace>
@@ -211,11 +209,11 @@
         <option value="$PROJECT_DIR$/application/views/todo/list_contents_v.php" />
         <option value="$PROJECT_DIR$/application/views/header_v.php" />
         <option value="$PROJECT_DIR$/application/views/todo/write_contents_v.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Main.php" />
         <option value="$PROJECT_DIR$/application/views/todo/edit_contents_v.php" />
         <option value="$PROJECT_DIR$/application/views/todo/view_contents_v.php" />
         <option value="$PROJECT_DIR$/application/models/Auth_m.php" />
         <option value="$PROJECT_DIR$/application/models/Todo_m.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Main.php" />
       </list>
     </option>
   </component>
@@ -374,14 +372,7 @@
       <workItem from="1568681865818" duration="3891000" />
       <workItem from="1568686261426" duration="24428000" />
       <workItem from="1568874577929" duration="7652000" />
-      <workItem from="1568882373918" duration="5129000" />
-    </task>
-    <task id="LOCAL-00689" summary="글 작성 시 상태 값 추가 시작">
-      <created>1568875655962</created>
-      <option name="number" value="00689" />
-      <option name="presentableId" value="LOCAL-00689" />
-      <option name="project" value="LOCAL" />
-      <updated>1568875655962</updated>
+      <workItem from="1568882373918" duration="5466000" />
     </task>
     <task id="LOCAL-00690" summary="글 작성 시 상태 값 추가 시작">
       <created>1568876750957</created>
@@ -719,11 +710,18 @@
       <option name="project" value="LOCAL" />
       <updated>1568940587937</updated>
     </task>
-    <option name="localTasksCounter" value="738" />
+    <task id="LOCAL-00738" summary="회원가입, 로그인 로직 원복">
+      <created>1568940866534</created>
+      <option name="number" value="00738" />
+      <option name="presentableId" value="LOCAL-00738" />
+      <option name="project" value="LOCAL" />
+      <updated>1568940866534</updated>
+    </task>
+    <option name="localTasksCounter" value="739" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="307715000" />
+    <option name="totallyTimeSpent" value="308052000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -806,7 +804,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="회원가입시 한글 불가" />
     <MESSAGE value="form_validation 에서 받는 변수명 변경" />
     <MESSAGE value="view contents v 작성자 노출 안되는 부분 수정" />
     <MESSAGE value="로그인 뷰 수정" />
@@ -831,7 +828,8 @@
     <MESSAGE value="글 검색 에서 페이징네이션 시작" />
     <MESSAGE value="캘린더 클래스 적용 시작" />
     <MESSAGE value="글 작성 시 상태 값 추가 시작" />
-    <option name="LAST_COMMIT_MESSAGE" value="글 작성 시 상태 값 추가 시작" />
+    <MESSAGE value="회원가입, 로그인 로직 원복" />
+    <option name="LAST_COMMIT_MESSAGE" value="회원가입, 로그인 로직 원복" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/application/views/Join/join_check_view.php">
@@ -1152,19 +1150,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="302" column="43" lean-forward="true" selection-start-line="302" selection-start-column="43" selection-end-line="302" selection-end-column="43" />
-          <folding>
-            <element signature="e#73#156#0#PHP" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#increaseReadCnt#0;n#Main#0;n#!!top" />
-            <element signature="n#dateTime#0;n#Main#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/Auth/login_v.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1181,8 +1166,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="182" lean-forward="true" selection-start-line="182" selection-end-line="182" />
+        <state relative-caret-position="220">
+          <caret line="178" column="32" selection-start-line="178" selection-start-column="13" selection-end-line="178" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="487" column="8" lean-forward="true" selection-start-line="487" selection-start-column="8" selection-end-line="487" selection-end-column="8" />
+          <folding>
+            <element signature="e#73#156#0#PHP" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#increaseReadCnt#0;n#Main#0;n#!!top" />
+            <element signature="n#dateTime#0;n#Main#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
