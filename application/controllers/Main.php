@@ -199,45 +199,39 @@ class Main extends CI_Controller{
                 $content = $this->input->post('content', TRUE);
                 $postID = $this->input->post('id', TRUE);
                 $fixStatus = $this->input->post('statusSelect', TRUE);
-//
-//                echo $subject."<br>";
-//                echo $content."<br>";
-//                echo $fixStatus."<br>";
+                $type = '';
 
-//                $tmpRes = '';
-//                if($subject == '' || $content == ''){
-//                    $tmpRes = $this->todo_m->get_views($id);
-//                }
-
-//                $result2 = $this->debug->debug_var($tmpRes); // 시발 debug 를 소문자로...ㅡㅡ
-//                echo $result2;
-//                echo $tmpRes->content;
-
-                if(!$this->input->post('content',TRUE)){
-                    echo 'content is empty';
+                if(!$this->input->post('content',TRUE)) { //내용 값을 입력하지 않았음. 기존에 작성 한 내용을 그대로 update
+//                    echo 'content is empty';
                     $tmpRes = $this->todo_m->get_views($postID);
                     $tmpContent = $tmpRes->content;
-                    echo $tmpContent;
-                } else if(!$this->input->post('subject',TRUE)) {
-                    echo 'subject is empty';
+
+                    $data['edit'] = $this->todo_m->set_edit_views($postID, $subject, $tmpContent, $fixStatus);
+
+//                    echo $tmpContent;
+
+                } else if(!$this->input->post('subject',TRUE)) { //제목 값을 입력하지 않았음. 기존에 작성 한 내용을 그대로 update
+//                    echo 'subject is empty';
                     $tmpRes = $this->todo_m->get_views($postID);
                     $tmpSubject = $tmpRes->subject;
-                    echo $tmpSubject;
+
+                    $data['edit'] = $this->todo_m->set_edit_views($postID, $tmpSubject, $content, $fixStatus);
+
+//                    echo $tmpSubject;
                 }
 
-//                if($subject !== '' || $content !== ''){
-//
-                    $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
-//
-//                    $data['edit'] = $this->todo_m->set_edit_views($postID, $subject, $content, $fixStatus);
+//                $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+
+                $data['edit'] = $this->todo_m->set_edit_views($postID, $subject, $content, $fixStatus, $type);
+
 //                $result2 = $this->debug->debug_var($data); // 시발 debug 를 소문자로...ㅡㅡ
 //                echo $result2;
-//
-//                    if($data['edit'] == 1){
-//                        alert('수정되었습니다.','/Main/view/'.$postID);
-//                    }
 
-//                }
+                if($data['edit'] == 1){
+                    alert('수정되었습니다.','/Main/view/'.$postID);
+                }
+//
+
 
 //
 //            } else {

@@ -104,27 +104,28 @@ class Todo_m extends CI_Model{
     function set_edit_views($id, $subject, $content, $status){
         $addQuery = '';
 
-        if($subject !== ''){
-            $addQuery = "subject = '{$subject}'";
-            $addQuery .= ",";
-        } else {
-            $addQuery = '';
-        }
+//        if($subject !== ''){
+//            $addQuery = "subject = '{$subject}'";
+//            $addQuery .= ",";
+//        } else {
+//            $addQuery = '';
+//        }
+//
+//        if($content !== ''){
+//            $addQuery .= "content = '{$content}'";
+//            $addQuery .= ",";
+//        } else {
+//            $addQuery = '';
+//        }
+//        if($status !== ''){
+//            $addQuery .= "status = '{$status}'";
+//            $addQuery .= ",";
+//        } else {
+//            $addQuery = '';
+//        }
 
-        if($content !== ''){
-            $addQuery .= "content = '{$content}'";
-            $addQuery .= ",";
-        } else {
-            $addQuery = '';
-        }
-        if($status !== ''){
-            $addQuery .= "status = '{$status}'";
-            $addQuery .= ",";
-        } else {
-            $addQuery = '';
-        }
+        $sql = "UPDATE items SET subject = '{$subject}', content = '{$content}', status = '{$status}' WHERE id = '{$id}'";
 
-        $sql = "UPDATE items SET {$addQuery} WHERE id = '{$id}'";
 
         $query = $this->db->query($sql);
 
