@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="글 수정기능 재 수정 시작">
-      <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="599">
-              <caret line="217" selection-start-line="217" selection-end-line="217" />
+            <state relative-caret-position="514">
+              <caret line="221" column="57" lean-forward="true" selection-start-line="221" selection-start-column="57" selection-end-line="221" selection-end-column="57" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -376,28 +376,7 @@
       <workItem from="1568944043469" duration="533000" />
       <workItem from="1568944911940" duration="1659000" />
       <workItem from="1568946660645" duration="801000" />
-      <workItem from="1568947536122" duration="5818000" />
-    </task>
-    <task id="LOCAL-00732" summary="글 작성 시 상태 값 추가 시작">
-      <created>1568938944610</created>
-      <option name="number" value="00732" />
-      <option name="presentableId" value="LOCAL-00732" />
-      <option name="project" value="LOCAL" />
-      <updated>1568938944610</updated>
-    </task>
-    <task id="LOCAL-00733" summary="글 작성 시 상태 값 추가 시작">
-      <created>1568939019170</created>
-      <option name="number" value="00733" />
-      <option name="presentableId" value="LOCAL-00733" />
-      <option name="project" value="LOCAL" />
-      <updated>1568939019170</updated>
-    </task>
-    <task id="LOCAL-00734" summary="글 작성 시 상태 값 추가 시작">
-      <created>1568939047212</created>
-      <option name="number" value="00734" />
-      <option name="presentableId" value="LOCAL-00734" />
-      <option name="project" value="LOCAL" />
-      <updated>1568939047212</updated>
+      <workItem from="1568947536122" duration="6655000" />
     </task>
     <task id="LOCAL-00735" summary="글 작성 시 상태 값 추가 시작">
       <created>1568939145711</created>
@@ -721,11 +700,32 @@
       <option name="project" value="LOCAL" />
       <updated>1568958342633</updated>
     </task>
-    <option name="localTasksCounter" value="781" />
+    <task id="LOCAL-00781" summary="글 수정기능 재 수정 시작">
+      <created>1568958418463</created>
+      <option name="number" value="00781" />
+      <option name="presentableId" value="LOCAL-00781" />
+      <option name="project" value="LOCAL" />
+      <updated>1568958418463</updated>
+    </task>
+    <task id="LOCAL-00782" summary="글 수정기능 재 수정 시작">
+      <created>1568958589424</created>
+      <option name="number" value="00782" />
+      <option name="presentableId" value="LOCAL-00782" />
+      <option name="project" value="LOCAL" />
+      <updated>1568958589424</updated>
+    </task>
+    <task id="LOCAL-00783" summary="글 수정기능 재 수정 시작">
+      <created>1568958649736</created>
+      <option name="number" value="00783" />
+      <option name="presentableId" value="LOCAL-00783" />
+      <option name="project" value="LOCAL" />
+      <updated>1568958649736</updated>
+    </task>
+    <option name="localTasksCounter" value="784" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="319662000" />
+    <option name="totallyTimeSpent" value="320499000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1177,8 +1177,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="217" selection-start-line="217" selection-end-line="217" />
+        <state relative-caret-position="514">
+          <caret line="221" column="57" lean-forward="true" selection-start-line="221" selection-start-column="57" selection-end-line="221" selection-end-column="57" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />

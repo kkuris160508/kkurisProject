@@ -215,8 +215,12 @@ class Main extends CI_Controller{
 
                 if(!$this->input->post('content',TRUE)){
                     echo 'content is empty';
+                    $tmpContent = $tmpRes->content;
+                    echo $tmpContent;
                 } else if(!$this->input->post('subject',TRUE)) {
                     echo 'subject is empty';
+                    $tmpSubject = $tmpRes->subject;
+                    echo $tmpSubject;
                 }
 
 //                if($subject !== '' || $content !== ''){
