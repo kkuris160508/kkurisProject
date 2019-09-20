@@ -41,10 +41,11 @@ class Auth extends CI_Controller{
 
 //            $result2 = $this->debug->debug_var($tmpRes); // debug 를 소문자로...ㅡㅡ
 //            echo $result2;
-            echo "auth_data['account_id'] : {$auth_data['account_id']} <br>";
-            echo "tmpRes->account_id : {$tmpRes->account_id} <br>";
-            echo "auth_data['PW'] : {$auth_data['PW']} <br>";
-            echo "tmpRes->PW : {$tmpRes->PW} <br>";
+
+//            echo "auth_data['account_id'] : {$auth_data['account_id']} <br>";
+//            echo "tmpRes->account_id : {$tmpRes->account_id} <br>";
+//            echo "auth_data['PW'] : {$auth_data['PW']} <br>";
+//            echo "tmpRes->PW : {$tmpRes->PW} <br>";
 
 
 
