@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="datepicker 날짜 지정 시작">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/todo/write_contents_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/todo/write_contents_v.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -49,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="133" column="30" lean-forward="true" selection-start-line="133" selection-start-column="30" selection-end-line="133" selection-end-column="30" />
+            <state relative-caret-position="711">
+              <caret line="154" column="28" selection-start-line="154" selection-start-column="28" selection-end-line="154" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -384,35 +385,7 @@
       <workItem from="1568944911940" duration="1659000" />
       <workItem from="1568946660645" duration="801000" />
       <workItem from="1568947536122" duration="18980000" />
-      <workItem from="1569225978001" duration="750000" />
-    </task>
-    <task id="LOCAL-00758" summary="hash_pw">
-      <created>1568946259319</created>
-      <option name="number" value="00758" />
-      <option name="presentableId" value="LOCAL-00758" />
-      <option name="project" value="LOCAL" />
-      <updated>1568946259319</updated>
-    </task>
-    <task id="LOCAL-00759" summary="hash_pw">
-      <created>1568946446879</created>
-      <option name="number" value="00759" />
-      <option name="presentableId" value="LOCAL-00759" />
-      <option name="project" value="LOCAL" />
-      <updated>1568946446879</updated>
-    </task>
-    <task id="LOCAL-00760" summary="hash_pw">
-      <created>1568946483251</created>
-      <option name="number" value="00760" />
-      <option name="presentableId" value="LOCAL-00760" />
-      <option name="project" value="LOCAL" />
-      <updated>1568946483251</updated>
-    </task>
-    <task id="LOCAL-00761" summary="hash_pw">
-      <created>1568946689310</created>
-      <option name="number" value="00761" />
-      <option name="presentableId" value="LOCAL-00761" />
-      <option name="project" value="LOCAL" />
-      <updated>1568946689311</updated>
+      <workItem from="1569225978001" duration="2021000" />
     </task>
     <task id="LOCAL-00762" summary="hash_pw">
       <created>1568946736411</created>
@@ -729,11 +702,39 @@
       <option name="project" value="LOCAL" />
       <updated>1569226681620</updated>
     </task>
-    <option name="localTasksCounter" value="807" />
+    <task id="LOCAL-00807" summary="datepicker 날짜 지정 시작">
+      <created>1569226731889</created>
+      <option name="number" value="00807" />
+      <option name="presentableId" value="LOCAL-00807" />
+      <option name="project" value="LOCAL" />
+      <updated>1569226731889</updated>
+    </task>
+    <task id="LOCAL-00808" summary="datepicker 날짜 지정 시작">
+      <created>1569226850928</created>
+      <option name="number" value="00808" />
+      <option name="presentableId" value="LOCAL-00808" />
+      <option name="project" value="LOCAL" />
+      <updated>1569226850928</updated>
+    </task>
+    <task id="LOCAL-00809" summary="datepicker 날짜 지정 시작">
+      <created>1569226905463</created>
+      <option name="number" value="00809" />
+      <option name="presentableId" value="LOCAL-00809" />
+      <option name="project" value="LOCAL" />
+      <updated>1569226905463</updated>
+    </task>
+    <task id="LOCAL-00810" summary="datepicker 날짜 지정 시작">
+      <created>1569227074012</created>
+      <option name="number" value="00810" />
+      <option name="presentableId" value="LOCAL-00810" />
+      <option name="project" value="LOCAL" />
+      <updated>1569227074012</updated>
+    </task>
+    <option name="localTasksCounter" value="811" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="333574000" />
+    <option name="totallyTimeSpent" value="334845000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1189,8 +1190,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="133" column="30" lean-forward="true" selection-start-line="133" selection-start-column="30" selection-end-line="133" selection-end-column="30" />
+        <state relative-caret-position="711">
+          <caret line="154" column="28" selection-start-line="154" selection-start-column="28" selection-end-line="154" selection-end-column="28" />
         </state>
       </provider>
     </entry>

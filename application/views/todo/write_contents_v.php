@@ -137,6 +137,10 @@
         $("#created_on").datepicker({
             currentText: '오늘날짜',
             closeText: '닫기',
+            nextText: '다음달',
+            prevText: '이전달',
+            changeMonth: true,
+            changeYear: true,
             gotoCurrent: true,
             autoClose: true,
             onSelect: function () {
@@ -147,7 +151,10 @@
         $("#due_date").datepicker({
             currentText: '오늘날짜',
             closeText: '닫기',
-            duration: 'fast',
+            nextText: '다음달',
+            prevText: '이전달',
+            changeMonth: true,
+            changeYear: true,
             gotoCurrent: true,
             autoClose: true,
             onSelect: function () {
