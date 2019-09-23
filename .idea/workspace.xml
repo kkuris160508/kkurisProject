@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="글 수정 기능 오류 수정 시작">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="datepicker 날짜 지정 시작">
       <change beforePath="$PROJECT_DIR$/application/views/todo/write_contents_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/todo/write_contents_v.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -61,8 +60,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="694">
-              <caret line="142" column="41" selection-start-line="142" selection-start-column="41" selection-end-line="142" selection-end-column="41" />
+            <state relative-caret-position="779">
+              <caret line="147" column="26" lean-forward="true" selection-start-line="147" selection-start-column="26" selection-end-line="147" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -395,28 +394,7 @@
       <workItem from="1568944043469" duration="533000" />
       <workItem from="1568944911940" duration="1659000" />
       <workItem from="1568946660645" duration="801000" />
-      <workItem from="1568947536122" duration="17942000" />
-    </task>
-    <task id="LOCAL-00748" summary="hash_pw">
-      <created>1568943403911</created>
-      <option name="number" value="00748" />
-      <option name="presentableId" value="LOCAL-00748" />
-      <option name="project" value="LOCAL" />
-      <updated>1568943403911</updated>
-    </task>
-    <task id="LOCAL-00749" summary="hash_pw">
-      <created>1568944060138</created>
-      <option name="number" value="00749" />
-      <option name="presentableId" value="LOCAL-00749" />
-      <option name="project" value="LOCAL" />
-      <updated>1568944060139</updated>
-    </task>
-    <task id="LOCAL-00750" summary="hash_pw">
-      <created>1568944125076</created>
-      <option name="number" value="00750" />
-      <option name="presentableId" value="LOCAL-00750" />
-      <option name="project" value="LOCAL" />
-      <updated>1568944125076</updated>
+      <workItem from="1568947536122" duration="18668000" />
     </task>
     <task id="LOCAL-00751" summary="hash_pw">
       <created>1568944324939</created>
@@ -740,11 +718,32 @@
       <option name="project" value="LOCAL" />
       <updated>1569224330899</updated>
     </task>
-    <option name="localTasksCounter" value="797" />
+    <task id="LOCAL-00797" summary="datepicker 날짜 지정 시작">
+      <created>1569224891049</created>
+      <option name="number" value="00797" />
+      <option name="presentableId" value="LOCAL-00797" />
+      <option name="project" value="LOCAL" />
+      <updated>1569224891049</updated>
+    </task>
+    <task id="LOCAL-00798" summary="datepicker 날짜 지정 시작">
+      <created>1569225004913</created>
+      <option name="number" value="00798" />
+      <option name="presentableId" value="LOCAL-00798" />
+      <option name="project" value="LOCAL" />
+      <updated>1569225004913</updated>
+    </task>
+    <task id="LOCAL-00799" summary="datepicker 날짜 지정 시작">
+      <created>1569225102679</created>
+      <option name="number" value="00799" />
+      <option name="presentableId" value="LOCAL-00799" />
+      <option name="project" value="LOCAL" />
+      <updated>1569225102679</updated>
+    </task>
+    <option name="localTasksCounter" value="800" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="331786000" />
+    <option name="totallyTimeSpent" value="332512000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -827,7 +826,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="리스트 뷰 작성자 클릭 시 이메일 링크" />
     <MESSAGE value="날짜 0000-00-00 으로 출력 되는 부분 쿼리 수정" />
     <MESSAGE value="리스트 뷰 말줄임표시" />
     <MESSAGE value="date 헬퍼 적용" />
@@ -852,7 +850,8 @@
     <MESSAGE value="게시글 줄바꿈 수정" />
     <MESSAGE value="admin 권한 넣기 수정시작" />
     <MESSAGE value="글 수정 기능 오류 수정 시작" />
-    <option name="LAST_COMMIT_MESSAGE" value="글 수정 기능 오류 수정 시작" />
+    <MESSAGE value="datepicker 날짜 지정 시작" />
+    <option name="LAST_COMMIT_MESSAGE" value="datepicker 날짜 지정 시작" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/application/views/Join/join_check_view.php">
@@ -1201,8 +1200,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="142" column="41" selection-start-line="142" selection-start-column="41" selection-end-line="142" selection-end-column="41" />
+        <state relative-caret-position="779">
+          <caret line="147" column="26" lean-forward="true" selection-start-line="147" selection-start-column="26" selection-end-line="147" selection-end-column="26" />
         </state>
       </provider>
     </entry>
