@@ -134,6 +134,7 @@
             showButtonPanel: true
         });
 
+        $("#created_on").datepicker('setDate', new Date());
         $("#created_on").datepicker({
             currentText: '오늘날짜',
             closeText: '닫기',
