@@ -151,7 +151,7 @@
         });
 
         $("#due_date").datepicker({
-            onSelect: function () {
+            onSelect: function (selected) {
                 $("input[name='due_date']").val();
                 $("#created_on").datepicker("option","maxDate",selected);
             }
