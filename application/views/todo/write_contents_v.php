@@ -137,7 +137,7 @@
             setDate: today,
             autoClose: true,
             onSelect: function () {
-                $("input[name='created_on']").val();
+                $("input[name='created_on']").val(today);
             }
         });
         $("#due_date").datepicker({
