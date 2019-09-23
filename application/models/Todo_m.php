@@ -254,6 +254,15 @@ class Todo_m extends CI_Model{
         return $result;
     }
 
+    function getAdminPermit($adminID){
+        $sql = "SELECT permit FROM accountTB WHERE account_id = '{$adminID}'";
+
+        $query = $this->db->query($sql);
+        $result = $query->row();
+
+        return $result;
+    }
+
 }
 
 ?>

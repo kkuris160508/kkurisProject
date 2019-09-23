@@ -89,9 +89,12 @@ class Main extends CI_Controller{
             $data['accountInfo'] = $this->session->userdata('account_id');
 
 //            echo $this->session->userdata('account_id');
+            $adminPermit = $this -> session -> userdata('account_id');
+            $data['permit'] = $this->todo_m->getAdminPermit($adminPermit);
 
-        $result2 = $this->debug->debug_var($data); // 시발 debug 를 소문자로...ㅡㅡ
-        echo $result2;
+
+            $result2 = $this->debug->debug_var($data); // 시발 debug 를 소문자로...ㅡㅡ
+            echo $result2;
 
             $this->increaseReadCnt($id);
 
@@ -185,7 +188,7 @@ class Main extends CI_Controller{
 //            $accountNo = $this->uri->segment(4);
 //            $accountID = $this->uri->segment(5);
 //
-//            $writer = $this -> session -> userdata('account_id');
+
 //
 //            if($accountID == $writer){
 
