@@ -65,9 +65,11 @@
         </th>
     </tr>
     <tr>
-        <div class="form-actions">
-            <input type="submit" class="btn btn-primary" id="write_btn" value="완료" />
-        </div>
+        <td>
+            <div class="form-actions">
+                <input type="submit" class="btn btn-primary" id="write_btn" value="완료" />
+            </div>
+        </td>
     </tr>
     </tbody>
     <tfoot>
