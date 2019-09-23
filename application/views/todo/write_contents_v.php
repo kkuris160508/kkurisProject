@@ -137,7 +137,6 @@
         $("#created_on").datepicker({
             currentText: '오늘날짜',
             closeText: '닫기',
-            gotoCurrent: true,
             autoClose: true,
             onSelect: function () {
                 $("input[name='created_on']").val();
@@ -146,7 +145,6 @@
         $("#due_date").datepicker({
             currentText: '오늘날짜',
             closeText: '닫기',
-            gotoCurrent: true,
             autoClose: true,
             onSelect: function () {
                 $("input[name='due_date']").val();
