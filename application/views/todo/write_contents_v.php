@@ -131,23 +131,24 @@
             dateFormat: "yy-mm-dd",
             buttonImageOnly: false,
             yearSuffix: "년",
-            showButtonPanel: true
+            showButtonPanel: true,
         });
 
-        $("#created_on").datepicker('setDate', new Date());
         $("#created_on").datepicker({
+
             currentText: '오늘날짜',
             closeText: '닫기',
+            gotoCurrent: true,
             autoClose: true,
             onSelect: function () {
                 $("input[name='created_on']").val();
             }.
         });
-        $("#due_date").datepicker('setDate',today.getDate() + 2);
         $("#due_date").datepicker({
 
             currentText: '오늘날짜',
             closeText: '닫기',
+            gotoCurrent: true,
             autoClose: true,
             onSelect: function () {
                 $("input[name='due_date']").val();
