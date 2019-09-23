@@ -24,7 +24,7 @@ class Main extends CI_Controller{
         $this->load->library('pagination'); // 페이지 네이션 설정
         $tmpIP = $this->input->ip_address();
 
-        if($tmpIP == '211.52.72.56' || $tmpIP == '106.245.165.216'){
+        if($tmpIP == '211.52.72.56' || $tmpIP == '106.245.165.216' || $tmpIP == '221.155.202.250'){
 
             if($tmpIP == '211.52.72.56'){
                 $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
@@ -246,7 +246,7 @@ class Main extends CI_Controller{
                     $data['edit'] = $this->todo_m->set_edit_views($postID, $subject, $content, $fixStatus, $type);
                 }
 
-                $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+//                $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
 //                $data['edit'] = $this->todo_m->set_edit_views($postID, $subject, $content, $fixStatus, $type);
 
