@@ -144,19 +144,20 @@
 
 
         $("#created_on").datepicker({
-            onSelect: function () {
+            onSelect: function (selected) {
                 $("input[name='created_on']").val();
+                $("#due_date").datepicker("option","minDate",selected);
             }
         });
-        $("#created_on").datepicker("setDate", new Date());
+        // $("#created_on").datepicker("setDate", new Date());
 
         $("#due_date").datepicker({
-            defaultDate: 2,
             onSelect: function () {
                 $("input[name='due_date']").val();
+                $("#created_on").datepicker("option","maxDate",selected);
             }
         });
-        $("#due_date").datepicker("setDate", 2);
+        // $("#due_date").datepicker("setDate", 2);
     });
 
     </script>
