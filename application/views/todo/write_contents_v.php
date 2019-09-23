@@ -134,7 +134,6 @@
             showButtonPanel: true
         });
 
-        $("#created_on").datepicker('setDate', new Date());
         $("#created_on").datepicker({
             currentText: '오늘날짜',
             closeText: '닫기',
@@ -144,9 +143,11 @@
                 $("input[name='created_on']").val();
             }
         });
+
         $("#due_date").datepicker({
             currentText: '오늘날짜',
             closeText: '닫기',
+            duration: 'fast',
             gotoCurrent: true,
             autoClose: true,
             onSelect: function () {
