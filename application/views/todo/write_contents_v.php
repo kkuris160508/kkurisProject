@@ -131,10 +131,7 @@
             dateFormat: "yy-mm-dd",
             buttonImageOnly: false,
             yearSuffix: "년",
-            showButtonPanel: true
-        });
-
-        $("#created_on").datepicker({
+            showButtonPanel: true,
             currentText: '오늘날짜',
             closeText: '닫기',
             nextText: '다음달',
@@ -142,21 +139,16 @@
             changeMonth: true,
             changeYear: true,
             gotoCurrent: true,
-            autoClose: true,
+            autoClose: true
+        });
+
+        $("#created_on").datepicker({
             onSelect: function () {
                 $("input[name='created_on']").val();
             }
         });
 
         $("#due_date").datepicker({
-            currentText: '오늘날짜',
-            closeText: '닫기',
-            nextText: '다음달',
-            prevText: '이전달',
-            changeMonth: true,
-            changeYear: true,
-            gotoCurrent: true,
-            autoClose: true,
             onSelect: function () {
                 $("input[name='due_date']").val();
             }
