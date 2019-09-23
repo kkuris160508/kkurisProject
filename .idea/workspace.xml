@@ -46,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="506" column="20" lean-forward="true" selection-start-line="506" selection-start-column="20" selection-end-line="506" selection-end-column="20" />
+            <state relative-caret-position="666">
+              <caret line="167" column="43" selection-start-line="167" selection-start-column="35" selection-end-line="167" selection-end-column="43" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -57,11 +57,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/header_v.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="473">
+              <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
-              <caret line="147" column="26" lean-forward="true" selection-start-line="147" selection-start-column="26" selection-end-line="147" selection-end-column="26" />
+            <state relative-caret-position="711">
+              <caret line="148" column="28" selection-start-line="148" selection-start-column="28" selection-end-line="148" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -124,7 +133,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pagination</find>
       <find>getSearchItems</find>
       <find>enable_profiler</find>
       <find>&lt;select</find>
@@ -154,6 +162,7 @@
       <find>set_edit_views</find>
       <find>211</find>
       <find>auto</find>
+      <find>write</find>
     </findStrings>
     <replaceStrings>
       <replace>PW</replace>
@@ -223,7 +232,6 @@
         <option value="$PROJECT_DIR$/application/controllers/Test.php" />
         <option value="$PROJECT_DIR$/application/views/todo/search_list_contents_v.php" />
         <option value="$PROJECT_DIR$/application/views/todo/list_contents_v.php" />
-        <option value="$PROJECT_DIR$/application/views/header_v.php" />
         <option value="$PROJECT_DIR$/application/models/Auth_m.php" />
         <option value="$PROJECT_DIR$/application/controllers/Auth.php" />
         <option value="$PROJECT_DIR$/application/views/todo/edit_contents_v.php" />
@@ -231,6 +239,7 @@
         <option value="$PROJECT_DIR$/application/controllers/Main.php" />
         <option value="$PROJECT_DIR$/application/views/todo/view_contents_v.php" />
         <option value="$PROJECT_DIR$/application/views/Auth/auto_login_v.php" />
+        <option value="$PROJECT_DIR$/application/views/header_v.php" />
         <option value="$PROJECT_DIR$/application/views/todo/write_contents_v.php" />
       </list>
     </option>
@@ -394,21 +403,7 @@
       <workItem from="1568944043469" duration="533000" />
       <workItem from="1568944911940" duration="1659000" />
       <workItem from="1568946660645" duration="801000" />
-      <workItem from="1568947536122" duration="18668000" />
-    </task>
-    <task id="LOCAL-00751" summary="hash_pw">
-      <created>1568944324939</created>
-      <option name="number" value="00751" />
-      <option name="presentableId" value="LOCAL-00751" />
-      <option name="project" value="LOCAL" />
-      <updated>1568944324939</updated>
-    </task>
-    <task id="LOCAL-00752" summary="hash_pw">
-      <created>1568944928984</created>
-      <option name="number" value="00752" />
-      <option name="presentableId" value="LOCAL-00752" />
-      <option name="project" value="LOCAL" />
-      <updated>1568944928986</updated>
+      <workItem from="1568947536122" duration="18980000" />
     </task>
     <task id="LOCAL-00753" summary="hash_pw">
       <created>1568945767347</created>
@@ -739,11 +734,25 @@
       <option name="project" value="LOCAL" />
       <updated>1569225102679</updated>
     </task>
-    <option name="localTasksCounter" value="800" />
+    <task id="LOCAL-00800" summary="datepicker 날짜 지정 시작">
+      <created>1569225612048</created>
+      <option name="number" value="00800" />
+      <option name="presentableId" value="LOCAL-00800" />
+      <option name="project" value="LOCAL" />
+      <updated>1569225612048</updated>
+    </task>
+    <task id="LOCAL-00801" summary="datepicker 날짜 지정 시작">
+      <created>1569225731681</created>
+      <option name="number" value="00801" />
+      <option name="presentableId" value="LOCAL-00801" />
+      <option name="project" value="LOCAL" />
+      <updated>1569225731681</updated>
+    </task>
+    <option name="localTasksCounter" value="802" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="332512000" />
+    <option name="totallyTimeSpent" value="332824000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1109,13 +1118,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/header_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="162" selection-start-line="16" selection-start-column="162" selection-end-line="16" selection-end-column="162" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system/helpers/date_helper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="878">
@@ -1188,8 +1190,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="506" column="20" lean-forward="true" selection-start-line="506" selection-start-column="20" selection-end-line="506" selection-end-column="20" />
+        <state relative-caret-position="666">
+          <caret line="167" column="43" selection-start-line="167" selection-start-column="35" selection-end-line="167" selection-end-column="43" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -1198,10 +1200,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/header_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="147" column="26" lean-forward="true" selection-start-line="147" selection-start-column="26" selection-end-line="147" selection-end-column="26" />
+        <state relative-caret-position="711">
+          <caret line="148" column="28" selection-start-line="148" selection-start-column="28" selection-end-line="148" selection-end-column="28" />
         </state>
       </provider>
     </entry>

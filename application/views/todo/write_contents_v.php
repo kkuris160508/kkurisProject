@@ -146,6 +146,7 @@
             setDate: today.getDate() + 2,
             currentText: '오늘날짜',
             closeText: '닫기',
+            autoClose: true,
             onSelect: function () {
                 $("input[name='due_date']").val();
             }
