@@ -143,12 +143,14 @@
         });
 
         $("#created_on").datepicker({
+            defaultDate: new Date(),
             onSelect: function () {
                 $("input[name='created_on']").val();
             }
         });
 
         $("#due_date").datepicker({
+            defaultDate: 2,
             onSelect: function () {
                 $("input[name='due_date']").val();
             }
