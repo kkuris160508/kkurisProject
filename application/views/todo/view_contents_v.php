@@ -45,7 +45,7 @@
             <tr>
                 <th rowspan="2">내용</th>
                 <th colspan="7">
-                    <?php echo $views -> content;?>
+                    <?php echo nl2br($views -> content);?>
                 </th>
             </tr>
 
