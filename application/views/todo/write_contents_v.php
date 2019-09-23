@@ -128,9 +128,10 @@
         console.log(today);
 
         $.datepicker.setDefaults({
-           dateFormat: "yy-mm-dd",
-           buttonImageOnly: false,
-           yearSuffix: "년"
+            dateFormat: "yy-mm-dd",
+            buttonImageOnly: false,
+            yearSuffix: "년",
+            showButtonPanel: true
         });
 
         $("#created_on").datepicker({
