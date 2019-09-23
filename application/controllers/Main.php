@@ -223,12 +223,12 @@ class Main extends CI_Controller{
 //                    echo $tmpSubject;
                 }
 
-//                $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+                $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
-                $data['edit'] = $this->todo_m->set_edit_views($postID, $subject, $content, $fixStatus, $type);
+//                $data['edit'] = $this->todo_m->set_edit_views($postID, $subject, $content, $fixStatus, $type);
 
-//                $result2 = $this->debug->debug_var($data); // 시발 debug 를 소문자로...ㅡㅡ
-//                echo $result2;
+                $result2 = $this->debug->debug_var($data); // 시발 debug 를 소문자로...ㅡㅡ
+                echo $result2;
 
                 if($data['edit'] == 1){
                     alert('수정되었습니다.','/Main/view/'.$postID);
