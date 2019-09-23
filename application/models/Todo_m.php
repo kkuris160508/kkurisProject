@@ -101,8 +101,9 @@ class Todo_m extends CI_Model{
         return $result;
     }
 
-    function set_edit_views($id, $subject, $content, $status){
+    function set_edit_views($id, $subject, $content, $status, $type){
         $addQuery = '';
+        $sql = '';
 
 //        if($subject !== ''){
 //            $addQuery = "subject = '{$subject}'";
@@ -123,8 +124,15 @@ class Todo_m extends CI_Model{
 //        } else {
 //            $addQuery = '';
 //        }
+        if($type == 1){
+            $sql = "UPDATE items SET subject = '{$subject}', status = '{$status}' WHERE id = '{$id}'";
+        } else if ($type == 2){
+            $sql = "UPDATE items SET content = '{$content}', status = '{$status}' WHERE id = '{$id}'";
+        } else if ($type == 0 || $type == 4){
+            $sql = "UPDATE items SET subject = '{$subject}', content = '{$content}', status = '{$status}' WHERE id = '{$id}'";
+        }
 
-        $sql = "UPDATE items SET subject = '{$subject}', content = '{$content}', status = '{$status}' WHERE id = '{$id}'";
+//        $sql = "UPDATE items SET subject = '{$subject}', content = '{$content}', status = '{$status}' WHERE id = '{$id}'";
 
 
         $query = $this->db->query($sql);

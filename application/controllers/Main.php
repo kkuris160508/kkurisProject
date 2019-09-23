@@ -204,23 +204,46 @@ class Main extends CI_Controller{
                 $fixStatus = $this->input->post('statusSelect', TRUE);
                 $type = '';
 
-                if(!$this->input->post('content',TRUE)) { //내용 값을 입력하지 않았음. 기존에 작성 한 내용을 그대로 update
-//                    echo 'content is empty';
-                    $tmpRes = $this->todo_m->get_views($postID);
-                    $tmpContent = $tmpRes->content;
+                $tmpRes = $this->todo_m->get_views($postID);
+                $tmpSubject = $tmpRes->subject;
+                $tmpContent = $tmpRes->content;
 
-                    $data['edit'] = $this->todo_m->set_edit_views($postID, $subject, $tmpContent, $fixStatus);
+//                if(!$this->input->post('content',TRUE)) { //내용 값을 입력하지 않았음. 기존에 작성 한 내용을 그대로 update
+////                    echo 'content is empty';
+//                    $tmpRes = $this->todo_m->get_views($postID);
+//                    $tmpContent = $tmpRes->content;
+//                    $type = 1;
+//
+//                    $data['edit'] = $this->todo_m->set_edit_views($postID, $subject, $tmpContent, $fixStatus, $type);
+//
+//
+////                    echo $tmpContent;
+//
+//                } else if(!$this->input->post('subject',TRUE)) { //제목 값을 입력하지 않았음. 기존에 작성 한 내용을 그대로 update
+////                    echo 'subject is empty';
+//                    $tmpRes = $this->todo_m->get_views($postID);
+//                    $tmpSubject = $tmpRes->subject;
+//                    $type = 2;
+//
+//                    $data['edit'] = $this->todo_m->set_edit_views($postID, $tmpSubject, $content, $fixStatus, $type);
+//
+////                    echo $tmpSubject;
+//                }
 
-//                    echo $tmpContent;
+                if(!$this->input->post('content',TRUE) && !$this->input->post('subject', TRUE)){
+                    $type = 0;
+                    $data['edit'] = $this->todo_m->set_edit_views($postID, $tmpSubject, $tmpContent, $fixStatus, $type);
 
-                } else if(!$this->input->post('subject',TRUE)) { //제목 값을 입력하지 않았음. 기존에 작성 한 내용을 그대로 update
-//                    echo 'subject is empty';
-                    $tmpRes = $this->todo_m->get_views($postID);
-                    $tmpSubject = $tmpRes->subject;
+                } else if ($this->input->post('content',TRUE) && !$this->input->post('subject', TRUE)){
+                    $type = 2;
+                    $data['edit'] = $this->todo_m->set_edit_views($postID, $tmpSubject, $content, $fixStatus, $type);
 
-                    $data['edit'] = $this->todo_m->set_edit_views($postID, $tmpSubject, $content, $fixStatus);
-
-//                    echo $tmpSubject;
+                } else if (!$this->input->post('content',TRUE) && $this->input->post('subject', TRUE)) {
+                    $type = 1;
+                    $data['edit'] = $this->todo_m->set_edit_views($postID, $subject, $tmpContent, $fixStatus, $type);
+                } else {
+                    $type = 4;
+                    $data['edit'] = $this->todo_m->set_edit_views($postID, $subject, $content, $fixStatus, $type);
                 }
 
                 $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
