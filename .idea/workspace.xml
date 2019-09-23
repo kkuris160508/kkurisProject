@@ -50,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="711">
-              <caret line="154" column="28" selection-start-line="154" selection-start-column="28" selection-end-line="154" selection-end-column="28" />
+            <state relative-caret-position="660">
+              <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
             </state>
           </provider>
         </entry>
@@ -385,28 +385,7 @@
       <workItem from="1568944911940" duration="1659000" />
       <workItem from="1568946660645" duration="801000" />
       <workItem from="1568947536122" duration="18980000" />
-      <workItem from="1569225978001" duration="2021000" />
-    </task>
-    <task id="LOCAL-00762" summary="hash_pw">
-      <created>1568946736411</created>
-      <option name="number" value="00762" />
-      <option name="presentableId" value="LOCAL-00762" />
-      <option name="project" value="LOCAL" />
-      <updated>1568946736411</updated>
-    </task>
-    <task id="LOCAL-00763" summary="hash_pw">
-      <created>1568946892927</created>
-      <option name="number" value="00763" />
-      <option name="presentableId" value="LOCAL-00763" />
-      <option name="project" value="LOCAL" />
-      <updated>1568946892927</updated>
-    </task>
-    <task id="LOCAL-00764" summary="hash_pw">
-      <created>1568947550212</created>
-      <option name="number" value="00764" />
-      <option name="presentableId" value="LOCAL-00764" />
-      <option name="project" value="LOCAL" />
-      <updated>1568947550212</updated>
+      <workItem from="1569225978001" duration="2596000" />
     </task>
     <task id="LOCAL-00765" summary="hash_pw">
       <created>1568947608588</created>
@@ -730,11 +709,32 @@
       <option name="project" value="LOCAL" />
       <updated>1569227074012</updated>
     </task>
-    <option name="localTasksCounter" value="811" />
+    <task id="LOCAL-00811" summary="datepicker 날짜 지정 시작">
+      <created>1569228178449</created>
+      <option name="number" value="00811" />
+      <option name="presentableId" value="LOCAL-00811" />
+      <option name="project" value="LOCAL" />
+      <updated>1569228178449</updated>
+    </task>
+    <task id="LOCAL-00812" summary="datepicker 날짜 지정 시작">
+      <created>1569228236262</created>
+      <option name="number" value="00812" />
+      <option name="presentableId" value="LOCAL-00812" />
+      <option name="project" value="LOCAL" />
+      <updated>1569228236262</updated>
+    </task>
+    <task id="LOCAL-00813" summary="datepicker 날짜 지정 시작">
+      <created>1569228473691</created>
+      <option name="number" value="00813" />
+      <option name="presentableId" value="LOCAL-00813" />
+      <option name="project" value="LOCAL" />
+      <updated>1569228473691</updated>
+    </task>
+    <option name="localTasksCounter" value="814" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="334845000" />
+    <option name="totallyTimeSpent" value="335420000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1190,8 +1190,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="154" column="28" selection-start-line="154" selection-start-column="28" selection-end-line="154" selection-end-column="28" />
+        <state relative-caret-position="660">
+          <caret line="151" lean-forward="true" selection-start-line="151" selection-end-line="151" />
         </state>
       </provider>
     </entry>

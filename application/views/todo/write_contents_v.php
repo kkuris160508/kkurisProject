@@ -142,12 +142,13 @@
             autoClose: true
         });
 
+
         $("#created_on").datepicker({
-            defaultDate: new Date(),
             onSelect: function () {
                 $("input[name='created_on']").val();
             }
         });
+        $("#created_on").datepicker("setDate", new Date());
 
         $("#due_date").datepicker({
             defaultDate: 2,
