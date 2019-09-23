@@ -156,6 +156,7 @@
                 $("input[name='due_date']").val();
             }
         });
+        $("#due_date").datepicker("setDate", 2);
     });
 
     </script>
