@@ -49,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="145" column="8" lean-forward="true" selection-start-line="145" selection-start-column="8" selection-end-line="145" selection-end-column="8" />
+            <state relative-caret-position="456">
+              <caret line="133" column="30" lean-forward="true" selection-start-line="133" selection-start-column="30" selection-end-line="133" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -384,28 +384,7 @@
       <workItem from="1568944911940" duration="1659000" />
       <workItem from="1568946660645" duration="801000" />
       <workItem from="1568947536122" duration="18980000" />
-      <workItem from="1569225978001" duration="507000" />
-    </task>
-    <task id="LOCAL-00755" summary="hash_pw">
-      <created>1568945994968</created>
-      <option name="number" value="00755" />
-      <option name="presentableId" value="LOCAL-00755" />
-      <option name="project" value="LOCAL" />
-      <updated>1568945994968</updated>
-    </task>
-    <task id="LOCAL-00756" summary="hash_pw">
-      <created>1568946047946</created>
-      <option name="number" value="00756" />
-      <option name="presentableId" value="LOCAL-00756" />
-      <option name="project" value="LOCAL" />
-      <updated>1568946047946</updated>
-    </task>
-    <task id="LOCAL-00757" summary="hash_pw">
-      <created>1568946098912</created>
-      <option name="number" value="00757" />
-      <option name="presentableId" value="LOCAL-00757" />
-      <option name="project" value="LOCAL" />
-      <updated>1568946098912</updated>
+      <workItem from="1569225978001" duration="750000" />
     </task>
     <task id="LOCAL-00758" summary="hash_pw">
       <created>1568946259319</created>
@@ -729,11 +708,32 @@
       <option name="project" value="LOCAL" />
       <updated>1569226150805</updated>
     </task>
-    <option name="localTasksCounter" value="804" />
+    <task id="LOCAL-00804" summary="datepicker 날짜 지정 시작">
+      <created>1569226534179</created>
+      <option name="number" value="00804" />
+      <option name="presentableId" value="LOCAL-00804" />
+      <option name="project" value="LOCAL" />
+      <updated>1569226534179</updated>
+    </task>
+    <task id="LOCAL-00805" summary="datepicker 날짜 지정 시작">
+      <created>1569226642530</created>
+      <option name="number" value="00805" />
+      <option name="presentableId" value="LOCAL-00805" />
+      <option name="project" value="LOCAL" />
+      <updated>1569226642530</updated>
+    </task>
+    <task id="LOCAL-00806" summary="datepicker 날짜 지정 시작">
+      <created>1569226681619</created>
+      <option name="number" value="00806" />
+      <option name="presentableId" value="LOCAL-00806" />
+      <option name="project" value="LOCAL" />
+      <updated>1569226681620</updated>
+    </task>
+    <option name="localTasksCounter" value="807" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="333331000" />
+    <option name="totallyTimeSpent" value="333574000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1189,8 +1189,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="145" column="8" lean-forward="true" selection-start-line="145" selection-start-column="8" selection-end-line="145" selection-end-column="8" />
+        <state relative-caret-position="456">
+          <caret line="133" column="30" lean-forward="true" selection-start-line="133" selection-start-column="30" selection-end-line="133" selection-end-column="30" />
         </state>
       </provider>
     </entry>
