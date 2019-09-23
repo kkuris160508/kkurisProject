@@ -130,18 +130,22 @@
         $.datepicker.setDefaults({
            dateFormat: "yy-mm-dd",
            buttonImageOnly: false,
-           yearSuffix: "년",
+           yearSuffix: "년"
         });
 
         $("#created_on").datepicker({
             setDate: today,
+            currentText: '오늘날짜',
+            closeText: '닫기',
             autoClose: true,
             onSelect: function () {
-                $("input[name='created_on']").val(today);
+                $("input[name='created_on']").val();
             }
         });
         $("#due_date").datepicker({
             setDate: today.getDate() + 2,
+            currentText: '오늘날짜',
+            closeText: '닫기',
             onSelect: function () {
                 $("input[name='due_date']").val();
             }
