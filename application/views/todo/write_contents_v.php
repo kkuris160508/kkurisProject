@@ -124,20 +124,23 @@
 
 <script type="text/javascript">
     $(function(){
+        var today = new Date();
+
         $.datepicker.setDefaults({
            dateFormat: "yy-mm-dd",
            buttonImageOnly: false,
-           yearSuffix: "년"
+           yearSuffix: "년",
         });
 
         $("#created_on").datepicker({
-            setDate: 'today',
+            setDate: today,
+            autoClose: true,
             onSelect: function () {
                 $("input[name='created_on']").val();
             }
         });
         $("#due_date").datepicker({
-            setDate: '+1D',
+            setDate: today.getDate() + 2,
             onSelect: function () {
                 $("input[name='due_date']").val();
             }
