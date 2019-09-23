@@ -149,7 +149,7 @@
                 $("#due_date").datepicker("option","minDate",selected);
             }
         });
-        // $("#created_on").datepicker("setDate", new Date());
+        $("#created_on").datepicker("setDate", new Date());
 
         $("#due_date").datepicker({
             onSelect: function () {
@@ -157,7 +157,7 @@
                 $("#created_on").datepicker("option","maxDate",selected);
             }
         });
-        // $("#due_date").datepicker("setDate", 2);
+        $("#due_date").datepicker("setDate", 1);
     });
 
     </script>
