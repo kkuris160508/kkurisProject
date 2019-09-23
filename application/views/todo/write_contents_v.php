@@ -131,11 +131,10 @@
             dateFormat: "yy-mm-dd",
             buttonImageOnly: false,
             yearSuffix: "년",
-            showButtonPanel: true,
+            showButtonPanel: true
         });
 
         $("#created_on").datepicker({
-
             currentText: '오늘날짜',
             closeText: '닫기',
             gotoCurrent: true,
@@ -145,7 +144,6 @@
             }.
         });
         $("#due_date").datepicker({
-
             currentText: '오늘날짜',
             closeText: '닫기',
             gotoCurrent: true,
