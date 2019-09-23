@@ -125,6 +125,7 @@
 <script type="text/javascript">
     $(function(){
         var today = new Date();
+        console.log(today);
 
         $.datepicker.setDefaults({
            dateFormat: "yy-mm-dd",
