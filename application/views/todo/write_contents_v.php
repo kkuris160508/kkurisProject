@@ -149,6 +149,7 @@
                 $("#due_date").datepicker("option","minDate",selected);
             }
         });
+        $("#created_on").datepicker("setDate", new Date());
 
         $("#due_date").datepicker({
             onSelect: function (selected) {
