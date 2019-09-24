@@ -124,9 +124,6 @@
 
 <script type="text/javascript">
     $(function(){
-        var today = new Date();
-        console.log(today);
-
         $.datepicker.setDefaults({
             dateFormat: "yy-mm-dd",
             buttonImageOnly: false,
@@ -144,13 +141,12 @@
 
 
         $("#created_on").datepicker({
-            setDate: new Date(),
             onSelect: function (selected) {
                 $("input[name='created_on']").val();
                 $("#due_date").datepicker("option","minDate",selected);
             }
         });
-        // $("#created_on").datepicker("setDate", new Date());
+        $("#created_on").datepicker("setDate", new Date());
 
         $("#due_date").datepicker({
             onSelect: function (selected) {
@@ -160,5 +156,5 @@
         });
     });
 
-    </script>
+</script>
 

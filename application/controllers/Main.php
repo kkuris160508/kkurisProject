@@ -24,7 +24,7 @@ class Main extends CI_Controller{
         $this->load->library('pagination'); // 페이지 네이션 설정
         $tmpIP = $this->input->ip_address();
 
-        if($tmpIP == '211.52.72.56' || $tmpIP == '106.245.165.216' || $tmpIP == '221.155.202.250'){
+//        if($tmpIP == '211.52.72.56' || $tmpIP == '106.245.165.216' || $tmpIP == '221.155.202.250'){
 
             if($tmpIP == '211.52.72.56'){
                 $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
@@ -69,9 +69,9 @@ class Main extends CI_Controller{
             $this->load->view('header_v', $param);
             $this->load->view('todo/list_contents_v', $data);
             $this->load->view('todo/footer_v');
-        } else {
-            echo "접속 불가";
-        }
+//        } else {
+//            echo "접속 불가";
+//        }
 
 
 
@@ -114,9 +114,32 @@ class Main extends CI_Controller{
 //            $this->load->view('todo/view_contents_v', $data);
 //            $this->load->view('todo/footer_v');
         }
-
-
     }
+
+//    function reply(){
+//        $this->load->helper('alert');
+//        $param = array(
+//            'id'=>'댓글'
+//        );
+//
+//        if ( @$this -> session -> userdata('logged_in') == TRUE) {
+//            $id = $this->uri->segment(3);
+//
+//            $data['views'] = $this->todo_m->get_views($id);
+//
+//            $this->load->view('header_v', $param);
+//            $this->load->view('todo/reply_contents_v', $data);
+//            $this->load->view('todo/footer_v');
+//
+//            $replyContents = $this->input->post('replyContent', TRUE);
+//
+//            //모델에 replyContens insert
+//
+//            $this->todo_m->insReply($replyContents, $id);
+//
+//            //insert 완료 후 view 페이지 리다이렉션
+//        }
+//    }
 
     // write controller 추가
     function write(){ //쓰기 함수 $_POST 의 유무에 따라 if-else 분기 처리. post 전송이 없을 경우 else 실행되어 입력 폼이 출력.

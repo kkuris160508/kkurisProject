@@ -271,6 +271,10 @@ class Todo_m extends CI_Model{
         return $result;
     }
 
+    function insReply($contents, $id){
+//        $sql = "INSERT INTO "
+    }
+
 }
 
 ?>
