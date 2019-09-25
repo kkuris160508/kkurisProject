@@ -43,7 +43,7 @@
         </th>
     </tr>
     <tr>
-        <th rowspan="2">내용</th>
+        <th>내용</th>
         <th colspan="7">
             <?php echo nl2br($views -> content);?> <!-- 게시글 줄바꿈 처리-->
         </th>
