@@ -276,15 +276,6 @@ class Todo_m extends CI_Model{
 
         $query = $this->db->query($sql);
 
-        if($this->db->affected_rows() == 0){
-
-            return 0;
-
-        } else {
-
-            return 1;
-        }
-
     }
 
 }
