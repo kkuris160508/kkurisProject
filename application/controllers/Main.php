@@ -128,8 +128,10 @@ class Main extends CI_Controller{
             $writer = $this -> session -> userdata('account_id');
             $writerNo = $this->todo_m->getAccountInfoNo($writer);
 
+            echo $writerNo[0]->no;
+
             $result2 = $this->debug->debug_var($writerNo); // 시발 debug 를 소문자로...ㅡㅡ
-            echo $result2;
+//            echo $result2;
 
             $data['views'] = $this->todo_m->get_views($id);
 
