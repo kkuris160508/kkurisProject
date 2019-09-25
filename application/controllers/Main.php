@@ -147,6 +147,8 @@ class Main extends CI_Controller{
 
             $result = $this->todo_m->insReply($replyContents, $postID, $writerNo[0]->no);
 
+            $this->debug->debug_var($result); // 시발 debug 를 소문자로...ㅡㅡ
+
             $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
             if($result == 0){
