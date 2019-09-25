@@ -141,14 +141,15 @@ class Main extends CI_Controller{
             $this->load->view('reply_contents_v', $data);
             $this->load->view('todo/footer_v');
 
+            $replyContents = $this->input->post('replyContent', TRUE);
+            $postID = $this->input->post('id', TRUE);
 
             $this->form_validation->set_rules('replyContent','댓글','required');
             echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
 
 //          //모델에 replyContens insert
 
-            $replyContents = $this->input->post('replyContent', TRUE);
-            $postID = $this->input->post('id', TRUE);
+
 
             echo $replyContents;
             echo $postID;
