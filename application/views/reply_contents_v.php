@@ -50,16 +50,16 @@
     </tr>
 
     <tr>
-        <th>댓글</th>
-        <th colspan="6" name = 'replyContent'>
+        <td>댓글</td>
+        <td colspan="6" name = 'replyContent'>
 <!--            --><?php
 //            $extraOpt = array(
 //                'style'       => 'width:100%;height:50%;resize:none;',
 //                'placeholder' => '댓글영역'
 //            );
 //            ?>
-            <?php form_textarea('replyContent');?>
-        </th>
+            <?php echo form_textarea('replyContent');?>
+        </td>
     </tr>
 
     </tbody>
