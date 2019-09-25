@@ -50,8 +50,8 @@
     </tr>
 
     <tr>
-        <td>댓글</td>
-        <td colspan="6" name = 'replyContent'>
+        <th>댓글</th>
+        <th colspan="6" name = 'replyContent'>
 <!--            --><?php
 //            $extraOpt = array(
 //                'style'       => 'width:100%;height:50%;resize:none;',
@@ -59,7 +59,7 @@
 //            );
 //            ?>
             <?php form_textarea('replyContent');?>
-        </td>
+        </th>
     </tr>
 
     </tbody>
