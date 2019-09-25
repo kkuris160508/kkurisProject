@@ -127,6 +127,7 @@ class Main extends CI_Controller{
 
             $writer = $this -> session -> userdata('account_id');
             $writerNo = $this->todo_m->getAccountInfoNo($writer);
+            echo $writerNo;
 
             $data['views'] = $this->todo_m->get_views($id);
 
@@ -136,10 +137,11 @@ class Main extends CI_Controller{
             $this->load->view('todo/footer_v');
 
             $replyContents = $this->input->post('replyContent', TRUE);
+            $postID = $this->input->post('id', TRUE);
 
             //모델에 replyContens insert
 
-            $result = $this->todo_m->insReply($replyContents, $id, $writerNo);
+            $result = $this->todo_m->insReply($replyContents, $postID, $writerNo);
 
             $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
