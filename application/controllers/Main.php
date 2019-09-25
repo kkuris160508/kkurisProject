@@ -127,7 +127,7 @@ class Main extends CI_Controller{
 
             $writer = $this -> session -> userdata('account_id');
             $writerNo = $this->todo_m->getAccountInfoNo($writer);
-            echo $writerNo;
+            echo $writerNo->no;
 
             $data['views'] = $this->todo_m->get_views($id);
 
