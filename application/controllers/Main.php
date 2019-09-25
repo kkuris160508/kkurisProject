@@ -132,7 +132,7 @@ class Main extends CI_Controller{
 
 
             $this->load->view('header_v', $param);
-            $this->load->view('todo/reply_contents_v', $data);
+            $this->load->view('reply_contents_v', $data);
             $this->load->view('todo/footer_v');
 
             $replyContents = $this->input->post('replyContent', TRUE);
