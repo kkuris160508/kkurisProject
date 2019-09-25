@@ -149,9 +149,14 @@ class Main extends CI_Controller{
 
             $replyContents = $this->input->post('replyContent', TRUE);
             $postID = $this->input->post('id', TRUE);
-//
-//
-            $result = $this->todo_m->insReply($replyContents, $postID, $writerNo[0]->no);
+
+            echo $replyContents;
+            echo $postID;
+
+            if($replyContents !== ''){
+                $result = $this->todo_m->insReply($replyContents, $postID, $writerNo[0]->no);
+            }
+
 //
             $this->debug->debug_var($result); // 시발 debug 를 소문자로...ㅡㅡ
 //
