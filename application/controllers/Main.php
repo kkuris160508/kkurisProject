@@ -116,30 +116,37 @@ class Main extends CI_Controller{
         }
     }
 
-//    function reply(){
-//        $this->load->helper('alert');
-//        $param = array(
-//            'id'=>'댓글'
-//        );
-//
-//        if ( @$this -> session -> userdata('logged_in') == TRUE) {
-//            $id = $this->uri->segment(3);
-//
-//            $data['views'] = $this->todo_m->get_views($id);
-//
-//            $this->load->view('header_v', $param);
-//            $this->load->view('todo/reply_contents_v', $data);
-//            $this->load->view('todo/footer_v');
-//
-//            $replyContents = $this->input->post('replyContent', TRUE);
-//
-//            //모델에 replyContens insert
-//
-//            $this->todo_m->insReply($replyContents, $id);
-//
-//            //insert 완료 후 view 페이지 리다이렉션
-//        }
-//    }
+    function reply(){
+        $this->load->helper('alert');
+        $param = array(
+            'id'=>'댓글'
+        );
+
+        if ( @$this -> session -> userdata('logged_in') == TRUE) {
+            $id = $this->uri->segment(3);
+
+            $writer = $this -> session -> userdata('account_id');
+            $writerNo = $this->todo_m->getAccountInfoNo($writer);
+
+            $data['views'] = $this->todo_m->get_views($id);
+
+
+            $this->load->view('header_v', $param);
+            $this->load->view('todo/reply_contents_v', $data);
+            $this->load->view('todo/footer_v');
+
+            $replyContents = $this->input->post('replyContent', TRUE);
+
+            //모델에 replyContens insert
+
+            $result = $this->todo_m->insReply($replyContents, $id, $writerNo);
+
+            if($result == 0){
+                alert('댓글이 등록 되었습니다.','/Main/views/'.$id);
+            }
+            //insert 완료 후 view 페이지 리다이렉션
+        }
+    }
 
     // write controller 추가
     function write(){ //쓰기 함수 $_POST 의 유무에 따라 if-else 분기 처리. post 전송이 없을 경우 else 실행되어 입력 폼이 출력.

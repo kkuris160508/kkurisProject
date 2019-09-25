@@ -271,8 +271,20 @@ class Todo_m extends CI_Model{
         return $result;
     }
 
-    function insReply($contents, $id){
-//        $sql = "INSERT INTO "
+    function insReply($contents, $id, $writerNo){
+        $sql = "INSERT INTO items_reply (items_no, contents, writer_no) VALUES ('{$id}','{$contents}', '{$writerNo}')";
+
+        $query = $this->db->query($sql);
+
+        if($this->db->affected_rows() == 0){
+
+            return 0;
+
+        } else {
+
+            return 1;
+        }
+
     }
 
 }
