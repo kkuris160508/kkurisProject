@@ -144,25 +144,25 @@ class Main extends CI_Controller{
 
             $this->form_validation->set_rules('replyContent','댓글','required');
             echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
-
-            //모델에 replyContens insert
-
-
-
-            $replyContents = $this->input->post('replyContent', TRUE);
-            $postID = $this->input->post('id', TRUE);
-
-
-            $result = $this->todo_m->insReply($replyContents, $postID, $writerNo[0]->no);
-
-//            $this->debug->debug_var($result); // 시발 debug 를 소문자로...ㅡㅡ
-
-            $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
-
-            if($result == 1){
-                alert('댓글이 등록 되었습니다.','/Main/view/'.$postID);
-
-            }
+//
+//            //모델에 replyContens insert
+//
+//
+//
+//            $replyContents = $this->input->post('replyContent', TRUE);
+//            $postID = $this->input->post('id', TRUE);
+//
+//
+//            $result = $this->todo_m->insReply($replyContents, $postID, $writerNo[0]->no);
+//
+////            $this->debug->debug_var($result); // 시발 debug 를 소문자로...ㅡㅡ
+//
+//            $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+//
+//            if($result == 1){
+//                alert('댓글이 등록 되었습니다.','/Main/view/'.$postID);
+//
+//            }
 
             //insert 완료 후 view 페이지 리다이렉션
         }
