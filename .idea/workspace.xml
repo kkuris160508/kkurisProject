@@ -60,8 +60,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/reply_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="62" column="9" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+            <state relative-caret-position="459">
+              <caret line="54" column="11" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
+              <folding>
+                <element signature="e#1550#1582#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -390,28 +393,7 @@
       <workItem from="1568947536122" duration="18980000" />
       <workItem from="1569225978001" duration="2867000" />
       <workItem from="1569229069470" duration="5646000" />
-      <workItem from="1569391362257" duration="1819000" />
-    </task>
-    <task id="LOCAL-00782" summary="글 수정기능 재 수정 시작">
-      <created>1568958589424</created>
-      <option name="number" value="00782" />
-      <option name="presentableId" value="LOCAL-00782" />
-      <option name="project" value="LOCAL" />
-      <updated>1568958589424</updated>
-    </task>
-    <task id="LOCAL-00783" summary="글 수정기능 재 수정 시작">
-      <created>1568958649736</created>
-      <option name="number" value="00783" />
-      <option name="presentableId" value="LOCAL-00783" />
-      <option name="project" value="LOCAL" />
-      <updated>1568958649736</updated>
-    </task>
-    <task id="LOCAL-00784" summary="글 수정기능 재 수정 시작">
-      <created>1568959447237</created>
-      <option name="number" value="00784" />
-      <option name="presentableId" value="LOCAL-00784" />
-      <option name="project" value="LOCAL" />
-      <updated>1568959447237</updated>
+      <workItem from="1569391362257" duration="2061000" />
     </task>
     <task id="LOCAL-00785" summary="글 수정기능 재 수정 시작">
       <created>1568959596786</created>
@@ -735,11 +717,32 @@
       <option name="project" value="LOCAL" />
       <updated>1569392982331</updated>
     </task>
-    <option name="localTasksCounter" value="831" />
+    <task id="LOCAL-00831" summary="댓글작업 시작">
+      <created>1569393218673</created>
+      <option name="number" value="00831" />
+      <option name="presentableId" value="LOCAL-00831" />
+      <option name="project" value="LOCAL" />
+      <updated>1569393218673</updated>
+    </task>
+    <task id="LOCAL-00832" summary="댓글작업 시작">
+      <created>1569393330332</created>
+      <option name="number" value="00832" />
+      <option name="presentableId" value="LOCAL-00832" />
+      <option name="project" value="LOCAL" />
+      <updated>1569393330332</updated>
+    </task>
+    <task id="LOCAL-00833" summary="댓글작업 시작">
+      <created>1569393402663</created>
+      <option name="number" value="00833" />
+      <option name="presentableId" value="LOCAL-00833" />
+      <option name="project" value="LOCAL" />
+      <updated>1569393402663</updated>
+    </task>
+    <option name="localTasksCounter" value="834" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="343156000" />
+    <option name="totallyTimeSpent" value="343398000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1206,8 +1209,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/reply_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="62" column="9" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+        <state relative-caret-position="459">
+          <caret line="54" column="11" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
+          <folding>
+            <element signature="e#1550#1582#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

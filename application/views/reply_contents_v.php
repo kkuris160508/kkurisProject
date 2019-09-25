@@ -52,12 +52,12 @@
     <tr>
         <td>댓글</td>
         <td colspan="6" name = 'replyContent'>
-<!--            --><?php
-//            $extraOpt = array(
-//                'style'       => 'width:100%;height:50%;resize:none;',
-//                'placeholder' => '댓글영역'
-//            );
-//            ?>
+            <?php
+            $extraOpt = array(
+                'style'       => 'width:100%;height:50%;resize:none;',
+                'placeholder' => '댓글영역'
+            );
+            ?>
             <?php echo form_textarea('replyContent');?>
         </td>
     </tr>
