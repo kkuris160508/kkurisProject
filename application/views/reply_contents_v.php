@@ -48,9 +48,10 @@
             <?php echo nl2br($views -> content);?> <!-- 게시글 줄바꿈 처리-->
         </th>
     </tr>
+
     <tr>
         <td>댓글</td>
-        <td colspan="7">
+        <td colspan="7" name = 'replyContent'>
             <?php
             $extraOpt = array(
                 'style'       => 'width:100%;height:50%;resize:none;',
