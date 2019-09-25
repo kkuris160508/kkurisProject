@@ -51,7 +51,7 @@
 
     <tr>
         <td>댓글</td>
-        <td colspan="7" name = 'replyContent'>
+        <td colspan="6" name = 'replyContent'>
             <?php
             $extraOpt = array(
                 'style'       => 'width:100%;height:50%;resize:none;',
