@@ -46,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="152" column="60" selection-start-line="152" selection-start-column="60" selection-end-line="152" selection-end-column="60" />
+            <state relative-caret-position="612">
+              <caret line="154" column="63" lean-forward="true" selection-start-line="154" selection-start-column="63" selection-end-line="154" selection-end-column="63" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#__construct#0;n#Main#0;n#!!top" />
@@ -162,8 +162,8 @@
       <find>write</find>
       <find>reply</find>
       <find>userdata</find>
-      <find>getAccountInfoNo</find>
       <find>form_textarea</find>
+      <find>getAccountInfoNo</find>
     </findStrings>
     <replaceStrings>
       <replace>PW</replace>
@@ -400,28 +400,7 @@
       <workItem from="1568947536122" duration="18980000" />
       <workItem from="1569225978001" duration="2867000" />
       <workItem from="1569229069470" duration="5646000" />
-      <workItem from="1569391362257" duration="2851000" />
-    </task>
-    <task id="LOCAL-00795" summary="글 수정 기능 오류 수정 시작">
-      <created>1569223835143</created>
-      <option name="number" value="00795" />
-      <option name="presentableId" value="LOCAL-00795" />
-      <option name="project" value="LOCAL" />
-      <updated>1569223835143</updated>
-    </task>
-    <task id="LOCAL-00796" summary="글 수정 기능 오류 수정 시작">
-      <created>1569224330899</created>
-      <option name="number" value="00796" />
-      <option name="presentableId" value="LOCAL-00796" />
-      <option name="project" value="LOCAL" />
-      <updated>1569224330899</updated>
-    </task>
-    <task id="LOCAL-00797" summary="datepicker 날짜 지정 시작">
-      <created>1569224891049</created>
-      <option name="number" value="00797" />
-      <option name="presentableId" value="LOCAL-00797" />
-      <option name="project" value="LOCAL" />
-      <updated>1569224891049</updated>
+      <workItem from="1569391362257" duration="3111000" />
     </task>
     <task id="LOCAL-00798" summary="datepicker 날짜 지정 시작">
       <created>1569225004913</created>
@@ -745,11 +724,32 @@
       <option name="project" value="LOCAL" />
       <updated>1569394184373</updated>
     </task>
-    <option name="localTasksCounter" value="844" />
+    <task id="LOCAL-00844" summary="댓글작업 시작">
+      <created>1569394252610</created>
+      <option name="number" value="00844" />
+      <option name="presentableId" value="LOCAL-00844" />
+      <option name="project" value="LOCAL" />
+      <updated>1569394252610</updated>
+    </task>
+    <task id="LOCAL-00845" summary="댓글작업 시작">
+      <created>1569394324963</created>
+      <option name="number" value="00845" />
+      <option name="presentableId" value="LOCAL-00845" />
+      <option name="project" value="LOCAL" />
+      <updated>1569394324963</updated>
+    </task>
+    <task id="LOCAL-00846" summary="댓글작업 시작">
+      <created>1569394386539</created>
+      <option name="number" value="00846" />
+      <option name="presentableId" value="LOCAL-00846" />
+      <option name="project" value="LOCAL" />
+      <updated>1569394386539</updated>
+    </task>
+    <option name="localTasksCounter" value="847" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="344188000" />
+    <option name="totallyTimeSpent" value="344448000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1201,8 +1201,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="152" column="60" selection-start-line="152" selection-start-column="60" selection-end-line="152" selection-end-column="60" />
+        <state relative-caret-position="612">
+          <caret line="154" column="63" lean-forward="true" selection-start-line="154" selection-start-column="63" selection-end-line="154" selection-end-column="63" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#__construct#0;n#Main#0;n#!!top" />
