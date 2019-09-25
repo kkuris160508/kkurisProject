@@ -130,8 +130,8 @@ class Main extends CI_Controller{
 
             echo $writerNo[0]->no;
 
-            $result2 = $this->debug->debug_var($writerNo); // 시발 debug 를 소문자로...ㅡㅡ
-//            echo $result2;
+            $this->debug->debug_var($writerNo); // 시발 debug 를 소문자로...ㅡㅡ
+
 
             $data['views'] = $this->todo_m->get_views($id);
 
@@ -145,13 +145,14 @@ class Main extends CI_Controller{
 
             //모델에 replyContens insert
 
-            $result = $this->todo_m->insReply($replyContents, $postID, $writerNo->no);
+            $result = $this->todo_m->insReply($replyContents, $postID, $writerNo[0]->no);
 
             $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
-//            if($result == 0){
-//                alert('댓글이 등록 되었습니다.','/Main/views/'.$id);
-//            }
+            if($result == 0){
+                alert('댓글이 등록 되었습니다.','/Main/views/'.$postID);
+            }
+
             //insert 완료 후 view 페이지 리다이렉션
         }
     }
