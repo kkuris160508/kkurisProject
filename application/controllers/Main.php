@@ -141,7 +141,7 @@ class Main extends CI_Controller{
 
             //모델에 replyContens insert
 
-            $result = $this->todo_m->insReply($replyContents, $postID, $writerNo);
+            $result = $this->todo_m->insReply($replyContents, $postID, $writerNo->no);
 
             $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
