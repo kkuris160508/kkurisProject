@@ -58,7 +58,7 @@
                 'placeholder' => '댓글영역'
             );
             ?>
-            <?php echo form_textarea('replyContent');?>
+            <?php echo form_textarea('replyContent','',$extraOpt);?>
         </td>
     </tr>
 
