@@ -151,7 +151,7 @@ class Main extends CI_Controller{
 
             $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
-            if($result == 0){
+            if($result == 1){
                 alert('댓글이 등록 되었습니다.','/Main/views/'.$postID);
             }
 
