@@ -141,9 +141,11 @@ class Main extends CI_Controller{
 
             $result = $this->todo_m->insReply($replyContents, $id, $writerNo);
 
-            if($result == 0){
-                alert('댓글이 등록 되었습니다.','/Main/views/'.$id);
-            }
+            $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+
+//            if($result == 0){
+//                alert('댓글이 등록 되었습니다.','/Main/views/'.$id);
+//            }
             //insert 완료 후 view 페이지 리다이렉션
         }
     }
