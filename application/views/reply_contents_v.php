@@ -76,5 +76,5 @@
     </tfoot>
 </table>
 </article>
-<?php form_close();?>
+<?php echo form_close();?>
 
