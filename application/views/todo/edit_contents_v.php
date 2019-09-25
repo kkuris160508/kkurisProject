@@ -67,7 +67,7 @@
     <tr>
         <td>
             <div class="form-actions">
-                <input type="submit" class="btn btn-primary" id="write_btn" value="완료" />
+                <input type="submit" class="btn btn-primary" id="replyWrite_btn" value="완료" />
             </div>
         </td>
     </tr>
