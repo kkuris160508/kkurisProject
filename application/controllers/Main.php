@@ -153,7 +153,7 @@ class Main extends CI_Controller{
                 echo $replyContents;
                 echo $postID;
 
-                $result = $this->todo_m->insReply($replyContents, $postID, $writerNo[0]->no);
+                $this->todo_m->insReply($replyContents, $postID, $writerNo[0]->no);
                 alert('댓글이 등록 되었습니다.',"/Main/view/'{$postID}'");
 
 
