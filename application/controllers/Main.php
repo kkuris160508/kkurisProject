@@ -141,18 +141,36 @@ class Main extends CI_Controller{
             $this->load->view('reply_contents_v', $data);
             $this->load->view('todo/footer_v');
 
-            $replyContents = $this->input->post('replyContent', TRUE);
-            $postID = $this->input->post('id', TRUE);
+            $this->form_validation->set_rules('replyContent','댓글','required');
+            echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
 
-//            $this->form_validation->set_rules('replyContent','댓글','required');
-//            echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
+            if($this->form_validation->run() == TRUE){
+
+                $replyContents = $this->input->post('replyContent', TRUE);
+                $postID = $this->input->post('id', TRUE);
+
+
+                echo $replyContents;
+                echo $postID;
+
+                $result = $this->todo_m->insReply($replyContents, $postID, $writerNo[0]->no);
+                alert('댓글이 등록 되었습니다.',"/Main/view/'{$postID}'");
+
+
+            } else {
+
+                $this->load->view('header_v', $param);
+                $this->load->view('todo/view_contents_v', $data);
+                $this->load->view('todo/footer_v');
+            }
+
+
+
 
 //          //모델에 replyContens insert
 
 
 
-            echo $replyContents;
-            echo $postID;
 
 //            if($replyContents !== '' && $postID !== ''){
 //                $result = $this->todo_m->insReply($replyContents, $postID, $writerNo[0]->no);
