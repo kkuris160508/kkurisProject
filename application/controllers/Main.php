@@ -136,7 +136,7 @@ class Main extends CI_Controller{
 
             $data['views'] = $this->todo_m->get_views($id);
 
-            $this->form_validation->set_rules('replyContent','댓글','required');
+
             echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
 
             $this->load->view('header_v', $param);
@@ -149,6 +149,7 @@ class Main extends CI_Controller{
                 $replyContents = $this->input->post('replyContent', TRUE);
                 $postID = $this->input->post('id', TRUE);
 
+                $this->form_validation->set_rules('replyContent','댓글','required');
 
                 echo $replyContents;
                 echo $postID;
