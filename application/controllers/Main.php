@@ -626,7 +626,14 @@ class Main extends CI_Controller{
     }
 
     function lotto(){
-        $lottoNum = mt_rand(1,45);
+        $lottoNum = array();
+
+        for($i = 0; $i < 6; $i++){
+            $lottoNum[$i] = mt_rand(1,45);
+
+
+        }
+
         echo $lottoNum;
     }
 }
