@@ -152,8 +152,11 @@ class Main extends CI_Controller{
         echo $result;
 
         if ($result == 1){
+            echo 'DB저장완료';
 //            alert('DB저장 완료', '/uploads/'.$fileName);
-            alert(" DB저장 완료", '/Main/imgList');
+//            alert(" DB저장 완료", '/Main/imgList');
+        } else {
+            echo '저장안됨';
         }
 //        $this->debug->debug_var($fileName);
     }
