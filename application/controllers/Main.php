@@ -69,6 +69,10 @@ class Main extends CI_Controller{
             $this->load->view('header_v', $param);
             $this->load->view('todo/list_contents_v', $data);
             $this->load->view('todo/footer_v');
+
+            $tmpIDX = $this->input->post('id');
+
+
         } else {
             echo "접속 불가";
         }

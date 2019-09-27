@@ -26,7 +26,7 @@
 
             <th scope="row" style="width: 100px;">
                 <?php echo $lt -> id;?>
-                <?php echo form_checkbox('id', 'accept', TRUE);?>
+                <?php echo form_checkbox('id', 'accept', false);?>
             </th>
             <th scope="row" style="width: 100px;">
                 <?php echo $lt -> status;?>
