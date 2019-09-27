@@ -9,5 +9,3 @@
 <?php endforeach;?>
 </body>
 </html>
-
-http://34.80.199.17/uploads/35dcf2fb9e1.png
