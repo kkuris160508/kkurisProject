@@ -149,6 +149,7 @@ class Main extends CI_Controller{
         echo $fileName;
 
         $result = $this->todo_m->insFileData($fileName);
+        echo $result;
 
         if ($result == 1){
 //            alert('DB저장 완료', '/uploads/'.$fileName);
