@@ -144,9 +144,15 @@ class Main extends CI_Controller{
     }
 
     function uploadTest(){
-        $fileName = $this->input->post('file_name', TRUE);
 
-        $this->debug->debug_var($fileName); // 시발 debug 를 소문자로...ㅡㅡ
+        $fileName = $this->input->post('file_name', TRUE); // DB에 파일 이름 저장
+
+        $result = $this->todo_m->insFileData($fileName);
+
+        if ($result == 1){
+            alert('DB저장 완료');
+        }
+//        $this->debug->debug_var($fileName);
     }
 //    function reply(){                                         //잠정 스탑..
 //        $this->load->library('form_validation');
