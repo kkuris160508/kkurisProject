@@ -631,7 +631,7 @@ class Main extends CI_Controller{
         for($i = 0; $i < 6; $i++){
             $lottoNum[$i] = mt_rand(1,45);
 
-            echo $lottoNum[$i]."<br>";
+//            echo $lottoNum[$i]."<br>";
 
             for($j = 1; $j < 6; $j++){
                 if(in_array($lottoNum[$j],$lottoNum)){

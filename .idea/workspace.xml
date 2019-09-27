@@ -46,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
-              <caret line="632" column="12" selection-start-line="632" selection-start-column="12" selection-end-line="632" selection-end-column="12" />
+            <state relative-caret-position="601">
+              <caret line="639" column="29" selection-start-line="639" selection-start-column="29" selection-end-line="639" selection-end-column="29" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#__construct#0;n#Main#0;n#!!top" />
@@ -407,28 +407,7 @@
       <workItem from="1569225978001" duration="2867000" />
       <workItem from="1569229069470" duration="5646000" />
       <workItem from="1569391362257" duration="8149000" />
-      <workItem from="1569546694989" duration="5044000" />
-    </task>
-    <task id="LOCAL-00822" summary="datepicker 날짜 지정 시작">
-      <created>1569285191209</created>
-      <option name="number" value="00822" />
-      <option name="presentableId" value="LOCAL-00822" />
-      <option name="project" value="LOCAL" />
-      <updated>1569285191209</updated>
-    </task>
-    <task id="LOCAL-00823" summary="datepicker 날짜 지정 시작">
-      <created>1569285284330</created>
-      <option name="number" value="00823" />
-      <option name="presentableId" value="LOCAL-00823" />
-      <option name="project" value="LOCAL" />
-      <updated>1569285284330</updated>
-    </task>
-    <task id="LOCAL-00824" summary="datepicker 날짜 지정 시작">
-      <created>1569300915820</created>
-      <option name="number" value="00824" />
-      <option name="presentableId" value="LOCAL-00824" />
-      <option name="project" value="LOCAL" />
-      <updated>1569300915820</updated>
+      <workItem from="1569546694989" duration="7063000" />
     </task>
     <task id="LOCAL-00825" summary="datepicker 날짜 지정 시작">
       <created>1569391380500</created>
@@ -752,11 +731,32 @@
       <option name="project" value="LOCAL" />
       <updated>1569552650206</updated>
     </task>
-    <option name="localTasksCounter" value="871" />
+    <task id="LOCAL-00871" summary="lotto 시작">
+      <created>1569552881596</created>
+      <option name="number" value="00871" />
+      <option name="presentableId" value="LOCAL-00871" />
+      <option name="project" value="LOCAL" />
+      <updated>1569552881596</updated>
+    </task>
+    <task id="LOCAL-00872" summary="lotto 시작">
+      <created>1569552944760</created>
+      <option name="number" value="00872" />
+      <option name="presentableId" value="LOCAL-00872" />
+      <option name="project" value="LOCAL" />
+      <updated>1569552944760</updated>
+    </task>
+    <task id="LOCAL-00873" summary="lotto 시작">
+      <created>1569552991054</created>
+      <option name="number" value="00873" />
+      <option name="presentableId" value="LOCAL-00873" />
+      <option name="project" value="LOCAL" />
+      <updated>1569552991054</updated>
+    </task>
+    <option name="localTasksCounter" value="874" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="354530000" />
+    <option name="totallyTimeSpent" value="356549000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1208,8 +1208,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="632" column="12" selection-start-line="632" selection-start-column="12" selection-end-line="632" selection-end-column="12" />
+        <state relative-caret-position="601">
+          <caret line="639" column="29" selection-start-line="639" selection-start-column="29" selection-end-line="639" selection-end-column="29" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#__construct#0;n#Main#0;n#!!top" />
