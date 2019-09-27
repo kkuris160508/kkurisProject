@@ -156,8 +156,11 @@ class Main extends CI_Controller{
 //        $this->debug->debug_var($fileName);
     }
 
-    function imgList($fileName){
-        $this->load->view('view_file_v',$fileName);
+    function imgList(){
+        //업로드 된 파일이름 리스트를 모델에서 받아옴
+        $result = $this->todo_m->getFileName();
+
+        $this->load->view('view_file_v',$result);
     }
 //    function reply(){                                         //잠정 스탑..
 //        $this->load->library('form_validation');

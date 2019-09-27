@@ -293,6 +293,12 @@ class Todo_m extends CI_Model{
         }
     }
 
+    function getFileName(){
+        $sql = "SELECT * FROM upload_files";
+
+        $query = $this->db->query($sql);
+    }
+
 
 }
 
