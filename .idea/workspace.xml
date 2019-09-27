@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="댓글작업 시작">
+    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="댓글 작업 일단 보류">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -37,7 +38,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/todo/edit_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1190">
+            <state relative-caret-position="838">
               <caret line="70" column="18" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
             </state>
           </provider>
@@ -46,13 +47,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="959">
-              <caret line="232" lean-forward="true" selection-start-line="232" selection-end-line="232" />
+            <state relative-caret-position="680">
+              <caret line="627" column="21" lean-forward="true" selection-start-line="627" selection-start-column="21" selection-end-line="627" selection-end-column="21" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#__construct#0;n#Main#0;n#!!top" />
                 <element signature="n#index#0;n#Main#0;n#!!top" />
+                <element signature="n#lists#0;n#Main#0;n#!!top" />
+                <element signature="n#view#0;n#Main#0;n#!!top" />
+                <element signature="e#3499#3532#0#PHP" />
+                <element signature="n#write#0;n#Main#0;n#!!top" />
+                <element signature="n#edit#0;n#Main#0;n#!!top" />
                 <element signature="n#delete#0;n#Main#0;n#!!top" />
+                <element signature="n#join#0;n#Main#0;n#!!top" />
+                <element signature="e#14655#14707#0#PHP" />
                 <element signature="n#dob_check#0;n#Main#0;n#!!top" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
                 <element signature="n#increaseReadCnt#0;n#Main#0;n#!!top" />
@@ -69,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/reply_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="58" column="14" lean-forward="true" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
+            <state relative-caret-position="549">
+              <caret line="67" column="14" lean-forward="true" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -87,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="160" selection-start-line="160" selection-end-line="160" />
+            <state relative-caret-position="340">
+              <caret line="71" column="32" selection-start-line="71" selection-start-column="32" selection-end-line="77" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -114,8 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/todo/view_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="677">
-              <caret line="69" column="97" selection-start-line="69" selection-start-column="97" selection-end-line="69" selection-end-column="97" />
+            <state relative-caret-position="-9">
+              <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -133,7 +141,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>placeholder</find>
       <find>form_hidden</find>
       <find>username</find>
       <find>set_value</find>
@@ -162,6 +169,7 @@
       <find>INSERT</find>
       <find>insReply</find>
       <find>insert_todo</find>
+      <find>endDateForm</find>
       <find>set_rules</find>
     </findStrings>
     <replaceStrings>
@@ -236,10 +244,10 @@
         <option value="$PROJECT_DIR$/application/views/Auth/auto_login_v.php" />
         <option value="$PROJECT_DIR$/application/views/header_v.php" />
         <option value="$PROJECT_DIR$/application/views/todo/write_contents_v.php" />
-        <option value="$PROJECT_DIR$/application/views/todo/view_contents_v.php" />
         <option value="$PROJECT_DIR$/application/views/todo/edit_contents_v.php" />
         <option value="$PROJECT_DIR$/application/models/Todo_m.php" />
         <option value="$PROJECT_DIR$/application/views/reply_contents_v.php" />
+        <option value="$PROJECT_DIR$/application/views/todo/view_contents_v.php" />
         <option value="$PROJECT_DIR$/application/controllers/Main.php" />
       </list>
     </option>
@@ -400,35 +408,7 @@
       <workItem from="1569225978001" duration="2867000" />
       <workItem from="1569229069470" duration="5646000" />
       <workItem from="1569391362257" duration="8149000" />
-      <workItem from="1569546694989" duration="1421000" />
-    </task>
-    <task id="LOCAL-00817" summary="datepicker 날짜 지정 시작">
-      <created>1569229199649</created>
-      <option name="number" value="00817" />
-      <option name="presentableId" value="LOCAL-00817" />
-      <option name="project" value="LOCAL" />
-      <updated>1569229199649</updated>
-    </task>
-    <task id="LOCAL-00818" summary="datepicker 날짜 지정 시작">
-      <created>1569229259503</created>
-      <option name="number" value="00818" />
-      <option name="presentableId" value="LOCAL-00818" />
-      <option name="project" value="LOCAL" />
-      <updated>1569229259503</updated>
-    </task>
-    <task id="LOCAL-00819" summary="datepicker 날짜 지정 시작">
-      <created>1569229320427</created>
-      <option name="number" value="00819" />
-      <option name="presentableId" value="LOCAL-00819" />
-      <option name="project" value="LOCAL" />
-      <updated>1569229320427</updated>
-    </task>
-    <task id="LOCAL-00820" summary="datepicker 날짜 지정 시작">
-      <created>1569229446080</created>
-      <option name="number" value="00820" />
-      <option name="presentableId" value="LOCAL-00820" />
-      <option name="project" value="LOCAL" />
-      <updated>1569229446080</updated>
+      <workItem from="1569546694989" duration="4779000" />
     </task>
     <task id="LOCAL-00821" summary="datepicker 날짜 지정 시작">
       <created>1569229513041</created>
@@ -745,11 +725,39 @@
       <option name="project" value="LOCAL" />
       <updated>1569548007873</updated>
     </task>
-    <option name="localTasksCounter" value="866" />
+    <task id="LOCAL-00866" summary="댓글작업 시작">
+      <created>1569548119478</created>
+      <option name="number" value="00866" />
+      <option name="presentableId" value="LOCAL-00866" />
+      <option name="project" value="LOCAL" />
+      <updated>1569548119478</updated>
+    </task>
+    <task id="LOCAL-00867" summary="댓글작업 시작">
+      <created>1569548205628</created>
+      <option name="number" value="00867" />
+      <option name="presentableId" value="LOCAL-00867" />
+      <option name="project" value="LOCAL" />
+      <updated>1569548205628</updated>
+    </task>
+    <task id="LOCAL-00868" summary="댓글작업 시작">
+      <created>1569548261248</created>
+      <option name="number" value="00868" />
+      <option name="presentableId" value="LOCAL-00868" />
+      <option name="project" value="LOCAL" />
+      <updated>1569548261248</updated>
+    </task>
+    <task id="LOCAL-00869" summary="댓글 작업 일단 보류">
+      <created>1569552394382</created>
+      <option name="number" value="00869" />
+      <option name="presentableId" value="LOCAL-00869" />
+      <option name="project" value="LOCAL" />
+      <updated>1569552394382</updated>
+    </task>
+    <option name="localTasksCounter" value="870" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="350907000" />
+    <option name="totallyTimeSpent" value="354265000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -832,7 +840,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="리스트 뷰 말줄임표시" />
     <MESSAGE value="date 헬퍼 적용" />
     <MESSAGE value="자동로그인 처리 시작" />
     <MESSAGE value="글 작성자만 삭제가 가능하게끔 로직 추가" />
@@ -857,7 +864,8 @@
     <MESSAGE value="글 수정 기능 오류 수정 시작" />
     <MESSAGE value="datepicker 날짜 지정 시작" />
     <MESSAGE value="댓글작업 시작" />
-    <option name="LAST_COMMIT_MESSAGE" value="댓글작업 시작" />
+    <MESSAGE value="댓글 작업 일단 보류" />
+    <option name="LAST_COMMIT_MESSAGE" value="댓글 작업 일단 보류" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/application/views/welcome_message.php">
@@ -1136,13 +1144,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/todo/edit_contents_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="70" column="18" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/Auth/auto_login_v.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1164,10 +1165,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="273" column="21" selection-start-line="273" selection-start-column="13" selection-end-line="273" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/todo/write_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="160" selection-start-line="160" selection-end-line="160" />
+        <state relative-caret-position="340">
+          <caret line="71" column="32" selection-start-line="71" selection-start-column="32" selection-end-line="77" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1178,36 +1186,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/todo/view_contents_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="677">
-          <caret line="69" column="97" selection-start-line="69" selection-start-column="97" selection-end-line="69" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/reply_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="58" column="14" lean-forward="true" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
+        <state relative-caret-position="549">
+          <caret line="67" column="14" lean-forward="true" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
+    <entry file="file://$PROJECT_DIR$/application/views/todo/edit_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="273" column="21" selection-start-line="273" selection-start-column="13" selection-end-line="273" selection-end-column="21" />
+        <state relative-caret-position="838">
+          <caret line="70" column="18" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/todo/view_contents_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="959">
-          <caret line="232" lean-forward="true" selection-start-line="232" selection-end-line="232" />
+        <state relative-caret-position="680">
+          <caret line="627" column="21" lean-forward="true" selection-start-line="627" selection-start-column="21" selection-end-line="627" selection-end-column="21" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#__construct#0;n#Main#0;n#!!top" />
             <element signature="n#index#0;n#Main#0;n#!!top" />
+            <element signature="n#lists#0;n#Main#0;n#!!top" />
+            <element signature="n#view#0;n#Main#0;n#!!top" />
+            <element signature="e#3499#3532#0#PHP" />
+            <element signature="n#write#0;n#Main#0;n#!!top" />
+            <element signature="n#edit#0;n#Main#0;n#!!top" />
             <element signature="n#delete#0;n#Main#0;n#!!top" />
+            <element signature="n#join#0;n#Main#0;n#!!top" />
+            <element signature="e#14655#14707#0#PHP" />
             <element signature="n#dob_check#0;n#Main#0;n#!!top" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
             <element signature="n#increaseReadCnt#0;n#Main#0;n#!!top" />

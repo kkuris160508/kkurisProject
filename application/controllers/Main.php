@@ -624,5 +624,10 @@ class Main extends CI_Controller{
 
 
     }
+
+    function lotto(){
+        $lottoNum = mt_rand(1,45);
+        echo $lottoNum;
+    }
 }
 ?>
