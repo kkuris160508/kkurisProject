@@ -150,12 +150,13 @@ class Main extends CI_Controller{
         $result = $this->todo_m->insFileData($fileName);
 
         if ($result == 1){
-            alert('DB저장 완료', '/uploads/'.$fileName);
+//            alert('DB저장 완료', '/uploads/'.$fileName);
+            alert('DB저장 완료', '/uploads/');
         }
 //        $this->debug->debug_var($fileName);
     }
 
-    function viewUploadFile($fileName){
+    function imgList($fileName){
         $this->load->view('view_file_v',$fileName);
     }
 //    function reply(){                                         //잠정 스탑..
