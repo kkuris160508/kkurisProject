@@ -150,10 +150,10 @@ class Main extends CI_Controller{
 
         $result = $this->todo_m->insFileData($fileName);
 
-//        if ($result == 1){
-////            alert('DB저장 완료', '/uploads/'.$fileName);
-//            alert("'{$fileName}' DB저장 완료", '/imgList');
-//        }
+        if ($result == 1){
+//            alert('DB저장 완료', '/uploads/'.$fileName);
+            alert(" DB저장 완료", '/Main/imgList');
+        }
 //        $this->debug->debug_var($fileName);
     }
 
