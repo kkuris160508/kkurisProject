@@ -631,10 +631,10 @@ class Main extends CI_Controller{
         for($i = 0; $i < 6; $i++){
             $lottoNum[$i] = mt_rand(1,45);
 
-
+            echo $lottoNum[$i];
         }
 
-        echo $lottoNum;
+
     }
 }
 ?>
