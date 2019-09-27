@@ -632,8 +632,23 @@ class Main extends CI_Controller{
             $lottoNum[$i] = mt_rand(1,45);
 
             echo $lottoNum[$i]."<br>";
+
+            for($j = 1; $j < 6; $j++){
+                if(in_array($lottoNum[$j],$lottoNum)){
+                    $lottoNum[$i] = mt_rand(1,45);
+                } else {
+                    continue;
+                }
+            }
+
+            echo $lottoNum[$i]."<br>";
         }
 
+
+        // 중복제거
+
+
+        // 난수 모델에 insert
 
     }
 }
