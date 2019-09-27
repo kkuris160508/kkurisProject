@@ -144,7 +144,9 @@ class Main extends CI_Controller{
     }
 
     function uploadTest(){
+        $fileName = $this->input->post('file_name', TRUE);
 
+        $this->debug->debug_var($fileName); // 시발 debug 를 소문자로...ㅡㅡ
     }
 //    function reply(){                                         //잠정 스탑..
 //        $this->load->library('form_validation');
