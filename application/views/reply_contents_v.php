@@ -59,6 +59,13 @@
             );
             ?>
             <?php echo form_textarea('replyContent','',$extraOpt);?>
+            <?php
+            if(form_error('replyContent') == FALSE){
+                echo "";
+            } else {
+                echo form_error('replyContent');
+            }
+            ?>
         </td>
     </tr>
 
