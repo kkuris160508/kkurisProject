@@ -146,13 +146,14 @@ class Main extends CI_Controller{
     function uploadTest(){
 
         $fileName = $this->input->post('file_name', TRUE); // DB에 파일 이름 저장
+        echo $fileName;
 
         $result = $this->todo_m->insFileData($fileName);
 
-        if ($result == 1){
-//            alert('DB저장 완료', '/uploads/'.$fileName);
-            alert("'{$fileName}' DB저장 완료", '/imgList');
-        }
+//        if ($result == 1){
+////            alert('DB저장 완료', '/uploads/'.$fileName);
+//            alert("'{$fileName}' DB저장 완료", '/imgList');
+//        }
 //        $this->debug->debug_var($fileName);
     }
 
