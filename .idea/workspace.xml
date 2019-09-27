@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="파일 업로드">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/Todo_m.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Todo_m.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="153" column="9" lean-forward="true" selection-start-line="153" selection-start-column="9" selection-end-line="153" selection-end-column="9" />
+            <state relative-caret-position="289">
+              <caret line="158" column="36" selection-start-line="158" selection-start-column="36" selection-end-line="158" selection-end-column="36" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#view#0;n#Main#0;n#!!top" />
@@ -66,15 +64,6 @@
                 <element signature="n#test3#0;n#Main#0;n#!!top" />
                 <element signature="n#lotto#0;n#Main#0;n#!!top" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/Upload.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="39" column="2" lean-forward="true" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -388,14 +377,7 @@
       <workItem from="1569225978001" duration="2867000" />
       <workItem from="1569229069470" duration="5646000" />
       <workItem from="1569391362257" duration="8149000" />
-      <workItem from="1569546694989" duration="15721000" />
-    </task>
-    <task id="LOCAL-00841" summary="댓글작업 시작">
-      <created>1569394033738</created>
-      <option name="number" value="00841" />
-      <option name="presentableId" value="LOCAL-00841" />
-      <option name="project" value="LOCAL" />
-      <updated>1569394033738</updated>
+      <workItem from="1569546694989" duration="16938000" />
     </task>
     <task id="LOCAL-00842" summary="댓글작업 시작">
       <created>1569394098893</created>
@@ -733,11 +715,18 @@
       <option name="project" value="LOCAL" />
       <updated>1569568883104</updated>
     </task>
-    <option name="localTasksCounter" value="890" />
+    <task id="LOCAL-00890" summary="파일 업로드">
+      <created>1569569367225</created>
+      <option name="number" value="00890" />
+      <option name="presentableId" value="LOCAL-00890" />
+      <option name="project" value="LOCAL" />
+      <updated>1569569367225</updated>
+    </task>
+    <option name="localTasksCounter" value="891" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="365207000" />
+    <option name="totallyTimeSpent" value="366424000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1149,13 +1138,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/upload_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/uploads/asdf.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1177,13 +1159,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="2" lean-forward="true" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
@@ -1191,10 +1166,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="2" lean-forward="true" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/upload_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="153" column="9" lean-forward="true" selection-start-line="153" selection-start-column="9" selection-end-line="153" selection-end-column="9" />
+        <state relative-caret-position="289">
+          <caret line="158" column="36" selection-start-line="158" selection-start-column="36" selection-end-line="158" selection-end-column="36" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#view#0;n#Main#0;n#!!top" />
