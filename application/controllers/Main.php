@@ -143,6 +143,9 @@ class Main extends CI_Controller{
         }
     }
 
+    function uploadTest(){
+
+    }
 //    function reply(){                                         //잠정 스탑..
 //        $this->load->library('form_validation');
 //        $this->load->helper('alert');
