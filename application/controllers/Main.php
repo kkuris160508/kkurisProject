@@ -158,7 +158,7 @@ class Main extends CI_Controller{
 
     function imgList(){
         //업로드 된 파일이름 리스트를 모델에서 받아옴
-        $result = $this->todo_m->getFileName();
+        $result['list'] = $this->todo_m->getFileName();
 
         $this->debug->debug_var($result);
 
