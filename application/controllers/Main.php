@@ -136,13 +136,13 @@ class Main extends CI_Controller{
 
             $data['views'] = $this->todo_m->get_views($id);
 
+            $this->form_validation->set_rules('replyContent','댓글','required');
+            echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
 
             $this->load->view('header_v', $param);
             $this->load->view('reply_contents_v', $data);
             $this->load->view('todo/footer_v');
 
-//            $this->form_validation->set_rules('replyContent','댓글','required');
-//            echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
 
             if($this->form_validation->run() == TRUE){
 
@@ -229,7 +229,7 @@ class Main extends CI_Controller{
                 $due_date = $this->input->post('due_date', TRUE);
                 $status = $this->input->post('statusSelect', TRUE);
 
-                $this->debug->debug_var($created_on);
+//                $this->debug->debug_var($created_on);
 
                 $this->todo_m->insert_todo($subject, $content, $created_on, $due_date, $result[0]->no, $status); //전송받은 데이터를 파라미터로 todo_m 에 insert_todo 함수 실행
 
