@@ -297,6 +297,9 @@ class Todo_m extends CI_Model{
         $sql = "SELECT * FROM upload_files";
 
         $query = $this->db->query($sql);
+        $result = $query -> result();
+
+        return $result;
     }
 
 
