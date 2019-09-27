@@ -634,11 +634,8 @@ class Main extends CI_Controller{
 //            echo $lottoNum[$i]."<br>";
 
             for($j = 1; $j < 6; $j++){
-                if(in_array($lottoNum[$j],$lottoNum)){
-                    echo "'<br>'발견!".$lottoNum[$i];
+                if($lottoNum[$i] == $lottoNum[$j]){
                     $lottoNum[$i] = mt_rand(1,45);
-                } else {
-                    continue;
                 }
             }
 
