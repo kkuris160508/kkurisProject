@@ -64,12 +64,6 @@
 </table>
 <div style="width: 1700px; text-align: end">
     <a href="/Main/write/" class="btn btn-success">쓰기</a>
-    <?
-        if(1==1){?>
-            <a href="/Main/delete/" class="btn btn-success">삭제</a>
-        <?}
-    ?>
-
 </div>
 
 
