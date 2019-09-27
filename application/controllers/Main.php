@@ -125,13 +125,13 @@ class Main extends CI_Controller{
 
         if ( @$this -> session -> userdata('logged_in') == TRUE) {
             $id = $this->uri->segment(3);
-
+            $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
             $writer = $this -> session -> userdata('account_id');
             $writerNo = $this->todo_m->getAccountInfoNo($writer);
 
 //            echo $writerNo[0]->no;
 
-//            $this->debug->debug_var($writerNo); // 시발 debug 를 소문자로...ㅡㅡ
+//            $this->debug->debug_var($writerNo);
 
 
             $data['views'] = $this->todo_m->get_views($id);
@@ -154,14 +154,15 @@ class Main extends CI_Controller{
             echo $replyContents;
             echo $postID;
 
-            if($replyContents !== ''){
+            if($replyContents !== '' && $postID !== ''){
                 $result = $this->todo_m->insReply($replyContents, $postID, $writerNo[0]->no);
+                alert('댓글이 등록 되었습니다.',"/Main/view/'{$postID}'");
             }
 
 //
-            $this->debug->debug_var($result); // 시발 debug 를 소문자로...ㅡㅡ
+//            $this->debug->debug_var($result);
 //
-            $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+
 //
 //            if($result == 1){
 //                alert('댓글이 등록 되었습니다.','/Main/view/'.$postID);
