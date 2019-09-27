@@ -279,7 +279,7 @@ class Todo_m extends CI_Model{
     }
 
     function insFileData($fileName){
-        $sql = "INSERT INTO upload_files (file_name) values ('{$fileName}')";
+        $sql = "INSERT INTO upload_files (file_name) values ('".$fileName."')";
 
         $query = $this->db->query($sql);
 
