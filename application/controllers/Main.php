@@ -151,7 +151,7 @@ class Main extends CI_Controller{
 
         if ($result == 1){
 //            alert('DB저장 완료', '/uploads/'.$fileName);
-            alert('DB저장 완료', '/uploads/');
+            alert("'{$fileName}' DB저장 완료", '/imgList');
         }
 //        $this->debug->debug_var($fileName);
     }
