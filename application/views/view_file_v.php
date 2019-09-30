@@ -8,8 +8,8 @@
 
 <?php foreach($list as $item):?>
 <p>
-    <div class="imgContentDiv">
-        <img src="http://34.80.199.17/uploads/<?php echo $item -> file_name?>" width="245">
+    <div class="imgContentDiv" style="width: 100%; padding-bottom: 100%; background-position: center; background-size: cover; background-image: url(http://34.80.199.17/uploads/<?php echo $item -> file_name?>);">
+<!--        <img src="http://34.80.199.17/uploads/--><?php //echo $item -> file_name?><!--" width="245">-->
     <!--    --><?php //var_dump($item->file_name);?>
     </div>
 </p>
