@@ -51,6 +51,7 @@ class Main extends CI_Controller{
             echo 'success';
 
         }
+        echo $this->email->print_debugger();
 //        $this->email->send(); //이메일 발송
 
         $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
