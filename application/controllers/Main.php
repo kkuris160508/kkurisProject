@@ -12,7 +12,7 @@ class Main extends CI_Controller{
     {
         parent::__construct();
         $this->load->database();
-        $this->load->library(array('pagination')); // 페이지 네이션 설정
+        $this->load->library(array('pagination','form_validation')); // 페이지 네이션 설정
         $this->load->model('todo_m');
         $this->load->helper(array('url','date', 'form','alert','date','cookie'));
     }
@@ -212,8 +212,8 @@ class Main extends CI_Controller{
 
     }
     function reply(){                                         //잠정 스탑..
-        $this->load->library('form_validation');
-        $this->load->helper('alert');
+//        $this->load->library('form_validation');
+//        $this->load->helper('alert');
         $param = array(
             'id'=>'댓글'
         );
