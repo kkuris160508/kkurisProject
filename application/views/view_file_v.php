@@ -14,8 +14,8 @@
     <!--    --><?php //var_dump($item->file_name);?>
     </div>
     <div class="txtContentDiv" style="width:432px; height:123px;outline: 1px solid #e6e6e6; border: 10px solid white; box-shadow: 5px 7px 7px #aaa;">
-        <div class= 'subjectContentDiv' style="width:432px; height: 30%"> </div>
-        <div class= 'textContentDiv' style="width: 432px; height: 60%;"> </div>
+        <div class= 'subjectContentDiv' style="width:432px; height: 30%"> subject</div>
+        <div class= 'textContentDiv' style="width: 432px; height: 60%;"> contents</div>
     </div>
 </p>
 <?php endforeach;?>
