@@ -8,6 +8,7 @@
 
 <?php foreach($list as $item):?>
 <p>
+<div class = 'articleDiv'>
     <div class="imgContentDiv" style="width: 432px; height:432px; outline: 1px solid #e6e6e6; border: 10px solid white; box-shadow: 5px 7px 7px #aaa;">
         <div style="width: 100%; padding-bottom: 100%; background-position: center; background-size: cover; background-image: url(http://34.80.199.17/uploads/<?php echo $item -> file_name?>);"></div>
 <!--        <img src="http://34.80.199.17/uploads/--><?php //echo $item -> file_name?><!--" width="245">-->
@@ -17,6 +18,7 @@
         <div class= 'subjectContentDiv' style="width:432px; height: 30%"> subject</div>
         <div class= 'textContentDiv' style="width: 432px; height: 60%;"> contents</div>
     </div>
+</div>
 </p>
 <?php endforeach;?>
 </body>
