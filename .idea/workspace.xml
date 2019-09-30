@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="이메일 컨트롤러 추가">
-      <change afterPath="$PROJECT_DIR$/application/config/email.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="26" column="56" lean-forward="true" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+            <state relative-caret-position="561">
+              <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#view#0;n#Main#0;n#!!top" />
@@ -236,8 +236,8 @@
         <option value="$PROJECT_DIR$/application/models/Todo_m.php" />
         <option value="$PROJECT_DIR$/application/views/header_v.php" />
         <option value="$PROJECT_DIR$/application/views/view_file_v.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Main.php" />
         <option value="$PROJECT_DIR$/application/config/email.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Main.php" />
       </list>
     </option>
   </component>
@@ -385,28 +385,7 @@
       <workItem from="1569229069470" duration="5646000" />
       <workItem from="1569391362257" duration="8149000" />
       <workItem from="1569546694989" duration="22716000" />
-      <workItem from="1569801741574" duration="8687000" />
-    </task>
-    <task id="LOCAL-00880" summary="lotto 시작">
-      <created>1569563742786</created>
-      <option name="number" value="00880" />
-      <option name="presentableId" value="LOCAL-00880" />
-      <option name="project" value="LOCAL" />
-      <updated>1569563742786</updated>
-    </task>
-    <task id="LOCAL-00881" summary="lotto 시작">
-      <created>1569565381529</created>
-      <option name="number" value="00881" />
-      <option name="presentableId" value="LOCAL-00881" />
-      <option name="project" value="LOCAL" />
-      <updated>1569565381529</updated>
-    </task>
-    <task id="LOCAL-00882" summary="lotto 시작">
-      <created>1569565492697</created>
-      <option name="number" value="00882" />
-      <option name="presentableId" value="LOCAL-00882" />
-      <option name="project" value="LOCAL" />
-      <updated>1569565492697</updated>
+      <workItem from="1569801741574" duration="10709000" />
     </task>
     <task id="LOCAL-00883" summary="lotto 시작">
       <created>1569566031342</created>
@@ -730,11 +709,32 @@
       <option name="project" value="LOCAL" />
       <updated>1569809661711</updated>
     </task>
-    <option name="localTasksCounter" value="929" />
+    <task id="LOCAL-00929" summary="이메일 컨트롤러 추가">
+      <created>1569811544781</created>
+      <option name="number" value="00929" />
+      <option name="presentableId" value="LOCAL-00929" />
+      <option name="project" value="LOCAL" />
+      <updated>1569811544781</updated>
+    </task>
+    <task id="LOCAL-00930" summary="이메일 컨트롤러 추가">
+      <created>1569811620068</created>
+      <option name="number" value="00930" />
+      <option name="presentableId" value="LOCAL-00930" />
+      <option name="project" value="LOCAL" />
+      <updated>1569811620068</updated>
+    </task>
+    <task id="LOCAL-00931" summary="이메일 컨트롤러 추가">
+      <created>1569812066397</created>
+      <option name="number" value="00931" />
+      <option name="presentableId" value="LOCAL-00931" />
+      <option name="project" value="LOCAL" />
+      <updated>1569812066397</updated>
+    </task>
+    <option name="localTasksCounter" value="932" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="380889000" />
+    <option name="totallyTimeSpent" value="382911000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1204,8 +1204,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="26" column="56" lean-forward="true" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+        <state relative-caret-position="561">
+          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#view#0;n#Main#0;n#!!top" />

@@ -24,12 +24,12 @@ class Main extends CI_Controller{
     function sendEmail(){
         $config = Array(
             'protocol' => 'smtp',
-            'smtp_host' => 'ssl://smtp.googlemail.com',
-            'smtp_port' => 465,
-            'smtp_user' => 'xxx',
-            'smtp_pass' => 'xxx',
+            'smtp_host' => 'smtp.alamo.co.kr',
+            'smtp_port' => 587,
+            'smtp_user' => 'chris@alamo.co.kr',
+            'smtp_pass' => '6034265nro',
             'mailtype'  => 'html',
-            'charset'   => 'iso-8859-1'
+            'charset'   => 'utf-8'
         );
 
         $this->load->library('email', $config);
