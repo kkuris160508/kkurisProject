@@ -21,6 +21,18 @@ class Main extends CI_Controller{
         $this->lists();
     }
 
+    function sendEmail(){
+        $this->email->from('chris@alamo.co.kr','chris');
+        $this->email->to('entz160508@gmail.com');
+        $this->email->cc('entz0630@gmail.com');
+        $this->email->bcc('ntiq1@naver.com');
+
+        $this->email->subject('email test');
+        $this->email->message('test email');
+
+        $this->email->send(); //이메일 발송
+    }
+
     function lists(){
 //        $this->load->library('pagination'); // 페이지 네이션 설정
         $tmpIP = $this->input->ip_address();

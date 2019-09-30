@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="파일 업로드" />
+    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="이메일 라이브러리 추가" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -25,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="323">
+              <caret line="24" column="59" lean-forward="true" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#view#0;n#Main#0;n#!!top" />
@@ -129,8 +129,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>login</find>
-      <find>list</find>
       <find>edit_contents_v</find>
       <find>debug</find>
       <find>edit</find>
@@ -159,6 +157,8 @@
       <find>insFileData</find>
       <find>insert_account_todo</find>
       <find>debug_var</find>
+      <find>library</find>
+      <find>form_validation</find>
     </findStrings>
     <replaceStrings>
       <replace>PW</replace>
@@ -235,8 +235,8 @@
         <option value="$PROJECT_DIR$/application/views/upload_success.php" />
         <option value="$PROJECT_DIR$/application/models/Todo_m.php" />
         <option value="$PROJECT_DIR$/application/views/header_v.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Main.php" />
         <option value="$PROJECT_DIR$/application/views/view_file_v.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Main.php" />
       </list>
     </option>
   </component>
@@ -378,21 +378,7 @@
       <workItem from="1569229069470" duration="5646000" />
       <workItem from="1569391362257" duration="8149000" />
       <workItem from="1569546694989" duration="22716000" />
-      <workItem from="1569801741574" duration="5692000" />
-    </task>
-    <task id="LOCAL-00872" summary="lotto 시작">
-      <created>1569552944760</created>
-      <option name="number" value="00872" />
-      <option name="presentableId" value="LOCAL-00872" />
-      <option name="project" value="LOCAL" />
-      <updated>1569552944760</updated>
-    </task>
-    <task id="LOCAL-00873" summary="lotto 시작">
-      <created>1569552991054</created>
-      <option name="number" value="00873" />
-      <option name="presentableId" value="LOCAL-00873" />
-      <option name="project" value="LOCAL" />
-      <updated>1569552991054</updated>
+      <workItem from="1569801741574" duration="5958000" />
     </task>
     <task id="LOCAL-00874" summary="lotto 시작">
       <created>1569558594455</created>
@@ -723,11 +709,25 @@
       <option name="project" value="LOCAL" />
       <updated>1569808375691</updated>
     </task>
-    <option name="localTasksCounter" value="921" />
+    <task id="LOCAL-00921" summary="이메일 라이브러리 추가">
+      <created>1569808622669</created>
+      <option name="number" value="00921" />
+      <option name="presentableId" value="LOCAL-00921" />
+      <option name="project" value="LOCAL" />
+      <updated>1569808622669</updated>
+    </task>
+    <task id="LOCAL-00922" summary="이메일 라이브러리 추가">
+      <created>1569808706773</created>
+      <option name="number" value="00922" />
+      <option name="presentableId" value="LOCAL-00922" />
+      <option name="project" value="LOCAL" />
+      <updated>1569808706773</updated>
+    </task>
+    <option name="localTasksCounter" value="923" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="377894000" />
+    <option name="totallyTimeSpent" value="378160000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -810,7 +810,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="글 작성자만 삭제가 가능하게끔 로직 추가" />
     <MESSAGE value="뷰 컨텐츠 뷰 수정" />
     <MESSAGE value="세션 수정" />
     <MESSAGE value="쿠키 수정중" />
@@ -835,7 +834,8 @@
     <MESSAGE value="댓글 작업 일단 보류" />
     <MESSAGE value="lotto 시작" />
     <MESSAGE value="파일 업로드" />
-    <option name="LAST_COMMIT_MESSAGE" value="파일 업로드" />
+    <MESSAGE value="이메일 라이브러리 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="이메일 라이브러리 추가" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/application/views/Tutorial/members.php">
@@ -1197,8 +1197,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="323">
+          <caret line="24" column="59" lean-forward="true" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#view#0;n#Main#0;n#!!top" />
