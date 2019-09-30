@@ -33,6 +33,8 @@ class Main extends CI_Controller{
         $this->email->message('test email');
 
         $this->email->send(); //이메일 발송
+
+        $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
     }
 
     function lists(){
