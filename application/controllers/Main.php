@@ -217,40 +217,42 @@ class Main extends CI_Controller{
         $param = array(
             'id'=>'댓글'
         );
+        echo $id;
 
-        if ( @$this -> session -> userdata('logged_in') == TRUE) {
-//            $id = $this->uri->segment(3);
 
-            $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
-
-            $writer = $this -> session -> userdata('account_id');
-            $writerNo = $this->todo_m->getAccountInfoNo($writer);
-
-            $data['views'] = $this->todo_m->get_views($id);
-
-//            echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
-
-            $this->load->view('header_v', $param);
-            $this->load->view('reply_contents_v', $data);
-            $this->load->view('todo/footer_v');
-
-            $replyContents = $this->input->post('replyContent', TRUE);
-            $postID = $this->input->post('id', TRUE);
-
-            $this->todo_m->insReply($replyContents, $postID, $writerNo[0]->no);
-
-            alert('댓글이 등록 되었습니다.',"/Main/view/'{$postID}'");
-
-//            if($this->form_validation->run() == TRUE){
+//        if ( @$this -> session -> userdata('logged_in') == TRUE) {
+////            $id = $this->uri->segment(3);
+//
+//            $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+//
+//            $writer = $this -> session -> userdata('account_id');
+//            $writerNo = $this->todo_m->getAccountInfoNo($writer);
+//
+//            $data['views'] = $this->todo_m->get_views($id);
+//
+////            echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
+//
+//            $this->load->view('header_v', $param);
+//            $this->load->view('reply_contents_v', $data);
+//            $this->load->view('todo/footer_v');
+//
+//            $replyContents = $this->input->post('replyContent', TRUE);
+//            $postID = $this->input->post('id', TRUE);
+//
+//            $this->todo_m->insReply($replyContents, $postID, $writerNo[0]->no);
 //
 //            alert('댓글이 등록 되었습니다.',"/Main/view/'{$postID}'");
-//            } else {
 //
-//                $this->load->view('header_v', $param);
-//                $this->load->view('todo/view_contents_v', $data);
-//                $this->load->view('todo/footer_v');
-//            }
-        }
+////            if($this->form_validation->run() == TRUE){
+////
+////            alert('댓글이 등록 되었습니다.',"/Main/view/'{$postID}'");
+////            } else {
+////
+////                $this->load->view('header_v', $param);
+////                $this->load->view('todo/view_contents_v', $data);
+////                $this->load->view('todo/footer_v');
+////            }
+//        }
     }
 
     // write controller 추가
