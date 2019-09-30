@@ -232,8 +232,9 @@ class Main extends CI_Controller{
             $this->debug->debug_var($writer);
             $this->debug->debug_var($writerNo);
 
-//            $data['views'] = $this->todo_m->get_views($id);
+            $data['views'] = $this->todo_m->get_views($id);
 //
+            $this->debug->debug_var($data['views']);
 ////            echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
 //
 //            $this->load->view('header_v', $param);

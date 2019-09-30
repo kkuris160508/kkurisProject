@@ -43,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="225" column="65" lean-forward="true" selection-start-line="225" selection-start-column="65" selection-end-line="225" selection-end-column="65" />
+            <state relative-caret-position="482">
+              <caret line="233" column="12" selection-start-line="233" selection-start-column="12" selection-end-line="233" selection-end-column="12" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#write#0;n#Main#0;n#!!top" />
@@ -83,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/todo/view_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+            <state relative-caret-position="272">
+              <caret line="47" column="77" lean-forward="true" selection-start-line="47" selection-start-column="77" selection-end-line="47" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -360,28 +360,7 @@
       <workItem from="1569229069470" duration="5646000" />
       <workItem from="1569391362257" duration="8149000" />
       <workItem from="1569546694989" duration="22716000" />
-      <workItem from="1569801741574" duration="17305000" />
-    </task>
-    <task id="LOCAL-00892" summary="파일 업로드">
-      <created>1569570987028</created>
-      <option name="number" value="00892" />
-      <option name="presentableId" value="LOCAL-00892" />
-      <option name="project" value="LOCAL" />
-      <updated>1569570987028</updated>
-    </task>
-    <task id="LOCAL-00893" summary="파일 업로드">
-      <created>1569571670544</created>
-      <option name="number" value="00893" />
-      <option name="presentableId" value="LOCAL-00893" />
-      <option name="project" value="LOCAL" />
-      <updated>1569571670544</updated>
-    </task>
-    <task id="LOCAL-00894" summary="파일 업로드">
-      <created>1569571961436</created>
-      <option name="number" value="00894" />
-      <option name="presentableId" value="LOCAL-00894" />
-      <option name="project" value="LOCAL" />
-      <updated>1569571961436</updated>
+      <workItem from="1569801741574" duration="17606000" />
     </task>
     <task id="LOCAL-00895" summary="파일 업로드">
       <created>1569572070906</created>
@@ -705,11 +684,32 @@
       <option name="project" value="LOCAL" />
       <updated>1569825203275</updated>
     </task>
-    <option name="localTasksCounter" value="941" />
+    <task id="LOCAL-00941" summary="댓글기능 재 수정">
+      <created>1569825787091</created>
+      <option name="number" value="00941" />
+      <option name="presentableId" value="LOCAL-00941" />
+      <option name="project" value="LOCAL" />
+      <updated>1569825787091</updated>
+    </task>
+    <task id="LOCAL-00942" summary="댓글기능 재 수정">
+      <created>1569825890080</created>
+      <option name="number" value="00942" />
+      <option name="presentableId" value="LOCAL-00942" />
+      <option name="project" value="LOCAL" />
+      <updated>1569825890080</updated>
+    </task>
+    <task id="LOCAL-00943" summary="댓글기능 재 수정">
+      <created>1569825951223</created>
+      <option name="number" value="00943" />
+      <option name="presentableId" value="LOCAL-00943" />
+      <option name="project" value="LOCAL" />
+      <updated>1569825951223</updated>
+    </task>
+    <option name="localTasksCounter" value="944" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="389507000" />
+    <option name="totallyTimeSpent" value="389808000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1170,10 +1170,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/todo/view_contents_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="47" column="77" lean-forward="true" selection-start-line="47" selection-start-column="77" selection-end-line="47" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="225" column="65" lean-forward="true" selection-start-line="225" selection-start-column="65" selection-end-line="225" selection-end-column="65" />
+        <state relative-caret-position="482">
+          <caret line="233" column="12" selection-start-line="233" selection-start-column="12" selection-end-line="233" selection-end-column="12" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#write#0;n#Main#0;n#!!top" />
@@ -1184,13 +1191,6 @@
             <element signature="n#test2#0;n#Main#0;n#!!top" />
             <element signature="n#lotto#0;n#Main#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/todo/view_contents_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
         </state>
       </provider>
     </entry>
