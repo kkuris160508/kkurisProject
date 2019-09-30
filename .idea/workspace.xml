@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="파일 업로드">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/view_file_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/view_file_v.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -27,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="40" column="14" lean-forward="true" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+            <state relative-caret-position="585">
+              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#view#0;n#Main#0;n#!!top" />
@@ -39,7 +40,6 @@
                 <element signature="n#dateTime#0;n#Main#0;n#!!top" />
                 <element signature="n#test#0;n#Main#0;n#!!top" />
                 <element signature="n#test2#0;n#Main#0;n#!!top" />
-                <element signature="n#test3#0;n#Main#0;n#!!top" />
                 <element signature="n#lotto#0;n#Main#0;n#!!top" />
               </folding>
             </state>
@@ -49,11 +49,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/view_file_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="52" lean-forward="true" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+            <state relative-caret-position="289">
+              <caret line="17" column="78" lean-forward="true" selection-start-line="17" selection-start-column="78" selection-end-line="17" selection-end-column="78" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,7 +132,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>debug_var</find>
       <find>login</find>
       <find>list</find>
       <find>edit_contents_v</find>
@@ -159,6 +161,7 @@
       <find>pro</find>
       <find>insFileData</find>
       <find>insert_account_todo</find>
+      <find>debug_var</find>
     </findStrings>
     <replaceStrings>
       <replace>PW</replace>
@@ -234,8 +237,8 @@
         <option value="$PROJECT_DIR$/application/controllers/Upload.php" />
         <option value="$PROJECT_DIR$/application/views/upload_success.php" />
         <option value="$PROJECT_DIR$/application/models/Todo_m.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Main.php" />
         <option value="$PROJECT_DIR$/application/views/header_v.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Main.php" />
         <option value="$PROJECT_DIR$/application/views/view_file_v.php" />
       </list>
     </option>
@@ -378,28 +381,7 @@
       <workItem from="1569229069470" duration="5646000" />
       <workItem from="1569391362257" duration="8149000" />
       <workItem from="1569546694989" duration="22716000" />
-      <workItem from="1569801741574" duration="2878000" />
-    </task>
-    <task id="LOCAL-00866" summary="댓글작업 시작">
-      <created>1569548119478</created>
-      <option name="number" value="00866" />
-      <option name="presentableId" value="LOCAL-00866" />
-      <option name="project" value="LOCAL" />
-      <updated>1569548119478</updated>
-    </task>
-    <task id="LOCAL-00867" summary="댓글작업 시작">
-      <created>1569548205628</created>
-      <option name="number" value="00867" />
-      <option name="presentableId" value="LOCAL-00867" />
-      <option name="project" value="LOCAL" />
-      <updated>1569548205628</updated>
-    </task>
-    <task id="LOCAL-00868" summary="댓글작업 시작">
-      <created>1569548261248</created>
-      <option name="number" value="00868" />
-      <option name="presentableId" value="LOCAL-00868" />
-      <option name="project" value="LOCAL" />
-      <updated>1569548261248</updated>
+      <workItem from="1569801741574" duration="5449000" />
     </task>
     <task id="LOCAL-00869" summary="댓글 작업 일단 보류">
       <created>1569552394382</created>
@@ -723,11 +705,32 @@
       <option name="project" value="LOCAL" />
       <updated>1569805466280</updated>
     </task>
-    <option name="localTasksCounter" value="915" />
+    <task id="LOCAL-00915" summary="파일 업로드">
+      <created>1569805673035</created>
+      <option name="number" value="00915" />
+      <option name="presentableId" value="LOCAL-00915" />
+      <option name="project" value="LOCAL" />
+      <updated>1569805673035</updated>
+    </task>
+    <task id="LOCAL-00916" summary="파일 업로드">
+      <created>1569805743823</created>
+      <option name="number" value="00916" />
+      <option name="presentableId" value="LOCAL-00916" />
+      <option name="project" value="LOCAL" />
+      <updated>1569805743823</updated>
+    </task>
+    <task id="LOCAL-00917" summary="파일 업로드">
+      <created>1569807895473</created>
+      <option name="number" value="00917" />
+      <option name="presentableId" value="LOCAL-00917" />
+      <option name="project" value="LOCAL" />
+      <updated>1569807895473</updated>
+    </task>
+    <option name="localTasksCounter" value="918" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="375080000" />
+    <option name="totallyTimeSpent" value="377651000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1183,8 +1186,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="40" column="14" lean-forward="true" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+        <state relative-caret-position="585">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#view#0;n#Main#0;n#!!top" />
@@ -1195,7 +1198,6 @@
             <element signature="n#dateTime#0;n#Main#0;n#!!top" />
             <element signature="n#test#0;n#Main#0;n#!!top" />
             <element signature="n#test2#0;n#Main#0;n#!!top" />
-            <element signature="n#test3#0;n#Main#0;n#!!top" />
             <element signature="n#lotto#0;n#Main#0;n#!!top" />
           </folding>
         </state>
@@ -1203,11 +1205,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/view_file_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="52" lean-forward="true" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+        <state relative-caret-position="289">
+          <caret line="17" column="78" lean-forward="true" selection-start-line="17" selection-start-column="78" selection-end-line="17" selection-end-column="78" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
