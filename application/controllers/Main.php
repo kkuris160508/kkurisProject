@@ -24,9 +24,9 @@ class Main extends CI_Controller{
     function sendEmail(){
         $config = Array(
             'protocol' => 'smtp',
-            'smtp_host' => 'smtp.alamo.co.kr',
+            'smtp_host' => 'smtp.gmail.com',
             'smtp_port' => 587,
-            'smtp_user' => 'chris@alamo.co.kr',
+            'smtp_user' => 'entz160508@gmail.com',
             'smtp_pass' => '6034265nro',
             'mailtype'  => 'html',
             'charset'   => 'utf-8'
@@ -34,8 +34,8 @@ class Main extends CI_Controller{
 
         $this->load->library('email', $config);
 
-        $this->email->from('chris@alamo.co.kr','chris');
-        $this->email->to('entz160508@gmail.com');
+        $this->email->from('entz160508@gmail.com','entz');
+        $this->email->to('entz0630@gmail.com');
         $this->email->cc('entz0630@gmail.com');
         $this->email->bcc('ntiq1@naver.com');
 
