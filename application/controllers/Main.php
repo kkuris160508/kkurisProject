@@ -72,7 +72,7 @@ class Main extends CI_Controller{
 
             $tmpIDX = $this->input->post('id');
 
-            $this->debug->debug_var($tmpIDX); // 시발 debug 를 소문자로...ㅡㅡ
+//            $this->debug->debug_var($tmpIDX); // 시발 debug 를 소문자로...ㅡㅡ
 
         } else {
             echo "접속 불가";
@@ -656,32 +656,32 @@ class Main extends CI_Controller{
 
     }
 
-    function test3(){
-//        $this->load->helper('password');
-
-
-        $tmpString = 'auddhkd3';
-
-//        password_hash();
-//        $tmpHash = password_get_info($tmpString);
-        $tmpHash = password_hash($tmpString,1);
-
-        echo $tmpHash;
-//        $tmpHash_1 = '$2y$10$BerPkp2prYfJAWscLhFml.3jvDluLT0752UwwnBCejHyL0fBxeu6u';
-
-//        if(password_verify($tmpString, $tmpHash_1)){
-//            echo 'password is vaild';
-//        } else {
-//            echo 'password is wrong';
-//        }
-
-
-        $result3 = $this->debug->debug_var($tmpHash); // 시발 debug 를 소문자로...ㅡㅡ
-        echo $result3[0]->no;
-
-
-
-    }
+//    function test3(){
+////        $this->load->helper('password');
+//
+//
+//        $tmpString = 'auddhkd3';
+//
+////        password_hash();
+////        $tmpHash = password_get_info($tmpString);
+//        $tmpHash = password_hash($tmpString,1);
+//
+//        echo $tmpHash;
+////        $tmpHash_1 = '$2y$10$BerPkp2prYfJAWscLhFml.3jvDluLT0752UwwnBCejHyL0fBxeu6u';
+//
+////        if(password_verify($tmpString, $tmpHash_1)){
+////            echo 'password is vaild';
+////        } else {
+////            echo 'password is wrong';
+////        }
+//
+//
+//        $result3 = $this->debug->debug_var($tmpHash); // 시발 debug 를 소문자로...ㅡㅡ
+//        echo $result3[0]->no;
+//
+//
+//
+//    }
 
     function lotto(){
         $lottoNum = array();
