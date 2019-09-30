@@ -211,7 +211,7 @@ class Main extends CI_Controller{
 
 
     }
-    function reply(){                                         //잠정 스탑..
+    function reply($id){                                         //잠정 스탑..
 //        $this->load->library('form_validation');
 //        $this->load->helper('alert');
         $param = array(
@@ -219,8 +219,10 @@ class Main extends CI_Controller{
         );
 
         if ( @$this -> session -> userdata('logged_in') == TRUE) {
-            $id = $this->uri->segment(3);
+//            $id = $this->uri->segment(3);
+
             $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+
             $writer = $this -> session -> userdata('account_id');
             $writerNo = $this->todo_m->getAccountInfoNo($writer);
 
