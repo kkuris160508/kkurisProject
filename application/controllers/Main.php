@@ -168,7 +168,7 @@ class Main extends CI_Controller{
         //업로드 된 파일이름 리스트를 모델에서 받아옴
         $result['list'] = $this->todo_m->getFileName();
 
-        $this->debug->debug_var($result);
+//        $this->debug->debug_var($result);
 
         $this->load->view('view_file_v',$result);
 
