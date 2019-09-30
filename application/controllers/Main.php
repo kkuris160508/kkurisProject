@@ -217,10 +217,11 @@ class Main extends CI_Controller{
         $param = array(
             'id'=>'댓글'
         );
-        echo $id;
+//        echo $id;
 
 
-//        if ( @$this -> session -> userdata('logged_in') == TRUE) {
+        if ( @$this -> session -> userdata('logged_in') == TRUE) {
+            echo 'session is on';
 ////            $id = $this->uri->segment(3);
 //
 //            $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
@@ -252,7 +253,7 @@ class Main extends CI_Controller{
 ////                $this->load->view('todo/view_contents_v', $data);
 ////                $this->load->view('todo/footer_v');
 ////            }
-//        }
+        }
     }
 
     // write controller 추가
