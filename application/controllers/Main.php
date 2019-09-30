@@ -12,6 +12,7 @@ class Main extends CI_Controller{
     {
         parent::__construct();
         $this->load->database();
+        $this->load->library('pagination','email'); // 페이지 네이션 설정
         $this->load->model('todo_m');
         $this->load->helper(array('url','date', 'form','alert','date','cookie'));
     }
@@ -21,7 +22,7 @@ class Main extends CI_Controller{
     }
 
     function lists(){
-        $this->load->library('pagination'); // 페이지 네이션 설정
+//        $this->load->library('pagination'); // 페이지 네이션 설정
         $tmpIP = $this->input->ip_address();
 
         if($tmpIP == '211.52.72.56' || $tmpIP == '106.245.165.216' || $tmpIP == '221.155.202.250'){
