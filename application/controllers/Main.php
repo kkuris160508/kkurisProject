@@ -12,7 +12,7 @@ class Main extends CI_Controller{
     {
         parent::__construct();
         $this->load->database();
-        $this->load->library(array('pagination','email')); // 페이지 네이션 설정
+        $this->load->library(array('pagination')); // 페이지 네이션 설정
         $this->load->model('todo_m');
         $this->load->helper(array('url','date', 'form','alert','date','cookie'));
     }
