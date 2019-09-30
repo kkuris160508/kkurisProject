@@ -243,6 +243,7 @@ class Main extends CI_Controller{
 
             $this->todo_m->insReply($replyContents, $postID, $writerNo[0]->no);
 
+            alert('댓글이 등록 되었습니다.',"/Main/view/'{$postID}'");
 //            if($this->form_validation->run() == TRUE){
 //
 //                $replyContents = $this->input->post('replyContent', TRUE);
