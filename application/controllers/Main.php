@@ -12,7 +12,7 @@ class Main extends CI_Controller{
     {
         parent::__construct();
         $this->load->database();
-        $this->load->library('pagination','email'); // 페이지 네이션 설정
+        $this->load->library('pagination','email', 'form_validation'); // 페이지 네이션 설정
         $this->load->model('todo_m');
         $this->load->helper(array('url','date', 'form','alert','date','cookie'));
     }
@@ -257,7 +257,7 @@ class Main extends CI_Controller{
             'id'=>'작성'
         );
 //        $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
-        $this->load->library('form_validation');
+//        $this->load->library('form_validation');
 
         $this->form_validation->set_rules('subject','제목','required');
         $this->form_validation->set_rules('content','내용','required');
@@ -436,7 +436,7 @@ class Main extends CI_Controller{
     function join(){
         form_open('/Auth/login');
 //        $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
-        $this->load->library('form_validation');
+//        $this->load->library('form_validation');
 //        $this->load->helper('password');
 
         $this->form_validation->set_rules('accountID','아이디','required|alpha_numeric');
@@ -538,7 +538,7 @@ class Main extends CI_Controller{
 //    }
 
     public function dob_check($str){
-        $this->load->library('form_validation');
+//        $this->load->library('form_validation');
 
         if (!DateTime::createFromFormat('Y-m-d', $str)) { //yes it's YYYY-MM-DD
             $this->form_validation->set_message('dob_check', '<p style="color: #FF0000;"> 날짜 형식만 입력 가능합니다. <br> ex) YYYY-MM-DD');
@@ -560,7 +560,7 @@ class Main extends CI_Controller{
 
 //        $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 
-        $this->load->library('form_validation');
+//        $this->load->library('form_validation');
 
         $this->form_validation->set_rules('searchTxt','텍스트','required');
 //        if($this->form_validation->run() == TRUE || $this->uri->segment(3,1) >= 1){
