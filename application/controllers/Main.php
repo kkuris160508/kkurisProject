@@ -224,15 +224,9 @@ class Main extends CI_Controller{
             $writer = $this -> session -> userdata('account_id');
             $writerNo = $this->todo_m->getAccountInfoNo($writer);
 
-//            echo $writerNo[0]->no;
-
-//            $this->debug->debug_var($writerNo);
-
-
             $data['views'] = $this->todo_m->get_views($id);
 
-
-            echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
+//            echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
 
             $this->load->view('header_v', $param);
             $this->load->view('reply_contents_v', $data);
@@ -243,52 +237,17 @@ class Main extends CI_Controller{
 
             $this->todo_m->insReply($replyContents, $postID, $writerNo[0]->no);
 
-
-            if($this->form_validation->run() == TRUE){
-//
-//                $replyContents = $this->input->post('replyContent', TRUE);
-//                $postID = $this->input->post('id', TRUE);
-//
-//                $this->form_validation->set_rules('replyContent','댓글','required');
-//
-//                echo $replyContents;
-//                echo $postID;
-//
-//                $this->todo_m->insReply($replyContents, $postID, $writerNo[0]->no);
-////                alert('댓글이 등록 되었습니다.',"/Main/view/'{$postID}'");
-//
             alert('댓글이 등록 되었습니다.',"/Main/view/'{$postID}'");
-            } else {
 
-                $this->load->view('header_v', $param);
-                $this->load->view('todo/view_contents_v', $data);
-                $this->load->view('todo/footer_v');
-            }
-
-
-
-
-//          //모델에 replyContens insert
-
-
-
-
-//            if($replyContents !== '' && $postID !== ''){
-//                $result = $this->todo_m->insReply($replyContents, $postID, $writerNo[0]->no);
-//                alert('댓글이 등록 되었습니다.',"/Main/view/'{$postID}'");
+//            if($this->form_validation->run() == TRUE){
+//
+//            alert('댓글이 등록 되었습니다.',"/Main/view/'{$postID}'");
+//            } else {
+//
+//                $this->load->view('header_v', $param);
+//                $this->load->view('todo/view_contents_v', $data);
+//                $this->load->view('todo/footer_v');
 //            }
-
-//
-//            $this->debug->debug_var($result);
-//
-
-//
-//            if($result == 1){
-//                alert('댓글이 등록 되었습니다.','/Main/view/'.$postID);
-//
-//            }
-
-            //insert 완료 후 view 페이지 리다이렉션
         }
     }
 
@@ -359,93 +318,42 @@ class Main extends CI_Controller{
         if ( @$this -> session -> userdata('logged_in') == TRUE) {
 
             $id = $this->uri->segment(3);
-//            $accountNo = $this->uri->segment(4);
-//            $accountID = $this->uri->segment(5);
-//
 
-//
-//            if($accountID == $writer){
+            $data['views'] = $this->todo_m->get_views($id);
 
-                $data['views'] = $this->todo_m->get_views($id);
+            $this->load->view('header_v', $param);
+            $this->load->view('todo/edit_contents_v', $data);
+            $this->load->view('todo/footer_v');
 
-                $this->load->view('header_v', $param);
-                $this->load->view('todo/edit_contents_v', $data);
-                $this->load->view('todo/footer_v');
+            $subject = $this->input->post('subject', TRUE);
+            $content = $this->input->post('content', TRUE);
+            $postID = $this->input->post('id', TRUE);
+            $fixStatus = $this->input->post('statusSelect', TRUE);
+            $type = '';
 
-                $subject = $this->input->post('subject', TRUE);
-                $content = $this->input->post('content', TRUE);
-                $postID = $this->input->post('id', TRUE);
-                $fixStatus = $this->input->post('statusSelect', TRUE);
-                $type = '';
+            $tmpRes = $this->todo_m->get_views($postID);
+            $tmpSubject = $tmpRes->subject;
+            $tmpContent = $tmpRes->content;
 
-                $tmpRes = $this->todo_m->get_views($postID);
-                $tmpSubject = $tmpRes->subject;
-                $tmpContent = $tmpRes->content;
+            if(!$this->input->post('content',TRUE) && !$this->input->post('subject', TRUE)){
+                $type = 0;
+                $data['edit'] = $this->todo_m->set_edit_views($postID, $tmpSubject, $tmpContent, $fixStatus, $type);
 
-//                if(!$this->input->post('content',TRUE)) { //내용 값을 입력하지 않았음. 기존에 작성 한 내용을 그대로 update
-////                    echo 'content is empty';
-//                    $tmpRes = $this->todo_m->get_views($postID);
-//                    $tmpContent = $tmpRes->content;
-//                    $type = 1;
-//
-//                    $data['edit'] = $this->todo_m->set_edit_views($postID, $subject, $tmpContent, $fixStatus, $type);
-//
-//
-////                    echo $tmpContent;
-//
-//                } else if(!$this->input->post('subject',TRUE)) { //제목 값을 입력하지 않았음. 기존에 작성 한 내용을 그대로 update
-////                    echo 'subject is empty';
-//                    $tmpRes = $this->todo_m->get_views($postID);
-//                    $tmpSubject = $tmpRes->subject;
-//                    $type = 2;
-//
-//                    $data['edit'] = $this->todo_m->set_edit_views($postID, $tmpSubject, $content, $fixStatus, $type);
-//
-////                    echo $tmpSubject;
-//                }
+            } else if ($this->input->post('content',TRUE) && !$this->input->post('subject', TRUE)){
+                $type = 2;
+                $data['edit'] = $this->todo_m->set_edit_views($postID, $tmpSubject, $content, $fixStatus, $type);
 
-                if(!$this->input->post('content',TRUE) && !$this->input->post('subject', TRUE)){
-                    $type = 0;
-                    $data['edit'] = $this->todo_m->set_edit_views($postID, $tmpSubject, $tmpContent, $fixStatus, $type);
+            } else if (!$this->input->post('content',TRUE) && $this->input->post('subject', TRUE)) {
+                $type = 1;
+                $data['edit'] = $this->todo_m->set_edit_views($postID, $subject, $tmpContent, $fixStatus, $type);
+            } else {
+                $type = 4;
+                $data['edit'] = $this->todo_m->set_edit_views($postID, $subject, $content, $fixStatus, $type);
+            }
 
-                } else if ($this->input->post('content',TRUE) && !$this->input->post('subject', TRUE)){
-                    $type = 2;
-                    $data['edit'] = $this->todo_m->set_edit_views($postID, $tmpSubject, $content, $fixStatus, $type);
-
-                } else if (!$this->input->post('content',TRUE) && $this->input->post('subject', TRUE)) {
-                    $type = 1;
-                    $data['edit'] = $this->todo_m->set_edit_views($postID, $subject, $tmpContent, $fixStatus, $type);
-                } else {
-                    $type = 4;
-                    $data['edit'] = $this->todo_m->set_edit_views($postID, $subject, $content, $fixStatus, $type);
-                }
-
-//                $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
-
-//                $data['edit'] = $this->todo_m->set_edit_views($postID, $subject, $content, $fixStatus, $type);
-
-//                $result2 = $this->debug->debug_var($data); // 시발 debug 를 소문자로...ㅡㅡ
-//                echo $result2;
-
-                if($data['edit'] == 1){
-                    alert('수정되었습니다.','/Main/view/'.$postID);
-                }
-//
-
-
-//
-//            } else {
-//                alert('수정할 할 권한이 없습니다.','/Main/lists');
-//            }
-
-
-
-
-//
-//            $result2 = $this->debug->debug_var($data);
-//            echo $result2;
-
-
+            if($data['edit'] == 1){
+                alert('수정되었습니다.','/Main/view/'.$postID);
+            }
         }
     }
 
