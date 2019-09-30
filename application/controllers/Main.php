@@ -221,14 +221,17 @@ class Main extends CI_Controller{
 
 
         if ( @$this -> session -> userdata('logged_in') == TRUE) {
-            echo 'session is on';
+//            echo 'session is on';
 ////            $id = $this->uri->segment(3);
 //
-//            $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
+            $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 //
-//            $writer = $this -> session -> userdata('account_id');
-//            $writerNo = $this->todo_m->getAccountInfoNo($writer);
+            $writer = $this -> session -> userdata('account_id');
+            $writerNo = $this->todo_m->getAccountInfoNo($writer);
 //
+            $this->debug->debug_var($writer);
+            $this->debug->debug_var($writerNo);
+
 //            $data['views'] = $this->todo_m->get_views($id);
 //
 ////            echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
