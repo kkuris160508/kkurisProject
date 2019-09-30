@@ -22,7 +22,17 @@ class Main extends CI_Controller{
     }
 
     function sendEmail(){
-        $this->load->library('email');
+        $config = Array(
+            'protocol' => 'smtp',
+            'smtp_host' => 'ssl://smtp.googlemail.com',
+            'smtp_port' => 465,
+            'smtp_user' => 'xxx',
+            'smtp_pass' => 'xxx',
+            'mailtype'  => 'html',
+            'charset'   => 'iso-8859-1'
+        );
+
+        $this->load->library('email', $config);
 
         $this->email->from('chris@alamo.co.kr','chris');
         $this->email->to('entz160508@gmail.com');
@@ -32,9 +42,14 @@ class Main extends CI_Controller{
         $this->email->subject('email test');
         $this->email->message('test email');
 
+        $this->email->set_newline("\r\n");
+
         if ( ! $this->email->send())
         {
             echo 'error';
+        } else {
+            echo 'success';
+
         }
 //        $this->email->send(); //이메일 발송
 
