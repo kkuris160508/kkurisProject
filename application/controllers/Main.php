@@ -235,11 +235,12 @@ class Main extends CI_Controller{
             $data['views'] = $this->todo_m->get_views($id);
 //
             $this->debug->debug_var($data['views']);
+
 ////            echo '<meta http-equiv="content-type" content="text/html; charset=utf-8" />';
 //
-//            $this->load->view('header_v', $param);
-//            $this->load->view('reply_contents_v', $data);
-//            $this->load->view('todo/footer_v');
+            $this->load->view('header_v', $param);
+            $this->load->view('reply_contents_v', $data);
+            $this->load->view('todo/footer_v');
 //
 //            $replyContents = $this->input->post('replyContent', TRUE);
 //            $postID = $this->input->post('id', TRUE);
