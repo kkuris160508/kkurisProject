@@ -274,7 +274,9 @@ class Todo_m extends CI_Model{
     function insReply($contents, $id, $writerNo){
         $sql = "INSERT INTO items_reply (items_no, contents, writer_no) VALUES ('{$id}','{$contents}', '{$writerNo}')";
 
-        $query = $this->db->query($sql);
+        echo $sql;
+
+//        $query = $this->db->query($sql);
 
     }
 
