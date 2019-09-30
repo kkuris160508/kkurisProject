@@ -243,8 +243,8 @@ class Main extends CI_Controller{
 
             $this->todo_m->insReply($replyContents, $postID, $writerNo[0]->no);
 
-            alert('댓글이 등록 되었습니다.',"/Main/view/'{$postID}'");
-//            if($this->form_validation->run() == TRUE){
+
+            if($this->form_validation->run() == TRUE){
 //
 //                $replyContents = $this->input->post('replyContent', TRUE);
 //                $postID = $this->input->post('id', TRUE);
@@ -257,13 +257,13 @@ class Main extends CI_Controller{
 //                $this->todo_m->insReply($replyContents, $postID, $writerNo[0]->no);
 ////                alert('댓글이 등록 되었습니다.',"/Main/view/'{$postID}'");
 //
-//
-//            } else {
-//
-//                $this->load->view('header_v', $param);
-//                $this->load->view('todo/view_contents_v', $data);
-//                $this->load->view('todo/footer_v');
-//            }
+            alert('댓글이 등록 되었습니다.',"/Main/view/'{$postID}'");
+            } else {
+
+                $this->load->view('header_v', $param);
+                $this->load->view('todo/view_contents_v', $data);
+                $this->load->view('todo/footer_v');
+            }
 
 
 
