@@ -22,6 +22,8 @@ class Main extends CI_Controller{
     }
 
     function sendEmail(){
+        $this->load->library('email');
+
         $this->email->from('chris@alamo.co.kr','chris');
         $this->email->to('entz160508@gmail.com');
         $this->email->cc('entz0630@gmail.com');
