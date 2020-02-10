@@ -297,7 +297,7 @@ class Todo_m extends CI_Model{
     }
 
     function getFixLottoNum(){
-        $sql = "select num_1, num_2, num_3, num_4, num_5, num_6 from lotto_fix_info_TB order by IDX desc limit 1";
+        $sql = "select IDX, num_1, num_2, num_3, num_4, num_5, num_6 from lotto_fix_info_TB order by IDX desc limit 1";
 
         $query = $this->db->query($sql);
         $result = $query -> result();
