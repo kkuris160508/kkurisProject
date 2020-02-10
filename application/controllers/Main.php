@@ -647,32 +647,32 @@ class Main extends CI_Controller{
 //    }
 
     function lotto(){
-        $lottoNum = array();
+        $rands  = array();
+        $num    = 6;
 
-        for($i = 0; $i < 6; $i++){
-            $lottoNum[$i] = mt_rand(1,45);
-
-//            echo $lottoNum[$i]."<br>";
-
-
-
-
-//            for($j = 1; $j < 6; $j++){
-//                if($lottoNum[$i] == $lottoNum[$j]){
-//                    $lottoNum[$i] = mt_rand(1,45);
-//                }
-//            }
-
-            echo $lottoNum[$i]."<br>";
-
+        $rands[]  = rand(1, 45);
+        while( count($rands) < $num ) {
+            $tmp_no = rand(1, 45);
+            if( array_search($tmp_no, $rands)===false ) {
+                $rands[]  = $tmp_no;
+            }
         }
 
-        $lottoVal = array_unique($lottoNum);
-        $lottoLength = sizeof($lottoVal);
+        for($i = 0; $i < 6; $i++){
+            echo $rands[$i];
+        }
 
 
-        $result = $this->debug->debug_var($lottoLength);
-        echo $result;
+//        $lottoVal = array_unique($lottoNum);
+//        $lottoLength = sizeof($lottoVal);
+//
+//        if(sizeof($lottoVal) < 6){
+//
+//        }
+
+
+//        $result = $this->debug->debug_var($lottoLength);
+//        echo $result;
 
         // 중복제거
 
