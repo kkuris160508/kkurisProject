@@ -668,8 +668,10 @@ class Main extends CI_Controller{
         }
 
         $lottoVal = array_unique($lottoNum);
+        $lottoLength = sizeof($lottoVal);
 
-        $result = $this->debug->debug_var($lottoVal);
+
+        $result = $this->debug->debug_var($lottoLength);
         echo $result;
 
         // 중복제거

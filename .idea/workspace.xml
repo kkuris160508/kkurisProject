@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="댓글기능 재 수정">
+    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="lotto 중복기능 제거 수정중">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
     </list>
@@ -49,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="658" column="12" selection-start-line="658" selection-start-column="12" selection-end-line="658" selection-end-column="12" />
+            <state relative-caret-position="708">
+              <caret line="672" column="53" lean-forward="true" selection-start-line="672" selection-start-column="53" selection-end-line="672" selection-end-column="53" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#write#0;n#Main#0;n#!!top" />
@@ -131,7 +131,6 @@
       <find>pro</find>
       <find>insFileData</find>
       <find>insert_account_todo</find>
-      <find>debug_var</find>
       <find>library</find>
       <find>form_validation</find>
       <find>$config['smtp_port']</find>
@@ -143,6 +142,7 @@
       <find>root</find>
       <find>host</find>
       <find>lotto</find>
+      <find>debug_var</find>
     </findStrings>
     <replaceStrings>
       <replace>PW</replace>
@@ -380,21 +380,7 @@
       <workItem from="1573625691917" duration="630000" />
       <workItem from="1578881534634" duration="1314000" />
       <workItem from="1579239915291" duration="175000" />
-      <workItem from="1581302569033" duration="776000" />
-    </task>
-    <task id="LOCAL-00898" summary="파일 업로드">
-      <created>1569572573090</created>
-      <option name="number" value="00898" />
-      <option name="presentableId" value="LOCAL-00898" />
-      <option name="project" value="LOCAL" />
-      <updated>1569572573090</updated>
-    </task>
-    <task id="LOCAL-00899" summary="파일 업로드">
-      <created>1569572658162</created>
-      <option name="number" value="00899" />
-      <option name="presentableId" value="LOCAL-00899" />
-      <option name="project" value="LOCAL" />
-      <updated>1569572658162</updated>
+      <workItem from="1581302569033" duration="2852000" />
     </task>
     <task id="LOCAL-00900" summary="파일 업로드">
       <created>1569572712056</created>
@@ -725,11 +711,25 @@
       <option name="project" value="LOCAL" />
       <updated>1569826235049</updated>
     </task>
-    <option name="localTasksCounter" value="947" />
+    <task id="LOCAL-00947" summary="lotto 중복기능 제거 수정중">
+      <created>1581303557891</created>
+      <option name="number" value="00947" />
+      <option name="presentableId" value="LOCAL-00947" />
+      <option name="project" value="LOCAL" />
+      <updated>1581303557891</updated>
+    </task>
+    <task id="LOCAL-00948" summary="lotto 중복기능 제거 수정중">
+      <created>1581303636810</created>
+      <option name="number" value="00948" />
+      <option name="presentableId" value="LOCAL-00948" />
+      <option name="project" value="LOCAL" />
+      <updated>1581303636810</updated>
+    </task>
+    <option name="localTasksCounter" value="949" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="404636000" />
+    <option name="totallyTimeSpent" value="406712000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -812,7 +812,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="쿠키 수정중" />
     <MESSAGE value="지정 아이피 외 접속 불가 해제" />
     <MESSAGE value="리스트 컨텐츠 뷰 이메일 노출 삭제" />
     <MESSAGE value="뷰 컨텐츠 뷰 이메일 노출 삭제" />
@@ -837,7 +836,8 @@
     <MESSAGE value="이메일 라이브러리 추가" />
     <MESSAGE value="이메일 컨트롤러 추가" />
     <MESSAGE value="댓글기능 재 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="댓글기능 재 수정" />
+    <MESSAGE value="lotto 중복기능 제거 수정중" />
+    <option name="LAST_COMMIT_MESSAGE" value="lotto 중복기능 제거 수정중" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/system/helpers/html_helper.php">
@@ -1182,8 +1182,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="658" column="12" selection-start-line="658" selection-start-column="12" selection-end-line="658" selection-end-column="12" />
+        <state relative-caret-position="708">
+          <caret line="672" column="53" lean-forward="true" selection-start-line="672" selection-start-column="53" selection-end-line="672" selection-end-column="53" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#write#0;n#Main#0;n#!!top" />
