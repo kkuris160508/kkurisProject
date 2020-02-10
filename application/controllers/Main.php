@@ -672,10 +672,8 @@ class Main extends CI_Controller{
         $data['lottoVal'] = $lottoVal;
 
 
-
-        $result = $this->debug->debug_var($data);
-        echo $result;
-
+//        $result = $this->debug->debug_var($data);
+//        echo $result;
 
 
         $this->load->view('lotto/lotto_header_v', $param);
