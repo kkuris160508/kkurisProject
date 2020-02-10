@@ -647,22 +647,22 @@ class Main extends CI_Controller{
 //    }
 
     function lotto(){
-
-        $lottoVal  = array();
-        $num    = 6;
-
-        $lottoVal[]  = rand(1, 45);
-        while( count($lottoVal) < $num ) {
-            $tmp_no = rand(1, 45);
-            if( array_search($tmp_no, $lottoVal)===false ) {
-                $lottoVal[]  = $tmp_no;
-            }
-        }
-
-        for($i = 0; $i < 6; $i++){
-            sort($lottoVal);
-            echo $lottoVal[$i]."<br>";
-        }
+//
+//        $lottoVal  = array();
+//        $num    = 6;
+//
+//        $lottoVal[]  = rand(1, 45);
+//        while( count($lottoVal) < $num ) {
+//            $tmp_no = rand(1, 45);
+//            if( array_search($tmp_no, $lottoVal)===false ) {
+//                $lottoVal[]  = $tmp_no;
+//            }
+//        }
+//
+//        for($i = 0; $i < 6; $i++){
+//            sort($lottoVal);
+//            echo $lottoVal[$i]."<br>";
+//        }
 
         $data['views'] = $this->todo_m->getFixLottoNum();
 
@@ -671,22 +671,9 @@ class Main extends CI_Controller{
 
 
 
-        $this->load->view('lotto/lotto_header_v', $param);
+//        $this->load->view('lotto/lotto_header_v', $param);
         $this->load->view('lotto/lotto_contents_v', $data);
-        $this->load->view('lotto/lotto_footer_v');
-
-//        $lottoVal = array_unique($lottoNum);
-//        $lottoLength = sizeof($lottoVal);
-//
-//        if(sizeof($lottoVal) < 6){
-//
-//        }
-
-
-//        $result = $this->debug->debug_var($lottoLength);
-//        echo $result;
-
-        // 중복제거
+//        $this->load->view('lotto/lotto_footer_v');
 
 
         // 난수 모델에 insert
