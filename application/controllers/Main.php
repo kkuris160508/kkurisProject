@@ -659,7 +659,7 @@ class Main extends CI_Controller{
         }
 
         for($i = 0; $i < 6; $i++){
-            echo $rands[$i];
+            echo $rands[$i]."<br>";
         }
 
 
