@@ -663,7 +663,7 @@ class Main extends CI_Controller{
 //                }
 //            }
 
-            echo $lottoVal[$i]."<br>";
+            echo $lottoNum[$i]."<br>";
 
         }
 
@@ -671,8 +671,6 @@ class Main extends CI_Controller{
 
         $result = $this->debug->debug_var($lottoVal);
         echo $result;
-
-        echo $lottoVal[$i]."<br>";
 
         // 중복제거
 
