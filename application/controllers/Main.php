@@ -664,9 +664,11 @@ class Main extends CI_Controller{
             echo $lottoVal[$i]."<br>";
         }
 
+        $data['views'] = $this->todo_m->getFixLottoNum();
+
 
         $this->load->view('lotto/lotto_header_v', $param);
-
+        $this->load->view('lotto/lotto_contents_v', $data);
         $this->load->view('lotto/lotto_footer_v');
 
 //        $lottoVal = array_unique($lottoNum);
