@@ -15,6 +15,7 @@
 <?php endforeach;?>
 
 <?php
+    echo "내가 뽑은 번호 : ";
     for($i = 0; $i < 6; $i++){
         echo $lottoVal[$i]." ";
     }
