@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="lotto view 생성">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/lotto/lotto_header_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/lotto/lotto_header_v.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/lotto/lotto_contents_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/lotto/lotto_contents_v.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="307" lean-forward="true" selection-start-line="307" selection-end-line="307" />
+            <state relative-caret-position="566">
+              <caret line="299" column="68" lean-forward="true" selection-start-line="299" selection-start-column="68" selection-end-line="299" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -28,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="617">
-              <caret line="674" lean-forward="true" selection-start-line="674" selection-end-line="674" />
+            <state relative-caret-position="362">
+              <caret line="659" column="9" lean-forward="true" selection-start-line="659" selection-start-column="9" selection-end-line="659" selection-end-column="9" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#write#0;n#Main#0;n#!!top" />
@@ -43,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/lotto/lotto_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+            <state relative-caret-position="340">
+              <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
               </folding>
@@ -73,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/header_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="30" column="51" lean-forward="true" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+            <state relative-caret-position="484">
+              <caret line="42" column="75" lean-forward="true" selection-start-line="42" selection-start-column="75" selection-end-line="42" selection-end-column="75" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -85,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/lotto/lotto_header_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="58" column="44" lean-forward="true" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
+            <state relative-caret-position="297">
+              <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -121,9 +122,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>insert</find>
-      <find>INSERT</find>
-      <find>insReply</find>
       <find>insert_todo</find>
       <find>endDateForm</find>
       <find>set_rules</find>
@@ -151,6 +149,9 @@
       <find>todo_m</find>
       <find>$list</find>
       <find>$param</find>
+      <find>???</find>
+      <find>Lotto 번호 생성</find>
+      <find>todo 애플리케이션 프로그램(Main 페이지)</find>
     </findStrings>
     <replaceStrings>
       <replace>PW</replace>
@@ -201,12 +202,9 @@
         <option value="$PROJECT_DIR$/application/config/config.php" />
         <option value="$PROJECT_DIR$/application/helpers/MY_alert_helper.php" />
         <option value="$PROJECT_DIR$/system/helpers/alert_helper.php" />
-        <option value="$PROJECT_DIR$/application/views/todo/login_header_v.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/application/views/todo/header_v.php" />
         <option value="$PROJECT_DIR$/system/language/english/form_validation_lang.php" />
         <option value="$PROJECT_DIR$/application/views/todo/login_contents_v.php" />
-        <option value="$PROJECT_DIR$/application/views/Auth/header_login_v.php" />
         <option value="$PROJECT_DIR$/application/views/Auth/login_v.php" />
         <option value="$PROJECT_DIR$/application/controllers/Test.php" />
         <option value="$PROJECT_DIR$/application/views/todo/search_list_contents_v.php" />
@@ -220,15 +218,18 @@
         <option value="$PROJECT_DIR$/application/views/upload_form.php" />
         <option value="$PROJECT_DIR$/application/controllers/Upload.php" />
         <option value="$PROJECT_DIR$/application/views/upload_success.php" />
-        <option value="$PROJECT_DIR$/application/views/view_file_v.php" />
         <option value="$PROJECT_DIR$/application/config/email.php" />
         <option value="$PROJECT_DIR$/application/views/todo/view_contents_v.php" />
-        <option value="$PROJECT_DIR$/application/views/header_v.php" />
         <option value="$PROJECT_DIR$/application/views/Tutorial/lotto_header_v.php" />
         <option value="$PROJECT_DIR$/application/views/lotto/lotto_footer_v.php" />
         <option value="$PROJECT_DIR$/application/models/Todo_m.php" />
-        <option value="$PROJECT_DIR$/application/views/lotto/lotto_contents_v.php" />
+        <option value="$PROJECT_DIR$/application/views/Auth/header_login_v.php" />
+        <option value="$PROJECT_DIR$/application/views/todo/login_header_v.php" />
+        <option value="$PROJECT_DIR$/application/views/todo/header_v.php" />
         <option value="$PROJECT_DIR$/application/views/lotto/lotto_header_v.php" />
+        <option value="$PROJECT_DIR$/application/views/header_v.php" />
+        <option value="$PROJECT_DIR$/application/views/view_file_v.php" />
+        <option value="$PROJECT_DIR$/application/views/lotto/lotto_contents_v.php" />
         <option value="$PROJECT_DIR$/application/controllers/Main.php" />
       </list>
     </option>
@@ -405,28 +406,7 @@
       <workItem from="1573625691917" duration="630000" />
       <workItem from="1578881534634" duration="1314000" />
       <workItem from="1579239915291" duration="175000" />
-      <workItem from="1581302569033" duration="9040000" />
-    </task>
-    <task id="LOCAL-00911" summary="파일 업로드">
-      <created>1569803943995</created>
-      <option name="number" value="00911" />
-      <option name="presentableId" value="LOCAL-00911" />
-      <option name="project" value="LOCAL" />
-      <updated>1569803943996</updated>
-    </task>
-    <task id="LOCAL-00912" summary="파일 업로드">
-      <created>1569804156657</created>
-      <option name="number" value="00912" />
-      <option name="presentableId" value="LOCAL-00912" />
-      <option name="project" value="LOCAL" />
-      <updated>1569804156657</updated>
-    </task>
-    <task id="LOCAL-00913" summary="파일 업로드">
-      <created>1569804248706</created>
-      <option name="number" value="00913" />
-      <option name="presentableId" value="LOCAL-00913" />
-      <option name="project" value="LOCAL" />
-      <updated>1569804248706</updated>
+      <workItem from="1581302569033" duration="9645000" />
     </task>
     <task id="LOCAL-00914" summary="파일 업로드">
       <created>1569805466280</created>
@@ -750,11 +730,32 @@
       <option name="project" value="LOCAL" />
       <updated>1581313148178</updated>
     </task>
-    <option name="localTasksCounter" value="960" />
+    <task id="LOCAL-00960" summary="lotto view 생성">
+      <created>1581313389587</created>
+      <option name="number" value="00960" />
+      <option name="presentableId" value="LOCAL-00960" />
+      <option name="project" value="LOCAL" />
+      <updated>1581313389587</updated>
+    </task>
+    <task id="LOCAL-00961" summary="lotto view 생성">
+      <created>1581313527694</created>
+      <option name="number" value="00961" />
+      <option name="presentableId" value="LOCAL-00961" />
+      <option name="project" value="LOCAL" />
+      <updated>1581313527694</updated>
+    </task>
+    <task id="LOCAL-00962" summary="lotto view 생성">
+      <created>1581313847079</created>
+      <option name="number" value="00962" />
+      <option name="presentableId" value="LOCAL-00962" />
+      <option name="project" value="LOCAL" />
+      <updated>1581313847079</updated>
+    </task>
+    <option name="localTasksCounter" value="963" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="412900000" />
+    <option name="totallyTimeSpent" value="413505000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1135,16 +1136,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/header_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="30" column="51" lean-forward="true" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/reply_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="838">
@@ -1192,37 +1183,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="307" lean-forward="true" selection-start-line="307" selection-end-line="307" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/lotto/lotto_contents_v.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/lotto/lotto_header_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="58" column="44" lean-forward="true" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
+        <state relative-caret-position="297">
+          <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/header_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="42" column="75" lean-forward="true" selection-start-line="42" selection-start-column="75" selection-end-line="42" selection-end-column="75" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="299" column="68" lean-forward="true" selection-start-line="299" selection-start-column="68" selection-end-line="299" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/lotto/lotto_contents_v.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
-          <caret line="674" lean-forward="true" selection-start-line="674" selection-end-line="674" />
+        <state relative-caret-position="362">
+          <caret line="659" column="9" lean-forward="true" selection-start-line="659" selection-start-column="9" selection-end-line="659" selection-end-column="9" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#write#0;n#Main#0;n#!!top" />

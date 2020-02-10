@@ -661,7 +661,7 @@ class Main extends CI_Controller{
 
         for($i = 0; $i < 6; $i++){
             sort($lottoVal);
-            echo $lottoVal[$i]."<br>";
+//            echo $lottoVal[$i]."<br>";
         }
 
         $param = array(
