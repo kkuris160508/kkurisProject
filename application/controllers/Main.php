@@ -647,22 +647,27 @@ class Main extends CI_Controller{
 //    }
 
     function lotto(){
-        $rands  = array();
+
+        $lottoVal  = array();
         $num    = 6;
 
-        $rands[]  = rand(1, 45);
-        while( count($rands) < $num ) {
+        $lottoVal[]  = rand(1, 45);
+        while( count($lottoVal) < $num ) {
             $tmp_no = rand(1, 45);
-            if( array_search($tmp_no, $rands)===false ) {
-                $rands[]  = $tmp_no;
+            if( array_search($tmp_no, $lottoVal)===false ) {
+                $lottoVal[]  = $tmp_no;
             }
         }
 
         for($i = 0; $i < 6; $i++){
-            sort($rands);
-            echo $rands[$i]."<br>";
+            sort($lottoVal);
+            echo $lottoVal[$i]."<br>";
         }
 
+
+        $this->load->view('lotto/lotto_header_v', $param);
+
+        $this->load->view('lotto/lotto_footer_v');
 
 //        $lottoVal = array_unique($lottoNum);
 //        $lottoLength = sizeof($lottoVal);
