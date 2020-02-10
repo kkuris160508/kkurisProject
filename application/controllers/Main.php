@@ -647,30 +647,34 @@ class Main extends CI_Controller{
 //    }
 
     function lotto(){
-//
-//        $lottoVal  = array();
-//        $num    = 6;
-//
-//        $lottoVal[]  = rand(1, 45);
-//        while( count($lottoVal) < $num ) {
-//            $tmp_no = rand(1, 45);
-//            if( array_search($tmp_no, $lottoVal)===false ) {
-//                $lottoVal[]  = $tmp_no;
-//            }
-//        }
-//
-//        for($i = 0; $i < 6; $i++){
-//            sort($lottoVal);
-//            echo $lottoVal[$i]."<br>";
-//        }
+
+        $lottoVal  = array();
+        $num    = 6;
+
+        $lottoVal[]  = rand(1, 45);
+        while( count($lottoVal) < $num ) {
+            $tmp_no = rand(1, 45);
+            if( array_search($tmp_no, $lottoVal)===false ) {
+                $lottoVal[]  = $tmp_no;
+            }
+        }
+
+        for($i = 0; $i < 6; $i++){
+            sort($lottoVal);
+            echo $lottoVal[$i]."<br>";
+        }
+
         $param = array(
             'id' => '번호'
         );
 
         $data['views'] = $this->todo_m->getFixLottoNum();
+        $data['lottoVal'] = $lottoVal;
 
-//        $result = $this->debug->debug_var($data);
-//        echo $result;
+
+
+        $result = $this->debug->debug_var($data);
+        echo $result;
 
 
 

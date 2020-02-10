@@ -1,7 +1,7 @@
 <html>
 <nav id="gnb"> <!-- gnb start -->
     <ul>
-        <li><a rel="external" href="/Main/lists/">todo 애플리케이션 프로그램(Main 페이지)</a></li>
+        <li><a rel="external" href="/Main/lists/">Todo 애플리케이션 프로그램(Main 페이지)</a></li>
     </ul>
 </nav><!-- gnb end -->
 <body>
