@@ -648,10 +648,10 @@ class Main extends CI_Controller{
 
     function lotto(){
 
-        $lottoVal  = array();
-        $num    = 6;
+        $lottoVal = array();
+        $num = 6;
 
-        $lottoVal[]  = rand(1, 45);
+        $lottoVal[] = rand(1, 45);
         while( count($lottoVal) < $num ) {
             $tmp_no = rand(1, 45);
             if( array_search($tmp_no, $lottoVal)===false ) {
@@ -681,7 +681,13 @@ class Main extends CI_Controller{
         $this->load->view('lotto/lotto_footer_v');
 
 
-        // 난수 모델에 insert
+        // getFixLottoNum 의 값과 내가 뽑은 값 비교.
+        // 몇개가 맞았는지
+           // 2중 for 문?
+
+
+        // 만든 lottoVal DB에 insert
+
 
     }
 }
