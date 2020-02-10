@@ -666,6 +666,10 @@ class Main extends CI_Controller{
 
         $data['views'] = $this->todo_m->getFixLottoNum();
 
+        $result = $this->debug->debug_var($data);
+        echo $result;
+
+
 
         $this->load->view('lotto/lotto_header_v', $param);
         $this->load->view('lotto/lotto_contents_v', $data);
