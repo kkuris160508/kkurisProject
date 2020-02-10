@@ -663,6 +663,9 @@ class Main extends CI_Controller{
 //            sort($lottoVal);
 //            echo $lottoVal[$i]."<br>";
 //        }
+        $param = array(
+            'id' => '번호'
+        );
 
         $data['views'] = $this->todo_m->getFixLottoNum();
 
