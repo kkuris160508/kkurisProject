@@ -6,12 +6,12 @@
 
         <p style="font-weight:bold"><?php echo $num -> IDX;?>회차</p>
 
-        <td style="border: 1px; solid #4297d7"><?php echo $num -> num_1;?></td>
-        <td style="border: 1px; solid #4297d7"><?php echo $num -> num_2;?></td>
-        <td style="border: 1px; solid #4297d7"><?php echo $num -> num_3;?></td>
-        <td style="border: 1px; solid #4297d7"><?php echo $num -> num_4;?></td>
-        <td style="border: 1px; solid #4297d7"><?php echo $num -> num_5;?></td>
-        <td style="border: 1px; solid #4297d7"><?php echo $num -> num_6;?></td>
+        <td style="border: 1px solid #4297d7"><?php echo $num -> num_1;?></td>
+        <td style="border: 1px solid #4297d7"><?php echo $num -> num_2;?></td>
+        <td style="border: 1px solid #4297d7"><?php echo $num -> num_3;?></td>
+        <td style="border: 1px solid #4297d7"><?php echo $num -> num_4;?></td>
+        <td style="border: 1px solid #4297d7"><?php echo $num -> num_5;?></td>
+        <td style="border: 1px solid #4297d7"><?php echo $num -> num_6;?></td>
 
     <?php endforeach;?>
     </tr>
