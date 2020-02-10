@@ -242,9 +242,12 @@ class Main extends CI_Controller{
             $this->load->view('reply_contents_v', $data);
             $this->load->view('todo/footer_v');
 //
-//            $replyContents = $this->input->post('replyContent', TRUE);
-//            $postID = $this->input->post('id', TRUE);
+            $replyContents = $this->input->post('replyContent', TRUE);
+            $postID = $this->input->post('id', TRUE);
 //
+            $this->debug->debug_var($replyContents);
+            $this->debug->debug_var($postID);
+
 //            $this->todo_m->insReply($replyContents, $postID, $writerNo[0]->no);
 //
 //            alert('댓글이 등록 되었습니다.',"/Main/view/'{$postID}'");
@@ -651,15 +654,25 @@ class Main extends CI_Controller{
 
 //            echo $lottoNum[$i]."<br>";
 
-            for($j = 1; $j < 6; $j++){
-                if($lottoNum[$i] == $lottoNum[$j]){
-                    $lottoNum[$i] = mt_rand(1,45);
-                }
-            }
 
-            echo $lottoNum[$i]."<br>";
+
+
+//            for($j = 1; $j < 6; $j++){
+//                if($lottoNum[$i] == $lottoNum[$j]){
+//                    $lottoNum[$i] = mt_rand(1,45);
+//                }
+//            }
+
+            echo $lottoVal[$i]."<br>";
+
         }
 
+        $lottoVal = array_unique($lottoNum);
+
+        $result = $this->debug->debug_var($lottoVal);
+        echo $result;
+
+        echo $lottoVal[$i]."<br>";
 
         // 중복제거
 
