@@ -741,12 +741,16 @@ class Main extends CI_Controller{
 
         $data['idx'] = $this->todo_m->getFixLottoIDX();
         $id = array();
+//
+//        foreach($data['idx'] as $id){
+//            $qIDX = $id->idx ;
+//        }
+//
+//        $result = $this->debug->debug_var($qIDX);
+//        echo $result;
 
-        foreach($data['idx'] as $id){
-            $qIDX = $id->idx ;
-        }
 
-        $result = $this->debug->debug_var($qIDX);
+        $result = $this->debug->debug_var($data['idx']);
         echo $result;
 
 

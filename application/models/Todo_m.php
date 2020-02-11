@@ -310,7 +310,8 @@ class Todo_m extends CI_Model{
         $sql = "select last_insert_id(IDX) as idx from lotto_fix_info_TB";
 
         $query = $this->db->query($sql);
-        $result = $query -> result();
+//        $result = $query -> result();
+        $result = $query -> num_rows();
 
         return $result;
     }
