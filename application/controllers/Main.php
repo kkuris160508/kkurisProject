@@ -676,29 +676,30 @@ class Main extends CI_Controller{
 
         $difArr_1 = array();
         $difArr_2 = array();
+        $newDifArr_2 = array();
 
         $difArr_1 = $data['lottoVal'];
 //        $difArr_2 = $data['views'];
 
         foreach ($data['views'] as $difArr_2) {
-            echo $difArr_2 -> num_1;
-            echo $difArr_2 -> num_2;
-            echo $difArr_2 -> num_3;
-            echo $difArr_2 -> num_4;
-            echo $difArr_2 -> num_5;
-            echo $difArr_2 -> num_6;
+            $newDifArr_2[0] = $difArr_2 -> num_1;
+            $newDifArr_2[1] = $difArr_2 -> num_2;
+            $newDifArr_2[2] = $difArr_2 -> num_3;
+            $newDifArr_2[3] = $difArr_2 -> num_4;
+            $newDifArr_2[4] = $difArr_2 -> num_5;
+            $newDifArr_2[5] = $difArr_2 -> num_6;
         }
 
 //        $difArray = array_diff($difArr_1, $difArr_2);
 
-        $result = $this->debug->debug_var($difArr_2);
+        $result = $this->debug->debug_var($newDifArr_2);
         echo $result;
 
-        $newDifArr_2 = array();
-        for($k = 0; $k < 6; $k++){
-            $newDifArr_2[$k] = $difArr_2[$k+1];
-            echo $newDifArr_2[$k];
-        }
+
+//        for($k = 0; $k < 6; $k++){
+//            $newDifArr_2[$k] = $difArr_2 -> num_;
+//            echo $newDifArr_2[$k];
+//        }
 
         // getFixLottoNum 의 값과 내가 뽑은 값 비교.
         // 몇개가 맞았는지
