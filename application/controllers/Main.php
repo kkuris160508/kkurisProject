@@ -689,9 +689,8 @@ class Main extends CI_Controller{
         // 몇개가 맞았는지
            // 2중 for 문?
         for($i = 0; $i < 6; $i++){
-            $tmpVal = $difArr_1[$i];
             for($j = 0; $j < 6; $j++){
-                if($tmpVal == $difArr_2[$j]){
+                if($difArr_1[$i] == $difArr_2[$j]){
                     echo 'same '.$j;
                 }
             }
