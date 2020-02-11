@@ -735,14 +735,13 @@ class Main extends CI_Controller{
 
     }
 
-    function test_curl(){
+    function test_curl(){ // curl로 가장 최근 회차의 로또 번호 받아오기
 
 //        $idx ='897';
 
-        $data['idx'] = $this->todo_m->getFixLottoIDX();
+        $data['idx'] = $this->todo_m->getFixLottoIDX(); //DB에 저장된 가장 최근의 IDX(회차)값 가져오기
         $idx = $data['idx']->idx;
 
-        echo $idx;
 //
 //        foreach($data['idx'] as $id){
 //            $qIDX = $id->idx ;
