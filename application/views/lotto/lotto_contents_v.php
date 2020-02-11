@@ -24,11 +24,10 @@
 
     echo "<br> 맞춘 갯수 : ".$lottoCnt;
     echo "<br> 맞춘 번호 : ";
+    $comma = "";
     for($j = 0; $j < 6; $j++){
         if($lottoCnt >= 2){
             $comma = ",";
-        } else {
-            $comma = "";
         }
         echo $matchNum[$j].$comma." ";
 
