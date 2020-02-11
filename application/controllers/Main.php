@@ -755,10 +755,13 @@ class Main extends CI_Controller{
             curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.7.5) Gecko/20041107 Firefox/1.0');
             $content = curl_exec($ch);
 
+
+            echo $content;
+
             // 리소스 해제를 위해 세션 연결 닫음
             curl_close($ch);
 
-            echo $ch;
+
         } else {
             return false;
             // curl 라이브러리가 설치 되지 않음. 다른 방법 알아볼 것
