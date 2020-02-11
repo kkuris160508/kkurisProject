@@ -766,8 +766,8 @@ class Main extends CI_Controller{
             echo $secondExplode[0];
 
 
-            $result2 = $this->debug->debug_var($body);
-            echo $result2;
+//            $result2 = $this->debug->debug_var($body);
+//            echo $result2;
 
 
         } else {
