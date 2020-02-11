@@ -678,7 +678,10 @@ class Main extends CI_Controller{
         $difArr_2 = array();
 
         $difArr_1 = $data['lottoVal'];
-        $difArr_2 = $data['views'];
+//        $difArr_2 = $data['views'];
+        foreach ($data['views'] as $difArr_2) {
+            echo $difArr_2;
+        }
 
 //        $difArray = array_diff($difArr_1, $difArr_2);
 
