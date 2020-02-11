@@ -742,7 +742,8 @@ class Main extends CI_Controller{
         $data['idx'] = $this->todo_m->getFixLottoIDX();
 
 
-        $result = $this->debug->debug_var($data['idx']);
+
+        $result = $this->debug->debug_var($data['idx']->idx);
         echo $result;
 
 
