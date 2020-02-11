@@ -692,10 +692,10 @@ class Main extends CI_Controller{
 
 //        $difArray = array_diff($difArr_1, $difArr_2);
 
-        $result = $this->debug->debug_var($newDifArr_2);
-        echo $result;
-        $result1 = $this->debug->debug_var($difArr_1);
-        echo $result1;
+//        $result = $this->debug->debug_var($newDifArr_2);
+//        echo $result;
+//        $result1 = $this->debug->debug_var($difArr_1);
+//        echo $result1;
 
 
 //        for($k = 0; $k < 6; $k++){
@@ -716,10 +716,15 @@ class Main extends CI_Controller{
 
 
         $difArr = array_intersect($newDifArr_2, $difArr_1);
-        $result2 = $this->debug->debug_var($difArr);
-        echo $result2;
+
         $data['lottoCnt'] = sizeof($difArr);
         $data['matchNum'] = $difArr;
+
+
+
+        $result2 = $this->debug->debug_var($data);
+        echo $result2;
+
 
         $this->load->view('lotto/lotto_header_v', $param);
         $this->load->view('lotto/lotto_contents_v', $data);
