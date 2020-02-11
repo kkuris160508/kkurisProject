@@ -772,6 +772,11 @@ class Main extends CI_Controller{
             for($j = 0; $j < sizeof($explodeStr1); $j++){
                 echo $explodeStr1[$j][0];
                 echo $explodeStr1[$j][1];
+                echo $explodeStr1[$j][2];
+                echo $explodeStr1[$j][3];
+                echo $explodeStr1[$j][4];
+                echo $explodeStr1[$j][5];
+
             }
 
 
