@@ -680,9 +680,9 @@ class Main extends CI_Controller{
         $difArr_1 = $data['lottoVal'];
         $difArr_2 = $data['views'];
 
-        $difArray = array_diff($difArr_1, $difArr_2);
+//        $difArray = array_diff($difArr_1, $difArr_2);
 
-        $result = $this->debug->debug_var($difArray);
+        $result = $this->debug->debug_var($data);
         echo $result;
 
         // getFixLottoNum 의 값과 내가 뽑은 값 비교.
