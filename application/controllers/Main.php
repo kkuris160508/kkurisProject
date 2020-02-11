@@ -692,8 +692,7 @@ class Main extends CI_Controller{
             $tmpVal = $difArr_1[$i];
             for($j = 0; $j < 6; $j++){
                 if($tmpVal == $difArr_2[$j]){
-                    echo 'same';
-                    continue;
+                    echo 'same '.$j;
                 }
             }
         }
