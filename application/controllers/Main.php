@@ -691,7 +691,7 @@ class Main extends CI_Controller{
         for($i = 0; $i < 6; $i++){
             for($j = 0; $j < 6; $j++){
                 if($difArr_1[$i] == $difArr_2[$j]){
-                    echo 'same '.$j;
+                    echo $difArr_2[$j];
                 }
             }
         }
