@@ -713,7 +713,7 @@ class Main extends CI_Controller{
 //                }
 //            }
 //        }
-        $difArr = array_diff($newDifArr_2, $difArr_1);
+        $difArr = array_intersect($newDifArr_2, $difArr_1);
         $result2 = $this->debug->debug_var($difArr);
         echo $result2;
 
