@@ -694,6 +694,8 @@ class Main extends CI_Controller{
 
         $result = $this->debug->debug_var($newDifArr_2);
         echo $result;
+        $result1 = $this->debug->debug_var($difArr_1);
+        echo $result1;
 
 
 //        for($k = 0; $k < 6; $k++){
@@ -704,13 +706,13 @@ class Main extends CI_Controller{
         // getFixLottoNum 의 값과 내가 뽑은 값 비교.
         // 몇개가 맞았는지
            // 2중 for 문?
-        for($i = 0; $i < 6; $i++){
-            for($j = 0; $j < 6; $j++){
-                if($difArr_1[$i] == $newDifArr_2[$j]){
-                    echo $difArr_2[$j];
-                }
-            }
-        }
+//        for($i = 0; $i < 6; $i++){
+//            for($j = 0; $j < 6; $j++){
+//                if($difArr_1[$i] == $newDifArr_2[$j]){
+//                    echo $difArr_2[$j];
+//                }
+//            }
+//        }
 
         $this->load->view('lotto/lotto_header_v', $param);
         $this->load->view('lotto/lotto_contents_v', $data);
