@@ -764,19 +764,14 @@ class Main extends CI_Controller{
 //            $firstExplode = explode("num_box\"> <span class=\"", $body);
             $firstExplode = explode('num_box"> <span class="', $body);
             $secondExplode = explode('</span> <span class="bonus">', $firstExplode[1]);
+            $explodeStr1 = array();
 //            echo $firstExplode[1];
             $explodeStr = explode('num ball',$secondExplode[0]);
             for($i = 0; $i < sizeof($explodeStr); $i++){
                 $explodeStr1[$i] = explode('">', $explodeStr[$i]);
             }
-            for($j = 0; $j < sizeof($explodeStr1); $j++){
-                echo $explodeStr1[$j][0];
-                echo $explodeStr1[$j][1];
-                echo $explodeStr1[$j][2];
-                echo $explodeStr1[$j][3];
-                echo $explodeStr1[$j][4];
-                echo $explodeStr1[$j][5];
-
+            for($j = 0; $j < sizeof($explodeStr1[0]); $j++){
+                echo $explodeStr1[0];
             }
 
 
