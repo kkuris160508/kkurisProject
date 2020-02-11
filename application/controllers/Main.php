@@ -773,8 +773,8 @@ class Main extends CI_Controller{
             for($j = 0; $j < sizeof($explodeStr1); $j++){
 //                echo sizeof($explodeStr1[0]);
                 echo sizeof($explodeStr1);
-                echo $explodeStr1[0][0];
-                echo $explodeStr1[0][1];
+                echo $explodeStr1[0];
+                echo $explodeStr1[1];
             }
 
 
