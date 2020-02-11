@@ -741,6 +741,8 @@ class Main extends CI_Controller{
 
         $data['idx'] = $this->todo_m->getFixLottoIDX();
         $idx = $data['idx']->idx;
+
+        echo $idx;
 //
 //        foreach($data['idx'] as $id){
 //            $qIDX = $id->idx ;
