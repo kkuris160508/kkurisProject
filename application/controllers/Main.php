@@ -761,6 +761,11 @@ class Main extends CI_Controller{
             curl_close($ch);
             $body = $content;
 
+            $firstExplode = explode("num_box\"> <span class=\"", $body);
+            $secondExplode = explode('</span> <span class="bonus">', $firstExplode[1]);
+            echo $secondExplode[0];
+
+
             $result2 = $this->debug->debug_var($body);
             echo $result2;
 
