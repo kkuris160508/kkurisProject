@@ -714,7 +714,8 @@ class Main extends CI_Controller{
 //            }
 //        }
         $difArr = array_diff($newDifArr_2, $difArr_1);
-        echo $difArr;
+        $result2 = $this->debug->debug_var($difArr);
+        echo $result2;
 
         $this->load->view('lotto/lotto_header_v', $param);
         $this->load->view('lotto/lotto_contents_v', $data);
