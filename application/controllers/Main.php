@@ -679,13 +679,19 @@ class Main extends CI_Controller{
 
         $difArr_1 = $data['lottoVal'];
 //        $difArr_2 = $data['views'];
+
         foreach ($data['views'] as $difArr_2) {
-            echo $difArr_2;
+            echo $difArr_2 -> num_1;
+            echo $difArr_2 -> num_2;
+            echo $difArr_2 -> num_3;
+            echo $difArr_2 -> num_4;
+            echo $difArr_2 -> num_5;
+            echo $difArr_2 -> num_6;
         }
 
 //        $difArray = array_diff($difArr_1, $difArr_2);
 
-        $result = $this->debug->debug_var($data);
+        $result = $this->debug->debug_var($difArr_2);
         echo $result;
 
         // getFixLottoNum 의 값과 내가 뽑은 값 비교.
