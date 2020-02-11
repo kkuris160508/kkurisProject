@@ -694,6 +694,12 @@ class Main extends CI_Controller{
         $result = $this->debug->debug_var($difArr_2);
         echo $result;
 
+        $newDifArr_2 = array();
+        for($k = 0; $k < 6; $k++){
+            $newDifArr_2[$k] = $difArr_2[$k+1];
+            echo $newDifArr_2[$k];
+        }
+
         // getFixLottoNum 의 값과 내가 뽑은 값 비교.
         // 몇개가 맞았는지
            // 2중 for 문?
