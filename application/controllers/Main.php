@@ -757,6 +757,8 @@ class Main extends CI_Controller{
 
             // 리소스 해제를 위해 세션 연결 닫음
             curl_close($ch);
+
+            echo $ch;
         } else {
             return false;
             // curl 라이브러리가 설치 되지 않음. 다른 방법 알아볼 것
