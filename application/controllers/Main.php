@@ -737,10 +737,10 @@ class Main extends CI_Controller{
 
     function test_curl(){
 
-        $idx ='897';
+//        $idx ='897';
 
         $data['idx'] = $this->todo_m->getFixLottoIDX();
-        $id = array();
+        $idx = $data['idx']->idx;
 //
 //        foreach($data['idx'] as $id){
 //            $qIDX = $id->idx ;
@@ -750,8 +750,8 @@ class Main extends CI_Controller{
 //        echo $result;
 
 
-        $result = $this->debug->debug_var($data['idx']->idx);
-        echo $result;
+//        $result = $this->debug->debug_var($data['idx']->idx);
+//        echo $result;
 
 
         if (function_exists('curl_init')) {
