@@ -296,7 +296,7 @@ class Todo_m extends CI_Model{
         return $result;
     }
 
-    function getFixLottoNum(){
+    function getFixLottoNum(){ // 가장 최근 회차의 당첨 번호 가지고 오기
         $sql = "select IDX, num_1, num_2, num_3, num_4, num_5, num_6 from lotto_fix_info_TB order by IDX desc limit 1";
 
         $query = $this->db->query($sql);
@@ -306,6 +306,23 @@ class Todo_m extends CI_Model{
 
     }
 
+    function getFixLottoIDX(){ // 가장 최근 회차 가지고 오기
+        $sql = "select last_insert_id(IDX) from lotto_fix_info_TB";
+
+        $query = $this->db->query($sql);
+        $result = $query -> result();
+
+        return $result;
+    }
+
+    function setFixLottoNum(){
+
+    }
+
+
+    function searchLastIDX(){
+
+    }
 
 }
 

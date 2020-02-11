@@ -739,6 +739,13 @@ class Main extends CI_Controller{
 
         $idx ='897';
 
+        $data['idx'] = $this->todo_m->getFixLottoIDX();
+
+
+        $result = $this->debug->debug_var($data['idx']);
+        echo $result;
+
+
         if (function_exists('curl_init')) {
             // curl 리소스를 초기화
             $ch = curl_init();
