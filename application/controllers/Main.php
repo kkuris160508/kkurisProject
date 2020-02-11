@@ -499,7 +499,7 @@ class Main extends CI_Controller{
 //
 //    }
 
-    public function dob_check($str){
+    function dob_check($str){
         $this->load->library('form_validation');
 
         if (!DateTime::createFromFormat('Y-m-d', $str)) { //yes it's YYYY-MM-DD
@@ -510,12 +510,12 @@ class Main extends CI_Controller{
         }
     }
 
-    public function increaseReadCnt($id){
+    function increaseReadCnt($id){
 
         $this->todo_m->updateIncreaseReadCount($id);
     }
 
-    public function searchText(){
+    function searchText(){
         $param = array(
             'id'=>'보기'
         );
@@ -672,18 +672,19 @@ class Main extends CI_Controller{
         $data['lottoVal'] = $lottoVal;
 
 
-//        $result = $this->debug->debug_var($data);
-//        echo $result;
 
+        $difArray = array_diff($data['lottoVal'], $data['views']);
 
-        $this->load->view('lotto/lotto_header_v', $param);
-        $this->load->view('lotto/lotto_contents_v', $data);
-        $this->load->view('lotto/lotto_footer_v');
-
+        $result = $this->debug->debug_var($difArray);
+        echo $result;
 
         // getFixLottoNum 의 값과 내가 뽑은 값 비교.
         // 몇개가 맞았는지
            // 2중 for 문?
+
+        $this->load->view('lotto/lotto_header_v', $param);
+        $this->load->view('lotto/lotto_contents_v', $data);
+        $this->load->view('lotto/lotto_footer_v');
 
 
         // 만든 lottoVal DB에 insert
