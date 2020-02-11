@@ -311,7 +311,8 @@ class Todo_m extends CI_Model{
 
         $query = $this->db->query($sql);
 //        $result = $query -> result();
-        $result = $query -> num_rows();
+//        $result = $query -> num_rows();
+        $result = $query->row();
 
         return $result;
     }
