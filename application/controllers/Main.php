@@ -680,7 +680,7 @@ class Main extends CI_Controller{
         $difArr_1 = $data['lottoVal'];
         $difArr_2 = $data['views'];
 
-        $difArray = array_intersect($difArr_1, $difArr_2);
+        $difArray = array_diff($difArr_1, $difArr_2);
 
         $result = $this->debug->debug_var($difArray);
         echo $result;
