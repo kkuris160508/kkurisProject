@@ -767,7 +767,7 @@ class Main extends CI_Controller{
 //            echo $firstExplode[1];
             $explodeStr = explode('num ball6">',$secondExplode[0]);
 
-            echo $explodeStr[0];
+            echo $explodeStr[0]."<br>";
             echo $explodeStr[1];
 
 
