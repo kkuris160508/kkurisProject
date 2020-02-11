@@ -737,7 +737,7 @@ class Main extends CI_Controller{
 
     function test_curl(){
 
-        $idx = 897;
+        $idx ='897';
 
         if (function_exists('curl_init')) {
             // curl 리소스를 초기화
