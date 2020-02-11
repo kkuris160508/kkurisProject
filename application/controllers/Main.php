@@ -750,7 +750,7 @@ class Main extends CI_Controller{
 //        echo $result;
 
 
-        $result = $this->debug->debug_var($data['idx']);
+        $result = $this->debug->debug_var($data['idx']->idx);
         echo $result;
 
 
