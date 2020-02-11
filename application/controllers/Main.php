@@ -770,7 +770,7 @@ class Main extends CI_Controller{
                 $explodeStr1[$i] = explode('">', $explodeStr[$i]);
             }
             for($j = 0; $j < sizeof($explodeStr1); $j++){
-                echo $j;
+                echo $explodeStr1[$j];
             }
 
 
