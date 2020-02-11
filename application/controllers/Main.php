@@ -745,7 +745,7 @@ class Main extends CI_Controller{
 
             // url을 설정
 //            curl_setopt($ch, CURLOPT_URL, 'http://www.google.com');
-            curl_setopt($ch, CURLOPT_URL, 'https://search.naver.com/search.naver?sm=tab_drt&where=nexearch&query='+$idx+'%ED%9A%8C%EB%A1%9C%EB%98%90');
+            curl_setopt($ch, CURLOPT_URL, "https://search.naver.com/search.naver?sm=tab_drt&where=nexearch&query='{$idx}'%ED%9A%8C%EB%A1%9C%EB%98%90");
 
             // 헤더는 제외하고 content 만 받음
             curl_setopt($ch, CURLOPT_HEADER, 0);
