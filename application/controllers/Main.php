@@ -740,10 +740,13 @@ class Main extends CI_Controller{
         $idx ='897';
 
         $data['idx'] = $this->todo_m->getFixLottoIDX();
+        $id = array();
 
+        foreach($data['idx'] as $id){
+            $qIDX = $id->idx ;
+        }
 
-
-        $result = $this->debug->debug_var($data['idx']->idx);
+        $result = $this->debug->debug_var($qIDX);
         echo $result;
 
 
