@@ -23,5 +23,9 @@
     }
 
     echo "<br> 맞춘 갯수 : ".$lottoCnt;
+    echo "<br> 맞춘 번호 : ";
+    for($j = 0; $j < 6; $j++){
+        echo $matchNum[$j]." ";
+    }
 
 ?>
