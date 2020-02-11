@@ -737,13 +737,15 @@ class Main extends CI_Controller{
 
     function test_curl(){
 
+        $idx = 897;
+
         if (function_exists('curl_init')) {
             // curl 리소스를 초기화
             $ch = curl_init();
 
             // url을 설정
 //            curl_setopt($ch, CURLOPT_URL, 'http://www.google.com');
-            curl_setopt($ch, CURLOPT_URL, 'https://search.naver.com/search.naver?sm=tab_drt&where=nexearch&query=896%ED%9A%8C%EB%A1%9C%EB%98%90');
+            curl_setopt($ch, CURLOPT_URL, 'https://search.naver.com/search.naver?sm=tab_drt&where=nexearch&query='+$idx+'%ED%9A%8C%EB%A1%9C%EB%98%90');
 
             // 헤더는 제외하고 content 만 받음
             curl_setopt($ch, CURLOPT_HEADER, 0);
@@ -770,7 +772,7 @@ class Main extends CI_Controller{
             for($i = 0; $i < sizeof($explodeStr); $i++){
                 $explodeStr1[$i] = explode('">', $explodeStr[$i]);
             }
-            for($j = 0; $j < sizeof($explodeStr1); $j++){
+            for($j = 1; $j < sizeof($explodeStr1); $j++){
 //                echo sizeof($explodeStr1[0]);
 //                echo sizeof($explodeStr1);
                 echo $explodeStr1[$j][0]."<br>";
