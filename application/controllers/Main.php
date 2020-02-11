@@ -769,6 +769,10 @@ class Main extends CI_Controller{
             for($i = 0; $i < sizeof($explodeStr); $i++){
                 $explodeStr1[$i] = explode('">', $explodeStr[$i]);
             }
+            for($j = 0; $j < sizeof($explodeStr1); $j++){
+                echo $j;
+            }
+
 
 //            $explodeStr1 = explode('</span> <span class="num ball', $explodeStr[1]);
 
@@ -776,8 +780,8 @@ class Main extends CI_Controller{
 //            '</span> <span class="num ball'
 
 //
-            $result2 = $this->debug->debug_var($explodeStr1);
-            echo $result2;
+//            $result2 = $this->debug->debug_var($explodeStr1[][]);
+//            echo $result2;
 
 
         } else {

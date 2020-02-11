@@ -27,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="770" column="8" selection-start-line="770" selection-start-column="8" selection-end-line="770" selection-end-column="8" />
+            <state relative-caret-position="657">
+              <caret line="774" column="35" lean-forward="true" selection-start-line="774" selection-start-column="35" selection-end-line="774" selection-end-column="35" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -385,21 +385,7 @@
       <workItem from="1573625691917" duration="630000" />
       <workItem from="1578881534634" duration="1314000" />
       <workItem from="1579239915291" duration="175000" />
-      <workItem from="1581302569033" duration="28538000" />
-    </task>
-    <task id="LOCAL-00965" summary="lotto view 생성">
-      <created>1581325386591</created>
-      <option name="number" value="00965" />
-      <option name="presentableId" value="LOCAL-00965" />
-      <option name="project" value="LOCAL" />
-      <updated>1581325386591</updated>
-    </task>
-    <task id="LOCAL-00966" summary="lotto view 생성">
-      <created>1581325494542</created>
-      <option name="number" value="00966" />
-      <option name="presentableId" value="LOCAL-00966" />
-      <option name="project" value="LOCAL" />
-      <updated>1581325494542</updated>
+      <workItem from="1581302569033" duration="28810000" />
     </task>
     <task id="LOCAL-00967" summary="lotto view 생성">
       <created>1581327014946</created>
@@ -730,11 +716,25 @@
       <option name="project" value="LOCAL" />
       <updated>1581397890870</updated>
     </task>
-    <option name="localTasksCounter" value="1014" />
+    <task id="LOCAL-01014" summary="lotto view 생성">
+      <created>1581398092179</created>
+      <option name="number" value="01014" />
+      <option name="presentableId" value="LOCAL-01014" />
+      <option name="project" value="LOCAL" />
+      <updated>1581398092179</updated>
+    </task>
+    <task id="LOCAL-01015" summary="lotto view 생성">
+      <created>1581398217160</created>
+      <option name="number" value="01015" />
+      <option name="presentableId" value="LOCAL-01015" />
+      <option name="project" value="LOCAL" />
+      <updated>1581398217160</updated>
+    </task>
+    <option name="localTasksCounter" value="1016" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="432398000" />
+    <option name="totallyTimeSpent" value="432670000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1207,8 +1207,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="770" column="8" selection-start-line="770" selection-start-column="8" selection-end-line="770" selection-end-column="8" />
+        <state relative-caret-position="657">
+          <caret line="774" column="35" lean-forward="true" selection-start-line="774" selection-start-column="35" selection-end-line="774" selection-end-column="35" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
