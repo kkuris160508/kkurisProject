@@ -21,4 +21,7 @@
     for($i = 0; $i < 6; $i++){
         echo $lottoVal[$i]." ";
     }
+
+    echo "<br> 맞춘 갯수 : ".$lottoCnt;
+
 ?>

@@ -677,7 +677,6 @@ class Main extends CI_Controller{
         $difArr_1 = array();
         $difArr_2 = array();
         $newDifArr_2 = array();
-        $tmpA = array('5','12','25','26','38','45');
 
         $difArr_1 = $data['lottoVal'];
 //        $difArr_2 = $data['views'];
@@ -716,9 +715,11 @@ class Main extends CI_Controller{
 //        }
 
 
-        $difArr = array_intersect($newDifArr_2, $tmpA);
+        $difArr = array_intersect($newDifArr_2, $difArr_1);
         $result2 = $this->debug->debug_var($difArr);
         echo $result2;
+        $data['lottoCnt'] = sizeof($difArr);
+        $data['matchNum'] = $difArr;
 
         $this->load->view('lotto/lotto_header_v', $param);
         $this->load->view('lotto/lotto_contents_v', $data);

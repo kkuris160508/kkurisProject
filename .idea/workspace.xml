@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="lotto view 생성">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/lotto/lotto_contents_v.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/lotto/lotto_contents_v.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="701" column="51" lean-forward="true" selection-start-line="701" selection-start-column="51" selection-end-line="701" selection-end-column="51" />
+            <state relative-caret-position="484">
+              <caret line="720" column="23" selection-start-line="720" selection-start-column="15" selection-end-line="720" selection-end-column="23" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -37,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/lotto/lotto_contents_v.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="2" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+            <state relative-caret-position="408">
+              <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
@@ -101,7 +103,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>insert_todo</find>
       <find>endDateForm</find>
       <find>set_rules</find>
       <find>The image you are attempting to upload doesn't fit into the allowed dimensions.</find>
@@ -130,6 +131,7 @@
       <find>Lotto 번호 생성</find>
       <find>todo 애플리케이션 프로그램(Main 페이지)</find>
       <find>$list</find>
+      <find>lotto_contents_v</find>
       <find>$param</find>
     </findStrings>
     <replaceStrings>
@@ -206,10 +208,10 @@
         <option value="$PROJECT_DIR$/application/views/todo/header_v.php" />
         <option value="$PROJECT_DIR$/application/views/header_v.php" />
         <option value="$PROJECT_DIR$/application/views/view_file_v.php" />
-        <option value="$PROJECT_DIR$/application/views/lotto/lotto_contents_v.php" />
         <option value="$PROJECT_DIR$/application/views/todo/footer_v.php" />
         <option value="$PROJECT_DIR$/application/views/lotto/lotto_header_v.php" />
         <option value="$PROJECT_DIR$/application/controllers/Main.php" />
+        <option value="$PROJECT_DIR$/application/views/lotto/lotto_contents_v.php" />
       </list>
     </option>
   </component>
@@ -385,42 +387,7 @@
       <workItem from="1573625691917" duration="630000" />
       <workItem from="1578881534634" duration="1314000" />
       <workItem from="1579239915291" duration="175000" />
-      <workItem from="1581302569033" duration="21178000" />
-    </task>
-    <task id="LOCAL-00936" summary="댓글기능 재 수정">
-      <created>1569822867219</created>
-      <option name="number" value="00936" />
-      <option name="presentableId" value="LOCAL-00936" />
-      <option name="project" value="LOCAL" />
-      <updated>1569822867219</updated>
-    </task>
-    <task id="LOCAL-00937" summary="댓글기능 재 수정">
-      <created>1569823033028</created>
-      <option name="number" value="00937" />
-      <option name="presentableId" value="LOCAL-00937" />
-      <option name="project" value="LOCAL" />
-      <updated>1569823033028</updated>
-    </task>
-    <task id="LOCAL-00938" summary="댓글기능 재 수정">
-      <created>1569823091551</created>
-      <option name="number" value="00938" />
-      <option name="presentableId" value="LOCAL-00938" />
-      <option name="project" value="LOCAL" />
-      <updated>1569823091551</updated>
-    </task>
-    <task id="LOCAL-00939" summary="댓글기능 재 수정">
-      <created>1569823189829</created>
-      <option name="number" value="00939" />
-      <option name="presentableId" value="LOCAL-00939" />
-      <option name="project" value="LOCAL" />
-      <updated>1569823189829</updated>
-    </task>
-    <task id="LOCAL-00940" summary="댓글기능 재 수정">
-      <created>1569825203275</created>
-      <option name="number" value="00940" />
-      <option name="presentableId" value="LOCAL-00940" />
-      <option name="project" value="LOCAL" />
-      <updated>1569825203275</updated>
+      <workItem from="1581302569033" duration="21854000" />
     </task>
     <task id="LOCAL-00941" summary="댓글기능 재 수정">
       <created>1569825787091</created>
@@ -730,11 +697,46 @@
       <option name="project" value="LOCAL" />
       <updated>1581387173904</updated>
     </task>
-    <option name="localTasksCounter" value="985" />
+    <task id="LOCAL-00985" summary="lotto view 생성">
+      <created>1581387277987</created>
+      <option name="number" value="00985" />
+      <option name="presentableId" value="LOCAL-00985" />
+      <option name="project" value="LOCAL" />
+      <updated>1581387277987</updated>
+    </task>
+    <task id="LOCAL-00986" summary="lotto view 생성">
+      <created>1581387346989</created>
+      <option name="number" value="00986" />
+      <option name="presentableId" value="LOCAL-00986" />
+      <option name="project" value="LOCAL" />
+      <updated>1581387346989</updated>
+    </task>
+    <task id="LOCAL-00987" summary="lotto view 생성">
+      <created>1581387404569</created>
+      <option name="number" value="00987" />
+      <option name="presentableId" value="LOCAL-00987" />
+      <option name="project" value="LOCAL" />
+      <updated>1581387404569</updated>
+    </task>
+    <task id="LOCAL-00988" summary="lotto view 생성">
+      <created>1581387448496</created>
+      <option name="number" value="00988" />
+      <option name="presentableId" value="LOCAL-00988" />
+      <option name="project" value="LOCAL" />
+      <updated>1581387448496</updated>
+    </task>
+    <task id="LOCAL-00989" summary="lotto view 생성">
+      <created>1581387729192</created>
+      <option name="number" value="00989" />
+      <option name="presentableId" value="LOCAL-00989" />
+      <option name="project" value="LOCAL" />
+      <updated>1581387729192</updated>
+    </task>
+    <option name="localTasksCounter" value="990" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="425038000" />
+    <option name="totallyTimeSpent" value="425714000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1189,10 +1191,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="720" column="23" selection-start-line="720" selection-start-column="15" selection-end-line="720" selection-end-column="23" />
+          <folding>
+            <element signature="e#73#156#0#PHP" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/lotto/lotto_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="2" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+        <state relative-caret-position="408">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
           <folding>
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
@@ -1201,17 +1214,6 @@
             <element signature="n#style#0;n#td#3;n#tr#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#4;n#tr#0;n#table#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#5;n#tr#0;n#table#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="701" column="51" lean-forward="true" selection-start-line="701" selection-start-column="51" selection-end-line="701" selection-end-column="51" />
-          <folding>
-            <element signature="e#73#156#0#PHP" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
