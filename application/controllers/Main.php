@@ -721,9 +721,9 @@ class Main extends CI_Controller{
         $data['matchNum'] = $difArr;
 
 
-
-        $result2 = $this->debug->debug_var($data);
-        echo $result2;
+//
+//        $result2 = $this->debug->debug_var($data);
+//        echo $result2;
 
 
         $this->load->view('lotto/lotto_header_v', $param);
