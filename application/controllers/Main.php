@@ -765,15 +765,15 @@ class Main extends CI_Controller{
             $firstExplode = explode('num_box"> <span class="', $body);
             $secondExplode = explode('</span> <span class="bonus">', $firstExplode[1]);
 //            echo $firstExplode[1];
-            $explodeStr = explode('num ball6">',$secondExplode[0]);
+            $explodeStr = explode('num ball',$secondExplode[0]);
 
-            $explodeStr1 = explode('</span> <span class="num ball', $explodeStr[1]);
+//            $explodeStr1 = explode('</span> <span class="num ball', $explodeStr[1]);
 
 //            echo $explodeStr1[1];
 //            '</span> <span class="num ball'
 
 //
-            $result2 = $this->debug->debug_var($explodeStr1);
+            $result2 = $this->debug->debug_var($explodeStr);
             echo $result2;
 
 

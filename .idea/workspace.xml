@@ -27,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="691">
-              <caret line="776" column="26" lean-forward="true" selection-start-line="776" selection-start-column="26" selection-end-line="776" selection-end-column="26" />
+            <state relative-caret-position="589">
+              <caret line="770" column="8" selection-start-line="770" selection-start-column="8" selection-end-line="770" selection-end-column="8" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -385,28 +385,7 @@
       <workItem from="1573625691917" duration="630000" />
       <workItem from="1578881534634" duration="1314000" />
       <workItem from="1579239915291" duration="175000" />
-      <workItem from="1581302569033" duration="28287000" />
-    </task>
-    <task id="LOCAL-00962" summary="lotto view 생성">
-      <created>1581313847079</created>
-      <option name="number" value="00962" />
-      <option name="presentableId" value="LOCAL-00962" />
-      <option name="project" value="LOCAL" />
-      <updated>1581313847079</updated>
-    </task>
-    <task id="LOCAL-00963" summary="lotto view 생성">
-      <created>1581313996252</created>
-      <option name="number" value="00963" />
-      <option name="presentableId" value="LOCAL-00963" />
-      <option name="project" value="LOCAL" />
-      <updated>1581313996252</updated>
-    </task>
-    <task id="LOCAL-00964" summary="lotto view 생성">
-      <created>1581314036345</created>
-      <option name="number" value="00964" />
-      <option name="presentableId" value="LOCAL-00964" />
-      <option name="project" value="LOCAL" />
-      <updated>1581314036345</updated>
+      <workItem from="1581302569033" duration="28538000" />
     </task>
     <task id="LOCAL-00965" summary="lotto view 생성">
       <created>1581325386591</created>
@@ -730,11 +709,32 @@
       <option name="project" value="LOCAL" />
       <updated>1581397738135</updated>
     </task>
-    <option name="localTasksCounter" value="1011" />
+    <task id="LOCAL-01011" summary="lotto view 생성">
+      <created>1581397766760</created>
+      <option name="number" value="01011" />
+      <option name="presentableId" value="LOCAL-01011" />
+      <option name="project" value="LOCAL" />
+      <updated>1581397766760</updated>
+    </task>
+    <task id="LOCAL-01012" summary="lotto view 생성">
+      <created>1581397805631</created>
+      <option name="number" value="01012" />
+      <option name="presentableId" value="LOCAL-01012" />
+      <option name="project" value="LOCAL" />
+      <updated>1581397805631</updated>
+    </task>
+    <task id="LOCAL-01013" summary="lotto view 생성">
+      <created>1581397890870</created>
+      <option name="number" value="01013" />
+      <option name="presentableId" value="LOCAL-01013" />
+      <option name="project" value="LOCAL" />
+      <updated>1581397890870</updated>
+    </task>
+    <option name="localTasksCounter" value="1014" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="432147000" />
+    <option name="totallyTimeSpent" value="432398000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1207,8 +1207,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="776" column="26" lean-forward="true" selection-start-line="776" selection-start-column="26" selection-end-line="776" selection-end-column="26" />
+        <state relative-caret-position="589">
+          <caret line="770" column="8" selection-start-line="770" selection-start-column="8" selection-end-line="770" selection-end-column="8" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
