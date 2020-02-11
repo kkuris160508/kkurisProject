@@ -27,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="699" column="34" selection-start-line="699" selection-start-column="34" selection-end-line="699" selection-end-column="34" />
+            <state relative-caret-position="348">
+              <caret line="701" column="51" lean-forward="true" selection-start-line="701" selection-start-column="51" selection-end-line="701" selection-end-column="51" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -385,28 +385,7 @@
       <workItem from="1573625691917" duration="630000" />
       <workItem from="1578881534634" duration="1314000" />
       <workItem from="1579239915291" duration="175000" />
-      <workItem from="1581302569033" duration="20893000" />
-    </task>
-    <task id="LOCAL-00933" summary="이메일 컨트롤러 추가">
-      <created>1569817517841</created>
-      <option name="number" value="00933" />
-      <option name="presentableId" value="LOCAL-00933" />
-      <option name="project" value="LOCAL" />
-      <updated>1569817517841</updated>
-    </task>
-    <task id="LOCAL-00934" summary="댓글기능 재 수정">
-      <created>1569822270815</created>
-      <option name="number" value="00934" />
-      <option name="presentableId" value="LOCAL-00934" />
-      <option name="project" value="LOCAL" />
-      <updated>1569822270815</updated>
-    </task>
-    <task id="LOCAL-00935" summary="댓글기능 재 수정">
-      <created>1569822449780</created>
-      <option name="number" value="00935" />
-      <option name="presentableId" value="LOCAL-00935" />
-      <option name="project" value="LOCAL" />
-      <updated>1569822449780</updated>
+      <workItem from="1581302569033" duration="21178000" />
     </task>
     <task id="LOCAL-00936" summary="댓글기능 재 수정">
       <created>1569822867219</created>
@@ -730,11 +709,32 @@
       <option name="project" value="LOCAL" />
       <updated>1581386823483</updated>
     </task>
-    <option name="localTasksCounter" value="982" />
+    <task id="LOCAL-00982" summary="lotto view 생성">
+      <created>1581386993664</created>
+      <option name="number" value="00982" />
+      <option name="presentableId" value="LOCAL-00982" />
+      <option name="project" value="LOCAL" />
+      <updated>1581386993664</updated>
+    </task>
+    <task id="LOCAL-00983" summary="lotto view 생성">
+      <created>1581387126414</created>
+      <option name="number" value="00983" />
+      <option name="presentableId" value="LOCAL-00983" />
+      <option name="project" value="LOCAL" />
+      <updated>1581387126414</updated>
+    </task>
+    <task id="LOCAL-00984" summary="lotto view 생성">
+      <created>1581387173904</created>
+      <option name="number" value="00984" />
+      <option name="presentableId" value="LOCAL-00984" />
+      <option name="project" value="LOCAL" />
+      <updated>1581387173904</updated>
+    </task>
+    <option name="localTasksCounter" value="985" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="424753000" />
+    <option name="totallyTimeSpent" value="425038000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1207,8 +1207,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="699" column="34" selection-start-line="699" selection-start-column="34" selection-end-line="699" selection-end-column="34" />
+        <state relative-caret-position="348">
+          <caret line="701" column="51" lean-forward="true" selection-start-line="701" selection-start-column="51" selection-end-line="701" selection-end-column="51" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
