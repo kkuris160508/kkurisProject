@@ -763,6 +763,7 @@ class Main extends CI_Controller{
 
             $firstExplode = explode("num_box\"> <span class=\"", $body);
             $secondExplode = explode('</span> <span class="bonus">', $firstExplode[1]);
+            echo $firstExplode[1];
             echo $secondExplode[0];
 
 
