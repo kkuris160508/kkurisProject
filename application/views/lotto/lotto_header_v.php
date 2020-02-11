@@ -56,4 +56,4 @@
     </nav><!-- gnb end -->
     <article id="board_area">
         <header>
-            <h1>Lotto <?php echo $id;?></h1>
+<!--            <h1>Lotto --><?php //echo $id;?><!--</h1>-->
