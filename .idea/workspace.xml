@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="lotto view 생성">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="878">
-              <caret line="764" column="1" lean-forward="true" selection-start-line="764" selection-start-column="1" selection-end-line="764" selection-end-column="1" />
+            <state relative-caret-position="708">
+              <caret line="759" column="26" lean-forward="true" selection-start-line="759" selection-start-column="26" selection-end-line="759" selection-end-column="26" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -386,28 +385,7 @@
       <workItem from="1573625691917" duration="630000" />
       <workItem from="1578881534634" duration="1314000" />
       <workItem from="1579239915291" duration="175000" />
-      <workItem from="1581302569033" duration="25437000" />
-    </task>
-    <task id="LOCAL-00947" summary="lotto 중복기능 제거 수정중">
-      <created>1581303557891</created>
-      <option name="number" value="00947" />
-      <option name="presentableId" value="LOCAL-00947" />
-      <option name="project" value="LOCAL" />
-      <updated>1581303557891</updated>
-    </task>
-    <task id="LOCAL-00948" summary="lotto 중복기능 제거 수정중">
-      <created>1581303636810</created>
-      <option name="number" value="00948" />
-      <option name="presentableId" value="LOCAL-00948" />
-      <option name="project" value="LOCAL" />
-      <updated>1581303636810</updated>
-    </task>
-    <task id="LOCAL-00949" summary="lotto 중복기능 제거 수정중">
-      <created>1581307408342</created>
-      <option name="number" value="00949" />
-      <option name="presentableId" value="LOCAL-00949" />
-      <option name="project" value="LOCAL" />
-      <updated>1581307408342</updated>
+      <workItem from="1581302569033" duration="25730000" />
     </task>
     <task id="LOCAL-00950" summary="lotto 중복기능 제거 수정중">
       <created>1581308146171</created>
@@ -731,11 +709,32 @@
       <option name="project" value="LOCAL" />
       <updated>1581389781102</updated>
     </task>
-    <option name="localTasksCounter" value="996" />
+    <task id="LOCAL-00996" summary="lotto view 생성">
+      <created>1581394898265</created>
+      <option name="number" value="00996" />
+      <option name="presentableId" value="LOCAL-00996" />
+      <option name="project" value="LOCAL" />
+      <updated>1581394898265</updated>
+    </task>
+    <task id="LOCAL-00997" summary="lotto view 생성">
+      <created>1581394984356</created>
+      <option name="number" value="00997" />
+      <option name="presentableId" value="LOCAL-00997" />
+      <option name="project" value="LOCAL" />
+      <updated>1581394984356</updated>
+    </task>
+    <task id="LOCAL-00998" summary="lotto view 생성">
+      <created>1581395035717</created>
+      <option name="number" value="00998" />
+      <option name="presentableId" value="LOCAL-00998" />
+      <option name="project" value="LOCAL" />
+      <updated>1581395035717</updated>
+    </task>
+    <option name="localTasksCounter" value="999" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="429297000" />
+    <option name="totallyTimeSpent" value="429590000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1208,8 +1207,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="878">
-          <caret line="764" column="1" lean-forward="true" selection-start-line="764" selection-start-column="1" selection-end-line="764" selection-end-column="1" />
+        <state relative-caret-position="708">
+          <caret line="759" column="26" lean-forward="true" selection-start-line="759" selection-start-column="26" selection-end-line="759" selection-end-column="26" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />

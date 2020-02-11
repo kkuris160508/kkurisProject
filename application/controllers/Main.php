@@ -757,7 +757,9 @@ class Main extends CI_Controller{
             $content = curl_exec($ch);
 
 
-            echo $content;
+            $result2 = $this->debug->debug_var($content);
+            echo $result2;
+
 
             // 리소스 해제를 위해 세션 연결 닫음
             curl_close($ch);
