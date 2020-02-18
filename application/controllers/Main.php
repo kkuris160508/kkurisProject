@@ -759,6 +759,13 @@ class Main extends CI_Controller{
 //        $result = $this->debug->debug_var($data['idx']->idx);
 //        echo $result;
 
+        $num_1 = '';
+        $num_2 = '';
+        $num_3 = '';
+        $num_4 = '';
+        $num_5 = '';
+        $num_6 = '';
+
 
         if (function_exists('curl_init')) {
             // curl 리소스를 초기화
@@ -796,7 +803,7 @@ class Main extends CI_Controller{
             for($j = 1; $j < sizeof($explodeStr1); $j++){
 //                echo sizeof($explodeStr1[0]);
 //                echo sizeof($explodeStr1);
-                echo $explodeStr1[$j][0]."<br>";
+                ${'num_'.$j} = $explodeStr1[$j][0]."<br>";
             }
 
             $dateExplode = explode('호 <span>', $body);
@@ -812,7 +819,7 @@ class Main extends CI_Controller{
             $mydate = date('Y-m-d', $var);
 
 
-            $result2 = $this->debug->debug_var($explodeStr1);
+            $result2 = $this->debug->debug_var($num_2);
             echo $result2;
 
 //            if($regDT > $mydate){
