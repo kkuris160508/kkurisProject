@@ -794,6 +794,9 @@ class Main extends CI_Controller{
                 echo $explodeStr1[$j][0]."<br>";
             }
 
+            $result2 = $this->debug->debug_var($body);
+            echo $result2;
+
 
 //            $explodeStr1 = explode('</span> <span class="num ball', $explodeStr[1]);
 
