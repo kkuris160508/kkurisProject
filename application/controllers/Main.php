@@ -816,7 +816,8 @@ class Main extends CI_Controller{
 
 //            $dateExplode1[0] = '2020.02.08';
 
-            $string = preg_replace("/[ #\&\+\-%@=\/\\\:;,\.'\"\^`~\_|\!\?\*$#<>()\[\]\{\}]/i", "", $dateExplode1[0]);
+//            $string = preg_replace("/[ #\&\+\-%@=\/\\\:;,\.'\"\^`~\_|\!\?\*$#<>()\[\]\{\}]/i", "", $dateExplode1[0]);
+            $string = preg_replace("/\.\/i", "", $dateExplode1[0]);
 
             $var = strtotime($string);
 
