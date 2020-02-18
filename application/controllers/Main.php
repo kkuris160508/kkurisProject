@@ -821,7 +821,7 @@ class Main extends CI_Controller{
             $mydate = date('Y-m-d', $var);
 
 
-            $result2 = $this->debug->debug_var($idxExplode);
+            $result2 = $this->debug->debug_var($idxExplode[1]);
             echo $result2;
 
 //            if($regDT > $mydate){
