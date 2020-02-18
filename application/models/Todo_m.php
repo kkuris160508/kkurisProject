@@ -328,8 +328,11 @@ class Todo_m extends CI_Model{
         return $result;
     }
 
-    function setFixLottoNum(){
+    function setFixLottoNum($num1, $num2, $num3, $num4, $num5, $num6, $reg_dt){
+        $sql = "insert into lotto_fix_info_TB (num_1, num_2, num_3, num_4, num_5, num_6, reg_dt) 
+                values('{$num1}', '{$num2}', '{$num3}', '{$num4}', '{$num5}', '{$num6}', '{$reg_dt}')";
 
+        $query = $this->db->query($sql);
     }
 
 
