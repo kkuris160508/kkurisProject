@@ -825,7 +825,7 @@ class Main extends CI_Controller{
             if($regDT > $mydate){
                 echo 'DB';
             } else {
-                $this->todo_m->setFixLottoNum($num_1, $num_2, $num_3, $num_4, $num_5, $num_6, $regDT);
+                $this->todo_m->setFixLottoNum($num_1, $num_2, $num_3, $num_4, $num_5, $num_6, $mydate);
             }
 
 
