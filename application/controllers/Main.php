@@ -807,12 +807,12 @@ class Main extends CI_Controller{
 
             $string = preg_replace("/[ #\&\+\-%@=\/\\\:;,\.'\"\^`~\_|\!\?\*$#<>()\[\]\{\}]/i", "", $dateExplode1[0]);
 
-//            $var = strtotime($dateExplode1[0]);
-//
-//            $mydate = date('Y-m-d', $var);
+            $var = strtotime($string);
+
+            $mydate = date('Y-m-d', $var);
 
 
-            $result2 = $this->debug->debug_var($string);
+            $result2 = $this->debug->debug_var($mydate);
             echo $result2;
 
 
