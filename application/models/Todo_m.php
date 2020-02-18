@@ -307,7 +307,7 @@ class Todo_m extends CI_Model{
     }
 
     function getFixLottoIDX(){ // 가장 최근 회차 가지고 오기
-        $sql = "select last_insert_id(IDX) as idx from lotto_fix_info_TB order by IDX desc limit 1";
+        $sql = "select last_insert_id(IDX) as idx, num_1, num_2, num_3, num_4, num_5, num_6 from lotto_fix_info_TB order by IDX desc limit 1";
 
         $query = $this->db->query($sql);
 //        $result = $query -> result();
