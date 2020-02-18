@@ -826,12 +826,12 @@ class Main extends CI_Controller{
 //
 //            $result2 = $this->debug->debug_var($idxExplode1[1]);
 //            echo $result2;
-
-            if($regDT < $mydate){
-                $this->todo_m->setFixLottoNum($idx, $num_1, $num_2, $num_3, $num_4, $num_5, $num_6, $mydate);
-            } else {
-                $data['idx'] = $this->todo_m->getFixLottoIDX();
-            }
+//
+//            if($regDT < $mydate){
+//                $this->todo_m->setFixLottoNum($idx, $num_1, $num_2, $num_3, $num_4, $num_5, $num_6, $mydate);
+//            } else {
+//                $data['idx'] = $this->todo_m->getFixLottoIDX();
+//            }
 
 
 //            $explodeStr1 = explode('</span> <span class="num ball', $explodeStr[1]);
@@ -840,7 +840,7 @@ class Main extends CI_Controller{
 //            '</span> <span class="num ball'
 
 
-            $result2 = $this->debug->debug_var($data['idx']);
+            $result2 = $this->debug->debug_var($mydate);
             echo $result2;
 
 
