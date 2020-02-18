@@ -809,6 +809,8 @@ class Main extends CI_Controller{
             $dateExplode = explode('호 <span>', $body);
             $dateExplode1 = explode('</span', $dateExplode[1]);
 
+            $idxExplode = explode('회</em>', $body);
+
 
 //            $dateExplode1[0] = '2020.02.08';
 
@@ -819,7 +821,7 @@ class Main extends CI_Controller{
             $mydate = date('Y-m-d', $var);
 
 
-            $result2 = $this->debug->debug_var($body);
+            $result2 = $this->debug->debug_var($idxExplode);
             echo $result2;
 
 //            if($regDT > $mydate){
