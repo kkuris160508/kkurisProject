@@ -815,6 +815,12 @@ class Main extends CI_Controller{
             $result2 = $this->debug->debug_var($mydate);
             echo $result2;
 
+            if($regDT > $mydate){
+                echo 'DB';
+            } else {
+                echo 'curl';
+            }
+
 
 //            $explodeStr1 = explode('</span> <span class="num ball', $explodeStr[1]);
 
