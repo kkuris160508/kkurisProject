@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="lotto view 생성">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/Todo_m.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Todo_m.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="821" column="52" selection-start-line="821" selection-start-column="52" selection-end-line="821" selection-end-column="52" />
+            <state relative-caret-position="674">
+              <caret line="823" column="59" selection-start-line="823" selection-start-column="59" selection-end-line="823" selection-end-column="59" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -374,35 +372,7 @@
       <workItem from="1579239915291" duration="175000" />
       <workItem from="1581302569033" duration="43306000" />
       <workItem from="1582002143896" duration="3198000" />
-      <workItem from="1582006731781" duration="3612000" />
-    </task>
-    <task id="LOCAL-01008" summary="lotto view 생성">
-      <created>1581397402926</created>
-      <option name="number" value="01008" />
-      <option name="presentableId" value="LOCAL-01008" />
-      <option name="project" value="LOCAL" />
-      <updated>1581397402926</updated>
-    </task>
-    <task id="LOCAL-01009" summary="lotto view 생성">
-      <created>1581397507978</created>
-      <option name="number" value="01009" />
-      <option name="presentableId" value="LOCAL-01009" />
-      <option name="project" value="LOCAL" />
-      <updated>1581397507978</updated>
-    </task>
-    <task id="LOCAL-01010" summary="lotto view 생성">
-      <created>1581397738135</created>
-      <option name="number" value="01010" />
-      <option name="presentableId" value="LOCAL-01010" />
-      <option name="project" value="LOCAL" />
-      <updated>1581397738135</updated>
-    </task>
-    <task id="LOCAL-01011" summary="lotto view 생성">
-      <created>1581397766760</created>
-      <option name="number" value="01011" />
-      <option name="presentableId" value="LOCAL-01011" />
-      <option name="project" value="LOCAL" />
-      <updated>1581397766760</updated>
+      <workItem from="1582006731781" duration="3869000" />
     </task>
     <task id="LOCAL-01012" summary="lotto view 생성">
       <created>1581397805631</created>
@@ -719,11 +689,39 @@
       <option name="project" value="LOCAL" />
       <updated>1582010819501</updated>
     </task>
-    <option name="localTasksCounter" value="1057" />
+    <task id="LOCAL-01057" summary="lotto view 생성">
+      <created>1582011360000</created>
+      <option name="number" value="01057" />
+      <option name="presentableId" value="LOCAL-01057" />
+      <option name="project" value="LOCAL" />
+      <updated>1582011360000</updated>
+    </task>
+    <task id="LOCAL-01058" summary="lotto view 생성">
+      <created>1582011456515</created>
+      <option name="number" value="01058" />
+      <option name="presentableId" value="LOCAL-01058" />
+      <option name="project" value="LOCAL" />
+      <updated>1582011456515</updated>
+    </task>
+    <task id="LOCAL-01059" summary="lotto view 생성">
+      <created>1582011496647</created>
+      <option name="number" value="01059" />
+      <option name="presentableId" value="LOCAL-01059" />
+      <option name="project" value="LOCAL" />
+      <updated>1582011496647</updated>
+    </task>
+    <task id="LOCAL-01060" summary="lotto view 생성">
+      <created>1582011524208</created>
+      <option name="number" value="01060" />
+      <option name="presentableId" value="LOCAL-01060" />
+      <option name="project" value="LOCAL" />
+      <updated>1582011524208</updated>
+    </task>
+    <option name="localTasksCounter" value="1061" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="453976000" />
+    <option name="totallyTimeSpent" value="454233000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1181,8 +1179,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="821" column="52" selection-start-line="821" selection-start-column="52" selection-end-line="821" selection-end-column="52" />
+        <state relative-caret-position="674">
+          <caret line="823" column="59" selection-start-line="823" selection-start-column="59" selection-end-line="823" selection-end-column="59" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />

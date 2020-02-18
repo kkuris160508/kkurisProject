@@ -812,6 +812,8 @@ class Main extends CI_Controller{
             $idxExplode = explode('회</em>', $body);
             $idxExplode1 = explode('_lotto-btn-current"><em>', $idxExplode[0]);
 
+            $idx = $idxExplode1[1];
+
 //            $dateExplode1[0] = '2020.02.08';
 
             $string = preg_replace("/[ #\&\+\-%@=\/\\\:;,\.'\"\^`~\_|\!\?\*$#<>()\[\]\{\}]/i", "", $dateExplode1[0]);
@@ -820,15 +822,15 @@ class Main extends CI_Controller{
 
             $mydate = date('Y-m-d', $var);
 
+//
+//            $result2 = $this->debug->debug_var($idxExplode1[1]);
+//            echo $result2;
 
-            $result2 = $this->debug->debug_var($idxExplode1[1]);
-            echo $result2;
-
-//            if($regDT > $mydate){
-//                echo 'DB';
-//            } else {
-//                $this->todo_m->setFixLottoNum($idx, $num_1, $num_2, $num_3, $num_4, $num_5, $num_6, $mydate);
-//            }
+            if($regDT > $mydate){
+                echo 'DB';
+            } else {
+                $this->todo_m->setFixLottoNum($idx, $num_1, $num_2, $num_3, $num_4, $num_5, $num_6, $mydate);
+            }
 
 
 //            $explodeStr1 = explode('</span> <span class="num ball', $explodeStr[1]);
