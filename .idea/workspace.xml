@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="lotto view 생성">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -18,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5474">
-              <caret line="322" selection-start-line="322" selection-end-line="322" />
+            <state relative-caret-position="623">
+              <caret line="319" column="33" selection-start-line="319" selection-start-column="13" selection-end-line="319" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -27,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="743" lean-forward="true" selection-start-line="743" selection-end-line="743" />
+            <state relative-caret-position="674">
+              <caret line="813" column="54" selection-start-line="813" selection-start-column="54" selection-end-line="813" selection-end-column="54" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -212,7 +213,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -272,6 +272,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -372,20 +373,7 @@
       <workItem from="1579239915291" duration="175000" />
       <workItem from="1581302569033" duration="43306000" />
       <workItem from="1582002143896" duration="3198000" />
-    </task>
-    <task id="LOCAL-00998" summary="lotto view 생성">
-      <created>1581395035717</created>
-      <option name="number" value="00998" />
-      <option name="presentableId" value="LOCAL-00998" />
-      <option name="project" value="LOCAL" />
-      <updated>1581395035717</updated>
-    </task>
-    <task id="LOCAL-00999" summary="lotto view 생성">
-      <created>1581395207259</created>
-      <option name="number" value="00999" />
-      <option name="presentableId" value="LOCAL-00999" />
-      <option name="project" value="LOCAL" />
-      <updated>1581395207259</updated>
+      <workItem from="1582006731781" duration="611000" />
     </task>
     <task id="LOCAL-01000" summary="lotto view 생성">
       <created>1581395313669</created>
@@ -716,17 +704,31 @@
       <option name="project" value="LOCAL" />
       <updated>1582006498670</updated>
     </task>
-    <option name="localTasksCounter" value="1047" />
+    <task id="LOCAL-01047" summary="lotto view 생성">
+      <created>1582006755185</created>
+      <option name="number" value="01047" />
+      <option name="presentableId" value="LOCAL-01047" />
+      <option name="project" value="LOCAL" />
+      <updated>1582006755186</updated>
+    </task>
+    <task id="LOCAL-01048" summary="lotto view 생성">
+      <created>1582007060931</created>
+      <option name="number" value="01048" />
+      <option name="presentableId" value="LOCAL-01048" />
+      <option name="project" value="LOCAL" />
+      <updated>1582007060931</updated>
+    </task>
+    <option name="localTasksCounter" value="1049" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="450364000" />
+    <option name="totallyTimeSpent" value="450975000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18550107" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18763326" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="0" weight="0.32952183" />
@@ -1134,13 +1136,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5474">
-          <caret line="322" selection-start-line="322" selection-end-line="322" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/lotto/lotto_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -1176,10 +1171,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="319" column="33" selection-start-line="319" selection-start-column="13" selection-end-line="319" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="743" lean-forward="true" selection-start-line="743" selection-end-line="743" />
+        <state relative-caret-position="674">
+          <caret line="813" column="54" selection-start-line="813" selection-start-column="54" selection-end-line="813" selection-end-column="54" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />

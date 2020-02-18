@@ -739,10 +739,10 @@ class Main extends CI_Controller{
 
 //        $idx ='897';
 
-//        $data['idx'] = $this->todo_m->getFixLottoIDX(); //DB에 저장된 가장 최근의 IDX(회차)값 가져오기
+//        $data['idx'] = $this->todo_m->getFixLottoIDX();
 //        $idx = $data['idx']->idx;
 
-        $data['reg_dt'] = $this->todo_m->getLastInsertIDRegDT();
+        $data['reg_dt'] = $this->todo_m->getLastInsertIDRegDT(); //DB에 저장된 가장 최근의 reg_dt 가져오기
         $regDT = $data['reg_dt']->reg_dt;
 
         $result = $this->debug->debug_var($regDT);
@@ -805,8 +805,13 @@ class Main extends CI_Controller{
 
 //            $dateExplode1[0] = '2020.02.08';
 
+            ;
+            $var = strtotime($dateExplode1[0]);
 
-            $result2 = $this->debug->debug_var($dateExplode1[0]);
+            $mydate = date('Y-m-d', $var);
+
+
+            $result2 = $this->debug->debug_var($mydate);
             echo $result2;
 
 
