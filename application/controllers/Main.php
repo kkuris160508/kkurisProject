@@ -819,14 +819,14 @@ class Main extends CI_Controller{
             $mydate = date('Y-m-d', $var);
 
 
-//            $result2 = $this->debug->debug_var($num_2);
-//            echo $result2;
+            $result2 = $this->debug->debug_var($body);
+            echo $result2;
 
-            if($regDT > $mydate){
-                echo 'DB';
-            } else {
-                $this->todo_m->setFixLottoNum($num_1, $num_2, $num_3, $num_4, $num_5, $num_6, $mydate);
-            }
+//            if($regDT > $mydate){
+//                echo 'DB';
+//            } else {
+//                $this->todo_m->setFixLottoNum($idx, $num_1, $num_2, $num_3, $num_4, $num_5, $num_6, $mydate);
+//            }
 
 
 //            $explodeStr1 = explode('</span> <span class="num ball', $explodeStr[1]);
