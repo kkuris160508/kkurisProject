@@ -805,13 +805,14 @@ class Main extends CI_Controller{
 
 //            $dateExplode1[0] = '2020.02.08';
 
-            ;
-            $var = strtotime($dateExplode1[0]);
+            $string = preg_replace("/[ #\&\+\-%@=\/\\\:;,\.'\"\^`~\_|\!\?\*$#<>()\[\]\{\}]/i", "", $dateExplode1[0]);
 
-            $mydate = date('Y-m-d', $var);
+//            $var = strtotime($dateExplode1[0]);
+//
+//            $mydate = date('Y-m-d', $var);
 
 
-            $result2 = $this->debug->debug_var($mydate);
+            $result2 = $this->debug->debug_var($string);
             echo $result2;
 
 
