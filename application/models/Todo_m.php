@@ -317,6 +317,17 @@ class Todo_m extends CI_Model{
         return $result;
     }
 
+    function getLastInsertIDRegDT(){
+        $sql = "select date(last_insert_id(reg_dt)) as reg_dt from lotto_fix_info_TB order by IDX desc limit 1";
+
+        $query = $this->db->query($sql);
+//        $result = $query -> result();
+//        $result = $query -> num_rows();
+        $result = $query->row();
+
+        return $result;
+    }
+
     function setFixLottoNum(){
 
     }

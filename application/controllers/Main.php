@@ -742,6 +742,11 @@ class Main extends CI_Controller{
 //        $data['idx'] = $this->todo_m->getFixLottoIDX(); //DB에 저장된 가장 최근의 IDX(회차)값 가져오기
 //        $idx = $data['idx']->idx;
 
+        $data['reg_dt'] = $this->todo_m->getLastInsertIDRegDT();
+        $regDT = $data['reg_dt']->reg_dt;
+
+        $result = $this->debug->debug_var($regDT);
+        echo $result;
 //
 //        foreach($data['idx'] as $id){
 //            $qIDX = $id->idx ;
