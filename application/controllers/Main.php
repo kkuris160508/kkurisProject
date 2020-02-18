@@ -794,7 +794,12 @@ class Main extends CI_Controller{
                 echo $explodeStr1[$j][0]."<br>";
             }
 
-            $result2 = $this->debug->debug_var($body);
+            $dateExplode = explode('호 <span>', $body);
+
+
+
+
+            $result2 = $this->debug->debug_var($dateExplode[1]);
             echo $result2;
 
 
