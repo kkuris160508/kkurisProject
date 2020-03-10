@@ -539,7 +539,7 @@ class Main extends CI_Controller{
         $this->load->library('form_validation');
 
         $this->form_validation->set_rules('searchTxt','텍스트','required');
-        $this->form_validation->set_rules('searchTxtReset','텍스트','required');
+//        $this->form_validation->set_rules('searchTxtReset','텍스트','required');
 //        if($this->form_validation->run() == TRUE || $this->uri->segment(3,1) >= 1){
         if($this->form_validation->run() == TRUE){
 
@@ -597,7 +597,36 @@ class Main extends CI_Controller{
             alert('글이 존재하지 않습니다.', '/Main/lists');
         }
 
+    }
+//
+    function searchTextReset(){
+        $param = array(
+            'id'=>'보기'
+        );
 
+
+
+        $this->load->library('form_validation');
+
+        $tmp = $this->form_validation->set_rules('searchTxtReset','텍스트','required');
+
+        echo $tmp;
+//
+//        if($this->form_validation->run() == TRUE){
+//
+//            $txt = $this->input->post('searchTxt', TRUE);
+//            $cate = $this->input->post('selectCategory', TRUE);
+//
+//            $result['lists'] = $this->todo_m->getSearchItems('', $txt, $cate);
+//            $result['cnt'] = $this->todo_m->getSearchItems('count', $txt, $cate);
+//
+//            $this->load->view('header_v', $param);
+//            $this->load->view('todo/search_list_contents_v', $result);
+//            $this->load->view('todo/footer_v');
+//
+//        } else {
+//            alert('글이 존재하지 않습니다.', '/Main/lists');
+//        }
     }
 
     function dateTime(){
