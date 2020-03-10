@@ -620,9 +620,9 @@ class Main extends CI_Controller{
 //            $result['lists'] = $this->todo_m->getSearchItems('', $txt, $cate);
 //            $result['cnt'] = $this->todo_m->getSearchItems('count', $txt, $cate);
 //
-//            $this->load->view('header_v', $param);
-//            $this->load->view('todo/search_list_contents_v', $result);
-//            $this->load->view('todo/footer_v');
+            $this->load->view('header_v', $param);
+            $this->load->view('todo/search_list_contents_v');
+            $this->load->view('todo/footer_v');
 //
 //        } else {
 //            alert('글이 존재하지 않습니다.', '/Main/lists');
