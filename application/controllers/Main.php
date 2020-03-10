@@ -377,13 +377,19 @@ class Main extends CI_Controller{
             $accountNo = $this->uri->segment(4);
             $accountID = $this->uri->segment(5);
 
+
+            $result2 = $this->debug->debug_var($accountID); // 시발 debug 를 소문자로...ㅡㅡ
+//            echo $result2;
+
             $writer = $this -> session -> userdata('account_id');
 
             if($accountID == $writer){
                $this->todo_m->delete_todo($id, $accountNo);
                 alert('삭제 되었습니다.', '/Main/lists');
-            } else {
-                alert('삭제 할 권한이 없습니다.','/Main/lists');
+            }
+            else {
+//                alert('삭제 할 권한이 없습니다.','/Main/lists');
+                echo $result2;
             }
 
 
@@ -759,13 +765,6 @@ class Main extends CI_Controller{
 //        $result = $this->debug->debug_var($data['idx']->idx);
 //        echo $result;
 
-        $num_1 = '';
-        $num_2 = '';
-        $num_3 = '';
-        $num_4 = '';
-        $num_5 = '';
-        $num_6 = '';
-
 
         if (function_exists('curl_init')) {
             // curl 리소스를 초기화
@@ -823,15 +822,12 @@ class Main extends CI_Controller{
 
             $mydate = date('Y-m-d', $var);
 
-//
-//            $result2 = $this->debug->debug_var($idxExplode1[1]);
-//            echo $result2;
-//
-//            if($regDT < $mydate){
-//                $this->todo_m->setFixLottoNum($idx, $num_1, $num_2, $num_3, $num_4, $num_5, $num_6, $mydate);
-//            } else {
-//                $data['idx'] = $this->todo_m->getFixLottoIDX();
-//            }
+
+            if($regDT < $mydate){
+                $this->todo_m->setFixLottoNum($idx, $num_1, $num_2, $num_3, $num_4, $num_5, $num_6, $mydate);
+            } else {
+                $data['idx'] = $this->todo_m->getFixLottoIDX();
+            }
 
 
 //            $explodeStr1 = explode('</span> <span class="num ball', $explodeStr[1]);
@@ -839,9 +835,9 @@ class Main extends CI_Controller{
 //            echo $explodeStr1[1];
 //            '</span> <span class="num ball'
 
-
-            $result2 = $this->debug->debug_var($mydate);
-            echo $result2;
+//
+//            $result2 = $this->debug->debug_var($mydate);
+//            echo $result2;
 
 
         } else {
