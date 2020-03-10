@@ -156,7 +156,7 @@
             }
         });
 
-        $("#due_date").datepicker("setDate", new Date());
+        $("#due_date").datepicker("setDate", new Date(date.getFullYear(), date.getMonth(), date.getDate()));
     });
 
 </script>
