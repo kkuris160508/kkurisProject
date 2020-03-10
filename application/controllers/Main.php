@@ -158,7 +158,8 @@ class Main extends CI_Controller{
 
 
             $result2 = $this->debug->debug_var($data); // 시발 debug 를 소문자로...ㅡㅡ
-            echo $result2;
+            echo $result2->accountInfo;
+
 
             $this->increaseReadCnt($id);
 
