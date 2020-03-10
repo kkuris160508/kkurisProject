@@ -141,22 +141,26 @@
 
         var date = $(this).datepicker('getDate');
 
+        var startDate;
         $("#created_on").datepicker({
-            onSelect: function (selected) {
+            onSelect: function (selected1) {
                 $("input[name='created_on']").val();
-                $("#due_date").datepicker("option","minDate",selected);
+
+                startDate = $("input[name='created_on']").val();
+
+                $("#due_date").datepicker("option","minDate",selected1);
             }
         });
         $("#created_on").datepicker("setDate", new Date());
 
         $("#due_date").datepicker({
-            onSelect: function (selected) {
+            onSelect: function (selected2) {
                 $("input[name='due_date']").val();
-                $("#created_on").datepicker("option","maxDate",selected);
+                $("#created_on").datepicker("option","maxDate",selected2);
             }
         });
 
-        $("#due_date").datepicker("setDate", new Date(date.getFullYear(), date.getMonth(), date.getDate()));
+        $("#due_date").datepicker("setDate", startDate.getDate()+1);
     });
 
 </script>
