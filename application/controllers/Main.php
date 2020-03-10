@@ -380,8 +380,8 @@ class Main extends CI_Controller{
             $accountID = $this->uri->segment(5);
 
 
-            $result2 = $this->debug->debug_var($accountID); // 시발 debug 를 소문자로...ㅡㅡ
-//            echo $result2;
+            $this->debug->debug_var($accountID); // 시발 debug 를 소문자로...ㅡㅡ
+//
 
             $writer = $this -> session -> userdata('account_id');
 
@@ -392,7 +392,8 @@ class Main extends CI_Controller{
             }
             else {
 //                alert('삭제 할 권한이 없습니다.','/Main/lists');
-                echo $writer;
+//                echo $writer;
+                echo 1;
             }
 
 
