@@ -171,7 +171,9 @@ class Todo_m extends CI_Model{
     }
 
     function delete_todo($id, $no){
-        $sql = "DELETE FROM items WHERE id = '" . $id . "' AND writer = '" . $no . "'";
+//        $sql = "DELETE FROM items WHERE id = '" . $id . "' AND writer = '" . $no . "'";
+//        $sql = "DELETE FROM items WHERE id = '" . $id . "' AND writer = '" . $no . "'";
+        $sql = "UPDATE items SET view = 1 WHERE id = '{$id}' AND writer = '{$no}'";
         $this->db->query($sql);
 
 //        echo $query->num_rows();
