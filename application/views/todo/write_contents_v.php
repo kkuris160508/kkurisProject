@@ -139,6 +139,7 @@
             autoClose: true
         });
 
+        var date = $(this).datepicker('getDate');
 
         $("#created_on").datepicker({
             onSelect: function (selected) {
@@ -154,7 +155,8 @@
                 $("#created_on").datepicker("option","maxDate",selected);
             }
         });
-        $("#due_date").datepicker("setDate", new Date()+1);
+
+        $("#due_date").datepicker("setDate", new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay() + 1));
     });
 
 </script>
