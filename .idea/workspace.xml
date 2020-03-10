@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="간단테스트">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/Todo_m.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Todo_m.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,20 +15,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5559">
-              <caret line="327" column="23" selection-start-line="327" selection-start-column="23" selection-end-line="327" selection-end-column="23" />
+            <state relative-caret-position="424">
+              <caret line="181" column="21" lean-forward="true" selection-start-line="181" selection-start-column="21" selection-end-line="181" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="389" column="59" lean-forward="true" selection-start-line="389" selection-start-column="59" selection-end-line="389" selection-end-column="59" />
+            <state relative-caret-position="446">
+              <caret line="393" column="42" selection-start-line="393" selection-start-column="31" selection-end-line="393" selection-end-column="42" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -194,8 +193,8 @@
         <option value="$PROJECT_DIR$/application/views/todo/footer_v.php" />
         <option value="$PROJECT_DIR$/application/views/lotto/lotto_header_v.php" />
         <option value="$PROJECT_DIR$/application/views/lotto/lotto_contents_v.php" />
-        <option value="$PROJECT_DIR$/application/models/Todo_m.php" />
         <option value="$PROJECT_DIR$/application/controllers/Main.php" />
+        <option value="$PROJECT_DIR$/application/models/Todo_m.php" />
       </list>
     </option>
   </component>
@@ -375,35 +374,7 @@
       <workItem from="1582002143896" duration="3198000" />
       <workItem from="1582006731781" duration="9439000" />
       <workItem from="1582531465388" duration="630000" />
-      <workItem from="1583827832479" duration="884000" />
-    </task>
-    <task id="LOCAL-01022" summary="lotto view 생성">
-      <created>1581398665492</created>
-      <option name="number" value="01022" />
-      <option name="presentableId" value="LOCAL-01022" />
-      <option name="project" value="LOCAL" />
-      <updated>1581398665492</updated>
-    </task>
-    <task id="LOCAL-01023" summary="lotto view 생성">
-      <created>1581398690711</created>
-      <option name="number" value="01023" />
-      <option name="presentableId" value="LOCAL-01023" />
-      <option name="project" value="LOCAL" />
-      <updated>1581398690711</updated>
-    </task>
-    <task id="LOCAL-01024" summary="lotto view 생성">
-      <created>1581398723480</created>
-      <option name="number" value="01024" />
-      <option name="presentableId" value="LOCAL-01024" />
-      <option name="project" value="LOCAL" />
-      <updated>1581398723480</updated>
-    </task>
-    <task id="LOCAL-01025" summary="lotto view 생성">
-      <created>1581398759709</created>
-      <option name="number" value="01025" />
-      <option name="presentableId" value="LOCAL-01025" />
-      <option name="project" value="LOCAL" />
-      <updated>1581398759709</updated>
+      <workItem from="1583827832479" duration="1393000" />
     </task>
     <task id="LOCAL-01026" summary="lotto view 생성">
       <created>1581398797563</created>
@@ -720,11 +691,39 @@
       <option name="project" value="LOCAL" />
       <updated>1583828474612</updated>
     </task>
-    <option name="localTasksCounter" value="1071" />
+    <task id="LOCAL-01071" summary="간단테스트">
+      <created>1583828720537</created>
+      <option name="number" value="01071" />
+      <option name="presentableId" value="LOCAL-01071" />
+      <option name="project" value="LOCAL" />
+      <updated>1583828720537</updated>
+    </task>
+    <task id="LOCAL-01072" summary="간단테스트">
+      <created>1583828792460</created>
+      <option name="number" value="01072" />
+      <option name="presentableId" value="LOCAL-01072" />
+      <option name="project" value="LOCAL" />
+      <updated>1583828792460</updated>
+    </task>
+    <task id="LOCAL-01073" summary="간단테스트">
+      <created>1583828824411</created>
+      <option name="number" value="01073" />
+      <option name="presentableId" value="LOCAL-01073" />
+      <option name="project" value="LOCAL" />
+      <updated>1583828824411</updated>
+    </task>
+    <task id="LOCAL-01074" summary="간단테스트">
+      <created>1583828912143</created>
+      <option name="number" value="01074" />
+      <option name="presentableId" value="LOCAL-01074" />
+      <option name="project" value="LOCAL" />
+      <updated>1583828912143</updated>
+    </task>
+    <option name="localTasksCounter" value="1075" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="461317000" />
+    <option name="totallyTimeSpent" value="461826000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1138,13 +1137,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5559">
-          <caret line="327" column="23" selection-start-line="327" selection-start-column="23" selection-end-line="327" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/lotto/lotto_contents_v.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -1182,12 +1174,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="389" column="59" lean-forward="true" selection-start-line="389" selection-start-column="59" selection-end-line="389" selection-end-column="59" />
+        <state relative-caret-position="446">
+          <caret line="393" column="42" selection-start-line="393" selection-start-column="31" selection-end-line="393" selection-end-column="42" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="181" column="21" lean-forward="true" selection-start-line="181" selection-start-column="21" selection-end-line="181" selection-end-column="21" />
         </state>
       </provider>
     </entry>

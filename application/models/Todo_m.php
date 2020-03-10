@@ -27,6 +27,7 @@ class Todo_m extends CI_Model{
                 acc.*
                 FROM items AS it
                 LEFT JOIN accountTB AS acc ON it.writer = acc.no
+                WHERE view != 1
                 ORDER BY it.id DESC" . $limit_query;
 
         $query = $this->db->query($sql);
