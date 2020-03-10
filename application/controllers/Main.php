@@ -157,8 +157,9 @@ class Main extends CI_Controller{
             $data['permit'] = $this->todo_m->getAdminPermit($adminPermit);
 
 
-            $result2 = $this->debug->debug_var($data); // 시발 debug 를 소문자로...ㅡㅡ
-            echo $result2->accountInfo;
+
+//            $result2 = $this->debug->debug_var($data); // 시발 debug 를 소문자로...ㅡㅡ
+//            echo $result2->accountInfo;
 
 
             $this->increaseReadCnt($id);
@@ -384,13 +385,14 @@ class Main extends CI_Controller{
 
             $writer = $this -> session -> userdata('account_id');
 
+
             if($accountID == $writer){
                $this->todo_m->delete_todo($id, $accountNo);
                 alert('삭제 되었습니다.', '/Main/lists');
             }
             else {
 //                alert('삭제 할 권한이 없습니다.','/Main/lists');
-                echo $result2;
+                echo $writer;
             }
 
 
