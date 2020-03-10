@@ -154,6 +154,7 @@
                 $("#created_on").datepicker("option","maxDate",selected);
             }
         });
+        $("#due_date").datepicker("setDate", new Date()+1);
     });
 
 </script>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="간단테스트">
-      <change beforePath="$PROJECT_DIR$/application/models/Todo_m.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Todo_m.php" afterDir="false" />
+    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="model get_list query modified">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="181" column="21" lean-forward="true" selection-start-line="181" selection-start-column="21" selection-end-line="181" selection-end-column="21" />
+            <state relative-caret-position="492">
+              <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -27,8 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="393" column="42" selection-start-line="393" selection-start-column="31" selection-end-line="393" selection-end-column="42" />
+            <state relative-caret-position="288">
+              <caret line="103" column="51" selection-start-line="103" selection-start-column="43" selection-end-line="103" selection-end-column="51" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -86,7 +86,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pro</find>
       <find>insFileData</find>
       <find>insert_account_todo</find>
       <find>library</find>
@@ -116,6 +115,7 @@
       <find>getFixLottoIDX</find>
       <find>view</find>
       <find>delete</find>
+      <find>get_list</find>
     </findStrings>
     <replaceStrings>
       <replace>PW</replace>
@@ -202,10 +202,10 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="279" />
-    <option name="y" value="71" />
-    <option name="width" value="1836" />
-    <option name="height" value="1055" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -374,21 +374,7 @@
       <workItem from="1582002143896" duration="3198000" />
       <workItem from="1582006731781" duration="9439000" />
       <workItem from="1582531465388" duration="630000" />
-      <workItem from="1583827832479" duration="1393000" />
-    </task>
-    <task id="LOCAL-01026" summary="lotto view 생성">
-      <created>1581398797563</created>
-      <option name="number" value="01026" />
-      <option name="presentableId" value="LOCAL-01026" />
-      <option name="project" value="LOCAL" />
-      <updated>1581398797563</updated>
-    </task>
-    <task id="LOCAL-01027" summary="lotto view 생성">
-      <created>1581398831537</created>
-      <option name="number" value="01027" />
-      <option name="presentableId" value="LOCAL-01027" />
-      <option name="project" value="LOCAL" />
-      <updated>1581398831537</updated>
+      <workItem from="1583827832479" duration="1698000" />
     </task>
     <task id="LOCAL-01028" summary="lotto view 생성">
       <created>1581398854506</created>
@@ -719,14 +705,28 @@
       <option name="project" value="LOCAL" />
       <updated>1583828912143</updated>
     </task>
-    <option name="localTasksCounter" value="1075" />
+    <task id="LOCAL-01075" summary="model- delete_todo fn query modified">
+      <created>1583829275405</created>
+      <option name="number" value="01075" />
+      <option name="presentableId" value="LOCAL-01075" />
+      <option name="project" value="LOCAL" />
+      <updated>1583829275405</updated>
+    </task>
+    <task id="LOCAL-01076" summary="model get_list query modified">
+      <created>1583829460362</created>
+      <option name="number" value="01076" />
+      <option name="presentableId" value="LOCAL-01076" />
+      <option name="project" value="LOCAL" />
+      <updated>1583829460362</updated>
+    </task>
+    <option name="localTasksCounter" value="1077" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="461826000" />
+    <option name="totallyTimeSpent" value="462131000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18176973" />
@@ -806,9 +806,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="뷰 컨텐츠 뷰 이메일 노출 삭제" />
-    <MESSAGE value="코드이그나이터 버전 표시" />
-    <MESSAGE value="글 검색 기능 추가" />
     <MESSAGE value="글 검색 기능 추가 시작" />
     <MESSAGE value="페이징네이션 시작" />
     <MESSAGE value="글 검색 에서 페이징네이션 시작" />
@@ -831,7 +828,10 @@
     <MESSAGE value="lotto 중복기능 제거 수정중" />
     <MESSAGE value="lotto view 생성" />
     <MESSAGE value="간단테스트" />
-    <option name="LAST_COMMIT_MESSAGE" value="간단테스트" />
+    <MESSAGE value="delete todo model 쿼리 수정" />
+    <MESSAGE value="model- delete_todo fn query modified" />
+    <MESSAGE value="model get_list query modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="model get_list query modified" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/application/views/Join/join_view_JoinPage.php">
@@ -1174,8 +1174,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="393" column="42" selection-start-line="393" selection-start-column="31" selection-end-line="393" selection-end-column="42" />
+        <state relative-caret-position="288">
+          <caret line="103" column="51" selection-start-line="103" selection-start-column="43" selection-end-line="103" selection-end-column="51" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -1185,8 +1185,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="181" column="21" lean-forward="true" selection-start-line="181" selection-start-column="21" selection-end-line="181" selection-end-column="21" />
+        <state relative-caret-position="492">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
         </state>
       </provider>
     </entry>
