@@ -539,6 +539,7 @@ class Main extends CI_Controller{
         $this->load->library('form_validation');
 
         $this->form_validation->set_rules('searchTxt','텍스트','required');
+        $this->form_validation->set_rules('searchTxt','텍스트','required');
 //        if($this->form_validation->run() == TRUE || $this->uri->segment(3,1) >= 1){
         if($this->form_validation->run() == TRUE){
 

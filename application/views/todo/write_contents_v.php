@@ -160,7 +160,7 @@
             }
         });
 
-        $("#due_date").datepicker("setDate", new Date(date.getDay()+1));
+        $("#due_date").datepicker("setDate", new Date());
     });
 
 </script>
