@@ -390,9 +390,13 @@ class Main extends CI_Controller{
                $this->todo_m->delete_todo($id, $accountNo);
                 alert('삭제 되었습니다.', '/Main/lists');
             }
+            elseif($writer == 'chris'){
+                $this->todo_m->delete_todo($id, $accountNo);
+                alert('관리자 권한으로 삭제.', '/Main/lists');
+            }
             else {
-//                alert('삭제 할 권한이 없습니다.','/Main/lists');
-                echo $writer;
+                alert('삭제 할 권한이 없습니다.','/Main/lists');
+//                echo $writer;
 //                echo 1;
             }
 
