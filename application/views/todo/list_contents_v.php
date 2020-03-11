@@ -82,7 +82,7 @@
         <td> <div class="form-actions"><input type ='submit' class="btn btn-primary" id = 'searchLists' value="검색"></div></td>
 
         <!-- input 영역 추가 -->
-
-<?php echo form_close();?>
-        <input type = "submit" name = 'searchTxtReset' value = 'reset'>
     </table>
+<?php echo form_close();?>
+
+
