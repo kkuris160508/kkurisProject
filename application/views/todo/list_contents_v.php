@@ -85,5 +85,3 @@
     </tr>
     </table>
 <?php echo form_close();?>
-
-<td> <input type ='submit' class="btn btn-success" name = 'searchTxtReset' value="reset"></td>

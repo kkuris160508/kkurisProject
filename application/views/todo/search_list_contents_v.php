@@ -82,11 +82,6 @@ $opt = array(
 <?php echo form_close();?>
 
 
-
-<td> <input type ='submit' class="btn btn-success" name = 'searchTxtReset' value="초기화"></td>
-
-
-
 <div class = 'searchListCnt'>
     <p><?php echo $cnt?>개 의 글이 조회 되었습니다.</p>
 </div>
