@@ -600,7 +600,42 @@ class Main extends CI_Controller{
 
     }
 //
+    function searchTextReset(){
+        $param = array(
+            'id'=>'보기'
+        );
 
+
+        echo '1';
+//        $this->load->helper('form');
+//        echo form_reset('searchTxtReset', 'reset');
+
+//        echo form_submit('mysubmit', 'Submit Post!');
+        // Would produce:  <input type="submit" name="mysubmit" value="Submit Post!" />
+//        <td> <div class="form-actions"><input type ='submit' class="btn btn-success" name = 'searchTxtReset' value="초기화"></div></td>
+
+//        $this->load->library('form_validation');
+//
+//        $tmp = $this->form_validation->set_rules('searchTxtReset','텍스트','required');
+
+//        echo $tmp;
+//
+//        if($this->form_validation->run() == TRUE){
+//
+//            $txt = $this->input->post('searchTxt', TRUE);
+//            $cate = $this->input->post('selectCategory', TRUE);
+//
+//            $result['lists'] = $this->todo_m->getSearchItems('', $txt, $cate);
+//            $result['cnt'] = $this->todo_m->getSearchItems('count', $txt, $cate);
+//
+        $this->load->view('header_v', $param);
+        $this->load->view('todo/search_list_contents_v');
+        $this->load->view('todo/footer_v');
+//
+//        } else {
+//            alert('글이 존재하지 않습니다.', '/Main/lists');
+//        }
+    }
 
     function dateTime(){
         $gmt = local_to_gmt(time());
