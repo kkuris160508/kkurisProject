@@ -605,12 +605,18 @@ class Main extends CI_Controller{
         );
 
 
+        $this->load->helper('form');
+        echo form_reset('searchTxtReset', '초기화');
 
-        $this->load->library('form_validation');
+//        echo form_submit('mysubmit', 'Submit Post!');
+        // Would produce:  <input type="submit" name="mysubmit" value="Submit Post!" />
+//        <td> <div class="form-actions"><input type ='submit' class="btn btn-success" name = 'searchTxtReset' value="초기화"></div></td>
 
-        $tmp = $this->form_validation->set_rules('searchTxtReset','텍스트','required');
+//        $this->load->library('form_validation');
+//
+//        $tmp = $this->form_validation->set_rules('searchTxtReset','텍스트','required');
 
-        echo $tmp;
+//        echo $tmp;
 //
 //        if($this->form_validation->run() == TRUE){
 //

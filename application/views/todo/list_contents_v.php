@@ -86,6 +86,4 @@
     </table>
 <?php echo form_close();?>
 
-<?php echo form_open('/Main/searchTextReset')?>
-<td> <div class="form-actions"><input type ='submit' class="btn btn-success" id = 'searchTxtReset' value="초기화"></div></td>
-<?php echo form_close();?>
+<td> <input type ='submit' class="btn btn-success" name = 'searchTxtReset' value="초기화"></td>
