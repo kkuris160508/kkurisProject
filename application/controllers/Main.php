@@ -64,9 +64,6 @@ class Main extends CI_Controller{
         $this->load->helper('form');
         echo form_reset('searchTxtReset', 'reset');
 
-        echo form_submit('mysubmit', 'Submit Post!');
-
-
         if($tmpIP == '211.52.72.56' || $tmpIP == '106.245.165.216' || $tmpIP == '221.155.202.250'){
 
             if($tmpIP == '211.52.72.56'){

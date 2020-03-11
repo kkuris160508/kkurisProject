@@ -84,5 +84,5 @@
         <!-- input 영역 추가 -->
 
 <?php echo form_close();?>
-        <input type = "submit" name = 'mysubmit' value = 'reset'>
+        <input type = "submit" name = 'searchTxtReset' value = 'reset'>
     </table>
