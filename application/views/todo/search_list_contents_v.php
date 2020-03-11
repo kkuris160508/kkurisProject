@@ -83,7 +83,7 @@ $opt = array(
 
 
 <div style="width: 1700px; text-align: end">
-    <a href="/Main/searchTextReset/" class="btn btn-primary" id = 'searchTxtReset'>초기화</a>
+    <a href="/Main/searchTextReset/" class="btn btn-primary" name = 'searchTxtReset'>초기화</a>
 </div>
 <!--<td> <input type ='submit' class="btn btn-success" name = 'searchTxtReset' value="초기화"></td>-->
 
