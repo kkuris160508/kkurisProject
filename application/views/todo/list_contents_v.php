@@ -86,4 +86,4 @@
     </table>
 <?php echo form_close();?>
 
-<td> <input type ='submit' class="btn btn-success" name = 'searchTxtReset' value="초기화"></td>
+<td> <input type ='reset' class="btn btn-success" name = 'searchTxtReset' value="초기화"></td>
