@@ -26,7 +26,7 @@
 				</div>
 				<div class="form-group">
 					<div class="col-sm-2 col-sm-offset-3">
-						<button type="submit" class="btn btn-primary btn-sm">로그인</button>
+						<button type="submit" class="btn btn-primary btn-sm">로그인11111111111111</button>
 					</div>
 					<div class="col-sm-6 col-sm-offset-1">
 						<label for="autologin">
