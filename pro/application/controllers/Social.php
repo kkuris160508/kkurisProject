@@ -394,8 +394,9 @@ class Social extends CB_Controller
 			$birthday = (string) $xml->response->birthday;
 
 			if (empty($nickname)) {
-				$this->session->unset_userdata('naver_access_token');
-				alert_close('이름 정보를 확인할 수 없어 로그인할 수 없습니다');
+//				$this->session->unset_userdata('naver_access_token');
+//				alert_close('이름 정보를 확인할 수 없어 로그인할 수 없습니다');
+				$nickname = $name;
 			}
 
 			$socialdata = array(
