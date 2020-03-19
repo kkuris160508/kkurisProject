@@ -23,7 +23,7 @@ class Main extends CB_Controller
 	/**
 	 * 헬퍼를 로딩합니다
 	 */
-	protected $helpers = array('form', 'array');
+	protected $helpers = array('form', 'array', 'debug');
 
 	function __construct()
 	{
@@ -41,6 +41,8 @@ class Main extends CB_Controller
 	 */
 	public function index()
 	{
+        $this->output->enable_profiler(TRUE);
+
 		// 이벤트 라이브러리를 로딩합니다
 		$eventname = 'event_main_index';
 		$this->load->event($eventname);
