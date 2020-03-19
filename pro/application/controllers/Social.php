@@ -495,6 +495,7 @@ class Social extends CB_Controller
 		}
 
 		if ($this->session->userdata('kakao_access_token')) {
+//            $url = 'https://kapi.kakao.com/v1/user/me'; //카카오 로그인 시 이름정보를 확인 할 수 없... 얼럿 때문에 v2 로 변경
 			$url = 'https://kapi.kakao.com/v2/user/me';
 
 			$ch = curl_init();
