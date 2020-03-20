@@ -68,7 +68,7 @@ class Login extends CB_Controller
 				'label' => '아이디 또는 이메일',
 				'rules' => 'trim|required',
 			);
-			$view['view']['userid_label_text'] = '아이디 또는 이메일';
+			$view['view']['userid_label_text'] = '아이디 또는 <br> 이메일';
 		} elseif ($use_login_account === 'email') {
 			$config[] = array(
 				'field' => 'mem_userid',
