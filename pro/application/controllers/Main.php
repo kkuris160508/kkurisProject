@@ -41,8 +41,6 @@ class Main extends CB_Controller
 	 */
 	public function index()
 	{
-//        $this->output->enable_profiler(TRUE);
-
 		// 이벤트 라이브러리를 로딩합니다
 		$eventname = 'event_main_index';
 		$this->load->event($eventname);
@@ -99,6 +97,6 @@ class Main extends CB_Controller
 		$this->layout = element('layout_skin_file', element('layout', $view));
 		$this->view = element('view_skin_file', element('layout', $view));
 
-		debug($view);
+//		debug($view);
 	}
 }
