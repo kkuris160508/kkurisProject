@@ -41,7 +41,7 @@ class Main extends CB_Controller
 	 */
 	public function index()
 	{
-        $this->output->enable_profiler(TRUE);
+//        $this->output->enable_profiler(TRUE);
 
 		// 이벤트 라이브러리를 로딩합니다
 		$eventname = 'event_main_index';
