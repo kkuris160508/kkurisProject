@@ -273,6 +273,7 @@ var cookie_prefix = "<?php echo config_item('cookie_prefix'); ?>";
 				}
 			}
 			?>
+            <p align="right">Page has been rendered <?php echo $this->benchmark->elapsed_time();?> seconds</p>
 		</div>
 	</footer>
 	<!-- footer end -->
