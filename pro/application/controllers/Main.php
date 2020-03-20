@@ -99,6 +99,6 @@ class Main extends CB_Controller
 		$this->layout = element('layout_skin_file', element('layout', $view));
 		$this->view = element('view_skin_file', element('layout', $view));
 
-		debug($view);
+		debug($layoutconfig);
 	}
 }
