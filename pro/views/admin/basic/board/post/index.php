@@ -9,12 +9,8 @@
 			<?php
 			ob_start();
 			?>
-                <div class="box-info">
-                    <div class="btn-group pull-right" role="group" aria-label="...">
-                        <button type="button" class="btn btn-outline btn-success btn-sm" id="export_to_excel"><i class="fa fa-file-excel-o"></i> 엑셀 다운로드</button>
-                    </div>
-                </div>
 				<div class="btn-group pull-right" role="group" aria-label="...">
+                    <button type="button" class="btn btn-outline btn-success btn-sm" id="export_to_excel"><i class="fa fa-file-excel-o"></i> 엑셀 다운로드</button>
 					<a href="<?php echo element('listall_url', $view); ?>" class="btn btn-outline btn-default btn-sm">전체목록</a>
 					<button type="button" class="btn btn-outline btn-default btn-sm btn-list-trash btn-list-selected disabled" data-list-trash-url = "<?php echo element('list_trash_url', $view); ?>" >휴지통</button>
 					<button type="button" class="btn btn-outline btn-default btn-sm btn-list-delete btn-list-selected disabled" data-list-delete-url = "<?php echo element('list_delete_url', $view); ?>" >선택삭제</button>
