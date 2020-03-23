@@ -13,7 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $config['admin_page_menu']['sms'] =
 	array(
-		'__config'					=> array('SMS 설정', 'fa-phone'),
+        '__config'					=> array('SMS 설정', 'fa-phone'),
 		'menu'						=> array(
 			'smscfg'				=> array('SMS 환경설정', ''),
 			'memberupdate'			=> array('회원정보 업데이트', ''),

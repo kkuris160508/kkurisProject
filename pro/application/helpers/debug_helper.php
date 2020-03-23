@@ -20,7 +20,9 @@ function callStack() {
 }
 function isDevDebug()
 {
-    $dev_ip = array(
+    $dev_ip = array("211.52.72.51",
+        "211.52.72.36",
+        "211.52.72.59",             //류정현
         "211.52.72.56"
     );
 
