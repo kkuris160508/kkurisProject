@@ -293,53 +293,53 @@ class Post extends CB_Controller
         $result = $this->{$this->modelname}
             ->get_admin_list('', '', $where, '', $findex, $forder, $sfield, $skeyword);
 
-        if (element('list', $result)) {
-            foreach (element('list', $result) as $key => $val) {
+//        if (element('list', $result)) {
+//            foreach (element('list', $result) as $key => $val) {
+//
+//                $where = array(
+//                    'mem_id' => element('mem_id', $val),
+//                );
+//                $result['list'][$key]['member_group_member'] = $this->Member_group_member_model->get('', '', $where, '', 0, 'mgm_id', 'ASC');
+//                $mgroup = '';
+//                if ($result['list'][$key]['member_group_member']) {
+//                    foreach ($result['list'][$key]['member_group_member'] as $mk => $mv) {
+//                        if (element('mgr_id', $mv)) {
+//                            $mgroup[] = $this->Member_group_model->item(element('mgr_id', $mv));
+//                        }
+//                    }
+//                }
+//                $result['list'][$key]['member_group'] = '';
+//                if ($mgroup) {
+//                    foreach ($mgroup as $mk => $mv) {
+//                        if ($result['list'][$key]['member_group']) {
+//                            $result['list'][$key]['member_group'] .= ', ';
+//                        }
+//                        $result['list'][$key]['member_group'] .= element('mgr_title', $mv);
+//                    }
+//                }
+//                $result['list'][$key]['display_name'] = display_username(
+//                    element('mem_userid', $val),
+//                    element('mem_nickname', $val),
+//                    element('mem_icon', $val)
+//                );
+//                $result['list'][$key]['meta'] = $this->Member_meta_model->get_all_meta(element('mem_id', $val));
+//                $result['list'][$key]['social'] = $this->Social_meta_model->get_all_meta(element('mem_id', $val));
+//            }
+//        }
+//
+//        $view['view']['data'] = $result;
+//        $view['view']['all_group'] = $this->Member_group_model->get_all_group();
+//
+//        /**
+//         * primary key 정보를 저장합니다
+//         */
+//        $view['view']['primary_key'] = $this->{$this->modelname}->primary_key;
+//
+//
+////         이벤트가 존재하면 실행합니다
+//        $view['view']['event']['before_layout'] = Events::trigger('before_layout', $eventname);
 
-                $where = array(
-                    'mem_id' => element('mem_id', $val),
-                );
-                $result['list'][$key]['member_group_member'] = $this->Member_group_member_model->get('', '', $where, '', 0, 'mgm_id', 'ASC');
-                $mgroup = '';
-                if ($result['list'][$key]['member_group_member']) {
-                    foreach ($result['list'][$key]['member_group_member'] as $mk => $mv) {
-                        if (element('mgr_id', $mv)) {
-                            $mgroup[] = $this->Member_group_model->item(element('mgr_id', $mv));
-                        }
-                    }
-                }
-                $result['list'][$key]['member_group'] = '';
-                if ($mgroup) {
-                    foreach ($mgroup as $mk => $mv) {
-                        if ($result['list'][$key]['member_group']) {
-                            $result['list'][$key]['member_group'] .= ', ';
-                        }
-                        $result['list'][$key]['member_group'] .= element('mgr_title', $mv);
-                    }
-                }
-                $result['list'][$key]['display_name'] = display_username(
-                    element('mem_userid', $val),
-                    element('mem_nickname', $val),
-                    element('mem_icon', $val)
-                );
-                $result['list'][$key]['meta'] = $this->Member_meta_model->get_all_meta(element('mem_id', $val));
-                $result['list'][$key]['social'] = $this->Social_meta_model->get_all_meta(element('mem_id', $val));
-            }
-        }
-
-        $view['view']['data'] = $result;
-        $view['view']['all_group'] = $this->Member_group_model->get_all_group();
-
-        /**
-         * primary key 정보를 저장합니다
-         */
-        $view['view']['primary_key'] = $this->{$this->modelname}->primary_key;
-
-
-//         이벤트가 존재하면 실행합니다
-        $view['view']['event']['before_layout'] = Events::trigger('before_layout', $eventname);
-
-        debug($view);
+        debug($result);
 //        var_dump($view);
 //        header('Content-type: application/vnd.ms-excel');
 //        header('Content-Disposition: attachment; filename=게시물_' . cdate('Y_m_d') . '.xls');
