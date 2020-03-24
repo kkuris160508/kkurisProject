@@ -34,7 +34,7 @@ class Members extends CB_Controller
 	/**
 	 * 헬퍼를 로딩합니다
 	 */
-	protected $helpers = array('form', 'array', 'chkstring');
+	protected $helpers = array('form', 'array', 'chkstring', 'debug');
 
 	function __construct()
 	{
@@ -1221,9 +1221,10 @@ class Members extends CB_Controller
 		// 이벤트가 존재하면 실행합니다
 		$view['view']['event']['before_layout'] = Events::trigger('before_layout', $eventname);
 
-		header('Content-type: application/vnd.ms-excel');
-		header('Content-Disposition: attachment; filename=회원정보_' . cdate('Y_m_d') . '.xls');
-		echo $this->load->view('admin/' . ADMIN_SKIN . '/' . $this->pagedir . '/excel', $view, true);
+		debug($view);
+//		header('Content-type: application/vnd.ms-excel');
+//		header('Content-Disposition: attachment; filename=회원정보_' . cdate('Y_m_d') . '.xls');
+//		echo $this->load->view('admin/' . ADMIN_SKIN . '/' . $this->pagedir . '/excel', $view, true);
 	}
 
 	/**

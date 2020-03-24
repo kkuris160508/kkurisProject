@@ -345,6 +345,6 @@ class Post extends CB_Controller
 //        header('Content-Disposition: attachment; filename=게시물_' . cdate('Y_m_d') . '.xls');
 //        echo $this->load->view('admin/' . ADMIN_SKIN . '/' . $this->pagedir . '/excel', $view, true);
 
-//        echo $this->load->view('admin/basic/board/post/excel');
+//        echo $this->load->view('admin/basic/board/post/excel', $view);
     }
 }
