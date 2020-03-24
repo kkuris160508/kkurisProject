@@ -114,3 +114,20 @@
 		</div>
 	</form>
 </div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+
+
+$(document).on('click', '#export_to_excel', function(){
+exporturl = '<?php echo admin_url($this->pagedir . '/post/excel' . '?' . $this->input->server('QUERY_STRING', null, '')); ?>';
+if ($('#withoutzero:checked').length)
+{
+exporturl += '&withoutzero=1';
+}
+if ($('#orderdesc:checked').length)
+{
+exporturl += '&orderby=desc';
+}
+document.location.href = exporturl;
+});
