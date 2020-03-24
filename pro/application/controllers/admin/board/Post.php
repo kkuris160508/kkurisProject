@@ -278,18 +278,18 @@ class Post extends CB_Controller
         $this->{$this->modelname}->search_field_equal = array('post_id', 'mem_id'); // 검색중 like 가 아닌 = 검색을 하는 필드
         $this->{$this->modelname}->allow_order_field = array('post_id'); // 정렬이 가능한 필드
 
-        $where = array();
-        if ($this->input->get('mem_is_admin')) {
-            $where['mem_is_admin'] = 1;
-        }
-        if ($this->input->get('mem_denied')) {
-            $where['mem_denied'] = 1;
-        }
-        if ($mgr_id = (int) $this->input->get('mgr_id')) {
-            if ($mgr_id > 0) {
-                $where['mgr_id'] = $mgr_id;
-            }
-        }
+//        $where = array();
+//        if ($this->input->get('mem_is_admin')) {
+//            $where['mem_is_admin'] = 1;
+//        }
+//        if ($this->input->get('mem_denied')) {
+//            $where['mem_denied'] = 1;
+//        }
+//        if ($mgr_id = (int) $this->input->get('mgr_id')) {
+//            if ($mgr_id > 0) {
+//                $where['mgr_id'] = $mgr_id;
+//            }
+//        }
         $result = $this->{$this->modelname}->get_post_like_list('', '', $where, '', $findex, $forder, $sfield, $skeyword);
 
 //        if (element('list', $result)) {

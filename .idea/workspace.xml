@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="엑셀파일다운로드 기능 첫 커밋">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="이벤트 트리거 before">
+      <change beforePath="$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pro/application/controllers/admin/member/Members.php" beforeDir="false" afterPath="$PROJECT_DIR$/pro/application/controllers/admin/member/Members.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="106" column="17" lean-forward="true" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
+            <state relative-caret-position="677">
+              <caret line="292" column="59" selection-start-line="292" selection-start-column="45" selection-end-line="292" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -75,11 +76,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pro/application/controllers/admin/member/Members.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="1137" column="54" selection-start-line="1137" selection-start-column="22" selection-end-line="1137" selection-end-column="54" />
+            <state relative-caret-position="445">
+              <caret line="1155" column="11" lean-forward="true" selection-start-line="1155" selection-start-column="11" selection-end-line="1155" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pro/application/events/Event_admin_member_members_excel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="2" lean-forward="true" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -171,7 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/config/config.php" />
         <option value="$PROJECT_DIR$/application/helpers/MY_alert_helper.php" />
         <option value="$PROJECT_DIR$/system/helpers/alert_helper.php" />
         <option value="$PROJECT_DIR$/index.php" />
@@ -220,8 +229,9 @@
         <option value="$PROJECT_DIR$/pro/views/login/bootstrap/login.php" />
         <option value="$PROJECT_DIR$/pro/views/admin/basic/board/post/index.php" />
         <option value="$PROJECT_DIR$/pro/views/admin/basic/board/post/excel.php" />
-        <option value="$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php" />
+        <option value="$PROJECT_DIR$/pro/application/events/event_admin_member_members_excel.php" />
         <option value="$PROJECT_DIR$/pro/application/controllers/admin/member/Members.php" />
+        <option value="$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php" />
       </list>
     </option>
   </component>
@@ -250,17 +260,6 @@
             <path>
               <item name="kkurisProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="kkurisProject" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kkurisProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kkurisProject" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kkurisProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kkurisProject" type="462c0819:PsiDirectoryNode" />
               <item name="pro" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -274,24 +273,7 @@
               <item name="kkurisProject" type="462c0819:PsiDirectoryNode" />
               <item name="pro" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kkurisProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kkurisProject" type="462c0819:PsiDirectoryNode" />
-              <item name="pro" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kkurisProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kkurisProject" type="462c0819:PsiDirectoryNode" />
-              <item name="pro" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="board" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kkurisProject" type="b2602c69:ProjectViewProjectNode" />
@@ -443,14 +425,7 @@
       <workItem from="1583827832479" duration="17263000" />
       <workItem from="1584580080049" duration="4017000" />
       <workItem from="1584695630746" duration="12573000" />
-      <workItem from="1585007976597" duration="9341000" />
-    </task>
-    <task id="LOCAL-01101" summary="ci board 주소 변경">
-      <created>1584582816561</created>
-      <option name="number" value="01101" />
-      <option name="presentableId" value="LOCAL-01101" />
-      <option name="project" value="LOCAL" />
-      <updated>1584582816561</updated>
+      <workItem from="1585007976597" duration="11566000" />
     </task>
     <task id="LOCAL-01102" summary="ci board 주소 변경">
       <created>1584582967252</created>
@@ -788,11 +763,18 @@
       <option name="project" value="LOCAL" />
       <updated>1585018062554</updated>
     </task>
-    <option name="localTasksCounter" value="1150" />
+    <task id="LOCAL-01150" summary="이벤트 트리거 before">
+      <created>1585018862169</created>
+      <option name="number" value="01150" />
+      <option name="presentableId" value="LOCAL-01150" />
+      <option name="project" value="LOCAL" />
+      <updated>1585018862169</updated>
+    </task>
+    <option name="localTasksCounter" value="1151" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="503627000" />
+    <option name="totallyTimeSpent" value="505852000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -805,7 +787,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1881663" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -884,7 +865,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lotto 시작" />
     <MESSAGE value="파일 업로드" />
     <MESSAGE value="이메일 라이브러리 추가" />
     <MESSAGE value="이메일 컨트롤러 추가" />
@@ -909,16 +889,10 @@
     <MESSAGE value="페이지 렌더링 속도 추가" />
     <MESSAGE value="로그인 페이지 br" />
     <MESSAGE value="엑셀파일다운로드 기능 첫 커밋" />
-    <option name="LAST_COMMIT_MESSAGE" value="엑셀파일다운로드 기능 첫 커밋" />
+    <MESSAGE value="이벤트 트리거 before" />
+    <option name="LAST_COMMIT_MESSAGE" value="이벤트 트리거 before" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pro/views/main/bootstrap/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pro/views/login/basic/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -1223,13 +1197,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pro/application/controllers/Main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="67" column="87" selection-start-line="67" selection-start-column="87" selection-end-line="67" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pro/application/helpers/debug_helper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -1248,13 +1215,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="106" column="17" lean-forward="true" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pro/application/libraries/Events.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-351">
@@ -1262,10 +1222,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pro/application/events/Event_admin_member_members_excel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="2" lean-forward="true" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pro/application/controllers/admin/member/Members.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="1137" column="54" selection-start-line="1137" selection-start-column="22" selection-end-line="1137" selection-end-column="54" />
+        <state relative-caret-position="445">
+          <caret line="1155" column="11" lean-forward="true" selection-start-line="1155" selection-start-column="11" selection-end-line="1155" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pro/application/controllers/Main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="67" column="87" selection-start-line="67" selection-start-column="87" selection-end-line="67" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="677">
+          <caret line="292" column="59" selection-start-line="292" selection-start-column="45" selection-end-line="292" selection-end-column="59" />
         </state>
       </provider>
     </entry>
