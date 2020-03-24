@@ -290,8 +290,7 @@ class Post extends CB_Controller
                 $where['mgr_id'] = $mgr_id;
             }
         }
-        $result = $this->{$this->modelname}
-            ->get_admin_list('', '', $where, '', $findex, $forder, $sfield, $skeyword);
+        $result = $this->{$this->modelname}->get_post_like_list('', '', $where, '', $findex, $forder, $sfield, $skeyword);
 
 //        if (element('list', $result)) {
 //            foreach (element('list', $result) as $key => $val) {

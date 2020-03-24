@@ -1135,14 +1135,14 @@ class Members extends CB_Controller
 	{
 
 		// 이벤트 라이브러리를 로딩합니다
-		$eventname = 'event_admin_member_members_excel';
+		$eventname = 'event_admin_member_members_excel'; //application/events/Event_admin_member_members_excel.php
 		$this->load->event($eventname);
 
 		$view = array();
 		$view['view'] = array();
 
 		// 이벤트가 존재하면 실행합니다
-		$view['view']['event']['before'] = Events::trigger('before', $eventname);
+		$view['view']['event']['before'] = Events::trigger('before', $eventname); //이벤트 트리거 실행
 
 		/**
 		 * 페이지에 숫자가 아닌 문자가 입력되거나 1보다 작은 숫자가 입력되면 에러 페이지를 보여줍니다.
