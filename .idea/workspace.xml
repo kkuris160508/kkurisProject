@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="이벤트 트리거 before">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pro/views/admin/basic/board/post/excel.php" beforeDir="false" afterPath="$PROJECT_DIR$/pro/views/admin/basic/board/post/excel.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,8 +30,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="692">
-              <caret line="369" column="23" lean-forward="true" selection-start-line="369" selection-start-column="23" selection-end-line="369" selection-end-column="23" />
+            <state relative-caret-position="389">
+              <caret line="97" column="80" selection-start-line="97" selection-start-column="72" selection-end-line="97" selection-end-column="80" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pro/application/libraries/Board.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="516">
+              <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
             </state>
           </provider>
         </entry>
@@ -65,18 +73,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1184">
-              <caret line="781" column="49" selection-start-line="781" selection-start-column="33" selection-end-line="781" selection-end-column="49" />
-              <folding>
-                <element signature="e#73#156#0#PHP" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pro/application/controllers/admin/member/Members.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="445">
@@ -85,20 +81,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pro/views/admin/basic/board/post/excel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+            <state relative-caret-position="374">
+              <caret line="22" column="74" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pro/views/admin/basic/board/post/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="83" column="73" lean-forward="true" selection-start-line="83" selection-start-column="73" selection-end-line="83" selection-end-column="73" />
+            <state relative-caret-position="187">
+              <caret line="11" column="48" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="48" />
               <folding>
                 <element signature="e#113#120#1" expanded="true" />
               </folding>
@@ -110,13 +106,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>전체목록</find>
-      <find>brd_id</find>
-      <find>엑셀 다운로드</find>
-      <find>엑셀</find>
-      <find>$this-&gt;load-&gt;event</find>
-      <find>이벤트</find>
-      <find>$eventname</find>
       <find>se</find>
       <find>auto</find>
       <find>session</find>
@@ -140,6 +129,13 @@
       <find>Like_model</find>
       <find>get_post_like_list</find>
       <find>$page</find>
+      <find>function item_all</find>
+      <find>get_board</find>
+      <find>$board</find>
+      <find>item_all</find>
+      <find>header</find>
+      <find>&lt;div class=&quot;box-table-header&quot;&gt;</find>
+      <find>btn-group pull-right</find>
     </findStrings>
     <replaceStrings>
       <replace>PW</replace>
@@ -168,7 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/system/helpers/alert_helper.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/system/language/english/form_validation_lang.php" />
         <option value="$PROJECT_DIR$/application/views/todo/login_contents_v.php" />
@@ -219,6 +214,7 @@
         <option value="$PROJECT_DIR$/pro/application/models/Post_model.php" />
         <option value="$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php" />
         <option value="$PROJECT_DIR$/pro/views/admin/basic/board/post/excel.php" />
+        <option value="$PROJECT_DIR$/pro/application/libraries/Board.php" />
       </list>
     </option>
   </component>
@@ -419,21 +415,7 @@
       <workItem from="1583827832479" duration="17263000" />
       <workItem from="1584580080049" duration="4017000" />
       <workItem from="1584695630746" duration="12573000" />
-      <workItem from="1585007976597" duration="14022000" />
-    </task>
-    <task id="LOCAL-01107" summary="ci lite version delete">
-      <created>1584586727736</created>
-      <option name="number" value="01107" />
-      <option name="presentableId" value="LOCAL-01107" />
-      <option name="project" value="LOCAL" />
-      <updated>1584586727736</updated>
-    </task>
-    <task id="LOCAL-01108" summary="ci lite version delete">
-      <created>1584590100021</created>
-      <option name="number" value="01108" />
-      <option name="presentableId" value="LOCAL-01108" />
-      <option name="project" value="LOCAL" />
-      <updated>1584590100021</updated>
+      <workItem from="1585007976597" duration="15834000" />
     </task>
     <task id="LOCAL-01109" summary="ci_board 테스트 수정">
       <created>1584603722629</created>
@@ -764,11 +746,25 @@
       <option name="project" value="LOCAL" />
       <updated>1585026937502</updated>
     </task>
-    <option name="localTasksCounter" value="1156" />
+    <task id="LOCAL-01156" summary="이벤트 트리거 before">
+      <created>1585027646928</created>
+      <option name="number" value="01156" />
+      <option name="presentableId" value="LOCAL-01156" />
+      <option name="project" value="LOCAL" />
+      <updated>1585027646928</updated>
+    </task>
+    <task id="LOCAL-01157" summary="이벤트 트리거 before">
+      <created>1585029151421</created>
+      <option name="number" value="01157" />
+      <option name="presentableId" value="LOCAL-01157" />
+      <option name="project" value="LOCAL" />
+      <updated>1585029151421</updated>
+    </task>
+    <option name="localTasksCounter" value="1158" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="508308000" />
+    <option name="totallyTimeSpent" value="510120000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -783,7 +779,7 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1881663" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1881663" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="0" weight="0.32952183" />
@@ -888,19 +884,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="이벤트 트리거 before" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pro/views/register/bootstrap/register_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding>
-            <element signature="e#113#120#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro/views/_layout/cmall_bootstrap/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/pro/views/_layout/cmall_basic/sidebar.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1199,23 +1182,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pro/views/admin/basic/board/post/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="83" column="73" lean-forward="true" selection-start-line="83" selection-start-column="73" selection-end-line="83" selection-end-column="73" />
-          <folding>
-            <element signature="e#113#120#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="369" column="23" lean-forward="true" selection-start-line="369" selection-start-column="23" selection-end-line="369" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pro/application/events/Event_admin_member_members_excel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -1232,8 +1198,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pro/views/admin/basic/board/post/excel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+        <state relative-caret-position="374">
+          <caret line="22" column="74" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="97" column="80" selection-start-line="97" selection-start-column="72" selection-end-line="97" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pro/application/controllers/Board_write.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="865">
+          <caret line="70" column="23" lean-forward="true" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pro/application/libraries/Board.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pro/views/admin/basic/board/post/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="48" />
+          <folding>
+            <element signature="e#113#120#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
