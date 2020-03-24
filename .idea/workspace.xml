@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="이벤트 트리거 before">
+    <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="이전 CI 페이지 원복">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Main.php" afterDir="false" />
     </list>
@@ -28,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="153">
+              <caret line="89" column="51" lean-forward="true" selection-start-line="89" selection-start-column="51" selection-end-line="89" selection-end-column="51" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -41,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="663">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
@@ -115,7 +115,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>exporturl</find>
       <find>'#export_to_excel', function(){</find>
       <find>click</find>
       <find>allow_search_field</find>
@@ -145,6 +144,7 @@
       <find>thum</find>
       <find>$this-&gt;load-&gt;model</find>
       <find>todo_m</find>
+      <find>get_list</find>
     </findStrings>
     <replaceStrings>
       <replace>PW</replace>
@@ -381,14 +381,7 @@
       <workItem from="1583827832479" duration="17263000" />
       <workItem from="1584580080049" duration="4017000" />
       <workItem from="1584695630746" duration="12573000" />
-      <workItem from="1585007976597" duration="21111000" />
-    </task>
-    <task id="LOCAL-01111" summary="카카오로그인 URL v1 -&gt; v2 변경">
-      <created>1584608968938</created>
-      <option name="number" value="01111" />
-      <option name="presentableId" value="LOCAL-01111" />
-      <option name="project" value="LOCAL" />
-      <updated>1584608968938</updated>
+      <workItem from="1585007976597" duration="21358000" />
     </task>
     <task id="LOCAL-01112" summary="주석">
       <created>1584609072952</created>
@@ -726,11 +719,18 @@
       <option name="project" value="LOCAL" />
       <updated>1585033811953</updated>
     </task>
-    <option name="localTasksCounter" value="1160" />
+    <task id="LOCAL-01160" summary="이전 CI 페이지 원복">
+      <created>1585038749474</created>
+      <option name="number" value="01160" />
+      <option name="presentableId" value="LOCAL-01160" />
+      <option name="project" value="LOCAL" />
+      <updated>1585038749474</updated>
+    </task>
+    <option name="localTasksCounter" value="1161" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="515397000" />
+    <option name="totallyTimeSpent" value="515644000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -822,7 +822,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="파일 업로드" />
     <MESSAGE value="이메일 라이브러리 추가" />
     <MESSAGE value="이메일 컨트롤러 추가" />
     <MESSAGE value="댓글기능 재 수정" />
@@ -847,7 +846,8 @@
     <MESSAGE value="로그인 페이지 br" />
     <MESSAGE value="엑셀파일다운로드 기능 첫 커밋" />
     <MESSAGE value="이벤트 트리거 before" />
-    <option name="LAST_COMMIT_MESSAGE" value="이벤트 트리거 before" />
+    <MESSAGE value="이전 CI 페이지 원복" />
+    <option name="LAST_COMMIT_MESSAGE" value="이전 CI 페이지 원복" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/application/helpers/MY_array_helper.php">
@@ -1183,21 +1183,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="153">
+          <caret line="89" column="51" lean-forward="true" selection-start-line="89" selection-start-column="51" selection-end-line="89" selection-end-column="51" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Todo_m.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
