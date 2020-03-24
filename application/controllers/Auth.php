@@ -58,8 +58,16 @@ class Auth extends CI_Controller{
                 }
 
             } else {
-                $this->debug->debug_var($tmpRes); // debug 를 소문자로...ㅡㅡ
-                $this->debug->debug_var($auth_data); // debug 를 소문자로...ㅡㅡ
+                $hash = $tmpRes->PW;
+                if(password_verify($auth_data['PW'], $hash)){
+                    echo 'password is valild';
+                } else {
+                    $this->debug->debug_var($auth_data["PW"]);
+                    $this->debug->debug_var($hash);
+                }
+
+//                $this->debug->debug_var($tmpRes); // debug 를 소문자로...ㅡㅡ
+//                $this->debug->debug_var($auth_data); // debug 를 소문자로...ㅡㅡ
 
 //                alert('아이디나 비밀번호를 확인해 주세요.', '/Main/lists');
 //                exit;

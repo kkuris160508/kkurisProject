@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="이전 CI 페이지 원복">
-      <change afterPath="$PROJECT_DIR$/application/helpers/debug_helper.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Auth.php" afterDir="false" />
     </list>
@@ -20,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="612">
-              <caret line="74" column="80" lean-forward="true" selection-start-line="74" selection-start-column="80" selection-end-line="74" selection-end-column="80" />
+              <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="80" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
                 <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
@@ -42,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Auth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="72" lean-forward="true" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
+            <state relative-caret-position="833">
+              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
             </state>
           </provider>
         </entry>
@@ -110,7 +109,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Post_model</find>
       <find>member_group_member</find>
       <find>event_admin_member_members_excel</find>
       <find>Like_model</find>
@@ -140,6 +138,7 @@
       <find>function debug</find>
       <find>form helper</find>
       <find>debug</find>
+      <find>password_verify</find>
     </findStrings>
     <replaceStrings>
       <replace>PW</replace>
@@ -217,8 +216,8 @@
         <option value="$PROJECT_DIR$/pro/application/libraries/Board.php" />
         <option value="$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php" />
         <option value="$PROJECT_DIR$/application/controllers/Main.php" />
-        <option value="$PROJECT_DIR$/application/controllers/Auth.php" />
         <option value="$PROJECT_DIR$/application/helpers/debug_helper.php" />
+        <option value="$PROJECT_DIR$/application/controllers/Auth.php" />
       </list>
     </option>
   </component>
@@ -371,21 +370,7 @@
       <workItem from="1583827832479" duration="17263000" />
       <workItem from="1584580080049" duration="4017000" />
       <workItem from="1584695630746" duration="12573000" />
-      <workItem from="1585007976597" duration="22147000" />
-    </task>
-    <task id="LOCAL-01113" summary="디버그 헬퍼, 프로파일러 적용">
-      <created>1584611431260</created>
-      <option name="number" value="01113" />
-      <option name="presentableId" value="LOCAL-01113" />
-      <option name="project" value="LOCAL" />
-      <updated>1584611431260</updated>
-    </task>
-    <task id="LOCAL-01114" summary="디버그 헬퍼, 프로파일러 적용">
-      <created>1584611495258</created>
-      <option name="number" value="01114" />
-      <option name="presentableId" value="LOCAL-01114" />
-      <option name="project" value="LOCAL" />
-      <updated>1584611495258</updated>
+      <workItem from="1585007976597" duration="22833000" />
     </task>
     <task id="LOCAL-01115" summary="디버그 헬퍼, 프로파일러 적용">
       <created>1584669474469</created>
@@ -716,11 +701,25 @@
       <option name="project" value="LOCAL" />
       <updated>1585038992291</updated>
     </task>
-    <option name="localTasksCounter" value="1162" />
+    <task id="LOCAL-01162" summary="이전 CI 페이지 원복">
+      <created>1585039603257</created>
+      <option name="number" value="01162" />
+      <option name="presentableId" value="LOCAL-01162" />
+      <option name="project" value="LOCAL" />
+      <updated>1585039603257</updated>
+    </task>
+    <task id="LOCAL-01163" summary="이전 CI 페이지 원복">
+      <created>1585039933442</created>
+      <option name="number" value="01163" />
+      <option name="presentableId" value="LOCAL-01163" />
+      <option name="project" value="LOCAL" />
+      <updated>1585039933442</updated>
+    </task>
+    <option name="localTasksCounter" value="1164" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="516433000" />
+    <option name="totallyTimeSpent" value="517119000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1159,24 +1158,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/debug_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/helpers/MY_array_helper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="72" lean-forward="true" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
         </state>
       </provider>
     </entry>
@@ -1190,11 +1175,25 @@
     <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
-          <caret line="74" column="80" lean-forward="true" selection-start-line="74" selection-start-column="80" selection-end-line="74" selection-end-column="80" />
+          <caret line="74" column="25" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="80" />
           <folding>
             <element signature="e#73#156#0#PHP" />
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/helpers/debug_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
         </state>
       </provider>
     </entry>
