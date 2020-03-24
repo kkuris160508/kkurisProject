@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="엑셀파일다운로드 기능 첫 커밋">
-      <change beforePath="$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1833">
-              <caret line="344" column="103" lean-forward="true" selection-start-line="344" selection-start-column="103" selection-end-line="344" selection-end-column="103" />
+            <state relative-caret-position="476">
+              <caret line="106" column="17" lean-forward="true" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -58,15 +58,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/Auth.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2125">
-              <caret line="125" column="47" lean-forward="true" selection-start-line="125" selection-start-column="47" selection-end-line="125" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Join.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="402">
@@ -84,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pro/application/controllers/admin/member/Members.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1141" column="11" lean-forward="true" selection-start-line="1141" selection-start-column="11" selection-end-line="1141" selection-end-column="11" />
+            <state relative-caret-position="241">
+              <caret line="1137" column="54" selection-start-line="1137" selection-start-column="22" selection-end-line="1137" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -122,9 +113,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;li class=&quot;dropdown&quot;&gt;</find>
-      <find>userid_label_text</find>
-      <find>연동되었습니다</find>
       <find>출석</find>
       <find>사이드바</find>
       <find>post</find>
@@ -133,7 +121,6 @@
       <find>brd_id</find>
       <find>엑셀 다운로드</find>
       <find>엑셀</find>
-      <find>event_admin_member_members_excel</find>
       <find>$this-&gt;load-&gt;event</find>
       <find>이벤트</find>
       <find>$eventname</find>
@@ -152,6 +139,10 @@
       <find>click</find>
       <find>allow_search_field</find>
       <find>$findex</find>
+      <find>Post_model</find>
+      <find>member_group_member</find>
+      <find>debug</find>
+      <find>event_admin_member_members_excel</find>
     </findStrings>
     <replaceStrings>
       <replace>PW</replace>
@@ -180,7 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/views/login_v.php" />
         <option value="$PROJECT_DIR$/application/config/config.php" />
         <option value="$PROJECT_DIR$/application/helpers/MY_alert_helper.php" />
         <option value="$PROJECT_DIR$/system/helpers/alert_helper.php" />
@@ -231,6 +221,7 @@
         <option value="$PROJECT_DIR$/pro/views/admin/basic/board/post/index.php" />
         <option value="$PROJECT_DIR$/pro/views/admin/basic/board/post/excel.php" />
         <option value="$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php" />
+        <option value="$PROJECT_DIR$/pro/application/controllers/admin/member/Members.php" />
       </list>
     </option>
   </component>
@@ -452,49 +443,7 @@
       <workItem from="1583827832479" duration="17263000" />
       <workItem from="1584580080049" duration="4017000" />
       <workItem from="1584695630746" duration="12573000" />
-      <workItem from="1585007976597" duration="7971000" />
-    </task>
-    <task id="LOCAL-01095" summary="글 검색 시 초기화 버튼 눌렀을 때 검색어 삭제">
-      <created>1583892577184</created>
-      <option name="number" value="01095" />
-      <option name="presentableId" value="LOCAL-01095" />
-      <option name="project" value="LOCAL" />
-      <updated>1583892577184</updated>
-    </task>
-    <task id="LOCAL-01096" summary="글 검색 시 초기화 버튼 눌렀을 때 검색어 삭제">
-      <created>1583892700002</created>
-      <option name="number" value="01096" />
-      <option name="presentableId" value="LOCAL-01096" />
-      <option name="project" value="LOCAL" />
-      <updated>1583892700002</updated>
-    </task>
-    <task id="LOCAL-01097" summary="글 검색 시 초기화 버튼 눌렀을 때 검색어 삭제">
-      <created>1583893340635</created>
-      <option name="number" value="01097" />
-      <option name="presentableId" value="LOCAL-01097" />
-      <option name="project" value="LOCAL" />
-      <updated>1583893340635</updated>
-    </task>
-    <task id="LOCAL-01098" summary="글 검색 시 초기화 버튼 눌렀을 때 검색어 삭제">
-      <created>1583893454898</created>
-      <option name="number" value="01098" />
-      <option name="presentableId" value="LOCAL-01098" />
-      <option name="project" value="LOCAL" />
-      <updated>1583893454898</updated>
-    </task>
-    <task id="LOCAL-01099" summary="글 검색 시 초기화 버튼 눌렀을 때 검색어 삭제">
-      <created>1583893579669</created>
-      <option name="number" value="01099" />
-      <option name="presentableId" value="LOCAL-01099" />
-      <option name="project" value="LOCAL" />
-      <updated>1583893579669</updated>
-    </task>
-    <task id="LOCAL-01100" summary="CI board 적용">
-      <created>1584582213336</created>
-      <option name="number" value="01100" />
-      <option name="presentableId" value="LOCAL-01100" />
-      <option name="project" value="LOCAL" />
-      <updated>1584582213336</updated>
+      <workItem from="1585007976597" duration="9341000" />
     </task>
     <task id="LOCAL-01101" summary="ci board 주소 변경">
       <created>1584582816561</created>
@@ -797,11 +746,53 @@
       <option name="project" value="LOCAL" />
       <updated>1585017049289</updated>
     </task>
-    <option name="localTasksCounter" value="1144" />
+    <task id="LOCAL-01144" summary="엑셀파일다운로드 기능 첫 커밋">
+      <created>1585017334873</created>
+      <option name="number" value="01144" />
+      <option name="presentableId" value="LOCAL-01144" />
+      <option name="project" value="LOCAL" />
+      <updated>1585017334873</updated>
+    </task>
+    <task id="LOCAL-01145" summary="엑셀파일다운로드 기능 첫 커밋">
+      <created>1585017376541</created>
+      <option name="number" value="01145" />
+      <option name="presentableId" value="LOCAL-01145" />
+      <option name="project" value="LOCAL" />
+      <updated>1585017376541</updated>
+    </task>
+    <task id="LOCAL-01146" summary="엑셀파일다운로드 기능 첫 커밋">
+      <created>1585017423072</created>
+      <option name="number" value="01146" />
+      <option name="presentableId" value="LOCAL-01146" />
+      <option name="project" value="LOCAL" />
+      <updated>1585017423072</updated>
+    </task>
+    <task id="LOCAL-01147" summary="엑셀파일다운로드 기능 첫 커밋">
+      <created>1585017460989</created>
+      <option name="number" value="01147" />
+      <option name="presentableId" value="LOCAL-01147" />
+      <option name="project" value="LOCAL" />
+      <updated>1585017460989</updated>
+    </task>
+    <task id="LOCAL-01148" summary="엑셀파일다운로드 기능 첫 커밋">
+      <created>1585017537509</created>
+      <option name="number" value="01148" />
+      <option name="presentableId" value="LOCAL-01148" />
+      <option name="project" value="LOCAL" />
+      <updated>1585017537509</updated>
+    </task>
+    <task id="LOCAL-01149" summary="엑셀파일다운로드 기능 첫 커밋">
+      <created>1585018062554</created>
+      <option name="number" value="01149" />
+      <option name="presentableId" value="LOCAL-01149" />
+      <option name="project" value="LOCAL" />
+      <updated>1585018062554</updated>
+    </task>
+    <option name="localTasksCounter" value="1150" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="502257000" />
+    <option name="totallyTimeSpent" value="503627000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -921,9 +912,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="엑셀파일다운로드 기능 첫 커밋" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pro/views/main/basic/main.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/pro/views/main/bootstrap/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1242,13 +1230,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pro/application/controllers/admin/member/Members.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1141" column="11" lean-forward="true" selection-start-line="1141" selection-start-column="11" selection-end-line="1141" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pro/application/helpers/debug_helper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -1269,8 +1250,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1833">
-          <caret line="344" column="103" lean-forward="true" selection-start-line="344" selection-start-column="103" selection-end-line="344" selection-end-column="103" />
+        <state relative-caret-position="476">
+          <caret line="106" column="17" lean-forward="true" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pro/application/libraries/Events.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-351">
+          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pro/application/controllers/admin/member/Members.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="1137" column="54" selection-start-line="1137" selection-start-column="22" selection-end-line="1137" selection-end-column="54" />
         </state>
       </provider>
     </entry>
