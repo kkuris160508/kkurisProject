@@ -262,21 +262,28 @@ class Post extends CB_Controller
          * 페이지에 숫자가 아닌 문자가 입력되거나 1보다 작은 숫자가 입력되면 에러 페이지를 보여줍니다.
          */
         $param =& $this->querystring;
-//        $findex = $this->input->get('findex', null, 'member.mem_id');
+        $page = (((int) $this->input->get('page')) > 0) ? ((int) $this->input->get('page')) : 1;
         $findex = 'post_id';
-//        $forder = $this->input->get('forder', null, 'desc');
-//        $sfield = $this->input->get('sfield', null, '');
-//        $skeyword = $this->input->get('skeyword', null, '');
         $forder = 'desc';
         $sfield = $this->input->get('sfield', null, '');
         $skeyword = $this->input->get('skeyword', null, '');
 
+//        $param =& $this->querystring;
+////        $findex = $this->input->get('findex', null, 'member.mem_id');
+//        $findex = 'post_id';
+////        $forder = $this->input->get('forder', null, 'desc');
+////        $sfield = $this->input->get('sfield', null, '');
+////        $skeyword = $this->input->get('skeyword', null, '');
+//        $forder = 'desc';
+//        $sfield = $this->input->get('sfield', null, '');
+//        $skeyword = $this->input->get('skeyword', null, '');
+
         /**
          * 게시판 목록에 필요한 정보를 가져옵니다.
          */
-        $this->{$this->modelname}->allow_search_field = array('post_id', 'post_title', 'post_content', 'mem_id', 'post_username', 'post_nickname', 'post_email', 'post_homepage', 'post_datetime', 'post_ip', 'post_device'); // 검색이 가능한 필드
-        $this->{$this->modelname}->search_field_equal = array('post_id', 'mem_id'); // 검색중 like 가 아닌 = 검색을 하는 필드
-        $this->{$this->modelname}->allow_order_field = array('post_id'); // 정렬이 가능한 필드
+//        $this->{$this->modelname}->allow_search_field = array('post_id', 'post_title', 'post_content', 'mem_id', 'post_username', 'post_nickname', 'post_email', 'post_homepage', 'post_datetime', 'post_ip', 'post_device'); // 검색이 가능한 필드
+//        $this->{$this->modelname}->search_field_equal = array('post_id', 'mem_id'); // 검색중 like 가 아닌 = 검색을 하는 필드
+//        $this->{$this->modelname}->allow_order_field = array('post_id'); // 정렬이 가능한 필드
 
 //        $where = array();
 //        if ($this->input->get('mem_is_admin')) {
@@ -290,7 +297,25 @@ class Post extends CB_Controller
 //                $where['mgr_id'] = $mgr_id;
 //            }
 //        }
-        $result = $this->{$this->modelname}->get_post_like_list('', '', '', '', $findex, $forder, $sfield, $skeyword);
+
+        $per_page = admin_listnum();
+        $offset = ($page - 1) * $per_page;
+
+        /**
+         * 게시판 목록에 필요한 정보를 가져옵니다.
+         */
+        $this->{$this->modelname}->allow_search_field = array('post_id', 'post_title', 'post_content', 'mem_id', 'post_username', 'post_nickname', 'post_email', 'post_homepage', 'post_datetime', 'post_ip', 'post_device'); // 검색이 가능한 필드
+        $this->{$this->modelname}->search_field_equal = array('post_id', 'mem_id'); // 검색중 like 가 아닌 = 검색을 하는 필드
+        $this->{$this->modelname}->allow_order_field = array('post_id'); // 정렬이 가능한 필드
+        $where = array(
+            'post_del <>' => 2,
+        );
+        if ($brdid = (int) $this->input->get('brd_id')) {
+            $where['brd_id'] = $brdid;
+        }
+
+
+        $result = $this->{$this->modelname}->get_admin_list($per_page, $offset, $where, '', $findex, $forder, $sfield, $skeyword);
 
 //        if (element('list', $result)) {
 //            foreach (element('list', $result) as $key => $val) {

@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="이벤트 트리거 before">
-      <change beforePath="$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pro/application/controllers/admin/member/Members.php" beforeDir="false" afterPath="$PROJECT_DIR$/pro/application/controllers/admin/member/Members.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,11 +27,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="677">
-              <caret line="292" column="59" selection-start-line="292" selection-start-column="45" selection-end-line="292" selection-end-column="59" />
+            <state relative-caret-position="-3">
+              <caret line="263" column="37" lean-forward="true" selection-start-line="263" selection-start-column="37" selection-end-line="263" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pro/application/models/Post_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="742">
+              <caret line="575" selection-start-line="575" selection-end-line="575" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pro/application/models/Like_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="39" column="4" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="47" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -54,24 +71,6 @@
               <folding>
                 <element signature="e#73#156#0#PHP" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/Join.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="34" column="55" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pro/application/controllers/Login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
@@ -107,11 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pro/views/admin/basic/board/post/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="145" column="1" lean-forward="true" selection-start-line="145" selection-start-column="1" selection-end-line="145" selection-end-column="1" />
+            <state relative-caret-position="-51">
+              <caret line="42" column="39" lean-forward="true" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
               <folding>
                 <element signature="e#113#120#1" expanded="true" />
               </folding>
@@ -123,9 +122,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>출석</find>
-      <find>사이드바</find>
-      <find>post</find>
       <find>전체</find>
       <find>전체목록</find>
       <find>brd_id</find>
@@ -153,6 +149,9 @@
       <find>member_group_member</find>
       <find>debug</find>
       <find>event_admin_member_members_excel</find>
+      <find>get_admin_list</find>
+      <find>Like_model</find>
+      <find>get_post_like_list</find>
     </findStrings>
     <replaceStrings>
       <replace>PW</replace>
@@ -181,7 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/helpers/MY_alert_helper.php" />
         <option value="$PROJECT_DIR$/system/helpers/alert_helper.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/system/language/english/form_validation_lang.php" />
@@ -232,6 +230,7 @@
         <option value="$PROJECT_DIR$/pro/application/events/event_admin_member_members_excel.php" />
         <option value="$PROJECT_DIR$/pro/application/controllers/admin/member/Members.php" />
         <option value="$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php" />
+        <option value="$PROJECT_DIR$/pro/application/models/Post_model.php" />
       </list>
     </option>
   </component>
@@ -274,6 +273,13 @@
               <item name="pro" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="events" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kkurisProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kkurisProject" type="462c0819:PsiDirectoryNode" />
+              <item name="pro" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kkurisProject" type="b2602c69:ProjectViewProjectNode" />
@@ -425,35 +431,7 @@
       <workItem from="1583827832479" duration="17263000" />
       <workItem from="1584580080049" duration="4017000" />
       <workItem from="1584695630746" duration="12573000" />
-      <workItem from="1585007976597" duration="11566000" />
-    </task>
-    <task id="LOCAL-01102" summary="ci board 주소 변경">
-      <created>1584582967252</created>
-      <option name="number" value="01102" />
-      <option name="presentableId" value="LOCAL-01102" />
-      <option name="project" value="LOCAL" />
-      <updated>1584582967252</updated>
-    </task>
-    <task id="LOCAL-01103" summary="ci board 주소 변경">
-      <created>1584583005931</created>
-      <option name="number" value="01103" />
-      <option name="presentableId" value="LOCAL-01103" />
-      <option name="project" value="LOCAL" />
-      <updated>1584583005931</updated>
-    </task>
-    <task id="LOCAL-01104" summary="ci board 주소 변경">
-      <created>1584583445411</created>
-      <option name="number" value="01104" />
-      <option name="presentableId" value="LOCAL-01104" />
-      <option name="project" value="LOCAL" />
-      <updated>1584583445411</updated>
-    </task>
-    <task id="LOCAL-01105" summary="ci pro version update">
-      <created>1584585725109</created>
-      <option name="number" value="01105" />
-      <option name="presentableId" value="LOCAL-01105" />
-      <option name="project" value="LOCAL" />
-      <updated>1584585725109</updated>
+      <workItem from="1585007976597" duration="13300000" />
     </task>
     <task id="LOCAL-01106" summary="ci pro version update">
       <created>1584586465441</created>
@@ -770,11 +748,39 @@
       <option name="project" value="LOCAL" />
       <updated>1585018862169</updated>
     </task>
-    <option name="localTasksCounter" value="1151" />
+    <task id="LOCAL-01151" summary="이벤트 트리거 before">
+      <created>1585024886321</created>
+      <option name="number" value="01151" />
+      <option name="presentableId" value="LOCAL-01151" />
+      <option name="project" value="LOCAL" />
+      <updated>1585024886321</updated>
+    </task>
+    <task id="LOCAL-01152" summary="이벤트 트리거 before">
+      <created>1585025002982</created>
+      <option name="number" value="01152" />
+      <option name="presentableId" value="LOCAL-01152" />
+      <option name="project" value="LOCAL" />
+      <updated>1585025002982</updated>
+    </task>
+    <task id="LOCAL-01153" summary="이벤트 트리거 before">
+      <created>1585025014109</created>
+      <option name="number" value="01153" />
+      <option name="presentableId" value="LOCAL-01153" />
+      <option name="project" value="LOCAL" />
+      <updated>1585025014109</updated>
+    </task>
+    <task id="LOCAL-01154" summary="이벤트 트리거 before">
+      <created>1585026612009</created>
+      <option name="number" value="01154" />
+      <option name="presentableId" value="LOCAL-01154" />
+      <option name="project" value="LOCAL" />
+      <updated>1585026612009</updated>
+    </task>
+    <option name="localTasksCounter" value="1155" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="505852000" />
+    <option name="totallyTimeSpent" value="507586000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -787,6 +793,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1881663" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -893,24 +900,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="이벤트 트리거 before" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pro/views/login/basic/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-          <folding>
-            <element signature="e#113#120#1" expanded="true" />
-            <element signature="e#113#120#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro/views/admin/basic/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pro/views/register/bootstrap/register_form.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -1187,16 +1176,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pro/views/admin/basic/board/post/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="145" column="1" lean-forward="true" selection-start-line="145" selection-start-column="1" selection-end-line="145" selection-end-column="1" />
-          <folding>
-            <element signature="e#113#120#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pro/application/helpers/debug_helper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -1243,10 +1222,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pro/application/models/Like_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="39" column="4" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="47" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pro/application/models/Post_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="742">
+          <caret line="575" selection-start-line="575" selection-end-line="575" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="677">
-          <caret line="292" column="59" selection-start-line="292" selection-start-column="45" selection-end-line="292" selection-end-column="59" />
+        <state relative-caret-position="-3">
+          <caret line="263" column="37" lean-forward="true" selection-start-line="263" selection-start-column="37" selection-end-line="263" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pro/views/admin/basic/board/post/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="42" column="39" lean-forward="true" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+          <folding>
+            <element signature="e#113#120#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
