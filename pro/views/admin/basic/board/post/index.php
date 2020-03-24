@@ -139,3 +139,5 @@
 $("#export_to_excel").click(function () {
    alert('1');
 });
+
+</script>

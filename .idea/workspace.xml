@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="엑셀파일다운로드 기능 첫 커밋">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pro/views/admin/basic/board/post/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/pro/views/admin/basic/board/post/index.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -101,8 +100,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pro/views/admin/basic/board/post/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="861">
-              <caret line="135" column="15" selection-start-line="135" selection-start-column="15" selection-end-line="135" selection-end-column="15" />
+            <state relative-caret-position="762">
+              <caret line="134" column="17" lean-forward="true" selection-start-line="134" selection-start-column="17" selection-end-line="136" selection-end-column="6" />
               <folding>
                 <element signature="e#113#120#1" expanded="true" />
               </folding>
@@ -114,7 +113,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>enable_profiler</find>
       <find>dropdown</find>
       <find>view_skin_file</find>
       <find>&lt;li class=&quot;dropdown&quot;&gt;</find>
@@ -144,6 +142,7 @@
       <find>export_to_excel</find>
       <find>exporturl</find>
       <find>'#export_to_excel', function(){</find>
+      <find>click</find>
     </findStrings>
     <replaceStrings>
       <replace>PW</replace>
@@ -444,21 +443,7 @@
       <workItem from="1583827832479" duration="17263000" />
       <workItem from="1584580080049" duration="4017000" />
       <workItem from="1584695630746" duration="12573000" />
-      <workItem from="1585007976597" duration="6214000" />
-    </task>
-    <task id="LOCAL-01085" summary="글 검색 시 초기화 버튼 눌렀을 때 검색어 삭제">
-      <created>1583831704712</created>
-      <option name="number" value="01085" />
-      <option name="presentableId" value="LOCAL-01085" />
-      <option name="project" value="LOCAL" />
-      <updated>1583831704712</updated>
-    </task>
-    <task id="LOCAL-01086" summary="글 검색 시 초기화 버튼 눌렀을 때 검색어 삭제">
-      <created>1583832849185</created>
-      <option name="number" value="01086" />
-      <option name="presentableId" value="LOCAL-01086" />
-      <option name="project" value="LOCAL" />
-      <updated>1583832849185</updated>
+      <workItem from="1585007976597" duration="6461000" />
     </task>
     <task id="LOCAL-01087" summary="글 검색 시 초기화 버튼 눌렀을 때 검색어 삭제">
       <created>1583832992184</created>
@@ -789,11 +774,25 @@
       <option name="project" value="LOCAL" />
       <updated>1585013720452</updated>
     </task>
-    <option name="localTasksCounter" value="1134" />
+    <task id="LOCAL-01134" summary="엑셀파일다운로드 기능 첫 커밋">
+      <created>1585015574275</created>
+      <option name="number" value="01134" />
+      <option name="presentableId" value="LOCAL-01134" />
+      <option name="project" value="LOCAL" />
+      <updated>1585015574275</updated>
+    </task>
+    <task id="LOCAL-01135" summary="엑셀파일다운로드 기능 첫 커밋">
+      <created>1585015812636</created>
+      <option name="number" value="01135" />
+      <option name="presentableId" value="LOCAL-01135" />
+      <option name="project" value="LOCAL" />
+      <updated>1585015812636</updated>
+    </task>
+    <option name="localTasksCounter" value="1136" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="500500000" />
+    <option name="totallyTimeSpent" value="500747000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -808,7 +807,7 @@
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1881663" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1881663" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="0" weight="0.32952183" />
@@ -1258,8 +1257,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pro/views/admin/basic/board/post/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
-          <caret line="135" column="15" selection-start-line="135" selection-start-column="15" selection-end-line="135" selection-end-column="15" />
+        <state relative-caret-position="762">
+          <caret line="134" column="17" lean-forward="true" selection-start-line="134" selection-start-column="17" selection-end-line="136" selection-end-column="6" />
           <folding>
             <element signature="e#113#120#1" expanded="true" />
           </folding>
