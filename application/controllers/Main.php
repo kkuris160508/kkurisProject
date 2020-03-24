@@ -68,47 +68,48 @@ class Main extends CI_Controller{
                 $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
             }
 
+            echo 1;
 
 //            $this->output->enable_profiler(TRUE); //프로파일러 output (일종의 디버그 바)
 //
 //            $result2 = $this->debug->debug_var($_SERVER); // debug 를 소문자로...ㅡㅡ
 //            echo $result2;
 
-            $param = array(
-                'id'=>'목록'
-            );
-
-
-            $config['base_url'] = 'http://34.80.199.17/Main/lists'; //페이징 주소
-
-            $config['per_page'] = 10; // 한 페이지에 표시할 게시물 수
-            $config['uri_segment'] = 3; //페이지 번호가 위치한 세그먼트
-
-            $config['total_rows'] = $this->todo_m->get_list('count');
-
-            $this->pagination->initialize($config);
-            $data['pagination'] = $this->pagination->create_links();
-
-            $page = $this->uri->segment(3,1);
-
-//            $result2 = $this->debug->debug_var($data); // debug 를 소문자로...ㅡㅡ
-//            echo $result2;
-
-            if($page > 1){
-                $start = (($page / $config['per_page'])) * $config['per_page'];
-            } else {
-                $start = ($page - 1) * $config['per_page'];
-            }
-
-            $limit = $config['per_page'];
-
-            $data['list'] = $this->todo_m->get_list('',$start, $limit);
-
-            $this->load->view('header_v', $param);
-            $this->load->view('todo/list_contents_v', $data);
-            $this->load->view('todo/footer_v');
-
-            $tmpIDX = $this->input->post('id');
+//            $param = array(
+//                'id'=>'목록'
+//            );
+//
+//
+//            $config['base_url'] = 'http://34.80.199.17/Main/lists'; //페이징 주소
+//
+//            $config['per_page'] = 10; // 한 페이지에 표시할 게시물 수
+//            $config['uri_segment'] = 3; //페이지 번호가 위치한 세그먼트
+//
+//            $config['total_rows'] = $this->todo_m->get_list('count');
+//
+//            $this->pagination->initialize($config);
+//            $data['pagination'] = $this->pagination->create_links();
+//
+//            $page = $this->uri->segment(3,1);
+//
+////            $result2 = $this->debug->debug_var($data); // debug 를 소문자로...ㅡㅡ
+////            echo $result2;
+//
+//            if($page > 1){
+//                $start = (($page / $config['per_page'])) * $config['per_page'];
+//            } else {
+//                $start = ($page - 1) * $config['per_page'];
+//            }
+//
+//            $limit = $config['per_page'];
+//
+//            $data['list'] = $this->todo_m->get_list('',$start, $limit);
+//
+//            $this->load->view('header_v', $param);
+//            $this->load->view('todo/list_contents_v', $data);
+//            $this->load->view('todo/footer_v');
+//
+//            $tmpIDX = $this->input->post('id');
 
 //            $this->debug->debug_var($tmpIDX); // 시발 debug 를 소문자로...ㅡㅡ
 
