@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7500301-2d0a-418f-9704-38240986c6f7" name="Default" comment="엑셀파일다운로드 기능 첫 커밋">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pro/views/admin/basic/board/post/excel.php" beforeDir="false" afterPath="$PROJECT_DIR$/pro/views/admin/basic/board/post/excel.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="259" column="9" lean-forward="true" selection-start-line="259" selection-start-column="9" selection-end-line="259" selection-end-column="9" />
+            <state relative-caret-position="694">
+              <caret line="339" column="93" lean-forward="true" selection-start-line="339" selection-start-column="93" selection-end-line="339" selection-end-column="93" />
             </state>
           </provider>
         </entry>
@@ -40,7 +39,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7361">
+            <state relative-caret-position="582">
               <caret line="438" column="67" selection-start-line="438" selection-start-column="63" selection-end-line="438" selection-end-column="67" />
               <folding>
                 <element signature="e#73#156#0#PHP" />
@@ -70,17 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pro/application/controllers/Login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
+            <state relative-caret-position="425">
               <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/JoinOK.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -94,13 +84,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pro/views/admin/basic/board/post/excel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            <state relative-caret-position="136">
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
               <folding>
-                <marker date="1584947314319" expanded="true" signature="9:81" ph="..." />
+                <element signature="e#6#11#0#PHP" expanded="true" />
+                <element signature="e#1796#1888#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pro/views/admin/basic/board/post/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="32" column="63" lean-forward="true" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
+              <folding>
+                <element signature="e#113#120#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -217,8 +220,8 @@
         <option value="$PROJECT_DIR$/pro/application/controllers/Login.php" />
         <option value="$PROJECT_DIR$/pro/views/login/bootstrap/login.php" />
         <option value="$PROJECT_DIR$/pro/views/admin/basic/board/post/index.php" />
-        <option value="$PROJECT_DIR$/pro/views/admin/basic/board/post/excel.php" />
         <option value="$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php" />
+        <option value="$PROJECT_DIR$/pro/views/admin/basic/board/post/excel.php" />
       </list>
     </option>
   </component>
@@ -243,6 +246,17 @@
             <path>
               <item name="kkurisProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="kkurisProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kkurisProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kkurisProject" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kkurisProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kkurisProject" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kkurisProject" type="b2602c69:ProjectViewProjectNode" />
@@ -429,28 +443,7 @@
       <workItem from="1583827832479" duration="17263000" />
       <workItem from="1584580080049" duration="4017000" />
       <workItem from="1584695630746" duration="12573000" />
-      <workItem from="1585007976597" duration="3445000" />
-    </task>
-    <task id="LOCAL-01079" summary="view datepicker endDate default value modified">
-      <created>1583830255883</created>
-      <option name="number" value="01079" />
-      <option name="presentableId" value="LOCAL-01079" />
-      <option name="project" value="LOCAL" />
-      <updated>1583830255883</updated>
-    </task>
-    <task id="LOCAL-01080" summary="view datepicker endDate default value modified">
-      <created>1583830318033</created>
-      <option name="number" value="01080" />
-      <option name="presentableId" value="LOCAL-01080" />
-      <option name="project" value="LOCAL" />
-      <updated>1583830318033</updated>
-    </task>
-    <task id="LOCAL-01081" summary="view datepicker endDate default value modified">
-      <created>1583830702943</created>
-      <option name="number" value="01081" />
-      <option name="presentableId" value="LOCAL-01081" />
-      <option name="project" value="LOCAL" />
-      <updated>1583830702943</updated>
+      <workItem from="1585007976597" duration="4501000" />
     </task>
     <task id="LOCAL-01082" summary="view datepicker endDate default value modified">
       <created>1583830814395</created>
@@ -774,11 +767,32 @@
       <option name="project" value="LOCAL" />
       <updated>1584948912575</updated>
     </task>
-    <option name="localTasksCounter" value="1128" />
+    <task id="LOCAL-01128" summary="엑셀파일다운로드 기능 첫 커밋">
+      <created>1585012122607</created>
+      <option name="number" value="01128" />
+      <option name="presentableId" value="LOCAL-01128" />
+      <option name="project" value="LOCAL" />
+      <updated>1585012122607</updated>
+    </task>
+    <task id="LOCAL-01129" summary="엑셀파일다운로드 기능 첫 커밋">
+      <created>1585012255619</created>
+      <option name="number" value="01129" />
+      <option name="presentableId" value="LOCAL-01129" />
+      <option name="project" value="LOCAL" />
+      <updated>1585012255619</updated>
+    </task>
+    <task id="LOCAL-01130" summary="엑셀파일다운로드 기능 첫 커밋">
+      <created>1585013110660</created>
+      <option name="number" value="01130" />
+      <option name="presentableId" value="LOCAL-01130" />
+      <option name="project" value="LOCAL" />
+      <updated>1585013110660</updated>
+    </task>
+    <option name="localTasksCounter" value="1131" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="497731000" />
+    <option name="totallyTimeSpent" value="498787000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1154,16 +1168,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pro/views/admin/basic/board/post/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding>
-            <element signature="e#113#120#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pro/views/admin/basic/member/members/excel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1309">
@@ -1188,16 +1192,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7361">
-          <caret line="438" column="67" selection-start-line="438" selection-start-column="63" selection-end-line="438" selection-end-column="67" />
-          <folding>
-            <element signature="e#73#156#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Auth.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2125">
@@ -1212,10 +1206,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pro/application/controllers/Login.php">
+    <entry file="file://$PROJECT_DIR$/pro/application/controllers/admin/member/Members.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="19397">
+          <caret line="1141" column="11" lean-forward="true" selection-start-line="1141" selection-start-column="11" selection-end-line="1141" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pro/views/admin/basic/board/post/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="63" lean-forward="true" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
+          <folding>
+            <element signature="e#113#120#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="694">
+          <caret line="339" column="93" lean-forward="true" selection-start-line="339" selection-start-column="93" selection-end-line="339" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="438" column="67" selection-start-line="438" selection-start-column="63" selection-end-line="438" selection-end-column="67" />
+          <folding>
+            <element signature="e#73#156#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1226,27 +1247,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pro/application/controllers/admin/member/Members.php">
+    <entry file="file://$PROJECT_DIR$/pro/application/controllers/Login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19397">
-          <caret line="1141" column="11" lean-forward="true" selection-start-line="1141" selection-start-column="11" selection-end-line="1141" selection-end-column="11" />
+        <state relative-caret-position="425">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pro/views/admin/basic/board/post/excel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        <state relative-caret-position="136">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
           <folding>
-            <marker date="1584947314319" expanded="true" signature="9:81" ph="..." />
+            <element signature="e#6#11#0#PHP" expanded="true" />
+            <element signature="e#1796#1888#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pro/application/controllers/admin/board/Post.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="259" column="9" lean-forward="true" selection-start-line="259" selection-start-column="9" selection-end-line="259" selection-end-column="9" />
         </state>
       </provider>
     </entry>

@@ -247,7 +247,7 @@ class Post extends CB_Controller
 	}
     public function excel()
     {
-        echo 1;
+//        echo 1;
         // 이벤트 라이브러리를 로딩합니다
 //        $eventname = 'event_admin_member_members_excel';
 //        $eventname = 'event_admin_board_post_excel';
@@ -340,6 +340,6 @@ class Post extends CB_Controller
 //        header('Content-Disposition: attachment; filename=게시물_' . cdate('Y_m_d') . '.xls');
 //        echo $this->load->view('admin/' . ADMIN_SKIN . '/' . $this->pagedir . '/excel', $view, true);
 
-//        echo $this->load->view('admin/basic/board/post/excel', true);
+        echo $this->load->view('admin/basic/board/post/excel');
     }
 }
