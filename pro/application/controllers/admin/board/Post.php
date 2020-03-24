@@ -257,87 +257,87 @@ class Post extends CB_Controller
 
         // 이벤트가 존재하면 실행합니다
         $view['view']['event']['before'] = Events::trigger('before', $eventname);
-//
-//        /**
-//         * 페이지에 숫자가 아닌 문자가 입력되거나 1보다 작은 숫자가 입력되면 에러 페이지를 보여줍니다.
-//         */
-//        $param =& $this->querystring;
-////        $findex = $this->input->get('findex', null, 'member.mem_id');
-//        $findex = 'post_id';
-////        $forder = $this->input->get('forder', null, 'desc');
-////        $sfield = $this->input->get('sfield', null, '');
-////        $skeyword = $this->input->get('skeyword', null, '');
-//        $forder = 'desc';
+
+        /**
+         * 페이지에 숫자가 아닌 문자가 입력되거나 1보다 작은 숫자가 입력되면 에러 페이지를 보여줍니다.
+         */
+        $param =& $this->querystring;
+//        $findex = $this->input->get('findex', null, 'member.mem_id');
+        $findex = 'post_id';
+//        $forder = $this->input->get('forder', null, 'desc');
 //        $sfield = $this->input->get('sfield', null, '');
 //        $skeyword = $this->input->get('skeyword', null, '');
-//
-//        /**
-//         * 게시판 목록에 필요한 정보를 가져옵니다.
-//         */
-//        $this->{$this->modelname}->allow_search_field = array('post_id', 'post_title', 'post_content', 'mem_id', 'post_username', 'post_nickname', 'post_email', 'post_homepage', 'post_datetime', 'post_ip', 'post_device'); // 검색이 가능한 필드
-//        $this->{$this->modelname}->search_field_equal = array('post_id', 'mem_id'); // 검색중 like 가 아닌 = 검색을 하는 필드
-//        $this->{$this->modelname}->allow_order_field = array('post_id'); // 정렬이 가능한 필드
-//
-//        $where = array();
-//        if ($this->input->get('mem_is_admin')) {
-//            $where['mem_is_admin'] = 1;
-//        }
-//        if ($this->input->get('mem_denied')) {
-//            $where['mem_denied'] = 1;
-//        }
-//        if ($mgr_id = (int) $this->input->get('mgr_id')) {
-//            if ($mgr_id > 0) {
-//                $where['mgr_id'] = $mgr_id;
-//            }
-//        }
-//        $result = $this->{$this->modelname}
-//            ->get_admin_list('', '', $where, '', $findex, $forder, $sfield, $skeyword);
-//
-//        if (element('list', $result)) {
-//            foreach (element('list', $result) as $key => $val) {
-//
-//                $where = array(
-//                    'mem_id' => element('mem_id', $val),
-//                );
-//                $result['list'][$key]['member_group_member'] = $this->Member_group_member_model->get('', '', $where, '', 0, 'mgm_id', 'ASC');
-//                $mgroup = '';
-//                if ($result['list'][$key]['member_group_member']) {
-//                    foreach ($result['list'][$key]['member_group_member'] as $mk => $mv) {
-//                        if (element('mgr_id', $mv)) {
-//                            $mgroup[] = $this->Member_group_model->item(element('mgr_id', $mv));
-//                        }
-//                    }
-//                }
-//                $result['list'][$key]['member_group'] = '';
-//                if ($mgroup) {
-//                    foreach ($mgroup as $mk => $mv) {
-//                        if ($result['list'][$key]['member_group']) {
-//                            $result['list'][$key]['member_group'] .= ', ';
-//                        }
-//                        $result['list'][$key]['member_group'] .= element('mgr_title', $mv);
-//                    }
-//                }
-//                $result['list'][$key]['display_name'] = display_username(
-//                    element('mem_userid', $val),
-//                    element('mem_nickname', $val),
-//                    element('mem_icon', $val)
-//                );
-//                $result['list'][$key]['meta'] = $this->Member_meta_model->get_all_meta(element('mem_id', $val));
-//                $result['list'][$key]['social'] = $this->Social_meta_model->get_all_meta(element('mem_id', $val));
-//            }
-//        }
-//
-//        $view['view']['data'] = $result;
-//        $view['view']['all_group'] = $this->Member_group_model->get_all_group();
-//
-//        /**
-//         * primary key 정보를 저장합니다
-//         */
-//        $view['view']['primary_key'] = $this->{$this->modelname}->primary_key;
-//
-//
-////         이벤트가 존재하면 실행합니다
-//        $view['view']['event']['before_layout'] = Events::trigger('before_layout', $eventname);
+        $forder = 'desc';
+        $sfield = $this->input->get('sfield', null, '');
+        $skeyword = $this->input->get('skeyword', null, '');
+
+        /**
+         * 게시판 목록에 필요한 정보를 가져옵니다.
+         */
+        $this->{$this->modelname}->allow_search_field = array('post_id', 'post_title', 'post_content', 'mem_id', 'post_username', 'post_nickname', 'post_email', 'post_homepage', 'post_datetime', 'post_ip', 'post_device'); // 검색이 가능한 필드
+        $this->{$this->modelname}->search_field_equal = array('post_id', 'mem_id'); // 검색중 like 가 아닌 = 검색을 하는 필드
+        $this->{$this->modelname}->allow_order_field = array('post_id'); // 정렬이 가능한 필드
+
+        $where = array();
+        if ($this->input->get('mem_is_admin')) {
+            $where['mem_is_admin'] = 1;
+        }
+        if ($this->input->get('mem_denied')) {
+            $where['mem_denied'] = 1;
+        }
+        if ($mgr_id = (int) $this->input->get('mgr_id')) {
+            if ($mgr_id > 0) {
+                $where['mgr_id'] = $mgr_id;
+            }
+        }
+        $result = $this->{$this->modelname}
+            ->get_admin_list('', '', $where, '', $findex, $forder, $sfield, $skeyword);
+
+        if (element('list', $result)) {
+            foreach (element('list', $result) as $key => $val) {
+
+                $where = array(
+                    'mem_id' => element('mem_id', $val),
+                );
+                $result['list'][$key]['member_group_member'] = $this->Member_group_member_model->get('', '', $where, '', 0, 'mgm_id', 'ASC');
+                $mgroup = '';
+                if ($result['list'][$key]['member_group_member']) {
+                    foreach ($result['list'][$key]['member_group_member'] as $mk => $mv) {
+                        if (element('mgr_id', $mv)) {
+                            $mgroup[] = $this->Member_group_model->item(element('mgr_id', $mv));
+                        }
+                    }
+                }
+                $result['list'][$key]['member_group'] = '';
+                if ($mgroup) {
+                    foreach ($mgroup as $mk => $mv) {
+                        if ($result['list'][$key]['member_group']) {
+                            $result['list'][$key]['member_group'] .= ', ';
+                        }
+                        $result['list'][$key]['member_group'] .= element('mgr_title', $mv);
+                    }
+                }
+                $result['list'][$key]['display_name'] = display_username(
+                    element('mem_userid', $val),
+                    element('mem_nickname', $val),
+                    element('mem_icon', $val)
+                );
+                $result['list'][$key]['meta'] = $this->Member_meta_model->get_all_meta(element('mem_id', $val));
+                $result['list'][$key]['social'] = $this->Social_meta_model->get_all_meta(element('mem_id', $val));
+            }
+        }
+
+        $view['view']['data'] = $result;
+        $view['view']['all_group'] = $this->Member_group_model->get_all_group();
+
+        /**
+         * primary key 정보를 저장합니다
+         */
+        $view['view']['primary_key'] = $this->{$this->modelname}->primary_key;
+
+
+//         이벤트가 존재하면 실행합니다
+        $view['view']['event']['before_layout'] = Events::trigger('before_layout', $eventname);
 
         debug($view);
 //        var_dump($view);
