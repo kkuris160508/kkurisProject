@@ -20,14 +20,14 @@ td {text-align:center; line-height:40px; font-size:12px; color:#474747; font-fam
 		foreach (element('list', element('data', $view)) as $result) {
 	?>
 			<tr>
-                <td><?php echo element('brd_id', $result);?></td>
+                <td><?php echo html_escape(element('brd_name', element('board', $result))); ?></td>
                 <td><?php echo element('post_title', $result);?></td>
                 <td><?php echo element('post_userid', $result);?></td>
                 <td><?php echo element('post_hit', $result);?></td>
                 <td><?php echo element('post_like', $result);?> / <?php echo element('post_dislike', $result);?></td>
                 <td><?php echo element('post_datetime', $result);?></td>
                 <td><?php echo element('post_ip', $result);?></td>
-                <td></td>
+                <td><?php echo element('post_secret', $result) === '1' ? '비밀' : '공개'; ?></td>
 			</tr>
 		<?php
 			}
