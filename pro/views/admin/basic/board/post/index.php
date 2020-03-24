@@ -137,7 +137,7 @@
 // });
 
 $("#export_to_excel").click(function () {
-exporturl = '<?php echo admin_url($this->pagedir . '/post/excel' . '?' . $this->input->server('QUERY_STRING', null, '')); ?>';
+exporturl = '<?php echo admin_url($this->pagedir . '/excel' . '?' . $this->input->server('QUERY_STRING', null, '')); ?>';
 if ($('#withoutzero:checked').length)
 {
 exporturl += '&withoutzero=1';
