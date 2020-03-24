@@ -336,8 +336,8 @@ class Post extends CB_Controller
         // 이벤트가 존재하면 실행합니다
 //        $view['view']['event']['before_layout'] = Events::trigger('before_layout', $eventname);
 
-//        header('Content-type: application/vnd.ms-excel');
-//        header('Content-Disposition: attachment; filename=게시물_' . cdate('Y_m_d') . '.xls');
+        header('Content-type: application/vnd.ms-excel');
+        header('Content-Disposition: attachment; filename=게시물_' . cdate('Y_m_d') . '.xls');
 //        echo $this->load->view('admin/' . ADMIN_SKIN . '/' . $this->pagedir . '/excel', $view, true);
 
         echo $this->load->view('admin/basic/board/post/excel');
