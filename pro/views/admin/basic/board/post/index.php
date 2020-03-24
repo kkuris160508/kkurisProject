@@ -137,7 +137,16 @@
 // });
 
 $("#export_to_excel").click(function () {
-   alert('1');
+exporturl = '<?php echo admin_url($this->pagedir . '/post/excel' . '?' . $this->input->server('QUERY_STRING', null, '')); ?>';
+if ($('#withoutzero:checked').length)
+{
+exporturl += '&withoutzero=1';
+}
+if ($('#orderdesc:checked').length)
+{
+exporturl += '&orderby=desc';
+}
+document.location.href = exporturl;
 });
 
 </script>
