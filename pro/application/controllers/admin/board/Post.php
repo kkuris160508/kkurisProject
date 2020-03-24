@@ -249,9 +249,10 @@ class Post extends CB_Controller
     {
 //        echo 1;
         // 이벤트 라이브러리를 로딩합니다
-//        $eventname = 'event_admin_member_members_excel';
+        $eventname = 'event_admin_member_members_excel';
 //        $eventname = 'event_admin_board_post_excel';
-//        $this->load->event($eventname);
+        echo $this->load->event($eventname);
+
 //
 //        $view = array();
 //        $view['view'] = array();
