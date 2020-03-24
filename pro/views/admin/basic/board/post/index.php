@@ -132,6 +132,10 @@
 //});
 
 
-$(document).on('click', '#export_to_excel', function(){
-    alert('1');
+// $(document).on('click', '#export_to_excel', function(){
+//     alert('1');
+// });
+
+$("#export_to_excel").click(function () {
+   alert('1');
 });
