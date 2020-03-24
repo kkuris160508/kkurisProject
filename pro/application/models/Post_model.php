@@ -573,4 +573,14 @@ class Post_model extends CB_Model
 		$post_num = $row['post_num'] - 1;
 		return $post_num;
 	}
+
+    public function get_post_like_list($limit = '', $offset = '', $where = '', $like = '', $findex = '', $forder = '', $sfield = '', $skeyword = '', $sop = 'OR')
+    {
+        $select = 'like.*, post.mem_id as post_mem_id, post.post_userid, post.post_username, post.post_nickname, post.post_id,
+			post.brd_id, post.post_datetime, post.post_hit, post.post_secret, post.post_title, post.post_like, post.post_dislike, post.post_image, post.post_del';
+        $join[] = array('table' => 'post', 'on' => 'like.target_id = post.post_id', 'type' => 'inner');
+
+        $result = $this->_get_list_common($select, $join, $limit, $offset, $where, $like, $findex, $forder, $sfield, $skeyword, $sop);
+        return $result;
+    }
 }
