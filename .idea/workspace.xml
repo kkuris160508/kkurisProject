@@ -20,18 +20,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2210">
-              <caret line="135" column="42" selection-start-line="135" selection-start-column="31" selection-end-line="135" selection-end-column="42" />
-              <folding>
-                <element signature="e#73#156#0#PHP" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/upload_form.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
@@ -43,8 +31,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pro/application/config/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+            <state relative-caret-position="533">
+              <caret line="79" column="36" lean-forward="true" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/config/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="42" column="2" lean-forward="true" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -108,7 +105,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Like_model</find>
       <find>get_post_like_list</find>
       <find>$page</find>
       <find>function item_all</find>
@@ -138,6 +134,7 @@
       <find>uploads</find>
       <find>ci_upload</find>
       <find>do_upload</find>
+      <find>$config['base_url']</find>
     </findStrings>
     <replaceStrings>
       <replace>PW</replace>
@@ -166,7 +163,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/system/language/english/form_validation_lang.php" />
         <option value="$PROJECT_DIR$/application/views/todo/login_contents_v.php" />
         <option value="$PROJECT_DIR$/application/views/Auth/login_v.php" />
         <option value="$PROJECT_DIR$/application/controllers/Test.php" />
@@ -216,6 +212,7 @@
         <option value="$PROJECT_DIR$/application/controllers/Main.php" />
         <option value="$PROJECT_DIR$/application/helpers/debug_helper.php" />
         <option value="$PROJECT_DIR$/application/controllers/Auth.php" />
+        <option value="$PROJECT_DIR$/application/config/config.php" />
         <option value="$PROJECT_DIR$/pro/application/config/config.php" />
       </list>
     </option>
@@ -225,9 +222,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="-1928" />
     <option name="y" value="-8" />
-    <option name="width" value="1868" />
+    <option name="width" value="1936" />
     <option name="height" value="1096" />
   </component>
   <component name="ProjectView">
@@ -247,6 +244,24 @@
               <item name="kkurisProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="kkurisProject" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kkurisProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kkurisProject" type="462c0819:PsiDirectoryNode" />
+              <item name="pro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kkurisProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kkurisProject" type="462c0819:PsiDirectoryNode" />
+              <item name="pro" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kkurisProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kkurisProject" type="462c0819:PsiDirectoryNode" />
+              <item name="pro" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kkurisProject" type="b2602c69:ProjectViewProjectNode" />
@@ -367,21 +382,7 @@
       <workItem from="1587112646886" duration="2140000" />
       <workItem from="1587447011236" duration="1672000" />
       <workItem from="1587543123283" duration="152000" />
-      <workItem from="1590026843014" duration="846000" />
-    </task>
-    <task id="LOCAL-01119" summary="페이지 렌더링 속도 추가">
-      <created>1584673769494</created>
-      <option name="number" value="01119" />
-      <option name="presentableId" value="LOCAL-01119" />
-      <option name="project" value="LOCAL" />
-      <updated>1584673769494</updated>
-    </task>
-    <task id="LOCAL-01120" summary="페이지 렌더링 속도 추가">
-      <created>1584674038342</created>
-      <option name="number" value="01120" />
-      <option name="presentableId" value="LOCAL-01120" />
-      <option name="project" value="LOCAL" />
-      <updated>1584674038342</updated>
+      <workItem from="1590026843014" duration="3079000" />
     </task>
     <task id="LOCAL-01121" summary="페이지 렌더링 속도 추가">
       <created>1584680372002</created>
@@ -712,11 +713,25 @@
       <option name="project" value="LOCAL" />
       <updated>1590027088139</updated>
     </task>
-    <option name="localTasksCounter" value="1168" />
+    <task id="LOCAL-01168" summary="이전 CI 페이지 원복">
+      <created>1590029306665</created>
+      <option name="number" value="01168" />
+      <option name="presentableId" value="LOCAL-01168" />
+      <option name="project" value="LOCAL" />
+      <updated>1590029306665</updated>
+    </task>
+    <task id="LOCAL-01169" summary="이전 CI 페이지 원복">
+      <created>1590029593255</created>
+      <option name="number" value="01169" />
+      <option name="presentableId" value="LOCAL-01169" />
+      <option name="project" value="LOCAL" />
+      <updated>1590029593255</updated>
+    </task>
+    <option name="localTasksCounter" value="1170" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="526259000" />
+    <option name="totallyTimeSpent" value="528492000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -728,10 +743,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1868" height="1096" extended-state="6" />
+    <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20630531" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1988273" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="0" weight="0.32952183" />
@@ -742,7 +757,7 @@
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32952183" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.3128898" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3128898" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32848233" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -836,13 +851,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="이전 CI 페이지 원복" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pro/application/libraries/Cbconfig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="47" column="25" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pro/views/admin/basic/config/cbconfigs/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -1182,10 +1190,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="42" column="2" lean-forward="true" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pro/application/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+        <state relative-caret-position="533">
+          <caret line="79" column="36" lean-forward="true" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
         </state>
       </provider>
     </entry>
